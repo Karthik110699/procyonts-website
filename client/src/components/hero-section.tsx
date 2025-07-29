@@ -1,124 +1,126 @@
 import { useState, useEffect } from "react";
 
 export default function HeroSection() {
-  const [currentSlide, setCurrentSlide] = useState(0);
+  const [currentTextIndex, setCurrentTextIndex] = useState(0);
+  const [isVisible, setIsVisible] = useState(true);
   
-  const heroSlides = [
+  const textRotations = [
     {
-      title: "AI in the cloud",
-      subtitle: "where innovation meets intelligence",
-      description: "Leverage cloud-based AI to unlock real-time insights, boost innovation, and stay agile in a fast-changing market.",
-      image: "https://images.unsplash.com/photo-1451187580459-43490279c0fa?ixlib=rb-4.0.3&auto=format&fit=crop&w=1920&h=1080",
-      ctaText: "Contact Us",
-      ctaLink: "#contact"
+      line1: "The Rise of AI-Driven",
+      line2: "Software Development",
+      description: "Boost productivity and accelerate innovation today with AI embedded in every phase of the software development cycle."
     },
     {
-      title: "AI-driven Salesforce solutions",
-      subtitle: "for tomorrow's enterprises",
-      description: "Procyon Technostructure transforms challenges into opportunities with tailored IT solutions.",
-      image: "https://images.unsplash.com/photo-1560472354-b33ff0c44a43?ixlib=rb-4.0.3&auto=format&fit=crop&w=1920&h=1080",
-      ctaText: "Call us Now",
-      ctaLink: "#contact"
+      line1: "AI-driven Salesforce solutions",
+      line2: "for tomorrow's enterprises", 
+      description: "Procyon Technostructure transforms challenges into opportunities with tailored IT solutions."
     },
     {
-      title: "Transform your workflows",
-      subtitle: "with ServiceNow",
-      description: "A cloud-based platform that streamlines operations, automates tasks, and boosts productivity, helping businesses work smarter and faster.",
-      image: "https://images.unsplash.com/photo-1551434678-e076c223a692?ixlib=rb-4.0.3&auto=format&fit=crop&w=1920&h=1080",
-      ctaText: "Revolutionize workflows",
-      ctaLink: "#services"
+      line1: "Transform your workflows",
+      line2: "with ServiceNow",
+      description: "A cloud-based platform that streamlines operations, automates tasks, and boosts productivity."
     }
   ];
 
   useEffect(() => {
     const interval = setInterval(() => {
-      setCurrentSlide((prev) => (prev + 1) % heroSlides.length);
-    }, 6000);
+      setIsVisible(false);
+      
+      setTimeout(() => {
+        setCurrentTextIndex((prev) => (prev + 1) % textRotations.length);
+        setIsVisible(true);
+      }, 500);
+    }, 4000);
 
     return () => clearInterval(interval);
-  }, [heroSlides.length]);
+  }, [textRotations.length]);
 
   return (
-    <section id="home" className="relative min-h-screen flex items-center justify-center overflow-hidden">
-      {/* Background Images */}
-      {heroSlides.map((slide, index) => (
-        <div
-          key={index}
-          className={`absolute inset-0 z-0 transition-opacity duration-1000 ${
-            index === currentSlide ? 'opacity-100' : 'opacity-0'
-          }`}
-        >
-          <div 
-            className="w-full h-full bg-cover bg-center bg-no-repeat" 
-            style={{
-              backgroundImage: `url('${slide.image}')`
-            }}
-          >
-            <div className="absolute inset-0 bg-gradient-to-r from-procyon-dark/90 to-blue-900/70"></div>
-          </div>
-        </div>
-      ))}
+    <section id="home" className="relative min-h-screen flex items-center justify-center overflow-hidden bg-gradient-to-br from-gray-900 via-blue-900 to-gray-800">
+      {/* Animated Background */}
+      <div className="absolute inset-0 z-0">
+        <div className="absolute inset-0 bg-[url('https://images.unsplash.com/photo-1451187580459-43490279c0fa?ixlib=rb-4.0.3&auto=format&fit=crop&w=1920&h=1080')] bg-cover bg-center opacity-10"></div>
+        <div className="absolute inset-0 bg-gradient-to-r from-procyon-dark/95 to-blue-900/90"></div>
+      </div>
+
+      {/* Geometric Elements */}
+      <div className="absolute inset-0 z-0 overflow-hidden">
+        <div className="absolute top-20 left-10 w-32 h-32 bg-gradient-to-r from-blue-500/20 to-emerald-500/20 rounded-full animate-float blur-xl"></div>
+        <div className="absolute bottom-32 right-20 w-48 h-48 bg-gradient-to-r from-purple-500/20 to-pink-500/20 rounded-full animate-float blur-xl" style={{ animationDelay: '1s' }}></div>
+        <div className="absolute top-1/2 left-1/4 w-24 h-24 bg-gradient-to-r from-amber-500/20 to-orange-500/20 rounded-full animate-float blur-xl" style={{ animationDelay: '2s' }}></div>
+      </div>
       
-      <div className="relative z-10 max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
-        <div className="space-y-8">
-          {/* Slide Content */}
-          <div key={currentSlide} className="animate-fade-in-up">
-            <h1 className="text-5xl md:text-7xl font-bold leading-tight mb-6">
-              <span className="block gradient-text">{heroSlides[currentSlide].title}</span>
-              <span className="block text-white">{heroSlides[currentSlide].subtitle}</span>
+      <div className="relative z-10 max-w-6xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
+        {/* Main Content */}
+        <div className={`transition-all duration-500 transform ${isVisible ? 'opacity-100 translate-y-0' : 'opacity-0 translate-y-8'}`}>
+          
+          {/* Animated Title */}
+          <div className="mb-8">
+            <h1 className="text-5xl md:text-7xl lg:text-8xl font-bold leading-tight tracking-tight">
+              <div className="mb-4">
+                <span className="block bg-gradient-to-r from-blue-400 via-emerald-400 to-purple-400 bg-clip-text text-transparent animate-pulse">
+                  {textRotations[currentTextIndex].line1}
+                </span>
+              </div>
+              <div>
+                <span className="block text-white">
+                  {textRotations[currentTextIndex].line2}
+                </span>
+              </div>
             </h1>
-            <p className="text-xl md:text-2xl text-gray-300 max-w-3xl mx-auto mb-8">
-              {heroSlides[currentSlide].description}
+          </div>
+
+          {/* Description */}
+          <div className="mb-8">
+            <p className="text-xl md:text-2xl text-gray-300 max-w-4xl mx-auto leading-relaxed">
+              {textRotations[currentTextIndex].description}
             </p>
-            <div className="mb-6">
-              <span className="inline-block px-4 py-2 bg-blue-500/20 rounded-full text-blue-400 font-semibold text-lg">
+          </div>
+
+          {/* Powered by Badge */}
+          <div className="mb-12">
+            <div className="inline-flex items-center px-6 py-3 bg-gradient-to-r from-blue-600/20 to-emerald-600/20 backdrop-blur-sm border border-blue-500/30 rounded-full">
+              <div className="w-2 h-2 bg-gradient-to-r from-blue-400 to-emerald-400 rounded-full mr-3 animate-pulse"></div>
+              <span className="text-lg font-semibold bg-gradient-to-r from-blue-400 to-emerald-400 bg-clip-text text-transparent">
                 Powered by Procyon
               </span>
             </div>
-            <div className="flex flex-col sm:flex-row justify-center space-y-4 sm:space-y-0 sm:space-x-6">
-              <a 
-                href={heroSlides[currentSlide].ctaLink} 
-                className="bg-blue-600 hover:bg-blue-700 px-8 py-4 rounded-lg font-semibold text-lg transition-all duration-300 transform hover:scale-105"
-              >
-                {heroSlides[currentSlide].ctaText}
-              </a>
-              <a href="#services" className="border-2 border-blue-600 hover:bg-blue-600 px-8 py-4 rounded-lg font-semibold text-lg transition-all duration-300 transform hover:scale-105">
-                Explore Services
-              </a>
-            </div>
           </div>
 
-          {/* Slide Indicators */}
-          <div className="flex justify-center space-x-3 mt-12">
-            {heroSlides.map((_, index) => (
-              <button
+          {/* CTA Buttons */}
+          <div className="flex flex-col sm:flex-row justify-center items-center space-y-4 sm:space-y-0 sm:space-x-6">
+            <a 
+              href="#contact" 
+              className="group relative px-8 py-4 bg-gradient-to-r from-blue-600 to-emerald-600 rounded-lg font-semibold text-lg text-white overflow-hidden transition-all duration-300 transform hover:scale-105 hover:shadow-2xl"
+            >
+              <span className="relative z-10">Take the leap today</span>
+              <div className="absolute inset-0 bg-gradient-to-r from-emerald-600 to-blue-600 opacity-0 group-hover:opacity-100 transition-opacity duration-300"></div>
+            </a>
+            <a 
+              href="#services" 
+              className="px-8 py-4 border-2 border-blue-500 text-blue-400 rounded-lg font-semibold text-lg transition-all duration-300 transform hover:scale-105 hover:bg-blue-500/10 hover:border-blue-400"
+            >
+              Explore Services
+            </a>
+          </div>
+        </div>
+
+        {/* Progress Indicators */}
+        <div className="absolute bottom-20 left-1/2 transform -translate-x-1/2">
+          <div className="flex space-x-3">
+            {textRotations.map((_, index) => (
+              <div
                 key={index}
-                onClick={() => setCurrentSlide(index)}
-                className={`w-3 h-3 rounded-full transition-all duration-300 ${
-                  index === currentSlide 
-                    ? 'bg-blue-500 scale-125' 
-                    : 'bg-gray-500 hover:bg-gray-400'
+                className={`w-12 h-1 rounded-full transition-all duration-500 ${
+                  index === currentTextIndex 
+                    ? 'bg-gradient-to-r from-blue-500 to-emerald-500' 
+                    : 'bg-gray-600'
                 }`}
               />
             ))}
           </div>
-
-          {/* Progress Bar */}
-          <div className="w-full max-w-md mx-auto bg-gray-700 rounded-full h-1 overflow-hidden">
-            <div 
-              className="h-full bg-gradient-to-r from-blue-500 to-emerald-500 rounded-full transition-all duration-100 ease-linear"
-              style={{
-                width: `${((currentSlide + 1) / heroSlides.length) * 100}%`
-              }}
-            />
-          </div>
         </div>
       </div>
-      
-      {/* Floating Elements */}
-      <div className="absolute top-20 left-10 w-20 h-20 bg-emerald-500/20 rounded-full animate-float" style={{ animationDelay: '0s' }}></div>
-      <div className="absolute bottom-20 right-10 w-32 h-32 bg-purple-500/20 rounded-full animate-float" style={{ animationDelay: '1s' }}></div>
-      <div className="absolute top-1/2 left-20 w-16 h-16 bg-amber-500/20 rounded-full animate-float" style={{ animationDelay: '2s' }}></div>
     </section>
   );
 }
