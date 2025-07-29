@@ -38,7 +38,7 @@ export default function ServiceNowPage() {
           </div>
           
           <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
-            <div className="dynamic-stroke bg-gradient-to-br from-gray-800 to-gray-900 p-8 rounded-2xl border border-gray-700">
+            <div className="conic-border bg-gradient-to-br from-gray-800 to-gray-900 p-8 rounded-2xl border border-gray-700">
               <div className="w-16 h-16 bg-emerald-500/20 rounded-xl flex items-center justify-center mb-6 relative z-10">
                 <Workflow className="w-8 h-8 text-emerald-400" />
               </div>
@@ -54,7 +54,7 @@ export default function ServiceNowPage() {
               </ul>
             </div>
 
-            <div className="dynamic-stroke bg-gradient-to-br from-gray-800 to-gray-900 p-8 rounded-2xl border border-gray-700">
+            <div className="conic-border bg-gradient-to-br from-gray-800 to-gray-900 p-8 rounded-2xl border border-gray-700">
               <div className="w-16 h-16 bg-blue-500/20 rounded-xl flex items-center justify-center mb-6 relative z-10">
                 <Clock className="w-8 h-8 text-blue-400" />
               </div>
@@ -70,7 +70,7 @@ export default function ServiceNowPage() {
               </ul>
             </div>
 
-            <div className="dynamic-stroke bg-gradient-to-br from-gray-800 to-gray-900 p-8 rounded-2xl border border-gray-700">
+            <div className="conic-border bg-gradient-to-br from-gray-800 to-gray-900 p-8 rounded-2xl border border-gray-700">
               <div className="w-16 h-16 bg-purple-500/20 rounded-xl flex items-center justify-center mb-6 relative z-10">
                 <Users className="w-8 h-8 text-purple-400" />
               </div>
@@ -86,7 +86,7 @@ export default function ServiceNowPage() {
               </ul>
             </div>
 
-            <div className="dynamic-stroke bg-gradient-to-br from-gray-800 to-gray-900 p-8 rounded-2xl border border-gray-700">
+            <div className="conic-border bg-gradient-to-br from-gray-800 to-gray-900 p-8 rounded-2xl border border-gray-700">
               <div className="w-16 h-16 bg-amber-500/20 rounded-xl flex items-center justify-center mb-6 relative z-10">
                 <Shield className="w-8 h-8 text-amber-400" />
               </div>
@@ -102,7 +102,7 @@ export default function ServiceNowPage() {
               </ul>
             </div>
 
-            <div className="dynamic-stroke bg-gradient-to-br from-gray-800 to-gray-900 p-8 rounded-2xl border border-gray-700">
+            <div className="conic-border bg-gradient-to-br from-gray-800 to-gray-900 p-8 rounded-2xl border border-gray-700">
               <div className="w-16 h-16 bg-indigo-500/20 rounded-xl flex items-center justify-center mb-6 relative z-10">
                 <Zap className="w-8 h-8 text-indigo-400" />
               </div>
@@ -118,7 +118,7 @@ export default function ServiceNowPage() {
               </ul>
             </div>
 
-            <div className="dynamic-stroke bg-gradient-to-br from-gray-800 to-gray-900 p-8 rounded-2xl border border-gray-700">
+            <div className="conic-border bg-gradient-to-br from-gray-800 to-gray-900 p-8 rounded-2xl border border-gray-700">
               <div className="w-16 h-16 bg-rose-500/20 rounded-xl flex items-center justify-center mb-6 relative z-10">
                 <Settings className="w-8 h-8 text-rose-400" />
               </div>

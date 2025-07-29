@@ -26,7 +26,7 @@ export default function EnterprisePage() {
           <div className="grid md:grid-cols-3 gap-12">
             
             {/* SalesForce */}
-            <div className="dynamic-stroke bg-gradient-to-br from-gray-800 to-gray-900 p-8 rounded-2xl border border-gray-700 hover:border-blue-500 cursor-pointer transition-all duration-300" onClick={() => window.location.href = '/enterprise/salesforce'}>
+            <div className="conic-border bg-gradient-to-br from-gray-800 to-gray-900 p-8 rounded-2xl border border-gray-700 hover:border-blue-500 cursor-pointer transition-all duration-300" onClick={() => window.location.href = '/enterprise/salesforce'}>
               <div className="w-20 h-20 bg-blue-500/20 rounded-xl flex items-center justify-center mb-8 relative z-10">
                 <Cloud className="w-10 h-10 text-blue-400" />
               </div>
@@ -49,7 +49,7 @@ export default function EnterprisePage() {
             </div>
 
             {/* ServiceNow */}
-            <div className="dynamic-stroke bg-gradient-to-br from-gray-800 to-gray-900 p-8 rounded-2xl border border-gray-700 hover:border-emerald-500 cursor-pointer transition-all duration-300" onClick={() => window.location.href = '/enterprise/servicenow'}>
+            <div className="conic-border bg-gradient-to-br from-gray-800 to-gray-900 p-8 rounded-2xl border border-gray-700 hover:border-emerald-500 cursor-pointer transition-all duration-300" onClick={() => window.location.href = '/enterprise/servicenow'}>
               <div className="w-20 h-20 bg-emerald-500/20 rounded-xl flex items-center justify-center mb-8 relative z-10">
                 <Settings className="w-10 h-10 text-emerald-400" />
               </div>
@@ -72,7 +72,7 @@ export default function EnterprisePage() {
             </div>
 
             {/* SAP */}
-            <div className="dynamic-stroke bg-gradient-to-br from-gray-800 to-gray-900 p-8 rounded-2xl border border-gray-700 hover:border-purple-500 cursor-pointer transition-all duration-300" onClick={() => window.location.href = '/enterprise/sap'}>
+            <div className="conic-border bg-gradient-to-br from-gray-800 to-gray-900 p-8 rounded-2xl border border-gray-700 hover:border-purple-500 cursor-pointer transition-all duration-300" onClick={() => window.location.href = '/enterprise/sap'}>
               <div className="w-20 h-20 bg-purple-500/20 rounded-xl flex items-center justify-center mb-8 relative z-10">
                 <Database className="w-10 h-10 text-purple-400" />
               </div>
