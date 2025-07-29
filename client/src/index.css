@@ -129,41 +129,40 @@
     transform: translateY(-10px) scale(1.02);
   }
 
-  /* Dynamic bright spot running around border */
+  /* Replit-style bright spot running around border */
   .dynamic-stroke {
     position: relative;
-    overflow: visible;
+    overflow: hidden;
+    border: 1px solid transparent;
   }
 
   .dynamic-stroke::before {
     content: '';
     position: absolute;
-    top: -2px;
-    left: -2px;
-    right: -2px;
-    bottom: -2px;
+    inset: -1px;
     border-radius: inherit;
-    padding: 2px;
+    padding: 1px;
     background: conic-gradient(
       from 0deg,
       transparent 0deg,
-      transparent 350deg, 
-      rgba(59, 130, 246, 0.6) 352deg,
-      rgba(147, 197, 253, 0.9) 355deg,
-      rgba(255, 255, 255, 1) 357deg,
-      rgba(147, 197, 253, 0.9) 359deg,
-      rgba(59, 130, 246, 0.6) 361deg,
-      transparent 365deg,
+      transparent 270deg,
+      rgba(59, 130, 246, 0.0) 340deg,
+      rgba(59, 130, 246, 0.3) 350deg,
+      rgba(147, 197, 253, 0.8) 355deg,
+      rgba(255, 255, 255, 1) 358deg,
+      rgba(147, 197, 253, 0.8) 362deg,
+      rgba(59, 130, 246, 0.3) 370deg,
+      rgba(59, 130, 246, 0.0) 20deg,
+      transparent 90deg,
       transparent 360deg
     );
-    animation: rotating-spot 3s linear infinite;
-    opacity: 0;
-    transition: opacity 0.3s ease;
-    z-index: 1;
     mask: linear-gradient(#fff 0 0) content-box, linear-gradient(#fff 0 0);
     mask-composite: xor;
     -webkit-mask: linear-gradient(#fff 0 0) content-box, linear-gradient(#fff 0 0);
     -webkit-mask-composite: xor;
+    animation: spin-border 3s linear infinite;
+    opacity: 0;
+    transition: opacity 0.3s ease;
     pointer-events: none;
   }
 
@@ -171,35 +170,7 @@
     opacity: 1;
   }
 
-  .dynamic-stroke::after {
-    content: '';
-    position: absolute;
-    top: -4px;
-    left: -4px;
-    right: -4px;
-    bottom: -4px;
-    border-radius: inherit;
-    background: conic-gradient(
-      from 0deg,
-      transparent 355deg,
-      rgba(255, 255, 255, 0.8) 357deg,
-      rgba(255, 255, 255, 1) 358deg,
-      rgba(255, 255, 255, 0.8) 359deg,
-      transparent 361deg
-    );
-    animation: rotating-spot 3s linear infinite;
-    opacity: 0;
-    transition: opacity 0.3s ease;
-    z-index: 2;
-    filter: blur(1px);
-    pointer-events: none;
-  }
-
-  .dynamic-stroke:hover::after {
-    opacity: 1;
-  }
-
-  @keyframes rotating-spot {
+  @keyframes spin-border {
     0% {
       transform: rotate(0deg);
     }
