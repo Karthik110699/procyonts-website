@@ -2,7 +2,7 @@
 
 ## Overview
 
-This is a modern full-stack web application for Procyon Technostructure, built using React with TypeScript on the frontend and Express.js on the backend. The application showcases Procyon's AI and cloud transformation services through an elegant, animated single-page application with multiple interactive sections.
+This is a modern full-stack web application for Procyon Technostructure, built using React with TypeScript on the frontend and Express.js on the backend. The application showcases Procyon's AI and cloud transformation services through an elegant, multi-page application with dynamic hover effects and optimized SEO structure.
 
 ## User Preferences
 
@@ -36,16 +36,15 @@ Preferred communication style: Simple, everyday language.
 
 ### Frontend Components
 - **Loading Screen**: Animated company logo with letter-by-letter reveal using colorful letters
-- **Navigation**: Fixed navbar with glass morphism effect and dropdown menus for Enterprise/Services
-- **Hero Section**: Split-screen layout (Globant-style) with static content on left featuring "Digital Services, Product Engineering, Staffing, or AI-Powered Solutions? Procyon is Your Partner." headline, and dynamic motion graphics on right displaying rotating Procyon services from navigation menu. Interactive "Powered by Procyon" badge appears on user interaction
-- **About Section**: Company information with animated counters
-- **Services Section**: Grid layout showcasing enterprise solutions (SalesForce, ServiceNow, SAP)
-- **Four Pillars**: Concept-to-completion methodology visualization
-- **Testimonials**: Client feedback with gradient card designs
-- **Clients Section**: Trusted partner logos
-- **Social Impact**: Community engagement initiatives
-- **Careers Section**: Professional development opportunities
-- **Contact Form**: Multi-field contact form with validation
+- **Navigation**: Fixed navbar with clean navigation links to separate pages (no dropdowns)
+- **Hero Section**: Split-screen layout (Globant-style) with static content on left featuring "AI-Powered Solutions? Procyon's Your Partner!" headline, and dynamic motion graphics on right displaying rotating Procyon services
+- **Clickable Service Cards**: Dynamic stroke transitions on hover with cursor pointer for navigation to dedicated pages
+- **Multi-Page Structure**: Separate dedicated pages for better SEO and user experience
+  - **Enterprise Page**: Detailed SalesForce, ServiceNow, and SAP solutions
+  - **Services Page**: Comprehensive service offerings (Cloud, AI/ML, Data Analytics, Staff Augmentation, Government, Digital Engineering)
+  - **About Page**: Company mission, vision, values, and statistics
+  - **Careers Page**: Job listings, company culture, application process
+  - **Contact Page**: Contact form, company information, and response guarantees
 
 ### Backend Routes
 - **POST /api/contact**: Contact form submission endpoint with validation
