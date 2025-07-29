@@ -129,48 +129,53 @@
     transform: translateY(-10px) scale(1.02);
   }
 
-  /* Bright spot traveling along the border on hover only */
+  /* Traveling bright spot on stroke border */
   .dynamic-stroke {
     position: relative;
-    overflow: hidden;
+    overflow: visible;
   }
 
   .dynamic-stroke::before {
     content: '';
     position: absolute;
-    inset: -1px;
+    inset: -2px;
     border-radius: inherit;
-    padding: 1px;
+    padding: 2px;
     background: conic-gradient(
       from 0deg,
       transparent 0deg,
-      transparent 340deg,
-      rgba(59, 130, 246, 0.5) 350deg,
-      rgba(147, 197, 253, 0.8) 355deg,
-      #ffffff 358deg,
+      transparent 350deg,
+      rgba(59, 130, 246, 0.4) 355deg,
+      rgba(147, 197, 253, 0.8) 357deg,
+      rgba(255, 255, 255, 1) 359deg,
       rgba(147, 197, 253, 0.8) 361deg,
-      rgba(59, 130, 246, 0.5) 366deg,
-      transparent 376deg,
+      rgba(59, 130, 246, 0.4) 365deg,
+      transparent 370deg,
       transparent 360deg
     );
     mask: linear-gradient(#fff 0 0) content-box, linear-gradient(#fff 0 0);
     mask-composite: xor;
     -webkit-mask: linear-gradient(#fff 0 0) content-box, linear-gradient(#fff 0 0);
     -webkit-mask-composite: xor;
-    animation: spin-spot 2s linear infinite;
+    animation: travel-around 3s linear infinite paused;
     opacity: 0;
-    transition: opacity 0.2s ease;
+    transition: opacity 0.3s ease;
     pointer-events: none;
     z-index: 1;
   }
 
   .dynamic-stroke:hover::before {
     opacity: 1;
+    animation-play-state: running;
   }
 
-  @keyframes spin-spot {
-    0% { transform: rotate(0deg); }
-    100% { transform: rotate(360deg); }
+  @keyframes travel-around {
+    0% { 
+      transform: rotate(0deg);
+    }
+    100% { 
+      transform: rotate(360deg);
+    }
   }
 
   .reveal {
