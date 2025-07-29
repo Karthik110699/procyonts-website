@@ -129,6 +129,67 @@
     transform: translateY(-10px) scale(1.02);
   }
 
+  /* Dynamic running stroke animation */
+  .dynamic-stroke {
+    position: relative;
+    overflow: hidden;
+  }
+
+  .dynamic-stroke::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: -100%;
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(90deg, transparent, rgba(59, 130, 246, 0.4), transparent);
+    transition: left 0.8s ease;
+    border-radius: inherit;
+    z-index: 1;
+    pointer-events: none;
+  }
+
+  .dynamic-stroke:hover::before {
+    left: 100%;
+  }
+
+  .dynamic-stroke::after {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    border-radius: inherit;
+    padding: 2px;
+    background: linear-gradient(45deg, 
+      transparent 25%, 
+      rgba(59, 130, 246, 0.8) 25%, 
+      rgba(59, 130, 246, 0.8) 50%, 
+      transparent 50%, 
+      transparent 75%, 
+      rgba(59, 130, 246, 0.8) 75%);
+    background-size: 20px 20px;
+    -webkit-mask: linear-gradient(#fff 0 0) content-box, linear-gradient(#fff 0 0);
+    -webkit-mask-composite: xor;
+    mask: linear-gradient(#fff 0 0) content-box, linear-gradient(#fff 0 0);
+    mask-composite: exclude;
+    opacity: 0;
+    transition: opacity 0.3s ease;
+    animation: stroke-run 1.5s linear infinite;
+    pointer-events: none;
+    z-index: 2;
+  }
+
+  .dynamic-stroke:hover::after {
+    opacity: 1;
+  }
+
+  @keyframes stroke-run {
+    0% { background-position: 0px 0px; }
+    100% { background-position: 20px 20px; }
+  }
+
   .reveal {
     opacity: 0;
     transform: translateY(50px);
