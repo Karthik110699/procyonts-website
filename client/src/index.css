@@ -138,36 +138,30 @@
   .conic-border::before {
     content: '';
     position: absolute;
-    left: -50%;
-    top: -50%;
-    width: 200%;
-    height: 200%;
+    inset: -2px;
+    border-radius: inherit;
+    padding: 2px;
     background: conic-gradient(
-      transparent, 
-      rgba(168, 239, 255, 1), 
-      transparent 30%
+      from 0deg,
+      transparent 0deg,
+      transparent 340deg,
+      rgba(59, 130, 246, 0.6) 350deg,
+      rgba(147, 197, 253, 0.9) 355deg,
+      #ffffff 360deg,
+      rgba(147, 197, 253, 0.9) 365deg,
+      rgba(59, 130, 246, 0.6) 370deg,
+      transparent 380deg,
+      transparent 360deg
     );
-    animation: rotate-conic 3s linear infinite paused;
+    mask: linear-gradient(#fff 0 0) content-box, linear-gradient(#fff 0 0);
+    mask-composite: xor;
+    -webkit-mask: linear-gradient(#fff 0 0) content-box, linear-gradient(#fff 0 0);
+    -webkit-mask-composite: xor;
+    animation: rotate-conic 2s linear infinite paused;
     opacity: 0;
     transition: opacity 0.3s ease;
     pointer-events: none;
     z-index: 1;
-    mask: 
-      radial-gradient(
-        farthest-side at center,
-        transparent calc(100% - 16px),
-        black calc(100% - 15px),
-        black calc(100% - 1px),
-        transparent 100%
-      );
-    -webkit-mask: 
-      radial-gradient(
-        farthest-side at center,
-        transparent calc(100% - 16px),
-        black calc(100% - 15px),
-        black calc(100% - 1px), 
-        transparent 100%
-      );
   }
 
   .conic-border:hover::before {
