@@ -98,16 +98,12 @@ export default function HeroSection() {
             
             {/* Fixed Innovative Text */}
             <div className="mb-8">
-              <h1 className="text-4xl lg:text-5xl xl:text-6xl font-bold leading-tight text-white mb-6">
-                <span className="block mb-2">Digital Services, Product Engineering,</span>
-                <span className="block mb-2">Staffing, or</span>
+              <h1 className="text-5xl lg:text-6xl xl:text-7xl font-bold leading-tight text-white mb-6">
                 <span className="block bg-gradient-to-r from-blue-400 to-emerald-400 bg-clip-text text-transparent mb-2">
                   AI-Powered Solutions?
                 </span>
-                <span className="block">Procyon is Your Partner.</span>
+                <span className="block">Procyon's Your Partner!</span>
               </h1>
-              
-
             </div>
 
 
