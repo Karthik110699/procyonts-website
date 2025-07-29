@@ -107,9 +107,7 @@ export default function HeroSection() {
                 <span className="block">Procyon is Your Partner.</span>
               </h1>
               
-              <p className="text-xl text-gray-300 leading-relaxed mb-8">
-                Boost productivity and accelerate innovation today with AI embedded in every phase of the software development cycle.
-              </p>
+
             </div>
 
 
