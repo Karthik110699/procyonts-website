@@ -129,11 +129,10 @@
     transform: translateY(-10px) scale(1.02);
   }
 
-  /* Replit-style bright spot running around border */
+  /* Bright spot traveling along the stroke/border */
   .dynamic-stroke {
     position: relative;
     overflow: hidden;
-    border: 1px solid transparent;
   }
 
   .dynamic-stroke::before {
@@ -141,26 +140,27 @@
     position: absolute;
     inset: -1px;
     border-radius: inherit;
-    padding: 1px;
     background: conic-gradient(
       from 0deg,
       transparent 0deg,
-      transparent 270deg,
-      rgba(59, 130, 246, 0.0) 340deg,
-      rgba(59, 130, 246, 0.3) 350deg,
-      rgba(147, 197, 253, 0.8) 355deg,
+      transparent 350deg,
+      rgba(59, 130, 246, 0.3) 354deg,
+      rgba(147, 197, 253, 0.7) 356deg,
       rgba(255, 255, 255, 1) 358deg,
-      rgba(147, 197, 253, 0.8) 362deg,
-      rgba(59, 130, 246, 0.3) 370deg,
-      rgba(59, 130, 246, 0.0) 20deg,
-      transparent 90deg,
+      rgba(147, 197, 253, 0.7) 360deg,
+      rgba(59, 130, 246, 0.3) 362deg,
+      transparent 366deg,
       transparent 360deg
     );
-    mask: linear-gradient(#fff 0 0) content-box, linear-gradient(#fff 0 0);
+    mask: 
+      linear-gradient(#000 0 0) content-box,
+      linear-gradient(#000 0 0);
     mask-composite: xor;
-    -webkit-mask: linear-gradient(#fff 0 0) content-box, linear-gradient(#fff 0 0);
+    -webkit-mask: 
+      linear-gradient(#000 0 0) content-box,
+      linear-gradient(#000 0 0);
     -webkit-mask-composite: xor;
-    animation: spin-border 3s linear infinite;
+    animation: rotate-spot 2.5s linear infinite;
     opacity: 0;
     transition: opacity 0.3s ease;
     pointer-events: none;
@@ -170,11 +170,11 @@
     opacity: 1;
   }
 
-  @keyframes spin-border {
-    0% {
+  @keyframes rotate-spot {
+    from {
       transform: rotate(0deg);
     }
-    100% {
+    to {
       transform: rotate(360deg);
     }
   }
