@@ -140,16 +140,50 @@
     transform: translateY(0);
   }
 
+  /* Magdemy-style loading animation */
   .loading-letter {
     opacity: 0;
-    transform: translateY(20px);
-    animation: letterAppear 0.6s ease forwards;
+    animation: magdemyLetterLoad 1.5s ease-out forwards;
   }
 
-  @keyframes letterAppear {
-    to {
+  @keyframes magdemyLetterLoad {
+    0% {
+      opacity: 0;
+      transform: scale(0.5) rotate(-5deg);
+    }
+    30% {
       opacity: 1;
-      transform: translateY(0);
+      transform: scale(1.05) rotate(0deg);
+    }
+    100% {
+      opacity: 1;
+      transform: scale(1) rotate(0deg);
+    }
+  }
+
+  /* SVG outline-to-fill animation like Magdemy */
+  .svg-letter {
+    stroke: #000000;
+    stroke-width: 3;
+    fill: transparent;
+    stroke-dasharray: 1000;
+    stroke-dashoffset: 1000;
+    animation: drawAndFill 2s ease-out forwards;
+  }
+
+  @keyframes drawAndFill {
+    0% {
+      stroke-dashoffset: 1000;
+      fill: transparent;
+    }
+    60% {
+      stroke-dashoffset: 0;
+      fill: transparent;
+    }
+    100% {
+      stroke-dashoffset: 0;
+      fill: #000000;
+      stroke: #000000;
     }
   }
 
