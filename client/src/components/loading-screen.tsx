@@ -14,7 +14,7 @@ export default function LoadingScreen() {
   if (!isVisible) return null;
 
   return (
-    <div className="fixed inset-0 z-50 bg-procyon-dark flex items-center justify-center">
+    <div className="fixed inset-0 z-50 bg-white flex items-center justify-center">
       <div className="text-center">
         {/* Exact Procyon Logo Recreation - Vector Animation */}
         <div className="flex justify-center items-center mb-8">
@@ -65,7 +65,7 @@ export default function LoadingScreen() {
           <div className="loading-letter" style={{ animationDelay: '0.4s' }}>
             <svg width="50" height="70" viewBox="0 0 50 70">
               <ellipse cx="25" cy="35" rx="20" ry="25" fill="#000000" />
-              <ellipse cx="25" cy="35" rx="12" ry="17" fill="#0F172A" />
+              <ellipse cx="25" cy="35" rx="12" ry="17" fill="#FFFFFF" />
             </svg>
           </div>
 
@@ -87,7 +87,7 @@ export default function LoadingScreen() {
           <div className="loading-letter" style={{ animationDelay: '0.7s' }}>
             <svg width="50" height="70" viewBox="0 0 50 70">
               <ellipse cx="25" cy="35" rx="20" ry="25" fill="#000000" />
-              <ellipse cx="25" cy="35" rx="12" ry="17" fill="#0F172A" />
+              <ellipse cx="25" cy="35" rx="12" ry="17" fill="#FFFFFF" />
             </svg>
           </div>
 
