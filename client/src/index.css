@@ -187,130 +187,195 @@
     }
   }
 
-  /* Innovative Logo Asset Animations */
-  .logo-morph-container {
+  /* SPECTACULAR WOW ANIMATION */
+  .logo-spectacular {
     position: relative;
-    z-index: 10;
+    perspective: 1000px;
+    transform-style: preserve-3d;
   }
 
   .procyon-logo-reveal {
     opacity: 0;
-    transform: scale(0.3) rotate(-15deg);
-    filter: blur(20px) brightness(0) contrast(2);
-    animation: logoMorphReveal 3s cubic-bezier(0.23, 1, 0.32, 1) forwards;
+    transform: rotateX(90deg) rotateY(45deg) scale(0.1);
+    filter: blur(30px) hue-rotate(0deg) saturate(3);
+    animation: spectacularReveal 4s cubic-bezier(0.175, 0.885, 0.32, 1.275) forwards;
+    transform-origin: center center;
   }
 
-  @keyframes logoMorphReveal {
+  @keyframes spectacularReveal {
     0% {
       opacity: 0;
-      transform: scale(0.3) rotate(-15deg);
-      filter: blur(20px) brightness(0) contrast(2);
-      clip-path: polygon(50% 50%, 50% 50%, 50% 50%, 50% 50%);
+      transform: rotateX(90deg) rotateY(45deg) scale(0.1) translateZ(-500px);
+      filter: blur(30px) hue-rotate(0deg) saturate(3) brightness(0);
+      clip-path: circle(0% at center);
     }
-    20% {
-      opacity: 0.3;
-      transform: scale(0.6) rotate(-8deg);
-      filter: blur(15px) brightness(0.3) contrast(1.8);
-      clip-path: polygon(30% 30%, 70% 30%, 70% 70%, 30% 70%);
+    10% {
+      opacity: 0.2;
+      transform: rotateX(75deg) rotateY(30deg) scale(0.3) translateZ(-300px);
+      filter: blur(25px) hue-rotate(90deg) saturate(2.5) brightness(0.3);
+      clip-path: circle(10% at center);
     }
-    40% {
-      opacity: 0.6;
-      transform: scale(0.85) rotate(-3deg);
-      filter: blur(8px) brightness(0.7) contrast(1.4);
-      clip-path: polygon(10% 10%, 90% 10%, 90% 90%, 10% 90%);
+    25% {
+      opacity: 0.5;
+      transform: rotateX(45deg) rotateY(15deg) scale(0.6) translateZ(-100px);
+      filter: blur(15px) hue-rotate(180deg) saturate(2) brightness(0.7);
+      clip-path: circle(30% at center);
     }
-    60% {
+    50% {
       opacity: 0.8;
-      transform: scale(1.05) rotate(2deg);
-      filter: blur(4px) brightness(0.9) contrast(1.1);
-      clip-path: polygon(0% 0%, 100% 0%, 100% 100%, 0% 100%);
+      transform: rotateX(15deg) rotateY(5deg) scale(1.2) translateZ(50px);
+      filter: blur(5px) hue-rotate(270deg) saturate(1.5) brightness(1.2);
+      clip-path: circle(60% at center);
     }
-    80% {
+    75% {
       opacity: 0.95;
-      transform: scale(1.02) rotate(1deg);
-      filter: blur(1px) brightness(1) contrast(1);
+      transform: rotateX(-5deg) rotateY(-2deg) scale(1.05) translateZ(20px);
+      filter: blur(2px) hue-rotate(360deg) saturate(1.2) brightness(1.1);
+      clip-path: circle(85% at center);
+    }
+    90% {
+      opacity: 1;
+      transform: rotateX(2deg) rotateY(1deg) scale(1.02) translateZ(5px);
+      filter: blur(1px) hue-rotate(0deg) saturate(1.1) brightness(1);
+      clip-path: circle(95% at center);
     }
     100% {
       opacity: 1;
-      transform: scale(1) rotate(0deg);
-      filter: blur(0px) brightness(1) contrast(1);
-      clip-path: polygon(0% 0%, 100% 0%, 100% 100%, 0% 100%);
+      transform: rotateX(0deg) rotateY(0deg) scale(1) translateZ(0px);
+      filter: blur(0px) hue-rotate(0deg) saturate(1) brightness(1);
+      clip-path: circle(100% at center);
     }
   }
 
-  .logo-glow-effects {
+  .energy-particles {
     position: absolute;
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
+    width: 1200px;
+    height: 1200px;
     pointer-events: none;
     z-index: 5;
   }
 
-  .glow-ring-1, .glow-ring-2, .glow-ring-3 {
+  .particle {
+    position: absolute;
+    width: 12px;
+    height: 12px;
+    background: radial-gradient(circle, #fff 0%, transparent 70%);
+    border-radius: 50%;
+    opacity: 0;
+    box-shadow: 0 0 20px currentColor;
+  }
+
+  .particle:nth-child(1) { animation: particleExplosion1 3s ease-out forwards; animation-delay: 0.5s; }
+  .particle:nth-child(2) { animation: particleExplosion2 3s ease-out forwards; animation-delay: 0.6s; }
+  .particle:nth-child(3) { animation: particleExplosion3 3s ease-out forwards; animation-delay: 0.7s; }
+  .particle:nth-child(4) { animation: particleExplosion4 3s ease-out forwards; animation-delay: 0.8s; }
+  .particle:nth-child(5) { animation: particleExplosion5 3s ease-out forwards; animation-delay: 0.9s; }
+  .particle:nth-child(6) { animation: particleExplosion6 3s ease-out forwards; animation-delay: 1.0s; }
+  .particle:nth-child(7) { animation: particleExplosion7 3s ease-out forwards; animation-delay: 1.1s; }
+  .particle:nth-child(8) { animation: particleExplosion8 3s ease-out forwards; animation-delay: 1.2s; }
+
+  @keyframes particleExplosion1 {
+    0% { opacity: 0; transform: translate(0, 0) scale(0); background: #DC2626; }
+    20% { opacity: 1; transform: translate(-600px, -450px) scale(3); }
+    100% { opacity: 0; transform: translate(-1200px, -900px) scale(0); }
+  }
+
+  @keyframes particleExplosion2 {
+    0% { opacity: 0; transform: translate(0, 0) scale(0); background: #059669; }
+    20% { opacity: 1; transform: translate(540px, -360px) scale(2.5); }
+    100% { opacity: 0; transform: translate(1080px, -750px) scale(0); }
+  }
+
+  @keyframes particleExplosion3 {
+    0% { opacity: 0; transform: translate(0, 0) scale(0); background: #2563EB; }
+    20% { opacity: 1; transform: translate(-450px, 510px) scale(3.5); }
+    100% { opacity: 0; transform: translate(-900px, 1050px) scale(0); }
+  }
+
+  @keyframes particleExplosion4 {
+    0% { opacity: 0; transform: translate(0, 0) scale(0); background: #EAB308; }
+    20% { opacity: 1; transform: translate(660px, 420px) scale(2.8); }
+    100% { opacity: 0; transform: translate(1350px, 840px) scale(0); }
+  }
+
+  @keyframes particleExplosion5 {
+    0% { opacity: 0; transform: translate(0, 0) scale(0); background: #7C3AED; }
+    20% { opacity: 1; transform: translate(-300px, -600px) scale(3.2); }
+    100% { opacity: 0; transform: translate(-600px, -1200px) scale(0); }
+  }
+
+  @keyframes particleExplosion6 {
+    0% { opacity: 0; transform: translate(0, 0) scale(0); background: #EC4899; }
+    20% { opacity: 1; transform: translate(480px, 570px) scale(2.7); }
+    100% { opacity: 0; transform: translate(960px, 1140px) scale(0); }
+  }
+
+  @keyframes particleExplosion7 {
+    0% { opacity: 0; transform: translate(0, 0) scale(0); background: #F97316; }
+    20% { opacity: 1; transform: translate(-540px, 240px) scale(3.4); }
+    100% { opacity: 0; transform: translate(-1080px, 480px) scale(0); }
+  }
+
+  @keyframes particleExplosion8 {
+    0% { opacity: 0; transform: translate(0, 0) scale(0); background: #10B981; }
+    20% { opacity: 1; transform: translate(360px, -540px) scale(2.2); }
+    100% { opacity: 0; transform: translate(720px, -1080px) scale(0); }
+  }
+
+  .cosmic-ring {
     position: absolute;
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
     border-radius: 50%;
+    border: 2px solid transparent;
     opacity: 0;
+    z-index: 8;
   }
 
-  .glow-ring-1 {
-    width: 200px;
-    height: 200px;
-    background: radial-gradient(circle, transparent 60%, rgba(220, 38, 38, 0.3) 70%, transparent 80%);
-    animation: glowPulse1 4s ease-in-out infinite;
-    animation-delay: 0.5s;
+  .cosmic-ring-1 {
+    width: 800px;
+    height: 800px;
+    background: conic-gradient(from 0deg, #DC2626, #EAB308, #059669, #2563EB, #7C3AED, #EC4899, #DC2626);
+    -webkit-mask: radial-gradient(circle, transparent 48%, black 50%, black 52%, transparent 54%);
+    mask: radial-gradient(circle, transparent 48%, black 50%, black 52%, transparent 54%);
+    animation: cosmicSpin1 4s linear infinite, fadeInOut1 6s ease-in-out;
+    animation-delay: 0.3s, 0.3s;
+    box-shadow: 0 0 100px rgba(220, 38, 38, 0.3);
   }
 
-  .glow-ring-2 {
-    width: 300px;
-    height: 300px;
-    background: radial-gradient(circle, transparent 60%, rgba(5, 150, 105, 0.2) 70%, transparent 80%);
-    animation: glowPulse2 4s ease-in-out infinite;
-    animation-delay: 1s;
+  .cosmic-ring-2 {
+    width: 1200px;
+    height: 1200px;
+    background: conic-gradient(from 180deg, #2563EB, #7C3AED, #EC4899, #DC2626, #EAB308, #059669, #2563EB);
+    -webkit-mask: radial-gradient(circle, transparent 48%, black 50%, black 51%, transparent 52%);
+    mask: radial-gradient(circle, transparent 48%, black 50%, black 51%, transparent 52%);
+    animation: cosmicSpin2 6s linear infinite reverse, fadeInOut2 8s ease-in-out;
+    animation-delay: 0.8s, 0.8s;
+    box-shadow: 0 0 150px rgba(37, 99, 235, 0.2);
   }
 
-  .glow-ring-3 {
-    width: 400px;
-    height: 400px;
-    background: radial-gradient(circle, transparent 60%, rgba(37, 99, 235, 0.15) 70%, transparent 80%);
-    animation: glowPulse3 4s ease-in-out infinite;
-    animation-delay: 1.5s;
+  @keyframes cosmicSpin1 {
+    from { transform: translate(-50%, -50%) rotate(0deg); }
+    to { transform: translate(-50%, -50%) rotate(360deg); }
   }
 
-  @keyframes glowPulse1 {
-    0%, 100% {
-      opacity: 0;
-      transform: translate(-50%, -50%) scale(0.8);
-    }
-    50% {
-      opacity: 1;
-      transform: translate(-50%, -50%) scale(1.2);
-    }
+  @keyframes cosmicSpin2 {
+    from { transform: translate(-50%, -50%) rotate(0deg); }
+    to { transform: translate(-50%, -50%) rotate(-360deg); }
   }
 
-  @keyframes glowPulse2 {
-    0%, 100% {
-      opacity: 0;
-      transform: translate(-50%, -50%) scale(0.6) rotate(0deg);
-    }
-    50% {
-      opacity: 1;
-      transform: translate(-50%, -50%) scale(1.1) rotate(180deg);
-    }
+  @keyframes fadeInOut1 {
+    0%, 100% { opacity: 0; }
+    20%, 80% { opacity: 0.8; }
   }
 
-  @keyframes glowPulse3 {
-    0%, 100% {
-      opacity: 0;
-      transform: translate(-50%, -50%) scale(0.4) rotate(0deg);
-    }
-    50% {
-      opacity: 1;
-      transform: translate(-50%, -50%) scale(1) rotate(-180deg);
-    }
+  @keyframes fadeInOut2 {
+    0%, 100% { opacity: 0; }
+    25%, 75% { opacity: 0.6; }
   }
 
   @keyframes float {

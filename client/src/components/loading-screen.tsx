@@ -17,23 +17,33 @@ export default function LoadingScreen() {
   return (
     <div className="fixed inset-0 z-50 bg-white flex items-center justify-center">
       <div className="text-center">
-        {/* Innovative Logo Asset Loading */}
-        <div className="relative">
-          {/* Morphing reveal animation */}
-          <div className="logo-morph-container">
+        {/* SPECTACULAR BIG WOW ANIMATION */}
+        <div className="logo-spectacular relative w-full h-screen flex items-center justify-center">
+          
+          {/* Cosmic Rings */}
+          <div className="cosmic-ring cosmic-ring-1"></div>
+          <div className="cosmic-ring cosmic-ring-2"></div>
+          
+          {/* Energy Particles Explosion */}
+          <div className="energy-particles">
+            {Array.from({ length: 8 }, (_, i) => (
+              <div key={i} className="particle" style={{ 
+                top: '50%', 
+                left: '50%', 
+                transform: 'translate(-50%, -50%)'
+              }}></div>
+            ))}
+          </div>
+          
+          {/* Main Logo - MASSIVE SIZE */}
+          <div className="relative z-10">
             <img 
               src={procyonLogoPath} 
               alt="Procyon Logo" 
-              className="procyon-logo-reveal max-w-md h-auto"
+              className="procyon-logo-reveal w-[800px] h-auto max-w-none"
             />
           </div>
           
-          {/* Interactive glow effects */}
-          <div className="logo-glow-effects">
-            <div className="glow-ring-1"></div>
-            <div className="glow-ring-2"></div>
-            <div className="glow-ring-3"></div>
-          </div>
         </div>
         
         {/* Loading indicator */}
