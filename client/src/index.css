@@ -162,8 +162,96 @@
     }
   }
 
+  @keyframes morphing {
+    0%, 100% {
+      border-radius: 60% 40% 30% 70%/60% 30% 70% 40%;
+      transform: translate3d(0, 0, 0) rotateZ(0deg);
+    }
+    34% {
+      border-radius: 70% 60% 50% 40%/50% 60% 30% 60%;
+      transform: translate3d(0, -5px, 0) rotateZ(-5deg);
+    }
+    67% {
+      border-radius: 100% 60% 60% 100%/100% 100% 60% 60%;
+      transform: translate3d(0, 5px, 0) rotateZ(5deg);
+    }
+  }
+
+  @keyframes drift {
+    0% {
+      transform: translateX(-100px) translateY(0px) rotate(0deg);
+      opacity: 0.3;
+    }
+    25% {
+      opacity: 0.8;
+    }
+    50% {
+      transform: translateX(100px) translateY(-50px) rotate(180deg);
+      opacity: 1;
+    }
+    75% {
+      opacity: 0.6;
+    }
+    100% {
+      transform: translateX(-100px) translateY(0px) rotate(360deg);
+      opacity: 0.3;
+    }
+  }
+
+  @keyframes particle-float {
+    0%, 100% {
+      transform: translateY(0px) translateX(0px) scale(1);
+      opacity: 0.4;
+    }
+    50% {
+      transform: translateY(-80px) translateX(40px) scale(1.5);
+      opacity: 0.8;
+    }
+  }
+
+  @keyframes pulse-glow {
+    0%, 100% {
+      box-shadow: 0 0 20px rgba(59, 130, 246, 0.3);
+      transform: scale(1);
+    }
+    50% {
+      box-shadow: 0 0 40px rgba(59, 130, 246, 0.6), 0 0 60px rgba(16, 185, 129, 0.4);
+      transform: scale(1.1);
+    }
+  }
+
+  @keyframes gradient-shift {
+    0%, 100% {
+      background-position: 0% 50%;
+    }
+    50% {
+      background-position: 100% 50%;
+    }
+  }
+
   .animate-float {
     animation: float 3s ease-in-out infinite;
+  }
+
+  .animate-morphing {
+    animation: morphing 8s ease-in-out infinite;
+  }
+
+  .animate-drift {
+    animation: drift 15s linear infinite;
+  }
+
+  .animate-particle-float {
+    animation: particle-float 6s ease-in-out infinite;
+  }
+
+  .animate-pulse-glow {
+    animation: pulse-glow 4s ease-in-out infinite;
+  }
+
+  .animate-gradient-shift {
+    background-size: 200% 200%;
+    animation: gradient-shift 6s ease infinite;
   }
 
   @keyframes fadeInUp {
