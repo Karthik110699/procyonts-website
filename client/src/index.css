@@ -129,18 +129,37 @@
     transform: translateY(-10px) scale(1.02);
   }
 
-  /* SVG border dash animation for traveling spark */
-  @keyframes border-dash {
-    0% {
-      stroke-dashoffset: 240;
-    }
-    100% {
-      stroke-dashoffset: 0;
-    }
+  /* Conic gradient traveling bright spot */
+  .conic-border {
+    position: relative;
+    overflow: hidden;
   }
 
-  .animate-border-dash {
-    animation: border-dash 3s linear infinite;
+  .conic-border::before {
+    content: '';
+    position: absolute;
+    left: -50%;
+    top: -50%;
+    width: 200%;
+    height: 200%;
+    background: conic-gradient(transparent, rgba(168, 239, 255, 1), transparent 30%);
+    animation: rotate-conic 4s linear infinite paused;
+    opacity: 0;
+    transition: opacity 0.3s ease;
+    pointer-events: none;
+    mask: radial-gradient(farthest-side, transparent calc(100% - 2px), black calc(100% - 1px));
+    -webkit-mask: radial-gradient(farthest-side, transparent calc(100% - 2px), black calc(100% - 1px));
+  }
+
+  .conic-border:hover::before {
+    opacity: 1;
+    animation-play-state: running;
+  }
+
+  @keyframes rotate-conic {
+    100% {
+      transform: rotate(1turn);
+    }
   }
 
   .reveal {
