@@ -129,53 +129,41 @@
     transform: translateY(-10px) scale(1.02);
   }
 
-  /* Bright spot traveling along the stroke/border */
+  /* Bright spot traveling along the border using border-image */
   .dynamic-stroke {
     position: relative;
-    overflow: hidden;
+    overflow: visible;
+    border: 2px solid transparent;
+    background: linear-gradient(135deg, rgb(31, 41, 55), rgb(17, 24, 39)) padding-box,
+                conic-gradient(from 0deg, transparent 0deg, transparent 340deg, #3b82f6 350deg, #ffffff 358deg, #3b82f6 366deg, transparent 376deg, transparent 360deg) border-box;
+    border-radius: 16px;
+    animation: none;
   }
 
-  .dynamic-stroke::before {
-    content: '';
-    position: absolute;
-    inset: -1px;
-    border-radius: inherit;
-    background: conic-gradient(
-      from 0deg,
-      transparent 0deg,
-      transparent 350deg,
-      rgba(59, 130, 246, 0.3) 354deg,
-      rgba(147, 197, 253, 0.7) 356deg,
-      rgba(255, 255, 255, 1) 358deg,
-      rgba(147, 197, 253, 0.7) 360deg,
-      rgba(59, 130, 246, 0.3) 362deg,
-      transparent 366deg,
-      transparent 360deg
-    );
-    mask: 
-      linear-gradient(#000 0 0) content-box,
-      linear-gradient(#000 0 0);
-    mask-composite: xor;
-    -webkit-mask: 
-      linear-gradient(#000 0 0) content-box,
-      linear-gradient(#000 0 0);
-    -webkit-mask-composite: xor;
-    animation: rotate-spot 2.5s linear infinite;
-    opacity: 0;
-    transition: opacity 0.3s ease;
-    pointer-events: none;
+  .dynamic-stroke:hover {
+    animation: rotate-border 2s linear infinite;
   }
 
-  .dynamic-stroke:hover::before {
-    opacity: 1;
-  }
-
-  @keyframes rotate-spot {
-    from {
-      transform: rotate(0deg);
+  @keyframes rotate-border {
+    0% {
+      background: linear-gradient(135deg, rgb(31, 41, 55), rgb(17, 24, 39)) padding-box,
+                  conic-gradient(from 0deg, transparent 0deg, transparent 340deg, #3b82f6 350deg, #ffffff 358deg, #3b82f6 366deg, transparent 376deg, transparent 360deg) border-box;
     }
-    to {
-      transform: rotate(360deg);
+    25% {
+      background: linear-gradient(135deg, rgb(31, 41, 55), rgb(17, 24, 39)) padding-box,
+                  conic-gradient(from 90deg, transparent 0deg, transparent 340deg, #3b82f6 350deg, #ffffff 358deg, #3b82f6 366deg, transparent 376deg, transparent 360deg) border-box;
+    }
+    50% {
+      background: linear-gradient(135deg, rgb(31, 41, 55), rgb(17, 24, 39)) padding-box,
+                  conic-gradient(from 180deg, transparent 0deg, transparent 340deg, #3b82f6 350deg, #ffffff 358deg, #3b82f6 366deg, transparent 376deg, transparent 360deg) border-box;
+    }
+    75% {
+      background: linear-gradient(135deg, rgb(31, 41, 55), rgb(17, 24, 39)) padding-box,
+                  conic-gradient(from 270deg, transparent 0deg, transparent 340deg, #3b82f6 350deg, #ffffff 358deg, #3b82f6 366deg, transparent 376deg, transparent 360deg) border-box;
+    }
+    100% {
+      background: linear-gradient(135deg, rgb(31, 41, 55), rgb(17, 24, 39)) padding-box,
+                  conic-gradient(from 360deg, transparent 0deg, transparent 340deg, #3b82f6 350deg, #ffffff 358deg, #3b82f6 366deg, transparent 376deg, transparent 360deg) border-box;
     }
   }
 
