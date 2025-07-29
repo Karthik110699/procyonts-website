@@ -7,7 +7,7 @@ export default function LoadingScreen() {
   useEffect(() => {
     const timer = setTimeout(() => {
       setIsVisible(false);
-    }, 2500);
+    }, 3500);
 
     return () => clearTimeout(timer);
   }, []);
@@ -15,7 +15,7 @@ export default function LoadingScreen() {
   if (!isVisible) return null;
 
   return (
-    <div className="fixed inset-0 z-50 bg-white flex items-center justify-center">
+    <div className="fixed inset-0 z-50 bg-procyon-dark flex items-center justify-center">
       <div className="text-center">
         {/* SPECTACULAR BIG WOW ANIMATION */}
         <div className="logo-spectacular relative w-full h-screen flex items-center justify-center">
@@ -36,12 +36,16 @@ export default function LoadingScreen() {
           </div>
           
           {/* Main Logo - MASSIVE SIZE */}
-          <div className="relative z-10">
+          <div className="relative z-10 flex flex-col items-center">
             <img 
               src={procyonLogoPath} 
               alt="Procyon Logo" 
               className="procyon-logo-reveal w-[800px] h-auto max-w-none"
             />
+            <div className="company-name-reveal mt-8">
+              <h1 className="text-6xl font-bold text-white tracking-wider">PROCYON</h1>
+              <p className="text-xl text-gray-300 mt-2 tracking-widest">TECHNOSTRUCTURE</p>
+            </div>
           </div>
           
         </div>
