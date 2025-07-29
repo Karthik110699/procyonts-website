@@ -134,8 +134,52 @@ export default function HeroSection() {
         </div>
 
         {/* Right Side - Motion Graphics Space */}
-        <div className="w-1/2 relative">
-          {/* Content overlay on motion graphics if needed */}
+        <div className="w-1/2 relative flex items-center justify-center">
+          {/* Floating Service Names */}
+          <div className="absolute inset-0 flex items-center justify-center">
+            <div className="text-center">
+              <div className="text-6xl lg:text-7xl font-bold text-white/20 mb-4 transition-all duration-500">
+                {procyonServices[currentServiceIndex]}
+              </div>
+              
+              {/* Service Icons/Indicators */}
+              <div className="flex justify-center space-x-2">
+                {procyonServices.map((_, index) => (
+                  <div
+                    key={index}
+                    className={`w-2 h-2 rounded-full transition-all duration-300 ${
+                      index === currentServiceIndex 
+                        ? 'bg-blue-400 scale-150' 
+                        : 'bg-white/30'
+                    }`}
+                  />
+                ))}
+              </div>
+            </div>
+          </div>
+          
+          {/* Service-themed particles */}
+          <div className="absolute inset-0">
+            {procyonServices.map((service, index) => (
+              <div
+                key={service}
+                className={`absolute transition-all duration-1000 ${
+                  index === currentServiceIndex ? 'opacity-100 scale-100' : 'opacity-30 scale-75'
+                }`}
+                style={{
+                  top: `${20 + (index * 10)}%`,
+                  right: `${15 + (index * 8)}%`,
+                  animationDelay: `${index * 0.5}s`
+                }}
+              >
+                <div className="w-4 h-4 bg-gradient-to-r from-blue-400 to-emerald-400 rounded-full animate-particle-float">
+                  <div className="absolute -top-8 left-1/2 transform -translate-x-1/2 text-xs font-semibold text-white/60 whitespace-nowrap">
+                    {service}
+                  </div>
+                </div>
+              </div>
+            ))}
+          </div>
         </div>
       </div>
 

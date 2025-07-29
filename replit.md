@@ -37,7 +37,7 @@ Preferred communication style: Simple, everyday language.
 ### Frontend Components
 - **Loading Screen**: Animated company logo with letter-by-letter reveal using colorful letters
 - **Navigation**: Fixed navbar with glass morphism effect and dropdown menus for Enterprise/Services
-- **Hero Section**: Rotating banner carousel (Globant-style) with 3 slides featuring AI/cloud, Salesforce, and ServiceNow messaging, each with "Powered by Procyon" branding, slide indicators, and progress bar
+- **Hero Section**: Split-screen layout (Globant-style) with static content on left featuring "Digital Services, Product Engineering, Staffing, or AI-Powered Solutions? Procyon is Your Partner." headline, and dynamic motion graphics on right displaying rotating Procyon services from navigation menu. Interactive "Powered by Procyon" badge appears on user interaction
 - **About Section**: Company information with animated counters
 - **Services Section**: Grid layout showcasing enterprise solutions (SalesForce, ServiceNow, SAP)
 - **Four Pillars**: Concept-to-completion methodology visualization
