@@ -1,7 +1,6 @@
 import { useState, useEffect } from "react";
 
 export default function HeroSection() {
-  const [poweredByVisible, setPoweredByVisible] = useState(false);
   const [currentServiceIndex, setCurrentServiceIndex] = useState(0);
   
   const procyonServices = [
@@ -15,24 +14,7 @@ export default function HeroSection() {
     "Government Services"
   ];
 
-  useEffect(() => {
-    // Show "Powered by" on interaction/scroll
-    const handleInteraction = () => {
-      setPoweredByVisible(true);
-    };
 
-    window.addEventListener('scroll', handleInteraction);
-    window.addEventListener('mousemove', handleInteraction);
-    
-    // Auto show after 3 seconds
-    const timer = setTimeout(() => setPoweredByVisible(true), 3000);
-
-    return () => {
-      window.removeEventListener('scroll', handleInteraction);
-      window.removeEventListener('mousemove', handleInteraction);
-      clearTimeout(timer);
-    };
-  }, []);
 
   useEffect(() => {
     // Rotate through services
@@ -177,26 +159,7 @@ export default function HeroSection() {
         </div>
       </div>
 
-      {/* Interactive "Powered by" Badge */}
-      {poweredByVisible && (
-        <div className="fixed bottom-8 right-8 z-20 transition-all duration-500 transform">
-          <div className="relative inline-flex items-center px-6 py-3 bg-gradient-to-r from-blue-600/30 to-emerald-600/30 backdrop-blur-md border border-blue-500/40 rounded-full animate-gradient-shift overflow-hidden">
-            {/* Animated Background */}
-            <div className="absolute inset-0 bg-gradient-to-r from-blue-500/15 via-emerald-500/15 to-purple-500/15 animate-gradient-shift"></div>
-            
-            {/* Pulsing Dot */}
-            <div className="relative w-2 h-2 mr-3">
-              <div className="absolute inset-0 bg-gradient-to-r from-blue-400 to-emerald-400 rounded-full animate-pulse-glow"></div>
-              <div className="absolute inset-0 bg-white/20 rounded-full animate-ping"></div>
-            </div>
-            
-            {/* Text */}
-            <span className="relative text-sm font-semibold bg-gradient-to-r from-blue-300 to-emerald-300 bg-clip-text text-transparent">
-              Powered by Procyon
-            </span>
-          </div>
-        </div>
-      )}
+
     </section>
   );
 }
