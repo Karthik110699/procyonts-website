@@ -1,9 +1,19 @@
 import { useState, useEffect } from "react";
 
 export default function HeroSection() {
-  const [searchOpen, setSearchOpen] = useState(false);
-  const [searchQuery, setSearchQuery] = useState("");
   const [poweredByVisible, setPoweredByVisible] = useState(false);
+  const [currentServiceIndex, setCurrentServiceIndex] = useState(0);
+  
+  const procyonServices = [
+    "SalesForce",
+    "ServiceNow", 
+    "SAP",
+    "Cloud Solutions",
+    "AI & ML",
+    "Data Analytics",
+    "Staff Augmentation",
+    "Government Services"
+  ];
 
   useEffect(() => {
     // Show "Powered by" on interaction/scroll
@@ -23,6 +33,15 @@ export default function HeroSection() {
       clearTimeout(timer);
     };
   }, []);
+
+  useEffect(() => {
+    // Rotate through services
+    const serviceInterval = setInterval(() => {
+      setCurrentServiceIndex((prev) => (prev + 1) % procyonServices.length);
+    }, 2000);
+
+    return () => clearInterval(serviceInterval);
+  }, [procyonServices.length]);
 
   return (
     <section id="home" className="relative min-h-screen overflow-hidden">
@@ -79,12 +98,13 @@ export default function HeroSection() {
             
             {/* Fixed Innovative Text */}
             <div className="mb-8">
-              <h1 className="text-5xl lg:text-6xl xl:text-7xl font-bold leading-tight text-white mb-6">
-                <span className="block mb-2">The Rise of</span>
-                <span className="block bg-gradient-to-r from-blue-400 to-emerald-400 bg-clip-text text-transparent">
-                  AI-Driven Software
+              <h1 className="text-4xl lg:text-5xl xl:text-6xl font-bold leading-tight text-white mb-6">
+                <span className="block mb-2">Digital Services, Product Engineering,</span>
+                <span className="block mb-2">Staffing, or</span>
+                <span className="block bg-gradient-to-r from-blue-400 to-emerald-400 bg-clip-text text-transparent mb-2">
+                  AI-Powered Solutions?
                 </span>
-                <span className="block">Development</span>
+                <span className="block">Procyon is Your Partner.</span>
               </h1>
               
               <p className="text-xl text-gray-300 leading-relaxed mb-8">
@@ -92,36 +112,7 @@ export default function HeroSection() {
               </p>
             </div>
 
-            {/* Search Feature */}
-            <div className="mb-8">
-              <div className="relative">
-                <button
-                  onClick={() => setSearchOpen(!searchOpen)}
-                  className="flex items-center space-x-3 px-6 py-4 bg-white/10 backdrop-blur-sm border border-white/20 rounded-full text-white hover:bg-white/15 transition-all duration-300 w-full"
-                >
-                  <svg className="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                    <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M21 21l-6-6m2-5a7 7 0 11-14 0 7 7 0 0114 0z" />
-                  </svg>
-                  <span className="text-left flex-1">
-                    {searchQuery || "Search for AI solutions, services, or technologies..."}
-                  </span>
-                  <div className="w-1 h-1 bg-blue-400 rounded-full animate-pulse"></div>
-                </button>
-                
-                {searchOpen && (
-                  <div className="absolute top-full left-0 right-0 mt-2 p-4 bg-white/10 backdrop-blur-md border border-white/20 rounded-lg">
-                    <input
-                      type="text"
-                      value={searchQuery}
-                      onChange={(e) => setSearchQuery(e.target.value)}
-                      placeholder="Type your search..."
-                      className="w-full bg-transparent text-white placeholder-gray-400 outline-none text-lg"
-                      autoFocus
-                    />
-                  </div>
-                )}
-              </div>
-            </div>
+
 
             {/* CTA Buttons */}
             <div className="flex flex-col sm:flex-row space-y-4 sm:space-y-0 sm:space-x-4">
