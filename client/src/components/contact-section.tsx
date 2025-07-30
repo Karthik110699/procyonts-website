@@ -83,7 +83,7 @@ export default function ContactSection() {
                     name="firstName"
                     value={formData.firstName}
                     onChange={handleInputChange}
-                    className="bg-gray-700 border-gray-600 focus:ring-1 focus:ring-blue-500 focus:border-blue-500" 
+                    className="bg-gray-700 border-gray-600 focus:ring-0 focus:border-blue-500 focus:outline-none" 
                     required 
                   />
                 </div>
@@ -94,7 +94,7 @@ export default function ContactSection() {
                     name="lastName"
                     value={formData.lastName}
                     onChange={handleInputChange}
-                    className="bg-gray-700 border-gray-600 focus:ring-1 focus:ring-blue-500 focus:border-blue-500" 
+                    className="bg-gray-700 border-gray-600 focus:ring-0 focus:border-blue-500 focus:outline-none" 
                     required 
                   />
                 </div>
@@ -107,7 +107,7 @@ export default function ContactSection() {
                   name="email"
                   value={formData.email}
                   onChange={handleInputChange}
-                  className="bg-gray-700 border-gray-600 focus:ring-1 focus:ring-blue-500 focus:border-blue-500" 
+                  className="bg-gray-700 border-gray-600 focus:ring-0 focus:border-blue-500 focus:outline-none" 
                   required 
                 />
               </div>
@@ -119,7 +119,7 @@ export default function ContactSection() {
                   name="company"
                   value={formData.company}
                   onChange={handleInputChange}
-                  className="bg-gray-700 border-gray-600 focus:ring-1 focus:ring-blue-500 focus:border-blue-500" 
+                  className="bg-gray-700 border-gray-600 focus:ring-0 focus:border-blue-500 focus:outline-none" 
                 />
               </div>
               
@@ -130,7 +130,7 @@ export default function ContactSection() {
                   name="message"
                   value={formData.message}
                   onChange={handleInputChange}
-                  className="bg-gray-700 border-gray-600 focus:ring-1 focus:ring-blue-500 focus:border-blue-500" 
+                  className="bg-gray-700 border-gray-600 focus:ring-0 focus:border-blue-500 focus:outline-none" 
                   placeholder="Tell us about your project requirements..." 
                   required 
                 />
