@@ -29,15 +29,15 @@ export default function ClientsSection() {
   return (
     <section className="py-20 bg-gray-900/50">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-        <div className="text-center mb-16 reveal">
+        <div className="text-center mb-16 reveal-fade" data-delay="100">
           <h2 className="text-3xl font-bold mb-6">Trusted by Industry Leaders</h2>
           <p className="text-gray-300">Over two decades powering the world's leading businesses</p>
         </div>
         
-        <div className="py-12">
+        <div className="py-12 reveal-scale" data-delay="200">
           <div className="flex items-center justify-center flex-wrap gap-16">
             {clients.map((client, index) => (
-              <div key={index} className="flex items-center justify-center h-20 w-32 p-4">
+              <div key={index} className={`flex items-center justify-center h-20 w-32 p-4 reveal-fade stagger-delay-${index % 6 + 1}`} data-delay={`${300 + (index * 100)}`}>
                 <img 
                   src={client.logo} 
                   alt={`${client.name} logo`}

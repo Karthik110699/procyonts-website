@@ -12,7 +12,7 @@ export default function FourPillarsSection() {
           </p>
         </div>
 
-        <div className="mb-16 reveal flex justify-center">
+        <div className="mb-16 reveal-scale flex justify-center" data-delay="200">
           <img 
             src={dataAnalyticsWorkspace} 
             alt="Modern data analytics workspace with interactive dashboard, charts, and business intelligence displays" 
@@ -23,7 +23,7 @@ export default function FourPillarsSection() {
 
         <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-8">
           {/* Envisioning */}
-          <div className="text-center space-y-6 reveal" style={{ animationDelay: '0.1s' }}>
+          <div className="text-center space-y-6 reveal-slide-left stagger-delay-1" data-delay="100">
             <div className="w-20 h-20 bg-gradient-to-r from-blue-600 to-emerald-500 rounded-full flex items-center justify-center mx-auto">
               <Lightbulb className="w-10 h-10 text-white" />
             </div>
@@ -32,7 +32,7 @@ export default function FourPillarsSection() {
           </div>
 
           {/* Engineering */}
-          <div className="text-center space-y-6 reveal" style={{ animationDelay: '0.2s' }}>
+          <div className="text-center space-y-6 reveal-slide-right stagger-delay-2" data-delay="200">
             <div className="w-20 h-20 bg-gradient-to-r from-emerald-500 to-purple-500 rounded-full flex items-center justify-center mx-auto">
               <Code className="w-10 h-10 text-white" />
             </div>
@@ -41,7 +41,7 @@ export default function FourPillarsSection() {
           </div>
 
           {/* Modernizing */}
-          <div className="text-center space-y-6 reveal" style={{ animationDelay: '0.3s' }}>
+          <div className="text-center space-y-6 reveal-slide-left stagger-delay-3" data-delay="300">
             <div className="w-20 h-20 bg-gradient-to-r from-purple-500 to-amber-500 rounded-full flex items-center justify-center mx-auto">
               <RefreshCw className="w-10 h-10 text-white" />
             </div>
@@ -50,7 +50,7 @@ export default function FourPillarsSection() {
           </div>
 
           {/* Managing */}
-          <div className="text-center space-y-6 reveal" style={{ animationDelay: '0.4s' }}>
+          <div className="text-center space-y-6 reveal-slide-right stagger-delay-4" data-delay="400">
             <div className="w-20 h-20 bg-gradient-to-r from-amber-500 to-blue-600 rounded-full flex items-center justify-center mx-auto">
               <CheckSquare className="w-10 h-10 text-white" />
             </div>

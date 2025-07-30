@@ -25,13 +25,17 @@ export default function TestimonialsSection() {
   return (
     <section className="py-20">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-        <div className="text-center mb-16 reveal">
+        <div className="text-center mb-16 reveal-fade" data-delay="100">
           <h2 className="text-4xl md:text-5xl font-bold mb-6">What Our Clients Say</h2>
         </div>
 
         <div className="grid md:grid-cols-3 gap-8">
           {testimonials.map((testimonial, index) => (
-            <div key={index} className="conic-border bg-gradient-to-br from-gray-800 to-gray-900 p-8 rounded-2xl border border-gray-700 hover:border-blue-500 cursor-pointer transition-all duration-500 hover:scale-105 hover:shadow-2xl reveal group" style={{ animationDelay: `${index * 0.1}s` }}>
+            <div key={index} className={`conic-border bg-gradient-to-br from-gray-800 to-gray-900 p-8 rounded-2xl border border-gray-700 hover:border-blue-500 cursor-pointer transition-all duration-500 hover:scale-105 hover:shadow-2xl group ${
+              index === 0 ? 'reveal-slide-left' : 
+              index === 1 ? 'reveal-scale' : 
+              'reveal-slide-right'
+            } stagger-delay-${index + 1}`} data-delay={`${(index + 1) * 200}`}>
               <div className="flex items-center mb-6 relative z-10">
                 <Quote className={`w-8 h-8 mr-4 transition-all duration-300 group-hover:scale-110 ${
                   testimonial.color === 'blue' ? 'text-blue-400 group-hover:text-blue-300' :
