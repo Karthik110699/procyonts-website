@@ -3,7 +3,7 @@ export default function ClientsSection() {
   const clients = [
     { 
       name: "Genentech",
-      logo: "/logos/genentech.svg"
+      logo: "/logos/genentech.svg?v=2"
     },
     { 
       name: "IBM",
@@ -11,15 +11,15 @@ export default function ClientsSection() {
     },
     { 
       name: "Deloitte",
-      logo: "/logos/deloitte.svg"
+      logo: "/logos/deloitte.svg?v=2"
     },
     { 
       name: "Tech Mahindra",
-      logo: "/logos/tech-mahindra.svg"
+      logo: "/logos/tech-mahindra.svg?v=2"
     },
     { 
       name: "NIH",
-      logo: "/logos/nih.svg"
+      logo: "/logos/nih.svg?v=2"
     },
     { 
       name: "Delta Air Lines",
@@ -42,7 +42,7 @@ export default function ClientsSection() {
                 <img 
                   src={client.logo} 
                   alt={`${client.name} logo`}
-                  className="h-12 max-w-full object-contain opacity-70 hover:opacity-100 transition-all duration-300 hover:scale-110 filter brightness-0 invert"
+                  className="h-12 max-w-full object-contain opacity-70 hover:opacity-100 transition-all duration-300 hover:scale-110"
                 />
               </div>
             ))}
