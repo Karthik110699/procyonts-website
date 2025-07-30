@@ -45,17 +45,17 @@ export default function SocialImpactPage() {
   const videos = [
     {
       title: "Community Impact Story",
-      thumbnail: "https://images.unsplash.com/photo-1559027615-cd4628902d4a?ixlib=rb-4.0.3&auto=format&fit=crop&w=600&h=400",
+      thumbnail: "https://images.unsplash.com/photo-1544717297-fa95b6ee9643?ixlib=rb-4.0.3&auto=format&fit=crop&w=600&h=400",
       duration: "3:45"
     },
     {
-      title: "Environmental Initiatives",
-      thumbnail: "https://images.unsplash.com/photo-1542601906990-b4d3fb778b09?ixlib=rb-4.0.3&auto=format&fit=crop&w=600&h=400",
+      title: "Environmental Initiatives", 
+      thumbnail: "https://images.unsplash.com/photo-1441974231531-c6227db76b6e?ixlib=rb-4.0.3&auto=format&fit=crop&w=600&h=400",
       duration: "2:30"
     },
     {
       title: "Education Program Success",
-      thumbnail: "https://images.unsplash.com/photo-1523240795612-9a054b0db644?ixlib=rb-4.0.3&auto=format&fit=crop&w=600&h=400",
+      thumbnail: "https://images.unsplash.com/photo-1427504494785-3a9ca7044f45?ixlib=rb-4.0.3&auto=format&fit=crop&w=600&h=400",
       duration: "4:12"
     }
   ];
@@ -177,8 +177,8 @@ export default function SocialImpactPage() {
                     alt={video.title}
                     className="w-full h-48 object-cover group-hover:scale-110 transition-transform duration-700"
                   />
-                  <div className="absolute inset-0 bg-black/40 flex items-center justify-center">
-                    <div className="w-16 h-16 bg-white/20 rounded-full flex items-center justify-center backdrop-blur-sm">
+                  <div className="absolute inset-0 bg-gradient-to-t from-black/20 to-transparent group-hover:from-black/40 transition-all duration-300 flex items-center justify-center">
+                    <div className="w-16 h-16 bg-blue-600/80 rounded-full flex items-center justify-center backdrop-blur-sm group-hover:bg-blue-500 transition-all duration-300 shadow-lg">
                       <div className="w-0 h-0 border-l-8 border-l-white border-t-4 border-t-transparent border-b-4 border-b-transparent ml-1"></div>
                     </div>
                   </div>
