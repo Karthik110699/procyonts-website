@@ -13,11 +13,11 @@ export function useScrollReveal() {
     };
 
     const zoomObserverOptions = {
-      threshold: [0.05, 0.15, 0.25, 0.35, 0.5, 0.65, 0.8, 0.95],
-      rootMargin: '0px 0px -50px 0px'
+      threshold: [0.05, 0.1, 0.15, 0.2, 0.25, 0.3, 0.35, 0.4, 0.5, 0.6, 0.7, 0.8, 0.9, 0.95],
+      rootMargin: '0px 0px -30px 0px'
     };
 
-    // Track scroll direction and velocity for smoother transitions
+    // Ultra-smooth scroll tracking with throttled updates
     const updateScrollDirection = () => {
       if (!ticking) {
         requestAnimationFrame(() => {
@@ -25,6 +25,13 @@ export function useScrollReveal() {
           scrollVelocity = Math.abs(currentScrollY - lastScrollY);
           scrollDirection = currentScrollY > lastScrollY ? 'down' : 'up';
           lastScrollY = currentScrollY;
+          
+          // Apply smooth transform to body for momentum feel
+          document.body.style.transform = `translateY(${scrollVelocity * -0.1}px)`;
+          setTimeout(() => {
+            document.body.style.transform = 'translateY(0px)';
+          }, 50);
+          
           ticking = false;
         });
         ticking = true;
@@ -56,17 +63,20 @@ export function useScrollReveal() {
         const ratio = entry.intersectionRatio;
         const element = entry.target as HTMLElement;
         
-        if (ratio > 0.25) {
-          // Element entering viewport - smooth activation with velocity consideration
+        if (ratio > 0.2) {
+          // Element entering viewport - ultra-smooth activation
           requestAnimationFrame(() => {
             element.classList.add('active');
             element.classList.remove('zoom-out', 'reverse');
             element.style.setProperty('--scroll-direction', scrollDirection);
             element.style.setProperty('--scroll-velocity', `${Math.min(scrollVelocity / 10, 1)}`);
+            
+            // Force hardware acceleration
+            element.style.transform = element.style.transform || 'translate3d(0, 0, 0)';
           });
-        } else if (ratio < 0.15) {
-          // Element leaving viewport - smooth deactivation with momentum
-          const delay = Math.max(0, 100 - scrollVelocity);
+        } else if (ratio < 0.1) {
+          // Element leaving viewport - buttery smooth deactivation
+          const delay = Math.max(0, 50 - scrollVelocity * 0.5);
           setTimeout(() => {
             requestAnimationFrame(() => {
               if (scrollDirection === 'up' && element.classList.contains('active')) {
