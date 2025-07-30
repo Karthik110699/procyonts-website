@@ -83,7 +83,7 @@ export default function ContactSection() {
                     name="firstName"
                     value={formData.firstName}
                     onChange={handleInputChange}
-                    className="bg-gray-700 border-gray-600" 
+                    className="bg-gray-700 border-gray-600 focus:ring-1 focus:ring-blue-500 focus:border-blue-500" 
                     required 
                   />
                 </div>
@@ -94,7 +94,7 @@ export default function ContactSection() {
                     name="lastName"
                     value={formData.lastName}
                     onChange={handleInputChange}
-                    className="bg-gray-700 border-gray-600" 
+                    className="bg-gray-700 border-gray-600 focus:ring-1 focus:ring-blue-500 focus:border-blue-500" 
                     required 
                   />
                 </div>
@@ -107,7 +107,7 @@ export default function ContactSection() {
                   name="email"
                   value={formData.email}
                   onChange={handleInputChange}
-                  className="bg-gray-700 border-gray-600" 
+                  className="bg-gray-700 border-gray-600 focus:ring-1 focus:ring-blue-500 focus:border-blue-500" 
                   required 
                 />
               </div>
@@ -119,7 +119,7 @@ export default function ContactSection() {
                   name="company"
                   value={formData.company}
                   onChange={handleInputChange}
-                  className="bg-gray-700 border-gray-600" 
+                  className="bg-gray-700 border-gray-600 focus:ring-1 focus:ring-blue-500 focus:border-blue-500" 
                 />
               </div>
               
@@ -130,7 +130,7 @@ export default function ContactSection() {
                   name="message"
                   value={formData.message}
                   onChange={handleInputChange}
-                  className="bg-gray-700 border-gray-600" 
+                  className="bg-gray-700 border-gray-600 focus:ring-1 focus:ring-blue-500 focus:border-blue-500" 
                   placeholder="Tell us about your project requirements..." 
                   required 
                 />
@@ -148,8 +148,9 @@ export default function ContactSection() {
                 </label>
               </div>
               
-              <Button type="submit" className="w-full border-2 border-white hover:bg-white hover:text-black text-white py-4 text-lg">
-                Send Message
+              <Button type="submit" className="group relative w-full px-8 py-4 bg-gradient-to-r from-blue-600 to-emerald-600 rounded-lg font-semibold text-lg text-white overflow-hidden transition-all duration-300 transform hover:scale-105">
+                <span className="relative z-10">Send Message</span>
+                <div className="absolute inset-0 bg-gradient-to-r from-emerald-600 to-blue-600 opacity-0 group-hover:opacity-100 transition-opacity duration-300"></div>
               </Button>
             </form>
           </div>
