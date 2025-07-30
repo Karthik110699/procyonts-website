@@ -14,8 +14,8 @@ export default function FourPillarsSection() {
 
         <div className="mb-16 reveal">
           <img 
-            src={abstractAiImage} 
-            alt="Abstract AI visualization with flowing neural networks and dynamic blue data patterns" 
+            src="https://images.unsplash.com/photo-1518709268805-4e9042af2176?ixlib=rb-4.0.3&auto=format&fit=crop&w=1200&h=400" 
+            alt="Innovative digital transformation with holographic data visualization and AI neural networks" 
             className="w-full rounded-2xl shadow-2xl"
           />
         </div>
