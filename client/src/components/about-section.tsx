@@ -10,18 +10,30 @@ export default function AboutSection() {
         <div className="grid lg:grid-cols-2 gap-12 items-center">
           <div className="reveal">
             <img 
-              src="https://images.unsplash.com/photo-1620712943543-bcc4688e7485?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&h=600" 
-              alt="Holographic AI interface with floating data visualizations and quantum computing elements" 
+              src="/attached_assets/Trial1_1753910986636.png" 
+              alt="AI brain with neural network connections and data analytics dashboards showing intelligent insights" 
               className="rounded-2xl shadow-2xl"
             />
           </div>
           <div className="space-y-8 reveal">
             <div className="space-y-4">
-              <h3 className="text-blue-400 font-semibold text-lg">Who we are</h3>
-              <h2 className="text-4xl md:text-5xl font-bold">Building the Digital Bridge for Tomorrow</h2>
+              <h3 className="text-blue-400 font-semibold text-lg">Value-driven approach</h3>
+              <h2 className="text-4xl md:text-5xl font-bold">What we do</h2>
               <p className="text-xl text-gray-300">
-                Founded in 2004, Procyon Technostructure was established to guide organizations across industries toward successful digital transformation.
+                Founded in 2004, Procyon empowers its customers to re-imagine the way they do business to maximize their ROI and drive growth through innovative technology solutions.
               </p>
+              <div className="grid grid-cols-2 gap-4 mt-6">
+                <div className="space-y-2">
+                  <div className="text-blue-400 font-semibold">Innovation</div>
+                  <div className="text-blue-400 font-semibold">Visionary thinking</div>
+                  <div className="text-blue-400 font-semibold">Idea-to-market delivery</div>
+                </div>
+                <div className="space-y-2">
+                  <div className="text-emerald-400 font-semibold">Product strategy</div>
+                  <div className="text-emerald-400 font-semibold">Enterprise architecture</div>
+                  <div className="text-emerald-400 font-semibold">Digital strategy</div>
+                </div>
+              </div>
             </div>
             
             <div className="grid grid-cols-2 gap-8">

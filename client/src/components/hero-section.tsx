@@ -4,14 +4,12 @@ export default function HeroSection() {
   const [currentServiceIndex, setCurrentServiceIndex] = useState(0);
   
   const procyonServices = [
-    { name: "SalesForce", color: "from-white to-yellow-400", dotColor: "bg-yellow-400", shadowColor: "shadow-yellow-400/50" },
     { name: "ServiceNow", color: "from-green-400 to-green-500", dotColor: "bg-green-400", shadowColor: "shadow-green-400/50" },
-    { name: "SAP", color: "from-white to-green-400", dotColor: "bg-green-400", shadowColor: "shadow-green-400/50" },
-    { name: "Cloud Solutions", color: "from-yellow-400 to-green-400", dotColor: "bg-yellow-400", shadowColor: "shadow-yellow-400/50" },
-    { name: "AI & ML", color: "from-green-400 to-yellow-400", dotColor: "bg-green-400", shadowColor: "shadow-green-400/50" },
-    { name: "Data Analytics", color: "from-yellow-400 to-yellow-500", dotColor: "bg-yellow-400", shadowColor: "shadow-yellow-400/50" },
-    { name: "Staff Augmentation", color: "from-white to-green-400", dotColor: "bg-white", shadowColor: "shadow-white/50" },
-    { name: "Government Services", color: "from-yellow-400 to-white", dotColor: "bg-white", shadowColor: "shadow-white/50" }
+    { name: "Enterprise Architecture", color: "from-white to-yellow-400", dotColor: "bg-yellow-400", shadowColor: "shadow-yellow-400/50" },
+    { name: "Digital Strategy", color: "from-yellow-400 to-green-400", dotColor: "bg-yellow-400", shadowColor: "shadow-yellow-400/50" },
+    { name: "IT Staffing", color: "from-green-400 to-yellow-400", dotColor: "bg-green-400", shadowColor: "shadow-green-400/50" },
+    { name: "Innovation", color: "from-yellow-400 to-yellow-500", dotColor: "bg-yellow-400", shadowColor: "shadow-yellow-400/50" },
+    { name: "Product Strategy", color: "from-white to-green-400", dotColor: "bg-white", shadowColor: "shadow-white/50" }
   ];
 
 
@@ -52,10 +50,13 @@ export default function HeroSection() {
             <div className="mb-8">
               <h1 className="text-5xl lg:text-6xl xl:text-7xl font-bold leading-tight text-white mb-6">
                 <span className="block animated-gradient-text mb-2">
-                  AI-Powered Solutions?
+                  Think what no one
                 </span>
-                <span className="block">Procyon's Your Partner!</span>
+                <span className="block">else ever thought</span>
               </h1>
+              <p className="text-xl lg:text-2xl text-gray-300 mb-8">
+                Empowering you to navigate the evolving landscapes with innovative technology solutions
+              </p>
             </div>
 
 
@@ -66,14 +67,14 @@ export default function HeroSection() {
                 href="#contact" 
                 className="group relative px-8 py-4 bg-gradient-to-r from-blue-600 to-emerald-600 rounded-lg font-semibold text-lg text-white overflow-hidden transition-all duration-300 transform hover:scale-105"
               >
-                <span className="relative z-10">Take the leap today</span>
+                <span className="relative z-10">Let's Talk</span>
                 <div className="absolute inset-0 bg-gradient-to-r from-emerald-600 to-blue-600 opacity-0 group-hover:opacity-100 transition-opacity duration-300"></div>
               </a>
               <a 
-                href="#services" 
+                href="#about" 
                 className="px-8 py-4 border-2 border-white text-white rounded-lg font-semibold text-lg transition-all duration-300 transform hover:scale-105 hover:bg-white/10"
               >
-                Explore Services
+                Discover Solutions
               </a>
             </div>
           </div>
