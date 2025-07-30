@@ -4,14 +4,14 @@ export default function HeroSection() {
   const [currentServiceIndex, setCurrentServiceIndex] = useState(0);
   
   const procyonServices = [
-    "SalesForce",
-    "ServiceNow", 
-    "SAP",
-    "Cloud Solutions",
-    "AI & ML",
-    "Data Analytics",
-    "Staff Augmentation",
-    "Government Services"
+    { name: "SalesForce", color: "from-orange-400 to-red-500", dotColor: "bg-orange-400", shadowColor: "shadow-orange-400/50" },
+    { name: "ServiceNow", color: "from-green-400 to-emerald-500", dotColor: "bg-emerald-400", shadowColor: "shadow-emerald-400/50" },
+    { name: "SAP", color: "from-blue-400 to-indigo-500", dotColor: "bg-blue-400", shadowColor: "shadow-blue-400/50" },
+    { name: "Cloud Solutions", color: "from-sky-400 to-cyan-500", dotColor: "bg-sky-400", shadowColor: "shadow-sky-400/50" },
+    { name: "AI & ML", color: "from-purple-400 to-pink-500", dotColor: "bg-purple-400", shadowColor: "shadow-purple-400/50" },
+    { name: "Data Analytics", color: "from-amber-400 to-yellow-500", dotColor: "bg-amber-400", shadowColor: "shadow-amber-400/50" },
+    { name: "Staff Augmentation", color: "from-teal-400 to-green-500", dotColor: "bg-teal-400", shadowColor: "shadow-teal-400/50" },
+    { name: "Government Services", color: "from-indigo-400 to-purple-500", dotColor: "bg-indigo-400", shadowColor: "shadow-indigo-400/50" }
   ];
 
 
@@ -23,7 +23,7 @@ export default function HeroSection() {
     }, 2000);
 
     return () => clearInterval(serviceInterval);
-  }, [procyonServices.length]);
+  }, []);
 
   return (
     <section id="home" className="relative min-h-screen overflow-hidden">
@@ -84,19 +84,19 @@ export default function HeroSection() {
           {/* Floating Service Names */}
           <div className="absolute inset-0 flex items-center justify-center">
             <div className="text-center">
-              <div className="text-6xl lg:text-7xl font-bold text-cyan-400/30 mb-4 transition-all duration-500">
-                {procyonServices[currentServiceIndex]}
+              <div className={`text-6xl lg:text-7xl font-bold bg-gradient-to-r ${procyonServices[currentServiceIndex].color} bg-clip-text text-transparent opacity-40 mb-4 transition-all duration-500`}>
+                {procyonServices[currentServiceIndex].name}
               </div>
               
               {/* Service Icons/Indicators */}
               <div className="flex justify-center space-x-2">
-                {procyonServices.map((_, index) => (
+                {procyonServices.map((service, index) => (
                   <div
                     key={index}
                     className={`w-2 h-2 rounded-full transition-all duration-300 ${
                       index === currentServiceIndex 
-                        ? 'bg-cyan-400 scale-150 shadow-cyan-400/50 shadow-lg' 
-                        : 'bg-cyan-300/40'
+                        ? `${service.dotColor} scale-150 ${service.shadowColor} shadow-lg` 
+                        : 'bg-white/20'
                     }`}
                   />
                 ))}
@@ -108,7 +108,7 @@ export default function HeroSection() {
           <div className="absolute inset-0">
             {procyonServices.map((service, index) => (
               <div
-                key={service}
+                key={service.name}
                 className={`absolute transition-all duration-1000 ${
                   index === currentServiceIndex ? 'opacity-100 scale-100' : 'opacity-30 scale-75'
                 }`}
@@ -118,9 +118,9 @@ export default function HeroSection() {
                   animationDelay: `${index * 0.5}s`
                 }}
               >
-                <div className="w-4 h-4 bg-gradient-to-r from-cyan-400 to-emerald-400 rounded-full animate-particle-float shadow-cyan-400/30 shadow-lg">
-                  <div className="absolute -top-8 left-1/2 transform -translate-x-1/2 text-xs font-semibold text-cyan-300/80 whitespace-nowrap">
-                    {service}
+                <div className={`w-4 h-4 bg-gradient-to-r ${service.color} rounded-full animate-particle-float ${service.shadowColor} shadow-lg`}>
+                  <div className={`absolute -top-8 left-1/2 transform -translate-x-1/2 text-xs font-semibold bg-gradient-to-r ${service.color} bg-clip-text text-transparent opacity-90 whitespace-nowrap`}>
+                    {service.name}
                   </div>
                 </div>
               </div>
