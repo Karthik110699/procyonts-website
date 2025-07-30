@@ -1,0 +1,84 @@
+The zoom transition effect seen on Cred Money (especially on hero sections and scroll-based animations) typically uses a combination of CSS scale transforms + scroll triggers, often implemented via GSAP (GreenSock Animation Platform) and ScrollTrigger.
+
+Here’s how you can replicate the zoom-in transition on scroll similar to what CRED does:
+
+✅ Zoom on Scroll – GSAP + ScrollTrigger Example
+html
+Copy
+Edit
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Zoom on Scroll</title>
+  <style>
+    body {
+      margin: 0;
+      background: #000;
+      font-family: sans-serif;
+      overflow-x: hidden;
+    }
+
+    .section {
+      height: 100vh;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      color: white;
+      font-size: 3rem;
+      transform: scale(1);
+    }
+
+    .zoom {
+      background: url('https://via.placeholder.com/1920x1080') no-repeat center center;
+      background-size: cover;
+      height: 100vh;
+      width: 100%;
+      transform-origin: center center;
+    }
+  </style>
+</head>
+<body>
+
+  <div class="zoom section">
+    ZOOM IN ON SCROLL
+  </div>
+  <div class="section" style="background:#111;">NEXT SECTION</div>
+
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/gsap.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/ScrollTrigger.min.js"></script>
+  <script>
+    gsap.registerPlugin(ScrollTrigger);
+
+    gsap.to(".zoom", {
+      scale: 1.15,
+      ease: "none",
+      scrollTrigger: {
+        trigger: ".zoom",
+        start: "top top",
+        end: "bottom top",
+        scrub: true
+      }
+    });
+  </script>
+
+</body>
+</html>
+🔍 Explanation:
+.zoom: The element (background/image/text) that zooms in.
+
+gsap.to(...scale: 1.15...): It slowly scales up the section as the user scrolls.
+
+scrub: true: Links animation timing to scroll (smooth zoom).
+
+transform-origin: center center: Ensures it zooms evenly from the center.
+
+🧠 Tips to Match CRED’s Style
+Use custom fonts (CRED uses modern serif + sans-serif blends).
+
+Apply masking or clip-path on hero images/text.
+
+Use image compression (WebP/AVIF) for fast zoom performance.
+
+Add curves and easeInOut for more cinematic transitions.
+

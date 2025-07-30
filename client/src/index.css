@@ -310,29 +310,16 @@
     display: flex;
     align-items: center;
     justify-content: center;
-    opacity: 0;
-    transform: scale(0.1) translateZ(-800px);
-    transition: all 1.8s cubic-bezier(0.16, 1, 0.3, 1);
     transform-origin: center center;
     will-change: transform, opacity;
     backface-visibility: hidden;
-  }
-
-  .zoom-section-container.active {
-    opacity: 1;
-    transform: scale(1) translateZ(0);
-  }
-
-  .zoom-section-container.zoom-out {
-    transform: scale(1.5) translateZ(200px);
-    opacity: 0;
   }
 
   /* Traditional scroll container for navigation */
   .scroll-trigger-container {
     position: relative;
     z-index: 1;
-    height: 600vh; /* Multiple screen heights for scroll triggers */
+    height: 700vh; /* Extended height for smoother zoom transitions */
     pointer-events: none;
   }
 

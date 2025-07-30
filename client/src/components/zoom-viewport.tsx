@@ -7,8 +7,7 @@ import TestimonialsSection from "./testimonials-section";
 import ClientsSection from "./clients-section";
 
 export default function ZoomViewport() {
-  const [currentSection, setCurrentSection] = useState(0);
-  const [scrollProgress, setScrollProgress] = useState(0);
+  const [sectionsData, setSectionsData] = useState<Array<{scale: number, opacity: number, zIndex: number}>>([]);
 
   const sections = [
     { component: HeroSection, name: "hero" },
@@ -20,23 +19,64 @@ export default function ZoomViewport() {
   ];
 
   useEffect(() => {
+    // Initialize sections data
+    setSectionsData(sections.map(() => ({ scale: 0.3, opacity: 0, zIndex: 1 })));
+  }, []);
+
+  useEffect(() => {
     let ticking = false;
 
     const handleScroll = () => {
       if (!ticking) {
         requestAnimationFrame(() => {
           const scrollY = window.scrollY;
-          const sectionHeight = window.innerHeight;
-          const totalHeight = sectionHeight * sections.length;
+          const viewportHeight = window.innerHeight;
           
-          // Calculate current section and progress within that section
-          const exactSection = Math.min(scrollY / sectionHeight, sections.length - 1);
-          const newSection = Math.floor(exactSection);
-          const progress = exactSection - newSection;
+          const newSectionsData = sections.map((_, index) => {
+            const sectionStart = index * viewportHeight;
+            const sectionEnd = (index + 1) * viewportHeight;
+            
+            // Calculate how much of this section is visible
+            const progress = Math.max(0, Math.min(1, (scrollY - sectionStart + viewportHeight) / (viewportHeight * 2)));
+            
+            // CredMoney-style scaling: starts small, grows to full size, then shrinks as it exits
+            let scale: number;
+            let opacity: number;
+            let zIndex: number;
+            
+            if (scrollY < sectionStart - viewportHeight) {
+              // Before section appears
+              scale = 0.3;
+              opacity = 0;
+              zIndex = 1;
+            } else if (scrollY >= sectionStart - viewportHeight && scrollY < sectionStart) {
+              // Section is entering (zoom in)
+              const enterProgress = (scrollY - (sectionStart - viewportHeight)) / viewportHeight;
+              scale = 0.3 + (0.7 * enterProgress); // 0.3 to 1.0
+              opacity = enterProgress;
+              zIndex = 10;
+            } else if (scrollY >= sectionStart && scrollY < sectionEnd) {
+              // Section is active and visible
+              scale = 1.0;
+              opacity = 1;
+              zIndex = 10;
+            } else if (scrollY >= sectionEnd && scrollY < sectionEnd + viewportHeight) {
+              // Section is exiting (zoom out)
+              const exitProgress = (scrollY - sectionEnd) / viewportHeight;
+              scale = 1.0 + (0.5 * exitProgress); // 1.0 to 1.5 (zoom out)
+              opacity = 1 - exitProgress;
+              zIndex = 5;
+            } else {
+              // After section has exited
+              scale = 1.5;
+              opacity = 0;
+              zIndex = 1;
+            }
+            
+            return { scale, opacity, zIndex };
+          });
           
-          setCurrentSection(newSection);
-          setScrollProgress(progress);
-          
+          setSectionsData(newSectionsData);
           ticking = false;
         });
         ticking = true;
@@ -56,31 +96,19 @@ export default function ZoomViewport() {
         
         {sections.map((section, index) => {
           const Component = section.component;
-          const isActive = index === currentSection;
-          const isNext = index === currentSection + 1;
-          
-          // Calculate scale and opacity based on scroll progress
-          let scale = 0.1;
-          let opacity = 0;
-          
-          if (isActive) {
-            scale = 0.1 + (0.9 * (1 - scrollProgress));
-            opacity = 1 - scrollProgress * 0.3;
-          } else if (isNext) {
-            scale = 0.1 + (0.9 * scrollProgress);
-            opacity = scrollProgress;
-          }
+          const sectionData = sectionsData[index] || { scale: 0.3, opacity: 0, zIndex: 1 };
           
           return (
             <div
               key={section.name}
               className="zoom-section-container"
               style={{
-                opacity,
-                transform: `scale(${scale}) translateZ(${scale < 1 ? -500 + (scale * 500) : 0}px)`,
-                zIndex: isActive ? 10 : isNext ? 9 : 1,
-                pointerEvents: isActive ? 'auto' : 'none',
-                transition: 'none' // Remove transition for smooth scroll-based animation
+                opacity: sectionData.opacity,
+                transform: `scale(${sectionData.scale})`,
+                zIndex: sectionData.zIndex,
+                pointerEvents: sectionData.opacity > 0.5 ? 'auto' : 'none',
+                transition: 'none',
+                transformOrigin: 'center center'
               }}
             >
               <div className="w-full h-full flex items-center justify-center">
@@ -94,23 +122,26 @@ export default function ZoomViewport() {
         
         {/* Section indicator */}
         <div className="fixed bottom-8 right-8 z-20 flex flex-col space-y-2">
-          {sections.map((_, index) => (
-            <div
-              key={index}
-              className={`w-3 h-3 rounded-full transition-all duration-300 ${
-                index === currentSection 
-                  ? 'bg-blue-400 scale-125' 
-                  : 'bg-gray-600 hover:bg-gray-400'
-              }`}
-              onClick={() => {
-                window.scrollTo({
-                  top: index * window.innerHeight,
-                  behavior: 'smooth'
-                });
-              }}
-              style={{ cursor: 'pointer' }}
-            />
-          ))}
+          {sections.map((_, index) => {
+            const isActive = sectionsData[index]?.opacity > 0.5;
+            return (
+              <div
+                key={index}
+                className={`w-3 h-3 rounded-full transition-all duration-300 ${
+                  isActive 
+                    ? 'bg-blue-400 scale-125' 
+                    : 'bg-gray-600 hover:bg-gray-400'
+                }`}
+                onClick={() => {
+                  window.scrollTo({
+                    top: index * window.innerHeight,
+                    behavior: 'smooth'
+                  });
+                }}
+                style={{ cursor: 'pointer' }}
+              />
+            );
+          })}
         </div>
       </div>
 
