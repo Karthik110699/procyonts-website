@@ -11,9 +11,7 @@ export default function HeroSection() {
     { name: "Cloud Transformation", color: "from-cyan-400 to-cyan-500", dotColor: "bg-cyan-400", shadowColor: "shadow-cyan-400/50" },
     { name: "AI & Machine Learning", color: "from-emerald-400 to-emerald-500", dotColor: "bg-emerald-400", shadowColor: "shadow-emerald-400/50" },
     { name: "Data Analytics", color: "from-amber-400 to-amber-500", dotColor: "bg-amber-400", shadowColor: "shadow-amber-400/50" },
-    { name: "Digital Engineering", color: "from-indigo-400 to-indigo-500", dotColor: "bg-indigo-400", shadowColor: "shadow-indigo-400/50" },
-    { name: "Staff Augmentation", color: "from-yellow-400 to-yellow-500", dotColor: "bg-yellow-400", shadowColor: "shadow-yellow-400/50" },
-    { name: "Enterprise Architecture", color: "from-white to-yellow-400", dotColor: "bg-yellow-400", shadowColor: "shadow-yellow-400/50" }
+    { name: "Staff Augmentation", color: "from-yellow-400 to-yellow-500", dotColor: "bg-yellow-400", shadowColor: "shadow-yellow-400/50" }
   ];
 
 
