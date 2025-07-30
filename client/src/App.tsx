@@ -44,6 +44,9 @@ function App() {
   return (
     <QueryClientProvider client={queryClient}>
       <TooltipProvider>
+        <div style={{ padding: '20px', color: 'white', backgroundColor: '#000' }}>
+          <h1>Procyon App Loading...</h1>
+        </div>
         <Toaster />
         <Router />
       </TooltipProvider>

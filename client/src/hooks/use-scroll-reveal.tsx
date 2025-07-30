@@ -6,6 +6,8 @@ export function useScrollReveal() {
     let scrollDirection = 'down';
     let scrollVelocity = 0;
     let ticking = false;
+    let isFirstScroll = true;
+    let hasInitiallyActivated = false;
 
     const observerOptions = {
       threshold: 0.15,
@@ -17,7 +19,7 @@ export function useScrollReveal() {
       rootMargin: '0px 0px -30px 0px'
     };
 
-    // Ultra-smooth scroll tracking with throttled updates
+    // Ultra-smooth scroll tracking with immediate first-scroll activation
     const updateScrollDirection = () => {
       if (!ticking) {
         requestAnimationFrame(() => {
@@ -25,6 +27,12 @@ export function useScrollReveal() {
           scrollVelocity = Math.abs(currentScrollY - lastScrollY);
           scrollDirection = currentScrollY > lastScrollY ? 'down' : 'up';
           lastScrollY = currentScrollY;
+          
+          // First scroll - immediately activate all visible elements
+          if (isFirstScroll && scrollVelocity > 0) {
+            isFirstScroll = false;
+            activateVisibleElements();
+          }
           
           // Apply smooth transform to body for momentum feel
           document.body.style.transform = `translateY(${scrollVelocity * -0.1}px)`;
@@ -36,6 +44,25 @@ export function useScrollReveal() {
         });
         ticking = true;
       }
+    };
+
+    // Immediately activate all elements currently in viewport
+    const activateVisibleElements = () => {
+      const zoomElements = document.querySelectorAll('.zoom-section, .zoom-fade-in, .zoom-slide-up');
+      zoomElements.forEach((element: Element) => {
+        const rect = element.getBoundingClientRect();
+        const windowHeight = window.innerHeight;
+        
+        // If element is in viewport, activate it immediately
+        if (rect.top < windowHeight * 0.8 && rect.bottom > windowHeight * 0.2) {
+          requestAnimationFrame(() => {
+            element.classList.add('active');
+            element.classList.remove('zoom-out', 'reverse');
+            (element as HTMLElement).style.setProperty('--scroll-direction', 'down');
+            (element as HTMLElement).style.transform = (element as HTMLElement).style.transform || 'translate3d(0, 0, 0)';
+          });
+        }
+      });
     };
 
     window.addEventListener('scroll', updateScrollDirection, { passive: true });
@@ -130,6 +157,16 @@ export function useScrollReveal() {
         zoomObserver.observe(el);
       });
     });
+
+    // Immediate activation check for elements already visible on page load
+    setTimeout(() => {
+      if (!hasInitiallyActivated) {
+        activateVisibleElements();
+        hasInitiallyActivated = true;
+        // Mark page as loaded for CSS animations
+        document.body.classList.add('page-loaded');
+      }
+    }, 100);
 
     return () => {
       window.removeEventListener('scroll', updateScrollDirection);
