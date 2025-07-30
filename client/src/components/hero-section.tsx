@@ -50,12 +50,12 @@ export default function HeroSection() {
             <div className="mb-8">
               <h1 className="text-5xl lg:text-6xl xl:text-7xl font-bold leading-tight text-white mb-6">
                 <span className="block animated-gradient-text mb-2">
-                  Think what no one
+                  Ideate, Innovate &
                 </span>
-                <span className="block">else ever thought</span>
+                <span className="block">Break rules for a better tomorrow</span>
               </h1>
               <p className="text-xl lg:text-2xl text-gray-300 mb-8">
-                Empowering you to navigate the evolving landscapes with innovative technology solutions
+                We are the brightest star that guides you on the journey to change
               </p>
             </div>
 
@@ -71,10 +71,10 @@ export default function HeroSection() {
                 <div className="absolute inset-0 bg-gradient-to-r from-emerald-600 to-blue-600 opacity-0 group-hover:opacity-100 transition-opacity duration-300"></div>
               </a>
               <a 
-                href="#about" 
+                href="/services" 
                 className="px-8 py-4 border-2 border-white text-white rounded-lg font-semibold text-lg transition-all duration-300 transform hover:scale-105 hover:bg-white/10"
               >
-                Discover Solutions
+                Discover our solutions
               </a>
             </div>
           </div>
