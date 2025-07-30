@@ -10,8 +10,8 @@ export default function AboutSection() {
         <div className="grid lg:grid-cols-2 gap-12 items-center">
           <div className="reveal">
             <img 
-              src="https://images.unsplash.com/photo-1560472354-b33ff0c44a43?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&h=600" 
-              alt="Professional team collaboration in modern office" 
+              src="https://images.unsplash.com/photo-1620712943543-bcc4688e7485?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&h=600" 
+              alt="Holographic AI interface with floating data visualizations and quantum computing elements" 
               className="rounded-2xl shadow-2xl"
             />
           </div>

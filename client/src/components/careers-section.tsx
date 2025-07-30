@@ -10,8 +10,8 @@ export default function CareersSection() {
             We aim to boost a culture of self-mastery with endless possibilities. By exploring five professional development dimensions, we empower our team to be the owners of their careers.
           </p>
           <img 
-            src="https://images.unsplash.com/photo-1522071820081-009f0129c71c?ixlib=rb-4.0.3&auto=format&fit=crop&w=1200&h=400" 
-            alt="Professional team collaboration with diverse workforce" 
+            src="https://images.unsplash.com/photo-1451187580459-43490279c0fa?ixlib=rb-4.0.3&auto=format&fit=crop&w=1200&h=400" 
+            alt="Cosmic digital transformation with floating holographic interfaces and collaborative AI workspaces" 
             className="w-full rounded-2xl shadow-2xl mx-auto"
           />
           <a href="#careers" className="inline-block border-2 border-white hover:bg-white hover:text-black text-white px-8 py-4 rounded-lg font-semibold text-lg transition-all duration-300 transform hover:scale-105">

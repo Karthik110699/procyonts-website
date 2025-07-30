@@ -13,8 +13,8 @@ export default function FourPillarsSection() {
 
         <div className="mb-16 reveal">
           <img 
-            src="https://images.unsplash.com/photo-1551434678-e076c223a692?ixlib=rb-4.0.3&auto=format&fit=crop&w=1200&h=400" 
-            alt="Enterprise solutions workflow automation" 
+            src="https://images.unsplash.com/photo-1677442136019-21780ecad995?ixlib=rb-4.0.3&auto=format&fit=crop&w=1200&h=400" 
+            alt="Ethereal AI neural pathways with glowing data streams and quantum processing nodes" 
             className="w-full rounded-2xl shadow-2xl"
           />
         </div>

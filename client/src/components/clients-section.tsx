@@ -2,7 +2,7 @@ export default function ClientsSection() {
   const clients = [
     { 
       name: "Microsoft",
-      logo: "https://img.icons8.com/color/96/microsoft.png"
+      logo: "https://img.icons8.com/fluency/96/microsoft-logo.png"
     },
     { 
       name: "IBM",
@@ -10,15 +10,15 @@ export default function ClientsSection() {
     },
     { 
       name: "Amazon",
-      logo: "https://img.icons8.com/color/96/amazon.png"
+      logo: "https://img.icons8.com/color/96/amazon-web-services.png"
     },
     { 
       name: "Google",
-      logo: "https://img.icons8.com/color/96/google-logo.png"
+      logo: "https://img.icons8.com/color/96/google-cloud.png"
     },
     { 
       name: "Apple",
-      logo: "https://img.icons8.com/ios-filled/96/ffffff/mac-os.png"
+      logo: "https://img.icons8.com/sf-ultralight-filled/96/ffffff/mac-os.png"
     },
     { 
       name: "Oracle",

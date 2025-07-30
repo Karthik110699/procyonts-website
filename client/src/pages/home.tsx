@@ -45,8 +45,8 @@ export default function Home() {
             </div>
             <div className="reveal relative">
               <img 
-                src="https://images.unsplash.com/photo-1558494949-ef010cbdcc31?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&h=600" 
-                alt="AI and cloud computing dashboard interface" 
+                src="https://images.unsplash.com/photo-1635070041078-e363dbe005cb?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&h=600" 
+                alt="Futuristic AI neural network with glowing connections and data streams" 
                 className="rounded-2xl shadow-2xl w-full"
               />
               <div className="absolute inset-0 bg-gradient-to-tr from-blue-600/20 to-transparent rounded-2xl"></div>

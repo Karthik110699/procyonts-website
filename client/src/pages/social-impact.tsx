@@ -7,7 +7,7 @@ export default function SocialImpactPage() {
     {
       title: "Community Technology Centers",
       description: "Building digital literacy through community-based technology centers in underserved areas.",
-      image: "https://images.unsplash.com/photo-1522202176988-66273c2fd55f?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&h=600",
+      image: "https://images.unsplash.com/photo-1559136555-9303baea8ebd?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&h=600",
       icon: Heart,
       color: "emerald",
       stats: "15+ Centers Built",
@@ -16,7 +16,7 @@ export default function SocialImpactPage() {
     {
       title: "Green Cloud Initiative",
       description: "Promoting carbon-neutral cloud infrastructure and sustainable technology practices.",
-      image: "https://images.unsplash.com/photo-1441974231531-c6227db76b6e?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&h=600",
+      image: "https://images.unsplash.com/photo-1558618047-3c8c76ca7d13?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&h=600",
       icon: Leaf,
       color: "blue",
       stats: "40% Carbon Reduction",
@@ -25,7 +25,7 @@ export default function SocialImpactPage() {
     {
       title: "STEM Education Program",
       description: "Scholarship programs and coding bootcamps for underprivileged students worldwide.",
-      image: "https://images.unsplash.com/photo-1509062522246-3755977927d7?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&h=600",
+      image: "https://images.unsplash.com/photo-1571019613454-1cb2f99b2d8b?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&h=600",
       icon: GraduationCap,
       color: "purple",
       stats: "500+ Scholarships",
@@ -34,7 +34,7 @@ export default function SocialImpactPage() {
     {
       title: "Digital Inclusion Project",
       description: "Bridging the digital divide through free internet access and device distribution.",
-      image: "https://images.unsplash.com/photo-1560472354-b33ff0c44a43?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&h=600",
+      image: "https://images.unsplash.com/photo-1518611012118-696072aa579a?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&h=600",
       icon: Globe,
       color: "cyan",
       stats: "25 Communities Connected",
@@ -45,17 +45,17 @@ export default function SocialImpactPage() {
   const videos = [
     {
       title: "Community Impact Story",
-      thumbnail: "https://picsum.photos/600/400?random=1",
+      thumbnail: "https://images.unsplash.com/photo-1551836022-deb4988cc6c0?ixlib=rb-4.0.3&auto=format&fit=crop&w=600&h=400",
       duration: "3:45"
     },
     {
       title: "Environmental Initiatives", 
-      thumbnail: "https://picsum.photos/600/400?random=2",
+      thumbnail: "https://images.unsplash.com/photo-1569163139394-de4e5f43e4e3?ixlib=rb-4.0.3&auto=format&fit=crop&w=600&h=400",
       duration: "2:30"
     },
     {
       title: "Education Program Success",
-      thumbnail: "https://picsum.photos/600/400?random=3",
+      thumbnail: "https://images.unsplash.com/photo-1516321318423-f06f85e504b3?ixlib=rb-4.0.3&auto=format&fit=crop&w=600&h=400",
       duration: "4:12"
     }
   ];
