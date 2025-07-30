@@ -115,31 +115,27 @@ export default function SocialImpactPage() {
             {initiatives.map((initiative, index) => {
               const IconComponent = initiative.icon;
               return (
-                <div key={index} className="conic-border bg-gradient-to-br from-gray-800 to-gray-900 rounded-2xl overflow-hidden group hover:scale-105 transition-all duration-500">
-                  <div className="relative h-64 overflow-hidden">
-                    <img 
-                      src={initiative.image} 
-                      alt={initiative.title}
-                      className="w-full h-full object-cover group-hover:scale-110 transition-transform duration-700"
-                    />
-                    <div className="absolute inset-0 bg-gradient-to-t from-black/60 to-transparent"></div>
-                    <div className={`absolute top-4 left-4 w-12 h-12 rounded-lg flex items-center justify-center ${
-                      initiative.color === 'emerald' ? 'bg-emerald-500/20' :
-                      initiative.color === 'blue' ? 'bg-blue-500/20' :
-                      initiative.color === 'purple' ? 'bg-purple-500/20' :
-                      'bg-cyan-500/20'
-                    }`}>
-                      <IconComponent className={`w-6 h-6 ${
-                        initiative.color === 'emerald' ? 'text-emerald-400' :
-                        initiative.color === 'blue' ? 'text-blue-400' :
-                        initiative.color === 'purple' ? 'text-purple-400' :
-                        'text-cyan-400'
-                      }`} />
+                <div key={index} className="bg-gradient-to-br from-gray-800 to-gray-900 rounded-2xl overflow-hidden group hover:scale-105 transition-all duration-500 border border-gray-600 relative z-10">
+                  <div className="relative h-64 overflow-hidden bg-gradient-to-br from-blue-600 to-purple-600 flex items-center justify-center">
+                    <div className="text-white text-center p-6">
+                      <div className={`w-16 h-16 rounded-lg flex items-center justify-center mx-auto mb-4 ${
+                        initiative.color === 'emerald' ? 'bg-emerald-500/30' :
+                        initiative.color === 'blue' ? 'bg-blue-500/30' :
+                        initiative.color === 'purple' ? 'bg-purple-500/30' :
+                        'bg-cyan-500/30'
+                      }`}>
+                        <IconComponent className={`w-8 h-8 ${
+                          initiative.color === 'emerald' ? 'text-emerald-200' :
+                          initiative.color === 'blue' ? 'text-blue-200' :
+                          initiative.color === 'purple' ? 'text-purple-200' :
+                          'text-cyan-200'
+                        }`} />
+                      </div>
+                      <h3 className="text-xl font-bold">{initiative.title}</h3>
                     </div>
                   </div>
                   
                   <div className="p-8">
-                    <h3 className="text-2xl font-bold mb-4">{initiative.title}</h3>
                     <p className="text-gray-300 mb-6">{initiative.description}</p>
                     
                     <div className="flex justify-between items-center">
