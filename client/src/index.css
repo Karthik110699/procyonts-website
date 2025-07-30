@@ -661,13 +661,13 @@
 
   /* Animated Gradient Text */
   .animated-gradient-text {
-    background: linear-gradient(270deg, #10b981, #22c55e, #facc15, #fde047, #ffffff, #f8fafc, #10b981, #16a34a);
-    background-size: 400% 400%;
+    background: linear-gradient(270deg, #10b981, #fbbf24, #ffffff, #10b981, #fbbf24);
+    background-size: 300% 300%;
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
     background-clip: text;
     color: transparent;
-    animation: gradientShift 10s ease-in-out infinite;
+    animation: gradientShift 8s ease infinite;
   }
 
   @keyframes gradientShift {
