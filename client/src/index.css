@@ -241,50 +241,24 @@
   .stagger-delay-5 { transition-delay: 0.5s; }
   .stagger-delay-6 { transition-delay: 0.6s; }
 
-  /* Ultra-smooth scrolling with hardware acceleration */
+  /* Enhanced smooth scrolling with momentum */
   html {
     scroll-behavior: smooth;
-    scrollbar-width: thin;
-    scrollbar-color: rgba(59, 130, 246, 0.5) transparent;
   }
 
   body {
     scroll-snap-type: y proximity;
-    transform: translateZ(0);
-    backface-visibility: hidden;
-    perspective: 1000;
   }
 
-  /* Smooth scroll sections with GPU acceleration */
+  /* Smooth scroll sections */
   section {
     scroll-snap-align: start;
     scroll-snap-stop: normal;
-    transform: translateZ(0);
-    will-change: transform;
   }
 
-  /* Enhanced scroll momentum with 60fps optimization */
+  /* Enhanced scroll momentum effect */
   .momentum-scroll {
-    transition: transform 0.16s cubic-bezier(0.25, 0.46, 0.45, 0.94);
-    transform: translateZ(0);
-  }
-
-  /* Custom scrollbar for webkit browsers */
-  ::-webkit-scrollbar {
-    width: 8px;
-  }
-
-  ::-webkit-scrollbar-track {
-    background: rgba(0, 0, 0, 0.1);
-  }
-
-  ::-webkit-scrollbar-thumb {
-    background: linear-gradient(45deg, #3b82f6, #10b981);
-    border-radius: 4px;
-  }
-
-  ::-webkit-scrollbar-thumb:hover {
-    background: linear-gradient(45deg, #2563eb, #059669);
+    transition: transform 0.3s cubic-bezier(0.25, 0.46, 0.45, 0.94);
   }
 
   /* Parallax effects */
@@ -340,70 +314,66 @@
   .zoom-section {
     opacity: 0;
     transform: scale(0.3) translateZ(-200px);
-    transition: transform 1.8s cubic-bezier(0.23, 1, 0.32, 1), opacity 1.8s cubic-bezier(0.23, 1, 0.32, 1);
+    transition: all 2.2s cubic-bezier(0.165, 0.84, 0.44, 1);
     transform-origin: center center;
     will-change: transform, opacity;
-    backface-visibility: hidden;
-    transform-style: preserve-3d;
   }
 
   .zoom-section.active {
     opacity: 1;
     transform: scale(1) translateZ(0);
-    transition: transform 1.8s cubic-bezier(0.23, 1, 0.32, 1), opacity 1.8s cubic-bezier(0.23, 1, 0.32, 1);
+    transition: all 2.2s cubic-bezier(0.165, 0.84, 0.44, 1);
   }
 
   .zoom-section.zoom-out {
-    transform: scale(1.1) translateZ(100px);
+    transform: scale(1.15) translateZ(100px);
     opacity: 0;
-    transition: transform 1.8s cubic-bezier(0.23, 1, 0.32, 1), opacity 1.8s cubic-bezier(0.23, 1, 0.32, 1);
+    transition: all 2.2s cubic-bezier(0.165, 0.84, 0.44, 1);
   }
 
   .zoom-section.reverse {
     opacity: 0;
-    transform: scale(1.2) translateZ(200px);
-    transition: transform 1.8s cubic-bezier(0.23, 1, 0.32, 1), opacity 1.8s cubic-bezier(0.23, 1, 0.32, 1);
+    transform: scale(1.25) translateZ(200px);
+    transition: all 2.2s cubic-bezier(0.165, 0.84, 0.44, 1);
   }
 
   /* Enhanced zoom variants with reverse animations */
   .zoom-fade-in {
     opacity: 0;
-    transform: scale(0.4) rotateX(10deg);
-    transition: transform 2s cubic-bezier(0.23, 1, 0.32, 1), opacity 2s cubic-bezier(0.23, 1, 0.32, 1);
+    transform: scale(0.4) rotateX(15deg);
+    transition: all 2.4s cubic-bezier(0.165, 0.84, 0.44, 1);
     will-change: transform, opacity;
-    backface-visibility: hidden;
   }
 
   .zoom-fade-in.active {
     opacity: 1;
     transform: scale(1) rotateX(0deg);
-    transition: transform 2s cubic-bezier(0.23, 1, 0.32, 1), opacity 2s cubic-bezier(0.23, 1, 0.32, 1);
+    transition: all 2.4s cubic-bezier(0.165, 0.84, 0.44, 1);
   }
 
   .zoom-fade-in.reverse {
     opacity: 0;
-    transform: scale(1.3) rotateX(-10deg);
-    transition: transform 2s cubic-bezier(0.23, 1, 0.32, 1), opacity 2s cubic-bezier(0.23, 1, 0.32, 1);
+    transform: scale(1.4) rotateX(-15deg);
+    transition: all 2.4s cubic-bezier(0.165, 0.84, 0.44, 1);
   }
 
   .zoom-slide-up {
     opacity: 0;
-    transform: scale(0.7) translateY(100px) rotateY(3deg);
-    transition: transform 2.2s cubic-bezier(0.23, 1, 0.32, 1), opacity 2.2s cubic-bezier(0.23, 1, 0.32, 1);
+    transform: scale(0.7) translateY(120px) rotateY(5deg);
+    transition: all 2.6s cubic-bezier(0.165, 0.84, 0.44, 1);
     will-change: transform, opacity;
-    backface-visibility: hidden;
   }
 
   .zoom-slide-up.active {
     opacity: 1;
     transform: scale(1) translateY(0) rotateY(0deg);
-    transition: transform 2.2s cubic-bezier(0.23, 1, 0.32, 1), opacity 2.2s cubic-bezier(0.23, 1, 0.32, 1);
+    transition: all 2.6s cubic-bezier(0.165, 0.84, 0.44, 1);
   }
 
   .zoom-slide-up.reverse {
     opacity: 0;
-    transform: scale(1.2) translateY(-60px) rotateY(-3deg);
-    transition: transform 2.2s cubic-bezier(0.23, 1, 0.32, 1), opacity 2.2s cubic-bezier(0.23, 1, 0.32, 1);
+    transform: scale(1.3) translateY(-80px) rotateY(-5deg);
+    transition: all 2.6s cubic-bezier(0.165, 0.84, 0.44, 1);
   }
 
   /* Enhanced bidirectional support for regular animations */
@@ -581,7 +551,7 @@
     transition-timing-function: cubic-bezier(0.165, 0.84, 0.44, 1);
   }
 
-  /* Enhanced viewport optimization with hardware acceleration */
+  /* Enhanced viewport optimization */
   @supports (will-change: transform) {
     .zoom-section,
     .zoom-fade-in,
@@ -593,63 +563,6 @@
     .reveal-scale,
     .reveal-rotate {
       will-change: transform, opacity;
-      transform: translate3d(0, 0, 0);
-    }
-  }
-
-  /* Force hardware acceleration for all elements */
-  * {
-    -webkit-font-smoothing: antialiased;
-    -moz-osx-font-smoothing: grayscale;
-  }
-
-  /* Optimize rendering for smooth scrolling */
-  .conic-border,
-  .floating-card,
-  .wave-container,
-  .morphing-bg,
-  .wireframe-overlay {
-    transform: translate3d(0, 0, 0);
-    will-change: transform;
-  }
-
-  /* Smooth momentum scrolling for mobile */
-  body {
-    -webkit-overflow-scrolling: touch;
-    overflow-x: hidden;
-  }
-
-  /* Reduce motion blur during scrolling */
-  @media (prefers-reduced-motion: no-preference) {
-    * {
-      scroll-behavior: smooth;
-    }
-    
-    section {
-      contain: layout style paint;
-    }
-  }
-
-  /* Instant activation for first-time page load */
-  .zoom-section.instant-active,
-  .zoom-fade-in.instant-active,
-  .zoom-slide-up.instant-active {
-    opacity: 1 !important;
-    transform: scale(1) translateZ(0) !important;
-    transition: none !important;
-  }
-
-  /* Apply quick activation after page load */
-  .page-loaded .zoom-section:not(.active),
-  .page-loaded .zoom-fade-in:not(.active),
-  .page-loaded .zoom-slide-up:not(.active) {
-    animation: quickReveal 0.3s ease-out forwards;
-  }
-
-  @keyframes quickReveal {
-    to {
-      opacity: 1;
-      transform: scale(1) translateZ(0);
     }
   }
 
