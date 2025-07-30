@@ -4,14 +4,14 @@ export default function HeroSection() {
   const [currentServiceIndex, setCurrentServiceIndex] = useState(0);
   
   const procyonServices = [
-    { name: "SalesForce", color: "from-orange-400 to-red-500", dotColor: "bg-orange-400", shadowColor: "shadow-orange-400/50" },
-    { name: "ServiceNow", color: "from-green-400 to-emerald-500", dotColor: "bg-emerald-400", shadowColor: "shadow-emerald-400/50" },
-    { name: "SAP", color: "from-blue-400 to-indigo-500", dotColor: "bg-blue-400", shadowColor: "shadow-blue-400/50" },
-    { name: "Cloud Solutions", color: "from-sky-400 to-cyan-500", dotColor: "bg-sky-400", shadowColor: "shadow-sky-400/50" },
-    { name: "AI & ML", color: "from-purple-400 to-pink-500", dotColor: "bg-purple-400", shadowColor: "shadow-purple-400/50" },
-    { name: "Data Analytics", color: "from-amber-400 to-yellow-500", dotColor: "bg-amber-400", shadowColor: "shadow-amber-400/50" },
-    { name: "Staff Augmentation", color: "from-teal-400 to-green-500", dotColor: "bg-teal-400", shadowColor: "shadow-teal-400/50" },
-    { name: "Government Services", color: "from-indigo-400 to-purple-500", dotColor: "bg-indigo-400", shadowColor: "shadow-indigo-400/50" }
+    { name: "SalesForce", color: "from-white to-yellow-400", dotColor: "bg-yellow-400", shadowColor: "shadow-yellow-400/50" },
+    { name: "ServiceNow", color: "from-green-400 to-green-500", dotColor: "bg-green-400", shadowColor: "shadow-green-400/50" },
+    { name: "SAP", color: "from-white to-green-400", dotColor: "bg-green-400", shadowColor: "shadow-green-400/50" },
+    { name: "Cloud Solutions", color: "from-yellow-400 to-green-400", dotColor: "bg-yellow-400", shadowColor: "shadow-yellow-400/50" },
+    { name: "AI & ML", color: "from-green-400 to-yellow-400", dotColor: "bg-green-400", shadowColor: "shadow-green-400/50" },
+    { name: "Data Analytics", color: "from-yellow-400 to-yellow-500", dotColor: "bg-yellow-400", shadowColor: "shadow-yellow-400/50" },
+    { name: "Staff Augmentation", color: "from-white to-green-400", dotColor: "bg-white", shadowColor: "shadow-white/50" },
+    { name: "Government Services", color: "from-yellow-400 to-white", dotColor: "bg-white", shadowColor: "shadow-white/50" }
   ];
 
 
