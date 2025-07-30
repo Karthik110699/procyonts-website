@@ -8,7 +8,7 @@ import ClientsSection from "./clients-section";
 
 export default function ZoomViewport() {
   const [currentSection, setCurrentSection] = useState(0);
-  const [isTransitioning, setIsTransitioning] = useState(false);
+  const [scrollProgress, setScrollProgress] = useState(0);
 
   const sections = [
     { component: HeroSection, name: "hero" },
@@ -27,21 +27,15 @@ export default function ZoomViewport() {
         requestAnimationFrame(() => {
           const scrollY = window.scrollY;
           const sectionHeight = window.innerHeight;
-          const newSection = Math.floor(scrollY / sectionHeight);
+          const totalHeight = sectionHeight * sections.length;
           
-          if (newSection !== currentSection && newSection >= 0 && newSection < sections.length) {
-            if (!isTransitioning) {
-              setIsTransitioning(true);
-              
-              // Delay section change for smooth transition
-              setTimeout(() => {
-                setCurrentSection(newSection);
-                setTimeout(() => {
-                  setIsTransitioning(false);
-                }, 1000);
-              }, 500);
-            }
-          }
+          // Calculate current section and progress within that section
+          const exactSection = Math.min(scrollY / sectionHeight, sections.length - 1);
+          const newSection = Math.floor(exactSection);
+          const progress = exactSection - newSection;
+          
+          setCurrentSection(newSection);
+          setScrollProgress(progress);
           
           ticking = false;
         });
@@ -49,9 +43,9 @@ export default function ZoomViewport() {
       }
     };
 
-    window.addEventListener('scroll', handleScroll);
+    window.addEventListener('scroll', handleScroll, { passive: true });
     return () => window.removeEventListener('scroll', handleScroll);
-  }, [currentSection, isTransitioning, sections.length]);
+  }, [sections.length]);
 
   return (
     <>
@@ -64,18 +58,29 @@ export default function ZoomViewport() {
           const Component = section.component;
           const isActive = index === currentSection;
           const isNext = index === currentSection + 1;
-          const isPrev = index === currentSection - 1;
+          
+          // Calculate scale and opacity based on scroll progress
+          let scale = 0.1;
+          let opacity = 0;
+          
+          if (isActive) {
+            scale = 0.1 + (0.9 * (1 - scrollProgress));
+            opacity = 1 - scrollProgress * 0.3;
+          } else if (isNext) {
+            scale = 0.1 + (0.9 * scrollProgress);
+            opacity = scrollProgress;
+          }
           
           return (
             <div
               key={section.name}
-              className={`zoom-section-container ${
-                isActive ? 'active' : 
-                (isNext || isPrev) ? 'zoom-out' : ''
-              }`}
+              className="zoom-section-container"
               style={{
-                zIndex: isActive ? 10 : isNext ? 5 : isPrev ? 5 : 1,
-                transition: `all 2.5s cubic-bezier(0.25, 0.46, 0.45, 0.94) ${index * 0.1}s`
+                opacity,
+                transform: `scale(${scale}) translateZ(${scale < 1 ? -500 + (scale * 500) : 0}px)`,
+                zIndex: isActive ? 10 : isNext ? 9 : 1,
+                pointerEvents: isActive ? 'auto' : 'none',
+                transition: 'none' // Remove transition for smooth scroll-based animation
               }}
             >
               <div className="w-full h-full flex items-center justify-center">
