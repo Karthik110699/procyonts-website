@@ -1,27 +1,30 @@
 import { Users, MapPin, Clock, DollarSign, Code, Brain, Shield } from "lucide-react";
 import { Link } from "wouter";
 import Navbar from "@/components/navbar";
+import { useScrollReveal } from "@/hooks/use-scroll-reveal";
 
 export default function CareersPage() {
+  useScrollReveal();
+
   return (
-    <div className="min-h-screen bg-procyon-dark text-white">
+    <div className="min-h-screen bg-gradient-to-b from-gray-900 via-procyon-dark to-gray-900 text-white overflow-x-hidden">
       <Navbar />
       {/* Header */}
-      <div className="pt-20 pb-10">
-        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-          <h1 className="text-5xl md:text-6xl font-bold mb-6">
+      <div className="pt-20 pb-10 zoom-container">
+        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 zoom-section">
+          <h1 className="text-5xl md:text-6xl font-bold mb-6 reveal-scale">
             <span className="gradient-text">Join Our Team</span>
           </h1>
-          <p className="text-xl text-gray-300 max-w-3xl">
+          <p className="text-xl text-gray-300 max-w-3xl reveal-fade" data-delay="200">
             Build the future of technology with us. We're looking for passionate individuals who want to make a difference through innovation and collaboration.
           </p>
         </div>
       </div>
 
       {/* Why Join Us */}
-      <section className="py-20">
-        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-          <div className="text-center mb-16">
+      <section className="py-20 zoom-container">
+        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 zoom-section">
+          <div className="text-center mb-16 reveal-scale" data-delay="100">
             <h2 className="text-4xl font-bold mb-6">Why Choose Procyon?</h2>
             <p className="text-xl text-gray-300">
               More than just a job - it's a career-defining opportunity
@@ -29,7 +32,7 @@ export default function CareersPage() {
           </div>
           
           <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-8">
-            <div className="text-center">
+            <div className="text-center reveal-fade" data-delay="200">
               <div className="w-16 h-16 bg-blue-500/20 rounded-xl flex items-center justify-center mb-6 mx-auto">
                 <Brain className="w-8 h-8 text-blue-400" />
               </div>
@@ -39,7 +42,7 @@ export default function CareersPage() {
               </p>
             </div>
             
-            <div className="text-center">
+            <div className="text-center reveal-fade" data-delay="300">
               <div className="w-16 h-16 bg-emerald-500/20 rounded-xl flex items-center justify-center mb-6 mx-auto">
                 <Users className="w-8 h-8 text-emerald-400" />
               </div>
@@ -49,7 +52,7 @@ export default function CareersPage() {
               </p>
             </div>
             
-            <div className="text-center">
+            <div className="text-center reveal-fade" data-delay="400">
               <div className="w-16 h-16 bg-purple-500/20 rounded-xl flex items-center justify-center mb-6 mx-auto">
                 <DollarSign className="w-8 h-8 text-purple-400" />
               </div>
@@ -59,7 +62,7 @@ export default function CareersPage() {
               </p>
             </div>
             
-            <div className="text-center">
+            <div className="text-center reveal-fade" data-delay="500">
               <div className="w-16 h-16 bg-amber-500/20 rounded-xl flex items-center justify-center mb-6 mx-auto">
                 <Shield className="w-8 h-8 text-amber-400" />
               </div>

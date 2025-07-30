@@ -1,28 +1,31 @@
 import { Users, Target, Award, Globe } from "lucide-react";
 import { Link } from "wouter";
 import Navbar from "@/components/navbar";
+import { useScrollReveal } from "@/hooks/use-scroll-reveal";
 
 export default function AboutPage() {
+  useScrollReveal();
+
   return (
-    <div className="min-h-screen bg-procyon-dark text-white">
+    <div className="min-h-screen bg-gradient-to-b from-gray-900 via-procyon-dark to-gray-900 text-white overflow-x-hidden">
       <Navbar />
       {/* Header */}
-      <div className="pt-20 pb-10">
-        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-          <h1 className="text-5xl md:text-6xl font-bold mb-6">
+      <div className="pt-20 pb-10 zoom-container">
+        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 zoom-section">
+          <h1 className="text-5xl md:text-6xl font-bold mb-6 reveal-scale">
             <span className="gradient-text">About Procyon</span>
           </h1>
-          <p className="text-xl text-gray-300 max-w-3xl">
+          <p className="text-xl text-gray-300 max-w-3xl reveal-fade" data-delay="200">
             We are a forward-thinking technology company dedicated to transforming businesses through innovative AI-powered solutions and cutting-edge digital services.
           </p>
         </div>
       </div>
 
       {/* Mission & Vision */}
-      <section className="py-20">
-        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+      <section className="py-20 zoom-container">
+        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 zoom-section">
           <div className="grid md:grid-cols-2 gap-16">
-            <div>
+            <div className="reveal-slide-left" data-delay="100">
               <div className="w-16 h-16 bg-blue-500/20 rounded-xl flex items-center justify-center mb-6">
                 <Target className="w-8 h-8 text-blue-400" />
               </div>
@@ -32,7 +35,7 @@ export default function AboutPage() {
               </p>
             </div>
             
-            <div>
+            <div className="reveal-slide-right" data-delay="200">
               <div className="w-16 h-16 bg-emerald-500/20 rounded-xl flex items-center justify-center mb-6">
                 <Globe className="w-8 h-8 text-emerald-400" />
               </div>
@@ -46,9 +49,9 @@ export default function AboutPage() {
       </section>
 
       {/* Values */}
-      <section className="py-20 bg-gray-900/50">
-        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-          <div className="text-center mb-16">
+      <section className="py-20 bg-gray-900/50 zoom-container">
+        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 zoom-section">
+          <div className="text-center mb-16 reveal-scale" data-delay="100">
             <h2 className="text-4xl font-bold mb-6">Our Core Values</h2>
             <p className="text-xl text-gray-300 max-w-3xl mx-auto">
               The principles that guide everything we do
@@ -56,7 +59,7 @@ export default function AboutPage() {
           </div>
           
           <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-8">
-            <div className="text-center">
+            <div className="text-center reveal-fade" data-delay="200">
               <div className="w-20 h-20 bg-blue-500/20 rounded-xl flex items-center justify-center mb-6 mx-auto">
                 <Award className="w-10 h-10 text-blue-400" />
               </div>
@@ -66,7 +69,7 @@ export default function AboutPage() {
               </p>
             </div>
             
-            <div className="text-center">
+            <div className="text-center reveal-fade" data-delay="300">
               <div className="w-20 h-20 bg-emerald-500/20 rounded-xl flex items-center justify-center mb-6 mx-auto">
                 <Users className="w-10 h-10 text-emerald-400" />
               </div>

@@ -1,23 +1,26 @@
 import { Cloud, CheckCircle, Zap, Users, BarChart, Shield, Globe } from "lucide-react";
 import { Link } from "wouter";
 import Navbar from "@/components/navbar";
+import { useScrollReveal } from "@/hooks/use-scroll-reveal";
 
 export default function SalesforcePage() {
+  useScrollReveal();
+
   return (
-    <div className="min-h-screen bg-procyon-dark text-white">
+    <div className="min-h-screen bg-gradient-to-b from-gray-900 via-procyon-dark to-gray-900 text-white overflow-x-hidden">
       <Navbar />
       {/* Header */}
-      <div className="pt-20 pb-10">
-        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+      <div className="pt-20 pb-10 zoom-container">
+        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 zoom-section">
           <div className="flex items-start gap-8">
-            <div className="w-20 h-20 bg-blue-500/20 rounded-xl flex items-center justify-center">
+            <div className="w-20 h-20 bg-blue-500/20 rounded-xl flex items-center justify-center reveal-scale">
               <Cloud className="w-10 h-10 text-blue-400" />
             </div>
             <div>
-              <h1 className="text-5xl md:text-6xl font-bold mb-6">
+              <h1 className="text-5xl md:text-6xl font-bold mb-6 reveal-slide-left" data-delay="200">
                 <span className="gradient-text">Salesforce Solutions</span>
               </h1>
-              <p className="text-xl text-gray-300 max-w-3xl">
+              <p className="text-xl text-gray-300 max-w-3xl reveal-fade" data-delay="400">
                 Transform your customer relationships with AI-driven Salesforce solutions designed for tomorrow's enterprises. Build intelligent, automated workflows that drive growth.
               </p>
             </div>

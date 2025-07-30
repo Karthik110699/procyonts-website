@@ -1,8 +1,10 @@
 import { Heart, Leaf, GraduationCap, Users, Globe, Target, Award, ArrowLeft } from "lucide-react";
 import { Link } from "wouter";
 import Navbar from "@/components/navbar";
+import { useScrollReveal } from "@/hooks/use-scroll-reveal";
 
 export default function SocialImpactPage() {
+  useScrollReveal();
   const initiatives = [
     {
       title: "Community Technology Centers",
@@ -61,18 +63,18 @@ export default function SocialImpactPage() {
   ];
 
   return (
-    <div className="bg-procyon-dark text-white min-h-screen">
+    <div className="bg-gradient-to-b from-gray-900 via-procyon-dark to-gray-900 text-white min-h-screen overflow-x-hidden">
       <Navbar />
       
       {/* Hero Section */}
-      <section className="pt-32 pb-20 relative overflow-hidden">
+      <section className="pt-32 pb-20 relative overflow-hidden zoom-container">
         <div className="absolute inset-0 bg-gradient-to-br from-blue-900/20 to-emerald-900/20"></div>
-        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative">
+        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative zoom-section">
           <div className="text-center mb-16">
-            <h1 className="text-5xl md:text-6xl font-bold mb-6">
+            <h1 className="text-5xl md:text-6xl font-bold mb-6 reveal-scale">
               <span className="gradient-text">Giving Back</span> to Society
             </h1>
-            <p className="text-xl text-gray-300 max-w-3xl mx-auto">
+            <p className="text-xl text-gray-300 max-w-3xl mx-auto reveal-fade" data-delay="200">
               Our commitment extends beyond technology to creating positive social impact in the communities we serve. When you build a better company, you can build a better world.
             </p>
           </div>

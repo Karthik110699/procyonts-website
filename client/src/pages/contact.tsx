@@ -2,8 +2,10 @@ import { Mail, Phone, MapPin, Send } from "lucide-react";
 import Navbar from "@/components/navbar";
 import { useState } from "react";
 import { useToast } from "@/hooks/use-toast";
+import { useScrollReveal } from "@/hooks/use-scroll-reveal";
 
 export default function ContactPage() {
+  useScrollReveal();
   const [formData, setFormData] = useState({
     firstName: '',
     lastName: '',
@@ -65,12 +67,12 @@ export default function ContactPage() {
   };
 
   return (
-    <div className="min-h-screen bg-procyon-dark text-white">
+    <div className="min-h-screen bg-gradient-to-b from-gray-900 via-procyon-dark to-gray-900 text-white overflow-x-hidden">
       <Navbar />
       {/* Header */}
-      <div className="pt-20 pb-10">
-        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-          <h1 className="text-5xl md:text-6xl font-bold mb-6">
+      <div className="pt-20 pb-10 zoom-container">
+        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 zoom-section">
+          <h1 className="text-5xl md:text-6xl font-bold mb-6 reveal-scale">
             <span className="gradient-text">Contact Us</span>
           </h1>
           <p className="text-xl text-gray-300 max-w-3xl">

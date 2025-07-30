@@ -1,30 +1,33 @@
 import { Brain, BarChart, Users, Building, Server, Cog } from "lucide-react";
 import { Link } from "wouter";
 import Navbar from "@/components/navbar";
+import { useScrollReveal } from "@/hooks/use-scroll-reveal";
 
 export default function ServicesPage() {
+  useScrollReveal();
+
   return (
-    <div className="min-h-screen bg-procyon-dark text-white">
+    <div className="min-h-screen bg-gradient-to-b from-gray-900 via-procyon-dark to-gray-900 text-white overflow-x-hidden">
       <Navbar />
       {/* Header */}
-      <div className="pt-20 pb-10">
-        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-          <h1 className="text-5xl md:text-6xl font-bold mb-6">
+      <div className="pt-20 pb-10 zoom-container">
+        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 zoom-section">
+          <h1 className="text-5xl md:text-6xl font-bold mb-6 reveal-scale">
             <span className="gradient-text">Our Services</span>
           </h1>
-          <p className="text-xl text-gray-300 max-w-3xl">
+          <p className="text-xl text-gray-300 max-w-3xl reveal-fade" data-delay="200">
             Comprehensive technology services to accelerate your digital transformation and drive business growth.
           </p>
         </div>
       </div>
 
       {/* Services Grid */}
-      <section className="py-20">
-        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+      <section className="py-20 zoom-container">
+        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 zoom-section">
           <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
             
             {/* Cloud Transformation */}
-            <div className="conic-border bg-gradient-to-br from-gray-800 to-gray-900 p-8 rounded-2xl border border-gray-700 hover:border-blue-500 cursor-pointer transition-all duration-300" onClick={() => window.location.href = '/services/cloud'}>
+            <div className="group floating-card conic-border bg-gradient-to-br from-gray-800 to-gray-900 p-8 rounded-2xl border border-gray-700 hover:border-blue-500 cursor-pointer transition-all duration-300 reveal-fade" data-delay="100" onClick={() => window.location.href = '/services/cloud'}>
               <div className="w-16 h-16 bg-blue-500/20 rounded-xl flex items-center justify-center mb-6 relative z-10">
                 <Server className="w-8 h-8 text-blue-400" />
               </div>
@@ -41,7 +44,7 @@ export default function ServicesPage() {
             </div>
 
             {/* AI & ML */}
-            <div className="conic-border bg-gradient-to-br from-gray-800 to-gray-900 p-8 rounded-2xl border border-gray-700 hover:border-emerald-500 cursor-pointer transition-all duration-300" onClick={() => window.location.href = '/services/ai-ml'}>
+            <div className="group floating-card conic-border bg-gradient-to-br from-gray-800 to-gray-900 p-8 rounded-2xl border border-gray-700 hover:border-emerald-500 cursor-pointer transition-all duration-300 reveal-fade" data-delay="200" onClick={() => window.location.href = '/services/ai-ml'}>
               <div className="w-16 h-16 bg-emerald-500/20 rounded-xl flex items-center justify-center mb-6 relative z-10">
                 <Brain className="w-8 h-8 text-emerald-400" />
               </div>
@@ -58,7 +61,7 @@ export default function ServicesPage() {
             </div>
 
             {/* Data Analytics */}
-            <div className="conic-border bg-gradient-to-br from-gray-800 to-gray-900 p-8 rounded-2xl border border-gray-700 hover:border-amber-500 cursor-pointer transition-all duration-300" onClick={() => window.location.href = '/services/data-analytics'}>
+            <div className="group floating-card conic-border bg-gradient-to-br from-gray-800 to-gray-900 p-8 rounded-2xl border border-gray-700 hover:border-amber-500 cursor-pointer transition-all duration-300 reveal-fade" data-delay="300" onClick={() => window.location.href = '/services/data-analytics'}>
               <div className="w-16 h-16 bg-amber-500/20 rounded-xl flex items-center justify-center mb-6 relative z-10">
                 <BarChart className="w-8 h-8 text-amber-400" />
               </div>
