@@ -50,13 +50,10 @@ export default function HeroSection() {
             <div className="mb-8">
               <h1 className="text-5xl lg:text-6xl xl:text-7xl font-bold leading-tight text-white mb-6">
                 <span className="block animated-gradient-text mb-2">
-                  Ideate, Innovate &
+                  AI-Powered Solutions?
                 </span>
-                <span className="block">Break rules for a better tomorrow</span>
+                <span className="block">Procyon's Your Partner!</span>
               </h1>
-              <p className="text-xl lg:text-2xl text-gray-300 mb-8">
-                We are the brightest star that guides you on the journey to change
-              </p>
             </div>
 
 
