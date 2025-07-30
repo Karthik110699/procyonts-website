@@ -13,16 +13,12 @@ export default function FourPillarsSection() {
         </div>
 
         <div className="mb-16 reveal flex justify-center">
-          <div 
-            className="rounded-2xl shadow-2xl overflow-hidden"
-            style={{ width: '56.25%', height: 'calc(56.25vw * 0.6667 - 40px)' }}
-          >
-            <img 
-              src={dataAnalyticsWorkspace} 
-              alt="Modern data analytics workspace with interactive dashboard, charts, and business intelligence displays" 
-              className="w-full h-full object-cover"
-            />
-          </div>
+          <img 
+            src={dataAnalyticsWorkspace} 
+            alt="Modern data analytics workspace with interactive dashboard, charts, and business intelligence displays" 
+            className="rounded-2xl shadow-2xl"
+            style={{ width: '56.25%' }}
+          />
         </div>
 
         <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-8">
