@@ -1,4 +1,5 @@
 import { Brain, Zap, BarChart, Bot, Eye, Shield } from "lucide-react";
+import { Link } from "wouter";
 import Navbar from "@/components/navbar";
 
 export default function AIMLPage() {

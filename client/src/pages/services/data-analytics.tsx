@@ -1,4 +1,5 @@
 import { BarChart, Database, TrendingUp, Globe, Zap, Shield } from "lucide-react";
+import { Link } from "wouter";
 import Navbar from "@/components/navbar";
 
 export default function DataAnalyticsPage() {

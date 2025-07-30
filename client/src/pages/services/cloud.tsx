@@ -1,4 +1,5 @@
 import { Server, Shield, Zap, Globe, Database, Settings } from "lucide-react";
+import { Link } from "wouter";
 import Navbar from "@/components/navbar";
 
 export default function CloudPage() {

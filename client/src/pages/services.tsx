@@ -1,4 +1,5 @@
 import { Brain, BarChart, Users, Building, Server, Cog } from "lucide-react";
+import { Link } from "wouter";
 import Navbar from "@/components/navbar";
 
 export default function ServicesPage() {

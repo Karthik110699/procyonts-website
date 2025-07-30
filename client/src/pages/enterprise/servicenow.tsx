@@ -1,4 +1,5 @@
 import { Settings, Workflow, Clock, Shield, Users, Zap } from "lucide-react";
+import { Link } from "wouter";
 import Navbar from "@/components/navbar";
 
 export default function ServiceNowPage() {

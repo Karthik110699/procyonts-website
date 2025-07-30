@@ -1,4 +1,5 @@
 import { Cloud, CheckCircle, Zap, Users, BarChart, Shield, Globe } from "lucide-react";
+import { Link } from "wouter";
 import Navbar from "@/components/navbar";
 
 export default function SalesforcePage() {

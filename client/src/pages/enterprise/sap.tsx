@@ -1,4 +1,5 @@
 import { Database, TrendingUp, Shield, Zap, BarChart, Globe } from "lucide-react";
+import { Link } from "wouter";
 import Navbar from "@/components/navbar";
 
 export default function SAPPage() {

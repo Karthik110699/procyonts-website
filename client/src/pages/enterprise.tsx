@@ -1,4 +1,5 @@
 import { Cloud, Settings, Database } from "lucide-react";
+import { Link } from "wouter";
 import Navbar from "@/components/navbar";
 
 export default function EnterprisePage() {
