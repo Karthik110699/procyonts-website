@@ -13,11 +13,87 @@ export default function FourPillarsSection() {
         </div>
 
         <div className="mb-16 reveal">
-          <img 
-            src="https://images.unsplash.com/photo-1518709268805-4e9042af2176?ixlib=rb-4.0.3&auto=format&fit=crop&w=1200&h=400" 
-            alt="Innovative digital transformation with holographic data visualization and AI neural networks" 
-            className="w-full rounded-2xl shadow-2xl"
-          />
+          <div className="w-full h-64 rounded-2xl shadow-2xl bg-gradient-to-r from-blue-900 via-purple-900 to-indigo-900 relative overflow-hidden">
+            <div className="absolute inset-0 bg-gradient-to-br from-cyan-400/20 via-blue-500/20 to-purple-600/20"></div>
+            
+            {/* Neural Network Pattern */}
+            <svg className="absolute inset-0 w-full h-full" viewBox="0 0 800 300" fill="none">
+              {/* Network nodes */}
+              <circle cx="100" cy="150" r="8" fill="#60A5FA" className="animate-pulse">
+                <animate attributeName="r" values="6;12;6" dur="3s" repeatCount="indefinite"/>
+              </circle>
+              <circle cx="250" cy="80" r="6" fill="#34D399" className="animate-pulse"/>
+              <circle cx="250" cy="220" r="6" fill="#FBBF24" className="animate-pulse"/>
+              <circle cx="400" cy="120" r="8" fill="#A78BFA" className="animate-pulse">
+                <animate attributeName="r" values="6;10;6" dur="2s" repeatCount="indefinite"/>
+              </circle>
+              <circle cx="400" cy="180" r="6" fill="#F472B6" className="animate-pulse"/>
+              <circle cx="550" cy="100" r="8" fill="#60A5FA" className="animate-pulse"/>
+              <circle cx="550" cy="200" r="6" fill="#34D399" className="animate-pulse"/>
+              <circle cx="700" cy="150" r="10" fill="#FBBF24" className="animate-pulse">
+                <animate attributeName="r" values="8;14;8" dur="2.5s" repeatCount="indefinite"/>
+              </circle>
+              
+              {/* Connecting lines */}
+              <line x1="100" y1="150" x2="250" y2="80" stroke="url(#grad1)" strokeWidth="2" opacity="0.6"/>
+              <line x1="100" y1="150" x2="250" y2="220" stroke="url(#grad2)" strokeWidth="2" opacity="0.6"/>
+              <line x1="250" y1="80" x2="400" y2="120" stroke="url(#grad3)" strokeWidth="2" opacity="0.6"/>
+              <line x1="250" y1="220" x2="400" y2="180" stroke="url(#grad4)" strokeWidth="2" opacity="0.6"/>
+              <line x1="400" y1="120" x2="550" y2="100" stroke="url(#grad5)" strokeWidth="2" opacity="0.6"/>
+              <line x1="400" y1="180" x2="550" y2="200" stroke="url(#grad6)" strokeWidth="2" opacity="0.6"/>
+              <line x1="550" y1="100" x2="700" y2="150" stroke="url(#grad7)" strokeWidth="2" opacity="0.6"/>
+              <line x1="550" y1="200" x2="700" y2="150" stroke="url(#grad8)" strokeWidth="2" opacity="0.6"/>
+              
+              {/* Gradients */}
+              <defs>
+                <linearGradient id="grad1" x1="0%" y1="0%" x2="100%" y2="100%">
+                  <stop offset="0%" stopColor="#60A5FA" stopOpacity="0.8"/>
+                  <stop offset="100%" stopColor="#34D399" stopOpacity="0.8"/>
+                </linearGradient>
+                <linearGradient id="grad2" x1="0%" y1="0%" x2="100%" y2="100%">
+                  <stop offset="0%" stopColor="#60A5FA" stopOpacity="0.8"/>
+                  <stop offset="100%" stopColor="#FBBF24" stopOpacity="0.8"/>
+                </linearGradient>
+                <linearGradient id="grad3" x1="0%" y1="0%" x2="100%" y2="100%">
+                  <stop offset="0%" stopColor="#34D399" stopOpacity="0.8"/>
+                  <stop offset="100%" stopColor="#A78BFA" stopOpacity="0.8"/>
+                </linearGradient>
+                <linearGradient id="grad4" x1="0%" y1="0%" x2="100%" y2="100%">
+                  <stop offset="0%" stopColor="#FBBF24" stopOpacity="0.8"/>
+                  <stop offset="100%" stopColor="#F472B6" stopOpacity="0.8"/>
+                </linearGradient>
+                <linearGradient id="grad5" x1="0%" y1="0%" x2="100%" y2="100%">
+                  <stop offset="0%" stopColor="#A78BFA" stopOpacity="0.8"/>
+                  <stop offset="100%" stopColor="#60A5FA" stopOpacity="0.8"/>
+                </linearGradient>
+                <linearGradient id="grad6" x1="0%" y1="0%" x2="100%" y2="100%">
+                  <stop offset="0%" stopColor="#F472B6" stopOpacity="0.8"/>
+                  <stop offset="100%" stopColor="#34D399" stopOpacity="0.8"/>
+                </linearGradient>
+                <linearGradient id="grad7" x1="0%" y1="0%" x2="100%" y2="100%">
+                  <stop offset="0%" stopColor="#60A5FA" stopOpacity="0.8"/>
+                  <stop offset="100%" stopColor="#FBBF24" stopOpacity="0.8"/>
+                </linearGradient>
+                <linearGradient id="grad8" x1="0%" y1="0%" x2="100%" y2="100%">
+                  <stop offset="0%" stopColor="#34D399" stopOpacity="0.8"/>
+                  <stop offset="100%" stopColor="#FBBF24" stopOpacity="0.8"/>
+                </linearGradient>
+              </defs>
+            </svg>
+            
+            {/* Floating particles */}
+            <div className="absolute top-8 left-12 w-2 h-2 bg-cyan-400 rounded-full animate-pulse"></div>
+            <div className="absolute top-16 right-20 w-1 h-1 bg-yellow-400 rounded-full animate-bounce"></div>
+            <div className="absolute bottom-12 left-32 w-3 h-3 bg-green-400 rounded-full animate-pulse"></div>
+            <div className="absolute bottom-8 right-16 w-2 h-2 bg-purple-400 rounded-full animate-bounce"></div>
+            
+            {/* Central AI text */}
+            <div className="absolute inset-0 flex items-center justify-center">
+              <div className="text-6xl font-bold bg-gradient-to-r from-white via-cyan-400 to-blue-400 bg-clip-text text-transparent opacity-30">
+                AI
+              </div>
+            </div>
+          </div>
         </div>
 
         <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-8">
