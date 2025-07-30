@@ -45,8 +45,10 @@ export default function Navbar() {
           
           {/* CTA Button */}
           <div className="hidden md:block">
-            <Link href="/contact" className="bg-gradient-to-r from-blue-600 to-emerald-500 hover:from-blue-700 hover:to-emerald-600 px-6 py-2 rounded-lg font-semibold transition-all duration-300 text-white">
-              Get Started
+            <Link href="/contact" className="group relative overflow-hidden bg-gradient-to-r from-green-500 to-yellow-500 hover:from-green-400 hover:to-yellow-400 px-6 py-2.5 rounded-lg font-semibold text-white transition-all duration-500 ease-out transform hover:scale-105 hover:shadow-2xl hover:shadow-green-500/25">
+              <span className="relative z-10 transition-all duration-300 group-hover:tracking-wider">Get Started</span>
+              <div className="absolute inset-0 bg-gradient-to-r from-yellow-400 to-green-400 opacity-0 group-hover:opacity-100 transition-opacity duration-500"></div>
+              <div className="absolute inset-0 bg-gradient-to-r from-white/20 to-transparent opacity-0 group-hover:opacity-100 transition-all duration-700 transform translate-x-[-100%] group-hover:translate-x-[100%]"></div>
             </Link>
           </div>
 
