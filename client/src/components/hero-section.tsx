@@ -64,14 +64,14 @@ export default function HeroSection() {
                 href="#contact" 
                 className="group relative px-8 py-4 bg-gradient-to-r from-blue-600 to-emerald-600 rounded-lg font-semibold text-lg text-white overflow-hidden transition-all duration-300 transform hover:scale-105"
               >
-                <span className="relative z-10">Let's Talk</span>
+                <span className="relative z-10">Take the leap today</span>
                 <div className="absolute inset-0 bg-gradient-to-r from-emerald-600 to-blue-600 opacity-0 group-hover:opacity-100 transition-opacity duration-300"></div>
               </a>
               <a 
-                href="/services" 
+                href="#services" 
                 className="px-8 py-4 border-2 border-white text-white rounded-lg font-semibold text-lg transition-all duration-300 transform hover:scale-105 hover:bg-white/10"
               >
-                Discover our solutions
+                Explore Services
               </a>
             </div>
           </div>
