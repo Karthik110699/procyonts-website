@@ -23,13 +23,8 @@ export default function TestimonialsSection() {
   ];
 
   return (
-    <section className="py-20 bg-gradient-to-b from-teal-950/50 via-slate-900 to-purple-950/40 relative overflow-hidden">
-      {/* Neural network inspired gradients */}
-      <div className="absolute inset-0 bg-gradient-to-tr from-purple-500/12 via-blue-500/8 to-teal-500/10"></div>
-      <div className="absolute top-0 left-0 w-1/2 h-full bg-gradient-to-r from-indigo-400/6 via-transparent to-transparent"></div>
-      <div className="absolute bottom-0 right-0 w-1/3 h-2/3 bg-gradient-to-tl from-cyan-400/8 via-purple-400/5 to-transparent"></div>
-      <div className="absolute top-1/2 left-1/3 w-1/3 h-1/3 bg-radial-gradient from-purple-300/5 to-transparent rounded-full blur-3xl"></div>
-      <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
+    <section className="py-20">
+      <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="text-center mb-16 reveal">
           <h2 className="text-4xl md:text-5xl font-bold mb-6">What Our Clients Say</h2>
         </div>

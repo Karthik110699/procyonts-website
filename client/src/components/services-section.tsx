@@ -2,13 +2,8 @@ import { Cloud, Brain, BarChart, Users, Building, Database, Cog, Server } from "
 
 export default function ServicesSection() {
   return (
-    <section id="services" className="py-20 bg-gradient-to-b from-slate-900 via-blue-950/80 to-indigo-950/60 relative overflow-hidden">
-      {/* AI-themed holographic overlays */}
-      <div className="absolute inset-0 bg-gradient-to-tr from-cyan-500/8 via-blue-500/6 to-purple-500/8"></div>
-      <div className="absolute top-0 right-0 w-2/3 h-1/2 bg-gradient-to-bl from-cyan-400/4 via-blue-400/3 to-transparent"></div>
-      <div className="absolute bottom-0 left-0 w-1/2 h-2/3 bg-gradient-to-tr from-indigo-500/5 via-purple-400/4 to-transparent"></div>
-      <div className="absolute top-1/4 left-1/4 w-1/3 h-1/3 bg-radial-gradient from-blue-400/3 to-transparent rounded-full blur-3xl"></div>
-      <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
+    <section id="services" className="py-20">
+      <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="text-center mb-16 reveal">
           <h2 className="text-4xl md:text-5xl font-bold mb-6">
             <span className="gradient-text">Our Services</span>

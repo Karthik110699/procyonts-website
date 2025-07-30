@@ -27,13 +27,8 @@ export default function ClientsSection() {
   ];
 
   return (
-    <section className="py-20 bg-gradient-to-b from-purple-950/40 via-slate-900 to-blue-950/50 relative overflow-hidden">
-      {/* Enterprise technology gradients */}
-      <div className="absolute inset-0 bg-gradient-to-bl from-blue-500/10 via-cyan-400/6 to-indigo-500/8"></div>
-      <div className="absolute top-0 right-0 w-full h-1/2 bg-gradient-to-bl from-cyan-400/8 via-blue-400/5 to-transparent"></div>
-      <div className="absolute bottom-0 left-0 w-2/3 h-1/3 bg-gradient-to-tr from-purple-400/6 via-indigo-400/4 to-transparent"></div>
-      <div className="absolute top-2/3 right-1/3 w-1/4 h-1/4 bg-radial-gradient from-blue-300/4 to-transparent rounded-full blur-2xl"></div>
-      <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
+    <section className="py-20 bg-gray-900/50">
+      <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="text-center mb-16 reveal">
           <h2 className="text-3xl font-bold mb-6">Trusted by Industry Leaders</h2>
           <p className="text-gray-300">Over two decades powering the world's leading businesses</p>

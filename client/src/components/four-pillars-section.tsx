@@ -3,13 +3,8 @@ import dataAnalyticsWorkspace from "@assets/imagenew_1753913145151.png";
 
 export default function FourPillarsSection() {
   return (
-    <section className="py-20 bg-gradient-to-b from-indigo-950/60 via-slate-900 to-teal-950/50 relative overflow-hidden">
-      {/* Data analytics workspace inspired gradients */}
-      <div className="absolute inset-0 bg-gradient-to-br from-teal-500/10 via-cyan-400/8 to-blue-500/10"></div>
-      <div className="absolute top-0 left-0 w-full h-1/3 bg-gradient-to-b from-cyan-400/6 via-blue-400/4 to-transparent"></div>
-      <div className="absolute bottom-0 right-0 w-2/3 h-1/2 bg-gradient-to-tl from-indigo-400/8 via-purple-400/5 to-transparent"></div>
-      <div className="absolute top-1/3 right-1/4 w-1/4 h-1/4 bg-radial-gradient from-cyan-300/4 to-transparent rounded-full blur-2xl"></div>
-      <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
+    <section className="py-20 bg-gray-900/50">
+      <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="text-center mb-16 reveal">
           <h2 className="text-4xl md:text-5xl font-bold mb-6">Concept to Completion</h2>
           <p className="text-xl text-gray-300 max-w-3xl mx-auto">
