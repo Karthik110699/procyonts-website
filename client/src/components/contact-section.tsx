@@ -148,7 +148,7 @@ export default function ContactSection() {
                 </label>
               </div>
               
-              <Button type="submit" className="w-full bg-blue-600 hover:bg-blue-700 py-4 text-lg">
+              <Button type="submit" className="w-full border-2 border-white hover:bg-white hover:text-black text-white py-4 text-lg">
                 Send Message
               </Button>
             </form>

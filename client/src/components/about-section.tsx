@@ -35,7 +35,7 @@ export default function AboutSection() {
               </div>
             </div>
             
-            <a href="#about" className="inline-block border-2 border-blue-600 hover:bg-blue-600 px-8 py-3 rounded-lg font-semibold transition-all duration-300">
+            <a href="#about" className="inline-block border-2 border-white hover:bg-white hover:text-black text-white px-8 py-3 rounded-lg font-semibold transition-all duration-300">
               Know more
             </a>
           </div>

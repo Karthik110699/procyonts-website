@@ -119,7 +119,7 @@ export default function CareersPage() {
                     <span className="px-3 py-1 bg-amber-500/20 text-amber-400 rounded-full text-sm">AWS</span>
                   </div>
                 </div>
-                <Link href="/contact" className="bg-blue-600 hover:bg-blue-700 px-6 py-3 rounded-lg font-semibold transition-colors">
+                <Link href="/contact" className="border-2 border-white hover:bg-white hover:text-black text-white px-6 py-3 rounded-lg font-semibold transition-colors">
                   Apply Now
                 </Link>
               </div>
@@ -161,7 +161,7 @@ export default function CareersPage() {
                     <span className="px-3 py-1 bg-amber-500/20 text-amber-400 rounded-full text-sm">SQL</span>
                   </div>
                 </div>
-                <Link href="/contact" className="bg-emerald-600 hover:bg-emerald-700 px-6 py-3 rounded-lg font-semibold transition-colors">
+                <Link href="/contact" className="border-2 border-white hover:bg-white hover:text-black text-white px-6 py-3 rounded-lg font-semibold transition-colors">
                   Apply Now
                 </Link>
               </div>
@@ -203,7 +203,7 @@ export default function CareersPage() {
                     <span className="px-3 py-1 bg-amber-500/20 text-amber-400 rounded-full text-sm">AWS</span>
                   </div>
                 </div>
-                <Link href="/contact" className="bg-purple-600 hover:bg-purple-700 px-6 py-3 rounded-lg font-semibold transition-colors">
+                <Link href="/contact" className="border-2 border-white hover:bg-white hover:text-black text-white px-6 py-3 rounded-lg font-semibold transition-colors">
                   Apply Now
                 </Link>
               </div>

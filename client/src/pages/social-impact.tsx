@@ -196,13 +196,13 @@ export default function SocialImpactPage() {
           <div className="flex flex-col sm:flex-row gap-4 justify-center">
             <Link 
               href="/contact" 
-              className="bg-gradient-to-r from-blue-600 to-emerald-500 hover:from-blue-700 hover:to-emerald-600 px-8 py-4 rounded-lg font-semibold transition-all duration-300 transform hover:scale-105"
+              className="border-2 border-white hover:bg-white hover:text-black text-white px-8 py-4 rounded-lg font-semibold transition-all duration-300 transform hover:scale-105"
             >
               Partner With Us
             </Link>
             <Link 
               href="/careers" 
-              className="border border-blue-500 hover:bg-blue-500/10 px-8 py-4 rounded-lg font-semibold transition-all duration-300"
+              className="border-2 border-white hover:bg-white hover:text-black text-white px-8 py-4 rounded-lg font-semibold transition-all duration-300"
             >
               Join Our Team
             </Link>

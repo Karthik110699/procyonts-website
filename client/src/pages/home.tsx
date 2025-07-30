@@ -37,7 +37,7 @@ export default function Home() {
               <p className="text-xl text-gray-300">
                 Think: Agentic AI orchestrated by Procyon experts, spinning up in seconds, getting projects done in half the time, and making AI savings tangible.
               </p>
-              <a href="#contact" className="inline-block bg-blue-600 hover:bg-blue-700 px-8 py-4 rounded-lg font-semibold transition-all duration-300 transform hover:scale-105">
+              <a href="#contact" className="inline-block border-2 border-white hover:bg-white hover:text-black text-white px-8 py-4 rounded-lg font-semibold transition-all duration-300 transform hover:scale-105">
                 Subscribe to the future
               </a>
             </div>

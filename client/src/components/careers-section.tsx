@@ -14,7 +14,7 @@ export default function CareersSection() {
             alt="Professional team collaboration with diverse workforce" 
             className="w-full rounded-2xl shadow-2xl mx-auto"
           />
-          <a href="#careers" className="inline-block bg-blue-600 hover:bg-blue-700 px-8 py-4 rounded-lg font-semibold text-lg transition-all duration-300 transform hover:scale-105">
+          <a href="#careers" className="inline-block border-2 border-white hover:bg-white hover:text-black text-white px-8 py-4 rounded-lg font-semibold text-lg transition-all duration-300 transform hover:scale-105">
             Explore Careers
           </a>
         </div>
