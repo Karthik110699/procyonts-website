@@ -661,7 +661,7 @@
 
   /* Animated Gradient Text */
   .animated-gradient-text {
-    background: linear-gradient(270deg, #10b981, #fbbf24, #ffffff, #10b981, #fbbf24);
+    background: linear-gradient(270deg, #10b981, #facc15, #ffffff, #10b981, #facc15);
     background-size: 300% 300%;
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
