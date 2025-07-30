@@ -1,16 +1,13 @@
-import { ArrowLeft, Database, TrendingUp, Shield, Zap, BarChart, Globe } from "lucide-react";
-import { Link } from "wouter";
+import { Database, TrendingUp, Shield, Zap, BarChart, Globe } from "lucide-react";
+import Navbar from "@/components/navbar";
 
 export default function SAPPage() {
   return (
     <div className="min-h-screen bg-procyon-dark text-white">
+      <Navbar />
       {/* Header */}
       <div className="pt-20 pb-10">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-          <Link href="/enterprise" className="inline-flex items-center text-blue-400 hover:text-blue-300 mb-8">
-            <ArrowLeft className="w-4 h-4 mr-2" />
-            Back to Enterprise
-          </Link>
           <div className="flex items-start gap-8">
             <div className="w-20 h-20 bg-purple-500/20 rounded-xl flex items-center justify-center">
               <Database className="w-10 h-10 text-purple-400" />
