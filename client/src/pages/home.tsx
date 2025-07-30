@@ -23,9 +23,9 @@ export default function Home() {
       <HeroSection />
       
       {/* AI Pods Section (Globant Style) */}
-      <section className="py-20 relative overflow-hidden bg-gradient-to-b from-black/80 via-gray-900/60 to-gray-900/40">
-        <div className="absolute inset-0 bg-gradient-to-b from-teal-900/20 via-teal-900/5 to-transparent"></div>
-        <div className="absolute top-0 left-0 right-0 h-40 bg-gradient-to-b from-black via-gray-900/80 to-transparent"></div>
+      <section className="py-20 relative overflow-hidden bg-gradient-to-b from-teal-900/40 via-blue-900/30 to-gray-900/40">
+        <div className="absolute inset-0 bg-gradient-to-b from-green-900/30 via-blue-900/20 to-transparent"></div>
+        <div className="absolute top-0 left-0 right-0 h-40 bg-gradient-to-b from-teal-800/60 via-blue-800/40 to-transparent"></div>
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
           <div className="grid lg:grid-cols-2 gap-12 items-center">
             <div className="space-y-8 reveal">
