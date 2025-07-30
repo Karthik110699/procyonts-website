@@ -8,7 +8,7 @@ import FourPillarsSection from "@/components/four-pillars-section";
 import TestimonialsSection from "@/components/testimonials-section";
 import ClientsSection from "@/components/clients-section";
 import SocialImpactSection from "@/components/social-impact-section";
-import CareersSection from "@/components/careers-section";
+
 import { ContactSection } from "@/components/contact-section";
 import Footer from "@/components/footer";
 import { useScrollReveal } from "@/hooks/use-scroll-reveal";
@@ -84,7 +84,6 @@ export default function Home() {
       <TestimonialsSection />
       <ClientsSection />
       <SocialImpactSection />
-      <CareersSection />
       <ContactSection />
       <Footer />
     </div>
