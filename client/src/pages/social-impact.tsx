@@ -170,13 +170,12 @@ export default function SocialImpactPage() {
 
           <div className="grid md:grid-cols-3 gap-8">
             {videos.map((video, index) => (
-              <div key={index} className="conic-border bg-gradient-to-br from-gray-800 to-gray-900 rounded-xl overflow-hidden group cursor-pointer hover:scale-105 transition-all duration-500">
-                <div className="relative h-48 bg-gradient-to-br from-blue-500 to-purple-600 flex items-center justify-center">
-                  <div className="text-white text-center p-4">
+              <div key={index} className="bg-gradient-to-br from-gray-800 to-gray-900 rounded-xl group cursor-pointer hover:scale-105 transition-all duration-500 border border-gray-600 relative z-10">
+                <div className="h-48 bg-gradient-to-br from-blue-500 to-purple-600 rounded-t-xl flex items-center justify-center relative z-20">
+                  <div className="text-white text-center p-4 relative z-30">
                     <div className="w-16 h-16 bg-white/20 rounded-full flex items-center justify-center mx-auto mb-4">
                       <div className="w-0 h-0 border-l-8 border-l-white border-t-4 border-t-transparent border-b-4 border-b-transparent ml-1"></div>
                     </div>
-                    <h4 className="font-semibold mb-2">{video.title}</h4>
                     <div className="bg-black/30 px-3 py-1 rounded-full text-sm inline-block">
                       {video.duration}
                     </div>
