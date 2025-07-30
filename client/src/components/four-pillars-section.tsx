@@ -1,5 +1,5 @@
 import { Lightbulb, Code, RefreshCw, CheckSquare } from "lucide-react";
-import futuristicOfficeImage from "@assets/futuristic-business-office-space_1753911883226.jpg";
+import futuristicOfficeImage from "@assets/2151003783_1753912243372.jpg";
 
 export default function FourPillarsSection() {
   return (
