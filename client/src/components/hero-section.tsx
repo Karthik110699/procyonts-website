@@ -1,4 +1,5 @@
 import { useState, useEffect } from "react";
+import trial1Image from "@assets/Trial1_1753865656089.png";
 
 export default function HeroSection() {
   const [currentServiceIndex, setCurrentServiceIndex] = useState(0);
@@ -27,50 +28,14 @@ export default function HeroSection() {
 
   return (
     <section id="home" className="relative min-h-screen overflow-hidden">
-      {/* Split Background */}
-      <div className="absolute inset-0 flex">
-        {/* Left Side - Static */}
-        <div className="w-1/2 bg-gradient-to-br from-gray-900 via-blue-900 to-procyon-dark">
-          <div className="absolute inset-0 bg-gradient-to-r from-procyon-dark/90 to-transparent"></div>
-        </div>
-        {/* Right Side - Motion Graphics */}
-        <div className="w-1/2 bg-gradient-to-bl from-blue-800 via-emerald-800 to-gray-900">
-          <div className="absolute inset-0 bg-gradient-to-l from-transparent to-procyon-dark/20"></div>
-        </div>
-      </div>
-
-      {/* Motion Graphics - Right Side Only */}
-      <div className="absolute inset-0 z-0 overflow-hidden">
-        <div className="absolute right-0 top-0 w-1/2 h-full">
-          {/* Morphing Shapes */}
-          <div className="absolute top-20 right-16 w-48 h-48 bg-gradient-to-r from-blue-500/25 to-emerald-500/15 animate-morphing blur-md" style={{ animationDelay: '0s' }}></div>
-          <div className="absolute bottom-32 right-8 w-64 h-64 bg-gradient-to-r from-purple-500/20 to-pink-500/10 animate-morphing blur-lg" style={{ animationDelay: '3s' }}></div>
-          <div className="absolute top-1/3 right-1/3 w-36 h-36 bg-gradient-to-r from-emerald-500/25 to-blue-500/15 animate-morphing blur-sm" style={{ animationDelay: '1.5s' }}></div>
-          
-          {/* Floating Particles */}
-          <div className="absolute top-24 right-24 w-4 h-4 bg-blue-400/80 rounded-full animate-particle-float" style={{ animationDelay: '0s' }}></div>
-          <div className="absolute top-48 right-40 w-3 h-3 bg-emerald-400/80 rounded-full animate-particle-float" style={{ animationDelay: '2s' }}></div>
-          <div className="absolute bottom-48 right-20 w-5 h-5 bg-purple-400/80 rounded-full animate-particle-float" style={{ animationDelay: '1s' }}></div>
-          <div className="absolute bottom-64 right-48 w-2 h-2 bg-pink-400/80 rounded-full animate-particle-float" style={{ animationDelay: '3s' }}></div>
-          
-          {/* Animated SVG Lines */}
-          <svg className="absolute inset-0 w-full h-full" xmlns="http://www.w3.org/2000/svg">
-            <defs>
-              <linearGradient id="rightGradient1" x1="0%" y1="0%" x2="100%" y2="100%">
-                <stop offset="0%" stopColor="rgba(59, 130, 246, 0.4)" />
-                <stop offset="100%" stopColor="rgba(16, 185, 129, 0.2)" />
-              </linearGradient>
-            </defs>
-            <path d="M0,200 Q200,50 400,150 T800,100" stroke="url(#rightGradient1)" strokeWidth="3" fill="none" opacity="0.7">
-              <animate attributeName="d" dur="10s" repeatCount="indefinite" 
-                values="M0,200 Q200,50 400,150 T800,100;M0,150 Q200,250 400,100 T800,200;M0,200 Q200,50 400,150 T800,100" />
-            </path>
-          </svg>
-          
-          {/* Pulsing Orbs */}
-          <div className="absolute top-1/4 right-1/4 w-8 h-8 bg-blue-500/60 rounded-full animate-pulse-glow" style={{ animationDelay: '0s' }}></div>
-          <div className="absolute bottom-1/3 right-1/3 w-10 h-10 bg-emerald-500/60 rounded-full animate-pulse-glow" style={{ animationDelay: '2s' }}></div>
-        </div>
+      {/* Background Image */}
+      <div className="absolute inset-0">
+        <img 
+          src={trial1Image} 
+          alt="AI Brain Analytics Background" 
+          className="w-full h-full object-cover object-center"
+        />
+        <div className="absolute inset-0 bg-black/30"></div>
       </div>
       
       <div className="relative z-10 flex min-h-screen">
