@@ -16,7 +16,8 @@ export default function FourPillarsSection() {
           <img 
             src={dataAnalyticsWorkspace} 
             alt="Modern data analytics workspace with interactive dashboard, charts, and business intelligence displays" 
-            className="rounded-2xl shadow-2xl w-1/2"
+            className="rounded-2xl shadow-2xl"
+            style={{ width: '56.25%' }}
           />
         </div>
 
