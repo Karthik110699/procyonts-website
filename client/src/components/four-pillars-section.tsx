@@ -3,8 +3,10 @@ import dataAnalyticsWorkspace from "@assets/imagenew_1753913145151.png";
 
 export default function FourPillarsSection() {
   return (
-    <section className="py-20 bg-gray-900/50">
-      <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+    <section className="py-20 bg-gray-900/50 zoom-container">
+      <div className="wireframe-overlay"></div>
+      <div className="morphing-bg"></div>
+      <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 zoom-section" data-delay="0">
         <div className="text-center mb-16 reveal">
           <h2 className="text-4xl md:text-5xl font-bold mb-6">Concept to Completion</h2>
           <p className="text-xl text-gray-300 max-w-3xl mx-auto">

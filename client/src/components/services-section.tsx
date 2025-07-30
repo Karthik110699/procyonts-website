@@ -2,8 +2,10 @@ import { Cloud, Brain, BarChart, Users, Building, Database, Cog, Server } from "
 
 export default function ServicesSection() {
   return (
-    <section id="services" className="py-20">
-      <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+    <section id="services" className="py-20 zoom-container">
+      <div className="wireframe-overlay"></div>
+      <div className="morphing-bg"></div>
+      <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 zoom-fade-in" data-delay="0">
         <div className="text-center mb-16 reveal-fade" data-delay="100">
           <h2 className="text-4xl md:text-5xl font-bold mb-6">
             <span className="gradient-text">Our Services</span>

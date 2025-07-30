@@ -289,6 +289,119 @@
     left: 100%;
   }
 
+  /* Zoom scroll effect */
+  .zoom-container {
+    position: relative;
+    overflow: hidden;
+    perspective: 1000px;
+  }
+
+  .zoom-section {
+    opacity: 0;
+    transform: scale(0.3) translateZ(-200px);
+    transition: all 1.8s cubic-bezier(0.25, 0.46, 0.45, 0.94);
+    transform-origin: center center;
+  }
+
+  .zoom-section.active {
+    opacity: 1;
+    transform: scale(1) translateZ(0);
+  }
+
+  .zoom-section.zoom-out {
+    transform: scale(1.2) translateZ(100px);
+    opacity: 0;
+  }
+
+  /* Enhanced zoom variants */
+  .zoom-fade-in {
+    opacity: 0;
+    transform: scale(0.5);
+    transition: all 2s cubic-bezier(0.25, 0.46, 0.45, 0.94);
+  }
+
+  .zoom-fade-in.active {
+    opacity: 1;
+    transform: scale(1);
+  }
+
+  .zoom-slide-up {
+    opacity: 0;
+    transform: scale(0.8) translateY(100px);
+    transition: all 1.6s cubic-bezier(0.25, 0.46, 0.45, 0.94);
+  }
+
+  .zoom-slide-up.active {
+    opacity: 1;
+    transform: scale(1) translateY(0);
+  }
+
+  /* Morphing background effect */
+  .morphing-bg {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    opacity: 0.1;
+    background: radial-gradient(circle at center, 
+      rgba(59, 130, 246, 0.3) 0%,
+      rgba(16, 185, 129, 0.2) 30%,
+      rgba(139, 92, 246, 0.1) 60%,
+      transparent 100%);
+    animation: morphing-zoom 20s ease-in-out infinite;
+    transform-origin: center center;
+  }
+
+  @keyframes morphing-zoom {
+    0%, 100% {
+      transform: scale(0.8) rotate(0deg);
+      opacity: 0.1;
+    }
+    25% {
+      transform: scale(1.2) rotate(90deg);
+      opacity: 0.3;
+    }
+    50% {
+      transform: scale(1.5) rotate(180deg);
+      opacity: 0.2;
+    }
+    75% {
+      transform: scale(0.9) rotate(270deg);
+      opacity: 0.4;
+    }
+  }
+
+  /* Wireframe effect like CredMoney */
+  .wireframe-overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    opacity: 0.15;
+    background-image: 
+      linear-gradient(rgba(16, 185, 129, 0.3) 1px, transparent 1px),
+      linear-gradient(90deg, rgba(16, 185, 129, 0.3) 1px, transparent 1px);
+    background-size: 50px 50px;
+    animation: wireframe-flow 30s linear infinite;
+  }
+
+  @keyframes wireframe-flow {
+    0% {
+      transform: translate(0, 0) scale(1);
+      opacity: 0.15;
+    }
+    50% {
+      transform: translate(-25px, -25px) scale(1.1);
+      opacity: 0.25;
+    }
+    100% {
+      transform: translate(0, 0) scale(1);
+      opacity: 0.15;
+    }
+  }
+
   .loading-letter {
     opacity: 0;
     transform: translateY(20px);
