@@ -3,7 +3,7 @@ export default function ClientsSection() {
   const clients = [
     { 
       name: "Genentech",
-      logo: "/logos/genentech.svg?v=2"
+      logo: "/logos/genentech.svg?v=3"
     },
     { 
       name: "IBM",
@@ -15,11 +15,11 @@ export default function ClientsSection() {
     },
     { 
       name: "Tech Mahindra",
-      logo: "/logos/tech-mahindra.svg?v=2"
+      logo: "/logos/tech-mahindra.svg?v=3"
     },
     { 
       name: "NIH",
-      logo: "/logos/nih.svg?v=2"
+      logo: "/logos/nih.svg?v=3"
     },
     { 
       name: "Delta Air Lines",
