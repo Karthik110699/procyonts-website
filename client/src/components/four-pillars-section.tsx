@@ -1,5 +1,5 @@
 import { Lightbulb, Code, RefreshCw, CheckSquare } from "lucide-react";
-import futuristicOfficeImage from "@assets/2151003783_1753912243372.jpg";
+import futuristicOfficeImage from "@assets/2151003783 (1)_1753912325847.jpg";
 
 export default function FourPillarsSection() {
   return (
@@ -12,11 +12,11 @@ export default function FourPillarsSection() {
           </p>
         </div>
 
-        <div className="mb-16 reveal">
+        <div className="mb-16 reveal flex justify-center">
           <img 
             src={futuristicOfficeImage} 
             alt="Futuristic business office with holographic displays, multiple screens, and advanced AI technology workspace" 
-            className="w-full rounded-2xl shadow-2xl"
+            className="rounded-2xl shadow-2xl"
           />
         </div>
 
