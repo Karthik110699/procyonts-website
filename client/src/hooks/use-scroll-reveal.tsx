@@ -4,6 +4,8 @@ export function useScrollReveal() {
   useEffect(() => {
     let lastScrollY = window.scrollY;
     let scrollDirection = 'down';
+    let scrollVelocity = 0;
+    let ticking = false;
 
     const observerOptions = {
       threshold: 0.15,
@@ -11,15 +13,22 @@ export function useScrollReveal() {
     };
 
     const zoomObserverOptions = {
-      threshold: [0.1, 0.3, 0.5, 0.7, 0.9],
-      rootMargin: '0px 0px -100px 0px'
+      threshold: [0.05, 0.15, 0.25, 0.35, 0.5, 0.65, 0.8, 0.95],
+      rootMargin: '0px 0px -50px 0px'
     };
 
-    // Track scroll direction
+    // Track scroll direction and velocity for smoother transitions
     const updateScrollDirection = () => {
-      const currentScrollY = window.scrollY;
-      scrollDirection = currentScrollY > lastScrollY ? 'down' : 'up';
-      lastScrollY = currentScrollY;
+      if (!ticking) {
+        requestAnimationFrame(() => {
+          const currentScrollY = window.scrollY;
+          scrollVelocity = Math.abs(currentScrollY - lastScrollY);
+          scrollDirection = currentScrollY > lastScrollY ? 'down' : 'up';
+          lastScrollY = currentScrollY;
+          ticking = false;
+        });
+        ticking = true;
+      }
     };
 
     window.addEventListener('scroll', updateScrollDirection, { passive: true });
@@ -41,28 +50,36 @@ export function useScrollReveal() {
       });
     }, observerOptions);
 
-    // Enhanced zoom effect observer with bidirectional support
+    // Enhanced zoom effect observer with smoother bidirectional support
     const zoomObserver = new IntersectionObserver((entries) => {
       entries.forEach(entry => {
         const ratio = entry.intersectionRatio;
         const element = entry.target as HTMLElement;
         
-        if (ratio > 0.3) {
-          // Element entering viewport
-          element.classList.add('active');
-          element.classList.remove('zoom-out', 'reverse');
-          element.style.setProperty('--scroll-direction', scrollDirection);
-        } else if (ratio < 0.1) {
-          // Element leaving viewport
-          if (scrollDirection === 'up' && element.classList.contains('active')) {
-            // Scrolling up - reverse the zoom effect
-            element.classList.add('reverse');
-            element.classList.remove('active');
-          } else if (scrollDirection === 'down' && element.classList.contains('active')) {
-            // Scrolling down - zoom out effect
-            element.classList.add('zoom-out');
-            element.classList.remove('active');
-          }
+        if (ratio > 0.25) {
+          // Element entering viewport - smooth activation with velocity consideration
+          requestAnimationFrame(() => {
+            element.classList.add('active');
+            element.classList.remove('zoom-out', 'reverse');
+            element.style.setProperty('--scroll-direction', scrollDirection);
+            element.style.setProperty('--scroll-velocity', `${Math.min(scrollVelocity / 10, 1)}`);
+          });
+        } else if (ratio < 0.15) {
+          // Element leaving viewport - smooth deactivation with momentum
+          const delay = Math.max(0, 100 - scrollVelocity);
+          setTimeout(() => {
+            requestAnimationFrame(() => {
+              if (scrollDirection === 'up' && element.classList.contains('active')) {
+                // Scrolling up - reverse the zoom effect
+                element.classList.add('reverse');
+                element.classList.remove('active', 'zoom-out');
+              } else if (scrollDirection === 'down' && element.classList.contains('active')) {
+                // Scrolling down - zoom out effect
+                element.classList.add('zoom-out');
+                element.classList.remove('active', 'reverse');
+              }
+            });
+          }, delay);
         }
       });
     }, zoomObserverOptions);

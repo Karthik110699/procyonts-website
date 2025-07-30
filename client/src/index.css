@@ -314,91 +314,103 @@
   .zoom-section {
     opacity: 0;
     transform: scale(0.3) translateZ(-200px);
-    transition: all 1.8s cubic-bezier(0.25, 0.46, 0.45, 0.94);
+    transition: all 2.2s cubic-bezier(0.165, 0.84, 0.44, 1);
     transform-origin: center center;
+    will-change: transform, opacity;
   }
 
   .zoom-section.active {
     opacity: 1;
     transform: scale(1) translateZ(0);
+    transition: all 2.2s cubic-bezier(0.165, 0.84, 0.44, 1);
   }
 
   .zoom-section.zoom-out {
-    transform: scale(1.2) translateZ(100px);
+    transform: scale(1.15) translateZ(100px);
     opacity: 0;
+    transition: all 2.2s cubic-bezier(0.165, 0.84, 0.44, 1);
   }
 
   .zoom-section.reverse {
     opacity: 0;
-    transform: scale(1.3) translateZ(200px);
-    transition: all 1.8s cubic-bezier(0.25, 0.46, 0.45, 0.94);
+    transform: scale(1.25) translateZ(200px);
+    transition: all 2.2s cubic-bezier(0.165, 0.84, 0.44, 1);
   }
 
   /* Enhanced zoom variants with reverse animations */
   .zoom-fade-in {
     opacity: 0;
-    transform: scale(0.5);
-    transition: all 2s cubic-bezier(0.25, 0.46, 0.45, 0.94);
+    transform: scale(0.4) rotateX(15deg);
+    transition: all 2.4s cubic-bezier(0.165, 0.84, 0.44, 1);
+    will-change: transform, opacity;
   }
 
   .zoom-fade-in.active {
     opacity: 1;
-    transform: scale(1);
+    transform: scale(1) rotateX(0deg);
+    transition: all 2.4s cubic-bezier(0.165, 0.84, 0.44, 1);
   }
 
   .zoom-fade-in.reverse {
     opacity: 0;
-    transform: scale(1.5);
-    transition: all 2s cubic-bezier(0.25, 0.46, 0.45, 0.94);
+    transform: scale(1.4) rotateX(-15deg);
+    transition: all 2.4s cubic-bezier(0.165, 0.84, 0.44, 1);
   }
 
   .zoom-slide-up {
     opacity: 0;
-    transform: scale(0.8) translateY(100px);
-    transition: all 1.6s cubic-bezier(0.25, 0.46, 0.45, 0.94);
+    transform: scale(0.7) translateY(120px) rotateY(5deg);
+    transition: all 2.6s cubic-bezier(0.165, 0.84, 0.44, 1);
+    will-change: transform, opacity;
   }
 
   .zoom-slide-up.active {
     opacity: 1;
-    transform: scale(1) translateY(0);
+    transform: scale(1) translateY(0) rotateY(0deg);
+    transition: all 2.6s cubic-bezier(0.165, 0.84, 0.44, 1);
   }
 
   .zoom-slide-up.reverse {
     opacity: 0;
-    transform: scale(1.2) translateY(-50px);
-    transition: all 1.6s cubic-bezier(0.25, 0.46, 0.45, 0.94);
+    transform: scale(1.3) translateY(-80px) rotateY(-5deg);
+    transition: all 2.6s cubic-bezier(0.165, 0.84, 0.44, 1);
   }
 
-  /* Bidirectional support for regular animations */
+  /* Enhanced bidirectional support for regular animations */
   .reveal.reverse,
   .reveal-fade.reverse {
     opacity: 0;
-    transform: scale(1.1) translateY(-20px);
-    transition: all 1.2s cubic-bezier(0.25, 0.46, 0.45, 0.94);
+    transform: scale(1.08) translateY(-30px);
+    transition: all 1.8s cubic-bezier(0.165, 0.84, 0.44, 1);
+    will-change: transform, opacity;
   }
 
   .reveal-slide-left.reverse {
     opacity: 0;
-    transform: translateX(50px) scale(1.1);
-    transition: all 1.4s cubic-bezier(0.25, 0.46, 0.45, 0.94);
+    transform: translateX(60px) scale(1.1) rotateZ(2deg);
+    transition: all 2s cubic-bezier(0.165, 0.84, 0.44, 1);
+    will-change: transform, opacity;
   }
 
   .reveal-slide-right.reverse {
     opacity: 0;
-    transform: translateX(-50px) scale(1.1);
-    transition: all 1.4s cubic-bezier(0.25, 0.46, 0.45, 0.94);
+    transform: translateX(-60px) scale(1.1) rotateZ(-2deg);
+    transition: all 2s cubic-bezier(0.165, 0.84, 0.44, 1);
+    will-change: transform, opacity;
   }
 
   .reveal-scale.reverse {
     opacity: 0;
-    transform: scale(1.3);
-    transition: all 1.5s cubic-bezier(0.25, 0.46, 0.45, 0.94);
+    transform: scale(1.4) rotateZ(5deg);
+    transition: all 2.2s cubic-bezier(0.165, 0.84, 0.44, 1);
+    will-change: transform, opacity;
   }
 
   .reveal-rotate.reverse {
     opacity: 0;
-    transform: rotateY(180deg) scale(1.2);
-    transition: all 1.5s cubic-bezier(0.25, 0.46, 0.45, 0.94);
+    transform: rotateY(180deg) scale(1.3) rotateX(10deg);
+    transition: all 2.4s cubic-bezier(0.165, 0.84, 0.44, 1);
+    will-change: transform, opacity;
   }
 
   /* Morphing background effect */
@@ -508,10 +520,50 @@
     perspective-origin: center center;
   }
 
-  /* Advanced 3D transform effects */
+  /* Advanced 3D transform effects with momentum */
   .zoom-section {
     transform-style: preserve-3d;
     backface-visibility: hidden;
+  }
+
+  /* Velocity-based smooth scaling */
+  @media (prefers-reduced-motion: no-preference) {
+    .zoom-section,
+    .zoom-fade-in,
+    .zoom-slide-up {
+      transition-timing-function: cubic-bezier(0.165, 0.84, 0.44, 1);
+    }
+    
+    .zoom-section.active,
+    .zoom-fade-in.active,
+    .zoom-slide-up.active {
+      transition-duration: calc(2s + var(--scroll-velocity, 0) * 0.5s);
+    }
+  }
+
+  /* Smooth momentum for all animations */
+  .reveal,
+  .reveal-fade,
+  .reveal-slide-left,
+  .reveal-slide-right,
+  .reveal-scale,
+  .reveal-rotate {
+    transition-timing-function: cubic-bezier(0.165, 0.84, 0.44, 1);
+  }
+
+  /* Enhanced viewport optimization */
+  @supports (will-change: transform) {
+    .zoom-section,
+    .zoom-fade-in,
+    .zoom-slide-up,
+    .reveal,
+    .reveal-fade,
+    .reveal-slide-left,
+    .reveal-slide-right,
+    .reveal-scale,
+    .reveal-rotate {
+      will-change: transform, opacity;
+    }
   }
 
   .loading-letter {
