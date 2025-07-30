@@ -43,5 +43,5 @@ export function useCounterAnimation(target: number, duration: number = 2000) {
     }
   }, [isVisible, target, duration]);
 
-  return count;
+  return { count, ref };
 }
