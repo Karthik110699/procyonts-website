@@ -45,17 +45,17 @@ export default function SocialImpactPage() {
   const videos = [
     {
       title: "Community Impact Story",
-      thumbnail: "https://images.unsplash.com/photo-1544717297-fa95b6ee9643?ixlib=rb-4.0.3&auto=format&fit=crop&w=600&h=400",
+      thumbnail: "https://picsum.photos/600/400?random=1",
       duration: "3:45"
     },
     {
       title: "Environmental Initiatives", 
-      thumbnail: "https://images.unsplash.com/photo-1441974231531-c6227db76b6e?ixlib=rb-4.0.3&auto=format&fit=crop&w=600&h=400",
+      thumbnail: "https://picsum.photos/600/400?random=2",
       duration: "2:30"
     },
     {
       title: "Education Program Success",
-      thumbnail: "https://images.unsplash.com/photo-1427504494785-3a9ca7044f45?ixlib=rb-4.0.3&auto=format&fit=crop&w=600&h=400",
+      thumbnail: "https://picsum.photos/600/400?random=3",
       duration: "4:12"
     }
   ];
@@ -177,12 +177,12 @@ export default function SocialImpactPage() {
                     alt={video.title}
                     className="w-full h-48 object-cover group-hover:scale-110 transition-transform duration-700"
                   />
-                  <div className="absolute inset-0 bg-gradient-to-t from-black/20 to-transparent group-hover:from-black/40 transition-all duration-300 flex items-center justify-center">
-                    <div className="w-16 h-16 bg-blue-600/80 rounded-full flex items-center justify-center backdrop-blur-sm group-hover:bg-blue-500 transition-all duration-300 shadow-lg">
+                  <div className="absolute inset-0 flex items-center justify-center opacity-0 group-hover:opacity-100 transition-opacity duration-300">
+                    <div className="w-16 h-16 bg-blue-600 rounded-full flex items-center justify-center shadow-lg">
                       <div className="w-0 h-0 border-l-8 border-l-white border-t-4 border-t-transparent border-b-4 border-b-transparent ml-1"></div>
                     </div>
                   </div>
-                  <div className="absolute bottom-2 right-2 bg-black/70 px-2 py-1 rounded text-sm">
+                  <div className="absolute bottom-2 right-2 bg-blue-600 px-3 py-1 rounded-full text-sm font-medium">
                     {video.duration}
                   </div>
                 </div>
