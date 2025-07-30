@@ -37,7 +37,7 @@ Preferred communication style: Simple, everyday language.
 ### Frontend Components
 - **Loading Screen**: Animated company logo with letter-by-letter reveal using colorful letters
 - **Navigation**: Fixed navbar with clean navigation links to separate pages (no dropdowns)
-- **Hero Section**: Split-screen layout (Globant-style) with static content on left featuring "AI-Powered Solutions? Procyon's Your Partner!" headline, and dynamic motion graphics on right displaying rotating Procyon services
+- **Hero Section**: Split-screen layout (Globant-style) with static content on left featuring animated "AI-Powered Solutions? Procyon's Your Partner!" headline with animated color gradient text effect, and dynamic motion graphics on right displaying rotating Procyon services
 - **Clickable Service Cards**: Replit-style traveling bright spot effect on ALL cards using conic gradient animation - bright cyan light travels around card perimeter on hover only (applied to 53+ cards across all pages)
 - **Multi-Page Structure**: Separate dedicated pages for better SEO and user experience
   - **Enterprise Page**: Detailed SalesForce, ServiceNow, and SAP solutions
