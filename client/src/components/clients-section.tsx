@@ -27,8 +27,10 @@ export default function ClientsSection() {
   ];
 
   return (
-    <section className="w-full h-full flex items-center justify-center py-12">
-      <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 w-full">
+    <section className="py-20 bg-gray-900/50 zoom-container">
+      <div className="wireframe-overlay"></div>
+      <div className="morphing-bg"></div>
+      <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 zoom-section" data-delay="0">
         <div className="text-center mb-16 reveal-fade" data-delay="100">
           <h2 className="text-3xl font-bold mb-6">Trusted by Industry Leaders</h2>
           <p className="text-gray-300">Over two decades powering the world's leading businesses</p>

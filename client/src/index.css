@@ -289,56 +289,7 @@
     left: 100%;
   }
 
-  /* Fixed viewport zoom effect like CredMoney */
-  .zoom-viewport {
-    position: fixed;
-    top: 0;
-    left: 0;
-    width: 100vw;
-    height: 100vh;
-    overflow: hidden;
-    perspective: 2000px;
-    z-index: 10;
-  }
-
-  .zoom-section-container {
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    transform-origin: center center;
-    will-change: transform, opacity;
-    backface-visibility: hidden;
-  }
-
-  /* Traditional scroll container for navigation */
-  .scroll-trigger-container {
-    position: relative;
-    z-index: 1;
-    height: 700vh; /* Extended height for smoother zoom transitions */
-    pointer-events: none;
-  }
-
-  .scroll-trigger {
-    height: 100vh;
-    width: 100%;
-    position: relative;
-  }
-
-  /* Smooth scrolling improvements */
-  html {
-    scroll-behavior: smooth;
-  }
-
-  body {
-    overflow-x: hidden;
-  }
-
-  /* Zoom scroll effect for regular sections */
+  /* Zoom scroll effect */
   .zoom-container {
     position: relative;
     overflow: hidden;

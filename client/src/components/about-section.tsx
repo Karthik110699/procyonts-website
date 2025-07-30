@@ -6,8 +6,10 @@ export default function AboutSection() {
   const expertsCount = useCounterAnimation(100, 2000);
 
   return (
-    <section id="about" className="w-full h-full flex items-center justify-center py-12">
-      <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 w-full">
+    <section id="about" className="py-20 bg-gradient-to-b from-gray-900/40 via-gray-900/60 to-gray-900/80 zoom-container">
+      <div className="wireframe-overlay"></div>
+      <div className="morphing-bg"></div>
+      <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 zoom-slide-up" data-delay="0">
         <div className="grid lg:grid-cols-2 gap-12 items-center">
           <div className="reveal-slide-left" data-delay="200">
             <img 
