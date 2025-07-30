@@ -14,8 +14,8 @@ export default function FourPillarsSection() {
 
         <div className="mb-16 reveal flex justify-center">
           <img 
-            src={futuristicOfficeImage} 
-            alt="Futuristic business office with holographic displays, multiple screens, and advanced AI technology workspace" 
+            src="https://images.unsplash.com/photo-1451187580459-43490279c0fa?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&h=300" 
+            alt="Digital transformation and technology innovation workspace with data visualization" 
             className="w-3/4 h-48 object-cover rounded-2xl shadow-2xl"
           />
         </div>
