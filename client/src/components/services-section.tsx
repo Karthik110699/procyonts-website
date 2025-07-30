@@ -2,8 +2,12 @@ import { Cloud, Brain, BarChart, Users, Building, Database, Cog, Server } from "
 
 export default function ServicesSection() {
   return (
-    <section id="services" className="py-20">
-      <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+    <section id="services" className="py-20 bg-gradient-to-b from-gray-900/60 via-blue-900/20 to-purple-900/30 relative overflow-hidden">
+      {/* Animated gradient overlays */}
+      <div className="absolute inset-0 bg-gradient-to-br from-blue-900/10 via-transparent to-emerald-900/10"></div>
+      <div className="absolute top-0 right-0 w-1/2 h-1/2 bg-gradient-to-bl from-cyan-500/5 to-transparent"></div>
+      <div className="absolute bottom-0 left-0 w-1/3 h-1/3 bg-gradient-to-tr from-purple-500/5 to-transparent"></div>
+      <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
         <div className="text-center mb-16 reveal">
           <h2 className="text-4xl md:text-5xl font-bold mb-6">
             <span className="gradient-text">Our Services</span>

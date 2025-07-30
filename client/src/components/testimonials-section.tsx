@@ -23,8 +23,12 @@ export default function TestimonialsSection() {
   ];
 
   return (
-    <section className="py-20">
-      <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+    <section className="py-20 bg-gradient-to-b from-teal-900/20 via-gray-900/30 to-blue-900/20 relative overflow-hidden">
+      {/* Elegant gradient overlays */}
+      <div className="absolute inset-0 bg-gradient-to-tl from-purple-900/8 via-transparent to-cyan-900/8"></div>
+      <div className="absolute top-0 left-1/4 w-1/2 h-1/3 bg-gradient-to-br from-blue-500/3 to-transparent"></div>
+      <div className="absolute bottom-0 right-1/4 w-1/3 h-1/2 bg-gradient-to-tl from-emerald-500/4 to-transparent"></div>
+      <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
         <div className="text-center mb-16 reveal">
           <h2 className="text-4xl md:text-5xl font-bold mb-6">What Our Clients Say</h2>
         </div>

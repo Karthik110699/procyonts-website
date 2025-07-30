@@ -27,8 +27,12 @@ export default function ClientsSection() {
   ];
 
   return (
-    <section className="py-20 bg-gray-900/50">
-      <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+    <section className="py-20 bg-gradient-to-b from-blue-900/20 via-gray-900/40 to-emerald-900/15 relative overflow-hidden">
+      {/* Sophisticated gradient overlays */}
+      <div className="absolute inset-0 bg-gradient-to-br from-cyan-900/6 via-transparent to-purple-900/6"></div>
+      <div className="absolute top-1/3 right-0 w-1/3 h-1/3 bg-gradient-to-l from-blue-500/4 to-transparent"></div>
+      <div className="absolute bottom-1/3 left-0 w-1/4 h-1/4 bg-gradient-to-r from-teal-500/3 to-transparent"></div>
+      <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
         <div className="text-center mb-16 reveal">
           <h2 className="text-3xl font-bold mb-6">Trusted by Industry Leaders</h2>
           <p className="text-gray-300">Over two decades powering the world's leading businesses</p>
