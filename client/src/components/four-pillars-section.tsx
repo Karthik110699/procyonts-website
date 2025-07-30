@@ -1,5 +1,5 @@
 import { Lightbulb, Code, RefreshCw, CheckSquare } from "lucide-react";
-import dataAnalyticsWorkspace from "@assets/2151966696_1753912619747.jpg";
+import dataAnalyticsWorkspace from "@assets/imagenew_1753913145151.png";
 
 export default function FourPillarsSection() {
   return (
