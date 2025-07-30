@@ -38,11 +38,11 @@ export default function ClientsSection() {
         <div className="py-12">
           <div className="flex items-center justify-center flex-wrap gap-16">
             {clients.map((client, index) => (
-              <div key={index} className="flex items-center justify-center h-20 w-36 p-4">
+              <div key={index} className="flex items-center justify-center h-20 w-32 p-4">
                 <img 
                   src={client.logo} 
                   alt={`${client.name} logo`}
-                  className="h-12 max-w-full object-contain opacity-70 hover:opacity-100 transition-all duration-300 hover:scale-110"
+                  className="max-h-12 max-w-full object-contain opacity-70 hover:opacity-100 transition-all duration-300 hover:scale-110"
                 />
               </div>
             ))}
