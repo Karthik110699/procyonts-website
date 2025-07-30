@@ -18,7 +18,7 @@ export default function Home() {
       <ZoomViewport />
       
       {/* Additional sections after zoom experience */}
-      <div style={{ marginTop: '600vh' }}>
+      <div style={{ marginTop: '700vh' }}>
         <SocialImpactSection />
         <CareersSection />
         <ContactSection />

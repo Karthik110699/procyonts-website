@@ -33,41 +33,38 @@ export default function ZoomViewport() {
           const viewportHeight = window.innerHeight;
           
           const newSectionsData = sections.map((_, index) => {
-            const sectionStart = index * viewportHeight;
-            const sectionEnd = (index + 1) * viewportHeight;
+            // Each section should be triggered at viewport intervals
+            const triggerStart = index * viewportHeight;
+            const triggerEnd = triggerStart + viewportHeight;
             
-            // Calculate how much of this section is visible
-            const progress = Math.max(0, Math.min(1, (scrollY - sectionStart + viewportHeight) / (viewportHeight * 2)));
-            
-            // CredMoney-style scaling: starts small, grows to full size, then shrinks as it exits
+            // Calculate the progress for this section based on scroll position
             let scale: number;
             let opacity: number;
             let zIndex: number;
             
-            if (scrollY < sectionStart - viewportHeight) {
-              // Before section appears
+            if (scrollY < triggerStart) {
+              // Section hasn't started yet
               scale = 0.3;
               opacity = 0;
               zIndex = 1;
-            } else if (scrollY >= sectionStart - viewportHeight && scrollY < sectionStart) {
-              // Section is entering (zoom in)
-              const enterProgress = (scrollY - (sectionStart - viewportHeight)) / viewportHeight;
-              scale = 0.3 + (0.7 * enterProgress); // 0.3 to 1.0
-              opacity = enterProgress;
-              zIndex = 10;
-            } else if (scrollY >= sectionStart && scrollY < sectionEnd) {
-              // Section is active and visible
-              scale = 1.0;
-              opacity = 1;
-              zIndex = 10;
-            } else if (scrollY >= sectionEnd && scrollY < sectionEnd + viewportHeight) {
-              // Section is exiting (zoom out)
-              const exitProgress = (scrollY - sectionEnd) / viewportHeight;
-              scale = 1.0 + (0.5 * exitProgress); // 1.0 to 1.5 (zoom out)
-              opacity = 1 - exitProgress;
-              zIndex = 5;
+            } else if (scrollY >= triggerStart && scrollY < triggerEnd) {
+              // Section is in view and transitioning
+              const progress = (scrollY - triggerStart) / viewportHeight;
+              
+              if (progress <= 0.5) {
+                // First half: zoom in (0.3 to 1.0)
+                scale = 0.3 + (0.7 * progress * 2);
+                opacity = progress * 2;
+                zIndex = 10;
+              } else {
+                // Second half: zoom out (1.0 to 1.5)
+                const exitProgress = (progress - 0.5) * 2;
+                scale = 1.0 + (0.5 * exitProgress);
+                opacity = 1 - exitProgress;
+                zIndex = 5;
+              }
             } else {
-              // After section has exited
+              // Section has finished
               scale = 1.5;
               opacity = 0;
               zIndex = 1;
@@ -120,28 +117,41 @@ export default function ZoomViewport() {
           );
         })}
         
-        {/* Section indicator */}
+        {/* Section indicator with labels for debugging */}
         <div className="fixed bottom-8 right-8 z-20 flex flex-col space-y-2">
-          {sections.map((_, index) => {
+          {sections.map((section, index) => {
             const isActive = sectionsData[index]?.opacity > 0.5;
             return (
-              <div
-                key={index}
-                className={`w-3 h-3 rounded-full transition-all duration-300 ${
-                  isActive 
-                    ? 'bg-blue-400 scale-125' 
-                    : 'bg-gray-600 hover:bg-gray-400'
-                }`}
-                onClick={() => {
-                  window.scrollTo({
-                    top: index * window.innerHeight,
-                    behavior: 'smooth'
-                  });
-                }}
-                style={{ cursor: 'pointer' }}
-              />
+              <div key={index} className="flex items-center space-x-2">
+                <span className="text-xs text-gray-400 w-16 text-right">{section.name}</span>
+                <div
+                  className={`w-3 h-3 rounded-full transition-all duration-300 ${
+                    isActive 
+                      ? 'bg-blue-400 scale-125' 
+                      : 'bg-gray-600 hover:bg-gray-400'
+                  }`}
+                  onClick={() => {
+                    window.scrollTo({
+                      top: index * window.innerHeight,
+                      behavior: 'smooth'
+                    });
+                  }}
+                  style={{ cursor: 'pointer' }}
+                />
+              </div>
             );
           })}
+        </div>
+
+        {/* Debug info */}
+        <div className="fixed top-8 left-8 z-20 text-xs text-gray-400 bg-black/50 p-2 rounded">
+          <div>Scroll: {Math.round(window.scrollY || 0)}px</div>
+          <div>ViewHeight: {window.innerHeight}px</div>
+          {sectionsData.map((data, index) => (
+            <div key={index}>
+              {sections[index].name}: scale={data.scale.toFixed(2)}, opacity={data.opacity.toFixed(2)}
+            </div>
+          ))}
         </div>
       </div>
 
