@@ -300,6 +300,17 @@
     overflow: hidden;
   }
 
+  .wave-container::after {
+    content: '';
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    height: 200px;
+    background: linear-gradient(to bottom, transparent 0%, rgba(17, 24, 39, 0.8) 80%, rgba(17, 24, 39, 0.9) 100%);
+    z-index: 5;
+  }
+
   .wave {
     position: absolute;
     width: 120%;

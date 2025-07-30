@@ -43,7 +43,7 @@ export default function HeroSection() {
         <div className="energy-line"></div>
       </div>
       
-      <div className="relative z-10 flex min-h-screen">
+      <div className="relative z-20 flex min-h-screen">
         {/* Left Side Content */}
         <div className="w-1/2 flex flex-col justify-center px-8 lg:px-16">
           <div className="max-w-xl">

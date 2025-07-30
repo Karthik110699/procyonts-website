@@ -17,14 +17,15 @@ export default function Home() {
   useScrollReveal();
 
   return (
-    <div className="bg-procyon-dark text-white overflow-x-hidden">
+    <div className="bg-gradient-to-b from-gray-900 via-procyon-dark to-gray-900 text-white overflow-x-hidden">
       <LoadingScreen />
       <Navbar />
       <HeroSection />
       
       {/* AI Pods Section (Globant Style) */}
-      <section className="py-20 relative overflow-hidden">
-        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+      <section className="py-20 relative overflow-hidden bg-gradient-to-b from-gray-900/80 via-gray-900/60 to-gray-900/40">
+        <div className="absolute inset-0 bg-gradient-to-b from-teal-900/10 via-transparent to-transparent"></div>
+        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
           <div className="grid lg:grid-cols-2 gap-12 items-center">
             <div className="space-y-8 reveal">
               <div className="inline-block px-4 py-2 bg-blue-500/20 rounded-full text-blue-400 font-semibold">

@@ -5,7 +5,7 @@ export default function AboutSection() {
   const expertsCount = useCounterAnimation(100, 2000);
 
   return (
-    <section id="about" className="py-20 bg-gray-900/50">
+    <section id="about" className="py-20 bg-gradient-to-b from-gray-900/40 via-gray-900/60 to-gray-900/80">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="grid lg:grid-cols-2 gap-12 items-center">
           <div className="reveal">
