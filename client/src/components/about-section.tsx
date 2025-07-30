@@ -1,4 +1,5 @@
 import { useCounterAnimation } from "@/hooks/use-counter-animation";
+import aibrainImage from "@assets/Trial1_1753910986636.png";
 
 export default function AboutSection() {
   const projectsCount = useCounterAnimation(500, 2000);
@@ -10,7 +11,7 @@ export default function AboutSection() {
         <div className="grid lg:grid-cols-2 gap-12 items-center">
           <div className="reveal">
             <img 
-              src="/attached_assets/Trial1_1753910986636.png" 
+              src={aibrainImage} 
               alt="AI brain with neural network connections and data analytics dashboards showing intelligent insights" 
               className="rounded-2xl shadow-2xl"
             />
