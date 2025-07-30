@@ -13,11 +13,13 @@ export default function FourPillarsSection() {
         </div>
 
         <div className="mb-16 reveal flex justify-center">
-          <img 
-            src="https://images.unsplash.com/photo-1451187580459-43490279c0fa?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&h=300" 
-            alt="Digital transformation and technology innovation workspace with data visualization" 
-            className="w-3/4 h-48 object-cover rounded-2xl shadow-2xl"
-          />
+          <div className="w-2/3 max-w-2xl">
+            <img 
+              src={futuristicOfficeImage} 
+              alt="Futuristic business office with holographic displays, multiple screens, and advanced AI technology workspace" 
+              className="w-full h-40 object-cover rounded-2xl shadow-2xl"
+            />
+          </div>
         </div>
 
         <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-8">
