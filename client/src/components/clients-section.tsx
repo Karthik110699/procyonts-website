@@ -1,13 +1,35 @@
-import { Building2, Zap, Database, Cloud, Cpu, Globe } from "lucide-react";
-
 export default function ClientsSection() {
   const clients = [
-    { name: "Genentech", icon: Building2, color: "text-blue-400" },
-    { name: "IBM", icon: Cpu, color: "text-emerald-400" },
-    { name: "Deloitte", icon: Database, color: "text-purple-400" },
-    { name: "Tech Mahindra", icon: Cloud, color: "text-cyan-400" },
-    { name: "NIH", icon: Zap, color: "text-yellow-400" },
-    { name: "Delta", icon: Globe, color: "text-pink-400" }
+    { 
+      name: "Genentech", 
+      logo: "https://upload.wikimedia.org/wikipedia/commons/6/6c/Genentech_logo.svg",
+      alt: "Genentech - A Member of the Roche Group"
+    },
+    { 
+      name: "IBM", 
+      logo: "https://upload.wikimedia.org/wikipedia/commons/5/51/IBM_logo.svg",
+      alt: "IBM Corporation"
+    },
+    { 
+      name: "Deloitte", 
+      logo: "https://upload.wikimedia.org/wikipedia/commons/1/15/Deloitte_Logo.svg",
+      alt: "Deloitte Consulting"
+    },
+    { 
+      name: "Tech Mahindra", 
+      logo: "https://upload.wikimedia.org/wikipedia/commons/3/32/Tech_Mahindra_New_Logo.svg",
+      alt: "Tech Mahindra Limited"
+    },
+    { 
+      name: "NIH", 
+      logo: "https://upload.wikimedia.org/wikipedia/commons/4/48/NIH_Master_Logo_Vertical_2Color.svg",
+      alt: "National Institutes of Health"
+    },
+    { 
+      name: "Delta Air Lines", 
+      logo: "https://upload.wikimedia.org/wikipedia/commons/d/d1/Delta_logo.svg",
+      alt: "Delta Air Lines"
+    }
   ];
 
   return (
@@ -19,16 +41,23 @@ export default function ClientsSection() {
         </div>
         
         <div className="overflow-hidden">
-          <div className="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-6 gap-8">
-            {clients.map((client, index) => {
-              const IconComponent = client.icon;
-              return (
-                <div key={index} className="flex flex-col items-center justify-center p-6 bg-gradient-to-br from-gray-800 to-gray-900 rounded-xl border border-gray-700 hover:border-blue-500 transition-all duration-300 hover:scale-105 group">
-                  <IconComponent className={`w-8 h-8 mb-3 ${client.color} group-hover:scale-110 transition-transform duration-300`} />
-                  <span className="text-sm font-semibold text-gray-300 group-hover:text-white transition-colors duration-300 text-center">{client.name}</span>
-                </div>
-              );
-            })}
+          <div className="flex items-center justify-center flex-wrap gap-12">
+            {clients.map((client, index) => (
+              <div key={index} className="flex items-center justify-center">
+                <img 
+                  src={client.logo} 
+                  alt={client.alt}
+                  className="h-12 opacity-70 hover:opacity-100 transition-all duration-300 filter brightness-0 invert hover:scale-110"
+                  onError={(e) => {
+                    // Fallback to company name initials if logo fails to load
+                    const fallback = document.createElement('div');
+                    fallback.className = 'h-12 w-12 bg-gray-700 rounded-lg flex items-center justify-center text-white font-bold';
+                    fallback.textContent = client.name.split(' ').map(word => word[0]).join('').slice(0, 2);
+                    e.currentTarget.parentNode.replaceChild(fallback, e.currentTarget);
+                  }}
+                />
+              </div>
+            ))}
           </div>
         </div>
       </div>
