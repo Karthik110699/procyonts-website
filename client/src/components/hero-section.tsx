@@ -101,7 +101,7 @@ export default function HeroSection() {
               </a>
               <a 
                 href="#services" 
-                className="px-8 py-4 border-2 border-blue-400 text-blue-400 rounded-lg font-semibold text-lg transition-all duration-300 transform hover:scale-105 hover:bg-blue-400/10"
+                className="px-8 py-4 border-2 border-blue-400 text-white rounded-lg font-semibold text-lg transition-all duration-300 transform hover:scale-105 hover:bg-blue-400/10"
               >
                 Explore Services
               </a>
