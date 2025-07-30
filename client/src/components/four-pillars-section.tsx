@@ -16,7 +16,7 @@ export default function FourPillarsSection() {
           <img 
             src={futuristicOfficeImage} 
             alt="Futuristic business office with holographic displays, multiple screens, and advanced AI technology workspace" 
-            className="w-full rounded-2xl shadow-2xl"
+            className="w-full h-48 object-cover rounded-2xl shadow-2xl"
           />
         </div>
 
