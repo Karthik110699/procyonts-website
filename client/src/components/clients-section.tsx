@@ -1,29 +1,34 @@
 export default function ClientsSection() {
-  // Original companies from the demo: Genentech, IBM, Deloitte, Tech Mahindra, NIH, Delta
   const clients = [
     { 
-      name: "Genentech",
-      logo: "/logos/genentech.png"
+      name: "Genentech", 
+      logo: "https://upload.wikimedia.org/wikipedia/commons/6/6c/Genentech_logo.svg",
+      alt: "Genentech - A Member of the Roche Group"
     },
     { 
-      name: "IBM",
-      logo: "/logos/ibm.svg"
+      name: "IBM", 
+      logo: "https://upload.wikimedia.org/wikipedia/commons/5/51/IBM_logo.svg",
+      alt: "IBM Corporation"
     },
     { 
-      name: "Deloitte",
-      logo: "/logos/deloitte.svg?v=2"
+      name: "Deloitte", 
+      logo: "https://upload.wikimedia.org/wikipedia/commons/1/15/Deloitte_Logo.svg",
+      alt: "Deloitte Consulting"
     },
     { 
-      name: "Tech Mahindra",
-      logo: "/logos/tech-mahindra.png"
+      name: "Tech Mahindra", 
+      logo: "https://upload.wikimedia.org/wikipedia/commons/3/32/Tech_Mahindra_New_Logo.svg",
+      alt: "Tech Mahindra Limited"
     },
     { 
-      name: "NIH",
-      logo: "/logos/nih.png"
+      name: "NIH", 
+      logo: "https://upload.wikimedia.org/wikipedia/commons/4/48/NIH_Master_Logo_Vertical_2Color.svg",
+      alt: "National Institutes of Health"
     },
     { 
-      name: "Delta Air Lines",
-      logo: "/logos/delta.svg"
+      name: "Delta Air Lines", 
+      logo: "https://upload.wikimedia.org/wikipedia/commons/d/d1/Delta_logo.svg",
+      alt: "Delta Air Lines"
     }
   ];
 
@@ -35,14 +40,21 @@ export default function ClientsSection() {
           <p className="text-gray-300">Over two decades powering the world's leading businesses</p>
         </div>
         
-        <div className="py-12">
-          <div className="flex items-center justify-center flex-wrap gap-16">
+        <div className="overflow-hidden">
+          <div className="flex items-center justify-center flex-wrap gap-12">
             {clients.map((client, index) => (
-              <div key={index} className="flex items-center justify-center h-20 w-32 p-4">
+              <div key={index} className="flex items-center justify-center">
                 <img 
                   src={client.logo} 
-                  alt={`${client.name} logo`}
-                  className="max-h-12 max-w-full object-contain opacity-70 hover:opacity-100 transition-all duration-300 hover:scale-110"
+                  alt={client.alt}
+                  className="h-12 opacity-70 hover:opacity-100 transition-all duration-300 filter brightness-0 invert hover:scale-110"
+                  onError={(e) => {
+                    // Fallback to company name initials if logo fails to load
+                    const fallback = document.createElement('div');
+                    fallback.className = 'h-12 w-12 bg-gray-700 rounded-lg flex items-center justify-center text-white font-bold';
+                    fallback.textContent = client.name.split(' ').map(word => word[0]).join('').slice(0, 2);
+                    e.currentTarget.parentNode.replaceChild(fallback, e.currentTarget);
+                  }}
                 />
               </div>
             ))}
