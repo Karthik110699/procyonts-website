@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg viewBox="0 0 200 60" xmlns="http://www.w3.org/2000/svg">
+  <g fill="currentColor">
+    <circle cx="25" cy="30" r="8" fill="#86BC25"/>
+    <text x="45" y="35" font-family="Arial, sans-serif" font-size="18" font-weight="bold">
+      Deloitte
+    </text>
+  </g>
+</svg>

@@ -3,27 +3,27 @@ export default function ClientsSection() {
   const clients = [
     { 
       name: "Genentech",
-      logo: "https://1000logos.net/wp-content/uploads/2021/05/Genentech-logo.png"
+      logo: "/logos/genentech.svg"
     },
     { 
       name: "IBM",
-      logo: "https://1000logos.net/wp-content/uploads/2016/10/IBM-Logo.png"
+      logo: "/logos/ibm.svg"
     },
     { 
       name: "Deloitte",
-      logo: "https://1000logos.net/wp-content/uploads/2017/08/Deloitte-Logo.png"
+      logo: "/logos/deloitte.svg"
     },
     { 
       name: "Tech Mahindra",
-      logo: "https://1000logos.net/wp-content/uploads/2020/08/Tech-Mahindra-Logo.png"
+      logo: "/logos/tech-mahindra.svg"
     },
     { 
       name: "NIH",
-      logo: "https://1000logos.net/wp-content/uploads/2017/06/NIH-Logo.png"
+      logo: "/logos/nih.svg"
     },
     { 
       name: "Delta Air Lines",
-      logo: "https://1000logos.net/wp-content/uploads/2017/03/Delta-Logo.png"
+      logo: "/logos/delta.svg"
     }
   ];
 
@@ -42,31 +42,7 @@ export default function ClientsSection() {
                 <img 
                   src={client.logo} 
                   alt={`${client.name} logo`}
-                  className="max-h-12 max-w-full object-contain opacity-70 hover:opacity-100 transition-all duration-300 hover:scale-110"
-                  onError={(e) => {
-                    // Fallback to alternative logo sources
-                    const fallbacks: Record<string, string> = {
-                      'Genentech': 'https://logos-download.com/wp-content/uploads/2016/05/Genentech_logo_logotype.png',
-                      'IBM': 'https://logos-download.com/wp-content/uploads/2016/06/IBM_logo_logotype_emblem.png',
-                      'Deloitte': 'https://logos-download.com/wp-content/uploads/2016/12/Deloitte_logo_green.png',
-                      'Tech Mahindra': 'https://logos-download.com/wp-content/uploads/2019/11/Tech_Mahindra_Logo.png',
-                      'NIH': 'https://upload.wikimedia.org/wikipedia/commons/thumb/4/48/NIH_Master_Logo_Vertical_2Color.svg/512px-NIH_Master_Logo_Vertical_2Color.svg.png',
-                      'Delta Air Lines': 'https://logos-download.com/wp-content/uploads/2016/05/Delta_Air_Lines_logo_logotype_emblem.png'
-                    };
-                    
-                    if (fallbacks[client.name] && e.currentTarget.src !== fallbacks[client.name]) {
-                      e.currentTarget.src = fallbacks[client.name];
-                    } else {
-                      // Final fallback to text
-                      e.currentTarget.style.display = 'none';
-                      const textDiv = document.createElement('div');
-                      textDiv.className = 'text-white font-bold text-sm opacity-70 hover:opacity-100 transition-all duration-300';
-                      textDiv.textContent = client.name;
-                      if (e.currentTarget.parentNode) {
-                        e.currentTarget.parentNode.appendChild(textDiv);
-                      }
-                    }
-                  }}
+                  className="max-h-12 max-w-full object-contain opacity-70 hover:opacity-100 transition-all duration-300 hover:scale-110 filter brightness-0 invert"
                 />
               </div>
             ))}
