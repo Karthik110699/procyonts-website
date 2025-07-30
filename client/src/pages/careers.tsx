@@ -1,4 +1,5 @@
 import { Users, MapPin, Clock, DollarSign, Code, Brain, Shield } from "lucide-react";
+import { Link } from "wouter";
 import Navbar from "@/components/navbar";
 
 export default function CareersPage() {

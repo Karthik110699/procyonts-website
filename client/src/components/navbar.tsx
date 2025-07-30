@@ -1,10 +1,11 @@
 import { useState, useEffect } from "react";
-import { Link } from "wouter";
+import { Link, useLocation } from "wouter";
 import { Menu, X } from "lucide-react";
 
 export default function Navbar() {
   const [isScrolled, setIsScrolled] = useState(false);
   const [isMobileMenuOpen, setIsMobileMenuOpen] = useState(false);
+  const [location] = useLocation();
 
   useEffect(() => {
     const handleScroll = () => {
@@ -34,11 +35,11 @@ export default function Navbar() {
           {/* Desktop Menu */}
           <div className="hidden md:block">
             <div className="ml-10 flex items-baseline space-x-8">
-              <Link href="/" className="hover:text-blue-400 transition-colors">Home</Link>
-              <Link href="/enterprise" className="hover:text-blue-400 transition-colors">Enterprise</Link>
-              <Link href="/services" className="hover:text-blue-400 transition-colors">Services</Link>
-              <Link href="/about" className="hover:text-blue-400 transition-colors">About</Link>
-              <Link href="/careers" className="hover:text-blue-400 transition-colors">Careers</Link>
+              <Link href="/" className={`transition-colors ${location === '/' ? 'text-blue-400' : 'text-white hover:text-blue-400'}`}>Home</Link>
+              <Link href="/enterprise" className={`transition-colors ${location.startsWith('/enterprise') ? 'text-blue-400' : 'text-white hover:text-blue-400'}`}>Enterprise</Link>
+              <Link href="/services" className={`transition-colors ${location.startsWith('/services') ? 'text-blue-400' : 'text-white hover:text-blue-400'}`}>Services</Link>
+              <Link href="/about" className={`transition-colors ${location === '/about' ? 'text-blue-400' : 'text-white hover:text-blue-400'}`}>About</Link>
+              <Link href="/careers" className={`transition-colors ${location === '/careers' ? 'text-blue-400' : 'text-white hover:text-blue-400'}`}>Careers</Link>
             </div>
           </div>
           
@@ -65,12 +66,12 @@ export default function Navbar() {
       {isMobileMenuOpen && (
         <div className="md:hidden bg-gray-800 border-t border-gray-700">
           <div className="px-2 pt-2 pb-3 space-y-1 sm:px-3">
-            <Link href="/" className="block px-3 py-2 text-white hover:bg-gray-700 rounded-md">Home</Link>
-            <Link href="/enterprise" className="block px-3 py-2 text-white hover:bg-gray-700 rounded-md">Enterprise</Link>
-            <Link href="/services" className="block px-3 py-2 text-white hover:bg-gray-700 rounded-md">Services</Link>
-            <Link href="/about" className="block px-3 py-2 text-white hover:bg-gray-700 rounded-md">About</Link>
-            <Link href="/careers" className="block px-3 py-2 text-white hover:bg-gray-700 rounded-md">Careers</Link>
-            <Link href="/contact" className="block px-3 py-2 text-white hover:bg-gray-700 rounded-md">Contact</Link>
+            <Link href="/" className={`block px-3 py-2 rounded-md ${location === '/' ? 'text-blue-400 bg-gray-700' : 'text-white hover:bg-gray-700'}`}>Home</Link>
+            <Link href="/enterprise" className={`block px-3 py-2 rounded-md ${location.startsWith('/enterprise') ? 'text-blue-400 bg-gray-700' : 'text-white hover:bg-gray-700'}`}>Enterprise</Link>
+            <Link href="/services" className={`block px-3 py-2 rounded-md ${location.startsWith('/services') ? 'text-blue-400 bg-gray-700' : 'text-white hover:bg-gray-700'}`}>Services</Link>
+            <Link href="/about" className={`block px-3 py-2 rounded-md ${location === '/about' ? 'text-blue-400 bg-gray-700' : 'text-white hover:bg-gray-700'}`}>About</Link>
+            <Link href="/careers" className={`block px-3 py-2 rounded-md ${location === '/careers' ? 'text-blue-400 bg-gray-700' : 'text-white hover:bg-gray-700'}`}>Careers</Link>
+            <Link href="/contact" className={`block px-3 py-2 rounded-md ${location === '/contact' ? 'text-blue-400 bg-gray-700' : 'text-white hover:bg-gray-700'}`}>Contact</Link>
           </div>
         </div>
       )}

@@ -1,4 +1,5 @@
 import { Users, Target, Award, Globe } from "lucide-react";
+import { Link } from "wouter";
 import Navbar from "@/components/navbar";
 
 export default function AboutPage() {
