@@ -12,6 +12,7 @@ import CareersSection from "@/components/careers-section";
 import { ContactSection } from "@/components/contact-section";
 import Footer from "@/components/footer";
 import { useScrollReveal } from "@/hooks/use-scroll-reveal";
+import aiRobotImage from "@assets/2151966726_1753911339560.jpg";
 
 export default function Home() {
   useScrollReveal();
@@ -67,8 +68,8 @@ export default function Home() {
             </div>
             <div className="reveal relative">
               <img 
-                src="https://images.unsplash.com/photo-1559827260-dc66d52bef19?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&h=600" 
-                alt="Digital transformation workflow with ServiceNow platform and enterprise automation" 
+                src={aiRobotImage} 
+                alt="Futuristic AI robot working with holographic interface and advanced technology systems" 
                 className="rounded-2xl shadow-2xl w-full"
               />
               <div className="absolute inset-0 bg-gradient-to-tr from-blue-600/20 to-transparent rounded-2xl"></div>
