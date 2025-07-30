@@ -241,9 +241,24 @@
   .stagger-delay-5 { transition-delay: 0.5s; }
   .stagger-delay-6 { transition-delay: 0.6s; }
 
-  /* Enhanced smooth scrolling */
+  /* Enhanced smooth scrolling with momentum */
   html {
     scroll-behavior: smooth;
+  }
+
+  body {
+    scroll-snap-type: y proximity;
+  }
+
+  /* Smooth scroll sections */
+  section {
+    scroll-snap-align: start;
+    scroll-snap-stop: normal;
+  }
+
+  /* Enhanced scroll momentum effect */
+  .momentum-scroll {
+    transition: transform 0.3s cubic-bezier(0.25, 0.46, 0.45, 0.94);
   }
 
   /* Parallax effects */
@@ -289,7 +304,7 @@
     left: 100%;
   }
 
-  /* Zoom scroll effect */
+  /* Zoom scroll effect with bidirectional support */
   .zoom-container {
     position: relative;
     overflow: hidden;
@@ -313,7 +328,13 @@
     opacity: 0;
   }
 
-  /* Enhanced zoom variants */
+  .zoom-section.reverse {
+    opacity: 0;
+    transform: scale(1.3) translateZ(200px);
+    transition: all 1.8s cubic-bezier(0.25, 0.46, 0.45, 0.94);
+  }
+
+  /* Enhanced zoom variants with reverse animations */
   .zoom-fade-in {
     opacity: 0;
     transform: scale(0.5);
@@ -325,6 +346,12 @@
     transform: scale(1);
   }
 
+  .zoom-fade-in.reverse {
+    opacity: 0;
+    transform: scale(1.5);
+    transition: all 2s cubic-bezier(0.25, 0.46, 0.45, 0.94);
+  }
+
   .zoom-slide-up {
     opacity: 0;
     transform: scale(0.8) translateY(100px);
@@ -334,6 +361,44 @@
   .zoom-slide-up.active {
     opacity: 1;
     transform: scale(1) translateY(0);
+  }
+
+  .zoom-slide-up.reverse {
+    opacity: 0;
+    transform: scale(1.2) translateY(-50px);
+    transition: all 1.6s cubic-bezier(0.25, 0.46, 0.45, 0.94);
+  }
+
+  /* Bidirectional support for regular animations */
+  .reveal.reverse,
+  .reveal-fade.reverse {
+    opacity: 0;
+    transform: scale(1.1) translateY(-20px);
+    transition: all 1.2s cubic-bezier(0.25, 0.46, 0.45, 0.94);
+  }
+
+  .reveal-slide-left.reverse {
+    opacity: 0;
+    transform: translateX(50px) scale(1.1);
+    transition: all 1.4s cubic-bezier(0.25, 0.46, 0.45, 0.94);
+  }
+
+  .reveal-slide-right.reverse {
+    opacity: 0;
+    transform: translateX(-50px) scale(1.1);
+    transition: all 1.4s cubic-bezier(0.25, 0.46, 0.45, 0.94);
+  }
+
+  .reveal-scale.reverse {
+    opacity: 0;
+    transform: scale(1.3);
+    transition: all 1.5s cubic-bezier(0.25, 0.46, 0.45, 0.94);
+  }
+
+  .reveal-rotate.reverse {
+    opacity: 0;
+    transform: rotateY(180deg) scale(1.2);
+    transition: all 1.5s cubic-bezier(0.25, 0.46, 0.45, 0.94);
   }
 
   /* Morphing background effect */
@@ -400,6 +465,53 @@
       transform: translate(0, 0) scale(1);
       opacity: 0.15;
     }
+  }
+
+  /* Enhanced viewport visibility indicators */
+  .section-transition-indicator {
+    position: fixed;
+    right: 20px;
+    top: 50%;
+    transform: translateY(-50%);
+    z-index: 1000;
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+  }
+
+  .indicator-dot {
+    width: 8px;
+    height: 8px;
+    border-radius: 50%;
+    background: rgba(255, 255, 255, 0.3);
+    transition: all 0.3s ease;
+    cursor: pointer;
+  }
+
+  .indicator-dot.active {
+    background: linear-gradient(45deg, #3b82f6, #10b981);
+    transform: scale(1.5);
+    box-shadow: 0 0 12px rgba(59, 130, 246, 0.5);
+  }
+
+  /* Smooth section transitions with enhanced easing */
+  .section-wrapper {
+    transition: all 2.4s cubic-bezier(0.165, 0.84, 0.44, 1);
+    will-change: transform, opacity;
+  }
+
+  /* Enhanced depth perspective for zoom effects */
+  .zoom-container {
+    position: relative;
+    overflow: hidden;
+    perspective: 1200px;
+    perspective-origin: center center;
+  }
+
+  /* Advanced 3D transform effects */
+  .zoom-section {
+    transform-style: preserve-3d;
+    backface-visibility: hidden;
   }
 
   .loading-letter {
