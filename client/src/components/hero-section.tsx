@@ -71,7 +71,7 @@ export default function HeroSection() {
               </a>
               <a 
                 href="#services" 
-                className="px-8 py-4 border-2 border-blue-400 text-white rounded-lg font-semibold text-lg transition-all duration-300 transform hover:scale-105 hover:bg-blue-400/10"
+                className="px-8 py-4 border-2 border-white text-white rounded-lg font-semibold text-lg transition-all duration-300 transform hover:scale-105 hover:bg-white/10"
               >
                 Explore Services
               </a>
@@ -84,7 +84,7 @@ export default function HeroSection() {
           {/* Floating Service Names */}
           <div className="absolute inset-0 flex items-center justify-center">
             <div className="text-center">
-              <div className="text-6xl lg:text-7xl font-bold text-white/20 mb-4 transition-all duration-500">
+              <div className="text-6xl lg:text-7xl font-bold text-cyan-400/30 mb-4 transition-all duration-500">
                 {procyonServices[currentServiceIndex]}
               </div>
               
@@ -95,8 +95,8 @@ export default function HeroSection() {
                     key={index}
                     className={`w-2 h-2 rounded-full transition-all duration-300 ${
                       index === currentServiceIndex 
-                        ? 'bg-blue-400 scale-150' 
-                        : 'bg-white/30'
+                        ? 'bg-cyan-400 scale-150 shadow-cyan-400/50 shadow-lg' 
+                        : 'bg-cyan-300/40'
                     }`}
                   />
                 ))}
@@ -118,8 +118,8 @@ export default function HeroSection() {
                   animationDelay: `${index * 0.5}s`
                 }}
               >
-                <div className="w-4 h-4 bg-gradient-to-r from-blue-400 to-emerald-400 rounded-full animate-particle-float">
-                  <div className="absolute -top-8 left-1/2 transform -translate-x-1/2 text-xs font-semibold text-white/60 whitespace-nowrap">
+                <div className="w-4 h-4 bg-gradient-to-r from-cyan-400 to-emerald-400 rounded-full animate-particle-float shadow-cyan-400/30 shadow-lg">
+                  <div className="absolute -top-8 left-1/2 transform -translate-x-1/2 text-xs font-semibold text-cyan-300/80 whitespace-nowrap">
                     {service}
                   </div>
                 </div>

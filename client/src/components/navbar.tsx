@@ -44,8 +44,8 @@ export default function Navbar() {
           
           {/* CTA Button */}
           <div className="hidden md:block">
-            <Link href="/contact" className="bg-blue-600 hover:bg-blue-700 px-6 py-2 rounded-lg font-semibold transition-colors">
-              Get in Touch
+            <Link href="/contact" className="bg-gradient-to-r from-blue-600 to-emerald-500 hover:from-blue-700 hover:to-emerald-600 px-6 py-2 rounded-lg font-semibold transition-all duration-300 text-white">
+              Get Started
             </Link>
           </div>
 
