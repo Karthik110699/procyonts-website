@@ -11,6 +11,7 @@ import Services from "@/pages/services";
 import About from "@/pages/about";
 import Careers from "@/pages/careers";
 import Contact from "@/pages/contact";
+import SocialImpactPage from "@/pages/social-impact";
 import SalesforcePage from "@/pages/enterprise/salesforce";
 import ServiceNowPage from "@/pages/enterprise/servicenow";
 import SAPPage from "@/pages/enterprise/sap";
@@ -33,6 +34,7 @@ function Router() {
       <Route path="/about" component={About} />
       <Route path="/careers" component={Careers} />
       <Route path="/contact" component={Contact} />
+      <Route path="/social-impact" component={SocialImpactPage} />
       <Route component={NotFound} />
     </Switch>
   );

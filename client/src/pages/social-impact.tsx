@@ -1,0 +1,230 @@
+import { Heart, Leaf, GraduationCap, Users, Globe, Target, Award, ArrowLeft } from "lucide-react";
+import { Link } from "wouter";
+import Navbar from "@/components/navbar";
+
+export default function SocialImpactPage() {
+  const initiatives = [
+    {
+      title: "Community Technology Centers",
+      description: "Building digital literacy through community-based technology centers in underserved areas.",
+      image: "https://images.unsplash.com/photo-1522202176988-66273c2fd55f?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&h=600",
+      icon: Heart,
+      color: "emerald",
+      stats: "15+ Centers Built",
+      impact: "5,000+ Lives Touched"
+    },
+    {
+      title: "Green Cloud Initiative",
+      description: "Promoting carbon-neutral cloud infrastructure and sustainable technology practices.",
+      image: "https://images.unsplash.com/photo-1441974231531-c6227db76b6e?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&h=600",
+      icon: Leaf,
+      color: "blue",
+      stats: "40% Carbon Reduction",
+      impact: "1M+ CO2 Tons Saved"
+    },
+    {
+      title: "STEM Education Program",
+      description: "Scholarship programs and coding bootcamps for underprivileged students worldwide.",
+      image: "https://images.unsplash.com/photo-1509062522246-3755977927d7?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&h=600",
+      icon: GraduationCap,
+      color: "purple",
+      stats: "500+ Scholarships",
+      impact: "85% Job Placement Rate"
+    },
+    {
+      title: "Digital Inclusion Project",
+      description: "Bridging the digital divide through free internet access and device distribution.",
+      image: "https://images.unsplash.com/photo-1560472354-b33ff0c44a43?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&h=600",
+      icon: Globe,
+      color: "cyan",
+      stats: "25 Communities Connected",
+      impact: "10,000+ Devices Distributed"
+    }
+  ];
+
+  const videos = [
+    {
+      title: "Community Impact Story",
+      thumbnail: "https://images.unsplash.com/photo-1559027615-cd4628902d4a?ixlib=rb-4.0.3&auto=format&fit=crop&w=600&h=400",
+      duration: "3:45"
+    },
+    {
+      title: "Environmental Initiatives",
+      thumbnail: "https://images.unsplash.com/photo-1542601906990-b4d3fb778b09?ixlib=rb-4.0.3&auto=format&fit=crop&w=600&h=400",
+      duration: "2:30"
+    },
+    {
+      title: "Education Program Success",
+      thumbnail: "https://images.unsplash.com/photo-1523240795612-9a054b0db644?ixlib=rb-4.0.3&auto=format&fit=crop&w=600&h=400",
+      duration: "4:12"
+    }
+  ];
+
+  return (
+    <div className="bg-procyon-dark text-white min-h-screen">
+      <Navbar />
+      
+      {/* Hero Section */}
+      <section className="pt-32 pb-20 relative overflow-hidden">
+        <div className="absolute inset-0 bg-gradient-to-br from-blue-900/20 to-emerald-900/20"></div>
+        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative">
+          <div className="text-center mb-16">
+            <h1 className="text-5xl md:text-6xl font-bold mb-6">
+              <span className="gradient-text">Giving Back</span> to Society
+            </h1>
+            <p className="text-xl text-gray-300 max-w-3xl mx-auto">
+              Our commitment extends beyond technology to creating positive social impact in the communities we serve. When you build a better company, you can build a better world.
+            </p>
+          </div>
+        </div>
+      </section>
+
+      {/* Impact Statistics */}
+      <section className="py-20 bg-gray-900/50">
+        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+          <div className="grid md:grid-cols-4 gap-8">
+            <div className="text-center">
+              <div className="text-4xl font-bold gradient-text mb-2">20+</div>
+              <div className="text-gray-300">Years of Community Service</div>
+            </div>
+            <div className="text-center">
+              <div className="text-4xl font-bold gradient-text mb-2">50,000+</div>
+              <div className="text-gray-300">Lives Impacted</div>
+            </div>
+            <div className="text-center">
+              <div className="text-4xl font-bold gradient-text mb-2">$5M+</div>
+              <div className="text-gray-300">Invested in Communities</div>
+            </div>
+            <div className="text-center">
+              <div className="text-4xl font-bold gradient-text mb-2">100+</div>
+              <div className="text-gray-300">Partner Organizations</div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      {/* Main Initiatives */}
+      <section className="py-20">
+        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+          <div className="text-center mb-16">
+            <h2 className="text-4xl font-bold mb-6">Our Key Initiatives</h2>
+            <p className="text-xl text-gray-300">Making a difference through technology and community engagement</p>
+          </div>
+
+          <div className="grid lg:grid-cols-2 gap-12">
+            {initiatives.map((initiative, index) => {
+              const IconComponent = initiative.icon;
+              return (
+                <div key={index} className="conic-border bg-gradient-to-br from-gray-800 to-gray-900 rounded-2xl overflow-hidden group hover:scale-105 transition-all duration-500">
+                  <div className="relative h-64 overflow-hidden">
+                    <img 
+                      src={initiative.image} 
+                      alt={initiative.title}
+                      className="w-full h-full object-cover group-hover:scale-110 transition-transform duration-700"
+                    />
+                    <div className="absolute inset-0 bg-gradient-to-t from-black/60 to-transparent"></div>
+                    <div className={`absolute top-4 left-4 w-12 h-12 rounded-lg flex items-center justify-center ${
+                      initiative.color === 'emerald' ? 'bg-emerald-500/20' :
+                      initiative.color === 'blue' ? 'bg-blue-500/20' :
+                      initiative.color === 'purple' ? 'bg-purple-500/20' :
+                      'bg-cyan-500/20'
+                    }`}>
+                      <IconComponent className={`w-6 h-6 ${
+                        initiative.color === 'emerald' ? 'text-emerald-400' :
+                        initiative.color === 'blue' ? 'text-blue-400' :
+                        initiative.color === 'purple' ? 'text-purple-400' :
+                        'text-cyan-400'
+                      }`} />
+                    </div>
+                  </div>
+                  
+                  <div className="p-8">
+                    <h3 className="text-2xl font-bold mb-4">{initiative.title}</h3>
+                    <p className="text-gray-300 mb-6">{initiative.description}</p>
+                    
+                    <div className="flex justify-between items-center">
+                      <div className="space-y-1">
+                        <div className="text-sm text-gray-400">Progress</div>
+                        <div className="font-semibold">{initiative.stats}</div>
+                      </div>
+                      <div className="space-y-1 text-right">
+                        <div className="text-sm text-gray-400">Impact</div>
+                        <div className="font-semibold">{initiative.impact}</div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              );
+            })}
+          </div>
+        </div>
+      </section>
+
+      {/* Video Gallery */}
+      <section className="py-20 bg-gray-900/50">
+        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+          <div className="text-center mb-16">
+            <h2 className="text-4xl font-bold mb-6">Impact Stories</h2>
+            <p className="text-xl text-gray-300">See how we're making a difference in communities worldwide</p>
+          </div>
+
+          <div className="grid md:grid-cols-3 gap-8">
+            {videos.map((video, index) => (
+              <div key={index} className="conic-border bg-gradient-to-br from-gray-800 to-gray-900 rounded-xl overflow-hidden group cursor-pointer hover:scale-105 transition-all duration-500">
+                <div className="relative">
+                  <img 
+                    src={video.thumbnail} 
+                    alt={video.title}
+                    className="w-full h-48 object-cover group-hover:scale-110 transition-transform duration-700"
+                  />
+                  <div className="absolute inset-0 bg-black/40 flex items-center justify-center">
+                    <div className="w-16 h-16 bg-white/20 rounded-full flex items-center justify-center backdrop-blur-sm">
+                      <div className="w-0 h-0 border-l-8 border-l-white border-t-4 border-t-transparent border-b-4 border-b-transparent ml-1"></div>
+                    </div>
+                  </div>
+                  <div className="absolute bottom-2 right-2 bg-black/70 px-2 py-1 rounded text-sm">
+                    {video.duration}
+                  </div>
+                </div>
+                <div className="p-6">
+                  <h3 className="text-lg font-semibold">{video.title}</h3>
+                </div>
+              </div>
+            ))}
+          </div>
+        </div>
+      </section>
+
+      {/* Call to Action */}
+      <section className="py-20">
+        <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
+          <h2 className="text-4xl font-bold mb-6">Join Our Mission</h2>
+          <p className="text-xl text-gray-300 mb-8">
+            Partner with us to create meaningful change in communities around the world.
+          </p>
+          <div className="flex flex-col sm:flex-row gap-4 justify-center">
+            <Link 
+              href="/contact" 
+              className="bg-gradient-to-r from-blue-600 to-emerald-500 hover:from-blue-700 hover:to-emerald-600 px-8 py-4 rounded-lg font-semibold transition-all duration-300 transform hover:scale-105"
+            >
+              Partner With Us
+            </Link>
+            <Link 
+              href="/careers" 
+              className="border border-blue-500 hover:bg-blue-500/10 px-8 py-4 rounded-lg font-semibold transition-all duration-300"
+            >
+              Join Our Team
+            </Link>
+          </div>
+        </div>
+      </section>
+
+      {/* Footer */}
+      <footer className="bg-gray-900 py-12">
+        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
+          <p className="text-gray-400">© 2025 Procyon Technostructure. Making a difference through technology.</p>
+        </div>
+      </footer>
+    </div>
+  );
+}

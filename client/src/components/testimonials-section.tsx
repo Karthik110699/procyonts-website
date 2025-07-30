@@ -31,19 +31,19 @@ export default function TestimonialsSection() {
 
         <div className="grid md:grid-cols-3 gap-8">
           {testimonials.map((testimonial, index) => (
-            <div key={index} className="bg-gradient-to-br from-gray-800 to-gray-900 p-8 rounded-2xl border border-gray-700 reveal" style={{ animationDelay: `${index * 0.1}s` }}>
-              <div className="flex items-center mb-6">
-                <Quote className={`w-8 h-8 mr-4 ${
-                  testimonial.color === 'blue' ? 'text-blue-400' :
-                  testimonial.color === 'emerald' ? 'text-emerald-400' :
-                  'text-purple-400'
+            <div key={index} className="conic-border bg-gradient-to-br from-gray-800 to-gray-900 p-8 rounded-2xl border border-gray-700 hover:border-blue-500 cursor-pointer transition-all duration-500 hover:scale-105 hover:shadow-2xl reveal group" style={{ animationDelay: `${index * 0.1}s` }}>
+              <div className="flex items-center mb-6 relative z-10">
+                <Quote className={`w-8 h-8 mr-4 transition-all duration-300 group-hover:scale-110 ${
+                  testimonial.color === 'blue' ? 'text-blue-400 group-hover:text-blue-300' :
+                  testimonial.color === 'emerald' ? 'text-emerald-400 group-hover:text-emerald-300' :
+                  'text-purple-400 group-hover:text-purple-300'
                 }`} />
               </div>
-              <p className="text-gray-300 mb-6 text-lg">
+              <p className="text-gray-300 mb-6 text-lg transition-colors duration-300 group-hover:text-white relative z-10">
                 "{testimonial.quote}"
               </p>
-              <div className="flex items-center">
-                <div className={`w-12 h-12 rounded-full flex items-center justify-center mr-4 ${
+              <div className="flex items-center relative z-10">
+                <div className={`w-12 h-12 rounded-full flex items-center justify-center mr-4 transition-all duration-300 group-hover:scale-110 ${
                   testimonial.color === 'blue' ? 'bg-gradient-to-r from-blue-600 to-emerald-500' :
                   testimonial.color === 'emerald' ? 'bg-gradient-to-r from-emerald-500 to-purple-500' :
                   'bg-gradient-to-r from-purple-500 to-amber-500'
@@ -53,8 +53,8 @@ export default function TestimonialsSection() {
                   </span>
                 </div>
                 <div>
-                  <p className="font-semibold">{testimonial.author}</p>
-                  <p className="text-gray-400">{testimonial.role}</p>
+                  <p className="font-semibold transition-colors duration-300 group-hover:text-white">{testimonial.author}</p>
+                  <p className="text-gray-400 transition-colors duration-300 group-hover:text-gray-300">{testimonial.role}</p>
                 </div>
               </div>
             </div>

@@ -1,4 +1,5 @@
-import { Heart, Leaf, GraduationCap } from "lucide-react";
+import { Heart, Leaf, GraduationCap, ArrowRight } from "lucide-react";
+import { Link } from "wouter";
 
 export default function SocialImpactSection() {
   return (
@@ -40,6 +41,16 @@ export default function SocialImpactSection() {
                   <p className="text-gray-300">Empowering the next generation through STEM education and scholarship programs.</p>
                 </div>
               </div>
+            </div>
+            
+            <div className="mt-8">
+              <Link 
+                href="/social-impact" 
+                className="inline-flex items-center px-6 py-3 bg-gradient-to-r from-blue-600 to-emerald-500 hover:from-blue-700 hover:to-emerald-600 rounded-lg font-semibold transition-all duration-300 transform hover:scale-105 group"
+              >
+                View More Impact Stories
+                <ArrowRight className="w-5 h-5 ml-2 group-hover:translate-x-1 transition-transform duration-300" />
+              </Link>
             </div>
           </div>
           <div className="reveal">
