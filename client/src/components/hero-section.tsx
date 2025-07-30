@@ -24,7 +24,7 @@ export default function HeroSection() {
   }, []);
 
   return (
-    <section id="home" className="relative min-h-screen overflow-hidden">
+    <section id="home" className="relative w-full h-full overflow-hidden">
       {/* Animated Wave Background */}
       <div className="wave-container">
         <div className="glow-effect"></div>
@@ -41,7 +41,7 @@ export default function HeroSection() {
         <div className="energy-line"></div>
       </div>
       
-      <div className="relative z-20 flex min-h-screen">
+      <div className="relative z-20 flex h-full min-h-screen">
         {/* Left Side Content */}
         <div className="w-1/2 flex flex-col justify-center px-8 lg:px-16">
           <div className="max-w-xl">

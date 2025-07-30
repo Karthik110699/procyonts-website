@@ -289,7 +289,57 @@
     left: 100%;
   }
 
-  /* Zoom scroll effect */
+  /* Fixed viewport zoom effect like CredMoney */
+  .zoom-viewport {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100vw;
+    height: 100vh;
+    overflow: hidden;
+    perspective: 2000px;
+    z-index: 10;
+  }
+
+  .zoom-section-container {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    opacity: 0;
+    transform: scale(0.2) translateZ(-500px);
+    transition: all 2.5s cubic-bezier(0.25, 0.46, 0.45, 0.94);
+    transform-origin: center center;
+  }
+
+  .zoom-section-container.active {
+    opacity: 1;
+    transform: scale(1) translateZ(0);
+  }
+
+  .zoom-section-container.zoom-out {
+    transform: scale(2) translateZ(300px);
+    opacity: 0;
+  }
+
+  /* Traditional scroll container for navigation */
+  .scroll-trigger-container {
+    position: relative;
+    z-index: 1;
+    height: 600vh; /* Multiple screen heights for scroll triggers */
+  }
+
+  .scroll-trigger {
+    height: 100vh;
+    width: 100%;
+    position: relative;
+  }
+
+  /* Zoom scroll effect for regular sections */
   .zoom-container {
     position: relative;
     overflow: hidden;
