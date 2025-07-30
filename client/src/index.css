@@ -715,9 +715,9 @@
     opacity: 0.8;
     background: linear-gradient(45deg, 
         transparent 30%, 
-        rgba(0, 255, 200, 0.1) 40%,
-        rgba(0, 255, 200, 0.3) 50%,
-        rgba(0, 255, 200, 0.1) 60%,
+        rgba(16, 185, 129, 0.1) 40%,
+        rgba(16, 185, 129, 0.3) 50%,
+        rgba(16, 185, 129, 0.1) 60%,
         transparent 70%);
     transform-origin: center;
     animation: wave-flow 8s ease-in-out infinite;
@@ -772,7 +772,7 @@
     width: 600px;
     height: 600px;
     transform: translate(-50%, -50%);
-    background: radial-gradient(circle, rgba(0, 255, 200, 0.1) 0%, transparent 70%);
+    background: radial-gradient(circle, rgba(16, 185, 129, 0.1) 0%, transparent 70%);
     animation: glow-pulse 4s ease-in-out infinite;
   }
 
@@ -791,7 +791,7 @@
     position: absolute;
     width: 2px;
     height: 2px;
-    background: rgba(0, 255, 200, 0.8);
+    background: rgba(16, 185, 129, 0.8);
     border-radius: 50%;
     animation: float 6s ease-in-out infinite;
   }
