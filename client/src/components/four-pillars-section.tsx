@@ -1,4 +1,5 @@
 import { Lightbulb, Code, RefreshCw, CheckSquare } from "lucide-react";
+import abstractAiImage from "@assets/image_1753911400691.png";
 
 export default function FourPillarsSection() {
   return (
@@ -13,8 +14,8 @@ export default function FourPillarsSection() {
 
         <div className="mb-16 reveal">
           <img 
-            src="https://images.unsplash.com/photo-1677442136019-21780ecad995?ixlib=rb-4.0.3&auto=format&fit=crop&w=1200&h=400" 
-            alt="Ethereal AI neural pathways with glowing data streams and quantum processing nodes" 
+            src={abstractAiImage} 
+            alt="Abstract AI visualization with flowing neural networks and dynamic blue data patterns" 
             className="w-full rounded-2xl shadow-2xl"
           />
         </div>
