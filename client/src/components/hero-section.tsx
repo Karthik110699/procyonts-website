@@ -1,5 +1,4 @@
 import { useState, useEffect } from "react";
-import trial1Image from "@assets/Trial1_1753865656089.png";
 
 export default function HeroSection() {
   const [currentServiceIndex, setCurrentServiceIndex] = useState(0);
@@ -28,14 +27,20 @@ export default function HeroSection() {
 
   return (
     <section id="home" className="relative min-h-screen overflow-hidden">
-      {/* Background Image */}
-      <div className="absolute inset-0">
-        <img 
-          src={trial1Image} 
-          alt="AI Brain Analytics Background" 
-          className="w-full h-full object-cover object-center"
-        />
-        <div className="absolute inset-0 bg-black/30"></div>
+      {/* Animated Wave Background */}
+      <div className="wave-container">
+        <div className="glow-effect"></div>
+        <div className="wave"></div>
+        <div className="wave"></div>
+        <div className="wave"></div>
+        <div className="wave"></div>
+        <div className="wave-particle"></div>
+        <div className="wave-particle"></div>
+        <div className="wave-particle"></div>
+        <div className="wave-particle"></div>
+        <div className="wave-particle"></div>
+        <div className="energy-line"></div>
+        <div className="energy-line"></div>
       </div>
       
       <div className="relative z-10 flex min-h-screen">
