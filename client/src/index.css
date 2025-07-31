@@ -867,7 +867,7 @@
   .star-svg {
     color: rgba(251, 191, 36, 0.6);
     transition: all 0.3s ease;
-    animation: starTwinkle 2s ease-in-out infinite;
+    animation: starTwinkle 6s ease-in-out infinite;
   }
 
   @keyframes starFloat {
