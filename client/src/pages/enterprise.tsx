@@ -2,12 +2,50 @@ import { Cloud, Settings, Database } from "lucide-react";
 import { Link } from "wouter";
 import Navbar from "@/components/navbar";
 import { useScrollReveal } from "@/hooks/use-scroll-reveal";
+import SEOHead, { organizationSchema } from "@/components/seo-head";
 
 export default function EnterprisePage() {
   useScrollReveal();
 
+  const enterpriseStructuredData = {
+    "@context": "https://schema.org",
+    "@type": "WebPage",
+    "name": "Enterprise Solutions - Procyon Technostructure",
+    "description": "Enterprise-grade ServiceNow, SalesForce, and SAP solutions. Expert implementation, optimization, and support for large-scale digital transformation.",
+    "url": "https://procyon-technostructure.com/enterprise",
+    "mainEntity": organizationSchema,
+    "breadcrumb": {
+      "@type": "BreadcrumbList",
+      "itemListElement": [
+        {
+          "@type": "ListItem",
+          "position": 1,
+          "name": "Home",
+          "item": "https://procyon-technostructure.com/"
+        },
+        {
+          "@type": "ListItem",
+          "position": 2,
+          "name": "Enterprise Solutions",
+          "item": "https://procyon-technostructure.com/enterprise"
+        }
+      ]
+    }
+  };
+
   return (
-    <div className="min-h-screen bg-gradient-to-b from-gray-900 via-procyon-dark to-gray-900 text-white overflow-x-hidden relative">
+    <>
+      <SEOHead
+        title="Enterprise Solutions - ServiceNow, SalesForce, SAP | Procyon Technostructure"
+        description="Enterprise-grade ServiceNow, SalesForce, and SAP solutions. Expert implementation, optimization, and support for large-scale digital transformation with 1200+ successful projects."
+        keywords="enterprise solutions, ServiceNow implementation, SalesForce enterprise, SAP consulting, digital transformation, enterprise software, business automation, IT service management, CRM solutions"
+        canonicalUrl="https://procyon-technostructure.com/enterprise"
+        ogTitle="Enterprise Solutions - Leading ServiceNow, SalesForce, SAP Implementation"
+        ogDescription="Transform your enterprise with expert ServiceNow, SalesForce, and SAP solutions. 250+ certified consultants, proven methodologies."
+        structuredData={enterpriseStructuredData}
+      />
+      
+      <div className="min-h-screen bg-gradient-to-b from-gray-900 via-procyon-dark to-gray-900 text-white overflow-x-hidden relative">
       {/* Floating Stars Background */}
       <div className="floating-stars-container">
         {[...Array(15)].map((_, i) => (
@@ -138,5 +176,6 @@ export default function EnterprisePage() {
         </div>
       </section>
     </div>
+    </>
   );
 }

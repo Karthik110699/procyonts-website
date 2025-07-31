@@ -1,0 +1,28 @@
+User-agent: *
+Allow: /
+
+# Sitemap
+Sitemap: https://procyon-technostructure.com/sitemap.xml
+
+# Crawl-delay for respectful crawling
+Crawl-delay: 1
+
+# Allow access to important files
+Allow: /assets/
+Allow: /*.css
+Allow: /*.js
+Allow: /*.png
+Allow: /*.jpg
+Allow: /*.jpeg
+Allow: /*.svg
+Allow: /*.ico
+
+# Block development and internal files
+Disallow: /node_modules/
+Disallow: /.git/
+Disallow: /src/
+Disallow: /server/
+Disallow: /*.json
+Disallow: /*.ts
+Disallow: /*.tsx
+Disallow: /*.config.*

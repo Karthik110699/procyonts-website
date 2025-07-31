@@ -2,12 +2,50 @@ import { Users, Target, Award, Globe } from "lucide-react";
 import { Link } from "wouter";
 import Navbar from "@/components/navbar";
 import { useScrollReveal } from "@/hooks/use-scroll-reveal";
+import SEOHead, { organizationSchema } from "@/components/seo-head";
 
 export default function AboutPage() {
   useScrollReveal();
 
+  const aboutStructuredData = {
+    "@context": "https://schema.org",
+    "@type": "AboutPage",
+    "name": "About Procyon Technostructure",
+    "description": "Learn about Procyon Technostructure's mission, vision, and 20+ years of excellence in enterprise technology solutions. 250+ experts, global reach.",
+    "url": "https://procyon-technostructure.com/about",
+    "mainEntity": organizationSchema,
+    "breadcrumb": {
+      "@type": "BreadcrumbList",
+      "itemListElement": [
+        {
+          "@type": "ListItem",
+          "position": 1,
+          "name": "Home",
+          "item": "https://procyon-technostructure.com/"
+        },
+        {
+          "@type": "ListItem",
+          "position": 2,
+          "name": "About",
+          "item": "https://procyon-technostructure.com/about"
+        }
+      ]
+    }
+  };
+
   return (
-    <div className="min-h-screen bg-gradient-to-b from-gray-900 via-procyon-dark to-gray-900 text-white overflow-x-hidden">
+    <>
+      <SEOHead
+        title="About Procyon Technostructure - 20+ Years of Enterprise Excellence"
+        description="Learn about Procyon Technostructure's mission, vision, and 20+ years of excellence in enterprise technology solutions. 250+ expert consultants, 1200+ successful projects worldwide."
+        keywords="about Procyon, company history, enterprise consulting, technology leadership, digital transformation experts, IT consulting firm, ServiceNow partners, mission vision values"
+        canonicalUrl="https://procyon-technostructure.com/about"
+        ogTitle="About Procyon Technostructure - Leading Enterprise Technology Consultants"
+        ogDescription="Founded in 2004, Procyon has delivered 1200+ successful projects with 250+ expert consultants. Discover our mission and values."
+        structuredData={aboutStructuredData}
+      />
+      
+      <div className="min-h-screen bg-gradient-to-b from-gray-900 via-procyon-dark to-gray-900 text-white overflow-x-hidden">
       <Navbar />
       {/* Header */}
       <div className="pt-20 pb-10 zoom-container">
@@ -149,5 +187,6 @@ export default function AboutPage() {
         </div>
       </section>
     </div>
+    </>
   );
 }

@@ -2,12 +2,50 @@ import { Brain, BarChart, Users, Building, Server, Cog } from "lucide-react";
 import { Link } from "wouter";
 import Navbar from "@/components/navbar";
 import { useScrollReveal } from "@/hooks/use-scroll-reveal";
+import SEOHead, { serviceSchema } from "@/components/seo-head";
 
 export default function ServicesPage() {
   useScrollReveal();
 
+  const servicesStructuredData = {
+    "@context": "https://schema.org",
+    "@type": "WebPage",
+    "name": "Technology Services - Procyon Technostructure",
+    "description": "Comprehensive technology services: Cloud Transformation, AI/ML, Data Analytics, Staff Augmentation, Government Solutions, and Digital Engineering.",
+    "url": "https://procyon-technostructure.com/services",
+    "mainEntity": serviceSchema,
+    "breadcrumb": {
+      "@type": "BreadcrumbList",
+      "itemListElement": [
+        {
+          "@type": "ListItem",
+          "position": 1,
+          "name": "Home",
+          "item": "https://procyon-technostructure.com/"
+        },
+        {
+          "@type": "ListItem",
+          "position": 2,
+          "name": "Services",
+          "item": "https://procyon-technostructure.com/services"
+        }
+      ]
+    }
+  };
+
   return (
-    <div className="min-h-screen bg-gradient-to-b from-gray-900 via-procyon-dark to-gray-900 text-white overflow-x-hidden">
+    <>
+      <SEOHead
+        title="Technology Services - Cloud, AI/ML, Data Analytics | Procyon Technostructure"
+        description="Comprehensive technology services: Cloud Transformation, AI/ML Solutions, Data Analytics, Staff Augmentation, Government Solutions, and Digital Engineering. Expert delivery, proven results."
+        keywords="cloud transformation, AI machine learning, data analytics, staff augmentation, government solutions, digital engineering, technology consulting, AWS Azure GCP, business intelligence"
+        canonicalUrl="https://procyon-technostructure.com/services"
+        ogTitle="Comprehensive Technology Services - Cloud, AI, Data Analytics"
+        ogDescription="Transform your business with our complete technology services portfolio. Cloud migration, AI/ML, analytics, and more."
+        structuredData={servicesStructuredData}
+      />
+      
+      <div className="min-h-screen bg-gradient-to-b from-gray-900 via-procyon-dark to-gray-900 text-white overflow-x-hidden">
       <Navbar />
       {/* Header */}
       <div className="pt-20 pb-10 zoom-container">
@@ -142,5 +180,6 @@ export default function ServicesPage() {
         </div>
       </section>
     </div>
+    </>
   );
 }

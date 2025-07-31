@@ -8,6 +8,7 @@ import FourPillarsSection from "@/components/four-pillars-section";
 import TestimonialsSection from "@/components/testimonials-section";
 import ClientsSection from "@/components/clients-section";
 import SocialImpactSection from "@/components/social-impact-section";
+import SEOHead, { organizationSchema, serviceSchema } from "@/components/seo-head";
 
 import { ContactSection } from "@/components/contact-section";
 import Footer from "@/components/footer";
@@ -17,8 +18,39 @@ import aiRobotImage from "@assets/2151966726_1753911339560.jpg";
 export default function Home() {
   useScrollReveal();
 
+  const homeStructuredData = {
+    "@context": "https://schema.org",
+    "@type": "WebPage",
+    "name": "Procyon Technostructure - AI-Powered Enterprise Solutions",
+    "description": "Transform your enterprise with Procyon's AI-powered solutions. Expert ServiceNow, SalesForce, SAP implementation, cloud transformation, and data analytics services.",
+    "url": "https://procyon-technostructure.com/",
+    "mainEntity": organizationSchema,
+    "breadcrumb": {
+      "@type": "BreadcrumbList",
+      "itemListElement": [
+        {
+          "@type": "ListItem",
+          "position": 1,
+          "name": "Home",
+          "item": "https://procyon-technostructure.com/"
+        }
+      ]
+    }
+  };
+
   return (
-    <div className="bg-gradient-to-b from-gray-900 via-procyon-dark to-gray-900 text-white overflow-x-hidden">
+    <>
+      <SEOHead
+        title="Procyon Technostructure - AI-Powered Enterprise Solutions | ServiceNow | SalesForce | SAP"
+        description="Transform your enterprise with Procyon's AI-powered solutions. Expert ServiceNow, SalesForce, SAP implementation, cloud transformation, and data analytics services since 2004."
+        keywords="enterprise solutions, ServiceNow implementation, SalesForce consulting, SAP solutions, cloud transformation, AI machine learning, data analytics, digital transformation, IT consulting, business automation, government solutions"
+        canonicalUrl="https://procyon-technostructure.com/"
+        ogTitle="Procyon Technostructure - Leading Enterprise Technology Solutions"
+        ogDescription="Maximize ROI and drive growth through innovative technology solutions. 1200+ successful projects, 250+ expert consultants worldwide."
+        structuredData={homeStructuredData}
+      />
+      
+      <div className="bg-gradient-to-b from-gray-900 via-procyon-dark to-gray-900 text-white overflow-x-hidden">
       <LoadingScreen />
       <Navbar />
       <HeroSection />
@@ -87,5 +119,6 @@ export default function Home() {
       <ContactSection />
       <Footer />
     </div>
+    </>
   );
 }

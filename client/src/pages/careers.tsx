@@ -2,12 +2,50 @@ import { Users, MapPin, Clock, DollarSign, Code, Brain, Shield } from "lucide-re
 import { Link } from "wouter";
 import Navbar from "@/components/navbar";
 import { useScrollReveal } from "@/hooks/use-scroll-reveal";
+import SEOHead, { organizationSchema } from "@/components/seo-head";
 
 export default function CareersPage() {
   useScrollReveal();
 
+  const careersStructuredData = {
+    "@context": "https://schema.org",
+    "@type": "WebPage",
+    "name": "Careers at Procyon Technostructure",
+    "description": "Join Procyon's team of 250+ technology experts. Explore career opportunities in enterprise solutions, cloud, AI/ML, and digital transformation.",
+    "url": "https://procyon-technostructure.com/careers",
+    "mainEntity": organizationSchema,
+    "breadcrumb": {
+      "@type": "BreadcrumbList",
+      "itemListElement": [
+        {
+          "@type": "ListItem",
+          "position": 1,
+          "name": "Home",
+          "item": "https://procyon-technostructure.com/"
+        },
+        {
+          "@type": "ListItem",
+          "position": 2,
+          "name": "Careers",
+          "item": "https://procyon-technostructure.com/careers"
+        }
+      ]
+    }
+  };
+
   return (
-    <div className="min-h-screen bg-gradient-to-b from-gray-900 via-procyon-dark to-gray-900 text-white overflow-x-hidden">
+    <>
+      <SEOHead
+        title="Careers at Procyon Technostructure - Join Our Expert Technology Team"
+        description="Join Procyon's team of 250+ technology experts. Explore career opportunities in ServiceNow, SalesForce, SAP, cloud transformation, AI/ML, and digital engineering. Competitive benefits, remote work, growth opportunities."
+        keywords="Procyon careers, technology jobs, ServiceNow careers, SalesForce jobs, SAP consultant, cloud engineer, AI ML engineer, digital transformation careers, remote work, tech consulting jobs"
+        canonicalUrl="https://procyon-technostructure.com/careers"
+        ogTitle="Join Procyon's Technology Team - Career Opportunities"
+        ogDescription="Build your career with leading enterprise technology experts. 250+ team members, competitive benefits, cutting-edge projects."
+        structuredData={careersStructuredData}
+      />
+      
+      <div className="min-h-screen bg-gradient-to-b from-gray-900 via-procyon-dark to-gray-900 text-white overflow-x-hidden">
       <Navbar />
       {/* Header */}
       <div className="pt-20 pb-10 zoom-container">
@@ -274,5 +312,6 @@ export default function CareersPage() {
         </div>
       </section>
     </div>
+    </>
   );
 }

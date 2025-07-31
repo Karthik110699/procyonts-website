@@ -3,9 +3,37 @@ import Navbar from "@/components/navbar";
 import { useState } from "react";
 import { useToast } from "@/hooks/use-toast";
 import { useScrollReveal } from "@/hooks/use-scroll-reveal";
+import SEOHead, { organizationSchema } from "@/components/seo-head";
 
 export default function ContactPage() {
   useScrollReveal();
+
+  const contactStructuredData = {
+    "@context": "https://schema.org",
+    "@type": "ContactPage",
+    "name": "Contact Procyon Technostructure",
+    "description": "Get in touch with Procyon Technostructure for enterprise technology solutions. 24-hour response guarantee for all inquiries.",
+    "url": "https://procyon-technostructure.com/contact",
+    "mainEntity": organizationSchema,
+    "breadcrumb": {
+      "@type": "BreadcrumbList",
+      "itemListElement": [
+        {
+          "@type": "ListItem",
+          "position": 1,
+          "name": "Home",
+          "item": "https://procyon-technostructure.com/"
+        },
+        {
+          "@type": "ListItem",
+          "position": 2,
+          "name": "Contact",
+          "item": "https://procyon-technostructure.com/contact"
+        }
+      ]
+    }
+  };
+
   const [formData, setFormData] = useState({
     firstName: '',
     lastName: '',
@@ -67,7 +95,18 @@ export default function ContactPage() {
   };
 
   return (
-    <div className="min-h-screen bg-gradient-to-b from-gray-900 via-procyon-dark to-gray-900 text-white overflow-x-hidden">
+    <>
+      <SEOHead
+        title="Contact Procyon Technostructure - Get Expert Enterprise Solutions"
+        description="Contact Procyon for enterprise technology solutions. 24-hour response guarantee. Expert consultation for ServiceNow, SalesForce, SAP, cloud transformation, and AI/ML implementation."
+        keywords="contact Procyon, enterprise consultation, ServiceNow support, SalesForce implementation, SAP consulting, technology consultation, digital transformation, get quote, business inquiry"
+        canonicalUrl="https://procyon-technostructure.com/contact"
+        ogTitle="Contact Procyon Technostructure - Enterprise Technology Experts"
+        ogDescription="Get in touch with our expert team. 24-hour response guarantee for all business inquiries. Transform your enterprise today."
+        structuredData={contactStructuredData}
+      />
+      
+      <div className="min-h-screen bg-gradient-to-b from-gray-900 via-procyon-dark to-gray-900 text-white overflow-x-hidden">
       <Navbar />
       {/* Header */}
       <div className="pt-20 pb-10 zoom-container">
@@ -311,5 +350,6 @@ export default function ContactPage() {
         </div>
       </div>
     </div>
+    </>
   );
 }
