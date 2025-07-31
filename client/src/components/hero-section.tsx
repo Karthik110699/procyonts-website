@@ -64,16 +64,18 @@ export default function HeroSection() {
             <div className="flex flex-col sm:flex-row space-y-4 sm:space-y-0 sm:space-x-4">
               <a 
                 href="#contact" 
-                className="group relative px-8 py-4 bg-gradient-to-r from-blue-600 to-emerald-600 rounded-lg font-semibold text-lg text-white overflow-hidden transition-all duration-300 transform hover:scale-105"
+                className="cta-primary group relative px-8 py-4 bg-gradient-to-r from-green-500 to-yellow-500 rounded-lg font-semibold text-lg text-white overflow-hidden transition-all duration-300"
               >
-                <span className="relative z-10">Take the leap today</span>
-                <div className="absolute inset-0 bg-gradient-to-r from-emerald-600 to-blue-600 opacity-0 group-hover:opacity-100 transition-opacity duration-300"></div>
+                <span className="relative z-10">Connect with Us</span>
+                <div className="absolute inset-0 bg-gradient-to-r from-yellow-500 to-green-500 opacity-0 group-hover:opacity-100 transition-opacity duration-300"></div>
+                <div className="absolute top-0 left-[-100%] w-full h-full bg-gradient-to-r from-transparent via-white/30 to-transparent transform skew-x-[-20deg] group-hover:left-[100%] transition-all duration-500 ease-out"></div>
               </a>
               <a 
                 href="#services" 
-                className="px-8 py-4 border-2 border-white text-white rounded-lg font-semibold text-lg transition-all duration-300 transform hover:scale-105 hover:bg-white/10"
+                className="cta-secondary relative px-8 py-4 border-2 border-white text-white rounded-lg font-semibold text-lg overflow-hidden transition-all duration-300"
               >
-                Explore Services
+                <span className="relative z-10">Explore Services</span>
+                <div className="absolute top-0 left-[-100%] w-full h-full bg-white/10 group-hover:left-0 transition-all duration-400 ease-out"></div>
               </a>
             </div>
           </div>
