@@ -1,28 +1,36 @@
+import { Link } from "wouter";
+
 export default function ClientsSection() {
   const clients = [
     { 
       name: "Microsoft",
-      logo: "https://img.icons8.com/fluency/96/microsoft-logo.png"
+      logo: "https://img.icons8.com/fluency/96/microsoft-logo.png",
+      link: "/services"
     },
     { 
       name: "IBM",
-      logo: "https://img.icons8.com/color/96/ibm.png"
+      logo: "https://img.icons8.com/color/96/ibm.png",
+      link: "/services"
     },
     { 
       name: "Amazon",
-      logo: "https://img.icons8.com/color/96/amazon-web-services.png"
+      logo: "https://img.icons8.com/color/96/amazon-web-services.png",
+      link: "/services"
     },
     { 
       name: "Google",
-      logo: "https://img.icons8.com/color/96/google-cloud.png"
+      logo: "https://img.icons8.com/color/96/google-cloud.png",
+      link: "/services"
     },
     { 
       name: "Apple",
-      logo: "https://img.icons8.com/sf-ultralight-filled/96/ffffff/mac-os.png"
+      logo: "https://img.icons8.com/sf-ultralight-filled/96/ffffff/mac-os.png",
+      link: "/services"
     },
     { 
       name: "Oracle",
-      logo: "https://img.icons8.com/color/96/oracle-logo.png"
+      logo: "https://img.icons8.com/color/96/oracle-logo.png",
+      link: "/enterprise"
     }
   ];
 
@@ -39,13 +47,15 @@ export default function ClientsSection() {
         <div className="py-12 reveal-scale" data-delay="200">
           <div className="flex items-center justify-center flex-wrap gap-16">
             {clients.map((client, index) => (
-              <div key={index} className={`flex items-center justify-center h-20 w-32 p-4 reveal-fade stagger-delay-${index % 6 + 1}`} data-delay={`${300 + (index * 100)}`}>
-                <img 
-                  src={client.logo} 
-                  alt={`${client.name} logo`}
-                  className="max-h-12 max-w-full object-contain opacity-70 hover:opacity-100 transition-all duration-300 hover:scale-110"
-                />
-              </div>
+              <Link key={index} href={client.link}>
+                <div className={`flex items-center justify-center h-20 w-32 p-4 reveal-fade stagger-delay-${index % 6 + 1} cursor-pointer`} data-delay={`${300 + (index * 100)}`}>
+                  <img 
+                    src={client.logo} 
+                    alt={`${client.name} logo`}
+                    className="max-h-12 max-w-full object-contain opacity-70 hover:opacity-100 transition-all duration-300 hover:scale-110"
+                  />
+                </div>
+              </Link>
             ))}
           </div>
         </div>

@@ -1,17 +1,18 @@
 import { useState, useEffect } from "react";
+import { Link } from "wouter";
 
 export default function HeroSection() {
   const [currentServiceIndex, setCurrentServiceIndex] = useState(0);
   
   const procyonServices = [
-    { name: "ServiceNow", color: "from-green-400 to-green-500", dotColor: "bg-green-400", shadowColor: "shadow-green-400/50" },
-    { name: "SalesForce", color: "from-white to-green-400", dotColor: "bg-white", shadowColor: "shadow-white/50" },
-    { name: "SAP Solutions", color: "from-yellow-400 to-green-400", dotColor: "bg-yellow-400", shadowColor: "shadow-yellow-400/50" },
-    { name: "Government Services", color: "from-green-400 to-yellow-400", dotColor: "bg-green-400", shadowColor: "shadow-green-400/50" },
-    { name: "Cloud Transformation", color: "from-white to-yellow-400", dotColor: "bg-white", shadowColor: "shadow-white/50" },
-    { name: "AI & Machine Learning", color: "from-green-400 to-green-500", dotColor: "bg-green-400", shadowColor: "shadow-green-400/50" },
-    { name: "Data Analytics", color: "from-yellow-400 to-yellow-500", dotColor: "bg-yellow-400", shadowColor: "shadow-yellow-400/50" },
-    { name: "Staff Augmentation", color: "from-yellow-400 to-white", dotColor: "bg-yellow-400", shadowColor: "shadow-yellow-400/50" }
+    { name: "ServiceNow", color: "from-green-400 to-green-500", dotColor: "bg-green-400", shadowColor: "shadow-green-400/50", link: "/enterprise" },
+    { name: "SalesForce", color: "from-white to-green-400", dotColor: "bg-white", shadowColor: "shadow-white/50", link: "/enterprise" },
+    { name: "SAP Solutions", color: "from-yellow-400 to-green-400", dotColor: "bg-yellow-400", shadowColor: "shadow-yellow-400/50", link: "/enterprise" },
+    { name: "Government Services", color: "from-green-400 to-yellow-400", dotColor: "bg-green-400", shadowColor: "shadow-green-400/50", link: "/services" },
+    { name: "Cloud Transformation", color: "from-white to-yellow-400", dotColor: "bg-white", shadowColor: "shadow-white/50", link: "/services" },
+    { name: "AI & Machine Learning", color: "from-green-400 to-green-500", dotColor: "bg-green-400", shadowColor: "shadow-green-400/50", link: "/services" },
+    { name: "Data Analytics", color: "from-yellow-400 to-yellow-500", dotColor: "bg-yellow-400", shadowColor: "shadow-yellow-400/50", link: "/services" },
+    { name: "Staff Augmentation", color: "from-yellow-400 to-white", dotColor: "bg-yellow-400", shadowColor: "shadow-yellow-400/50", link: "/services" }
   ];
 
 
@@ -84,9 +85,11 @@ export default function HeroSection() {
           {/* Floating Service Names */}
           <div className="absolute inset-0 flex items-center justify-center">
             <div className="text-center">
-              <div className={`text-6xl lg:text-7xl font-bold bg-gradient-to-r ${procyonServices[currentServiceIndex].color} bg-clip-text text-transparent opacity-40 mb-4 transition-all duration-500`}>
-                {procyonServices[currentServiceIndex].name}
-              </div>
+              <Link href={procyonServices[currentServiceIndex].link}>
+                <div className={`text-6xl lg:text-7xl font-bold bg-gradient-to-r ${procyonServices[currentServiceIndex].color} bg-clip-text text-transparent opacity-40 mb-4 transition-all duration-500 cursor-pointer hover:opacity-60 hover:scale-105 transform`}>
+                  {procyonServices[currentServiceIndex].name}
+                </div>
+              </Link>
               
               {/* Service Icons/Indicators */}
               <div className="flex justify-center space-x-2">
@@ -107,23 +110,24 @@ export default function HeroSection() {
           {/* Service-themed particles */}
           <div className="absolute inset-0">
             {procyonServices.map((service, index) => (
-              <div
-                key={service.name}
-                className={`absolute transition-all duration-1000 ${
-                  index === currentServiceIndex ? 'opacity-100 scale-100' : 'opacity-30 scale-75'
-                }`}
-                style={{
-                  top: `${20 + (index * 10)}%`,
-                  right: `${15 + (index * 8)}%`,
-                  animationDelay: `${index * 0.5}s`
-                }}
-              >
-                <div className={`w-4 h-4 bg-gradient-to-r ${service.color} rounded-full animate-particle-float ${service.shadowColor} shadow-lg`}>
-                  <div className={`absolute -top-8 left-1/2 transform -translate-x-1/2 text-xs font-semibold bg-gradient-to-r ${service.color} bg-clip-text text-transparent opacity-90 whitespace-nowrap`}>
-                    {service.name}
+              <Link key={service.name} href={service.link}>
+                <div
+                  className={`absolute transition-all duration-1000 cursor-pointer hover:scale-110 ${
+                    index === currentServiceIndex ? 'opacity-100 scale-100' : 'opacity-30 scale-75'
+                  }`}
+                  style={{
+                    top: `${20 + (index * 10)}%`,
+                    right: `${15 + (index * 8)}%`,
+                    animationDelay: `${index * 0.5}s`
+                  }}
+                >
+                  <div className={`w-4 h-4 bg-gradient-to-r ${service.color} rounded-full animate-particle-float ${service.shadowColor} shadow-lg hover:shadow-xl transition-shadow`}>
+                    <div className={`absolute -top-8 left-1/2 transform -translate-x-1/2 text-xs font-semibold bg-gradient-to-r ${service.color} bg-clip-text text-transparent opacity-90 whitespace-nowrap hover:opacity-100 transition-opacity`}>
+                      {service.name}
+                    </div>
                   </div>
                 </div>
-              </div>
+              </Link>
             ))}
           </div>
         </div>

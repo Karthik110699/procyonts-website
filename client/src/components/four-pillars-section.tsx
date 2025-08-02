@@ -1,4 +1,5 @@
 import { Lightbulb, Code, RefreshCw, CheckSquare } from "lucide-react";
+import { Link } from "wouter";
 import dataAnalyticsWorkspace from "@assets/imagenew_1753913145151.png";
 
 export default function FourPillarsSection() {
@@ -25,40 +26,48 @@ export default function FourPillarsSection() {
 
         <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-8">
           {/* Envisioning */}
-          <div className="text-center space-y-6 reveal-slide-left stagger-delay-1" data-delay="100">
-            <div className="w-20 h-20 bg-gradient-to-r from-blue-600 to-emerald-500 rounded-full flex items-center justify-center mx-auto">
-              <Lightbulb className="w-10 h-10 text-white" />
+          <Link href="/about">
+            <div className="text-center space-y-6 reveal-slide-left stagger-delay-1 cursor-pointer hover:scale-105 transition-transform duration-300" data-delay="100">
+              <div className="w-20 h-20 bg-gradient-to-r from-blue-600 to-emerald-500 rounded-full flex items-center justify-center mx-auto hover:shadow-lg hover:shadow-blue-500/50 transition-shadow">
+                <Lightbulb className="w-10 h-10 text-white" />
+              </div>
+              <h3 className="text-2xl font-bold">Envisioning</h3>
+              <p className="text-gray-300">Every great solution begins with a bold vision. We collaborate closely with our clients to understand their unique challenges and goals.</p>
             </div>
-            <h3 className="text-2xl font-bold">Envisioning</h3>
-            <p className="text-gray-300">Every great solution begins with a bold vision. We collaborate closely with our clients to understand their unique challenges and goals.</p>
-          </div>
+          </Link>
 
           {/* Engineering */}
-          <div className="text-center space-y-6 reveal-slide-right stagger-delay-2" data-delay="200">
-            <div className="w-20 h-20 bg-gradient-to-r from-emerald-500 to-purple-500 rounded-full flex items-center justify-center mx-auto">
-              <Code className="w-10 h-10 text-white" />
+          <Link href="/services">
+            <div className="text-center space-y-6 reveal-slide-right stagger-delay-2 cursor-pointer hover:scale-105 transition-transform duration-300" data-delay="200">
+              <div className="w-20 h-20 bg-gradient-to-r from-emerald-500 to-purple-500 rounded-full flex items-center justify-center mx-auto hover:shadow-lg hover:shadow-emerald-500/50 transition-shadow">
+                <Code className="w-10 h-10 text-white" />
+              </div>
+              <h3 className="text-2xl font-bold">Engineering</h3>
+              <p className="text-gray-300">Once the vision is clear, we bring it to life through solid engineering. Our team builds enterprise-grade solutions that are scalable and secure.</p>
             </div>
-            <h3 className="text-2xl font-bold">Engineering</h3>
-            <p className="text-gray-300">Once the vision is clear, we bring it to life through solid engineering. Our team builds enterprise-grade solutions that are scalable and secure.</p>
-          </div>
+          </Link>
 
           {/* Modernizing */}
-          <div className="text-center space-y-6 reveal-slide-left stagger-delay-3" data-delay="300">
-            <div className="w-20 h-20 bg-gradient-to-r from-purple-500 to-amber-500 rounded-full flex items-center justify-center mx-auto">
-              <RefreshCw className="w-10 h-10 text-white" />
+          <Link href="/enterprise">
+            <div className="text-center space-y-6 reveal-slide-left stagger-delay-3 cursor-pointer hover:scale-105 transition-transform duration-300" data-delay="300">
+              <div className="w-20 h-20 bg-gradient-to-r from-purple-500 to-amber-500 rounded-full flex items-center justify-center mx-auto hover:shadow-lg hover:shadow-purple-500/50 transition-shadow">
+                <RefreshCw className="w-10 h-10 text-white" />
+              </div>
+              <h3 className="text-2xl font-bold">Modernizing</h3>
+              <p className="text-gray-300">As businesses grow, so must their technology. We breathe new life into legacy systems, modernizing applications and infrastructure.</p>
             </div>
-            <h3 className="text-2xl font-bold">Modernizing</h3>
-            <p className="text-gray-300">As businesses grow, so must their technology. We breathe new life into legacy systems, modernizing applications and infrastructure.</p>
-          </div>
+          </Link>
 
           {/* Managing */}
-          <div className="text-center space-y-6 reveal-slide-right stagger-delay-4" data-delay="400">
-            <div className="w-20 h-20 bg-gradient-to-r from-amber-500 to-blue-600 rounded-full flex items-center justify-center mx-auto">
-              <CheckSquare className="w-10 h-10 text-white" />
+          <Link href="/contact">
+            <div className="text-center space-y-6 reveal-slide-right stagger-delay-4 cursor-pointer hover:scale-105 transition-transform duration-300" data-delay="400">
+              <div className="w-20 h-20 bg-gradient-to-r from-amber-500 to-blue-600 rounded-full flex items-center justify-center mx-auto hover:shadow-lg hover:shadow-amber-500/50 transition-shadow">
+                <CheckSquare className="w-10 h-10 text-white" />
+              </div>
+              <h3 className="text-2xl font-bold">Managing</h3>
+              <p className="text-gray-300">Transformation doesn't end at deployment. We ensure ongoing performance, resilience, and innovation through proactive management.</p>
             </div>
-            <h3 className="text-2xl font-bold">Managing</h3>
-            <p className="text-gray-300">Transformation doesn't end at deployment. We ensure ongoing performance, resilience, and innovation through proactive management.</p>
-          </div>
+          </Link>
         </div>
       </div>
     </section>

@@ -37,7 +37,12 @@ Preferred communication style: Simple, everyday language.
 ### Frontend Components
 - **Loading Screen**: Animated company logo with letter-by-letter reveal using colorful letters
 - **Navigation**: Fixed navbar with clean navigation links to separate pages (no dropdowns)
+- **Navigation Colors**: Active/selected states use emerald green (text-emerald-400), hover states use light grey (text-gray-300), default state is white
 - **Hero Section**: Split-screen layout (Globant-style) with static content on left featuring animated "AI-Powered Solutions? Procyon's Your Partner!" headline with animated color gradient text effect, and dynamic motion graphics on right displaying rotating Procyon services
+- **Clickable Motion Graphics**: All motion graphics elements in zoomed/active states are clickable and route to relevant pages:
+  - Rotating service names and floating particles in hero section (link to /enterprise or /services)
+  - Client logos that zoom in during scroll (link to /services or /enterprise)  
+  - Four pillars icons that scale up on reveal (link to /about, /services, /enterprise, /contact)
 - **Clickable Service Cards**: Replit-style traveling bright spot effect on ALL cards using conic gradient animation - bright cyan light travels around card perimeter on hover only (applied to 53+ cards across all pages)
 - **Multi-Page Structure**: Separate dedicated pages for better SEO and user experience
   - **Enterprise Page**: Detailed SalesForce, ServiceNow, and SAP solutions
