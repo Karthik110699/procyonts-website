@@ -94,14 +94,15 @@ export default function HeroSection() {
               {/* Service Icons/Indicators */}
               <div className="flex justify-center space-x-2">
                 {procyonServices.map((service, index) => (
-                  <div
-                    key={index}
-                    className={`w-2 h-2 rounded-full transition-all duration-300 ${
-                      index === currentServiceIndex 
-                        ? `${service.dotColor} scale-150 ${service.shadowColor} shadow-lg` 
-                        : 'bg-white/20'
-                    }`}
-                  />
+                  <Link key={index} href={service.link}>
+                    <div
+                      className={`w-2 h-2 rounded-full transition-all duration-300 cursor-pointer hover:scale-200 ${
+                        index === currentServiceIndex 
+                          ? `${service.dotColor} scale-150 ${service.shadowColor} shadow-lg` 
+                          : 'bg-white/20 hover:bg-white/40'
+                      }`}
+                    />
+                  </Link>
                 ))}
               </div>
             </div>
