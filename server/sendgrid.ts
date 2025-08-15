@@ -37,7 +37,7 @@ Submitted at: ${new Date().toLocaleString()}
 
     await mailService.send({
       to: 'sales@procyonts.com',
-      from: 'test@sandbox-123.sendgrid.net', // Using SendGrid sandbox domain
+      from: 'noreply@procyonts.com', // Use your verified sender email
       subject: `Contact Form: ${formData.subject || `Message from ${formData.firstName} ${formData.lastName}`}`,
       text: emailContent,
       html: `
