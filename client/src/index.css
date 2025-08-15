@@ -65,41 +65,33 @@
   body {
     @apply bg-procyon-dark text-white font-sans antialiased;
     font-family: 'Inter', sans-serif;
+    overflow: overlay;
   }
 
-  /* Custom Scrollbar - Magdemy Minimal Style */
+  /* Magdemy.com Exact Scrollbar */
   ::-webkit-scrollbar {
-    width: 4px;
+    position: fixed;
+    width: 5px;
+    background-color: transparent;
+    background: none;
   }
 
+  /* Track */
   ::-webkit-scrollbar-track {
-    background: transparent;
+    background: blue; 
+    background-color: blue;
+    visibility: hidden;
   }
-
+   
+  /* Handle */
   ::-webkit-scrollbar-thumb {
-    background: rgba(255, 255, 255, 0.3);
-    border-radius: 2px;
+    border-radius: 30px;
+    background: #555555; 
   }
-
+  
+  /* Handle on hover */
   ::-webkit-scrollbar-thumb:hover {
-    background: rgba(255, 255, 255, 0.5);
-  }
-
-  /* Remove all scrollbar elements except thumb */
-  ::-webkit-scrollbar-button {
-    display: none;
-    height: 0;
-    width: 0;
-  }
-
-  ::-webkit-scrollbar-corner {
-    background: transparent;
-  }
-
-  /* Firefox minimal scrollbar */
-  * {
-    scrollbar-width: thin;
-    scrollbar-color: rgba(255, 255, 255, 0.3) transparent;
+    background: #333; 
   }
 }
 
