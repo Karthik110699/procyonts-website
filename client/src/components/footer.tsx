@@ -11,7 +11,7 @@ export default function Footer() {
               <img 
                 src={logoUrl} 
                 alt="Procyon Technostructure" 
-                className="h-12 w-auto"
+                className="h-8 sm:h-10 lg:h-12 w-auto"
               />
             </div>
             <p className="text-gray-400">
