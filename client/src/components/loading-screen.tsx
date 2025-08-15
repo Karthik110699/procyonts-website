@@ -1,4 +1,5 @@
 import { useEffect, useState } from "react";
+import logoUrl from "@assets/Procyon Logo Try_1755242632056.jpg";
 
 export default function LoadingScreen() {
   const [isVisible, setIsVisible] = useState(true);
@@ -16,7 +17,14 @@ export default function LoadingScreen() {
   return (
     <div className="fixed inset-0 z-50 bg-procyon-dark flex items-center justify-center">
       <div className="text-center">
-        <div className="flex space-x-2 text-6xl font-bold mb-8">
+        <div className="mb-8">
+          <img 
+            src={logoUrl} 
+            alt="Procyon Technostructure" 
+            className="h-24 w-auto mx-auto animate-pulse"
+          />
+        </div>
+        <div className="flex space-x-2 text-4xl font-bold mb-8">
           <span className="loading-letter text-blue-500" style={{ animationDelay: '0.1s' }}>P</span>
           <span className="loading-letter text-emerald-500" style={{ animationDelay: '0.2s' }}>R</span>
           <span className="loading-letter text-purple-500" style={{ animationDelay: '0.3s' }}>O</span>
