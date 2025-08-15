@@ -65,55 +65,38 @@
   body {
     @apply bg-procyon-dark text-white font-sans antialiased;
     font-family: 'Inter', sans-serif;
-    overflow: auto;
-    -webkit-overflow-scrolling: touch;
+    overflow: overlay;
+  }
+
+  /* Magdemy.com Exact Scrollbar */
+  ::-webkit-scrollbar {
+    position: fixed;
+    width: 5px;
+    background-color: transparent;
+    background: none;
+  }
+
+  /* Track */
+  ::-webkit-scrollbar-track {
+    background: blue; 
+    background-color: blue;
+    visibility: hidden;
+  }
+   
+  /* Handle */
+  ::-webkit-scrollbar-thumb {
+    border-radius: 30px;
+    background: linear-gradient(45deg, hsl(207, 90%, 54%), hsl(158, 64%, 52%));
+  }
+  
+  /* Handle on hover */
+  ::-webkit-scrollbar-thumb:hover {
+    background: linear-gradient(45deg, hsl(207, 90%, 64%), hsl(158, 64%, 62%));
   }
 
   /* Hide scrollbar during loading */
   .loading-screen-active {
     overflow: hidden;
-  }
-
-  /* --- Firefox --- */
-  html {
-    scrollbar-width: none; /* hidden by default */
-  }
-  html.scrolling {
-    scrollbar-width: thin; /* show thin bar while scrolling */
-    scrollbar-color: hsl(207, 90%, 54%) transparent;
-  }
-
-  /* --- WebKit (Chrome, Edge, Safari) --- */
-  ::-webkit-scrollbar {
-    width: 6px;
-    height: 6px;
-  }
-
-  /* Hide by default */
-  ::-webkit-scrollbar-thumb,
-  ::-webkit-scrollbar-track {
-    background: transparent;
-  }
-
-  /* Show only while .scrolling is present */
-  html.scrolling ::-webkit-scrollbar-thumb {
-    background: linear-gradient(45deg, hsl(207, 90%, 54%), hsl(158, 64%, 52%));
-    border-radius: 6px;
-  }
-  html.scrolling ::-webkit-scrollbar-track {
-    background: rgba(255, 255, 255, 0.03); /* subtle track */
-  }
-
-  /* Hover effect */
-  html.scrolling ::-webkit-scrollbar-thumb:hover {
-    background: linear-gradient(45deg, hsl(207, 90%, 64%), hsl(158, 64%, 62%));
-  }
-
-  /* Nice fade-in/out */
-  html,
-  ::-webkit-scrollbar-thumb,
-  ::-webkit-scrollbar-track {
-    transition: background 180ms ease, scrollbar-color 180ms ease;
   }
 }
 
