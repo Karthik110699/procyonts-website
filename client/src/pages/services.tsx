@@ -116,7 +116,7 @@ export default function ServicesPage() {
             </div>
 
             {/* Staff Augmentation */}
-            <div className="conic-border bg-gradient-to-br from-gray-800 to-gray-900 p-8 rounded-2xl border border-gray-700 hover:border-pink-500 cursor-pointer transition-all duration-300">
+            <div id="staff-augmentation" className="conic-border bg-gradient-to-br from-gray-800 to-gray-900 p-8 rounded-2xl border border-gray-700 hover:border-pink-500 cursor-pointer transition-all duration-300">
               <div className="w-16 h-16 bg-pink-500/20 rounded-xl flex items-center justify-center mb-6 relative z-10">
                 <Users className="w-8 h-8 text-pink-400" />
               </div>
@@ -133,7 +133,7 @@ export default function ServicesPage() {
             </div>
 
             {/* Government Solutions */}
-            <div className="conic-border bg-gradient-to-br from-gray-800 to-gray-900 p-8 rounded-2xl border border-gray-700 hover:border-red-500 cursor-pointer transition-all duration-300">
+            <div id="government-solutions" className="conic-border bg-gradient-to-br from-gray-800 to-gray-900 p-8 rounded-2xl border border-gray-700 hover:border-red-500 cursor-pointer transition-all duration-300">
               <div className="w-16 h-16 bg-red-500/20 rounded-xl flex items-center justify-center mb-6 relative z-10">
                 <Building className="w-8 h-8 text-red-400" />
               </div>
