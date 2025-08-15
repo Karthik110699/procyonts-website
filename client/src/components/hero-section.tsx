@@ -6,13 +6,13 @@ export default function HeroSection() {
   
   const procyonServices = [
     { name: "ServiceNow", color: "from-green-400 to-green-500", dotColor: "bg-green-400", shadowColor: "shadow-green-400/50", link: "/enterprise/servicenow" },
-    { name: "SalesForce", color: "from-white to-green-400", dotColor: "bg-white", shadowColor: "shadow-white/50", link: "/enterprise/salesforce" },
+    { name: "SalesForce", color: "from-yellow-400 to-green-400", dotColor: "bg-yellow-400", shadowColor: "shadow-yellow-400/50", link: "/enterprise/salesforce" },
     { name: "SAP Solutions", color: "from-yellow-400 to-green-400", dotColor: "bg-yellow-400", shadowColor: "shadow-yellow-400/50", link: "/enterprise/sap" },
     { name: "Government Services", color: "from-green-400 to-yellow-400", dotColor: "bg-green-400", shadowColor: "shadow-green-400/50", link: "/services/government" },
-    { name: "Cloud Transformation", color: "from-white to-yellow-400", dotColor: "bg-white", shadowColor: "shadow-white/50", link: "/services/cloud" },
+    { name: "Cloud Transformation", color: "from-green-400 to-yellow-400", dotColor: "bg-green-400", shadowColor: "shadow-green-400/50", link: "/services/cloud" },
     { name: "AI & Machine Learning", color: "from-green-400 to-green-500", dotColor: "bg-green-400", shadowColor: "shadow-green-400/50", link: "/services/ai-ml" },
     { name: "Data Analytics", color: "from-yellow-400 to-yellow-500", dotColor: "bg-yellow-400", shadowColor: "shadow-yellow-400/50", link: "/services/data-analytics" },
-    { name: "Staff Augmentation", color: "from-yellow-400 to-white", dotColor: "bg-yellow-400", shadowColor: "shadow-yellow-400/50", link: "/services/staff-augmentation" }
+    { name: "Staff Augmentation", color: "from-yellow-400 to-green-400", dotColor: "bg-yellow-400", shadowColor: "shadow-yellow-400/50", link: "/services/staff-augmentation" }
   ];
 
 
@@ -73,7 +73,7 @@ export default function HeroSection() {
                         className={`w-1.5 h-1.5 rounded-full transition-all duration-300 cursor-pointer hover:scale-150 relative z-30 ${
                           index === currentServiceIndex 
                             ? `${service.dotColor} scale-125 ${service.shadowColor} shadow-md` 
-                            : 'bg-white/20 hover:bg-white/40'
+                            : 'bg-gray-400/20 hover:bg-gray-400/40'
                         }`}
                       />
                     </Link>
@@ -159,7 +159,7 @@ export default function HeroSection() {
                         className={`w-2 h-2 rounded-full transition-all duration-300 cursor-pointer hover:scale-200 relative z-30 ${
                           index === currentServiceIndex 
                             ? `${service.dotColor} scale-150 ${service.shadowColor} shadow-lg` 
-                            : 'bg-white/20 hover:bg-white/40'
+                            : 'bg-gray-400/20 hover:bg-gray-400/40'
                         }`}
                       />
                     </Link>
