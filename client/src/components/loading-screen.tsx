@@ -5,11 +5,19 @@ export default function LoadingScreen() {
   const [isVisible, setIsVisible] = useState(true);
 
   useEffect(() => {
+    // Add loading class to body to hide scrollbar
+    document.body.classList.add('loading-screen-active');
+    
     const timer = setTimeout(() => {
       setIsVisible(false);
+      // Remove loading class to restore scrollbar
+      document.body.classList.remove('loading-screen-active');
     }, 2500);
 
-    return () => clearTimeout(timer);
+    return () => {
+      clearTimeout(timer);
+      document.body.classList.remove('loading-screen-active');
+    };
   }, []);
 
   if (!isVisible) return null;

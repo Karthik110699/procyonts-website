@@ -93,6 +93,11 @@
   ::-webkit-scrollbar-thumb:hover {
     background: #333; 
   }
+
+  /* Hide scrollbar during loading */
+  .loading-screen-active {
+    overflow: hidden;
+  }
 }
 
 @layer utilities {
