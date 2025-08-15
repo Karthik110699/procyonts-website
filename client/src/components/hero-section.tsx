@@ -50,7 +50,7 @@ export default function HeroSection() {
           {/* Mobile Content - Centered */}
           <div className="flex-1 flex flex-col justify-center items-center px-4 py-8">
             <div className="text-center space-y-8">
-              <h1 className="text-xl sm:text-2xl font-bold leading-tight text-white">
+              <h1 className="text-2xl sm:text-3xl md:text-4xl font-bold leading-tight text-white">
                 <span className="block animated-gradient-text mb-2">
                   AI-Powered Solutions?
                 </span>
