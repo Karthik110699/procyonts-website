@@ -46,8 +46,9 @@ export default function HeroSection() {
       
       <div className="relative z-20 flex min-h-screen">
         {/* Left Side Content */}
-        <div className="w-1/2 flex flex-col justify-center px-8 lg:px-16">
-          <div className="max-w-xl">
+        <div className="w-1/2 flex flex-col justify-center">
+          <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 w-full">
+            <div className="max-w-xl">
             
             {/* Fixed Innovative Text */}
             <div className="mb-8">
@@ -76,6 +77,7 @@ export default function HeroSection() {
               >
                 Explore Services
               </a>
+            </div>
             </div>
           </div>
         </div>
