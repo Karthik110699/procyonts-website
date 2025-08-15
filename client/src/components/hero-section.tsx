@@ -48,7 +48,7 @@ export default function HeroSection() {
         {/* Left Side Content */}
         <div className="w-1/2 flex flex-col justify-center">
           <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 w-full">
-            <div className="max-w-xl ml-20">
+            <div className="max-w-xl" style={{ marginLeft: '110px' }}>
             
             {/* Fixed Innovative Text */}
             <div className="mb-8">
