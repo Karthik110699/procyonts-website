@@ -592,6 +592,31 @@
     }
   }
 
+  /* Logo loading animations for Procyon loader */
+  .logo-bounce {
+    animation: logoFadeIn 1s ease-in-out forwards, logoBounce 2s ease-in-out infinite 1s;
+  }
+
+  @keyframes logoFadeIn {
+    0% {
+      opacity: 0;
+      transform: scale(0.5) translateY(-20px);
+    }
+    100% {
+      opacity: 1;
+      transform: scale(1) translateY(0);
+    }
+  }
+
+  @keyframes logoBounce {
+    0%, 100% {
+      transform: translateY(0) scale(1);
+    }
+    50% {
+      transform: translateY(-10px) scale(1.05);
+    }
+  }
+
   /* Enhanced viewport visibility indicators */
   .section-transition-indicator {
     position: fixed;
