@@ -37,7 +37,7 @@ Submitted at: ${new Date().toLocaleString()}
 
     await mailService.send({
       to: 'sales@procyonts.com',
-      from: 'noreply@procyonts.com', // Use your verified sender email
+      from: 'krishkrizz@gmail.com', // Your verified sender email
       subject: `Contact Form: ${formData.subject || `Message from ${formData.firstName} ${formData.lastName}`}`,
       text: emailContent,
       html: `
@@ -66,11 +66,29 @@ Submitted at: ${new Date().toLocaleString()}
 
     return true;
   } catch (error: any) {
-    console.error('SendGrid email error:', {
+    console.error('SendGrid email error details:', {
       message: error.message,
       code: error.code,
-      response: error.response?.body
+      response: error.response?.body,
+      errors: error.response?.body?.errors
     });
+    
+    // Log specific troubleshooting info
+    if (error.code === 403) {
+      console.error('SendGrid 403 Troubleshooting:');
+      console.error('1. Verify sender email is correctly verified in SendGrid dashboard');
+      console.error('2. Check API key has "Mail Send" permissions');
+      console.error('3. Ensure sender email matches exactly what was verified');
+      console.error('Current sender email:', 'krishkrizz@gmail.com');
+    }
+    
+    // Log the full error for debugging
+    if (error.response?.body?.errors) {
+      error.response.body.errors.forEach((err: any, index: number) => {
+        console.error(`Error ${index + 1}:`, err);
+      });
+    }
+    
     return false;
   }
 }

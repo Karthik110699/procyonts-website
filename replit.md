@@ -53,10 +53,13 @@ Preferred communication style: Simple, everyday language.
   - **Contact Page**: Contact form, company information, and response guarantees
 
 ### Backend Routes
-- **POST /api/contact**: Contact form submission endpoint with validation
+- **POST /api/contact**: Contact form submission endpoint with validation and email delivery
   - Validates required fields (firstName, lastName, email, message)
   - Performs email format validation
+  - Integrates with SendGrid API for email delivery to sales@procyonts.com
+  - Uses verified sender email: krishkrizz@gmail.com
   - Returns JSON responses with success/error states
+  - Includes comprehensive error logging for troubleshooting
 
 ### UI Component Library
 Comprehensive set of Shadcn/ui components including:
