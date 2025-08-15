@@ -46,23 +46,21 @@ export default function HeroSection() {
       
       <div className="relative z-20 flex flex-col min-h-screen">
         {/* Mobile Layout */}
-        <div className="lg:hidden flex flex-col min-h-screen">
-          {/* Mobile Content */}
-          <div className="flex-1 flex flex-col justify-center px-4 py-8">
-            <div className="text-center mb-8">
-              <h1 className="text-xl sm:text-2xl font-bold leading-tight text-white mb-4">
-                <span className="block animated-gradient-text mb-1">
+        <div className="lg:hidden flex flex-col min-h-screen pt-20">
+          {/* Mobile Content - Centered */}
+          <div className="flex-1 flex flex-col justify-center items-center px-4 py-8">
+            <div className="text-center space-y-8">
+              <h1 className="text-xl sm:text-2xl font-bold leading-tight text-white">
+                <span className="block animated-gradient-text mb-2">
                   AI-Powered Solutions?
                 </span>
                 <span className="block">Procyon's Your Partner!</span>
               </h1>
-            </div>
-            
-            {/* Mobile Motion Graphics */}
-            <div className="flex-1 flex items-center justify-center py-4">
-              <div className="text-center">
+              
+              {/* Mobile Motion Graphics */}
+              <div className="py-8">
                 <Link href={procyonServices[currentServiceIndex].link} className="block">
-                  <div className={`text-xl sm:text-2xl font-bold bg-gradient-to-r ${procyonServices[currentServiceIndex].color} bg-clip-text text-transparent opacity-40 mb-3 transition-all duration-500 cursor-pointer hover:opacity-60 hover:scale-105 transform relative z-30`}>
+                  <div className={`text-xl sm:text-2xl font-bold bg-gradient-to-r ${procyonServices[currentServiceIndex].color} bg-clip-text text-transparent opacity-40 mb-4 transition-all duration-500 cursor-pointer hover:opacity-60 hover:scale-105 transform relative z-30`}>
                     {procyonServices[currentServiceIndex].name}
                   </div>
                 </Link>
@@ -86,18 +84,18 @@ export default function HeroSection() {
           </div>
           
           {/* Mobile CTAs at Bottom */}
-          <div className="px-4 pb-safe pb-6">
+          <div className="px-4 pb-8 pt-4">
             <div className="flex flex-col space-y-3">
               <a 
                 href="#contact" 
-                className="group relative px-6 py-3 bg-gradient-to-r from-blue-600 to-emerald-600 rounded-lg font-semibold text-sm text-white overflow-hidden transition-all duration-300 transform hover:scale-105 text-center"
+                className="group relative px-6 py-4 bg-gradient-to-r from-blue-600 to-emerald-600 rounded-lg font-semibold text-base text-white overflow-hidden transition-all duration-300 transform hover:scale-105 text-center"
               >
                 <span className="relative z-10">Take the leap today</span>
                 <div className="absolute inset-0 bg-gradient-to-r from-emerald-600 to-blue-600 opacity-0 group-hover:opacity-100 transition-opacity duration-300"></div>
               </a>
               <a 
                 href="#services" 
-                className="px-6 py-3 border-2 border-white text-white rounded-lg font-semibold text-sm transition-all duration-300 transform hover:scale-105 hover:bg-white/10 text-center"
+                className="px-6 py-4 border-2 border-white text-white rounded-lg font-semibold text-base transition-all duration-300 transform hover:scale-105 hover:bg-white/10 text-center"
               >
                 Explore Services
               </a>
