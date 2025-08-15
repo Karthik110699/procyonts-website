@@ -25,11 +25,11 @@ export default function Navbar() {
         <div className="flex justify-between items-center h-16">
           {/* Logo */}
           <Link href="/" className="flex-shrink-0">
-            <div className="flex items-center space-x-3">
+            <div className="flex items-center">
               <img 
                 src={logoUrl} 
                 alt="Procyon Technostructure" 
-                className="h-10 w-auto"
+                className="h-12 w-auto"
               />
             </div>
           </Link>
