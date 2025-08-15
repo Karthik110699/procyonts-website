@@ -83,20 +83,36 @@
     visibility: hidden;
   }
    
-  /* Handle */
+  /* Handle - Transparent by default */
   ::-webkit-scrollbar-thumb {
     border-radius: 30px;
+    background: transparent;
+    transition: background 0.3s ease;
+  }
+  
+  /* Handle when scrolling - Brand gradient */
+  body.scrolling ::-webkit-scrollbar-thumb {
     background: linear-gradient(45deg, hsl(207, 90%, 54%), hsl(158, 64%, 52%));
   }
   
   /* Handle on hover */
   ::-webkit-scrollbar-thumb:hover {
-    background: linear-gradient(45deg, hsl(207, 90%, 64%), hsl(158, 64%, 62%));
+    background: linear-gradient(45deg, hsl(207, 90%, 64%), hsl(158, 64%, 62%)) !important;
   }
 
   /* Hide scrollbar during loading */
   .loading-screen-active {
     overflow: hidden;
+  }
+
+  /* Dynamic scrollbar behavior */
+  body {
+    transition: all 0.3s ease;
+  }
+
+  /* Scrollbar appears with gradient when actively scrolling */
+  body.scrolling ::-webkit-scrollbar-thumb {
+    opacity: 1;
   }
 }
 
