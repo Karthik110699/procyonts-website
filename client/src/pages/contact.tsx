@@ -153,8 +153,8 @@ export default function ContactPage() {
                   <div>
                     <h3 className="text-xl font-semibold mb-2">Call Us</h3>
                     <p className="text-gray-300 mb-1">US Office:</p>
-                    <a href="tel:+1-555-0123" className="text-emerald-400 hover:text-emerald-300">
-                      +1 (555) 012-3456
+                    <a href="tel:+1-415-382-8040" className="text-emerald-400 hover:text-emerald-300">
+                      +1 415 382 8040
                     </a>
                     <p className="text-gray-300 mb-1 mt-2">Available:</p>
                     <span className="text-gray-300">Mon-Fri, 9AM-6PM EST</span>
@@ -168,8 +168,9 @@ export default function ContactPage() {
                   <div>
                     <h3 className="text-xl font-semibold mb-2">Visit Us</h3>
                     <p className="text-gray-300">
-                      123 Innovation Drive<br />
-                      Tech District, CA 94105<br />
+                      Procyon Technostructure LLC<br />
+                      7250, Redwood Blvd, Suite 211<br />
+                      Novato, CA 94945<br />
                       United States
                     </p>
                   </div>
