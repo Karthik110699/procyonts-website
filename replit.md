@@ -34,8 +34,9 @@ Preferred communication style: Simple, everyday language.
 
 ## Key Components
 
-### Frontend Components
+### Frontend Components  
 - **Loading Screen**: Animated company logo with letter-by-letter reveal using colorful letters
+- **Logo**: Updated to use official Procyon Technostructure logo with multicolored gradient design and "Customer-Centric Secure Solutions" tagline
 - **Navigation**: Fixed navbar with clean navigation links to separate pages (no dropdowns)
 - **Navigation Colors**: Active/selected states use emerald green (text-emerald-400), hover states use light grey (text-gray-300), default state is white
 - **Hero Section**: Split-screen layout (Globant-style) with static content on left featuring animated "AI-Powered Solutions? Procyon's Your Partner!" headline with animated color gradient text effect, and dynamic motion graphics on right displaying rotating Procyon services

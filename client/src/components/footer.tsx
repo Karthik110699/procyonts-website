@@ -1,4 +1,5 @@
 import { Facebook, Linkedin, Twitter } from "lucide-react";
+import logoUrl from "@assets/logo_1755239024859.png";
 
 export default function Footer() {
   return (
@@ -6,11 +7,12 @@ export default function Footer() {
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="grid md:grid-cols-4 gap-8">
           <div className="space-y-4">
-            <div className="flex items-center space-x-2">
-              <div className="w-10 h-10 bg-gradient-to-r from-blue-600 to-emerald-500 rounded-lg flex items-center justify-center">
-                <span className="text-white font-bold text-xl">P</span>
-              </div>
-              <span className="text-xl font-bold gradient-text">Procyon</span>
+            <div className="flex items-center space-x-3">
+              <img 
+                src={logoUrl} 
+                alt="Procyon Technostructure" 
+                className="h-10 w-auto"
+              />
             </div>
             <p className="text-gray-400">
               Transforming businesses through innovative technology solutions since 2004.
