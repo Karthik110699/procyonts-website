@@ -18,6 +18,8 @@ import SAPPage from "@/pages/enterprise/sap";
 import CloudPage from "@/pages/services/cloud";
 import AIMLPage from "@/pages/services/ai-ml";
 import DataAnalyticsPage from "@/pages/services/data-analytics";
+import GovernmentPage from "@/pages/services/government";
+import StaffAugmentationPage from "@/pages/services/staff-augmentation";
 
 function Router() {
   return (
@@ -31,6 +33,8 @@ function Router() {
       <Route path="/services/cloud" component={CloudPage} />
       <Route path="/services/ai-ml" component={AIMLPage} />
       <Route path="/services/data-analytics" component={DataAnalyticsPage} />
+      <Route path="/services/government" component={GovernmentPage} />
+      <Route path="/services/staff-augmentation" component={StaffAugmentationPage} />
       <Route path="/about" component={About} />
       <Route path="/careers" component={Careers} />
       <Route path="/contact" component={Contact} />

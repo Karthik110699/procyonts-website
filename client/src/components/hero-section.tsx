@@ -8,11 +8,11 @@ export default function HeroSection() {
     { name: "ServiceNow", color: "from-green-400 to-green-500", dotColor: "bg-green-400", shadowColor: "shadow-green-400/50", link: "/enterprise/servicenow" },
     { name: "SalesForce", color: "from-white to-green-400", dotColor: "bg-white", shadowColor: "shadow-white/50", link: "/enterprise/salesforce" },
     { name: "SAP Solutions", color: "from-yellow-400 to-green-400", dotColor: "bg-yellow-400", shadowColor: "shadow-yellow-400/50", link: "/enterprise/sap" },
-    { name: "Government Services", color: "from-green-400 to-yellow-400", dotColor: "bg-green-400", shadowColor: "shadow-green-400/50", link: "/services#government-solutions" },
+    { name: "Government Services", color: "from-green-400 to-yellow-400", dotColor: "bg-green-400", shadowColor: "shadow-green-400/50", link: "/services/government" },
     { name: "Cloud Transformation", color: "from-white to-yellow-400", dotColor: "bg-white", shadowColor: "shadow-white/50", link: "/services/cloud" },
     { name: "AI & Machine Learning", color: "from-green-400 to-green-500", dotColor: "bg-green-400", shadowColor: "shadow-green-400/50", link: "/services/ai-ml" },
     { name: "Data Analytics", color: "from-yellow-400 to-yellow-500", dotColor: "bg-yellow-400", shadowColor: "shadow-yellow-400/50", link: "/services/data-analytics" },
-    { name: "Staff Augmentation", color: "from-yellow-400 to-white", dotColor: "bg-yellow-400", shadowColor: "shadow-yellow-400/50", link: "/services#staff-augmentation" }
+    { name: "Staff Augmentation", color: "from-yellow-400 to-white", dotColor: "bg-yellow-400", shadowColor: "shadow-yellow-400/50", link: "/services/staff-augmentation" }
   ];
 
 
