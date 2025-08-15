@@ -143,10 +143,7 @@ export default function CareersPage() {
                           <Clock className="w-4 h-4" />
                           Full-time
                         </span>
-                        <span className="flex items-center gap-1">
-                          <DollarSign className="w-4 h-4" />
-                          $120k - $180k
-                        </span>
+
                       </div>
                     </div>
                   </div>
@@ -185,10 +182,7 @@ export default function CareersPage() {
                           <Clock className="w-4 h-4" />
                           Full-time
                         </span>
-                        <span className="flex items-center gap-1">
-                          <DollarSign className="w-4 h-4" />
-                          $130k - $200k
-                        </span>
+
                       </div>
                     </div>
                   </div>
