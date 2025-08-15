@@ -5,22 +5,22 @@
 @tailwind utilities;
 
 :root {
-  --background: hsl(220, 39%, 11%);
-  --foreground: hsl(210, 40%, 98%);
-  --muted: hsl(217.2, 32.6%, 17.5%);
-  --muted-foreground: hsl(215, 20.2%, 65.1%);
-  --popover: hsl(220, 39%, 11%);
-  --popover-foreground: hsl(210, 40%, 98%);
-  --card: hsl(220, 39%, 11%);
-  --card-foreground: hsl(210, 40%, 98%);
+  --background: hsl(0, 0%, 100%);
+  --foreground: hsl(222, 84%, 4.9%);
+  --muted: hsl(210, 40%, 96%);
+  --muted-foreground: hsl(215.4, 16.3%, 46.9%);
+  --popover: hsl(0, 0%, 100%);
+  --popover-foreground: hsl(222, 84%, 4.9%);
+  --card: hsl(0, 0%, 100%);
+  --card-foreground: hsl(222, 84%, 4.9%);
   --border: hsl(214.3, 31.8%, 91.4%);
   --input: hsl(214.3, 31.8%, 91.4%);
   --primary: hsl(207, 90%, 54%);
   --primary-foreground: hsl(210, 40%, 98%);
-  --secondary: hsl(217.2, 32.6%, 17.5%);
-  --secondary-foreground: hsl(210, 40%, 98%);
-  --accent: hsl(217.2, 32.6%, 17.5%);
-  --accent-foreground: hsl(210, 40%, 98%);
+  --secondary: hsl(210, 40%, 96%);
+  --secondary-foreground: hsl(222.2, 84%, 4.9%);
+  --accent: hsl(210, 40%, 96%);
+  --accent-foreground: hsl(222.2, 84%, 4.9%);
   --destructive: hsl(0, 84.2%, 60.2%);
   --destructive-foreground: hsl(210, 40%, 98%);
   --ring: hsl(207, 90%, 54%);
@@ -68,37 +68,30 @@
     overflow: overlay;
   }
 
-  /* Sleek Scrollbar - Brand Colors Only When Scrolling */
+  /* Magdemy.com Exact Scrollbar */
   ::-webkit-scrollbar {
-    width: 4px;
-    background: transparent;
+    position: fixed;
+    width: 5px;
+    background-color: transparent;
+    background: none;
   }
 
+  /* Track */
   ::-webkit-scrollbar-track {
-    background: transparent;
+    background: blue; 
+    background-color: blue;
+    visibility: hidden;
   }
    
+  /* Handle */
   ::-webkit-scrollbar-thumb {
-    border-radius: 2px;
-    background: linear-gradient(180deg, hsl(207, 90%, 54%), hsl(158, 64%, 52%));
-    opacity: 0;
-    transition: opacity 0.2s ease;
+    border-radius: 30px;
+    background: #555555; 
   }
   
-  /* Show only when scrolling */
-  body:hover ::-webkit-scrollbar-thumb {
-    opacity: 0.7;
-  }
-  
+  /* Handle on hover */
   ::-webkit-scrollbar-thumb:hover {
-    opacity: 1;
-    background: linear-gradient(180deg, hsl(207, 90%, 64%), hsl(158, 64%, 62%));
-  }
-
-  /* Firefox */
-  html {
-    scrollbar-width: thin;
-    scrollbar-color: hsl(207, 90%, 54%) transparent;
+    background: #333; 
   }
 }
 
