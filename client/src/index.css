@@ -86,12 +86,12 @@
   /* Handle */
   ::-webkit-scrollbar-thumb {
     border-radius: 30px;
-    background: linear-gradient(45deg, rgba(59, 130, 246, 0.5), rgba(16, 185, 129, 0.5));
+    background: linear-gradient(45deg, rgba(59, 130, 246, 0.75), rgba(16, 185, 129, 0.75));
   }
   
   /* Handle on hover */
   ::-webkit-scrollbar-thumb:hover {
-    background: linear-gradient(45deg, rgba(59, 130, 246, 0.7), rgba(16, 185, 129, 0.7));
+    background: linear-gradient(45deg, rgba(59, 130, 246, 0.9), rgba(16, 185, 129, 0.9));
   }
 
   /* Hide scrollbar during loading */
