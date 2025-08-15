@@ -50,34 +50,44 @@ function App() {
     let scrollTimer: NodeJS.Timeout;
     
     const showScrollbar = () => {
-      // Add scrolling class when user interacts
-      document.body.classList.add('scrolling');
-      
-      // Clear existing timer
+      document.documentElement.classList.add('scrolling');
       clearTimeout(scrollTimer);
-      
-      // Remove scrolling class after 1.5 seconds of no activity
       scrollTimer = setTimeout(() => {
-        document.body.classList.remove('scrolling');
-      }, 1500);
+        document.documentElement.classList.remove('scrolling');
+      }, 400);
     };
 
-    // Listen for all scroll-related events
-    const events = ['scroll', 'wheel', 'touchstart', 'touchmove'];
+    const handleKeydown = (e: KeyboardEvent) => {
+      const scrollKeys = ['ArrowUp', 'ArrowDown', 'PageUp', 'PageDown', 'Home', 'End', ' '];
+      if (scrollKeys.includes(e.key)) showScrollbar();
+    };
+
+    // Event options
+    const opts = { passive: true };
     
-    events.forEach(event => {
-      window.addEventListener(event, showScrollbar, { passive: true });
-      document.addEventListener(event, showScrollbar, { passive: true });
-    });
+    // Attach scroll detection to document element
+    const el = document.documentElement;
+    el.addEventListener('scroll', showScrollbar, opts);
+    el.addEventListener('wheel', showScrollbar, opts);
+    el.addEventListener('touchstart', showScrollbar, opts);
+    el.addEventListener('touchmove', showScrollbar, opts);
+    el.addEventListener('pointerdown', showScrollbar, opts);
+    el.addEventListener('keydown', handleKeydown);
+
+    // Clean up on mouse leave (optional)
+    el.addEventListener('mouseleave', () => el.classList.remove('scrolling'));
     
     // Cleanup
     return () => {
-      events.forEach(event => {
-        window.removeEventListener(event, showScrollbar);
-        document.removeEventListener(event, showScrollbar);
-      });
+      el.removeEventListener('scroll', showScrollbar);
+      el.removeEventListener('wheel', showScrollbar);
+      el.removeEventListener('touchstart', showScrollbar);
+      el.removeEventListener('touchmove', showScrollbar);
+      el.removeEventListener('pointerdown', showScrollbar);
+      el.removeEventListener('keydown', handleKeydown);
+      el.removeEventListener('mouseleave', () => el.classList.remove('scrolling'));
       clearTimeout(scrollTimer);
-      document.body.classList.remove('scrolling');
+      document.documentElement.classList.remove('scrolling');
     };
   }, []);
 
