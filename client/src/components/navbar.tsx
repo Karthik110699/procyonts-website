@@ -21,7 +21,7 @@ export default function Navbar() {
     <nav className={`fixed top-0 w-full z-40 transition-all duration-300 ${
       isScrolled ? 'glass border-b border-gray-800 backdrop-blur-lg bg-procyon-dark/90' : ''
     }`}>
-      <div className="max-w-7xl mx-auto" style={{ paddingLeft: 'calc(1rem - 5px)', paddingRight: '2rem' }}>
+      <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8" style={{ paddingLeft: 'calc(1rem - 5px)' }}>
         <div className="flex justify-between items-center h-16">
           {/* Logo */}
           <Link href="/" className="flex-shrink-0">
