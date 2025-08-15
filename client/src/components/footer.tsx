@@ -1,5 +1,5 @@
 import { Facebook, Linkedin, Twitter } from "lucide-react";
-import logoUrl from "@assets/Procyon Logo Try_1755242632056.jpg";
+import logoUrl from "../assets/procyon-logo.png";
 
 export default function Footer() {
   return (
