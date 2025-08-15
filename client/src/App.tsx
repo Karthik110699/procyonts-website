@@ -49,25 +49,33 @@ function App() {
   useEffect(() => {
     let scrollTimer: NodeJS.Timeout;
     
-    const handleScroll = () => {
-      // Add scrolling class when user starts scrolling
+    const showScrollbar = () => {
+      // Add scrolling class when user interacts
       document.body.classList.add('scrolling');
       
       // Clear existing timer
       clearTimeout(scrollTimer);
       
-      // Remove scrolling class after 1 second of no scrolling
+      // Remove scrolling class after 1.5 seconds of no activity
       scrollTimer = setTimeout(() => {
         document.body.classList.remove('scrolling');
-      }, 1000);
+      }, 1500);
     };
 
-    // Add scroll event listener
-    window.addEventListener('scroll', handleScroll, { passive: true });
+    // Listen for all scroll-related events
+    const events = ['scroll', 'wheel', 'touchstart', 'touchmove'];
+    
+    events.forEach(event => {
+      window.addEventListener(event, showScrollbar, { passive: true });
+      document.addEventListener(event, showScrollbar, { passive: true });
+    });
     
     // Cleanup
     return () => {
-      window.removeEventListener('scroll', handleScroll);
+      events.forEach(event => {
+        window.removeEventListener(event, showScrollbar);
+        document.removeEventListener(event, showScrollbar);
+      });
       clearTimeout(scrollTimer);
       document.body.classList.remove('scrolling');
     };
