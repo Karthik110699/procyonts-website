@@ -51,7 +51,7 @@ export default function GovernmentServicesPage() {
                 Specialized technology solutions for government organizations with compliance, security, and efficiency at the forefront.
               </p>
               <div className="mt-8 reveal-fade" data-delay="400">
-                <Link href="/contact" className="bg-gradient-to-r from-red-600 to-orange-600 px-8 py-4 rounded-lg font-semibold text-lg hover:scale-105 transition-transform inline-block">
+                <Link href="/contact" className="bg-gradient-to-r from-blue-600 to-emerald-600 px-8 py-4 rounded-lg font-semibold text-lg hover:scale-105 transition-transform inline-block">
                   Discuss Your Government Project
                 </Link>
               </div>
@@ -65,15 +65,15 @@ export default function GovernmentServicesPage() {
             <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
               
               {/* FedRAMP Compliance */}
-              <div className="conic-border bg-gradient-to-br from-gray-800 to-gray-900 p-8 rounded-2xl border border-gray-700 hover:border-red-500 transition-all duration-300 reveal-fade" data-delay="100">
-                <div className="w-16 h-16 bg-red-500/20 rounded-xl flex items-center justify-center mb-6">
+              <div className="floating-card conic-border bg-gradient-to-br from-gray-800 to-gray-900 p-8 rounded-2xl border border-gray-700 hover:border-red-500 transition-all duration-300 reveal-fade relative z-10" data-delay="100">
+                <div className="w-16 h-16 bg-red-500/20 rounded-xl flex items-center justify-center mb-6 relative z-10">
                   <Shield className="w-8 h-8 text-red-400" />
                 </div>
-                <h3 className="text-2xl font-bold mb-4 text-red-400">FedRAMP Compliance</h3>
-                <p className="text-gray-300 mb-6">
+                <h3 className="text-2xl font-bold mb-4 text-red-400 relative z-10">FedRAMP Compliance</h3>
+                <p className="text-gray-300 mb-6 relative z-10">
                   Navigate complex federal compliance requirements with our FedRAMP-ready cloud solutions and security frameworks.
                 </p>
-                <ul className="space-y-2 text-gray-400 text-sm">
+                <ul className="space-y-2 text-gray-400 text-sm relative z-10">
                   <li>• FedRAMP Authorization Support</li>
                   <li>• Security Control Implementation</li>
                   <li>• Continuous Monitoring</li>
@@ -82,15 +82,15 @@ export default function GovernmentServicesPage() {
               </div>
 
               {/* Secure Cloud Solutions */}
-              <div className="conic-border bg-gradient-to-br from-gray-800 to-gray-900 p-8 rounded-2xl border border-gray-700 hover:border-blue-500 transition-all duration-300 reveal-fade" data-delay="200">
-                <div className="w-16 h-16 bg-blue-500/20 rounded-xl flex items-center justify-center mb-6">
+              <div className="floating-card conic-border bg-gradient-to-br from-gray-800 to-gray-900 p-8 rounded-2xl border border-gray-700 hover:border-blue-500 transition-all duration-300 reveal-fade relative z-10" data-delay="200">
+                <div className="w-16 h-16 bg-blue-500/20 rounded-xl flex items-center justify-center mb-6 relative z-10">
                   <Cloud className="w-8 h-8 text-blue-400" />
                 </div>
-                <h3 className="text-2xl font-bold mb-4 text-blue-400">Secure Cloud Infrastructure</h3>
-                <p className="text-gray-300 mb-6">
+                <h3 className="text-2xl font-bold mb-4 text-blue-400 relative z-10">Secure Cloud Infrastructure</h3>
+                <p className="text-gray-300 mb-6 relative z-10">
                   Government-grade cloud infrastructure with advanced security controls and data protection measures.
                 </p>
-                <ul className="space-y-2 text-gray-400 text-sm">
+                <ul className="space-y-2 text-gray-400 text-sm relative z-10">
                   <li>• AWS GovCloud Integration</li>
                   <li>• Azure Government Services</li>
                   <li>• Multi-Level Security</li>
@@ -99,15 +99,15 @@ export default function GovernmentServicesPage() {
               </div>
 
               {/* Digital Transformation */}
-              <div className="conic-border bg-gradient-to-br from-gray-800 to-gray-900 p-8 rounded-2xl border border-gray-700 hover:border-green-500 transition-all duration-300 reveal-fade" data-delay="300">
-                <div className="w-16 h-16 bg-green-500/20 rounded-xl flex items-center justify-center mb-6">
+              <div className="floating-card conic-border bg-gradient-to-br from-gray-800 to-gray-900 p-8 rounded-2xl border border-gray-700 hover:border-green-500 transition-all duration-300 reveal-fade relative z-10" data-delay="300">
+                <div className="w-16 h-16 bg-green-500/20 rounded-xl flex items-center justify-center mb-6 relative z-10">
                   <Building className="w-8 h-8 text-green-400" />
                 </div>
-                <h3 className="text-2xl font-bold mb-4 text-green-400">Digital Transformation</h3>
-                <p className="text-gray-300 mb-6">
+                <h3 className="text-2xl font-bold mb-4 text-green-400 relative z-10">Digital Transformation</h3>
+                <p className="text-gray-300 mb-6 relative z-10">
                   Modernize legacy systems and processes to improve operational efficiency and citizen services.
                 </p>
-                <ul className="space-y-2 text-gray-400 text-sm">
+                <ul className="space-y-2 text-gray-400 text-sm relative z-10">
                   <li>• Legacy System Modernization</li>
                   <li>• Process Automation</li>
                   <li>• Workflow Optimization</li>
@@ -116,15 +116,15 @@ export default function GovernmentServicesPage() {
               </div>
 
               {/* Citizen Services */}
-              <div className="conic-border bg-gradient-to-br from-gray-800 to-gray-900 p-8 rounded-2xl border border-gray-700 hover:border-purple-500 transition-all duration-300 reveal-fade" data-delay="400">
-                <div className="w-16 h-16 bg-purple-500/20 rounded-xl flex items-center justify-center mb-6">
+              <div className="floating-card conic-border bg-gradient-to-br from-gray-800 to-gray-900 p-8 rounded-2xl border border-gray-700 hover:border-purple-500 transition-all duration-300 reveal-fade relative z-10" data-delay="400">
+                <div className="w-16 h-16 bg-purple-500/20 rounded-xl flex items-center justify-center mb-6 relative z-10">
                   <Users className="w-8 h-8 text-purple-400" />
                 </div>
-                <h3 className="text-2xl font-bold mb-4 text-purple-400">Citizen Services Platform</h3>
-                <p className="text-gray-300 mb-6">
+                <h3 className="text-2xl font-bold mb-4 text-purple-400 relative z-10">Citizen Services Platform</h3>
+                <p className="text-gray-300 mb-6 relative z-10">
                   Build user-friendly digital platforms that enhance citizen engagement and service delivery.
                 </p>
-                <ul className="space-y-2 text-gray-400 text-sm">
+                <ul className="space-y-2 text-gray-400 text-sm relative z-10">
                   <li>• Self-Service Portals</li>
                   <li>• Mobile Applications</li>
                   <li>• Accessibility Compliance</li>
@@ -133,15 +133,15 @@ export default function GovernmentServicesPage() {
               </div>
 
               {/* Data Security & Privacy */}
-              <div className="conic-border bg-gradient-to-br from-gray-800 to-gray-900 p-8 rounded-2xl border border-gray-700 hover:border-yellow-500 transition-all duration-300 reveal-fade" data-delay="500">
-                <div className="w-16 h-16 bg-yellow-500/20 rounded-xl flex items-center justify-center mb-6">
+              <div className="floating-card conic-border bg-gradient-to-br from-gray-800 to-gray-900 p-8 rounded-2xl border border-gray-700 hover:border-yellow-500 transition-all duration-300 reveal-fade relative z-10" data-delay="500">
+                <div className="w-16 h-16 bg-yellow-500/20 rounded-xl flex items-center justify-center mb-6 relative z-10">
                   <Lock className="w-8 h-8 text-yellow-400" />
                 </div>
-                <h3 className="text-2xl font-bold mb-4 text-yellow-400">Data Security & Privacy</h3>
-                <p className="text-gray-300 mb-6">
+                <h3 className="text-2xl font-bold mb-4 text-yellow-400 relative z-10">Data Security & Privacy</h3>
+                <p className="text-gray-300 mb-6 relative z-10">
                   Comprehensive data protection strategies ensuring privacy and security of sensitive government information.
                 </p>
-                <ul className="space-y-2 text-gray-400 text-sm">
+                <ul className="space-y-2 text-gray-400 text-sm relative z-10">
                   <li>• Zero Trust Architecture</li>
                   <li>• Identity & Access Management</li>
                   <li>• Threat Detection & Response</li>
@@ -150,15 +150,15 @@ export default function GovernmentServicesPage() {
               </div>
 
               {/* Compliance & Audit */}
-              <div className="conic-border bg-gradient-to-br from-gray-800 to-gray-900 p-8 rounded-2xl border border-gray-700 hover:border-orange-500 transition-all duration-300 reveal-fade" data-delay="600">
-                <div className="w-16 h-16 bg-orange-500/20 rounded-xl flex items-center justify-center mb-6">
+              <div className="floating-card conic-border bg-gradient-to-br from-gray-800 to-gray-900 p-8 rounded-2xl border border-gray-700 hover:border-orange-500 transition-all duration-300 reveal-fade relative z-10" data-delay="600">
+                <div className="w-16 h-16 bg-orange-500/20 rounded-xl flex items-center justify-center mb-6 relative z-10">
                   <FileCheck className="w-8 h-8 text-orange-400" />
                 </div>
-                <h3 className="text-2xl font-bold mb-4 text-orange-400">Compliance & Audit Support</h3>
-                <p className="text-gray-300 mb-6">
+                <h3 className="text-2xl font-bold mb-4 text-orange-400 relative z-10">Compliance & Audit Support</h3>
+                <p className="text-gray-300 mb-6 relative z-10">
                   Comprehensive compliance management and audit preparation for various government regulations.
                 </p>
-                <ul className="space-y-2 text-gray-400 text-sm">
+                <ul className="space-y-2 text-gray-400 text-sm relative z-10">
                   <li>• FISMA Compliance</li>
                   <li>• SOC 2 Certification</li>
                   <li>• Audit Trail Management</li>

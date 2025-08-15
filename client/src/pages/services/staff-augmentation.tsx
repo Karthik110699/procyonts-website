@@ -51,7 +51,7 @@ export default function StaffAugmentationPage() {
                 Scale your team with skilled professionals who integrate seamlessly with your existing workforce and deliver immediate impact.
               </p>
               <div className="mt-8 reveal-fade" data-delay="400">
-                <Link href="/contact" className="bg-gradient-to-r from-pink-600 to-purple-600 px-8 py-4 rounded-lg font-semibold text-lg hover:scale-105 transition-transform inline-block">
+                <Link href="/contact" className="bg-gradient-to-r from-blue-600 to-emerald-600 px-8 py-4 rounded-lg font-semibold text-lg hover:scale-105 transition-transform inline-block">
                   Find Your Perfect Team Member
                 </Link>
               </div>
@@ -72,15 +72,15 @@ export default function StaffAugmentationPage() {
             <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
               
               {/* Software Engineers */}
-              <div className="conic-border bg-gradient-to-br from-gray-800 to-gray-900 p-8 rounded-2xl border border-gray-700 hover:border-blue-500 transition-all duration-300 reveal-fade" data-delay="100">
-                <div className="w-16 h-16 bg-blue-500/20 rounded-xl flex items-center justify-center mb-6">
+              <div className="floating-card conic-border bg-gradient-to-br from-gray-800 to-gray-900 p-8 rounded-2xl border border-gray-700 hover:border-blue-500 transition-all duration-300 reveal-fade relative z-10" data-delay="100">
+                <div className="w-16 h-16 bg-blue-500/20 rounded-xl flex items-center justify-center mb-6 relative z-10">
                   <Code className="w-8 h-8 text-blue-400" />
                 </div>
-                <h3 className="text-2xl font-bold mb-4 text-blue-400">Software Engineers</h3>
-                <p className="text-gray-300 mb-6">
+                <h3 className="text-2xl font-bold mb-4 text-blue-400 relative z-10">Software Engineers</h3>
+                <p className="text-gray-300 mb-6 relative z-10">
                   Full-stack developers, frontend specialists, and backend engineers with expertise in modern technologies.
                 </p>
-                <ul className="space-y-2 text-gray-400 text-sm">
+                <ul className="space-y-2 text-gray-400 text-sm relative z-10">
                   <li>• React, Angular, Vue.js</li>
                   <li>• Node.js, Python, Java</li>
                   <li>• Mobile Development (React Native, Flutter)</li>
@@ -89,15 +89,15 @@ export default function StaffAugmentationPage() {
               </div>
 
               {/* Data Scientists */}
-              <div className="conic-border bg-gradient-to-br from-gray-800 to-gray-900 p-8 rounded-2xl border border-gray-700 hover:border-green-500 transition-all duration-300 reveal-fade" data-delay="200">
-                <div className="w-16 h-16 bg-green-500/20 rounded-xl flex items-center justify-center mb-6">
+              <div className="floating-card conic-border bg-gradient-to-br from-gray-800 to-gray-900 p-8 rounded-2xl border border-gray-700 hover:border-green-500 transition-all duration-300 reveal-fade relative z-10" data-delay="200">
+                <div className="w-16 h-16 bg-green-500/20 rounded-xl flex items-center justify-center mb-6 relative z-10">
                   <Database className="w-8 h-8 text-green-400" />
                 </div>
-                <h3 className="text-2xl font-bold mb-4 text-green-400">Data Scientists</h3>
-                <p className="text-gray-300 mb-6">
+                <h3 className="text-2xl font-bold mb-4 text-green-400 relative z-10">Data Scientists</h3>
+                <p className="text-gray-300 mb-6 relative z-10">
                   Machine learning experts, data analysts, and AI specialists to unlock insights from your data.
                 </p>
-                <ul className="space-y-2 text-gray-400 text-sm">
+                <ul className="space-y-2 text-gray-400 text-sm relative z-10">
                   <li>• Machine Learning & AI</li>
                   <li>• Statistical Analysis</li>
                   <li>• Data Visualization</li>
@@ -106,15 +106,15 @@ export default function StaffAugmentationPage() {
               </div>
 
               {/* DevOps Engineers */}
-              <div className="conic-border bg-gradient-to-br from-gray-800 to-gray-900 p-8 rounded-2xl border border-gray-700 hover:border-orange-500 transition-all duration-300 reveal-fade" data-delay="300">
-                <div className="w-16 h-16 bg-orange-500/20 rounded-xl flex items-center justify-center mb-6">
+              <div className="floating-card conic-border bg-gradient-to-br from-gray-800 to-gray-900 p-8 rounded-2xl border border-gray-700 hover:border-orange-500 transition-all duration-300 reveal-fade relative z-10" data-delay="300">
+                <div className="w-16 h-16 bg-orange-500/20 rounded-xl flex items-center justify-center mb-6 relative z-10">
                   <Settings className="w-8 h-8 text-orange-400" />
                 </div>
-                <h3 className="text-2xl font-bold mb-4 text-orange-400">DevOps Engineers</h3>
-                <p className="text-gray-300 mb-6">
+                <h3 className="text-2xl font-bold mb-4 text-orange-400 relative z-10">DevOps Engineers</h3>
+                <p className="text-gray-300 mb-6 relative z-10">
                   Infrastructure automation experts who streamline deployment and optimize system performance.
                 </p>
-                <ul className="space-y-2 text-gray-400 text-sm">
+                <ul className="space-y-2 text-gray-400 text-sm relative z-10">
                   <li>• CI/CD Pipeline Setup</li>
                   <li>• Cloud Infrastructure (AWS, Azure, GCP)</li>
                   <li>• Kubernetes & Docker</li>
@@ -123,15 +123,15 @@ export default function StaffAugmentationPage() {
               </div>
 
               {/* Project Managers */}
-              <div className="conic-border bg-gradient-to-br from-gray-800 to-gray-900 p-8 rounded-2xl border border-gray-700 hover:border-purple-500 transition-all duration-300 reveal-fade" data-delay="400">
-                <div className="w-16 h-16 bg-purple-500/20 rounded-xl flex items-center justify-center mb-6">
+              <div className="floating-card conic-border bg-gradient-to-br from-gray-800 to-gray-900 p-8 rounded-2xl border border-gray-700 hover:border-purple-500 transition-all duration-300 reveal-fade relative z-10" data-delay="400">
+                <div className="w-16 h-16 bg-purple-500/20 rounded-xl flex items-center justify-center mb-6 relative z-10">
                   <Briefcase className="w-8 h-8 text-purple-400" />
                 </div>
-                <h3 className="text-2xl font-bold mb-4 text-purple-400">Project Managers</h3>
-                <p className="text-gray-300 mb-6">
+                <h3 className="text-2xl font-bold mb-4 text-purple-400 relative z-10">Project Managers</h3>
+                <p className="text-gray-300 mb-6 relative z-10">
                   Certified project managers who ensure delivery excellence and team coordination.
                 </p>
-                <ul className="space-y-2 text-gray-400 text-sm">
+                <ul className="space-y-2 text-gray-400 text-sm relative z-10">
                   <li>• Agile & Scrum Methodologies</li>
                   <li>• PMP & CSM Certified</li>
                   <li>• Risk Management</li>
@@ -140,15 +140,15 @@ export default function StaffAugmentationPage() {
               </div>
 
               {/* QA Engineers */}
-              <div className="conic-border bg-gradient-to-br from-gray-800 to-gray-900 p-8 rounded-2xl border border-gray-700 hover:border-yellow-500 transition-all duration-300 reveal-fade" data-delay="500">
-                <div className="w-16 h-16 bg-yellow-500/20 rounded-xl flex items-center justify-center mb-6">
+              <div className="floating-card conic-border bg-gradient-to-br from-gray-800 to-gray-900 p-8 rounded-2xl border border-gray-700 hover:border-yellow-500 transition-all duration-300 reveal-fade relative z-10" data-delay="500">
+                <div className="w-16 h-16 bg-yellow-500/20 rounded-xl flex items-center justify-center mb-6 relative z-10">
                   <CheckCircle className="w-8 h-8 text-yellow-400" />
                 </div>
-                <h3 className="text-2xl font-bold mb-4 text-yellow-400">QA Engineers</h3>
-                <p className="text-gray-300 mb-6">
+                <h3 className="text-2xl font-bold mb-4 text-yellow-400 relative z-10">QA Engineers</h3>
+                <p className="text-gray-300 mb-6 relative z-10">
                   Quality assurance specialists ensuring your products meet the highest standards.
                 </p>
-                <ul className="space-y-2 text-gray-400 text-sm">
+                <ul className="space-y-2 text-gray-400 text-sm relative z-10">
                   <li>• Automated Testing</li>
                   <li>• Manual Testing</li>
                   <li>• Performance Testing</li>
@@ -157,15 +157,15 @@ export default function StaffAugmentationPage() {
               </div>
 
               {/* Technical Architects */}
-              <div className="conic-border bg-gradient-to-br from-gray-800 to-gray-900 p-8 rounded-2xl border border-gray-700 hover:border-red-500 transition-all duration-300 reveal-fade" data-delay="600">
-                <div className="w-16 h-16 bg-red-500/20 rounded-xl flex items-center justify-center mb-6">
+              <div className="floating-card conic-border bg-gradient-to-br from-gray-800 to-gray-900 p-8 rounded-2xl border border-gray-700 hover:border-red-500 transition-all duration-300 reveal-fade relative z-10" data-delay="600">
+                <div className="w-16 h-16 bg-red-500/20 rounded-xl flex items-center justify-center mb-6 relative z-10">
                   <Users className="w-8 h-8 text-red-400" />
                 </div>
-                <h3 className="text-2xl font-bold mb-4 text-red-400">Technical Architects</h3>
-                <p className="text-gray-300 mb-6">
+                <h3 className="text-2xl font-bold mb-4 text-red-400 relative z-10">Technical Architects</h3>
+                <p className="text-gray-300 mb-6 relative z-10">
                   Senior architects who design scalable solutions and guide technical decision-making.
                 </p>
-                <ul className="space-y-2 text-gray-400 text-sm">
+                <ul className="space-y-2 text-gray-400 text-sm relative z-10">
                   <li>• System Architecture Design</li>
                   <li>• Technology Stack Selection</li>
                   <li>• Performance Optimization</li>
