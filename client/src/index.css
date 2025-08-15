@@ -592,28 +592,124 @@
     }
   }
 
-  /* Logo loading animations for Procyon loader */
-  .logo-bounce {
-    animation: logoFadeIn 1s ease-in-out forwards, logoBounce 2s ease-in-out infinite 1s;
+  /* Magdemy-style loading animations */
+  .magdemy-logo-fade {
+    animation: magdemyLogoEntry 1.2s cubic-bezier(0.25, 0.46, 0.45, 0.94) forwards,
+               magdemyLogoPulse 2s ease-in-out infinite 1.2s;
   }
 
-  @keyframes logoFadeIn {
+  @keyframes magdemyLogoEntry {
     0% {
       opacity: 0;
-      transform: scale(0.5) translateY(-20px);
+      transform: scale(0.3) translateY(30px) rotateY(-90deg);
+      filter: blur(10px);
+    }
+    60% {
+      opacity: 0.8;
+      transform: scale(1.1) translateY(-5px) rotateY(10deg);
+      filter: blur(2px);
     }
     100% {
       opacity: 1;
-      transform: scale(1) translateY(0);
+      transform: scale(1) translateY(0) rotateY(0);
+      filter: blur(0);
     }
   }
 
-  @keyframes logoBounce {
+  @keyframes magdemyLogoPulse {
     0%, 100% {
-      transform: translateY(0) scale(1);
+      transform: scale(1);
+      filter: brightness(1);
     }
     50% {
-      transform: translateY(-10px) scale(1.05);
+      transform: scale(1.05);
+      filter: brightness(1.1);
+    }
+  }
+
+  /* Loading ring animation */
+  .loading-ring {
+    animation: ringRotate 1.5s linear infinite;
+  }
+
+  @keyframes ringRotate {
+    0% {
+      transform: rotate(0deg);
+    }
+    100% {
+      transform: rotate(360deg);
+    }
+  }
+
+  /* Floating circles */
+  .floating-circle {
+    animation: floatingCircles 4s ease-in-out infinite;
+  }
+
+  .floating-circle:nth-child(1) {
+    animation-delay: 0s;
+  }
+
+  .floating-circle:nth-child(2) {
+    animation-delay: 1.3s;
+  }
+
+  .floating-circle:nth-child(3) {
+    animation-delay: 2.6s;
+  }
+
+  @keyframes floatingCircles {
+    0%, 100% {
+      transform: translateY(0px) scale(1);
+      opacity: 0.1;
+    }
+    50% {
+      transform: translateY(-20px) scale(1.1);
+      opacity: 0.3;
+    }
+  }
+
+  /* Loading dots */
+  .loading-dot {
+    animation: loadingDots 1.4s ease-in-out infinite;
+  }
+
+  .loading-dot:nth-child(1) {
+    animation-delay: 0s;
+  }
+
+  .loading-dot:nth-child(2) {
+    animation-delay: 0.2s;
+  }
+
+  .loading-dot:nth-child(3) {
+    animation-delay: 0.4s;
+  }
+
+  @keyframes loadingDots {
+    0%, 80%, 100% {
+      transform: scale(0.8) translateY(0);
+      opacity: 0.5;
+    }
+    40% {
+      transform: scale(1.2) translateY(-10px);
+      opacity: 1;
+    }
+  }
+
+  /* Loading text animation */
+  .loading-text {
+    animation: textGlow 2s ease-in-out infinite;
+  }
+
+  @keyframes textGlow {
+    0%, 100% {
+      opacity: 0.7;
+      text-shadow: none;
+    }
+    50% {
+      opacity: 1;
+      text-shadow: 0 0 10px rgba(59, 130, 246, 0.3);
     }
   }
 
