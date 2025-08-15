@@ -67,36 +67,39 @@
     font-family: 'Inter', sans-serif;
   }
 
-  /* Custom Scrollbar - Magdemy Style */
+  /* Custom Scrollbar - Magdemy Minimal Style */
   ::-webkit-scrollbar {
-    width: 8px;
-    height: 8px;
+    width: 4px;
   }
 
   ::-webkit-scrollbar-track {
-    background: rgba(31, 41, 55, 0.3);
-    border-radius: 4px;
+    background: transparent;
   }
 
   ::-webkit-scrollbar-thumb {
-    background: linear-gradient(45deg, hsl(207, 90%, 54%), hsl(158, 64%, 52%));
-    border-radius: 4px;
-    transition: all 0.3s ease;
+    background: rgba(255, 255, 255, 0.3);
+    border-radius: 2px;
   }
 
   ::-webkit-scrollbar-thumb:hover {
-    background: linear-gradient(45deg, hsl(207, 90%, 64%), hsl(158, 64%, 62%));
-    box-shadow: 0 0 10px rgba(59, 130, 246, 0.3);
+    background: rgba(255, 255, 255, 0.5);
+  }
+
+  /* Remove all scrollbar elements except thumb */
+  ::-webkit-scrollbar-button {
+    display: none;
+    height: 0;
+    width: 0;
   }
 
   ::-webkit-scrollbar-corner {
-    background: rgba(31, 41, 55, 0.3);
+    background: transparent;
   }
 
-  /* Firefox scrollbar */
-  html {
+  /* Firefox minimal scrollbar */
+  * {
     scrollbar-width: thin;
-    scrollbar-color: hsl(207, 90%, 54%) rgba(31, 41, 55, 0.3);
+    scrollbar-color: rgba(255, 255, 255, 0.3) transparent;
   }
 }
 
