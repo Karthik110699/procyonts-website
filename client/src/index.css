@@ -87,11 +87,13 @@
   ::-webkit-scrollbar-thumb {
     border-radius: 30px;
     background: linear-gradient(45deg, hsl(207, 90%, 54%), hsl(158, 64%, 52%));
+    opacity: 0.5;
   }
   
   /* Handle on hover */
   ::-webkit-scrollbar-thumb:hover {
     background: linear-gradient(45deg, hsl(207, 90%, 64%), hsl(158, 64%, 62%));
+    opacity: 0.7;
   }
 
   /* Hide scrollbar during loading */
