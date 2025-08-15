@@ -40,6 +40,12 @@ Preferred communication style: Simple, everyday language.
 - **Navigation**: Fixed navbar with clean navigation links to separate pages (no dropdowns)
 - **Navigation Colors**: Active/selected states use emerald green (text-emerald-400), hover states use light grey (text-gray-300), default state is white
 - **Hero Section**: Split-screen layout (Globant-style) with static content on left featuring animated "AI-Powered Solutions? Procyon's Your Partner!" headline with animated color gradient text effect, and dynamic motion graphics on right displaying rotating Procyon services
+- **Contact Forms**: Universal contact functionality working across all pages
+  - **Homepage ContactSection**: Basic contact form in footer area with name, email, company, phone, message fields
+  - **Dedicated Contact Page**: Enhanced form with additional subject field and dropdown options
+  - **Consistent API**: Both forms use same `/api/contact` endpoint for unified handling
+  - **Email Delivery**: ✅ Successfully sending all submissions to sales@procyonts.com
+  - **User Feedback**: Toast notifications and loading states on all forms
 - **Clickable Motion Graphics**: All motion graphics elements in zoomed/active states are clickable and route to relevant pages:
   - Rotating service names and floating particles in hero section (link to /enterprise or /services)
   - Client logos that zoom in during scroll (link to /services or /enterprise)  
@@ -53,13 +59,14 @@ Preferred communication style: Simple, everyday language.
   - **Contact Page**: Contact form, company information, and response guarantees
 
 ### Backend Routes
-- **POST /api/contact**: Contact form submission endpoint with validation and email delivery
+- **POST /api/contact**: Universal contact form submission endpoint with validation and email delivery
   - Validates required fields (firstName, lastName, email, message)
   - Performs email format validation
   - Integrates with SendGrid API for email delivery to sales@procyonts.com
   - Uses verified sender email: krishkrizz@gmail.com
   - Returns JSON responses with success/error states
   - Includes comprehensive error logging for troubleshooting
+  - **Working Status**: ✅ Successfully sending emails to sales@procyonts.com
 
 ### UI Component Library
 Comprehensive set of Shadcn/ui components including:
