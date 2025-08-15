@@ -96,7 +96,7 @@ export function ContactSection() {
                 </div>
                 <div>
                   <p className="font-semibold">Location</p>
-                  <p className="text-gray-300">Global presence, local expertise</p>
+                  <p className="text-gray-300">7250 Redwood Blvd, Suite 211<br />Novato, CA 94945</p>
                 </div>
               </div>
             </div>
