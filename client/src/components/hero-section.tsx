@@ -44,11 +44,11 @@ export default function HeroSection() {
         <div className="energy-line"></div>
       </div>
       
-      <div className="relative z-20 flex flex-col lg:flex-row min-h-screen">
+      <div className="relative z-20 flex min-h-screen">
         {/* Left Side Content */}
-        <div className="w-full lg:w-1/2 flex flex-col justify-center">
+        <div className="w-1/2 flex flex-col justify-center">
           <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 w-full">
-            <div className="max-w-xl lg:ml-28" style={{ marginLeft: 'calc(1rem - 5px)' }}>
+            <div className="max-w-xl" style={{ marginLeft: '110px' }}>
             
             {/* Fixed Innovative Text */}
             <div className="mb-8">
@@ -83,7 +83,7 @@ export default function HeroSection() {
         </div>
 
         {/* Right Side - Motion Graphics Space */}
-        <div className="w-full lg:w-1/2 relative flex items-center justify-center min-h-[50vh] lg:min-h-auto">
+        <div className="w-1/2 relative flex items-center justify-center">
           {/* Floating Service Names */}
           <div className="absolute inset-0 flex items-center justify-center z-20">
             <div className="text-center">
