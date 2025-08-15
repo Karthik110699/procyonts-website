@@ -68,30 +68,37 @@
     overflow: overlay;
   }
 
-  /* Magdemy.com Exact Scrollbar */
+  /* Custom Scrollbar - Procyon Branding */
   ::-webkit-scrollbar {
-    position: fixed;
     width: 5px;
     background-color: transparent;
     background: none;
   }
 
-  /* Track */
+  /* Track - Hidden */
   ::-webkit-scrollbar-track {
-    background: blue; 
-    background-color: blue;
+    background: transparent;
     visibility: hidden;
   }
    
-  /* Handle */
+  /* Handle - Brand Colors */
   ::-webkit-scrollbar-thumb {
     border-radius: 30px;
-    background: #555555; 
+    background: linear-gradient(45deg, hsl(207, 90%, 54%), hsl(158, 64%, 52%));
+    opacity: 0;
+    transition: opacity 0.3s ease;
+  }
+  
+  /* Show scrollbar only when scrolling */
+  body:hover ::-webkit-scrollbar-thumb,
+  ::-webkit-scrollbar-thumb:active {
+    opacity: 1;
   }
   
   /* Handle on hover */
   ::-webkit-scrollbar-thumb:hover {
-    background: #333; 
+    background: linear-gradient(45deg, hsl(207, 90%, 64%), hsl(158, 64%, 62%));
+    opacity: 1;
   }
 }
 
