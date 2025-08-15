@@ -1,5 +1,6 @@
 import type { Express } from "express";
 import { createServer, type Server } from "http";
+import { sendContactFormEmail } from "./sendgrid";
 
 export async function registerRoutes(app: Express): Promise<Server> {
   // Contact form submission endpoint
@@ -22,10 +23,22 @@ export async function registerRoutes(app: Express): Promise<Server> {
         });
       }
 
-      // Here you would typically:
-      // 1. Save to database
-      // 2. Send email notification
-      // 3. Send confirmation email to user
+      // Send email notification to sales@procyonts.com
+      const emailSent = await sendContactFormEmail({
+        firstName,
+        lastName,
+        email,
+        company: req.body.company,
+        phone: req.body.phone,
+        subject: req.body.subject,
+        message
+      });
+
+      if (!emailSent) {
+        console.error("Failed to send email notification");
+        // Continue with success response even if email fails
+        // You might want to handle this differently based on requirements
+      }
       
       console.log("Contact form submission:", {
         firstName,
@@ -34,6 +47,7 @@ export async function registerRoutes(app: Express): Promise<Server> {
         company,
         message,
         consent,
+        emailSent,
         timestamp: new Date().toISOString()
       });
 
