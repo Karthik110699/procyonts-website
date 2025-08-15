@@ -68,37 +68,37 @@
     overflow: overlay;
   }
 
-  /* Custom Scrollbar - Procyon Branding */
+  /* Magdemy-style Invisible Scrollbar */
   ::-webkit-scrollbar {
     width: 5px;
-    background-color: transparent;
     background: none;
+    background-color: transparent;
   }
 
-  /* Track - Hidden */
   ::-webkit-scrollbar-track {
     background: transparent;
     visibility: hidden;
   }
    
-  /* Handle - Brand Colors */
   ::-webkit-scrollbar-thumb {
     border-radius: 30px;
+    background: transparent;
+    transition: background 0.3s ease;
+  }
+  
+  /* Only show on scroll interaction */
+  html:active ::-webkit-scrollbar-thumb,
+  body:active ::-webkit-scrollbar-thumb {
     background: linear-gradient(45deg, hsl(207, 90%, 54%), hsl(158, 64%, 52%));
-    opacity: 0;
-    transition: opacity 0.3s ease;
   }
   
-  /* Show scrollbar only when scrolling */
-  body:hover ::-webkit-scrollbar-thumb,
-  ::-webkit-scrollbar-thumb:active {
-    opacity: 1;
-  }
-  
-  /* Handle on hover */
   ::-webkit-scrollbar-thumb:hover {
     background: linear-gradient(45deg, hsl(207, 90%, 64%), hsl(158, 64%, 62%));
-    opacity: 1;
+  }
+
+  /* Firefox - completely hidden */
+  * {
+    scrollbar-width: none;
   }
 }
 
