@@ -19,7 +19,7 @@ export default function Navbar() {
 
   return (
     <nav className={`fixed top-0 w-full z-40 transition-all duration-300 ${
-      isScrolled ? 'glass border-b border-gray-800 backdrop-blur-lg bg-procyon-dark/90' : ''
+      isScrolled ? 'backdrop-blur-lg bg-procyon-dark/90' : ''
     }`}>
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:pl-8 lg:pr-8" style={{ paddingLeft: 'calc(1rem - 5px)' }}>
         <div className="flex justify-between items-center h-16">
