@@ -155,13 +155,10 @@ export default function PrivacyPolicy() {
               <p className="text-lg mb-6">
                 If you have any questions or concerns about our privacy practices, please don't hesitate to contact us.
               </p>
-              <div className="flex flex-col sm:flex-row gap-4 justify-center">
+              <div className="flex justify-center">
                 <Link href="/contact" className="bg-white text-blue-600 px-8 py-3 rounded-lg font-semibold hover:bg-gray-100 transition-colors">
                   Contact Us
                 </Link>
-                <a href="mailto:privacy@procyonts.com" className="border-2 border-white text-white px-8 py-3 rounded-lg font-semibold hover:bg-white hover:text-blue-600 transition-colors">
-                  Email Privacy Team
-                </a>
               </div>
             </div>
 

@@ -34,30 +34,30 @@ export default function Footer() {
           <div>
             <h3 className="text-lg font-semibold mb-4">Services</h3>
             <ul className="space-y-2 text-gray-400">
-              <li><Link href="/services/cloud" className="hover:text-white transition-colors">Cloud Transformation</Link></li>
-              <li><Link href="/services/ai-ml" className="hover:text-white transition-colors">AI & Machine Learning</Link></li>
-              <li><Link href="/services/data-analytics" className="hover:text-white transition-colors">Data Analytics</Link></li>
-              <li><Link href="/services/staff-augmentation" className="hover:text-white transition-colors">Staff Augmentation</Link></li>
+              <li><Link href="/services/cloud" className="hover:text-white transition-colors" onClick={() => window.scrollTo(0, 0)}>Cloud Transformation</Link></li>
+              <li><Link href="/services/ai-ml" className="hover:text-white transition-colors" onClick={() => window.scrollTo(0, 0)}>AI & Machine Learning</Link></li>
+              <li><Link href="/services/data-analytics" className="hover:text-white transition-colors" onClick={() => window.scrollTo(0, 0)}>Data Analytics</Link></li>
+              <li><Link href="/services/staff-augmentation" className="hover:text-white transition-colors" onClick={() => window.scrollTo(0, 0)}>Staff Augmentation</Link></li>
             </ul>
           </div>
           
           <div>
             <h3 className="text-lg font-semibold mb-4">Enterprise</h3>
             <ul className="space-y-2 text-gray-400">
-              <li><Link href="/enterprise/salesforce" className="hover:text-white transition-colors">SalesForce</Link></li>
-              <li><Link href="/enterprise/servicenow" className="hover:text-white transition-colors">ServiceNow</Link></li>
-              <li><Link href="/enterprise/sap" className="hover:text-white transition-colors">SAP</Link></li>
-              <li><Link href="/services/government" className="hover:text-white transition-colors">Government Solutions</Link></li>
+              <li><Link href="/enterprise/salesforce" className="hover:text-white transition-colors" onClick={() => window.scrollTo(0, 0)}>SalesForce</Link></li>
+              <li><Link href="/enterprise/servicenow" className="hover:text-white transition-colors" onClick={() => window.scrollTo(0, 0)}>ServiceNow</Link></li>
+              <li><Link href="/enterprise/sap" className="hover:text-white transition-colors" onClick={() => window.scrollTo(0, 0)}>SAP</Link></li>
+              <li><Link href="/services/government" className="hover:text-white transition-colors" onClick={() => window.scrollTo(0, 0)}>Government Solutions</Link></li>
             </ul>
           </div>
           
           <div>
             <h3 className="text-lg font-semibold mb-4">Company</h3>
             <ul className="space-y-2 text-gray-400">
-              <li><Link href="/about" className="hover:text-white transition-colors">About Us</Link></li>
-              <li><Link href="/careers" className="hover:text-white transition-colors">Careers</Link></li>
-              <li><Link href="/privacy-policy" className="hover:text-white transition-colors">Privacy Policy</Link></li>
-              <li><Link href="/contact" className="hover:text-white transition-colors">Contact</Link></li>
+              <li><Link href="/about" className="hover:text-white transition-colors" onClick={() => window.scrollTo(0, 0)}>About Us</Link></li>
+              <li><Link href="/careers" className="hover:text-white transition-colors" onClick={() => window.scrollTo(0, 0)}>Careers</Link></li>
+              <li><Link href="/privacy-policy" className="hover:text-white transition-colors" onClick={() => window.scrollTo(0, 0)}>Privacy Policy</Link></li>
+              <li><Link href="/contact" className="hover:text-white transition-colors" onClick={() => window.scrollTo(0, 0)}>Contact</Link></li>
             </ul>
           </div>
         </div>
