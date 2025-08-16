@@ -5,6 +5,35 @@ import Navbar from "@/components/navbar";
 export default function AIMLPage() {
   return (
     <div className="min-h-screen bg-procyon-dark text-white">
+      {/* Floating Stars Background */}
+      <div className="floating-stars-container">
+        {[...Array(15)].map((_, i) => (
+          <div
+            key={i}
+            className={`floating-star star-${i + 1}`}
+            style={{
+              left: `${Math.random() * 100}%`,
+              top: `${Math.random() * 100}%`,
+              animationDelay: `${Math.random() * 8}s`,
+              animationDuration: `${12 + Math.random() * 8}s`
+            }}
+          >
+            <svg
+              width="8"
+              height="8"
+              viewBox="0 0 24 24"
+              fill="none"
+              xmlns="http://www.w3.org/2000/svg"
+              className="star-svg"
+            >
+              <path
+                d="M12 2L14.09 8.26L20 8.26L15.64 11.74L17.73 18L12 14.52L6.27 18L8.36 11.74L4 8.26L9.91 8.26L12 2Z"
+                fill="currentColor"
+              />
+            </svg>
+          </div>
+        ))}
+      </div>
       <Navbar />
       {/* Header */}
       <div className="pt-20 pb-10">
