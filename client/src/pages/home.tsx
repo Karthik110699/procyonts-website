@@ -1,5 +1,4 @@
 import { useEffect } from "react";
-import LoadingScreen from "@/components/loading-screen";
 import Navbar from "@/components/navbar";
 import HeroSection from "@/components/hero-section";
 import AboutSection from "@/components/about-section";
@@ -51,7 +50,6 @@ export default function Home() {
       />
       
       <div className="bg-gradient-to-b from-gray-900 via-procyon-dark to-gray-900 text-white overflow-x-hidden">
-      <LoadingScreen />
       <Navbar />
       <HeroSection />
       

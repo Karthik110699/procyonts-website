@@ -1,26 +1,16 @@
-import { useEffect, useState } from "react";
+import { useEffect } from "react";
 import procyonLogo from "@assets/logo (1)_1755251811111.png";
 
 export default function LoadingScreen() {
-  const [isVisible, setIsVisible] = useState(true);
-
   useEffect(() => {
     // Add loading class to body to hide scrollbar
     document.body.classList.add('loading-screen-active');
     
-    const timer = setTimeout(() => {
-      setIsVisible(false);
-      // Remove loading class to restore scrollbar
-      document.body.classList.remove('loading-screen-active');
-    }, 2500);
-
     return () => {
-      clearTimeout(timer);
+      // Remove loading class to restore scrollbar
       document.body.classList.remove('loading-screen-active');
     };
   }, []);
-
-  if (!isVisible) return null;
 
   return (
     <div className="fixed inset-0 z-50 bg-gradient-to-br from-gray-900 via-procyon-dark to-gray-800 flex items-center justify-center">

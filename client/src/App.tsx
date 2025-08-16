@@ -2,7 +2,7 @@
 import { Switch, Route, useLocation } from "wouter";
 import { queryClient } from "./lib/queryClient";
 import { QueryClientProvider } from "@tanstack/react-query";
-import { useEffect } from "react";
+import { useEffect, useState } from "react";
 import { Toaster } from "@/components/ui/toaster";
 import { TooltipProvider } from "@/components/ui/tooltip";
 import NotFound from "@/pages/not-found";
@@ -22,6 +22,7 @@ import DataAnalyticsPage from "@/pages/services/data-analytics";
 import GovernmentPage from "@/pages/services/government";
 import StaffAugmentationPage from "@/pages/services/staff-augmentation";
 import PrivacyPolicy from "@/pages/privacy-policy";
+import LoadingScreen from "@/components/loading-screen";
 
 function Router() {
   const [location] = useLocation();
@@ -55,6 +56,33 @@ function Router() {
 }
 
 function App() {
+  const [hasVisited, setHasVisited] = useState(false);
+  const [showLoader, setShowLoader] = useState(true);
+
+  useEffect(() => {
+    // Check if user has visited before in this session
+    const visited = sessionStorage.getItem('hasVisitedSite');
+    
+    if (visited) {
+      // User has visited before, skip loader
+      setShowLoader(false);
+      setHasVisited(true);
+    } else {
+      // First visit, show loader for 3 seconds
+      const timer = setTimeout(() => {
+        setShowLoader(false);
+        setHasVisited(true);
+        sessionStorage.setItem('hasVisitedSite', 'true');
+      }, 3000);
+
+      return () => clearTimeout(timer);
+    }
+  }, []);
+
+  if (showLoader && !hasVisited) {
+    return <LoadingScreen />;
+  }
+
   return (
     <QueryClientProvider client={queryClient}>
       <TooltipProvider>
