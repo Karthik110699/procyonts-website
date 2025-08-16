@@ -20,6 +20,7 @@ import AIMLPage from "@/pages/services/ai-ml";
 import DataAnalyticsPage from "@/pages/services/data-analytics";
 import GovernmentPage from "@/pages/services/government";
 import StaffAugmentationPage from "@/pages/services/staff-augmentation";
+import PrivacyPolicy from "@/pages/privacy-policy";
 
 function Router() {
   return (
@@ -38,6 +39,7 @@ function Router() {
       <Route path="/about" component={About} />
       <Route path="/careers" component={Careers} />
       <Route path="/contact" component={Contact} />
+      <Route path="/privacy-policy" component={PrivacyPolicy} />
       <Route path="/social-impact" component={SocialImpactPage} />
       <Route component={NotFound} />
     </Switch>
