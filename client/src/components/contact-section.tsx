@@ -1,7 +1,9 @@
 import { Mail, Phone, MapPin, Send } from "lucide-react";
 import { useState } from "react";
+import { useToast } from "@/hooks/use-toast";
 
 export function ContactSection() {
+  const { toast } = useToast();
   const [formData, setFormData] = useState({
     firstName: '',
     lastName: '',
@@ -35,7 +37,10 @@ export function ContactSection() {
       });
 
       if (response.ok) {
-        console.log('Form submitted successfully');
+        toast({
+          title: "Message sent successfully!",
+          description: "Thank you for reaching out. We'll get back to you within 24 hours.",
+        });
         // Reset form
         setFormData({
           firstName: '',
@@ -47,10 +52,20 @@ export function ContactSection() {
           message: ''
         });
       } else {
-        console.error('Form submission failed');
+        const errorData = await response.json();
+        toast({
+          title: "Message failed to send",
+          description: errorData.message || "Please try again or contact us directly.",
+          variant: "destructive",
+        });
       }
     } catch (error) {
       console.error('Error submitting form:', error);
+      toast({
+        title: "Connection error",
+        description: "Please check your internet connection and try again.",
+        variant: "destructive",
+      });
     } finally {
       setIsSubmitting(false);
     }
