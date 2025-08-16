@@ -37,17 +37,17 @@ export default function Navbar() {
           {/* Desktop Menu */}
           <div className="hidden md:block">
             <div className="ml-10 flex items-baseline space-x-8">
-              <Link href="/" className={`transition-colors ${location === '/' ? 'text-emerald-400' : 'text-white hover:text-gray-300'}`}>Home</Link>
-              <Link href="/enterprise" className={`transition-colors ${location.startsWith('/enterprise') ? 'text-emerald-400' : 'text-white hover:text-gray-300'}`}>Enterprise</Link>
-              <Link href="/services" className={`transition-colors ${location.startsWith('/services') ? 'text-emerald-400' : 'text-white hover:text-gray-300'}`}>Services</Link>
-              <Link href="/about" className={`transition-colors ${location === '/about' ? 'text-emerald-400' : 'text-white hover:text-gray-300'}`}>About</Link>
-              <Link href="/careers" className={`transition-colors ${location === '/careers' ? 'text-emerald-400' : 'text-white hover:text-gray-300'}`}>Careers</Link>
+              <Link href="/" className={`transition-colors ${location === '/' ? 'text-emerald-400' : 'text-white hover:text-gray-300'}`} onClick={() => window.scrollTo(0, 0)}>Home</Link>
+              <Link href="/enterprise" className={`transition-colors ${location.startsWith('/enterprise') ? 'text-emerald-400' : 'text-white hover:text-gray-300'}`} onClick={() => window.scrollTo(0, 0)}>Enterprise</Link>
+              <Link href="/services" className={`transition-colors ${location.startsWith('/services') ? 'text-emerald-400' : 'text-white hover:text-gray-300'}`} onClick={() => window.scrollTo(0, 0)}>Services</Link>
+              <Link href="/about" className={`transition-colors ${location === '/about' ? 'text-emerald-400' : 'text-white hover:text-gray-300'}`} onClick={() => window.scrollTo(0, 0)}>About</Link>
+              <Link href="/careers" className={`transition-colors ${location === '/careers' ? 'text-emerald-400' : 'text-white hover:text-gray-300'}`} onClick={() => window.scrollTo(0, 0)}>Careers</Link>
             </div>
           </div>
           
           {/* CTA Button */}
           <div className="hidden md:block">
-            <Link href="/contact" className="bg-gradient-to-r from-blue-600 to-emerald-500 hover:from-blue-700 hover:to-emerald-600 px-6 py-2 rounded-lg font-semibold transition-all duration-300 text-white">
+            <Link href="/contact" className="bg-gradient-to-r from-blue-600 to-emerald-500 hover:from-blue-700 hover:to-emerald-600 px-6 py-2 rounded-lg font-semibold transition-all duration-300 text-white" onClick={() => window.scrollTo(0, 0)}>
               Get Started
             </Link>
           </div>
@@ -68,11 +68,11 @@ export default function Navbar() {
       {isMobileMenuOpen && (
         <div className="md:hidden bg-gray-800 border-t border-gray-700">
           <div className="px-2 pt-2 pb-3 space-y-1 sm:px-3">
-            <Link href="/" className={`block px-3 py-2 rounded-md transition-colors ${location === '/' ? 'text-emerald-400 bg-gray-700' : 'text-white hover:bg-gray-700 hover:text-gray-300'}`}>Home</Link>
-            <Link href="/enterprise" className={`block px-3 py-2 rounded-md transition-colors ${location.startsWith('/enterprise') ? 'text-emerald-400 bg-gray-700' : 'text-white hover:bg-gray-700 hover:text-gray-300'}`}>Enterprise</Link>
-            <Link href="/services" className={`block px-3 py-2 rounded-md transition-colors ${location.startsWith('/services') ? 'text-emerald-400 bg-gray-700' : 'text-white hover:bg-gray-700 hover:text-gray-300'}`}>Services</Link>
-            <Link href="/about" className={`block px-3 py-2 rounded-md transition-colors ${location === '/about' ? 'text-emerald-400 bg-gray-700' : 'text-white hover:bg-gray-700 hover:text-gray-300'}`}>About</Link>
-            <Link href="/careers" className={`block px-3 py-2 rounded-md transition-colors ${location === '/careers' ? 'text-emerald-400 bg-gray-700' : 'text-white hover:bg-gray-700 hover:text-gray-300'}`}>Careers</Link>
+            <Link href="/" className={`block px-3 py-2 rounded-md transition-colors ${location === '/' ? 'text-emerald-400 bg-gray-700' : 'text-white hover:bg-gray-700 hover:text-gray-300'}`} onClick={() => window.scrollTo(0, 0)}>Home</Link>
+            <Link href="/enterprise" className={`block px-3 py-2 rounded-md transition-colors ${location.startsWith('/enterprise') ? 'text-emerald-400 bg-gray-700' : 'text-white hover:bg-gray-700 hover:text-gray-300'}`} onClick={() => window.scrollTo(0, 0)}>Enterprise</Link>
+            <Link href="/services" className={`block px-3 py-2 rounded-md transition-colors ${location.startsWith('/services') ? 'text-emerald-400 bg-gray-700' : 'text-white hover:bg-gray-700 hover:text-gray-300'}`} onClick={() => window.scrollTo(0, 0)}>Services</Link>
+            <Link href="/about" className={`block px-3 py-2 rounded-md transition-colors ${location === '/about' ? 'text-emerald-400 bg-gray-700' : 'text-white hover:bg-gray-700 hover:text-gray-300'}`} onClick={() => window.scrollTo(0, 0)}>About</Link>
+            <Link href="/careers" className={`block px-3 py-2 rounded-md transition-colors ${location === '/careers' ? 'text-emerald-400 bg-gray-700' : 'text-white hover:text-gray-300'}`} onClick={() => window.scrollTo(0, 0)}>Careers</Link>
             <Link href="/contact" className={`block px-3 py-2 rounded-md transition-colors ${location === '/contact' ? 'text-emerald-400 bg-gray-700' : 'text-white hover:bg-gray-700 hover:text-gray-300'}`}>Contact</Link>
           </div>
         </div>
