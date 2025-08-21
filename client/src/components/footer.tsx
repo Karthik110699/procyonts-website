@@ -8,16 +8,15 @@ export default function Footer() {
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="grid md:grid-cols-4 gap-8">
           <div className="space-y-4">
-            <div className="flex items-center relative">
-              {/* Background glow for better contrast */}
-              <div className="absolute inset-0 bg-gradient-to-r from-gray-800/50 via-gray-700/30 to-transparent rounded-lg blur-sm -z-10 scale-110"></div>
-              <div className="relative bg-gradient-to-r from-gray-800/20 to-transparent backdrop-blur-sm rounded-lg px-2 py-1">
-                <img 
-                  src={logoUrl} 
-                  alt="Procyon Technostructure - Customer-Centric Secure Solutions" 
-                  className="h-8 sm:h-10 lg:h-12 w-auto drop-shadow-lg"
-                />
-              </div>
+            <div className="flex items-center relative logo-container">
+              {/* Tagline background - positioned at bottom of logo where red text appears */}
+              <div className="absolute bottom-0 left-0 right-0 h-3 bg-gradient-to-r from-gray-800/70 via-gray-700/50 to-gray-800/70 rounded-sm blur-sm"></div>
+              <div className="absolute bottom-0 left-0 right-0 h-2 bg-gray-800/30 rounded-sm"></div>
+              <img 
+                src={logoUrl} 
+                alt="Procyon Technostructure - Customer-Centric Secure Solutions" 
+                className="h-8 sm:h-10 lg:h-12 w-auto relative z-10"
+              />
             </div>
             <p className="text-gray-400">
               Transforming businesses through innovative technology solutions since 2004.

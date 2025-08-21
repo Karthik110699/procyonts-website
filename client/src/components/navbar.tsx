@@ -25,16 +25,15 @@ export default function Navbar() {
         <div className="flex justify-between items-center h-16">
           {/* Logo */}
           <Link href="/" className="flex-shrink-0">
-            <div className="flex items-center relative">
-              {/* Background glow for better contrast */}
-              <div className="absolute inset-0 bg-gradient-to-r from-gray-900/60 via-gray-800/40 to-transparent rounded-lg blur-sm -z-10 scale-110"></div>
-              <div className="relative bg-gradient-to-r from-gray-900/30 to-transparent backdrop-blur-sm rounded-lg px-2 py-1">
-                <img 
-                  src={logoUrl} 
-                  alt="Procyon Technostructure - Customer-Centric Secure Solutions" 
-                  className="h-8 sm:h-10 lg:h-12 w-auto drop-shadow-lg"
-                />
-              </div>
+            <div className="flex items-center relative logo-container">
+              {/* Tagline background - positioned at bottom of logo where red text appears */}
+              <div className="absolute bottom-0 left-0 right-0 h-3 bg-gradient-to-r from-gray-900/80 via-gray-800/60 to-gray-900/80 rounded-sm blur-sm"></div>
+              <div className="absolute bottom-0 left-0 right-0 h-2 bg-gray-900/40 rounded-sm"></div>
+              <img 
+                src={logoUrl} 
+                alt="Procyon Technostructure - Customer-Centric Secure Solutions" 
+                className="h-8 sm:h-10 lg:h-12 w-auto relative z-10"
+              />
             </div>
           </Link>
           

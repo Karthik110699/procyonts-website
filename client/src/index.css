@@ -1312,4 +1312,32 @@
     overflow: hidden;
     animation: typing 3.5s steps(40, end), blink-caret 0.75s step-end infinite;
   }
+
+  /* Logo tagline background enhancement */
+  .logo-container {
+    /* Fine-tune the background positioning for different logo sizes */
+  }
+
+  .logo-container img {
+    filter: drop-shadow(0 2px 4px rgba(0,0,0,0.3));
+  }
+
+  /* Responsive tagline background adjustments */
+  @media (min-width: 640px) {
+    .logo-container .absolute.bottom-0.h-3 {
+      height: 0.875rem; /* Slightly larger for sm screens */
+    }
+    .logo-container .absolute.bottom-0.h-2 {
+      height: 0.625rem;
+    }
+  }
+
+  @media (min-width: 1024px) {
+    .logo-container .absolute.bottom-0.h-3 {
+      height: 1rem; /* Even larger for lg screens */
+    }
+    .logo-container .absolute.bottom-0.h-2 {
+      height: 0.75rem;
+    }
+  }
 }
