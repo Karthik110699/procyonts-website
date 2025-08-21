@@ -3,9 +3,42 @@ import { Link } from "wouter";
 import Navbar from "@/components/navbar";
 import { useScrollReveal } from "@/hooks/use-scroll-reveal";
 import SEOHead, { organizationSchema } from "@/components/seo-head";
+import { useState, useEffect } from "react";
 
 export default function EnterprisePage() {
   useScrollReveal();
+  const [showRemainingData, setShowRemainingData] = useState(false);
+  const [hasUserScrolled, setHasUserScrolled] = useState(false);
+
+  useEffect(() => {
+    let scrollTimer: NodeJS.Timeout;
+    let isScrolling = false;
+
+    const handleScroll = () => {
+      setHasUserScrolled(true);
+      isScrolling = true;
+      clearTimeout(scrollTimer);
+      
+      scrollTimer = setTimeout(() => {
+        isScrolling = false;
+      }, 150);
+    };
+
+    // Auto-load remaining data after 1 second if no scrolling
+    const autoLoadTimer = setTimeout(() => {
+      if (!hasUserScrolled && !isScrolling) {
+        setShowRemainingData(true);
+      }
+    }, 1000);
+
+    window.addEventListener('scroll', handleScroll);
+
+    return () => {
+      window.removeEventListener('scroll', handleScroll);
+      clearTimeout(autoLoadTimer);
+      clearTimeout(scrollTimer);
+    };
+  }, [hasUserScrolled]);
 
   const enterpriseStructuredData = {
     "@context": "https://schema.org",
@@ -163,6 +196,78 @@ export default function EnterprisePage() {
             </div>
           </div>
           
+          {/* Auto-Loading Additional Content */}
+          <div className={`transition-all duration-1000 transform ${showRemainingData ? 'opacity-100 translate-y-0' : 'opacity-0 translate-y-8'}`}>
+            {/* Enterprise Benefits */}
+            <div className="mt-20 mb-16">
+              <h2 className="text-4xl font-bold text-center mb-12">Why Choose Procyon for Enterprise Solutions?</h2>
+              <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-8">
+                <div className="text-center">
+                  <div className="w-16 h-16 bg-blue-500/20 rounded-xl flex items-center justify-center mb-4 mx-auto">
+                    <span className="text-2xl font-bold text-blue-400">250+</span>
+                  </div>
+                  <h3 className="text-xl font-semibold mb-2">Certified Experts</h3>
+                  <p className="text-gray-300">Enterprise-grade consultants with proven track records</p>
+                </div>
+                <div className="text-center">
+                  <div className="w-16 h-16 bg-emerald-500/20 rounded-xl flex items-center justify-center mb-4 mx-auto">
+                    <span className="text-2xl font-bold text-emerald-400">1200+</span>
+                  </div>
+                  <h3 className="text-xl font-semibold mb-2">Successful Projects</h3>
+                  <p className="text-gray-300">Enterprise implementations delivered on time</p>
+                </div>
+                <div className="text-center">
+                  <div className="w-16 h-16 bg-purple-500/20 rounded-xl flex items-center justify-center mb-4 mx-auto">
+                    <span className="text-2xl font-bold text-purple-400">20+</span>
+                  </div>
+                  <h3 className="text-xl font-semibold mb-2">Years Experience</h3>
+                  <p className="text-gray-300">Deep enterprise technology expertise since 2004</p>
+                </div>
+                <div className="text-center">
+                  <div className="w-16 h-16 bg-cyan-500/20 rounded-xl flex items-center justify-center mb-4 mx-auto">
+                    <span className="text-2xl font-bold text-cyan-400">99.8%</span>
+                  </div>
+                  <h3 className="text-xl font-semibold mb-2">Success Rate</h3>
+                  <p className="text-gray-300">Enterprise projects delivered successfully</p>
+                </div>
+              </div>
+            </div>
+
+            {/* Implementation Methodology */}
+            <div className="mb-20">
+              <h2 className="text-4xl font-bold text-center mb-12">Our Enterprise Implementation Methodology</h2>
+              <div className="grid md:grid-cols-3 gap-8">
+                <div className="conic-border bg-gradient-to-br from-gray-800 to-gray-900 p-6 rounded-xl border border-gray-700">
+                  <div className="flex items-center mb-4">
+                    <div className="w-8 h-8 bg-blue-500/20 rounded-full flex items-center justify-center mr-3">
+                      <span className="text-blue-400 font-bold">1</span>
+                    </div>
+                    <h3 className="text-xl font-semibold">Discovery & Analysis</h3>
+                  </div>
+                  <p className="text-gray-300">Comprehensive assessment of current systems, processes, and business requirements</p>
+                </div>
+                <div className="conic-border bg-gradient-to-br from-gray-800 to-gray-900 p-6 rounded-xl border border-gray-700">
+                  <div className="flex items-center mb-4">
+                    <div className="w-8 h-8 bg-emerald-500/20 rounded-full flex items-center justify-center mr-3">
+                      <span className="text-emerald-400 font-bold">2</span>
+                    </div>
+                    <h3 className="text-xl font-semibold">Strategic Planning</h3>
+                  </div>
+                  <p className="text-gray-300">Detailed roadmap with milestones, timeline, and resource allocation for seamless execution</p>
+                </div>
+                <div className="conic-border bg-gradient-to-br from-gray-800 to-gray-900 p-6 rounded-xl border border-gray-700">
+                  <div className="flex items-center mb-4">
+                    <div className="w-8 h-8 bg-purple-500/20 rounded-full flex items-center justify-center mr-3">
+                      <span className="text-purple-400 font-bold">3</span>
+                    </div>
+                    <h3 className="text-xl font-semibold">Deployment & Support</h3>
+                  </div>
+                  <p className="text-gray-300">Expert implementation with ongoing support, training, and optimization services</p>
+                </div>
+              </div>
+            </div>
+          </div>
+
           {/* CTA Section */}
           <div className="text-center mt-20">
             <h2 className="text-4xl font-bold mb-6">Ready to Transform Your Enterprise?</h2>

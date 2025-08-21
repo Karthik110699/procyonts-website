@@ -3,9 +3,42 @@ import { Link } from "wouter";
 import Navbar from "@/components/navbar";
 import { useScrollReveal } from "@/hooks/use-scroll-reveal";
 import SEOHead, { serviceSchema } from "@/components/seo-head";
+import { useState, useEffect } from "react";
 
 export default function ServicesPage() {
   useScrollReveal();
+  const [showRemainingData, setShowRemainingData] = useState(false);
+  const [hasUserScrolled, setHasUserScrolled] = useState(false);
+
+  useEffect(() => {
+    let scrollTimer: NodeJS.Timeout;
+    let isScrolling = false;
+
+    const handleScroll = () => {
+      setHasUserScrolled(true);
+      isScrolling = true;
+      clearTimeout(scrollTimer);
+      
+      scrollTimer = setTimeout(() => {
+        isScrolling = false;
+      }, 150);
+    };
+
+    // Auto-load remaining data after 1 second if no scrolling
+    const autoLoadTimer = setTimeout(() => {
+      if (!hasUserScrolled && !isScrolling) {
+        setShowRemainingData(true);
+      }
+    }, 1000);
+
+    window.addEventListener('scroll', handleScroll);
+
+    return () => {
+      window.removeEventListener('scroll', handleScroll);
+      clearTimeout(autoLoadTimer);
+      clearTimeout(scrollTimer);
+    };
+  }, [hasUserScrolled]);
 
   const servicesStructuredData = {
     "@context": "https://schema.org",
@@ -205,6 +238,120 @@ export default function ServicesPage() {
             <Link href="/contact" className="inline-block bg-gradient-to-r from-blue-600 to-emerald-600 px-8 py-4 rounded-lg font-semibold text-lg hover:scale-105 transition-transform">
               Discuss Your Project
             </Link>
+          </div>
+        </div>
+
+        {/* Auto-Loading Additional Content */}
+        <div className={`transition-all duration-1000 transform ${showRemainingData ? 'opacity-100 translate-y-0' : 'opacity-0 translate-y-8'}`}>
+          {/* Service Delivery Process */}
+          <div className="py-20">
+            <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+              <h2 className="text-4xl font-bold text-center mb-12">Our Service Delivery Process</h2>
+              <div className="grid md:grid-cols-4 gap-8">
+                <div className="text-center">
+                  <div className="w-16 h-16 bg-blue-500/20 rounded-xl flex items-center justify-center mb-6 mx-auto">
+                    <span className="text-3xl font-bold text-blue-400">1</span>
+                  </div>
+                  <h3 className="text-xl font-bold mb-4">Consultation</h3>
+                  <p className="text-gray-300">Deep dive into your business needs and technical requirements</p>
+                </div>
+                <div className="text-center">
+                  <div className="w-16 h-16 bg-emerald-500/20 rounded-xl flex items-center justify-center mb-6 mx-auto">
+                    <span className="text-3xl font-bold text-emerald-400">2</span>
+                  </div>
+                  <h3 className="text-xl font-bold mb-4">Strategy</h3>
+                  <p className="text-gray-300">Custom solution design aligned with your business objectives</p>
+                </div>
+                <div className="text-center">
+                  <div className="w-16 h-16 bg-purple-500/20 rounded-xl flex items-center justify-center mb-6 mx-auto">
+                    <span className="text-3xl font-bold text-purple-400">3</span>
+                  </div>
+                  <h3 className="text-xl font-bold mb-4">Implementation</h3>
+                  <p className="text-gray-300">Expert execution with continuous monitoring and optimization</p>
+                </div>
+                <div className="text-center">
+                  <div className="w-16 h-16 bg-amber-500/20 rounded-xl flex items-center justify-center mb-6 mx-auto">
+                    <span className="text-3xl font-bold text-amber-400">4</span>
+                  </div>
+                  <h3 className="text-xl font-bold mb-4">Support</h3>
+                  <p className="text-gray-300">Ongoing maintenance, training, and strategic guidance</p>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          {/* Technology Stack */}
+          <div className="py-20 bg-gradient-to-r from-gray-900 to-procyon-dark">
+            <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+              <h2 className="text-4xl font-bold text-center mb-12">Our Technology Expertise</h2>
+              <div className="grid md:grid-cols-3 lg:grid-cols-6 gap-8">
+                <div className="text-center">
+                  <div className="w-16 h-16 bg-blue-500/20 rounded-xl flex items-center justify-center mb-4 mx-auto">
+                    <span className="text-lg font-bold text-blue-400">AWS</span>
+                  </div>
+                  <p className="text-gray-300 text-sm">Amazon Web Services</p>
+                </div>
+                <div className="text-center">
+                  <div className="w-16 h-16 bg-blue-500/20 rounded-xl flex items-center justify-center mb-4 mx-auto">
+                    <span className="text-lg font-bold text-blue-400">Azure</span>
+                  </div>
+                  <p className="text-gray-300 text-sm">Microsoft Azure</p>
+                </div>
+                <div className="text-center">
+                  <div className="w-16 h-16 bg-red-500/20 rounded-xl flex items-center justify-center mb-4 mx-auto">
+                    <span className="text-lg font-bold text-red-400">GCP</span>
+                  </div>
+                  <p className="text-gray-300 text-sm">Google Cloud</p>
+                </div>
+                <div className="text-center">
+                  <div className="w-16 h-16 bg-green-500/20 rounded-xl flex items-center justify-center mb-4 mx-auto">
+                    <span className="text-lg font-bold text-green-400">AI/ML</span>
+                  </div>
+                  <p className="text-gray-300 text-sm">Machine Learning</p>
+                </div>
+                <div className="text-center">
+                  <div className="w-16 h-16 bg-purple-500/20 rounded-xl flex items-center justify-center mb-4 mx-auto">
+                    <span className="text-lg font-bold text-purple-400">K8s</span>
+                  </div>
+                  <p className="text-gray-300 text-sm">Kubernetes</p>
+                </div>
+                <div className="text-center">
+                  <div className="w-16 h-16 bg-orange-500/20 rounded-xl flex items-center justify-center mb-4 mx-auto">
+                    <span className="text-lg font-bold text-orange-400">DevOps</span>
+                  </div>
+                  <p className="text-gray-300 text-sm">CI/CD Pipeline</p>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          {/* Service Metrics */}
+          <div className="py-20">
+            <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+              <h2 className="text-4xl font-bold text-center mb-12">Service Excellence Metrics</h2>
+              <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-8">
+                <div className="text-center">
+                  <div className="text-5xl font-bold text-blue-400 mb-4">500+</div>
+                  <h3 className="text-xl font-semibold mb-2">Cloud Migrations</h3>
+                  <p className="text-gray-300">Successfully completed cloud transformations</p>
+                </div>
+                <div className="text-center">
+                  <div className="text-5xl font-bold text-emerald-400 mb-4">95%</div>
+                  <h3 className="text-xl font-semibold mb-2">Client Retention</h3>
+                  <p className="text-gray-300">Long-term partnerships with satisfied clients</p>
+                </div>
+                <div className="text-center">
+                  <div className="text-5xl font-bold text-purple-400 mb-4">24/7</div>
+                  <h3 className="text-xl font-semibold mb-2">Support Coverage</h3>
+                  <p className="text-gray-300">Round-the-clock technical assistance</p>
+                </div>
+                <div className="text-center">
+                  <div className="text-5xl font-bold text-amber-400 mb-4">48h</div>
+                  <h3 className="text-xl font-semibold mb-2">Response Time</h3>
+                  <p className="text-gray-300">Average issue resolution timeframe</p>
+                </div>
+              </div>
+            </div>
           </div>
         </div>
       </section>
