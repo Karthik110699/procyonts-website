@@ -7,14 +7,18 @@ export function useScrollReveal() {
     let scrollVelocity = 0;
     let ticking = false;
 
+    // Different settings for Enterprise/Services vs other pages
+    const currentPath = window.location.pathname;
+    const isEnterpriseOrServicesPage = currentPath.startsWith('/enterprise') || currentPath.startsWith('/services');
+    
     const observerOptions = {
-      threshold: 0.01, // Much lower threshold to trigger earlier
-      rootMargin: '300px 0px 300px 0px' // Large margins to trigger before elements are visible
+      threshold: isEnterpriseOrServicesPage ? 0.01 : 0.15, // Lower threshold only for target pages
+      rootMargin: isEnterpriseOrServicesPage ? '300px 0px 300px 0px' : '0px 0px -80px 0px'
     };
 
     const zoomObserverOptions = {
-      threshold: [0.01, 0.05, 0.15, 0.25, 0.35, 0.5, 0.65, 0.8, 0.95],
-      rootMargin: '400px 0px 400px 0px' // Extra large margins for early activation
+      threshold: isEnterpriseOrServicesPage ? [0.01, 0.05, 0.15, 0.25, 0.35, 0.5, 0.65, 0.8, 0.95] : [0.05, 0.15, 0.25, 0.35, 0.5, 0.65, 0.8, 0.95],
+      rootMargin: isEnterpriseOrServicesPage ? '400px 0px 400px 0px' : '0px 0px -50px 0px'
     };
 
     // Track scroll direction and velocity for smoother transitions
@@ -121,25 +125,28 @@ export function useScrollReveal() {
       });
     });
 
-    // Auto-activate elements that are already in viewport or near it
-    setTimeout(() => {
-      const viewportHeight = window.innerHeight;
-      const scrollTop = window.scrollY;
-      
-      [...allElements, ...zoomElements].forEach(el => {
-        const rect = el.getBoundingClientRect();
-        const elementTop = rect.top + scrollTop;
+    // Auto-activate elements only on Enterprise and Services pages
+    
+    if (isEnterpriseOrServicesPage) {
+      setTimeout(() => {
+        const viewportHeight = window.innerHeight;
+        const scrollTop = window.scrollY;
         
-        // If element is within 150% of viewport height from current scroll position, activate it
-        if (elementTop <= scrollTop + (viewportHeight * 1.5)) {
-          const delay = parseInt(el.getAttribute('data-delay') || '0');
-          setTimeout(() => {
-            el.classList.add('active');
-            el.classList.remove('reverse');
-          }, delay);
-        }
-      });
-    }, 100); // Small delay to ensure all elements are rendered
+        [...allElements, ...zoomElements].forEach(el => {
+          const rect = el.getBoundingClientRect();
+          const elementTop = rect.top + scrollTop;
+          
+          // If element is within 150% of viewport height from current scroll position, activate it
+          if (elementTop <= scrollTop + (viewportHeight * 1.5)) {
+            const delay = parseInt(el.getAttribute('data-delay') || '0');
+            setTimeout(() => {
+              el.classList.add('active');
+              el.classList.remove('reverse');
+            }, delay);
+          }
+        });
+      }, 100); // Small delay to ensure all elements are rendered
+    }
 
     return () => {
       window.removeEventListener('scroll', updateScrollDirection);
