@@ -1313,31 +1313,54 @@
     animation: typing 3.5s steps(40, end), blink-caret 0.75s step-end infinite;
   }
 
-  /* Logo tagline background enhancement */
+  /* Logo tagline background enhancement - only behind red text */
   .logo-container {
-    /* Fine-tune the background positioning for different logo sizes */
+    /* Precise positioning for red tagline text only */
   }
 
-  .logo-container img {
-    filter: drop-shadow(0 2px 4px rgba(0,0,0,0.3));
+  .procyon-logo {
+    filter: drop-shadow(0 2px 4px rgba(0,0,0,0.3)) 
+            hue-rotate(0deg) 
+            saturate(1.2) 
+            brightness(1.1);
+    /* Add subtle branding gradient enhancement */
+    position: relative;
   }
 
-  /* Responsive tagline background adjustments */
+  .procyon-logo::after {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: linear-gradient(135deg, 
+      transparent 0%, 
+      rgba(16, 185, 129, 0.05) 20%, 
+      rgba(59, 130, 246, 0.05) 50%, 
+      rgba(139, 92, 246, 0.05) 80%, 
+      transparent 100%);
+    border-radius: 4px;
+    pointer-events: none;
+    z-index: 1;
+  }
+
+  /* Responsive tagline background adjustments - smaller, precise coverage */
   @media (min-width: 640px) {
-    .logo-container .absolute.bottom-0.h-3 {
-      height: 0.875rem; /* Slightly larger for sm screens */
+    .logo-container .absolute.bottom-0.h-1\.5 {
+      height: 0.5rem; /* Precise height for tagline text */
     }
-    .logo-container .absolute.bottom-0.h-2 {
-      height: 0.625rem;
+    .logo-container .absolute.bottom-0.h-1 {
+      height: 0.375rem;
     }
   }
 
   @media (min-width: 1024px) {
-    .logo-container .absolute.bottom-0.h-3 {
-      height: 1rem; /* Even larger for lg screens */
+    .logo-container .absolute.bottom-0.h-1\.5 {
+      height: 0.625rem; /* Slightly larger for lg screens */
     }
-    .logo-container .absolute.bottom-0.h-2 {
-      height: 0.75rem;
+    .logo-container .absolute.bottom-0.h-1 {
+      height: 0.5rem;
     }
   }
 }
