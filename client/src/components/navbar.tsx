@@ -26,13 +26,12 @@ export default function Navbar() {
           {/* Logo */}
           <Link href="/" className="flex-shrink-0">
             <div className="flex items-center relative logo-container">
-              {/* Red tagline background - precisely positioned behind red text only */}
-              <div className="absolute bottom-0 left-4 right-4 h-1.5 bg-gradient-to-r from-gray-900/90 via-gray-800/70 to-gray-900/90 rounded-sm blur-sm"></div>
-              <div className="absolute bottom-0 left-4 right-4 h-1 bg-gray-900/50 rounded-sm"></div>
+              {/* Minimal background only behind red tagline text */}
+              <div className="absolute bottom-0.5 left-6 right-6 h-0.5 bg-gray-900/80 rounded-full blur-[1px]"></div>
               <img 
                 src={logoUrl} 
                 alt="Procyon Technostructure - Customer-Centric Secure Solutions" 
-                className="h-8 sm:h-10 lg:h-12 w-auto relative z-10 procyon-logo"
+                className="h-8 sm:h-10 lg:h-12 w-auto relative z-10 procyon-branding"
               />
             </div>
           </Link>

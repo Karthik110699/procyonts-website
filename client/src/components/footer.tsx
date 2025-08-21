@@ -9,13 +9,12 @@ export default function Footer() {
         <div className="grid md:grid-cols-4 gap-8">
           <div className="space-y-4">
             <div className="flex items-center relative logo-container">
-              {/* Red tagline background - precisely positioned behind red text only */}
-              <div className="absolute bottom-0 left-4 right-4 h-1.5 bg-gradient-to-r from-gray-800/80 via-gray-700/60 to-gray-800/80 rounded-sm blur-sm"></div>
-              <div className="absolute bottom-0 left-4 right-4 h-1 bg-gray-800/40 rounded-sm"></div>
+              {/* Minimal background only behind red tagline text */}
+              <div className="absolute bottom-0.5 left-6 right-6 h-0.5 bg-gray-800/70 rounded-full blur-[1px]"></div>
               <img 
                 src={logoUrl} 
                 alt="Procyon Technostructure - Customer-Centric Secure Solutions" 
-                className="h-8 sm:h-10 lg:h-12 w-auto relative z-10 procyon-logo"
+                className="h-8 sm:h-10 lg:h-12 w-auto relative z-10 procyon-branding"
               />
             </div>
             <p className="text-gray-400">
