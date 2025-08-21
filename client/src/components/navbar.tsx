@@ -1,7 +1,7 @@
 import { useState, useEffect } from "react";
 import { Link, useLocation } from "wouter";
 import { Menu, X } from "lucide-react";
-import logoUrl from "@assets/logo (1)_1755251811111.png";
+import logoUrl from "../assets/procyon-logo.png";
 
 export default function Navbar() {
   const [isScrolled, setIsScrolled] = useState(false);
@@ -25,13 +25,11 @@ export default function Navbar() {
         <div className="flex justify-between items-center h-16">
           {/* Logo */}
           <Link href="/" className="flex-shrink-0">
-            <div className="flex items-center relative logo-container">
-              {/* Minimal background only behind red tagline text */}
-              <div className="absolute bottom-0.5 left-6 right-6 h-0.5 bg-gray-900/80 rounded-full blur-[1px]"></div>
+            <div className="flex items-center">
               <img 
                 src={logoUrl} 
-                alt="Procyon Technostructure - Customer-Centric Secure Solutions" 
-                className="h-8 sm:h-10 lg:h-12 w-auto relative z-10 procyon-branding"
+                alt="Procyon Technostructure" 
+                className="h-8 sm:h-10 lg:h-12 w-auto"
               />
             </div>
           </Link>

@@ -1,6 +1,6 @@
 import { Facebook, Linkedin, Twitter } from "lucide-react";
 import { Link } from "wouter";
-import logoUrl from "@assets/logo (1)_1755251811111.png";
+import logoUrl from "../assets/procyon-logo.png";
 
 export default function Footer() {
   return (
@@ -8,13 +8,11 @@ export default function Footer() {
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="grid md:grid-cols-4 gap-8">
           <div className="space-y-4">
-            <div className="flex items-center relative logo-container">
-              {/* Minimal background only behind red tagline text */}
-              <div className="absolute bottom-0.5 left-6 right-6 h-0.5 bg-gray-800/70 rounded-full blur-[1px]"></div>
+            <div className="flex items-center">
               <img 
                 src={logoUrl} 
-                alt="Procyon Technostructure - Customer-Centric Secure Solutions" 
-                className="h-8 sm:h-10 lg:h-12 w-auto relative z-10 procyon-branding"
+                alt="Procyon Technostructure" 
+                className="h-8 sm:h-10 lg:h-12 w-auto"
               />
             </div>
             <p className="text-gray-400">
