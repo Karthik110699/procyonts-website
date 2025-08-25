@@ -145,7 +145,7 @@ export default function ServicesPage() {
             </div>
 
             {/* Staff Augmentation */}
-            <div id="staff-augmentation" className="conic-border bg-gradient-to-br from-gray-800 to-gray-900 p-8 rounded-2xl border border-gray-700 hover:border-pink-500 cursor-pointer transition-all duration-300">
+            <div id="staff-augmentation" className="group floating-card conic-border bg-gradient-to-br from-gray-800 to-gray-900 p-8 rounded-2xl border border-gray-700 hover:border-pink-500 cursor-pointer transition-all duration-300 reveal-fade" data-delay="400" onClick={() => {window.scrollTo(0, 0); window.location.href = '/services/staff-augmentation';}}>
               <div className="w-16 h-16 bg-pink-500/20 rounded-xl flex items-center justify-center mb-6 relative z-10">
                 <Users className="w-8 h-8 text-pink-400" />
               </div>
@@ -162,7 +162,7 @@ export default function ServicesPage() {
             </div>
 
             {/* Government Solutions */}
-            <div id="government-solutions" className="conic-border bg-gradient-to-br from-gray-800 to-gray-900 p-8 rounded-2xl border border-gray-700 hover:border-red-500 cursor-pointer transition-all duration-300">
+            <div id="government-solutions" className="group floating-card conic-border bg-gradient-to-br from-gray-800 to-gray-900 p-8 rounded-2xl border border-gray-700 hover:border-red-500 cursor-pointer transition-all duration-300 reveal-fade" data-delay="500" onClick={() => {window.scrollTo(0, 0); window.location.href = '/services/government-solutions';}}>
               <div className="w-16 h-16 bg-red-500/20 rounded-xl flex items-center justify-center mb-6 relative z-10">
                 <Building className="w-8 h-8 text-red-400" />
               </div>
@@ -179,7 +179,7 @@ export default function ServicesPage() {
             </div>
 
             {/* Digital Engineering */}
-            <div className="conic-border bg-gradient-to-br from-gray-800 to-gray-900 p-8 rounded-2xl border border-gray-700 hover:border-indigo-500 cursor-pointer transition-all duration-300">
+            <div className="group floating-card conic-border bg-gradient-to-br from-gray-800 to-gray-900 p-8 rounded-2xl border border-gray-700 hover:border-indigo-500 cursor-pointer transition-all duration-300 reveal-fade" data-delay="600" onClick={() => {window.scrollTo(0, 0); window.location.href = '/services/digital-engineering';}}>
               <div className="w-16 h-16 bg-indigo-500/20 rounded-xl flex items-center justify-center mb-6 relative z-10">
                 <Cog className="w-8 h-8 text-indigo-400" />
               </div>
