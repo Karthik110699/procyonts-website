@@ -21,6 +21,7 @@ import AIMLPage from "@/pages/services/ai-ml";
 import DataAnalyticsPage from "@/pages/services/data-analytics";
 import GovernmentPage from "@/pages/services/government";
 import StaffAugmentationPage from "@/pages/services/staff-augmentation";
+import DigitalEngineeringPage from "@/pages/services/digital-engineering";
 import PrivacyPolicy from "@/pages/privacy-policy";
 import LoadingScreen from "@/components/loading-screen";
 
@@ -45,6 +46,7 @@ function Router() {
       <Route path="/services/data-analytics" component={DataAnalyticsPage} />
       <Route path="/services/government" component={GovernmentPage} />
       <Route path="/services/staff-augmentation" component={StaffAugmentationPage} />
+      <Route path="/services/digital-engineering" component={DigitalEngineeringPage} />
       <Route path="/about" component={About} />
       <Route path="/careers" component={Careers} />
       <Route path="/contact" component={Contact} />
