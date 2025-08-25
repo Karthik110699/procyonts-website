@@ -129,23 +129,15 @@ export function useScrollReveal() {
     
     if (isEnterpriseOrServicesPage) {
       setTimeout(() => {
-        const viewportHeight = window.innerHeight;
-        const scrollTop = window.scrollY;
-        
+        // Activate ALL elements on Enterprise and Services pages immediately
         [...allElements, ...zoomElements].forEach(el => {
-          const rect = el.getBoundingClientRect();
-          const elementTop = rect.top + scrollTop;
-          
-          // If element is within 150% of viewport height from current scroll position, activate it
-          if (elementTop <= scrollTop + (viewportHeight * 1.5)) {
-            const delay = parseInt(el.getAttribute('data-delay') || '0');
-            setTimeout(() => {
-              el.classList.add('active');
-              el.classList.remove('reverse');
-            }, delay);
-          }
+          const delay = parseInt(el.getAttribute('data-delay') || '0');
+          setTimeout(() => {
+            el.classList.add('active');
+            el.classList.remove('reverse', 'zoom-out');
+          }, delay);
         });
-      }, 100); // Small delay to ensure all elements are rendered
+      }, 50); // Minimal delay to ensure all elements are rendered
     }
 
     return () => {
