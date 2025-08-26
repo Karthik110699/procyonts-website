@@ -1,7 +1,7 @@
 import { useState, useEffect } from "react";
 import { Link, useLocation } from "wouter";
 import { Menu, X } from "lucide-react";
-import logoUrl from "../assets/procyon-logo.png";
+import logoUrl from "../assets/procyon-logo-new.png";
 
 export default function Navbar() {
   const [isScrolled, setIsScrolled] = useState(false);
@@ -29,7 +29,7 @@ export default function Navbar() {
               <img 
                 src={logoUrl} 
                 alt="Procyon Technostructure" 
-                className="h-8 sm:h-10 lg:h-12 w-auto"
+                className="h-8 sm:h-10 lg:h-12 w-auto logo-glow"
               />
             </div>
           </Link>

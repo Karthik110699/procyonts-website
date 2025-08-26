@@ -1,6 +1,6 @@
 import { Facebook, Linkedin, Twitter } from "lucide-react";
 import { Link } from "wouter";
-import logoUrl from "../assets/procyon-logo.png";
+import logoUrl from "../assets/procyon-logo-new.png";
 
 export default function Footer() {
   return (
@@ -12,7 +12,7 @@ export default function Footer() {
               <img 
                 src={logoUrl} 
                 alt="Procyon Technostructure" 
-                className="h-8 sm:h-10 lg:h-12 w-auto"
+                className="h-8 sm:h-10 lg:h-12 w-auto logo-glow"
               />
             </div>
             <p className="text-gray-400">

@@ -1,5 +1,5 @@
 import { useEffect } from "react";
-import procyonLogo from "@assets/logo (1)_1755251811111.png";
+import procyonLogo from "@assets/logo (1)_1756199603016.png";
 
 export default function LoadingScreen() {
   useEffect(() => {
@@ -63,7 +63,7 @@ export default function LoadingScreen() {
             <img 
               src={procyonLogo} 
               alt="Procyon Technostructure" 
-              className="h-16 mx-auto magdemy-logo-fade"
+              className="h-16 mx-auto magdemy-logo-fade logo-glow"
             />
           </div>
         </div>
