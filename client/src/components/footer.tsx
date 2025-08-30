@@ -44,7 +44,7 @@ export default function Footer() {
           <div>
             <h3 className="text-lg font-semibold mb-4">Enterprise</h3>
             <ul className="space-y-2 text-gray-400">
-              <li><Link href="/enterprise/salesforce" className="hover:text-white transition-colors" onClick={() => window.scrollTo(0, 0)}>SalesForce</Link></li>
+              <li><Link href="/enterprise/salesforce" className="hover:text-white transition-colors" onClick={() => window.scrollTo(0, 0)}>Salesforce</Link></li>
               <li><Link href="/enterprise/servicenow" className="hover:text-white transition-colors" onClick={() => window.scrollTo(0, 0)}>ServiceNow</Link></li>
               <li><Link href="/enterprise/sap" className="hover:text-white transition-colors" onClick={() => window.scrollTo(0, 0)}>SAP</Link></li>
               <li><Link href="/services/government" className="hover:text-white transition-colors" onClick={() => window.scrollTo(0, 0)}>Government Solutions</Link></li>

@@ -37,8 +37,8 @@ export default function CareersPage() {
     <>
       <SEOHead
         title="Careers at Procyon Technostructure - Join Our Expert Technology Team"
-        description="Join Procyon's team of 250+ technology experts. Explore career opportunities in ServiceNow, SalesForce, SAP, cloud transformation, AI/ML, and digital engineering. Competitive benefits, remote work, growth opportunities."
-        keywords="Procyon careers, technology jobs, ServiceNow careers, SalesForce jobs, SAP consultant, cloud engineer, AI ML engineer, digital transformation careers, remote work, tech consulting jobs"
+        description="Join Procyon's team of 250+ technology experts. Explore career opportunities in ServiceNow, Salesforce, SAP, cloud transformation, AI/ML, and digital engineering. Competitive benefits, remote work, growth opportunities."
+        keywords="Procyon careers, technology jobs, ServiceNow careers, Salesforce jobs, SAP consultant, cloud engineer, AI ML engineer, digital transformation careers, remote work, tech consulting jobs"
         canonicalUrl="https://procyon-technostructure.com/careers"
         ogTitle="Join Procyon's Technology Team - Career Opportunities"
         ogDescription="Build your career with leading enterprise technology experts. 250+ team members, competitive benefits, cutting-edge projects."

@@ -19,12 +19,12 @@ export default function ServicesSection() {
         <div className="mb-16">
           <h3 className="text-3xl font-bold text-center mb-12 text-blue-400 reveal-scale" data-delay="150">Enterprise Solutions</h3>
           <div className="grid md:grid-cols-3 gap-8 mb-8">
-            {/* SalesForce */}
+            {/* Salesforce */}
             <div className="group floating-card conic-border bg-gradient-to-br from-gray-800 to-gray-900 p-8 rounded-2xl border border-gray-700 hover:border-blue-500 reveal-slide-left stagger-delay-1 cursor-pointer transition-all duration-300" data-delay="200" onClick={() => {window.scrollTo(0, 0); window.location.href = '/enterprise/salesforce';}}>
               <div className="w-16 h-16 bg-blue-500/20 rounded-xl flex items-center justify-center mb-6 group-hover:bg-blue-500/30 transition-colors relative z-10">
                 <Cloud className="w-8 h-8 text-blue-400" />
               </div>
-              <h4 className="text-2xl font-bold mb-4 relative z-10">SalesForce</h4>
+              <h4 className="text-2xl font-bold mb-4 relative z-10">Salesforce</h4>
               <p className="text-gray-300 mb-6 relative z-10">AI-driven Salesforce solutions for tomorrow's enterprises. Transform customer relationships with intelligent automation.</p>
             </div>
 

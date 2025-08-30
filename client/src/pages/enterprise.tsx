@@ -11,7 +11,7 @@ export default function EnterprisePage() {
     "@context": "https://schema.org",
     "@type": "WebPage",
     "name": "Enterprise Solutions - Procyon Technostructure",
-    "description": "Enterprise-grade ServiceNow, SalesForce, and SAP solutions. Expert implementation, optimization, and support for large-scale digital transformation.",
+    "description": "Enterprise-grade ServiceNow, Salesforce, and SAP solutions. Expert implementation, optimization, and support for large-scale digital transformation.",
     "url": "https://procyon-technostructure.com/enterprise",
     "mainEntity": organizationSchema,
     "breadcrumb": {
@@ -36,12 +36,12 @@ export default function EnterprisePage() {
   return (
     <>
       <SEOHead
-        title="Enterprise Solutions - ServiceNow, SalesForce, SAP | Procyon Technostructure"
-        description="Enterprise-grade ServiceNow, SalesForce, and SAP solutions. Expert implementation, optimization, and support for large-scale digital transformation with 1200+ successful projects."
-        keywords="enterprise solutions, ServiceNow implementation, SalesForce enterprise, SAP consulting, digital transformation, enterprise software, business automation, IT service management, CRM solutions"
+        title="Enterprise Solutions - ServiceNow, Salesforce, SAP | Procyon Technostructure"
+        description="Enterprise-grade ServiceNow, Salesforce, and SAP solutions. Expert implementation, optimization, and support for large-scale digital transformation with 1200+ successful projects."
+        keywords="enterprise solutions, ServiceNow implementation, Salesforce enterprise, SAP consulting, digital transformation, enterprise software, business automation, IT service management, CRM solutions"
         canonicalUrl="https://procyon-technostructure.com/enterprise"
-        ogTitle="Enterprise Solutions - Leading ServiceNow, SalesForce, SAP Implementation"
-        ogDescription="Transform your enterprise with expert ServiceNow, SalesForce, and SAP solutions. 250+ certified consultants, proven methodologies."
+        ogTitle="Enterprise Solutions - Leading ServiceNow, Salesforce, SAP Implementation"
+        ogDescription="Transform your enterprise with expert ServiceNow, Salesforce, and SAP solutions. 250+ certified consultants, proven methodologies."
         structuredData={enterpriseStructuredData}
       />
       
@@ -93,12 +93,12 @@ export default function EnterprisePage() {
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 zoom-section">
           <div className="grid md:grid-cols-3 gap-12">
             
-            {/* SalesForce */}
+            {/* Salesforce */}
             <div className="group floating-card conic-border bg-gradient-to-br from-gray-800 to-gray-900 p-8 rounded-2xl border border-gray-700 hover:border-blue-500 cursor-pointer transition-all duration-300 reveal-fade" data-delay="100" onClick={() => {window.scrollTo(0, 0); window.location.href = '/enterprise/salesforce';}}>
               <div className="w-20 h-20 bg-blue-500/20 rounded-xl flex items-center justify-center mb-8 relative z-10">
                 <Cloud className="w-10 h-10 text-blue-400" />
               </div>
-              <h2 className="text-3xl font-bold mb-6 text-blue-400 relative z-10">SalesForce</h2>
+              <h2 className="text-3xl font-bold mb-6 text-blue-400 relative z-10">Salesforce</h2>
               <p className="text-gray-300 mb-8 leading-relaxed relative z-10">
                 AI-driven Salesforce solutions for tomorrow's enterprises. Transform customer relationships with intelligent automation, advanced analytics, and seamless integration capabilities.
               </p>

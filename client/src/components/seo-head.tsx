@@ -15,8 +15,8 @@ interface SEOHeadProps {
 
 export default function SEOHead({
   title = "Procyon Technostructure - AI-Powered Enterprise Solutions",
-  description = "Transform your enterprise with Procyon's AI-powered solutions. Expert ServiceNow, SalesForce, SAP implementation, cloud transformation, and data analytics services.",
-  keywords = "enterprise solutions, ServiceNow, SalesForce, SAP, cloud transformation, AI solutions, data analytics, digital transformation, IT consulting, business automation",
+  description = "Transform your enterprise with Procyon's AI-powered solutions. Expert ServiceNow, Salesforce, SAP implementation, cloud transformation, and data analytics services.",
+  keywords = "enterprise solutions, ServiceNow, Salesforce, SAP, cloud transformation, AI solutions, data analytics, digital transformation, IT consulting, business automation",
   canonicalUrl = "https://procyon-technostructure.com",
   ogTitle,
   ogDescription,
@@ -99,7 +99,7 @@ export const organizationSchema = {
   "name": "Procyon Technostructure",
   "url": "https://procyon-technostructure.com",
   "logo": "https://procyon-technostructure.com/assets/logo.png",
-  "description": "Leading enterprise technology solutions provider specializing in ServiceNow, SalesForce, SAP, and AI-powered digital transformation.",
+  "description": "Leading enterprise technology solutions provider specializing in ServiceNow, Salesforce, SAP, and AI-powered digital transformation.",
   "foundingDate": "2004",
   "contactPoint": {
     "@type": "ContactPoint",
@@ -146,7 +146,7 @@ export const serviceSchema = {
         "@type": "Offer",
         "itemOffered": {
           "@type": "Service",
-          "name": "SalesForce Solutions",
+          "name": "Salesforce Solutions",
           "description": "AI-driven Salesforce solutions and custom implementations"
         }
       },

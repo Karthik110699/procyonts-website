@@ -53,7 +53,7 @@ Preferred communication style: Simple, everyday language.
   - Four pillars icons that scale up on reveal (link to /about, /services, /enterprise, /contact)
 - **Clickable Service Cards**: Replit-style traveling bright spot effect on ALL cards using conic gradient animation - bright cyan light travels around card perimeter on hover only (applied to 53+ cards across all pages)
 - **Multi-Page Structure**: Separate dedicated pages for better SEO and user experience
-  - **Enterprise Page**: Detailed SalesForce, ServiceNow, and SAP solutions
+  - **Enterprise Page**: Detailed Salesforce, ServiceNow, and SAP solutions
   - **Services Page**: Comprehensive service offerings (Cloud, AI/ML, Data Analytics, Staff Augmentation, Government, Digital Engineering)
   - **About Page**: Company mission, vision, values, and statistics
   - **Careers Page**: Job listings, company culture, application process
@@ -141,7 +141,7 @@ Comprehensive set of Shadcn/ui components including:
 
 ### SEO Features by Page
 - **Homepage**: Organization schema, breadcrumbs, comprehensive keyword targeting
-- **Enterprise**: ServiceNow/SalesForce/SAP-focused optimization with service-specific structured data
+- **Enterprise**: ServiceNow/Salesforce/SAP-focused optimization with service-specific structured data
 - **Services**: Technology services catalog with detailed service offerings schema
 - **About**: Company information with AboutPage schema and founding date
 - **Careers**: Job listings optimization with career-focused keywords

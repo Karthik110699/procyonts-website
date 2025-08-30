@@ -98,8 +98,8 @@ export default function ContactPage() {
     <>
       <SEOHead
         title="Contact Procyon Technostructure - Get Expert Enterprise Solutions"
-        description="Contact Procyon for enterprise technology solutions. 24-hour response guarantee. Expert consultation for ServiceNow, SalesForce, SAP, cloud transformation, and AI/ML implementation."
-        keywords="contact Procyon, enterprise consultation, ServiceNow support, SalesForce implementation, SAP consulting, technology consultation, digital transformation, get quote, business inquiry"
+        description="Contact Procyon for enterprise technology solutions. 24-hour response guarantee. Expert consultation for ServiceNow, Salesforce, SAP, cloud transformation, and AI/ML implementation."
+        keywords="contact Procyon, enterprise consultation, ServiceNow support, Salesforce implementation, SAP consulting, technology consultation, digital transformation, get quote, business inquiry"
         canonicalUrl="https://procyon-technostructure.com/contact"
         ogTitle="Contact Procyon Technostructure - Enterprise Technology Experts"
         ogDescription="Get in touch with our expert team. 24-hour response guarantee for all business inquiries. Transform your enterprise today."
