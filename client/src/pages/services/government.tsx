@@ -694,11 +694,21 @@ export default function GovernmentServicesPage() {
                 <div className="w-16 h-16 bg-blue-500/20 rounded-full flex items-center justify-center mx-auto mb-4">
                   <MapPin className="w-8 h-8 text-blue-400" />
                 </div>
-                <h3 className="text-xl font-bold mb-2">Headquarters</h3>
-                <p className="text-gray-300">
-                  7250 Redwood Blvd, Suite 211<br />
-                  Novato, CA 94945
-                </p>
+                <h3 className="text-xl font-bold mb-2">Our Locations</h3>
+                <div className="space-y-3 text-sm">
+                  <div>
+                    <p className="font-medium text-blue-400">USA:</p>
+                    <p className="text-gray-300">7250 Redwood Blvd, Suite # 211<br />Novato, CA 94945</p>
+                  </div>
+                  <div>
+                    <p className="font-medium text-emerald-400">Canada:</p>
+                    <p className="text-gray-300">202-1825 MARKHAM ROAD<br />SCARBOROUGH ON M1B 4Z9</p>
+                  </div>
+                  <div>
+                    <p className="font-medium text-purple-400">India:</p>
+                    <p className="text-gray-300">RNG TOWER, 824/1, Anna Salai<br />CIT Nagar West, CIT Nagar<br />Chennai, Tamil Nadu 600035</p>
+                  </div>
+                </div>
               </div>
               
               <div className="text-center reveal-fade" data-delay="200">

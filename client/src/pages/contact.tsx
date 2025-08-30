@@ -195,13 +195,35 @@ export default function ContactPage() {
                     <MapPin className="w-6 h-6 text-purple-400" />
                   </div>
                   <div>
-                    <h3 className="text-xl font-semibold mb-2">Visit Us</h3>
-                    <p className="text-gray-300">
-                      Procyon Technostructure LLC<br />
-                      7250, Redwood Blvd, Suite 211<br />
-                      Novato, CA 94945<br />
-                      United States
-                    </p>
+                    <h3 className="text-xl font-semibold mb-4">Visit Us</h3>
+                    <div className="space-y-4">
+                      <div>
+                        <h4 className="font-semibold text-purple-400 mb-1">USA Headquarters</h4>
+                        <p className="text-gray-300">
+                          Procyon Technostructure LLC<br />
+                          7250 Redwood Blvd, Suite # 211<br />
+                          Novato, CA 94945<br />
+                          United States
+                        </p>
+                      </div>
+                      <div>
+                        <h4 className="font-semibold text-blue-400 mb-1">Canada Office</h4>
+                        <p className="text-gray-300">
+                          202-1825 MARKHAM ROAD<br />
+                          SCARBOROUGH ON M1B 4Z9<br />
+                          Canada
+                        </p>
+                      </div>
+                      <div>
+                        <h4 className="font-semibold text-emerald-400 mb-1">India Office</h4>
+                        <p className="text-gray-300">
+                          RNG TOWER, 824/1, Anna Salai<br />
+                          CIT Nagar West, CIT Nagar<br />
+                          Chennai, Tamil Nadu 600035<br />
+                          India
+                        </p>
+                      </div>
+                    </div>
                   </div>
                 </div>
               </div>

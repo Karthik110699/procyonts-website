@@ -105,13 +105,26 @@ export function ContactSection() {
                   <p className="text-gray-300">+1 415 382 8040</p>
                 </div>
               </div>
-              <div className="flex items-center space-x-4">
-                <div className="w-12 h-12 bg-purple-500/20 rounded-lg flex items-center justify-center">
+              <div className="flex items-start space-x-4">
+                <div className="w-12 h-12 bg-purple-500/20 rounded-lg flex items-center justify-center flex-shrink-0">
                   <MapPin className="w-6 h-6 text-purple-400" />
                 </div>
                 <div>
-                  <p className="font-semibold">Location</p>
-                  <p className="text-gray-300">7250 Redwood Blvd, Suite 211<br />Novato, CA 94945</p>
+                  <p className="font-semibold mb-3">Our Locations</p>
+                  <div className="space-y-3 text-sm">
+                    <div>
+                      <p className="font-medium text-purple-400">USA:</p>
+                      <p className="text-gray-300">7250 Redwood Blvd, Suite # 211<br />Novato, CA 94945</p>
+                    </div>
+                    <div>
+                      <p className="font-medium text-blue-400">Canada:</p>
+                      <p className="text-gray-300">202-1825 MARKHAM ROAD<br />SCARBOROUGH ON M1B 4Z9<br />Canada</p>
+                    </div>
+                    <div>
+                      <p className="font-medium text-emerald-400">India:</p>
+                      <p className="text-gray-300">RNG TOWER, 824/1, Anna Salai<br />CIT Nagar West, CIT Nagar<br />Chennai, Tamil Nadu 600035</p>
+                    </div>
+                  </div>
                 </div>
               </div>
             </div>
