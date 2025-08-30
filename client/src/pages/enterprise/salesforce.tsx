@@ -102,7 +102,7 @@ export default function SalesforcePage() {
             <div className="text-center mb-16 reveal-fade">
               <h2 className="text-4xl font-bold mb-6">Expert Salesforce Consulting & Implementation</h2>
               <p className="text-xl text-gray-300 max-w-4xl mx-auto">
-                Seamless CRM Transformation for Customer-First Organizations
+                for Seamless CRM Transformation
               </p>
             </div>
             
@@ -113,14 +113,8 @@ export default function SalesforcePage() {
                 </div>
                 <h3 className="text-2xl font-bold mb-4 text-blue-400 relative z-10">Salesforce Implementation</h3>
                 <p className="text-gray-300 mb-6 relative z-10">
-                  Our Salesforce implementation services are comprehensive and strategic. We begin with a deep dive into your organization's goals, workflows, and customer journey. From platform setup and data migration to user onboarding and training, our process ensures a seamless transition and full user adoption.
+                  Our Salesforce implementation services are comprehensive and strategic. We begin with a deep dive into your organization's goals, workflows, and customer journey. From platform setup and data migration to user onboarding and training, our process ensures a seamless transition and full user adoption. We focus on building robust, scalable systems that align with your business vision and evolve with you.
                 </p>
-                <ul className="space-y-2 text-gray-400 text-sm relative z-10">
-                  <li>• Platform Setup & Configuration</li>
-                  <li>• Data Migration & Cleansing</li>
-                  <li>• User Onboarding & Training</li>
-                  <li>• Change Management</li>
-                </ul>
               </div>
 
               <div className="floating-card conic-border bg-gradient-to-br from-gray-800 to-gray-900 p-8 rounded-2xl border border-gray-700 hover:border-emerald-500 transition-all duration-300 reveal-fade relative z-10" data-delay="200">
@@ -129,14 +123,8 @@ export default function SalesforcePage() {
                 </div>
                 <h3 className="text-2xl font-bold mb-4 text-emerald-400 relative z-10">Salesforce Customization</h3>
                 <p className="text-gray-300 mb-6 relative z-10">
-                  We believe your CRM should work the way your business does — not the other way around. Procyon offers extensive Salesforce customization to create tailored dashboards, workflows, modules, and automated processes that perfectly match your unique operational style.
+                  We believe your CRM should work the way your business does — not the other way around. Procyon offers extensive Salesforce customization to create tailored dashboards, workflows, modules, and automated processes that perfectly match your unique operational style. This leads to improved productivity, increased user satisfaction, and a better return on investment.
                 </p>
-                <ul className="space-y-2 text-gray-400 text-sm relative z-10">
-                  <li>• Custom Dashboards & Reports</li>
-                  <li>• Workflow Automation</li>
-                  <li>• Custom Objects & Fields</li>
-                  <li>• Business Process Optimization</li>
-                </ul>
               </div>
 
               <div className="floating-card conic-border bg-gradient-to-br from-gray-800 to-gray-900 p-8 rounded-2xl border border-gray-700 hover:border-purple-500 transition-all duration-300 reveal-fade relative z-10" data-delay="300">
@@ -145,14 +133,8 @@ export default function SalesforcePage() {
                 </div>
                 <h3 className="text-2xl font-bold mb-4 text-purple-400 relative z-10">Salesforce Integration</h3>
                 <p className="text-gray-300 mb-6 relative z-10">
-                  Salesforce doesn't operate in isolation — and neither should your data. Our integration services allow Salesforce to communicate with your existing software stack — from ERPs and HRMS to marketing tools and communication platforms.
+                  Salesforce doesn't operate in isolation — and neither should your data. Our integration services allow Salesforce to communicate with your existing software stack — from ERPs and HRMS to marketing tools and communication platforms. With seamless data sharing and synchronization, your business achieves a unified view of operations and customers.
                 </p>
-                <ul className="space-y-2 text-gray-400 text-sm relative z-10">
-                  <li>• ERP System Integration</li>
-                  <li>• Marketing Platform Connectivity</li>
-                  <li>• HRMS & Financial System Links</li>
-                  <li>• Unified Data Synchronization</li>
-                </ul>
               </div>
 
               <div className="floating-card conic-border bg-gradient-to-br from-gray-800 to-gray-900 p-8 rounded-2xl border border-gray-700 hover:border-amber-500 transition-all duration-300 reveal-fade relative z-10" data-delay="400">
@@ -161,15 +143,15 @@ export default function SalesforcePage() {
                 </div>
                 <h3 className="text-2xl font-bold mb-4 text-amber-400 relative z-10">AI-Powered CRM Solutions</h3>
                 <p className="text-gray-300 mb-6 relative z-10">
-                  Procyon harnesses the power of AI to take your CRM beyond traditional capabilities. We deploy AI-powered tools that offer predictive insights, automate routine tasks, personalize customer interactions, and flag key trends.
+                  Procyon harnesses the power of AI to take your CRM beyond traditional capabilities. We deploy AI-powered tools that offer predictive insights, automate routine tasks, personalize customer interactions, and flag key trends. This allows your teams to focus on what matters — building relationships, closing deals, and improving customer lifetime value.
                 </p>
-                <ul className="space-y-2 text-gray-400 text-sm relative z-10">
-                  <li>• Predictive Analytics & Insights</li>
-                  <li>• Automated Task Management</li>
-                  <li>• Personalized Customer Interactions</li>
-                  <li>• Trend Analysis & Forecasting</li>
-                </ul>
               </div>
+            </div>
+
+            <div className="bg-gradient-to-r from-blue-500/20 to-emerald-500/20 p-8 rounded-xl reveal-fade" data-delay="500">
+              <p className="text-lg text-gray-300 text-center max-w-4xl mx-auto">
+                As a trusted Salesforce partner, we don't just implement a CRM system, we help you build a customer-first culture. Through tailored Salesforce solutions, we enable organizations to better understand customer needs, streamline internal operations, and make informed, data-backed decisions that drive growth and engagement.
+              </p>
             </div>
           </div>
         </section>
@@ -233,9 +215,6 @@ export default function SalesforcePage() {
           <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 zoom-section">
             <div className="text-center mb-16 reveal-fade">
               <h2 className="text-4xl font-bold mb-6">Salesforce Cloud Expertise</h2>
-              <p className="text-xl text-gray-300 max-w-4xl mx-auto">
-                Comprehensive expertise across the entire Salesforce ecosystem to power your business transformation.
-              </p>
             </div>
             
             <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
@@ -248,12 +227,6 @@ export default function SalesforcePage() {
                 <p className="text-gray-300 mb-6 relative z-10">
                   Accelerate Revenue with Smart Selling
                 </p>
-                <ul className="space-y-2 text-gray-400 text-sm relative z-10">
-                  <li>• Lead & Opportunity Management</li>
-                  <li>• Sales Process Automation</li>
-                  <li>• Revenue Forecasting</li>
-                  <li>• Sales Performance Analytics</li>
-                </ul>
               </div>
 
               <div className="floating-card conic-border bg-gradient-to-br from-gray-800 to-gray-900 p-8 rounded-2xl border border-gray-700 hover:border-emerald-500 transition-all duration-300 reveal-fade relative z-10" data-delay="200">
@@ -264,12 +237,6 @@ export default function SalesforcePage() {
                 <p className="text-gray-300 mb-6 relative z-10">
                   Deliver Exceptional Customer Support
                 </p>
-                <ul className="space-y-2 text-gray-400 text-sm relative z-10">
-                  <li>• Case Management & Routing</li>
-                  <li>• Knowledge Base Creation</li>
-                  <li>• Omnichannel Support</li>
-                  <li>• Customer Self-Service Portals</li>
-                </ul>
               </div>
 
               <div className="floating-card conic-border bg-gradient-to-br from-gray-800 to-gray-900 p-8 rounded-2xl border border-gray-700 hover:border-purple-500 transition-all duration-300 reveal-fade relative z-10" data-delay="300">
@@ -280,12 +247,6 @@ export default function SalesforcePage() {
                 <p className="text-gray-300 mb-6 relative z-10">
                   Precision Engagement for Higher ROI
                 </p>
-                <ul className="space-y-2 text-gray-400 text-sm relative z-10">
-                  <li>• Email Marketing Automation</li>
-                  <li>• Customer Journey Mapping</li>
-                  <li>• Personalized Campaigns</li>
-                  <li>• Marketing Analytics & ROI</li>
-                </ul>
               </div>
 
               <div className="floating-card conic-border bg-gradient-to-br from-gray-800 to-gray-900 p-8 rounded-2xl border border-gray-700 hover:border-amber-500 transition-all duration-300 reveal-fade relative z-10" data-delay="400">
@@ -296,12 +257,6 @@ export default function SalesforcePage() {
                 <p className="text-gray-300 mb-6 relative z-10">
                   Intelligent Shopping Experiences
                 </p>
-                <ul className="space-y-2 text-gray-400 text-sm relative z-10">
-                  <li>• E-commerce Platform Setup</li>
-                  <li>• Personalized Shopping</li>
-                  <li>• Order Management</li>
-                  <li>• Mobile Commerce</li>
-                </ul>
               </div>
 
               <div className="floating-card conic-border bg-gradient-to-br from-gray-800 to-gray-900 p-8 rounded-2xl border border-gray-700 hover:border-indigo-500 transition-all duration-300 reveal-fade relative z-10" data-delay="500">
@@ -312,12 +267,6 @@ export default function SalesforcePage() {
                 <p className="text-gray-300 mb-6 relative z-10">
                   Build Connected Communities
                 </p>
-                <ul className="space-y-2 text-gray-400 text-sm relative z-10">
-                  <li>• Customer Portals</li>
-                  <li>• Partner Communities</li>
-                  <li>• Employee Engagement</li>
-                  <li>• Community Management</li>
-                </ul>
               </div>
 
               <div className="floating-card conic-border bg-gradient-to-br from-gray-800 to-gray-900 p-8 rounded-2xl border border-gray-700 hover:border-green-500 transition-all duration-300 reveal-fade relative z-10" data-delay="600">
@@ -327,183 +276,6 @@ export default function SalesforcePage() {
                 <h3 className="text-2xl font-bold mb-4 text-green-400 relative z-10">Analytics Cloud</h3>
                 <p className="text-gray-300 mb-6 relative z-10">
                   Turn Data into Actionable Insights
-                </p>
-                <ul className="space-y-2 text-gray-400 text-sm relative z-10">
-                  <li>• Advanced Analytics Dashboards</li>
-                  <li>• Predictive Modeling</li>
-                  <li>• Real-time Reporting</li>
-                  <li>• Business Intelligence</li>
-                </ul>
-              </div>
-
-            </div>
-          </div>
-        </section>
-
-        {/* Implementation Process */}
-        <section className="py-20 bg-gray-900/50 zoom-container">
-          <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 zoom-section">
-            <div className="text-center mb-16 reveal-fade">
-              <h2 className="text-4xl font-bold mb-6">Our Salesforce Implementation Process</h2>
-              <p className="text-xl text-gray-300 max-w-4xl mx-auto">
-                A proven methodology for successful CRM transformation that ensures seamless adoption and maximum ROI.
-              </p>
-            </div>
-            
-            <div className="grid md:grid-cols-4 gap-8">
-              <div className="text-center reveal-fade" data-delay="100">
-                <div className="w-16 h-16 bg-blue-500/20 rounded-full flex items-center justify-center mx-auto mb-6">
-                  <span className="text-2xl font-bold text-blue-400">1</span>
-                </div>
-                <h3 className="text-xl font-bold mb-4">Discovery & Strategy</h3>
-                <p className="text-gray-300">
-                  Deep dive into your organization's goals, current workflows, and customer journey mapping to define the optimal CRM strategy.
-                </p>
-              </div>
-              
-              <div className="text-center reveal-fade" data-delay="200">
-                <div className="w-16 h-16 bg-emerald-500/20 rounded-full flex items-center justify-center mx-auto mb-6">
-                  <span className="text-2xl font-bold text-emerald-400">2</span>
-                </div>
-                <h3 className="text-xl font-bold mb-4">Design & Configuration</h3>
-                <p className="text-gray-300">
-                  Create custom solutions, configure workflows, design user interfaces, and build automated processes that match your business style.
-                </p>
-              </div>
-              
-              <div className="text-center reveal-fade" data-delay="300">
-                <div className="w-16 h-16 bg-purple-500/20 rounded-full flex items-center justify-center mx-auto mb-6">
-                  <span className="text-2xl font-bold text-purple-400">3</span>
-                </div>
-                <h3 className="text-xl font-bold mb-4">Testing & Training</h3>
-                <p className="text-gray-300">
-                  Comprehensive testing, user acceptance validation, and team training programs for smooth adoption and user confidence.
-                </p>
-              </div>
-              
-              <div className="text-center reveal-fade" data-delay="400">
-                <div className="w-16 h-16 bg-amber-500/20 rounded-full flex items-center justify-center mx-auto mb-6">
-                  <span className="text-2xl font-bold text-amber-400">4</span>
-                </div>
-                <h3 className="text-xl font-bold mb-4">Launch & Optimization</h3>
-                <p className="text-gray-300">
-                  Go-live support, performance monitoring, ongoing optimization, and continuous enhancement based on user feedback.
-                </p>
-              </div>
-            </div>
-          </div>
-        </section>
-
-        {/* Business Impact */}
-        <section className="py-20 zoom-container">
-          <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 zoom-section">
-            <div className="text-center mb-16 reveal-fade">
-              <h2 className="text-4xl font-bold mb-6">Proven Business Impact</h2>
-              <p className="text-xl text-gray-300 max-w-4xl mx-auto">
-                Our Salesforce implementations deliver measurable results that transform customer relationships and drive business growth.
-              </p>
-            </div>
-
-            <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-8 mb-16">
-              <div className="text-center reveal-fade" data-delay="100">
-                <div className="text-4xl font-bold text-blue-400 mb-2">85%</div>
-                <div className="text-gray-300">Increase in Sales Productivity</div>
-              </div>
-              
-              <div className="text-center reveal-fade" data-delay="200">
-                <div className="text-4xl font-bold text-emerald-400 mb-2">60%</div>
-                <div className="text-gray-300">Faster Lead Response Time</div>
-              </div>
-              
-              <div className="text-center reveal-fade" data-delay="300">
-                <div className="text-4xl font-bold text-purple-400 mb-2">40%</div>
-                <div className="text-gray-300">Improvement in Customer Satisfaction</div>
-              </div>
-              
-              <div className="text-center reveal-fade" data-delay="400">
-                <div className="text-4xl font-bold text-amber-400 mb-2">250%</div>
-                <div className="text-gray-300">ROI Within 12 Months</div>
-              </div>
-            </div>
-
-            <div className="bg-gradient-to-r from-blue-500/20 to-emerald-500/20 p-8 rounded-xl reveal-fade" data-delay="500">
-              <h3 className="text-2xl font-bold mb-4 text-center">Customer-First Culture</h3>
-              <p className="text-lg text-gray-300 text-center max-w-4xl mx-auto">
-                As a trusted Salesforce partner, we don't just implement a CRM system, we help you build a customer-first culture. Through tailored Salesforce solutions, we enable organizations to better understand customer needs, streamline internal operations, and make informed, data-backed decisions that drive growth and engagement.
-              </p>
-            </div>
-          </div>
-        </section>
-
-        {/* Key Benefits */}
-        <section className="py-20 bg-gray-800/30 zoom-container">
-          <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 zoom-section">
-            <div className="text-center mb-16 reveal-fade">
-              <h2 className="text-4xl font-bold mb-6">Key Benefits of Our Salesforce Solutions</h2>
-              <p className="text-xl text-gray-300 max-w-4xl mx-auto">
-                Transform your business operations with powerful CRM capabilities that deliver real results.
-              </p>
-            </div>
-            
-            <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
-              
-              <div className="floating-card conic-border bg-gradient-to-br from-gray-800 to-gray-900 p-8 rounded-2xl border border-gray-700 hover:border-blue-500 transition-all duration-300 reveal-fade relative z-10" data-delay="100">
-                <div className="w-16 h-16 bg-blue-500/20 rounded-xl flex items-center justify-center mb-6 relative z-10">
-                  <Users className="w-8 h-8 text-blue-400" />
-                </div>
-                <h3 className="text-2xl font-bold mb-4 text-blue-400 relative z-10">Enhanced Customer Relationships</h3>
-                <p className="text-gray-300 mb-4 relative z-10">
-                  Build stronger, more meaningful relationships with comprehensive customer insights and interaction history.
-                </p>
-              </div>
-
-              <div className="floating-card conic-border bg-gradient-to-br from-gray-800 to-gray-900 p-8 rounded-2xl border border-gray-700 hover:border-emerald-500 transition-all duration-300 reveal-fade relative z-10" data-delay="200">
-                <div className="w-16 h-16 bg-emerald-500/20 rounded-xl flex items-center justify-center mb-6 relative z-10">
-                  <Zap className="w-8 h-8 text-emerald-400" />
-                </div>
-                <h3 className="text-2xl font-bold mb-4 text-emerald-400 relative z-10">Streamlined Operations</h3>
-                <p className="text-gray-300 mb-4 relative z-10">
-                  Automate routine tasks and optimize workflows for increased productivity and operational efficiency.
-                </p>
-              </div>
-
-              <div className="floating-card conic-border bg-gradient-to-br from-gray-800 to-gray-900 p-8 rounded-2xl border border-gray-700 hover:border-purple-500 transition-all duration-300 reveal-fade relative z-10" data-delay="300">
-                <div className="w-16 h-16 bg-purple-500/20 rounded-xl flex items-center justify-center mb-6 relative z-10">
-                  <BarChart className="w-8 h-8 text-purple-400" />
-                </div>
-                <h3 className="text-2xl font-bold mb-4 text-purple-400 relative z-10">Data-Driven Decisions</h3>
-                <p className="text-gray-300 mb-4 relative z-10">
-                  Make informed, strategic decisions with real-time analytics and predictive insights from your CRM data.
-                </p>
-              </div>
-
-              <div className="floating-card conic-border bg-gradient-to-br from-gray-800 to-gray-900 p-8 rounded-2xl border border-gray-700 hover:border-amber-500 transition-all duration-300 reveal-fade relative z-10" data-delay="400">
-                <div className="w-16 h-16 bg-amber-500/20 rounded-xl flex items-center justify-center mb-6 relative z-10">
-                  <TrendingUp className="w-8 h-8 text-amber-400" />
-                </div>
-                <h3 className="text-2xl font-bold mb-4 text-amber-400 relative z-10">Scalable Growth</h3>
-                <p className="text-gray-300 mb-4 relative z-10">
-                  Build robust, scalable systems that evolve with your business and support long-term growth objectives.
-                </p>
-              </div>
-
-              <div className="floating-card conic-border bg-gradient-to-br from-gray-800 to-gray-900 p-8 rounded-2xl border border-gray-700 hover:border-green-500 transition-all duration-300 reveal-fade relative z-10" data-delay="500">
-                <div className="w-16 h-16 bg-green-500/20 rounded-xl flex items-center justify-center mb-6 relative z-10">
-                  <Brain className="w-8 h-8 text-green-400" />
-                </div>
-                <h3 className="text-2xl font-bold mb-4 text-green-400 relative z-10">AI-Powered Insights</h3>
-                <p className="text-gray-300 mb-4 relative z-10">
-                  Leverage artificial intelligence for predictive analytics, automated recommendations, and intelligent customer interactions.
-                </p>
-              </div>
-
-              <div className="floating-card conic-border bg-gradient-to-br from-gray-800 to-gray-900 p-8 rounded-2xl border border-gray-700 hover:border-red-500 transition-all duration-300 reveal-fade relative z-10" data-delay="600">
-                <div className="w-16 h-16 bg-red-500/20 rounded-xl flex items-center justify-center mb-6 relative z-10">
-                  <Shield className="w-8 h-8 text-red-400" />
-                </div>
-                <h3 className="text-2xl font-bold mb-4 text-red-400 relative z-10">Enterprise Security</h3>
-                <p className="text-gray-300 mb-4 relative z-10">
-                  Enterprise-grade security with compliance for regulatory requirements and data protection standards.
                 </p>
               </div>
 
