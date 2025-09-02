@@ -40,7 +40,7 @@ export default function SalesforcePage() {
       <div className="min-h-screen bg-gradient-to-b from-gray-900 via-procyon-dark to-gray-900 text-white overflow-x-hidden relative">
         {/* Floating Stars Background */}
         <div className="floating-stars-container">
-          {[...Array(15)].map((_, i) => (
+          {[...Array(8)].map((_, i) => (
             <div
               key={i}
               className={`floating-star star-${i + 1}`}

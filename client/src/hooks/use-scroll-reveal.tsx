@@ -12,13 +12,13 @@ export function useScrollReveal() {
     const isEnterpriseOrServicesPage = currentPath.startsWith('/enterprise') || currentPath.startsWith('/services');
     
     const observerOptions = {
-      threshold: isEnterpriseOrServicesPage ? 0.01 : 0.15, // Lower threshold only for target pages
-      rootMargin: isEnterpriseOrServicesPage ? '300px 0px 300px 0px' : '0px 0px -80px 0px'
+      threshold: isEnterpriseOrServicesPage ? 0.1 : 0.15,
+      rootMargin: isEnterpriseOrServicesPage ? '150px 0px 150px 0px' : '0px 0px -80px 0px'
     };
 
     const zoomObserverOptions = {
-      threshold: isEnterpriseOrServicesPage ? [0.01, 0.05, 0.15, 0.25, 0.35, 0.5, 0.65, 0.8, 0.95] : [0.05, 0.15, 0.25, 0.35, 0.5, 0.65, 0.8, 0.95],
-      rootMargin: isEnterpriseOrServicesPage ? '400px 0px 400px 0px' : '0px 0px -50px 0px'
+      threshold: isEnterpriseOrServicesPage ? [0.1, 0.3, 0.6] : [0.15, 0.5, 0.8],
+      rootMargin: isEnterpriseOrServicesPage ? '200px 0px 200px 0px' : '0px 0px -50px 0px'
     };
 
     // Track scroll direction and velocity for smoother transitions
@@ -125,20 +125,8 @@ export function useScrollReveal() {
       });
     });
 
-    // Auto-activate elements only on Enterprise and Services pages
-    
-    if (isEnterpriseOrServicesPage) {
-      setTimeout(() => {
-        // Activate ALL elements on Enterprise and Services pages immediately
-        [...allElements, ...zoomElements].forEach(el => {
-          const delay = parseInt(el.getAttribute('data-delay') || '0');
-          setTimeout(() => {
-            el.classList.add('active');
-            el.classList.remove('reverse', 'zoom-out');
-          }, delay);
-        });
-      }, 50); // Minimal delay to ensure all elements are rendered
-    }
+    // Optimize performance by removing auto-activation
+    // Let intersection observers handle animations naturally
 
     return () => {
       window.removeEventListener('scroll', updateScrollDirection);
