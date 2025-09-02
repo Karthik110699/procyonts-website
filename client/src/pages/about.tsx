@@ -152,7 +152,7 @@ export default function AboutPage() {
             <br /><br />
             Our strength lies in delivering end-to-end technology solutions that balance innovation with practicality:
           </p>
-          <div className="max-w-6xl mt-8 reveal-fade" data-delay="300">
+          <div className="max-w-6xl mt-4 reveal-fade" data-delay="300">
             <ul className="text-base text-gray-300 space-y-1 leading-normal">
               <li>• <span className="text-blue-400 font-semibold">Enterprise Solutions</span> that align with business goals and scale with growth.</li>
               <li>• <span className="text-emerald-400 font-semibold">Quality Staffing Services</span> that ensure the right talent drives every transformation.</li>
