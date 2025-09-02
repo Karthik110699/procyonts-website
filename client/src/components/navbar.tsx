@@ -55,7 +55,7 @@ export default function Navbar() {
           <div className="md:hidden">
             <button 
               onClick={() => setIsMobileMenuOpen(!isMobileMenuOpen)}
-              className="text-blue-600 hover:text-emerald-600 transition-colors duration-300"
+              className="text-black hover:text-gray-700 transition-colors duration-300"
             >
               {isMobileMenuOpen ? <X className="h-6 w-6" /> : <Menu className="h-6 w-6" />}
             </button>
