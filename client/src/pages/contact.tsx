@@ -185,8 +185,6 @@ export default function ContactPage() {
                     <a href="tel:+1-415-382-8040" className="text-emerald-400 hover:text-emerald-300">
                       +1 415 382 8040
                     </a>
-                    <p className="text-gray-300 mb-1 mt-2">Available:</p>
-                    <span className="text-gray-300">Mon-Fri, 9AM-6PM EST</span>
                   </div>
                 </div>
                 
