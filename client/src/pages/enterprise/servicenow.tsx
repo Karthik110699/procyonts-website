@@ -3,7 +3,7 @@ import { Link } from "wouter";
 import Navbar from "@/components/navbar";
 import { useScrollReveal } from "@/hooks/use-scroll-reveal";
 import SEOHead from "@/components/seo-head";
-import ContactSection from "@/components/contact-section";
+import { ContactSection } from "@/components/contact-section";
 
 export default function ServiceNowPage() {
   useScrollReveal();
