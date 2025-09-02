@@ -10,8 +10,8 @@ export default function TestimonialsSection() {
     },
     {
       quote: "Procyon's AI-driven solutions have transformed our business operations. The level of innovation and technical expertise they bring is unmatched.",
-      author: "Sarah Johnson",
-      role: "CTO",
+      author: "Mubarak Muthalif",
+      role: "CEO",
       color: "emerald"
     },
     {
