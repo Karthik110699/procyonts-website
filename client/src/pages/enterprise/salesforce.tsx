@@ -82,11 +82,6 @@ export default function SalesforcePage() {
               <p className="text-xl text-gray-300 max-w-4xl mx-auto mb-8 reveal-fade" >
                 We don't just implement Salesforce—we tailor it to amplify your results.
               </p>
-              <div className="bg-gradient-to-r from-blue-500/20 to-emerald-500/20 p-6 rounded-xl mb-8 reveal-fade" >
-                <p className="text-lg text-gray-300">
-                  From Sales to Health, CPQ to Analytics—Procyon brings Salesforce to life. Strategy, delivery, support—we're with you end-to-end.
-                </p>
-              </div>
               <div className="mt-8 reveal-fade" >
                 <Link href="/contact" className="bg-gradient-to-r from-blue-600 to-emerald-600 px-8 py-4 rounded-lg font-semibold text-lg hover:scale-105 transition-transform inline-block">
                   Request a Demo
@@ -154,6 +149,25 @@ export default function SalesforcePage() {
                 <br />
                 <span className="text-blue-400 font-semibold">— Sales VP, Retail Industry</span>
               </p>
+            </div>
+          </div>
+        </section>
+
+        {/* Innovative Transition - Punch Line Bridge */}
+        <section className="py-16 relative overflow-hidden">
+          <div className="absolute inset-0 bg-gradient-to-r from-blue-600/10 via-emerald-600/10 to-purple-600/10"></div>
+          <div className="relative max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div className="text-center">
+              <div className="inline-block">
+                <h3 className="text-3xl md:text-4xl font-bold mb-4 reveal-scale">
+                  <span className="bg-gradient-to-r from-blue-400 via-emerald-400 to-purple-400 bg-clip-text text-transparent">
+                    From Sales to Health, CPQ to Analytics—
+                  </span>
+                </h3>
+                <p className="text-2xl md:text-3xl font-semibold text-white reveal-fade">
+                  Procyon brings Salesforce to life.
+                </p>
+              </div>
             </div>
           </div>
         </section>
@@ -275,9 +289,14 @@ export default function SalesforcePage() {
           <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 zoom-section">
             <div className="text-center mb-16 reveal-fade">
               <h2 className="text-4xl font-bold mb-6">Our Proven 3-Step Approach</h2>
-              <p className="text-xl text-gray-300 max-w-4xl mx-auto">
+              <p className="text-xl text-gray-300 max-w-4xl mx-auto mb-4">
                 A streamlined methodology that delivers results every time
               </p>
+              <div className="inline-block bg-gradient-to-r from-blue-500/20 to-purple-500/20 px-6 py-3 rounded-lg">
+                <p className="text-lg font-semibold text-emerald-400">
+                  Strategy, delivery, support—we're with you end-to-end.
+                </p>
+              </div>
             </div>
             
             <div className="grid md:grid-cols-3 gap-8">
