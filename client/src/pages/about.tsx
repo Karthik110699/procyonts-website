@@ -108,7 +108,7 @@ export default function AboutPage() {
               </div>
               <h2 className="text-4xl font-bold mb-6 text-emerald-400">Our Vision</h2>
               <p className="text-gray-300 text-lg leading-relaxed">
-                To be the leading partner for digital transformation, creating a future where technology seamlessly integrates with human potential to unlock unprecedented possibilities for businesses worldwide.
+                Delivering value through People, Process, Technology, and next-generation AI solutions
               </p>
             </div>
           </div>
