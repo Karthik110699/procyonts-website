@@ -3,7 +3,7 @@ import { Link } from "wouter";
 import aibrainImage from "@assets/Trial1_1753910986636.png";
 
 export default function AboutSection() {
-  const { count: projectsCount, ref: projectsRef } = useCounterAnimation(1200, 2000);
+  const { count: projectsCount, ref: projectsRef } = useCounterAnimation(200, 2000);
   const { count: expertsCount, ref: expertsRef } = useCounterAnimation(75, 2000);
 
   return (
@@ -43,7 +43,7 @@ export default function AboutSection() {
             <div className="grid grid-cols-2 gap-8">
               <div className="text-center" ref={projectsRef}>
                 <div className="text-4xl font-bold gradient-text">{projectsCount}+</div>
-                <p className="text-gray-400 mt-2">Projects Countless Successes</p>
+                <p className="text-gray-400 mt-2">Successful Projects</p>
               </div>
               <div className="text-center" ref={expertsRef}>
                 <div className="text-4xl font-bold gradient-text">{expertsCount}+</div>
