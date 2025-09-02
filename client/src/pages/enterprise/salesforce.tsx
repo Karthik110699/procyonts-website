@@ -1,4 +1,4 @@
-import { CheckCircle, Zap, BarChart, Shield, Globe, Target, TrendingUp, Brain, Award, Building2 } from "lucide-react";
+import { CheckCircle, Zap, BarChart, Shield, Globe, Target, TrendingUp, Brain, Award, Building2, Users } from "lucide-react";
 import { SiSalesforce } from "react-icons/si";
 import { Link } from "wouter";
 import Navbar from "@/components/navbar";
