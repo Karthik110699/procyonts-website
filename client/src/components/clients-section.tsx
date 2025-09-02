@@ -60,11 +60,11 @@ export default function ClientsSection() {
               {/* First set of logos */}
               {clients.map((client, index) => (
                 <Link key={`first-${index}`} href={client.link}>
-                  <div className="flex items-center justify-center h-20 w-40 p-4 cursor-pointer flex-shrink-0">
+                  <div className="flex items-center justify-center h-20 w-40 p-4 cursor-pointer flex-shrink-0 bg-white/10 hover:bg-white/20 rounded-lg backdrop-blur-sm border border-white/10 hover:border-white/20 transition-all duration-300">
                     <img 
                       src={client.logo} 
                       alt={`${client.name} logo`}
-                      className="max-h-12 max-w-full object-contain opacity-70 hover:opacity-100 transition-all duration-300 hover:scale-110 filter brightness-90 hover:brightness-100"
+                      className="max-h-12 max-w-full object-contain opacity-80 hover:opacity-100 transition-all duration-300 hover:scale-110"
                     />
                   </div>
                 </Link>
@@ -72,11 +72,11 @@ export default function ClientsSection() {
               {/* Duplicate set for seamless loop */}
               {clients.map((client, index) => (
                 <Link key={`second-${index}`} href={client.link}>
-                  <div className="flex items-center justify-center h-20 w-40 p-4 cursor-pointer flex-shrink-0">
+                  <div className="flex items-center justify-center h-20 w-40 p-4 cursor-pointer flex-shrink-0 bg-white/10 hover:bg-white/20 rounded-lg backdrop-blur-sm border border-white/10 hover:border-white/20 transition-all duration-300">
                     <img 
                       src={client.logo} 
                       alt={`${client.name} logo`}
-                      className="max-h-12 max-w-full object-contain opacity-70 hover:opacity-100 transition-all duration-300 hover:scale-110 filter brightness-90 hover:brightness-100"
+                      className="max-h-12 max-w-full object-contain opacity-80 hover:opacity-100 transition-all duration-300 hover:scale-110"
                     />
                   </div>
                 </Link>
