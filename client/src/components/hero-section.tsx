@@ -11,8 +11,8 @@ export default function HeroSection() {
       line2: "AI, Talent and Technology!"
     },
     {
-      line1: "From enterprise solutions to staffing excellence and product innovation,",
-      line2: "we empower your business to lead the digital future!"
+      line1: "We empower your business to",
+      line2: "lead the digital future!"
     }
   ];
   
