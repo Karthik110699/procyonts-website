@@ -390,6 +390,54 @@ export default function GovernmentServicesPage() {
                 )}
               </div>
 
+              {/* 423410 - Photographic Equipment and Supplies Merchant Wholesalers */}
+              <div className="bg-gradient-to-br from-gray-800 to-gray-900 rounded-2xl border border-gray-700 overflow-hidden reveal-fade">
+                <div 
+                  className="p-6 cursor-pointer hover:bg-gray-700/50 transition-all duration-300 flex items-center justify-between"
+                  onClick={() => toggleService('423410')}
+                >
+                  <div>
+                    <h3 className="text-xl font-bold text-red-400 mb-2">423410</h3>
+                    <p className="text-gray-300">Photographic Equipment and Supplies Merchant Wholesalers</p>
+                  </div>
+                  {expandedServices.includes('423410') ? 
+                    <Minus className="w-5 h-5 text-red-400" /> : 
+                    <Plus className="w-5 h-5 text-red-400" />
+                  }
+                </div>
+                {expandedServices.includes('423410') && (
+                  <div className="px-6 pb-6 border-t border-gray-700">
+                    <p className="text-gray-300 mt-4 leading-relaxed">
+                      Photographic Equipment and Supplies Merchant Wholesalers
+                    </p>
+                  </div>
+                )}
+              </div>
+
+              {/* 423420 - Office Equipment Merchant Wholesalers */}
+              <div className="bg-gradient-to-br from-gray-800 to-gray-900 rounded-2xl border border-gray-700 overflow-hidden reveal-fade">
+                <div 
+                  className="p-6 cursor-pointer hover:bg-gray-700/50 transition-all duration-300 flex items-center justify-between"
+                  onClick={() => toggleService('423420')}
+                >
+                  <div>
+                    <h3 className="text-xl font-bold text-green-400 mb-2">423420</h3>
+                    <p className="text-gray-300">Office Equipment Merchant Wholesalers</p>
+                  </div>
+                  {expandedServices.includes('423420') ? 
+                    <Minus className="w-5 h-5 text-green-400" /> : 
+                    <Plus className="w-5 h-5 text-green-400" />
+                  }
+                </div>
+                {expandedServices.includes('423420') && (
+                  <div className="px-6 pb-6 border-t border-gray-700">
+                    <p className="text-gray-300 mt-4 leading-relaxed">
+                      Office Equipment Merchant Wholesalers
+                    </p>
+                  </div>
+                )}
+              </div>
+
               {/* 423430 - Computer & Peripheral Equipment Wholesalers */}
               <div className="bg-gradient-to-br from-gray-800 to-gray-900 rounded-2xl border border-gray-700 overflow-hidden reveal-fade">
                 <div 
@@ -409,6 +457,126 @@ export default function GovernmentServicesPage() {
                   <div className="px-6 pb-6 border-t border-gray-700">
                     <p className="text-gray-300 mt-4 leading-relaxed">
                       Computer and Computer Peripheral Equipment and Software Merchant Wholesalers
+                    </p>
+                  </div>
+                )}
+              </div>
+
+              {/* 423490 - Other Professional Equipment and Supplies Merchant Wholesalers */}
+              <div className="bg-gradient-to-br from-gray-800 to-gray-900 rounded-2xl border border-gray-700 overflow-hidden reveal-fade">
+                <div 
+                  className="p-6 cursor-pointer hover:bg-gray-700/50 transition-all duration-300 flex items-center justify-between"
+                  onClick={() => toggleService('423490')}
+                >
+                  <div>
+                    <h3 className="text-xl font-bold text-indigo-400 mb-2">423490</h3>
+                    <p className="text-gray-300">Other Professional Equipment and Supplies Merchant Wholesalers</p>
+                  </div>
+                  {expandedServices.includes('423490') ? 
+                    <Minus className="w-5 h-5 text-indigo-400" /> : 
+                    <Plus className="w-5 h-5 text-indigo-400" />
+                  }
+                </div>
+                {expandedServices.includes('423490') && (
+                  <div className="px-6 pb-6 border-t border-gray-700">
+                    <p className="text-gray-300 mt-4 leading-relaxed">
+                      Other Professional Equipment and Supplies Merchant Wholesalers
+                    </p>
+                  </div>
+                )}
+              </div>
+
+              {/* 423620 - Electrical and Electronic Appliance, Television, and Radio Set Merchant Wholesalers */}
+              <div className="bg-gradient-to-br from-gray-800 to-gray-900 rounded-2xl border border-gray-700 overflow-hidden reveal-fade">
+                <div 
+                  className="p-6 cursor-pointer hover:bg-gray-700/50 transition-all duration-300 flex items-center justify-between"
+                  onClick={() => toggleService('423620')}
+                >
+                  <div>
+                    <h3 className="text-xl font-bold text-cyan-400 mb-2">423620</h3>
+                    <p className="text-gray-300">Electrical and Electronic Appliance Merchant Wholesalers</p>
+                  </div>
+                  {expandedServices.includes('423620') ? 
+                    <Minus className="w-5 h-5 text-cyan-400" /> : 
+                    <Plus className="w-5 h-5 text-cyan-400" />
+                  }
+                </div>
+                {expandedServices.includes('423620') && (
+                  <div className="px-6 pb-6 border-t border-gray-700">
+                    <p className="text-gray-300 mt-4 leading-relaxed">
+                      Electrical and Electronic Appliance, Television, and Radio Set Merchant Wholesalers
+                    </p>
+                  </div>
+                )}
+              </div>
+
+              {/* 423690 - Other Electronic Parts and Equipment Merchant Wholesalers */}
+              <div className="bg-gradient-to-br from-gray-800 to-gray-900 rounded-2xl border border-gray-700 overflow-hidden reveal-fade">
+                <div 
+                  className="p-6 cursor-pointer hover:bg-gray-700/50 transition-all duration-300 flex items-center justify-between"
+                  onClick={() => toggleService('423690')}
+                >
+                  <div>
+                    <h3 className="text-xl font-bold text-teal-400 mb-2">423690</h3>
+                    <p className="text-gray-300">Other Electronic Parts and Equipment Merchant Wholesalers</p>
+                  </div>
+                  {expandedServices.includes('423690') ? 
+                    <Minus className="w-5 h-5 text-teal-400" /> : 
+                    <Plus className="w-5 h-5 text-teal-400" />
+                  }
+                </div>
+                {expandedServices.includes('423690') && (
+                  <div className="px-6 pb-6 border-t border-gray-700">
+                    <p className="text-gray-300 mt-4 leading-relaxed">
+                      Other Electronic Parts and Equipment Merchant Wholesalers
+                    </p>
+                  </div>
+                )}
+              </div>
+
+              {/* 424120 - Stationery and Office Supplies Merchant Wholesalers */}
+              <div className="bg-gradient-to-br from-gray-800 to-gray-900 rounded-2xl border border-gray-700 overflow-hidden reveal-fade">
+                <div 
+                  className="p-6 cursor-pointer hover:bg-gray-700/50 transition-all duration-300 flex items-center justify-between"
+                  onClick={() => toggleService('424120')}
+                >
+                  <div>
+                    <h3 className="text-xl font-bold text-yellow-400 mb-2">424120</h3>
+                    <p className="text-gray-300">Stationery and Office Supplies Merchant Wholesalers</p>
+                  </div>
+                  {expandedServices.includes('424120') ? 
+                    <Minus className="w-5 h-5 text-yellow-400" /> : 
+                    <Plus className="w-5 h-5 text-yellow-400" />
+                  }
+                </div>
+                {expandedServices.includes('424120') && (
+                  <div className="px-6 pb-6 border-t border-gray-700">
+                    <p className="text-gray-300 mt-4 leading-relaxed">
+                      Stationery and Office Supplies Merchant Wholesalers
+                    </p>
+                  </div>
+                )}
+              </div>
+
+              {/* 443120 - Computer and Software Stores */}
+              <div className="bg-gradient-to-br from-gray-800 to-gray-900 rounded-2xl border border-gray-700 overflow-hidden reveal-fade">
+                <div 
+                  className="p-6 cursor-pointer hover:bg-gray-700/50 transition-all duration-300 flex items-center justify-between"
+                  onClick={() => toggleService('443120')}
+                >
+                  <div>
+                    <h3 className="text-xl font-bold text-rose-400 mb-2">443120</h3>
+                    <p className="text-gray-300">Computer and Software Stores</p>
+                  </div>
+                  {expandedServices.includes('443120') ? 
+                    <Minus className="w-5 h-5 text-rose-400" /> : 
+                    <Plus className="w-5 h-5 text-rose-400" />
+                  }
+                </div>
+                {expandedServices.includes('443120') && (
+                  <div className="px-6 pb-6 border-t border-gray-700">
+                    <p className="text-gray-300 mt-4 leading-relaxed">
+                      Computer and Software Stores
                     </p>
                   </div>
                 )}
