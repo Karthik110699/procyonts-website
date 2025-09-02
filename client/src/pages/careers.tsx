@@ -186,9 +186,9 @@ export default function CareersPage() {
                     <span className="px-3 py-1 bg-amber-500/20 text-amber-400 rounded-full text-sm">AWS</span>
                   </div>
                 </div>
-                <Link href="https://in.linkedin.com/company/procyonts" className="border-2 border-white hover:bg-white hover:text-black text-white px-6 py-3 rounded-lg font-semibold transition-colors">
+                <a href="https://in.linkedin.com/company/procyonts" target="_blank" rel="noopener noreferrer" className="border-2 border-white hover:bg-white hover:text-black text-white px-6 py-3 rounded-lg font-semibold transition-colors">
                   Apply Now
-                </Link>
+                </a>
               </div>
             </div>
 
@@ -225,9 +225,9 @@ export default function CareersPage() {
                     <span className="px-3 py-1 bg-amber-500/20 text-amber-400 rounded-full text-sm">SQL</span>
                   </div>
                 </div>
-                <Link href="https://in.linkedin.com/company/procyonts" className="border-2 border-white hover:bg-white hover:text-black text-white px-6 py-3 rounded-lg font-semibold transition-colors">
+                <a href="https://in.linkedin.com/company/procyonts" target="_blank" rel="noopener noreferrer" className="border-2 border-white hover:bg-white hover:text-black text-white px-6 py-3 rounded-lg font-semibold transition-colors">
                   Apply Now
-                </Link>
+                </a>
               </div>
             </div>
 
@@ -264,9 +264,9 @@ export default function CareersPage() {
                     <span className="px-3 py-1 bg-amber-500/20 text-amber-400 rounded-full text-sm">AWS</span>
                   </div>
                 </div>
-                <Link href="https://in.linkedin.com/company/procyonts" className="border-2 border-white hover:bg-white hover:text-black text-white px-6 py-3 rounded-lg font-semibold transition-colors">
+                <a href="https://in.linkedin.com/company/procyonts" target="_blank" rel="noopener noreferrer" className="border-2 border-white hover:bg-white hover:text-black text-white px-6 py-3 rounded-lg font-semibold transition-colors">
                   Apply Now
-                </Link>
+                </a>
               </div>
             </div>
           </div>
