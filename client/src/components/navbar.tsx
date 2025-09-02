@@ -18,7 +18,7 @@ export default function Navbar() {
   }, []);
 
   return (
-    <nav className="fixed top-0 w-full z-40 bg-gradient-to-b from-white/80 to-transparent backdrop-blur-xl">
+    <nav className="fixed top-0 w-full z-40 bg-gradient-to-b from-white/80 from-60% to-transparent backdrop-blur-xl h-24">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:pl-8 lg:pr-8" style={{ paddingLeft: 'calc(1rem - 5px)' }}>
         <div className="flex justify-between items-center h-16">
           {/* Logo */}
