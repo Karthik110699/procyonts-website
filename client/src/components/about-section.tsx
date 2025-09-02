@@ -3,10 +3,10 @@ import { Link } from "wouter";
 import aibrainImage from "@assets/Trial1_1753910986636.png";
 
 export default function AboutSection() {
-  const { count: projectsCount, ref: projectsRef } = useCounterAnimation(200, 2000);
-  const { count: expertsCount, ref: expertsRef } = useCounterAnimation(75, 2000);
-  const { count: consultantsCount, ref: consultantsRef } = useCounterAnimation(250, 2000);
   const { count: yearsCount, ref: yearsRef } = useCounterAnimation(20, 2000);
+  const { count: customersCount, ref: customersRef } = useCounterAnimation(75, 2000);
+  const { count: projectsCount, ref: projectsRef } = useCounterAnimation(200, 2000);
+  const { count: branchesCount, ref: branchesRef } = useCounterAnimation(3, 2000);
 
   return (
     <section id="about" className="py-20 bg-gradient-to-b from-gray-900/40 via-gray-900/60 to-gray-900/80 zoom-container">
@@ -29,25 +29,25 @@ export default function AboutSection() {
                 At Procyon, we turn ideas into market-ready solutions, deliver enterprise technology that scales, and provide the right talent to drive digital growth.
               </p>
               <div className="grid grid-cols-2 gap-6 mt-6">
-                <div className="text-center" ref={consultantsRef}>
-                  <div className="text-3xl font-bold gradient-text">{consultantsCount}+</div>
-                  <p className="text-gray-400 mt-1">Expert Consultants</p>
-                </div>
                 <div className="text-center" ref={yearsRef}>
-                  <div className="text-3xl font-bold gradient-text">{yearsCount}+</div>
-                  <p className="text-gray-400 mt-1">Years of Experience</p>
+                  <div className="text-3xl font-bold text-blue-400">{yearsCount}+</div>
+                  <p className="text-gray-400 mt-1">Years of Trusted Service</p>
+                </div>
+                <div className="text-center" ref={customersRef}>
+                  <div className="text-3xl font-bold text-purple-400">{customersCount}+</div>
+                  <p className="text-gray-400 mt-1">Global Customers</p>
                 </div>
               </div>
             </div>
             
             <div className="grid grid-cols-2 gap-8">
-              <div className="text-center" ref={expertsRef}>
-                <div className="text-4xl font-bold gradient-text">{expertsCount}+</div>
-                <p className="text-gray-400 mt-2">Customers Globally</p>
-              </div>
               <div className="text-center" ref={projectsRef}>
-                <div className="text-4xl font-bold gradient-text">{projectsCount}+</div>
+                <div className="text-4xl font-bold text-emerald-400">{projectsCount}+</div>
                 <p className="text-gray-400 mt-2">Successful Projects</p>
+              </div>
+              <div className="text-center" ref={branchesRef}>
+                <div className="text-4xl font-bold text-amber-400">{branchesCount}</div>
+                <p className="text-gray-400 mt-2">Worldwide Branches</p>
               </div>
             </div>
             
