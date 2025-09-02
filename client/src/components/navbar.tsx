@@ -18,7 +18,7 @@ export default function Navbar() {
   }, []);
 
   return (
-    <nav className="fixed top-0 w-full z-40 bg-white/90 backdrop-blur-xl shadow-lg">
+    <nav className="fixed top-0 w-full z-40 bg-white/70 backdrop-blur-xl shadow-lg">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:pl-8 lg:pr-8" style={{ paddingLeft: 'calc(1rem - 5px)' }}>
         <div className="flex justify-between items-center h-16">
           {/* Logo */}
@@ -35,12 +35,12 @@ export default function Navbar() {
           {/* Desktop Menu */}
           <div className="hidden md:block">
             <div className="ml-10 flex items-baseline space-x-8">
-              <Link href="/" className={`transition-colors ${location === '/' ? 'bg-gradient-to-r from-blue-600 to-emerald-600 bg-clip-text text-transparent font-semibold' : 'text-white hover:text-teal-600'}`} onClick={() => window.scrollTo(0, 0)}>Home</Link>
-              <Link href="/enterprise" className={`transition-colors ${location.startsWith('/enterprise') ? 'bg-gradient-to-r from-blue-600 to-emerald-600 bg-clip-text text-transparent font-semibold' : 'text-white hover:text-teal-600'}`} onClick={() => window.scrollTo(0, 0)}>Enterprise</Link>
-              <Link href="/services" className={`transition-colors ${location.startsWith('/services') ? 'bg-gradient-to-r from-blue-600 to-emerald-600 bg-clip-text text-transparent font-semibold' : 'text-white hover:text-teal-600'}`} onClick={() => window.scrollTo(0, 0)}>Services</Link>
-              <Link href="/about" className={`transition-colors ${location === '/about' ? 'bg-gradient-to-r from-blue-600 to-emerald-600 bg-clip-text text-transparent font-semibold' : 'text-white hover:text-teal-600'}`} onClick={() => window.scrollTo(0, 0)}>About</Link>
-              <Link href="/careers" className={`transition-colors ${location === '/careers' ? 'bg-gradient-to-r from-blue-600 to-emerald-600 bg-clip-text text-transparent font-semibold' : 'text-white hover:text-teal-600'}`} onClick={() => window.scrollTo(0, 0)}>Careers</Link>
-              <Link href="/social-impact" className={`transition-colors ${location === '/social-impact' ? 'bg-gradient-to-r from-blue-600 to-emerald-600 bg-clip-text text-transparent font-semibold' : 'text-white hover:text-teal-600'}`} onClick={() => window.scrollTo(0, 0)}>CSR</Link>
+              <Link href="/" className={`transition-colors ${location === '/' ? 'bg-gradient-to-r from-blue-600 to-emerald-600 bg-clip-text text-transparent font-semibold' : 'text-gray-700 hover:text-teal-600'}`} onClick={() => window.scrollTo(0, 0)}>Home</Link>
+              <Link href="/enterprise" className={`transition-colors ${location.startsWith('/enterprise') ? 'bg-gradient-to-r from-blue-600 to-emerald-600 bg-clip-text text-transparent font-semibold' : 'text-gray-700 hover:text-teal-600'}`} onClick={() => window.scrollTo(0, 0)}>Enterprise</Link>
+              <Link href="/services" className={`transition-colors ${location.startsWith('/services') ? 'bg-gradient-to-r from-blue-600 to-emerald-600 bg-clip-text text-transparent font-semibold' : 'text-gray-700 hover:text-teal-600'}`} onClick={() => window.scrollTo(0, 0)}>Services</Link>
+              <Link href="/about" className={`transition-colors ${location === '/about' ? 'bg-gradient-to-r from-blue-600 to-emerald-600 bg-clip-text text-transparent font-semibold' : 'text-gray-700 hover:text-teal-600'}`} onClick={() => window.scrollTo(0, 0)}>About</Link>
+              <Link href="/careers" className={`transition-colors ${location === '/careers' ? 'bg-gradient-to-r from-blue-600 to-emerald-600 bg-clip-text text-transparent font-semibold' : 'text-gray-700 hover:text-teal-600'}`} onClick={() => window.scrollTo(0, 0)}>Careers</Link>
+              <Link href="/social-impact" className={`transition-colors ${location === '/social-impact' ? 'bg-gradient-to-r from-blue-600 to-emerald-600 bg-clip-text text-transparent font-semibold' : 'text-gray-700 hover:text-teal-600'}`} onClick={() => window.scrollTo(0, 0)}>CSR</Link>
             </div>
           </div>
           
