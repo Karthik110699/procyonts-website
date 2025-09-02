@@ -98,7 +98,7 @@ export default function AboutPage() {
               </div>
               <h2 className="text-4xl font-bold mb-6 text-blue-400">Our Mission</h2>
               <p className="text-gray-300 text-lg leading-relaxed">
-                To empower organizations with transformative technology solutions that drive innovation, efficiency, and sustainable growth. We believe in harnessing the power of AI and modern technology to solve complex business challenges.
+                On customer goals through effective partnership and thought leadership
               </p>
             </div>
             
