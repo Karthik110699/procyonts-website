@@ -116,6 +116,129 @@ export default function AboutPage() {
         </div>
       </section>
 
+      {/* Our Journey Timeline */}
+      <section className="py-20 bg-gradient-to-b from-gray-900/80 via-procyon-dark to-gray-900/80 relative overflow-hidden">
+        <div className="wireframe-overlay"></div>
+        <div className="morphing-bg"></div>
+        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
+          
+          {/* Header */}
+          <div className="text-center mb-20">
+            <h2 className="text-5xl md:text-6xl font-bold mb-6">
+              <span className="bg-gradient-to-r from-blue-400 via-emerald-400 to-yellow-400 bg-clip-text text-transparent">
+                Our Journey
+              </span>
+            </h2>
+            <h3 className="text-2xl md:text-3xl font-semibold text-emerald-400 mb-4">
+              Growing with Vision, Innovating with Purpose
+            </h3>
+            <p className="text-xl text-gray-300 mb-8">
+              From a boutique consultancy to a global transformation partner
+            </p>
+            <div className="max-w-4xl mx-auto">
+              <p className="text-lg text-gray-400 leading-relaxed">
+                Since 2004, Procyon has grown from a boutique IT consultancy in California to a global transformation partner with a presence in Toronto and Chennai. Each milestone from launching AI-driven platforms like Hekma and Akra to building a strong AI and Cloud practice reflects our commitment to innovation and impact. With 200+ projects delivered, we continue to help businesses stay agile, future-ready, and competitive in the digital era.
+              </p>
+            </div>
+          </div>
+
+          {/* Timeline */}
+          <div className="relative">
+            {/* Central Line */}
+            <div className="absolute left-1/2 transform -translate-x-1/2 w-1 h-full bg-gradient-to-b from-blue-500 via-emerald-500 to-yellow-500 rounded-full shadow-lg shadow-blue-500/30"></div>
+            
+            {/* Timeline Items */}
+            <div className="space-y-16">
+              
+              {/* 2004 */}
+              <div className="relative flex items-center">
+                <div className="flex-1 text-right pr-8">
+                  <div className="bg-gradient-to-r from-blue-900/40 to-blue-800/40 p-6 rounded-xl border border-blue-500/30 backdrop-blur-sm">
+                    <div className="text-3xl font-bold text-blue-400 mb-2">2004</div>
+                    <div className="text-lg text-gray-300">Founded in San Rafael, CA</div>
+                  </div>
+                </div>
+                <div className="absolute left-1/2 transform -translate-x-1/2 w-6 h-6 bg-blue-500 rounded-full shadow-lg shadow-blue-500/50 z-10 border-4 border-procyon-dark"></div>
+                <div className="flex-1 pl-8"></div>
+              </div>
+
+              {/* 2008 */}
+              <div className="relative flex items-center">
+                <div className="flex-1 pr-8"></div>
+                <div className="absolute left-1/2 transform -translate-x-1/2 w-6 h-6 bg-emerald-500 rounded-full shadow-lg shadow-emerald-500/50 z-10 border-4 border-procyon-dark"></div>
+                <div className="flex-1 text-left pl-8">
+                  <div className="bg-gradient-to-r from-emerald-900/40 to-emerald-800/40 p-6 rounded-xl border border-emerald-500/30 backdrop-blur-sm">
+                    <div className="text-3xl font-bold text-emerald-400 mb-2">2008</div>
+                    <div className="text-lg text-gray-300">Expanded operations to Toronto, Canada</div>
+                  </div>
+                </div>
+              </div>
+
+              {/* 2015 */}
+              <div className="relative flex items-center">
+                <div className="flex-1 text-right pr-8">
+                  <div className="bg-gradient-to-r from-purple-900/40 to-purple-800/40 p-6 rounded-xl border border-purple-500/30 backdrop-blur-sm">
+                    <div className="text-3xl font-bold text-purple-400 mb-2">2015</div>
+                    <div className="text-lg text-gray-300">Opened our delivery center in Chennai, India</div>
+                  </div>
+                </div>
+                <div className="absolute left-1/2 transform -translate-x-1/2 w-6 h-6 bg-purple-500 rounded-full shadow-lg shadow-purple-500/50 z-10 border-4 border-procyon-dark"></div>
+                <div className="flex-1 pl-8"></div>
+              </div>
+
+              {/* 2018 */}
+              <div className="relative flex items-center">
+                <div className="flex-1 pr-8"></div>
+                <div className="absolute left-1/2 transform -translate-x-1/2 w-6 h-6 bg-amber-500 rounded-full shadow-lg shadow-amber-500/50 z-10 border-4 border-procyon-dark"></div>
+                <div className="flex-1 text-left pl-8">
+                  <div className="bg-gradient-to-r from-amber-900/40 to-amber-800/40 p-6 rounded-xl border border-amber-500/30 backdrop-blur-sm">
+                    <div className="text-3xl font-bold text-amber-400 mb-2">2018</div>
+                    <div className="text-lg text-gray-300">Hekma: AI drug development accelerator</div>
+                  </div>
+                </div>
+              </div>
+
+              {/* 2020 */}
+              <div className="relative flex items-center">
+                <div className="flex-1 text-right pr-8">
+                  <div className="bg-gradient-to-r from-cyan-900/40 to-cyan-800/40 p-6 rounded-xl border border-cyan-500/30 backdrop-blur-sm">
+                    <div className="text-3xl font-bold text-cyan-400 mb-2">2020</div>
+                    <div className="text-lg text-gray-300">AI & Cloud practice launched</div>
+                  </div>
+                </div>
+                <div className="absolute left-1/2 transform -translate-x-1/2 w-6 h-6 bg-cyan-500 rounded-full shadow-lg shadow-cyan-500/50 z-10 border-4 border-procyon-dark"></div>
+                <div className="flex-1 pl-8"></div>
+              </div>
+
+              {/* 2022 */}
+              <div className="relative flex items-center">
+                <div className="flex-1 pr-8"></div>
+                <div className="absolute left-1/2 transform -translate-x-1/2 w-6 h-6 bg-rose-500 rounded-full shadow-lg shadow-rose-500/50 z-10 border-4 border-procyon-dark"></div>
+                <div className="flex-1 text-left pl-8">
+                  <div className="bg-gradient-to-r from-rose-900/40 to-rose-800/40 p-6 rounded-xl border border-rose-500/30 backdrop-blur-sm">
+                    <div className="text-3xl font-bold text-rose-400 mb-2">2022</div>
+                    <div className="text-lg text-gray-300">Akra: Digital Health SaaS (SiMD, SaMD)</div>
+                  </div>
+                </div>
+              </div>
+
+              {/* 2023 */}
+              <div className="relative flex items-center">
+                <div className="flex-1 text-right pr-8">
+                  <div className="bg-gradient-to-r from-green-900/40 to-green-800/40 p-6 rounded-xl border border-green-500/30 backdrop-blur-sm">
+                    <div className="text-3xl font-bold text-green-400 mb-2">2023</div>
+                    <div className="text-lg text-gray-300">150+ projects delivered</div>
+                  </div>
+                </div>
+                <div className="absolute left-1/2 transform -translate-x-1/2 w-6 h-6 bg-green-500 rounded-full shadow-lg shadow-green-500/50 z-10 border-4 border-procyon-dark"></div>
+                <div className="flex-1 pl-8"></div>
+              </div>
+              
+            </div>
+          </div>
+        </div>
+      </section>
+
       {/* Values */}
       <section className="py-20 bg-gray-900/50 zoom-container">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 zoom-section">
