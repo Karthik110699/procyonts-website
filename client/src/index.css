@@ -71,55 +71,55 @@
   /* Custom Animations - Orbital Motion */
   @keyframes orbit-1 {
     from {
-      transform: translate(-50%, -50%) rotate(0deg) translateX(200px) rotate(0deg);
+      transform: translate(-50%, -50%) rotate(0deg) translateX(320px) rotate(0deg);
     }
     to {
-      transform: translate(-50%, -50%) rotate(360deg) translateX(200px) rotate(-360deg);
+      transform: translate(-50%, -50%) rotate(360deg) translateX(320px) rotate(-360deg);
     }
   }
 
   @keyframes orbit-2 {
     from {
-      transform: translate(-50%, -50%) rotate(60deg) translateX(200px) rotate(-60deg);
+      transform: translate(-50%, -50%) rotate(60deg) translateX(320px) rotate(-60deg);
     }
     to {
-      transform: translate(-50%, -50%) rotate(420deg) translateX(200px) rotate(-420deg);
+      transform: translate(-50%, -50%) rotate(420deg) translateX(320px) rotate(-420deg);
     }
   }
 
   @keyframes orbit-3 {
     from {
-      transform: translate(-50%, -50%) rotate(120deg) translateX(200px) rotate(-120deg);
+      transform: translate(-50%, -50%) rotate(120deg) translateX(320px) rotate(-120deg);
     }
     to {
-      transform: translate(-50%, -50%) rotate(480deg) translateX(200px) rotate(-480deg);
+      transform: translate(-50%, -50%) rotate(480deg) translateX(320px) rotate(-480deg);
     }
   }
 
   @keyframes orbit-4 {
     from {
-      transform: translate(-50%, -50%) rotate(180deg) translateX(200px) rotate(-180deg);
+      transform: translate(-50%, -50%) rotate(180deg) translateX(320px) rotate(-180deg);
     }
     to {
-      transform: translate(-50%, -50%) rotate(540deg) translateX(200px) rotate(-540deg);
+      transform: translate(-50%, -50%) rotate(540deg) translateX(320px) rotate(-540deg);
     }
   }
 
   @keyframes orbit-5 {
     from {
-      transform: translate(-50%, -50%) rotate(240deg) translateX(200px) rotate(-240deg);
+      transform: translate(-50%, -50%) rotate(240deg) translateX(320px) rotate(-240deg);
     }
     to {
-      transform: translate(-50%, -50%) rotate(600deg) translateX(200px) rotate(-600deg);
+      transform: translate(-50%, -50%) rotate(600deg) translateX(320px) rotate(-600deg);
     }
   }
 
   @keyframes orbit-6 {
     from {
-      transform: translate(-50%, -50%) rotate(300deg) translateX(200px) rotate(-300deg);
+      transform: translate(-50%, -50%) rotate(300deg) translateX(320px) rotate(-300deg);
     }
     to {
-      transform: translate(-50%, -50%) rotate(660deg) translateX(200px) rotate(-660deg);
+      transform: translate(-50%, -50%) rotate(660deg) translateX(320px) rotate(-660deg);
     }
   }
 
