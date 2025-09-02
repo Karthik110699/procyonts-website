@@ -3,6 +3,22 @@ import { Link } from "wouter";
 
 export default function HeroSection() {
   const [currentServiceIndex, setCurrentServiceIndex] = useState(0);
+  const [currentHeroTextIndex, setCurrentHeroTextIndex] = useState(0);
+  
+  const heroTexts = [
+    {
+      line1: "AI-Powered Solutions?",
+      line2: "Procyon's Your Partner!"
+    },
+    {
+      line1: "Revolutionizing Enterprises with AI, Talent, and Technology,",
+      line2: "Procyon's Everywhere!"
+    },
+    {
+      line1: "From enterprise solutions to staffing excellence and product innovation,",
+      line2: "Procyon empowers your business to lead the digital future!"
+    }
+  ];
   
   const procyonServices = [
     { name: "ServiceNow", color: "from-green-400 to-green-500", dotColor: "bg-green-400", shadowColor: "shadow-green-400/50", link: "/enterprise/servicenow" },
@@ -23,7 +39,15 @@ export default function HeroSection() {
       setCurrentServiceIndex((prev) => (prev + 1) % procyonServices.length);
     }, 2000);
 
-    return () => clearInterval(serviceInterval);
+    // Rotate through hero texts
+    const heroTextInterval = setInterval(() => {
+      setCurrentHeroTextIndex((prev) => (prev + 1) % heroTexts.length);
+    }, 4000);
+
+    return () => {
+      clearInterval(serviceInterval);
+      clearInterval(heroTextInterval);
+    };
   }, []);
 
   return (
@@ -51,10 +75,12 @@ export default function HeroSection() {
           <div className="flex-1 flex flex-col justify-center items-center px-4 py-8">
             <div className="text-center space-y-8">
               <h1 className="text-2xl sm:text-3xl md:text-4xl font-bold leading-tight text-white">
-                <span className="block animated-gradient-text mb-2">
-                  AI-Powered Solutions?
+                <span className="block animated-gradient-text mb-2 transition-all duration-500">
+                  {heroTexts[currentHeroTextIndex].line1}
                 </span>
-                <span className="block">Procyon's Your Partner!</span>
+                <span className="block transition-all duration-500">
+                  {heroTexts[currentHeroTextIndex].line2}
+                </span>
               </h1>
               
               {/* Mobile Motion Graphics */}
@@ -113,10 +139,12 @@ export default function HeroSection() {
               {/* Fixed Innovative Text */}
               <div className="mb-8">
                 <h1 className="text-6xl xl:text-7xl font-bold leading-tight text-white mb-6">
-                  <span className="block animated-gradient-text mb-2">
-                    AI-Powered Solutions?
+                  <span className="block animated-gradient-text mb-2 transition-all duration-500">
+                    {heroTexts[currentHeroTextIndex].line1}
                   </span>
-                  <span className="block">Procyon's Your Partner!</span>
+                  <span className="block transition-all duration-500">
+                    {heroTexts[currentHeroTextIndex].line2}
+                  </span>
                 </h1>
               </div>
 
