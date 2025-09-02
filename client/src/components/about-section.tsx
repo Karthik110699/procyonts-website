@@ -11,14 +11,14 @@ export default function AboutSection() {
       <div className="morphing-bg"></div>
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 zoom-slide-up" data-delay="0">
         <div className="grid lg:grid-cols-2 gap-12 items-center">
-          <div className="reveal-slide-left" data-delay="200">
+          <div className="reveal-slide-left lg:order-1 order-2" data-delay="200">
             <img 
               src={aibrainImage} 
               alt="AI brain with neural network connections and data analytics dashboards showing intelligent insights" 
               className="rounded-2xl shadow-2xl"
             />
           </div>
-          <div className="space-y-8 reveal-slide-right" data-delay="300">
+          <div className="space-y-8 reveal-slide-right lg:order-2 order-1" data-delay="300">
             <div className="space-y-4">
               <h3 className="text-blue-400 font-semibold text-lg">Value-driven approach</h3>
               <h2 className="text-4xl md:text-5xl font-bold">What we do</h2>

@@ -59,7 +59,7 @@ export default function Home() {
         <div className="absolute top-0 left-0 right-0 h-40 bg-gradient-to-b from-teal-800/60 via-blue-800/40 to-transparent"></div>
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
           <div className="grid lg:grid-cols-2 gap-12 items-center">
-            <div className="space-y-8 reveal">
+            <div className="space-y-8 reveal lg:order-1 order-1">
               <div className="inline-block px-4 py-2 bg-blue-500/20 rounded-full text-blue-400 font-semibold">
                 Guiding organizations to thrive
               </div>
@@ -96,7 +96,7 @@ export default function Home() {
                 Let's Navigate Together
               </a>
             </div>
-            <div className="reveal relative">
+            <div className="reveal relative lg:order-2 order-2">
               <img 
                 src={aiRobotImage} 
                 alt="Futuristic AI robot working with holographic interface and advanced technology systems" 
