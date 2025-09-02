@@ -16,8 +16,8 @@ export default function TestimonialsSection() {
     },
     {
       quote: "The staffing support from Procyon was outstanding. They quickly understood our requirements and provided skilled professionals who seamlessly integrated with our team and delivered beyond expectations.",
-      author: "Robert Lee",
-      role: "HR Director",
+      author: "Ashik Saleem",
+      role: "Director of Technology",
       color: "purple"
     }
   ];
