@@ -228,24 +228,6 @@ export default function ContactPage() {
                 </div>
               </div>
 
-              {/* Response Time */}
-              <div className="mt-12 p-6 bg-gradient-to-br from-gray-800 to-gray-900 rounded-2xl border border-gray-700">
-                <h3 className="text-xl font-semibold mb-4">Quick Response Guarantee</h3>
-                <div className="space-y-3">
-                  <div className="flex justify-between">
-                    <span className="text-gray-300">General inquiries:</span>
-                    <span className="text-blue-400 font-semibold">24 hours</span>
-                  </div>
-                  <div className="flex justify-between">
-                    <span className="text-gray-300">Enterprise projects:</span>
-                    <span className="text-emerald-400 font-semibold">4 hours</span>
-                  </div>
-                  <div className="flex justify-between">
-                    <span className="text-gray-300">Support requests:</span>
-                    <span className="text-purple-400 font-semibold">2 hours</span>
-                  </div>
-                </div>
-              </div>
             </div>
 
             {/* Contact Form */}
