@@ -182,23 +182,23 @@ export default function AboutPage() {
           
           <div className="grid md:grid-cols-4 gap-8">
             <div className="text-center">
-              <div className="text-5xl font-bold text-blue-400 mb-2">500+</div>
-              <div className="text-gray-300">Projects Completed</div>
+              <div className="text-5xl font-bold text-blue-400 mb-2">20+</div>
+              <div className="text-gray-300">Year Experience</div>
             </div>
             
             <div className="text-center">
-              <div className="text-5xl font-bold text-emerald-400 mb-2">98%</div>
-              <div className="text-gray-300">Client Satisfaction</div>
+              <div className="text-5xl font-bold text-emerald-400 mb-2">150+</div>
+              <div className="text-gray-300">Successful Projects</div>
             </div>
             
             <div className="text-center">
-              <div className="text-5xl font-bold text-purple-400 mb-2">150+</div>
-              <div className="text-gray-300">Expert Team Members</div>
+              <div className="text-5xl font-bold text-purple-400 mb-2">75+</div>
+              <div className="text-gray-300">Global Clients</div>
             </div>
             
             <div className="text-center">
-              <div className="text-5xl font-bold text-amber-400 mb-2">24/7</div>
-              <div className="text-gray-300">Support Available</div>
+              <div className="text-5xl font-bold text-amber-400 mb-2">3+</div>
+              <div className="text-gray-300">Worldwide Branches</div>
             </div>
           </div>
         </div>
