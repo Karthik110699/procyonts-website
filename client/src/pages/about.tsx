@@ -83,7 +83,8 @@ export default function AboutPage() {
             <span className="gradient-text">About Procyon</span>
           </h1>
           <p className="text-xl text-gray-300 max-w-3xl reveal-fade" data-delay="200">
-            We are a forward-thinking technology company dedicated to transforming businesses through innovative AI-powered solutions and cutting-edge digital services.
+            At Procyon, we help businesses lead the digital era with resilience and foresight. Founded in 2004, we are a global IT solutions provider with headquarters in Novato, CA, and a global presence spanning Toronto and Chennai.
+            We specialize in creating customized, scalable, and sustainable technology solutions that drive performance and long-term growth. With over 200 successful projects delivered, our solutions help businesses stay competitive, future-ready, and efficient.
           </p>
         </div>
       </div>
