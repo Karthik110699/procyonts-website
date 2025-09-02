@@ -35,7 +35,7 @@ export default function AboutSection() {
                 <div className="space-y-2">
                   <div className="text-emerald-400 font-semibold">Product Strategy</div>
                   <div className="text-emerald-400 font-semibold">Enterprise Architecture</div>
-                  <div className="text-emerald-400 font-semibold">Digital Strategy</div>
+                  <div className="text-emerald-400 font-semibold">Staffing Solutions</div>
                 </div>
               </div>
             </div>
