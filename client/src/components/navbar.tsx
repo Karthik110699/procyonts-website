@@ -27,24 +27,11 @@ export default function Navbar() {
           {/* Logo */}
           <Link href="/" className="flex-shrink-0">
             <div className="flex items-center">
-              <div className="logo-flip-container">
-                <div className="logo-flip-inner">
-                  <div className="logo-flip-front">
-                    <img 
-                      src={logoUrl} 
-                      alt="Procyon Technostructure" 
-                      className="h-10 sm:h-12 lg:h-16 w-auto"
-                    />
-                  </div>
-                  <div className="logo-flip-back">
-                    <img 
-                      src={logoWhiteUrl} 
-                      alt="Procyon Technostructure" 
-                      className="h-10 sm:h-12 lg:h-16 w-auto"
-                    />
-                  </div>
-                </div>
-              </div>
+              <img 
+                src={logoUrl} 
+                alt="Procyon Technostructure" 
+                className="h-10 sm:h-12 lg:h-16 w-auto"
+              />
             </div>
           </Link>
           
