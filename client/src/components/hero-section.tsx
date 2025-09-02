@@ -74,15 +74,15 @@ export default function HeroSection() {
           {/* Mobile Content - Centered */}
           <div className="flex-1 flex flex-col justify-center items-center px-4 py-8">
             <div className="text-center space-y-8">
-              <h1 className={`font-bold leading-tight text-white transition-all duration-500 ${
+              <h1 className={`font-bold leading-tight text-white ${
                 currentHeroTextIndex === 0 
                   ? 'text-2xl sm:text-3xl md:text-4xl' 
                   : 'text-lg sm:text-xl md:text-2xl'
               }`}>
-                <span className="block animated-gradient-text mb-2 transition-all duration-500">
+                <span className="block animated-gradient-text mb-2">
                   {heroTexts[currentHeroTextIndex].line1}
                 </span>
-                <span className="block transition-all duration-500">
+                <span className="block">
                   {heroTexts[currentHeroTextIndex].line2}
                 </span>
               </h1>
@@ -142,15 +142,15 @@ export default function HeroSection() {
               
               {/* Fixed Innovative Text */}
               <div className="mb-8">
-                <h1 className={`font-bold leading-tight text-white mb-6 transition-all duration-500 ${
+                <h1 className={`font-bold leading-tight text-white mb-6 ${
                   currentHeroTextIndex === 0 
                     ? 'text-6xl xl:text-7xl' 
                     : 'text-4xl xl:text-5xl'
                 }`}>
-                  <span className="block animated-gradient-text mb-2 transition-all duration-500">
+                  <span className="block animated-gradient-text mb-2">
                     {heroTexts[currentHeroTextIndex].line1}
                   </span>
-                  <span className="block transition-all duration-500">
+                  <span className="block">
                     {heroTexts[currentHeroTextIndex].line2}
                   </span>
                 </h1>
