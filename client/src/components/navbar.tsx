@@ -35,12 +35,12 @@ export default function Navbar() {
           {/* Desktop Menu */}
           <div className="hidden md:block">
             <div className="ml-10 flex items-baseline space-x-8">
-              <Link href="/" className={`transition-colors font-medium ${location === '/' ? 'bg-gradient-to-r from-blue-600 to-emerald-600 bg-clip-text text-transparent font-bold' : 'text-black hover:text-teal-600'}`} onClick={() => window.scrollTo(0, 0)}>Home</Link>
-              <Link href="/enterprise" className={`transition-colors font-medium ${location.startsWith('/enterprise') ? 'bg-gradient-to-r from-blue-600 to-emerald-600 bg-clip-text text-transparent font-bold' : 'text-black hover:text-teal-600'}`} onClick={() => window.scrollTo(0, 0)}>Enterprise</Link>
-              <Link href="/services" className={`transition-colors font-medium ${location.startsWith('/services') ? 'bg-gradient-to-r from-blue-600 to-emerald-600 bg-clip-text text-transparent font-bold' : 'text-black hover:text-teal-600'}`} onClick={() => window.scrollTo(0, 0)}>Services</Link>
-              <Link href="/about" className={`transition-colors font-medium ${location === '/about' ? 'bg-gradient-to-r from-blue-600 to-emerald-600 bg-clip-text text-transparent font-bold' : 'text-black hover:text-teal-600'}`} onClick={() => window.scrollTo(0, 0)}>About</Link>
-              <Link href="/careers" className={`transition-colors font-medium ${location === '/careers' ? 'bg-gradient-to-r from-blue-600 to-emerald-600 bg-clip-text text-transparent font-bold' : 'text-black hover:text-teal-600'}`} onClick={() => window.scrollTo(0, 0)}>Careers</Link>
-              <Link href="/social-impact" className={`transition-colors font-medium ${location === '/social-impact' ? 'bg-gradient-to-r from-blue-600 to-emerald-600 bg-clip-text text-transparent font-bold' : 'text-black hover:text-teal-600'}`} onClick={() => window.scrollTo(0, 0)}>CSR</Link>
+              <Link href="/" className={`transition-colors font-medium ${location === '/' ? 'bg-gradient-to-r from-blue-600 to-emerald-600 bg-clip-text text-transparent' : 'text-black hover:text-teal-600'}`} onClick={() => window.scrollTo(0, 0)}>Home</Link>
+              <Link href="/enterprise" className={`transition-colors font-medium ${location.startsWith('/enterprise') ? 'bg-gradient-to-r from-blue-600 to-emerald-600 bg-clip-text text-transparent' : 'text-black hover:text-teal-600'}`} onClick={() => window.scrollTo(0, 0)}>Enterprise</Link>
+              <Link href="/services" className={`transition-colors font-medium ${location.startsWith('/services') ? 'bg-gradient-to-r from-blue-600 to-emerald-600 bg-clip-text text-transparent' : 'text-black hover:text-teal-600'}`} onClick={() => window.scrollTo(0, 0)}>Services</Link>
+              <Link href="/about" className={`transition-colors font-medium ${location === '/about' ? 'bg-gradient-to-r from-blue-600 to-emerald-600 bg-clip-text text-transparent' : 'text-black hover:text-teal-600'}`} onClick={() => window.scrollTo(0, 0)}>About</Link>
+              <Link href="/careers" className={`transition-colors font-medium ${location === '/careers' ? 'bg-gradient-to-r from-blue-600 to-emerald-600 bg-clip-text text-transparent' : 'text-black hover:text-teal-600'}`} onClick={() => window.scrollTo(0, 0)}>Careers</Link>
+              <Link href="/social-impact" className={`transition-colors font-medium ${location === '/social-impact' ? 'bg-gradient-to-r from-blue-600 to-emerald-600 bg-clip-text text-transparent' : 'text-black hover:text-teal-600'}`} onClick={() => window.scrollTo(0, 0)}>CSR</Link>
             </div>
           </div>
           
