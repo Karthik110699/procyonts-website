@@ -280,32 +280,121 @@ export default function AboutPage() {
             </p>
           </div>
 
-          {/* Circular Values Layout */}
-          <div className="relative max-w-6xl mx-auto">
+          {/* Mobile Layout - Stacked Cards */}
+          <div className="block lg:hidden">
+            <div className="space-y-8 max-w-md mx-auto">
+              {/* 01 - Customer FIRST */}
+              <div className="bg-gradient-to-br from-red-900/40 to-red-800/30 p-6 rounded-2xl border border-red-500/30 backdrop-blur-sm hover:scale-105 transition-all duration-500 hover:shadow-2xl hover:shadow-red-500/20">
+                <div className="flex items-center mb-4">
+                  <div className="w-10 h-10 bg-red-500 rounded-full flex items-center justify-center mr-3 font-bold text-white">01</div>
+                  <div className="w-10 h-10 bg-red-500/20 rounded-xl flex items-center justify-center">
+                    <Users className="w-5 h-5 text-red-400" />
+                  </div>
+                </div>
+                <h3 className="text-xl font-bold text-red-400 mb-3">Customer FIRST</h3>
+                <p className="text-gray-300 leading-relaxed">
+                  Our customers are at the heart of everything we do. Their success is our success, and we prioritize their needs above all else.
+                </p>
+              </div>
+
+              {/* 02 - Every Customer is different */}
+              <div className="bg-gradient-to-br from-blue-900/40 to-blue-800/30 p-6 rounded-2xl border border-blue-500/30 backdrop-blur-sm hover:scale-105 transition-all duration-500 hover:shadow-2xl hover:shadow-blue-500/20">
+                <div className="flex items-center mb-4">
+                  <div className="w-10 h-10 bg-blue-500 rounded-full flex items-center justify-center mr-3 font-bold text-white">02</div>
+                  <div className="w-10 h-10 bg-blue-500/20 rounded-xl flex items-center justify-center">
+                    <Target className="w-5 h-5 text-blue-400" />
+                  </div>
+                </div>
+                <h3 className="text-xl font-bold text-blue-400 mb-3">Every Customer is Different</h3>
+                <p className="text-gray-300 leading-relaxed">
+                  No ONE size fits all. We understand that each client has unique challenges and we tailor our solutions accordingly.
+                </p>
+              </div>
+
+              {/* 03 - Transparency and Collaboration */}
+              <div className="bg-gradient-to-br from-emerald-900/40 to-emerald-800/30 p-6 rounded-2xl border border-emerald-500/30 backdrop-blur-sm hover:scale-105 transition-all duration-500 hover:shadow-2xl hover:shadow-emerald-500/20">
+                <div className="flex items-center mb-4">
+                  <div className="w-10 h-10 bg-emerald-500 rounded-full flex items-center justify-center mr-3 font-bold text-white">03</div>
+                  <div className="w-10 h-10 bg-emerald-500/20 rounded-xl flex items-center justify-center">
+                    <Globe className="w-5 h-5 text-emerald-400" />
+                  </div>
+                </div>
+                <h3 className="text-xl font-bold text-emerald-400 mb-3">Transparency and Collaboration</h3>
+                <p className="text-gray-300 leading-relaxed">
+                  Open communication and genuine partnership form the foundation of our client relationships and internal teamwork.
+                </p>
+              </div>
+
+              {/* 04 - Celebrate and value Diversity */}
+              <div className="bg-gradient-to-br from-purple-900/40 to-purple-800/30 p-6 rounded-2xl border border-purple-500/30 backdrop-blur-sm hover:scale-105 transition-all duration-500 hover:shadow-2xl hover:shadow-purple-500/20">
+                <div className="flex items-center mb-4">
+                  <div className="w-10 h-10 bg-purple-500 rounded-full flex items-center justify-center mr-3 font-bold text-white">04</div>
+                  <div className="w-10 h-10 bg-purple-500/20 rounded-xl flex items-center justify-center">
+                    <Award className="w-5 h-5 text-purple-400" />
+                  </div>
+                </div>
+                <h3 className="text-xl font-bold text-purple-400 mb-3">Celebrate and Value Diversity</h3>
+                <p className="text-gray-300 leading-relaxed">
+                  We embrace different perspectives, backgrounds, and ideas as they fuel innovation and drive exceptional outcomes.
+                </p>
+              </div>
+
+              {/* 05 - Continuous Learning & Retrospect */}
+              <div className="bg-gradient-to-br from-amber-900/40 to-amber-800/30 p-6 rounded-2xl border border-amber-500/30 backdrop-blur-sm hover:scale-105 transition-all duration-500 hover:shadow-2xl hover:shadow-amber-500/20">
+                <div className="flex items-center mb-4">
+                  <div className="w-10 h-10 bg-amber-500 rounded-full flex items-center justify-center mr-3 font-bold text-white">05</div>
+                  <div className="w-10 h-10 bg-amber-500/20 rounded-xl flex items-center justify-center">
+                    <Target className="w-5 h-5 text-amber-400" />
+                  </div>
+                </div>
+                <h3 className="text-xl font-bold text-amber-400 mb-3">Continuous Learning & Retrospect</h3>
+                <p className="text-gray-300 leading-relaxed">
+                  We constantly evolve through learning, reflection, and adaptation to stay ahead in the ever-changing technology landscape.
+                </p>
+              </div>
+
+              {/* 06 - Encourage Ideation & Creativity */}
+              <div className="bg-gradient-to-br from-cyan-900/40 to-cyan-800/30 p-6 rounded-2xl border border-cyan-500/30 backdrop-blur-sm hover:scale-105 transition-all duration-500 hover:shadow-2xl hover:shadow-cyan-500/20">
+                <div className="flex items-center mb-4">
+                  <div className="w-10 h-10 bg-cyan-500 rounded-full flex items-center justify-center mr-3 font-bold text-white">06</div>
+                  <div className="w-10 h-10 bg-cyan-500/20 rounded-xl flex items-center justify-center">
+                    <Award className="w-5 h-5 text-cyan-400" />
+                  </div>
+                </div>
+                <h3 className="text-xl font-bold text-cyan-400 mb-3">Encourage Ideation & Creativity</h3>
+                <p className="text-gray-300 leading-relaxed">
+                  We foster an environment where innovative thinking thrives and creative solutions emerge to solve complex challenges.
+                </p>
+              </div>
+            </div>
+          </div>
+
+          {/* Desktop Layout - Circular Formation */}
+          <div className="hidden lg:block relative max-w-6xl mx-auto">
             
             {/* Central Hub */}
             <div className="absolute left-1/2 top-1/2 transform -translate-x-1/2 -translate-y-1/2 z-10">
-              <div className="w-32 h-32 md:w-40 md:h-40 bg-gradient-to-br from-blue-600/20 via-emerald-600/20 to-purple-600/20 rounded-full border-2 border-gradient-to-r border-blue-400/50 backdrop-blur-sm flex items-center justify-center">
-                <div className="w-20 h-20 md:w-24 md:h-24 bg-gradient-to-br from-blue-500 via-emerald-500 to-purple-500 rounded-full flex items-center justify-center">
-                  <span className="text-white font-bold text-lg md:text-xl">CORE</span>
+              <div className="w-32 h-32 xl:w-40 xl:h-40 bg-gradient-to-br from-blue-600/20 via-emerald-600/20 to-purple-600/20 rounded-full border-2 border-gradient-to-r border-blue-400/50 backdrop-blur-sm flex items-center justify-center">
+                <div className="w-20 h-20 xl:w-24 xl:h-24 bg-gradient-to-br from-blue-500 via-emerald-500 to-purple-500 rounded-full flex items-center justify-center">
+                  <span className="text-white font-bold text-lg xl:text-xl">CORE</span>
                 </div>
               </div>
             </div>
 
             {/* Value Cards in Circular Formation */}
-            <div className="relative w-full h-[800px] md:h-[900px]">
+            <div className="relative w-full h-[700px] xl:h-[800px]">
               
               {/* 01 - Customer FIRST */}
               <div className="absolute top-0 left-1/2 transform -translate-x-1/2 -translate-y-1/2 group cursor-pointer">
-                <div className="w-80 bg-gradient-to-br from-red-900/40 to-red-800/30 p-8 rounded-2xl border border-red-500/30 backdrop-blur-sm hover:scale-105 transition-all duration-500 hover:shadow-2xl hover:shadow-red-500/20">
-                  <div className="flex items-center mb-6">
-                    <div className="w-12 h-12 bg-red-500 rounded-full flex items-center justify-center mr-4 font-bold text-white text-lg">01</div>
-                    <div className="w-12 h-12 bg-red-500/20 rounded-xl flex items-center justify-center">
-                      <Users className="w-6 h-6 text-red-400" />
+                <div className="w-72 xl:w-80 bg-gradient-to-br from-red-900/40 to-red-800/30 p-6 xl:p-8 rounded-2xl border border-red-500/30 backdrop-blur-sm hover:scale-105 transition-all duration-500 hover:shadow-2xl hover:shadow-red-500/20">
+                  <div className="flex items-center mb-4 xl:mb-6">
+                    <div className="w-10 h-10 xl:w-12 xl:h-12 bg-red-500 rounded-full flex items-center justify-center mr-3 xl:mr-4 font-bold text-white text-lg">01</div>
+                    <div className="w-10 h-10 xl:w-12 xl:h-12 bg-red-500/20 rounded-xl flex items-center justify-center">
+                      <Users className="w-5 h-5 xl:w-6 xl:h-6 text-red-400" />
                     </div>
                   </div>
-                  <h3 className="text-2xl font-bold text-red-400 mb-4">Customer FIRST</h3>
-                  <p className="text-gray-300 text-lg leading-relaxed">
+                  <h3 className="text-xl xl:text-2xl font-bold text-red-400 mb-3 xl:mb-4">Customer FIRST</h3>
+                  <p className="text-gray-300 text-base xl:text-lg leading-relaxed">
                     Our customers are at the heart of everything we do. Their success is our success, and we prioritize their needs above all else.
                   </p>
                 </div>
@@ -313,15 +402,15 @@ export default function AboutPage() {
 
               {/* 02 - Every Customer is different */}
               <div className="absolute top-1/4 right-0 transform translate-x-1/2 -translate-y-1/2 group cursor-pointer">
-                <div className="w-80 bg-gradient-to-br from-blue-900/40 to-blue-800/30 p-8 rounded-2xl border border-blue-500/30 backdrop-blur-sm hover:scale-105 transition-all duration-500 hover:shadow-2xl hover:shadow-blue-500/20">
-                  <div className="flex items-center mb-6">
-                    <div className="w-12 h-12 bg-blue-500 rounded-full flex items-center justify-center mr-4 font-bold text-white text-lg">02</div>
-                    <div className="w-12 h-12 bg-blue-500/20 rounded-xl flex items-center justify-center">
-                      <Target className="w-6 h-6 text-blue-400" />
+                <div className="w-72 xl:w-80 bg-gradient-to-br from-blue-900/40 to-blue-800/30 p-6 xl:p-8 rounded-2xl border border-blue-500/30 backdrop-blur-sm hover:scale-105 transition-all duration-500 hover:shadow-2xl hover:shadow-blue-500/20">
+                  <div className="flex items-center mb-4 xl:mb-6">
+                    <div className="w-10 h-10 xl:w-12 xl:h-12 bg-blue-500 rounded-full flex items-center justify-center mr-3 xl:mr-4 font-bold text-white text-lg">02</div>
+                    <div className="w-10 h-10 xl:w-12 xl:h-12 bg-blue-500/20 rounded-xl flex items-center justify-center">
+                      <Target className="w-5 h-5 xl:w-6 xl:h-6 text-blue-400" />
                     </div>
                   </div>
-                  <h3 className="text-2xl font-bold text-blue-400 mb-4">Every Customer is Different</h3>
-                  <p className="text-gray-300 text-lg leading-relaxed">
+                  <h3 className="text-xl xl:text-2xl font-bold text-blue-400 mb-3 xl:mb-4">Every Customer is Different</h3>
+                  <p className="text-gray-300 text-base xl:text-lg leading-relaxed">
                     No ONE size fits all. We understand that each client has unique challenges and we tailor our solutions accordingly.
                   </p>
                 </div>
@@ -329,15 +418,15 @@ export default function AboutPage() {
 
               {/* 03 - Transparency and Collaboration */}
               <div className="absolute bottom-1/4 right-0 transform translate-x-1/2 translate-y-1/2 group cursor-pointer">
-                <div className="w-80 bg-gradient-to-br from-emerald-900/40 to-emerald-800/30 p-8 rounded-2xl border border-emerald-500/30 backdrop-blur-sm hover:scale-105 transition-all duration-500 hover:shadow-2xl hover:shadow-emerald-500/20">
-                  <div className="flex items-center mb-6">
-                    <div className="w-12 h-12 bg-emerald-500 rounded-full flex items-center justify-center mr-4 font-bold text-white text-lg">03</div>
-                    <div className="w-12 h-12 bg-emerald-500/20 rounded-xl flex items-center justify-center">
-                      <Globe className="w-6 h-6 text-emerald-400" />
+                <div className="w-72 xl:w-80 bg-gradient-to-br from-emerald-900/40 to-emerald-800/30 p-6 xl:p-8 rounded-2xl border border-emerald-500/30 backdrop-blur-sm hover:scale-105 transition-all duration-500 hover:shadow-2xl hover:shadow-emerald-500/20">
+                  <div className="flex items-center mb-4 xl:mb-6">
+                    <div className="w-10 h-10 xl:w-12 xl:h-12 bg-emerald-500 rounded-full flex items-center justify-center mr-3 xl:mr-4 font-bold text-white text-lg">03</div>
+                    <div className="w-10 h-10 xl:w-12 xl:h-12 bg-emerald-500/20 rounded-xl flex items-center justify-center">
+                      <Globe className="w-5 h-5 xl:w-6 xl:h-6 text-emerald-400" />
                     </div>
                   </div>
-                  <h3 className="text-2xl font-bold text-emerald-400 mb-4">Transparency and Collaboration</h3>
-                  <p className="text-gray-300 text-lg leading-relaxed">
+                  <h3 className="text-xl xl:text-2xl font-bold text-emerald-400 mb-3 xl:mb-4">Transparency and Collaboration</h3>
+                  <p className="text-gray-300 text-base xl:text-lg leading-relaxed">
                     Open communication and genuine partnership form the foundation of our client relationships and internal teamwork.
                   </p>
                 </div>
@@ -345,15 +434,15 @@ export default function AboutPage() {
 
               {/* 04 - Celebrate and value Diversity */}
               <div className="absolute bottom-0 left-1/2 transform -translate-x-1/2 translate-y-1/2 group cursor-pointer">
-                <div className="w-80 bg-gradient-to-br from-purple-900/40 to-purple-800/30 p-8 rounded-2xl border border-purple-500/30 backdrop-blur-sm hover:scale-105 transition-all duration-500 hover:shadow-2xl hover:shadow-purple-500/20">
-                  <div className="flex items-center mb-6">
-                    <div className="w-12 h-12 bg-purple-500 rounded-full flex items-center justify-center mr-4 font-bold text-white text-lg">04</div>
-                    <div className="w-12 h-12 bg-purple-500/20 rounded-xl flex items-center justify-center">
-                      <Award className="w-6 h-6 text-purple-400" />
+                <div className="w-72 xl:w-80 bg-gradient-to-br from-purple-900/40 to-purple-800/30 p-6 xl:p-8 rounded-2xl border border-purple-500/30 backdrop-blur-sm hover:scale-105 transition-all duration-500 hover:shadow-2xl hover:shadow-purple-500/20">
+                  <div className="flex items-center mb-4 xl:mb-6">
+                    <div className="w-10 h-10 xl:w-12 xl:h-12 bg-purple-500 rounded-full flex items-center justify-center mr-3 xl:mr-4 font-bold text-white text-lg">04</div>
+                    <div className="w-10 h-10 xl:w-12 xl:h-12 bg-purple-500/20 rounded-xl flex items-center justify-center">
+                      <Award className="w-5 h-5 xl:w-6 xl:h-6 text-purple-400" />
                     </div>
                   </div>
-                  <h3 className="text-2xl font-bold text-purple-400 mb-4">Celebrate and Value Diversity</h3>
-                  <p className="text-gray-300 text-lg leading-relaxed">
+                  <h3 className="text-xl xl:text-2xl font-bold text-purple-400 mb-3 xl:mb-4">Celebrate and Value Diversity</h3>
+                  <p className="text-gray-300 text-base xl:text-lg leading-relaxed">
                     We embrace different perspectives, backgrounds, and ideas as they fuel innovation and drive exceptional outcomes.
                   </p>
                 </div>
@@ -361,15 +450,15 @@ export default function AboutPage() {
 
               {/* 05 - Continuous Learning & Retrospect */}
               <div className="absolute bottom-1/4 left-0 transform -translate-x-1/2 translate-y-1/2 group cursor-pointer">
-                <div className="w-80 bg-gradient-to-br from-amber-900/40 to-amber-800/30 p-8 rounded-2xl border border-amber-500/30 backdrop-blur-sm hover:scale-105 transition-all duration-500 hover:shadow-2xl hover:shadow-amber-500/20">
-                  <div className="flex items-center mb-6">
-                    <div className="w-12 h-12 bg-amber-500 rounded-full flex items-center justify-center mr-4 font-bold text-white text-lg">05</div>
-                    <div className="w-12 h-12 bg-amber-500/20 rounded-xl flex items-center justify-center">
-                      <Target className="w-6 h-6 text-amber-400" />
+                <div className="w-72 xl:w-80 bg-gradient-to-br from-amber-900/40 to-amber-800/30 p-6 xl:p-8 rounded-2xl border border-amber-500/30 backdrop-blur-sm hover:scale-105 transition-all duration-500 hover:shadow-2xl hover:shadow-amber-500/20">
+                  <div className="flex items-center mb-4 xl:mb-6">
+                    <div className="w-10 h-10 xl:w-12 xl:h-12 bg-amber-500 rounded-full flex items-center justify-center mr-3 xl:mr-4 font-bold text-white text-lg">05</div>
+                    <div className="w-10 h-10 xl:w-12 xl:h-12 bg-amber-500/20 rounded-xl flex items-center justify-center">
+                      <Target className="w-5 h-5 xl:w-6 xl:h-6 text-amber-400" />
                     </div>
                   </div>
-                  <h3 className="text-2xl font-bold text-amber-400 mb-4">Continuous Learning & Retrospect</h3>
-                  <p className="text-gray-300 text-lg leading-relaxed">
+                  <h3 className="text-xl xl:text-2xl font-bold text-amber-400 mb-3 xl:mb-4">Continuous Learning & Retrospect</h3>
+                  <p className="text-gray-300 text-base xl:text-lg leading-relaxed">
                     We constantly evolve through learning, reflection, and adaptation to stay ahead in the ever-changing technology landscape.
                   </p>
                 </div>
@@ -377,15 +466,15 @@ export default function AboutPage() {
 
               {/* 06 - Encourage Ideation & Creativity */}
               <div className="absolute top-1/4 left-0 transform -translate-x-1/2 -translate-y-1/2 group cursor-pointer">
-                <div className="w-80 bg-gradient-to-br from-cyan-900/40 to-cyan-800/30 p-8 rounded-2xl border border-cyan-500/30 backdrop-blur-sm hover:scale-105 transition-all duration-500 hover:shadow-2xl hover:shadow-cyan-500/20">
-                  <div className="flex items-center mb-6">
-                    <div className="w-12 h-12 bg-cyan-500 rounded-full flex items-center justify-center mr-4 font-bold text-white text-lg">06</div>
-                    <div className="w-12 h-12 bg-cyan-500/20 rounded-xl flex items-center justify-center">
-                      <Award className="w-6 h-6 text-cyan-400" />
+                <div className="w-72 xl:w-80 bg-gradient-to-br from-cyan-900/40 to-cyan-800/30 p-6 xl:p-8 rounded-2xl border border-cyan-500/30 backdrop-blur-sm hover:scale-105 transition-all duration-500 hover:shadow-2xl hover:shadow-cyan-500/20">
+                  <div className="flex items-center mb-4 xl:mb-6">
+                    <div className="w-10 h-10 xl:w-12 xl:h-12 bg-cyan-500 rounded-full flex items-center justify-center mr-3 xl:mr-4 font-bold text-white text-lg">06</div>
+                    <div className="w-10 h-10 xl:w-12 xl:h-12 bg-cyan-500/20 rounded-xl flex items-center justify-center">
+                      <Award className="w-5 h-5 xl:w-6 xl:h-6 text-cyan-400" />
                     </div>
                   </div>
-                  <h3 className="text-2xl font-bold text-cyan-400 mb-4">Encourage Ideation & Creativity</h3>
-                  <p className="text-gray-300 text-lg leading-relaxed">
+                  <h3 className="text-xl xl:text-2xl font-bold text-cyan-400 mb-3 xl:mb-4">Encourage Ideation & Creativity</h3>
+                  <p className="text-gray-300 text-base xl:text-lg leading-relaxed">
                     We foster an environment where innovative thinking thrives and creative solutions emerge to solve complex challenges.
                   </p>
                 </div>
