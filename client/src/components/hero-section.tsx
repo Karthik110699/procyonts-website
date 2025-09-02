@@ -12,7 +12,7 @@ export default function HeroSection() {
     },
     {
       line1: "We empower your business to",
-      line2: "Lead the digital future!"
+      line2: "Lead the Digital Future!"
     }
   ];
   
