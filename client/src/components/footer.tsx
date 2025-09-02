@@ -35,12 +35,11 @@ export default function Footer() {
           <div>
             <h3 className="text-lg font-semibold mb-4">Services</h3>
             <ul className="space-y-2 text-gray-400">
-              <li><Link href="/services/ai-ml" className="hover:text-white transition-colors" onClick={() => window.scrollTo(0, 0)}>AI & Machine Learning</Link></li>
-              <li><Link href="/services/cloud" className="hover:text-white transition-colors" onClick={() => window.scrollTo(0, 0)}>Cloud Transformation</Link></li>
               <li><Link href="/services/data-analytics" className="hover:text-white transition-colors" onClick={() => window.scrollTo(0, 0)}>Data Strategy & Analytics</Link></li>
-              <li><Link href="/services/digital-engineering" className="hover:text-white transition-colors" onClick={() => window.scrollTo(0, 0)}>Digital Engineering</Link></li>
+              <li><Link href="/services/ai-ml" className="hover:text-white transition-colors" onClick={() => window.scrollTo(0, 0)}>Artificial Intelligence & Machine Learning</Link></li>
+              <li><Link href="/services/cloud" className="hover:text-white transition-colors" onClick={() => window.scrollTo(0, 0)}>Cloud Transformation & Optimization</Link></li>
+              <li><Link href="/services/staff-augmentation" className="hover:text-white transition-colors" onClick={() => window.scrollTo(0, 0)}>Staff Augmentation & Workforce Solutions</Link></li>
               <li><Link href="/services/government" className="hover:text-white transition-colors" onClick={() => window.scrollTo(0, 0)}>Government Solutions</Link></li>
-              <li><Link href="/services/staff-augmentation" className="hover:text-white transition-colors" onClick={() => window.scrollTo(0, 0)}>Staff Augmentation</Link></li>
             </ul>
           </div>
           
