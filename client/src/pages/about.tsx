@@ -388,7 +388,6 @@ export default function AboutPage() {
               <div className="absolute top-0 left-1/2 transform -translate-x-1/2 group cursor-pointer" style={{ top: '0px' }}>
                 <div className="w-48 xl:w-56 bg-gradient-to-br from-red-900/40 to-red-800/30 p-4 xl:p-5 rounded-2xl border border-red-500/30 backdrop-blur-sm hover:scale-105 transition-all duration-500 hover:shadow-2xl hover:shadow-red-500/20">
                   <div className="flex items-center justify-center">
-                    <div className="w-8 h-8 xl:w-10 xl:h-10 bg-red-500 rounded-full flex items-center justify-center mr-3 font-bold text-white text-sm xl:text-base">01</div>
                     <h3 className="text-base xl:text-lg font-bold text-red-400">Customer FIRST</h3>
                   </div>
                 </div>
@@ -398,7 +397,6 @@ export default function AboutPage() {
               <div className="absolute group cursor-pointer" style={{ top: '80px', right: '-30px' }}>
                 <div className="w-48 xl:w-56 bg-gradient-to-br from-blue-900/40 to-blue-800/30 p-4 xl:p-5 rounded-2xl border border-blue-500/30 backdrop-blur-sm hover:scale-105 transition-all duration-500 hover:shadow-2xl hover:shadow-blue-500/20">
                   <div className="flex items-center justify-center">
-                    <div className="w-8 h-8 xl:w-10 xl:h-10 bg-blue-500 rounded-full flex items-center justify-center mr-3 font-bold text-white text-sm xl:text-base">02</div>
                     <h3 className="text-base xl:text-lg font-bold text-blue-400">Every Customer is Different</h3>
                   </div>
                 </div>
@@ -408,7 +406,6 @@ export default function AboutPage() {
               <div className="absolute group cursor-pointer" style={{ bottom: '80px', right: '-30px' }}>
                 <div className="w-48 xl:w-56 bg-gradient-to-br from-emerald-900/40 to-emerald-800/30 p-4 xl:p-5 rounded-2xl border border-emerald-500/30 backdrop-blur-sm hover:scale-105 transition-all duration-500 hover:shadow-2xl hover:shadow-emerald-500/20">
                   <div className="flex items-center justify-center">
-                    <div className="w-8 h-8 xl:w-10 xl:h-10 bg-emerald-500 rounded-full flex items-center justify-center mr-3 font-bold text-white text-sm xl:text-base">03</div>
                     <h3 className="text-base xl:text-lg font-bold text-emerald-400">Transparency and Collaboration</h3>
                   </div>
                 </div>
@@ -418,7 +415,6 @@ export default function AboutPage() {
               <div className="absolute bottom-0 left-1/2 transform -translate-x-1/2 group cursor-pointer" style={{ bottom: '0px' }}>
                 <div className="w-48 xl:w-56 bg-gradient-to-br from-purple-900/40 to-purple-800/30 p-4 xl:p-5 rounded-2xl border border-purple-500/30 backdrop-blur-sm hover:scale-105 transition-all duration-500 hover:shadow-2xl hover:shadow-purple-500/20">
                   <div className="flex items-center justify-center">
-                    <div className="w-8 h-8 xl:w-10 xl:h-10 bg-purple-500 rounded-full flex items-center justify-center mr-3 font-bold text-white text-sm xl:text-base">04</div>
                     <h3 className="text-base xl:text-lg font-bold text-purple-400">Celebrate and Value Diversity</h3>
                   </div>
                 </div>
@@ -428,7 +424,6 @@ export default function AboutPage() {
               <div className="absolute group cursor-pointer" style={{ bottom: '80px', left: '-30px' }}>
                 <div className="w-48 xl:w-56 bg-gradient-to-br from-amber-900/40 to-amber-800/30 p-4 xl:p-5 rounded-2xl border border-amber-500/30 backdrop-blur-sm hover:scale-105 transition-all duration-500 hover:shadow-2xl hover:shadow-amber-500/20">
                   <div className="flex items-center justify-center">
-                    <div className="w-8 h-8 xl:w-10 xl:h-10 bg-amber-500 rounded-full flex items-center justify-center mr-3 font-bold text-white text-sm xl:text-base">05</div>
                     <h3 className="text-base xl:text-lg font-bold text-amber-400">Continuous Learning & Retrospect</h3>
                   </div>
                 </div>
@@ -438,7 +433,6 @@ export default function AboutPage() {
               <div className="absolute group cursor-pointer" style={{ top: '80px', left: '-30px' }}>
                 <div className="w-48 xl:w-56 bg-gradient-to-br from-cyan-900/40 to-cyan-800/30 p-4 xl:p-5 rounded-2xl border border-cyan-500/30 backdrop-blur-sm hover:scale-105 transition-all duration-500 hover:shadow-2xl hover:shadow-cyan-500/20">
                   <div className="flex items-center justify-center">
-                    <div className="w-8 h-8 xl:w-10 xl:h-10 bg-cyan-500 rounded-full flex items-center justify-center mr-3 font-bold text-white text-sm xl:text-base">06</div>
                     <h3 className="text-base xl:text-lg font-bold text-cyan-400">Encourage Ideation & Creativity</h3>
                   </div>
                 </div>
