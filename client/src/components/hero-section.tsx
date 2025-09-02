@@ -11,7 +11,7 @@ export default function HeroSection() {
       line2: "AI, Talent and Technology!"
     },
     {
-      line1: "We empower your business to",
+      line1: "Empowering Your Business to",
       line2: "Lead the Digital Future!"
     }
   ];
