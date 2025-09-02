@@ -5,6 +5,8 @@ import aibrainImage from "@assets/Trial1_1753910986636.png";
 export default function AboutSection() {
   const { count: projectsCount, ref: projectsRef } = useCounterAnimation(200, 2000);
   const { count: expertsCount, ref: expertsRef } = useCounterAnimation(75, 2000);
+  const { count: consultantsCount, ref: consultantsRef } = useCounterAnimation(250, 2000);
+  const { count: yearsCount, ref: yearsRef } = useCounterAnimation(20, 2000);
 
   return (
     <section id="about" className="py-20 bg-gradient-to-b from-gray-900/40 via-gray-900/60 to-gray-900/80 zoom-container">
@@ -26,16 +28,14 @@ export default function AboutSection() {
               <p className="text-xl text-gray-300">
                 At Procyon, we turn ideas into market-ready solutions, deliver enterprise technology that scales, and provide the right talent to drive digital growth.
               </p>
-              <div className="grid grid-cols-2 gap-4 mt-6">
-                <div className="space-y-2">
-                  <div className="text-blue-400 font-semibold">Innovation</div>
-                  <div className="text-blue-400 font-semibold">Visionary thinking</div>
-                  <div className="text-blue-400 font-semibold">AI Transformation</div>
+              <div className="grid grid-cols-2 gap-6 mt-6">
+                <div className="text-center" ref={consultantsRef}>
+                  <div className="text-3xl font-bold gradient-text">{consultantsCount}+</div>
+                  <p className="text-gray-400 mt-1">Expert Consultants</p>
                 </div>
-                <div className="space-y-2">
-                  <div className="text-emerald-400 font-semibold">Product Strategy</div>
-                  <div className="text-emerald-400 font-semibold">Enterprise Architecture</div>
-                  <div className="text-emerald-400 font-semibold">Staffing Solutions</div>
+                <div className="text-center" ref={yearsRef}>
+                  <div className="text-3xl font-bold gradient-text">{yearsCount}+</div>
+                  <p className="text-gray-400 mt-1">Years of Experience</p>
                 </div>
               </div>
             </div>
