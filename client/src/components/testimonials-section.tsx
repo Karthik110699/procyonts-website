@@ -15,9 +15,9 @@ export default function TestimonialsSection() {
       color: "emerald"
     },
     {
-      quote: "The cloud transformation journey with Procyon was seamless. They understood our challenges and delivered solutions that exceeded our expectations.",
+      quote: "The staffing support from Procyon was outstanding. They quickly understood our requirements and provided skilled professionals who seamlessly integrated with our team and delivered beyond expectations.",
       author: "Robert Lee",
-      role: "Operations Director",
+      role: "HR Director",
       color: "purple"
     }
   ];
