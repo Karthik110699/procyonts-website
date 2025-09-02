@@ -384,6 +384,14 @@ export default function AboutPage() {
             {/* Value Headings Revolving Around CORE */}
             <div className="relative w-full h-[500px] xl:h-[600px]">
               
+              {/* Lightning Bolts Radiating from CORE */}
+              <div className="lightning-bolt lightning-1"></div>
+              <div className="lightning-bolt lightning-2"></div>
+              <div className="lightning-bolt lightning-3"></div>
+              <div className="lightning-bolt lightning-4"></div>
+              <div className="lightning-bolt lightning-5"></div>
+              <div className="lightning-bolt lightning-6"></div>
+              
               {/* 01 - Customer FIRST */}
               <div className="absolute top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2 animate-orbit-1">
                 <div className="w-48 xl:w-56 bg-gradient-to-br from-red-900/40 to-red-800/30 p-4 xl:p-5 rounded-2xl border border-red-500/30 backdrop-blur-sm hover:scale-105 transition-all duration-500 hover:shadow-2xl hover:shadow-red-500/20">

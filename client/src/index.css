@@ -147,6 +147,74 @@
     animation: orbit-6 30s linear infinite;
   }
 
+  /* Lightning Animation */
+  @keyframes lightning-flash {
+    0% {
+      opacity: 0;
+      transform: scaleY(0);
+    }
+    5% {
+      opacity: 1;
+      transform: scaleY(1);
+    }
+    15% {
+      opacity: 0;
+      transform: scaleY(0);
+    }
+    100% {
+      opacity: 0;
+      transform: scaleY(0);
+    }
+  }
+
+  .lightning-bolt {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    width: 4px;
+    height: 260px;
+    background: linear-gradient(to bottom, 
+      transparent 0%, 
+      #00ffff 20%, 
+      #ffffff 40%, 
+      #00ffff 60%, 
+      transparent 100%);
+    transform-origin: top center;
+    opacity: 0;
+    border-radius: 2px;
+    box-shadow: 0 0 20px #00ffff, 0 0 40px #00ffff;
+  }
+
+  .lightning-1 {
+    transform: translate(-50%, -50%) rotate(0deg);
+    animation: lightning-flash 3s infinite;
+  }
+
+  .lightning-2 {
+    transform: translate(-50%, -50%) rotate(60deg);
+    animation: lightning-flash 3s infinite 0.5s;
+  }
+
+  .lightning-3 {
+    transform: translate(-50%, -50%) rotate(120deg);
+    animation: lightning-flash 3s infinite 1s;
+  }
+
+  .lightning-4 {
+    transform: translate(-50%, -50%) rotate(180deg);
+    animation: lightning-flash 3s infinite 1.5s;
+  }
+
+  .lightning-5 {
+    transform: translate(-50%, -50%) rotate(240deg);
+    animation: lightning-flash 3s infinite 2s;
+  }
+
+  .lightning-6 {
+    transform: translate(-50%, -50%) rotate(300deg);
+    animation: lightning-flash 3s infinite 2.5s;
+  }
+
   /* Magdemy.com Exact Scrollbar */
   ::-webkit-scrollbar {
     position: fixed;
