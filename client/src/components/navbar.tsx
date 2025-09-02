@@ -18,11 +18,8 @@ export default function Navbar() {
   }, []);
 
   return (
-    <nav className="fixed top-0 w-full z-40">
-      {/* Subtle glass background that softly blends */}
-      <div className="absolute inset-0 bg-gradient-to-b from-white/80 to-white/60 backdrop-blur-xl"></div>
-      <div className="absolute top-16 left-0 w-full h-4 bg-gradient-to-b from-white/60 to-transparent"></div>
-      <div className="relative z-10 max-w-7xl mx-auto px-4 sm:px-6 lg:pl-8 lg:pr-8" style={{ paddingLeft: 'calc(1rem - 5px)' }}>
+    <nav className="fixed top-0 w-full z-40 bg-white/80 backdrop-blur-xl">
+      <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:pl-8 lg:pr-8" style={{ paddingLeft: 'calc(1rem - 5px)' }}>
         <div className="flex justify-between items-center h-16">
           {/* Logo */}
           <Link href="/" className="flex-shrink-0">

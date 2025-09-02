@@ -48,6 +48,9 @@ export default function HeroSection() {
 
   return (
     <section id="home" className="relative min-h-screen overflow-hidden">
+      {/* Gradient Overlay to merge with glass header */}
+      <div className="absolute top-0 left-0 w-full h-32 bg-gradient-to-b from-white/20 via-white/10 to-transparent backdrop-blur-sm z-30 pointer-events-none"></div>
+      
       {/* Animated Wave Background */}
       <div className="wave-container">
         <div className="glow-effect"></div>
