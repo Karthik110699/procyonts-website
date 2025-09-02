@@ -64,7 +64,11 @@ export default function ClientsSection() {
                     <img 
                       src={client.logo} 
                       alt={`${client.name} logo`}
-                      className="max-h-12 max-w-full object-contain opacity-80 hover:opacity-100 transition-all duration-300 hover:scale-110"
+                      className={`object-contain opacity-80 hover:opacity-100 transition-all duration-300 hover:scale-110 ${
+                        ['Arteria', 'Bounteous', 'BASF', 'Genesys', 'Randstad Digital', 'Talkdesk', 'Tech Mahindra'].includes(client.name) 
+                          ? 'max-h-16 max-w-full' 
+                          : 'max-h-12 max-w-full'
+                      }`}
                     />
                   </div>
                 </Link>
@@ -76,7 +80,11 @@ export default function ClientsSection() {
                     <img 
                       src={client.logo} 
                       alt={`${client.name} logo`}
-                      className="max-h-12 max-w-full object-contain opacity-80 hover:opacity-100 transition-all duration-300 hover:scale-110"
+                      className={`object-contain opacity-80 hover:opacity-100 transition-all duration-300 hover:scale-110 ${
+                        ['Arteria', 'Bounteous', 'BASF', 'Genesys', 'Randstad Digital', 'Talkdesk', 'Tech Mahindra'].includes(client.name) 
+                          ? 'max-h-16 max-w-full' 
+                          : 'max-h-12 max-w-full'
+                      }`}
                     />
                   </div>
                 </Link>
