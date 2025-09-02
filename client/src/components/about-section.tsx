@@ -24,7 +24,7 @@ export default function AboutSection() {
               <h3 className="text-blue-400 font-semibold text-lg">Value-driven approach</h3>
               <h2 className="text-4xl md:text-5xl font-bold">What we do</h2>
               <p className="text-xl text-gray-300">
-                Founded in 2004, Procyon empowers its customers to re-imagine the way they do business to maximize their ROI and drive growth through innovative technology solutions.
+                At Procyon, we turn ideas into market-ready solutions, deliver enterprise technology that scales, and provide the right talent to drive digital growth.
               </p>
               <div className="grid grid-cols-2 gap-4 mt-6">
                 <div className="space-y-2">
