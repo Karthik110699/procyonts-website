@@ -1,4 +1,6 @@
-import { Cloud, Brain, BarChart, Users, Building, Database, Cog, Server } from "lucide-react";
+import { Brain, BarChart, Users, Building, Server } from "lucide-react";
+import { SiSalesforce, SiSap } from "react-icons/si";
+import { ServiceNowLogo } from "@/components/servicenow-logo";
 
 export default function ServicesSection() {
   return (
@@ -22,28 +24,28 @@ export default function ServicesSection() {
             {/* Salesforce */}
             <div className="group floating-card conic-border bg-gradient-to-br from-gray-800 to-gray-900 p-8 rounded-2xl border border-gray-700 hover:border-blue-500 reveal-slide-left stagger-delay-1 cursor-pointer transition-all duration-300" data-delay="200" onClick={() => {window.scrollTo(0, 0); window.location.href = '/enterprise/salesforce';}}>
               <div className="w-16 h-16 bg-blue-500/20 rounded-xl flex items-center justify-center mb-6 group-hover:bg-blue-500/30 transition-colors relative z-10">
-                <Cloud className="w-8 h-8 text-blue-400" />
+                <SiSalesforce className="w-8 h-8 text-blue-400" />
               </div>
               <h4 className="text-2xl font-bold mb-4 relative z-10">Salesforce</h4>
-              <p className="text-gray-300 mb-6 relative z-10">AI-driven Salesforce solutions for tomorrow's enterprises. Transform customer relationships with intelligent automation.</p>
+              <p className="text-gray-300 mb-6 relative z-10">AI-driven Salesforce solutions for tomorrow's enterprises. Transform customer relationships with intelligent automation, advanced analytics, and seamless integration capabilities.</p>
             </div>
 
             {/* ServiceNow */}
             <div className="group floating-card conic-border bg-gradient-to-br from-gray-800 to-gray-900 p-8 rounded-2xl border border-gray-700 hover:border-emerald-500 reveal-scale stagger-delay-2 cursor-pointer transition-all duration-300" data-delay="300" onClick={() => {window.scrollTo(0, 0); window.location.href = '/enterprise/servicenow';}}>
               <div className="w-16 h-16 bg-emerald-500/20 rounded-xl flex items-center justify-center mb-6 group-hover:bg-emerald-500/30 transition-colors relative z-10">
-                <Cog className="w-8 h-8 text-emerald-400" />
+                <ServiceNowLogo className="w-8 h-8 text-emerald-400" />
               </div>
               <h4 className="text-2xl font-bold mb-4 relative z-10">ServiceNow</h4>
-              <p className="text-gray-300 mb-6 relative z-10">Transform workflows with ServiceNow's cloud-based platform that streamlines operations and boosts productivity.</p>
+              <p className="text-gray-300 mb-6 relative z-10">Transform your workflows with ServiceNow's cloud-based platform that streamlines operations, automates tasks, and boosts productivity across your entire organization.</p>
             </div>
 
             {/* SAP */}
             <div className="group floating-card conic-border bg-gradient-to-br from-gray-800 to-gray-900 p-8 rounded-2xl border border-gray-700 hover:border-purple-500 reveal-slide-right stagger-delay-3 cursor-pointer transition-all duration-300" data-delay="400" onClick={() => {window.scrollTo(0, 0); window.location.href = '/enterprise/sap';}}>
               <div className="w-16 h-16 bg-purple-500/20 rounded-xl flex items-center justify-center mb-6 group-hover:bg-purple-500/30 transition-colors relative z-10">
-                <Database className="w-8 h-8 text-purple-400" />
+                <SiSap className="w-8 h-8 text-purple-400" />
               </div>
               <h4 className="text-2xl font-bold mb-4 relative z-10">SAP</h4>
-              <p className="text-gray-300 mb-6 relative z-10">Enterprise resource planning solutions that integrate business processes and drive operational excellence.</p>
+              <p className="text-gray-300 mb-6 relative z-10">Enterprise resource planning solutions that integrate business processes and drive operational excellence with real-time insights and intelligent automation.</p>
             </div>
           </div>
         </div>
