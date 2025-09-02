@@ -30,7 +30,7 @@ export default function AboutSection() {
                 <div className="space-y-2">
                   <div className="text-blue-400 font-semibold">Innovation</div>
                   <div className="text-blue-400 font-semibold">Visionary thinking</div>
-                  <div className="text-blue-400 font-semibold">Idea-to-market delivery</div>
+                  <div className="text-blue-400 font-semibold">AI Transformation</div>
                 </div>
                 <div className="space-y-2">
                   <div className="text-emerald-400 font-semibold">Product Strategy</div>
