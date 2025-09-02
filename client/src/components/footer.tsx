@@ -1,6 +1,7 @@
 import { Facebook, Linkedin, Twitter } from "lucide-react";
 import { Link } from "wouter";
-import logoUrl from "@assets/PTS_Logo-removebg-preview_1756791869200.png";
+import logoUrl from "@assets/logo (1)_1756793090506.png";
+import logoWhiteUrl from "@assets/PTS_Logo-removebg-preview_1756791869200.png";
 
 export default function Footer() {
   return (
@@ -9,11 +10,24 @@ export default function Footer() {
         <div className="grid md:grid-cols-4 gap-8">
           <div className="space-y-4">
             <div className="flex items-center">
-              <img 
-                src={logoUrl} 
-                alt="Procyon Technostructure" 
-                className="h-10 sm:h-12 lg:h-16 w-auto"
-              />
+              <div className="logo-flip-container">
+                <div className="logo-flip-inner">
+                  <div className="logo-flip-front">
+                    <img 
+                      src={logoUrl} 
+                      alt="Procyon Technostructure" 
+                      className="h-10 sm:h-12 lg:h-16 w-auto"
+                    />
+                  </div>
+                  <div className="logo-flip-back">
+                    <img 
+                      src={logoWhiteUrl} 
+                      alt="Procyon Technostructure" 
+                      className="h-10 sm:h-12 lg:h-16 w-auto"
+                    />
+                  </div>
+                </div>
+              </div>
             </div>
             <p className="text-gray-400">
               Transforming businesses through innovative technology solutions since 2004.

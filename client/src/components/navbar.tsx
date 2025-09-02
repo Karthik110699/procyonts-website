@@ -1,7 +1,8 @@
 import { useState, useEffect } from "react";
 import { Link, useLocation } from "wouter";
 import { Menu, X } from "lucide-react";
-import logoUrl from "@assets/PTS_Logo-removebg-preview_1756791869200.png";
+import logoUrl from "@assets/logo (1)_1756793090506.png";
+import logoWhiteUrl from "@assets/PTS_Logo-removebg-preview_1756791869200.png";
 
 export default function Navbar() {
   const [isScrolled, setIsScrolled] = useState(false);
@@ -26,11 +27,24 @@ export default function Navbar() {
           {/* Logo */}
           <Link href="/" className="flex-shrink-0">
             <div className="flex items-center">
-              <img 
-                src={logoUrl} 
-                alt="Procyon Technostructure" 
-                className="h-10 sm:h-12 lg:h-16 w-auto"
-              />
+              <div className="logo-flip-container">
+                <div className="logo-flip-inner">
+                  <div className="logo-flip-front">
+                    <img 
+                      src={logoUrl} 
+                      alt="Procyon Technostructure" 
+                      className="h-10 sm:h-12 lg:h-16 w-auto"
+                    />
+                  </div>
+                  <div className="logo-flip-back">
+                    <img 
+                      src={logoWhiteUrl} 
+                      alt="Procyon Technostructure" 
+                      className="h-10 sm:h-12 lg:h-16 w-auto"
+                    />
+                  </div>
+                </div>
+              </div>
             </div>
           </Link>
           
