@@ -45,7 +45,7 @@ Preferred communication style: Simple, everyday language.
   - **Homepage ContactSection**: Basic contact form in footer area with name, email, company, phone, message fields
   - **Dedicated Contact Page**: Enhanced form with additional subject field and dropdown options
   - **Consistent API**: Both forms use same `/api/contact` endpoint for unified handling
-  - **Email Delivery**: ✅ Successfully sending all submissions to sales@procyonts.com
+  - **Email Delivery**: ✅ Successfully sending all submissions to hello@procyonts.com
   - **User Feedback**: Toast notifications and loading states on all forms
 - **Clickable Motion Graphics**: All motion graphics elements in zoomed/active states are clickable and route to relevant pages:
   - Rotating service names and floating particles in hero section (link to /enterprise or /services)
@@ -63,11 +63,11 @@ Preferred communication style: Simple, everyday language.
 - **POST /api/contact**: Universal contact form submission endpoint with validation and email delivery
   - Validates required fields (firstName, lastName, email, message)
   - Performs email format validation
-  - Integrates with SendGrid API for email delivery to sales@procyonts.com
+  - Integrates with SendGrid API for email delivery to hello@procyonts.com
   - Uses verified sender email: krishkrizz@gmail.com
   - Returns JSON responses with success/error states
   - Includes comprehensive error logging for troubleshooting
-  - **Working Status**: ✅ Successfully sending emails to sales@procyonts.com
+  - **Working Status**: ✅ Successfully sending emails to hello@procyonts.com
 
 ### UI Component Library
 Comprehensive set of Shadcn/ui components including:

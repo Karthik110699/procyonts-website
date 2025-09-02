@@ -165,8 +165,8 @@ export default function ContactPage() {
                   <div>
                     <h3 className="text-xl font-semibold mb-2">Email Us</h3>
                     <p className="text-gray-300 mb-1">General inquiries:</p>
-                    <a href="mailto:sales@procyonts.com" className="text-blue-400 hover:text-blue-300">
-                      sales@procyonts.com
+                    <a href="mailto:hello@procyonts.com" className="text-blue-400 hover:text-blue-300">
+                      hello@procyonts.com
                     </a>
                     <p className="text-gray-300 mb-1 mt-2">Business partnerships:</p>
                     <a href="mailto:connect@procyonts.com" className="text-blue-400 hover:text-blue-300">

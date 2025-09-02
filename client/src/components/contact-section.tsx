@@ -93,7 +93,7 @@ export function ContactSection() {
                 </div>
                 <div>
                   <p className="font-semibold">Email</p>
-                  <a href="mailto:sales@procyonts.com" className="text-blue-400 hover:text-blue-300">sales@procyonts.com</a>
+                  <a href="mailto:hello@procyonts.com" className="text-blue-400 hover:text-blue-300">hello@procyonts.com</a>
                 </div>
               </div>
               <div className="flex items-center space-x-4">

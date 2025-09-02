@@ -23,7 +23,7 @@ export async function registerRoutes(app: Express): Promise<Server> {
         });
       }
 
-      // Send email notification to sales@procyonts.com
+      // Send email notification to hello@procyonts.com
       const emailSent = await sendContactFormEmail({
         firstName,
         lastName,
