@@ -197,7 +197,7 @@ export default function AboutPage() {
             </div>
             
             <div className="text-center">
-              <div className="text-5xl font-bold text-amber-400 mb-2">3+</div>
+              <div className="text-5xl font-bold text-amber-400 mb-2">3</div>
               <div className="text-gray-300">Worldwide Branches</div>
             </div>
           </div>
