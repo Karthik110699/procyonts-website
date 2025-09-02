@@ -162,7 +162,7 @@ export default function ServicesPage() {
             </div>
 
             {/* Government Solutions */}
-            <div id="government-solutions" className="group floating-card conic-border bg-gradient-to-br from-gray-800 to-gray-900 p-8 rounded-2xl border border-gray-700 hover:border-red-500 cursor-pointer transition-all duration-300 reveal-fade" data-delay="500" onClick={() => {window.scrollTo(0, 0); window.location.href = '/services/government';}}>
+            <div id="government-solutions" className="group floating-card conic-border bg-gradient-to-br from-gray-800 to-gray-900 p-8 rounded-2xl border border-gray-700 hover:border-red-500 cursor-pointer transition-all duration-300 reveal-fade" data-delay="500" onClick={() => window.open('/services/government', '_blank')}>
               <div className="w-16 h-16 bg-red-500/20 rounded-xl flex items-center justify-center mb-6 relative z-10">
                 <Building className="w-8 h-8 text-red-400" />
               </div>
