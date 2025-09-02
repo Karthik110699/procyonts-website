@@ -1,4 +1,5 @@
 import { useCounterAnimation } from "@/hooks/use-counter-animation";
+import { Link } from "wouter";
 import aibrainImage from "@assets/Trial1_1753910986636.png";
 
 export default function AboutSection() {
@@ -50,9 +51,9 @@ export default function AboutSection() {
               </div>
             </div>
             
-            <a href="#about" className="inline-block border-2 border-white hover:bg-white hover:text-black text-white px-8 py-3 rounded-lg font-semibold transition-all duration-300">
+            <Link href="/about" className="inline-block border-2 border-white hover:bg-white hover:text-black text-white px-8 py-3 rounded-lg font-semibold transition-all duration-300">
               Know more
-            </a>
+            </Link>
           </div>
         </div>
       </div>
