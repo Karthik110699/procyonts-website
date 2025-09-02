@@ -381,102 +381,66 @@ export default function AboutPage() {
               </div>
             </div>
 
-            {/* Value Cards in Circular Formation */}
-            <div className="relative w-full h-[900px] xl:h-[1000px]">
+            {/* Value Headings in Circular Formation */}
+            <div className="relative w-full h-[500px] xl:h-[600px]">
               
               {/* 01 - Customer FIRST (Top) */}
               <div className="absolute top-0 left-1/2 transform -translate-x-1/2 group cursor-pointer" style={{ top: '0px' }}>
-                <div className="w-64 xl:w-72 bg-gradient-to-br from-red-900/40 to-red-800/30 p-5 xl:p-6 rounded-2xl border border-red-500/30 backdrop-blur-sm hover:scale-105 transition-all duration-500 hover:shadow-2xl hover:shadow-red-500/20">
-                  <div className="flex items-center mb-3 xl:mb-4">
-                    <div className="w-9 h-9 xl:w-10 xl:h-10 bg-red-500 rounded-full flex items-center justify-center mr-3 font-bold text-white text-sm xl:text-base">01</div>
-                    <div className="w-9 h-9 xl:w-10 xl:h-10 bg-red-500/20 rounded-xl flex items-center justify-center">
-                      <Users className="w-4 h-4 xl:w-5 xl:h-5 text-red-400" />
-                    </div>
+                <div className="w-48 xl:w-56 bg-gradient-to-br from-red-900/40 to-red-800/30 p-4 xl:p-5 rounded-2xl border border-red-500/30 backdrop-blur-sm hover:scale-105 transition-all duration-500 hover:shadow-2xl hover:shadow-red-500/20">
+                  <div className="flex items-center justify-center">
+                    <div className="w-8 h-8 xl:w-10 xl:h-10 bg-red-500 rounded-full flex items-center justify-center mr-3 font-bold text-white text-sm xl:text-base">01</div>
+                    <h3 className="text-base xl:text-lg font-bold text-red-400">Customer FIRST</h3>
                   </div>
-                  <h3 className="text-lg xl:text-xl font-bold text-red-400 mb-2 xl:mb-3">Customer FIRST</h3>
-                  <p className="text-gray-300 text-sm xl:text-base leading-relaxed">
-                    Our customers are at the heart of everything we do. Their success is our success, and we prioritize their needs above all else.
-                  </p>
                 </div>
               </div>
 
               {/* 02 - Every Customer is different (Top Right) */}
-              <div className="absolute top-20 right-0 transform translate-x-1/4 group cursor-pointer" style={{ top: '120px', right: '-50px' }}>
-                <div className="w-64 xl:w-72 bg-gradient-to-br from-blue-900/40 to-blue-800/30 p-5 xl:p-6 rounded-2xl border border-blue-500/30 backdrop-blur-sm hover:scale-105 transition-all duration-500 hover:shadow-2xl hover:shadow-blue-500/20">
-                  <div className="flex items-center mb-3 xl:mb-4">
-                    <div className="w-9 h-9 xl:w-10 xl:h-10 bg-blue-500 rounded-full flex items-center justify-center mr-3 font-bold text-white text-sm xl:text-base">02</div>
-                    <div className="w-9 h-9 xl:w-10 xl:h-10 bg-blue-500/20 rounded-xl flex items-center justify-center">
-                      <Target className="w-4 h-4 xl:w-5 xl:h-5 text-blue-400" />
-                    </div>
+              <div className="absolute group cursor-pointer" style={{ top: '80px', right: '-30px' }}>
+                <div className="w-48 xl:w-56 bg-gradient-to-br from-blue-900/40 to-blue-800/30 p-4 xl:p-5 rounded-2xl border border-blue-500/30 backdrop-blur-sm hover:scale-105 transition-all duration-500 hover:shadow-2xl hover:shadow-blue-500/20">
+                  <div className="flex items-center justify-center">
+                    <div className="w-8 h-8 xl:w-10 xl:h-10 bg-blue-500 rounded-full flex items-center justify-center mr-3 font-bold text-white text-sm xl:text-base">02</div>
+                    <h3 className="text-base xl:text-lg font-bold text-blue-400">Every Customer is Different</h3>
                   </div>
-                  <h3 className="text-lg xl:text-xl font-bold text-blue-400 mb-2 xl:mb-3">Every Customer is Different</h3>
-                  <p className="text-gray-300 text-sm xl:text-base leading-relaxed">
-                    No ONE size fits all. We understand that each client has unique challenges and we tailor our solutions accordingly.
-                  </p>
                 </div>
               </div>
 
               {/* 03 - Transparency and Collaboration (Bottom Right) */}
-              <div className="absolute bottom-20 right-0 transform translate-x-1/4 group cursor-pointer" style={{ bottom: '120px', right: '-50px' }}>
-                <div className="w-64 xl:w-72 bg-gradient-to-br from-emerald-900/40 to-emerald-800/30 p-5 xl:p-6 rounded-2xl border border-emerald-500/30 backdrop-blur-sm hover:scale-105 transition-all duration-500 hover:shadow-2xl hover:shadow-emerald-500/20">
-                  <div className="flex items-center mb-3 xl:mb-4">
-                    <div className="w-9 h-9 xl:w-10 xl:h-10 bg-emerald-500 rounded-full flex items-center justify-center mr-3 font-bold text-white text-sm xl:text-base">03</div>
-                    <div className="w-9 h-9 xl:w-10 xl:h-10 bg-emerald-500/20 rounded-xl flex items-center justify-center">
-                      <Globe className="w-4 h-4 xl:w-5 xl:h-5 text-emerald-400" />
-                    </div>
+              <div className="absolute group cursor-pointer" style={{ bottom: '80px', right: '-30px' }}>
+                <div className="w-48 xl:w-56 bg-gradient-to-br from-emerald-900/40 to-emerald-800/30 p-4 xl:p-5 rounded-2xl border border-emerald-500/30 backdrop-blur-sm hover:scale-105 transition-all duration-500 hover:shadow-2xl hover:shadow-emerald-500/20">
+                  <div className="flex items-center justify-center">
+                    <div className="w-8 h-8 xl:w-10 xl:h-10 bg-emerald-500 rounded-full flex items-center justify-center mr-3 font-bold text-white text-sm xl:text-base">03</div>
+                    <h3 className="text-base xl:text-lg font-bold text-emerald-400">Transparency and Collaboration</h3>
                   </div>
-                  <h3 className="text-lg xl:text-xl font-bold text-emerald-400 mb-2 xl:mb-3">Transparency and Collaboration</h3>
-                  <p className="text-gray-300 text-sm xl:text-base leading-relaxed">
-                    Open communication and genuine partnership form the foundation of our client relationships and internal teamwork.
-                  </p>
                 </div>
               </div>
 
               {/* 04 - Celebrate and value Diversity (Bottom) */}
               <div className="absolute bottom-0 left-1/2 transform -translate-x-1/2 group cursor-pointer" style={{ bottom: '0px' }}>
-                <div className="w-64 xl:w-72 bg-gradient-to-br from-purple-900/40 to-purple-800/30 p-5 xl:p-6 rounded-2xl border border-purple-500/30 backdrop-blur-sm hover:scale-105 transition-all duration-500 hover:shadow-2xl hover:shadow-purple-500/20">
-                  <div className="flex items-center mb-3 xl:mb-4">
-                    <div className="w-9 h-9 xl:w-10 xl:h-10 bg-purple-500 rounded-full flex items-center justify-center mr-3 font-bold text-white text-sm xl:text-base">04</div>
-                    <div className="w-9 h-9 xl:w-10 xl:h-10 bg-purple-500/20 rounded-xl flex items-center justify-center">
-                      <Award className="w-4 h-4 xl:w-5 xl:h-5 text-purple-400" />
-                    </div>
+                <div className="w-48 xl:w-56 bg-gradient-to-br from-purple-900/40 to-purple-800/30 p-4 xl:p-5 rounded-2xl border border-purple-500/30 backdrop-blur-sm hover:scale-105 transition-all duration-500 hover:shadow-2xl hover:shadow-purple-500/20">
+                  <div className="flex items-center justify-center">
+                    <div className="w-8 h-8 xl:w-10 xl:h-10 bg-purple-500 rounded-full flex items-center justify-center mr-3 font-bold text-white text-sm xl:text-base">04</div>
+                    <h3 className="text-base xl:text-lg font-bold text-purple-400">Celebrate and Value Diversity</h3>
                   </div>
-                  <h3 className="text-lg xl:text-xl font-bold text-purple-400 mb-2 xl:mb-3">Celebrate and Value Diversity</h3>
-                  <p className="text-gray-300 text-sm xl:text-base leading-relaxed">
-                    We embrace different perspectives, backgrounds, and ideas as they fuel innovation and drive exceptional outcomes.
-                  </p>
                 </div>
               </div>
 
               {/* 05 - Continuous Learning & Retrospect (Bottom Left) */}
-              <div className="absolute bottom-20 left-0 transform -translate-x-1/4 group cursor-pointer" style={{ bottom: '120px', left: '-50px' }}>
-                <div className="w-64 xl:w-72 bg-gradient-to-br from-amber-900/40 to-amber-800/30 p-5 xl:p-6 rounded-2xl border border-amber-500/30 backdrop-blur-sm hover:scale-105 transition-all duration-500 hover:shadow-2xl hover:shadow-amber-500/20">
-                  <div className="flex items-center mb-3 xl:mb-4">
-                    <div className="w-9 h-9 xl:w-10 xl:h-10 bg-amber-500 rounded-full flex items-center justify-center mr-3 font-bold text-white text-sm xl:text-base">05</div>
-                    <div className="w-9 h-9 xl:w-10 xl:h-10 bg-amber-500/20 rounded-xl flex items-center justify-center">
-                      <Target className="w-4 h-4 xl:w-5 xl:h-5 text-amber-400" />
-                    </div>
+              <div className="absolute group cursor-pointer" style={{ bottom: '80px', left: '-30px' }}>
+                <div className="w-48 xl:w-56 bg-gradient-to-br from-amber-900/40 to-amber-800/30 p-4 xl:p-5 rounded-2xl border border-amber-500/30 backdrop-blur-sm hover:scale-105 transition-all duration-500 hover:shadow-2xl hover:shadow-amber-500/20">
+                  <div className="flex items-center justify-center">
+                    <div className="w-8 h-8 xl:w-10 xl:h-10 bg-amber-500 rounded-full flex items-center justify-center mr-3 font-bold text-white text-sm xl:text-base">05</div>
+                    <h3 className="text-base xl:text-lg font-bold text-amber-400">Continuous Learning & Retrospect</h3>
                   </div>
-                  <h3 className="text-lg xl:text-xl font-bold text-amber-400 mb-2 xl:mb-3">Continuous Learning & Retrospect</h3>
-                  <p className="text-gray-300 text-sm xl:text-base leading-relaxed">
-                    We constantly evolve through learning, reflection, and adaptation to stay ahead in the ever-changing technology landscape.
-                  </p>
                 </div>
               </div>
 
               {/* 06 - Encourage Ideation & Creativity (Top Left) */}
-              <div className="absolute top-20 left-0 transform -translate-x-1/4 group cursor-pointer" style={{ top: '120px', left: '-50px' }}>
-                <div className="w-64 xl:w-72 bg-gradient-to-br from-cyan-900/40 to-cyan-800/30 p-5 xl:p-6 rounded-2xl border border-cyan-500/30 backdrop-blur-sm hover:scale-105 transition-all duration-500 hover:shadow-2xl hover:shadow-cyan-500/20">
-                  <div className="flex items-center mb-3 xl:mb-4">
-                    <div className="w-9 h-9 xl:w-10 xl:h-10 bg-cyan-500 rounded-full flex items-center justify-center mr-3 font-bold text-white text-sm xl:text-base">06</div>
-                    <div className="w-9 h-9 xl:w-10 xl:h-10 bg-cyan-500/20 rounded-xl flex items-center justify-center">
-                      <Award className="w-4 h-4 xl:w-5 xl:h-5 text-cyan-400" />
-                    </div>
+              <div className="absolute group cursor-pointer" style={{ top: '80px', left: '-30px' }}>
+                <div className="w-48 xl:w-56 bg-gradient-to-br from-cyan-900/40 to-cyan-800/30 p-4 xl:p-5 rounded-2xl border border-cyan-500/30 backdrop-blur-sm hover:scale-105 transition-all duration-500 hover:shadow-2xl hover:shadow-cyan-500/20">
+                  <div className="flex items-center justify-center">
+                    <div className="w-8 h-8 xl:w-10 xl:h-10 bg-cyan-500 rounded-full flex items-center justify-center mr-3 font-bold text-white text-sm xl:text-base">06</div>
+                    <h3 className="text-base xl:text-lg font-bold text-cyan-400">Encourage Ideation & Creativity</h3>
                   </div>
-                  <h3 className="text-lg xl:text-xl font-bold text-cyan-400 mb-2 xl:mb-3">Encourage Ideation & Creativity</h3>
-                  <p className="text-gray-300 text-sm xl:text-base leading-relaxed">
-                    We foster an environment where innovative thinking thrives and creative solutions emerge to solve complex challenges.
-                  </p>
                 </div>
               </div>
 
