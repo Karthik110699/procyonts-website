@@ -483,7 +483,7 @@ export default function AboutPage() {
             
             <div className="text-center">
               <div className="text-5xl font-bold text-purple-400 mb-2">75+</div>
-              <div className="text-gray-300">Global Clients</div>
+              <div className="text-gray-300">Global Customers</div>
             </div>
             
             <div className="text-center">
