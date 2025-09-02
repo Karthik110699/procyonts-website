@@ -187,32 +187,63 @@
 
   .lightning-1 {
     transform: translate(-50%, -50%) rotate(0deg);
-    animation: lightning-flash 3s infinite;
+    animation: lightning-flash 3s infinite, orbit-rotate-1 30s linear infinite;
   }
 
   .lightning-2 {
     transform: translate(-50%, -50%) rotate(60deg);
-    animation: lightning-flash 3s infinite 0.5s;
+    animation: lightning-flash 3s infinite 0.5s, orbit-rotate-2 30s linear infinite;
   }
 
   .lightning-3 {
     transform: translate(-50%, -50%) rotate(120deg);
-    animation: lightning-flash 3s infinite 1s;
+    animation: lightning-flash 3s infinite 1s, orbit-rotate-3 30s linear infinite;
   }
 
   .lightning-4 {
     transform: translate(-50%, -50%) rotate(180deg);
-    animation: lightning-flash 3s infinite 1.5s;
+    animation: lightning-flash 3s infinite 1.5s, orbit-rotate-4 30s linear infinite;
   }
 
   .lightning-5 {
     transform: translate(-50%, -50%) rotate(240deg);
-    animation: lightning-flash 3s infinite 2s;
+    animation: lightning-flash 3s infinite 2s, orbit-rotate-5 30s linear infinite;
   }
 
   .lightning-6 {
     transform: translate(-50%, -50%) rotate(300deg);
-    animation: lightning-flash 3s infinite 2.5s;
+    animation: lightning-flash 3s infinite 2.5s, orbit-rotate-6 30s linear infinite;
+  }
+
+  /* Lightning rotation to follow orbiting values */
+  @keyframes orbit-rotate-1 {
+    from { transform: translate(-50%, -50%) rotate(0deg); }
+    to { transform: translate(-50%, -50%) rotate(360deg); }
+  }
+
+  @keyframes orbit-rotate-2 {
+    from { transform: translate(-50%, -50%) rotate(60deg); }
+    to { transform: translate(-50%, -50%) rotate(420deg); }
+  }
+
+  @keyframes orbit-rotate-3 {
+    from { transform: translate(-50%, -50%) rotate(120deg); }
+    to { transform: translate(-50%, -50%) rotate(480deg); }
+  }
+
+  @keyframes orbit-rotate-4 {
+    from { transform: translate(-50%, -50%) rotate(180deg); }
+    to { transform: translate(-50%, -50%) rotate(540deg); }
+  }
+
+  @keyframes orbit-rotate-5 {
+    from { transform: translate(-50%, -50%) rotate(240deg); }
+    to { transform: translate(-50%, -50%) rotate(600deg); }
+  }
+
+  @keyframes orbit-rotate-6 {
+    from { transform: translate(-50%, -50%) rotate(300deg); }
+    to { transform: translate(-50%, -50%) rotate(660deg); }
   }
 
   /* Magdemy.com Exact Scrollbar */
