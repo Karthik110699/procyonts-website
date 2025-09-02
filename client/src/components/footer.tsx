@@ -20,7 +20,7 @@ export default function Footer() {
               Transforming businesses through innovative technology solutions since 2004.
             </p>
             <div className="flex space-x-4">
-              <a href="https://www.facebook.com/ProcyonTS" className="text-gray-400 hover:text-blue-400 transition-colors">
+              <a href="https://www.facebook.com/ProcyonTS/" className="text-gray-400 hover:text-blue-400 transition-colors">
                 <Facebook className="w-5 h-5" />
               </a>
               <a href="https://in.linkedin.com/company/procyonts" className="text-gray-400 hover:text-blue-400 transition-colors">
