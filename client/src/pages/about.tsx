@@ -146,9 +146,11 @@ export default function AboutPage() {
             <span className="gradient-text">About Procyon</span>
           </h1>
           <p className="text-xl text-gray-300 max-w-3xl reveal-fade" data-delay="200">
-            At Procyon, we help businesses lead the digital era with resilience and foresight. Founded in 2004, we are a global IT solutions provider with headquarters in Novato, CA, and a global presence spanning Toronto and Chennai.
+            At Procyon, we empower businesses to thrive in the digital era with resilience, innovation, and foresight.
             <br /><br />
-            We specialize in creating customized, scalable, and sustainable technology solutions that drive performance and long-term growth. With over 200 successful projects delivered, our solutions help businesses stay competitive, future-ready, and efficient.
+            Founded in 2004, we are a 20-year global enterprise solutions provider headquartered in Novato, CA, with a strong presence in Toronto and Chennai. Over the years, we have grown into a trusted partner for organizations worldwide, delivering excellence across enterprise solutions, quality staffing services, product development, Salesforce consulting, and next-generation AI technologies.
+            <br /><br />
+            With more than 200 successful projects delivered, our solutions are designed to be customized, scalable, and sustainable—helping businesses stay competitive, future-ready, and efficient. As pioneers in Salesforce consulting and revolutionaries in AI-driven transformation, we take pride in shaping the future of digital business and empowering our clients to achieve long-term success.
           </p>
         </div>
       </div>
