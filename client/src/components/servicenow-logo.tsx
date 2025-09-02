@@ -11,16 +11,16 @@ export function ServiceNowLogo({ className }: ServiceNowLogoProps) {
       xmlns="http://www.w3.org/2000/svg"
     >
       <path
-        d="M 50 5
-           A 45 45 0 1 1 28 85
-           A 12 12 0 0 0 40 88
-           L 60 88
-           A 12 12 0 0 0 72 85
-           A 45 45 0 1 1 50 5
+        d="M 50 8
+           A 42 42 0 1 1 24.5 83.5
+           A 8 8 0 0 0 32.5 87
+           L 67.5 87
+           A 8 8 0 0 0 75.5 83.5
+           A 42 42 0 1 1 50 8
            Z
-           M 50 25
-           A 25 25 0 1 0 50 75
-           A 25 25 0 1 0 50 25
+           M 50 28
+           A 22 22 0 1 0 50 72
+           A 22 22 0 1 0 50 28
            Z"
         fillRule="evenodd"
       />
