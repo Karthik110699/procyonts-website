@@ -251,57 +251,157 @@ export default function AboutPage() {
         </div>
       </section>
 
-      {/* Values */}
-      <section className="py-20 bg-gray-900/50 zoom-container">
-        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 zoom-section">
-          <div className="text-center mb-16 reveal-scale" data-delay="100">
-            <h2 className="text-4xl font-bold mb-6">Our Core Values</h2>
-            <p className="text-xl text-gray-300 max-w-3xl mx-auto">
-              The principles that guide everything we do
+      {/* Values - Breathtaking Circular Design */}
+      <section className="py-32 relative overflow-hidden">
+        {/* Background Effects */}
+        <div className="absolute inset-0 bg-gradient-to-b from-gray-900/80 via-procyon-dark to-gray-900/80"></div>
+        <div className="wireframe-overlay opacity-30"></div>
+        <div className="morphing-bg opacity-40"></div>
+        
+        {/* Floating Particles */}
+        <div className="absolute inset-0">
+          <div className="absolute top-1/4 left-1/4 w-2 h-2 bg-blue-400/30 rounded-full animate-pulse"></div>
+          <div className="absolute top-3/4 right-1/4 w-1 h-1 bg-emerald-400/40 rounded-full animate-pulse animation-delay-1000"></div>
+          <div className="absolute top-1/2 left-1/6 w-3 h-3 bg-purple-400/20 rounded-full animate-pulse animation-delay-2000"></div>
+          <div className="absolute bottom-1/4 right-1/6 w-2 h-2 bg-amber-400/30 rounded-full animate-pulse animation-delay-3000"></div>
+        </div>
+
+        <div className="max-w-8xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
+          
+          {/* Header */}
+          <div className="text-center mb-24">
+            <h2 className="text-6xl md:text-7xl font-bold mb-8">
+              <span className="bg-gradient-to-r from-blue-400 via-emerald-400 via-purple-400 to-amber-400 bg-clip-text text-transparent">
+                Our Core Values
+              </span>
+            </h2>
+            <p className="text-2xl text-gray-300 max-w-4xl mx-auto leading-relaxed">
+              The fundamental principles that drive our innovation and guide every decision we make
             </p>
           </div>
-          
-          <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-8">
-            <div className="text-center reveal-fade" data-delay="200">
-              <div className="w-20 h-20 bg-blue-500/20 rounded-xl flex items-center justify-center mb-6 mx-auto">
-                <Award className="w-10 h-10 text-blue-400" />
-              </div>
-              <h3 className="text-2xl font-bold mb-4 text-blue-400">Excellence</h3>
-              <p className="text-gray-300">
-                We strive for excellence in every project, delivering solutions that exceed expectations and drive meaningful results.
-              </p>
-            </div>
+
+          {/* Circular Values Layout */}
+          <div className="relative max-w-6xl mx-auto">
             
-            <div className="text-center reveal-fade" data-delay="300">
-              <div className="w-20 h-20 bg-emerald-500/20 rounded-xl flex items-center justify-center mb-6 mx-auto">
-                <Users className="w-10 h-10 text-emerald-400" />
+            {/* Central Hub */}
+            <div className="absolute left-1/2 top-1/2 transform -translate-x-1/2 -translate-y-1/2 z-10">
+              <div className="w-32 h-32 md:w-40 md:h-40 bg-gradient-to-br from-blue-600/20 via-emerald-600/20 to-purple-600/20 rounded-full border-2 border-gradient-to-r border-blue-400/50 backdrop-blur-sm flex items-center justify-center">
+                <div className="w-20 h-20 md:w-24 md:h-24 bg-gradient-to-br from-blue-500 via-emerald-500 to-purple-500 rounded-full flex items-center justify-center">
+                  <span className="text-white font-bold text-lg md:text-xl">CORE</span>
+                </div>
               </div>
-              <h3 className="text-2xl font-bold mb-4 text-emerald-400">Collaboration</h3>
-              <p className="text-gray-300">
-                We believe in the power of partnership, working closely with clients to understand their unique challenges and goals.
-              </p>
             </div>
-            
-            <div className="text-center">
-              <div className="w-20 h-20 bg-purple-500/20 rounded-xl flex items-center justify-center mb-6 mx-auto">
-                <Target className="w-10 h-10 text-purple-400" />
+
+            {/* Value Cards in Circular Formation */}
+            <div className="relative w-full h-[800px] md:h-[900px]">
+              
+              {/* 01 - Customer FIRST */}
+              <div className="absolute top-0 left-1/2 transform -translate-x-1/2 -translate-y-1/2 group cursor-pointer">
+                <div className="w-80 bg-gradient-to-br from-red-900/40 to-red-800/30 p-8 rounded-2xl border border-red-500/30 backdrop-blur-sm hover:scale-105 transition-all duration-500 hover:shadow-2xl hover:shadow-red-500/20">
+                  <div className="flex items-center mb-6">
+                    <div className="w-12 h-12 bg-red-500 rounded-full flex items-center justify-center mr-4 font-bold text-white text-lg">01</div>
+                    <div className="w-12 h-12 bg-red-500/20 rounded-xl flex items-center justify-center">
+                      <Users className="w-6 h-6 text-red-400" />
+                    </div>
+                  </div>
+                  <h3 className="text-2xl font-bold text-red-400 mb-4">Customer FIRST</h3>
+                  <p className="text-gray-300 text-lg leading-relaxed">
+                    Our customers are at the heart of everything we do. Their success is our success, and we prioritize their needs above all else.
+                  </p>
+                </div>
               </div>
-              <h3 className="text-2xl font-bold mb-4 text-purple-400">Innovation</h3>
-              <p className="text-gray-300">
-                We embrace cutting-edge technologies and innovative approaches to solve tomorrow's challenges today.
-              </p>
-            </div>
-            
-            <div className="text-center">
-              <div className="w-20 h-20 bg-amber-500/20 rounded-xl flex items-center justify-center mb-6 mx-auto">
-                <Globe className="w-10 h-10 text-amber-400" />
+
+              {/* 02 - Every Customer is different */}
+              <div className="absolute top-1/4 right-0 transform translate-x-1/2 -translate-y-1/2 group cursor-pointer">
+                <div className="w-80 bg-gradient-to-br from-blue-900/40 to-blue-800/30 p-8 rounded-2xl border border-blue-500/30 backdrop-blur-sm hover:scale-105 transition-all duration-500 hover:shadow-2xl hover:shadow-blue-500/20">
+                  <div className="flex items-center mb-6">
+                    <div className="w-12 h-12 bg-blue-500 rounded-full flex items-center justify-center mr-4 font-bold text-white text-lg">02</div>
+                    <div className="w-12 h-12 bg-blue-500/20 rounded-xl flex items-center justify-center">
+                      <Target className="w-6 h-6 text-blue-400" />
+                    </div>
+                  </div>
+                  <h3 className="text-2xl font-bold text-blue-400 mb-4">Every Customer is Different</h3>
+                  <p className="text-gray-300 text-lg leading-relaxed">
+                    No ONE size fits all. We understand that each client has unique challenges and we tailor our solutions accordingly.
+                  </p>
+                </div>
               </div>
-              <h3 className="text-2xl font-bold mb-4 text-amber-400">Impact</h3>
-              <p className="text-gray-300">
-                We measure success by the positive impact our solutions have on businesses, communities, and the world.
-              </p>
+
+              {/* 03 - Transparency and Collaboration */}
+              <div className="absolute bottom-1/4 right-0 transform translate-x-1/2 translate-y-1/2 group cursor-pointer">
+                <div className="w-80 bg-gradient-to-br from-emerald-900/40 to-emerald-800/30 p-8 rounded-2xl border border-emerald-500/30 backdrop-blur-sm hover:scale-105 transition-all duration-500 hover:shadow-2xl hover:shadow-emerald-500/20">
+                  <div className="flex items-center mb-6">
+                    <div className="w-12 h-12 bg-emerald-500 rounded-full flex items-center justify-center mr-4 font-bold text-white text-lg">03</div>
+                    <div className="w-12 h-12 bg-emerald-500/20 rounded-xl flex items-center justify-center">
+                      <Globe className="w-6 h-6 text-emerald-400" />
+                    </div>
+                  </div>
+                  <h3 className="text-2xl font-bold text-emerald-400 mb-4">Transparency and Collaboration</h3>
+                  <p className="text-gray-300 text-lg leading-relaxed">
+                    Open communication and genuine partnership form the foundation of our client relationships and internal teamwork.
+                  </p>
+                </div>
+              </div>
+
+              {/* 04 - Celebrate and value Diversity */}
+              <div className="absolute bottom-0 left-1/2 transform -translate-x-1/2 translate-y-1/2 group cursor-pointer">
+                <div className="w-80 bg-gradient-to-br from-purple-900/40 to-purple-800/30 p-8 rounded-2xl border border-purple-500/30 backdrop-blur-sm hover:scale-105 transition-all duration-500 hover:shadow-2xl hover:shadow-purple-500/20">
+                  <div className="flex items-center mb-6">
+                    <div className="w-12 h-12 bg-purple-500 rounded-full flex items-center justify-center mr-4 font-bold text-white text-lg">04</div>
+                    <div className="w-12 h-12 bg-purple-500/20 rounded-xl flex items-center justify-center">
+                      <Award className="w-6 h-6 text-purple-400" />
+                    </div>
+                  </div>
+                  <h3 className="text-2xl font-bold text-purple-400 mb-4">Celebrate and Value Diversity</h3>
+                  <p className="text-gray-300 text-lg leading-relaxed">
+                    We embrace different perspectives, backgrounds, and ideas as they fuel innovation and drive exceptional outcomes.
+                  </p>
+                </div>
+              </div>
+
+              {/* 05 - Continuous Learning & Retrospect */}
+              <div className="absolute bottom-1/4 left-0 transform -translate-x-1/2 translate-y-1/2 group cursor-pointer">
+                <div className="w-80 bg-gradient-to-br from-amber-900/40 to-amber-800/30 p-8 rounded-2xl border border-amber-500/30 backdrop-blur-sm hover:scale-105 transition-all duration-500 hover:shadow-2xl hover:shadow-amber-500/20">
+                  <div className="flex items-center mb-6">
+                    <div className="w-12 h-12 bg-amber-500 rounded-full flex items-center justify-center mr-4 font-bold text-white text-lg">05</div>
+                    <div className="w-12 h-12 bg-amber-500/20 rounded-xl flex items-center justify-center">
+                      <Target className="w-6 h-6 text-amber-400" />
+                    </div>
+                  </div>
+                  <h3 className="text-2xl font-bold text-amber-400 mb-4">Continuous Learning & Retrospect</h3>
+                  <p className="text-gray-300 text-lg leading-relaxed">
+                    We constantly evolve through learning, reflection, and adaptation to stay ahead in the ever-changing technology landscape.
+                  </p>
+                </div>
+              </div>
+
+              {/* 06 - Encourage Ideation & Creativity */}
+              <div className="absolute top-1/4 left-0 transform -translate-x-1/2 -translate-y-1/2 group cursor-pointer">
+                <div className="w-80 bg-gradient-to-br from-cyan-900/40 to-cyan-800/30 p-8 rounded-2xl border border-cyan-500/30 backdrop-blur-sm hover:scale-105 transition-all duration-500 hover:shadow-2xl hover:shadow-cyan-500/20">
+                  <div className="flex items-center mb-6">
+                    <div className="w-12 h-12 bg-cyan-500 rounded-full flex items-center justify-center mr-4 font-bold text-white text-lg">06</div>
+                    <div className="w-12 h-12 bg-cyan-500/20 rounded-xl flex items-center justify-center">
+                      <Award className="w-6 h-6 text-cyan-400" />
+                    </div>
+                  </div>
+                  <h3 className="text-2xl font-bold text-cyan-400 mb-4">Encourage Ideation & Creativity</h3>
+                  <p className="text-gray-300 text-lg leading-relaxed">
+                    We foster an environment where innovative thinking thrives and creative solutions emerge to solve complex challenges.
+                  </p>
+                </div>
+              </div>
+
             </div>
           </div>
+
+          {/* Bottom Statement */}
+          <div className="text-center mt-20">
+            <p className="text-xl text-gray-400 max-w-4xl mx-auto leading-relaxed">
+              These values are not just words on a page—they are the driving force behind every solution we create, 
+              every relationship we build, and every innovation we pursue in our mission to transform businesses.
+            </p>
+          </div>
+
         </div>
       </section>
 
