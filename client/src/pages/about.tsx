@@ -225,7 +225,7 @@ export default function AboutPage() {
               {/* 2004 */}
               <div className="timeline-item timeline-item-left relative flex flex-col md:flex-row items-center" data-year="2004">
                 <div className="w-full md:flex-1 text-center md:text-right md:pr-8 mb-4 md:mb-0">
-                  <div className="bg-gradient-to-r from-blue-900/40 to-blue-800/40 p-4 md:p-6 rounded-xl border border-blue-500/30 backdrop-blur-sm hover:scale-105 hover:bg-blue-900/60 transition-all duration-500 hover:shadow-2xl hover:shadow-blue-500/20 conic-border">
+                  <div className="group floating-card conic-border bg-gradient-to-br from-blue-800 to-blue-900 p-4 md:p-6 rounded-xl border border-blue-500/30 hover:border-blue-400 transition-all duration-500 hover:shadow-2xl hover:shadow-blue-500/20">
                     <div className="relative z-10 text-2xl md:text-3xl lg:text-4xl font-bold text-blue-400 mb-2">2004</div>
                     <div className="relative z-10 text-base md:text-lg lg:text-xl text-gray-300">Founded in San Rafael, CA</div>
                     <div className="relative z-10 hidden md:block text-sm text-blue-300/70 mt-2">The beginning of innovation</div>
@@ -240,7 +240,7 @@ export default function AboutPage() {
                 <div className="w-full md:flex-1 md:pr-8"></div>
                 <div className="absolute left-1/2 md:left-1/2 top-6 md:top-auto transform -translate-x-1/2 w-4 h-4 md:w-6 md:h-6 bg-emerald-500 rounded-full timeline-dot-animated z-10 border-2 md:border-4 border-procyon-dark" style={{animationDelay: '0.5s'}}></div>
                 <div className="w-full md:flex-1 text-center md:text-left md:pl-8 mb-4 md:mb-0">
-                  <div className="bg-gradient-to-r from-emerald-900/40 to-emerald-800/40 p-4 md:p-6 rounded-xl border border-emerald-500/30 backdrop-blur-sm hover:scale-105 hover:bg-emerald-900/60 transition-all duration-500 hover:shadow-2xl hover:shadow-emerald-500/20 conic-border">
+                  <div className="group floating-card conic-border bg-gradient-to-br from-emerald-800 to-emerald-900 p-4 md:p-6 rounded-xl border border-emerald-500/30 hover:border-emerald-400 transition-all duration-500 hover:shadow-2xl hover:shadow-emerald-500/20">
                     <div className="relative z-10 text-2xl md:text-3xl lg:text-4xl font-bold text-emerald-400 mb-2">2008</div>
                     <div className="relative z-10 text-base md:text-lg lg:text-xl text-gray-300">Expanded operations to Toronto, Canada</div>
                     <div className="relative z-10 hidden md:block text-sm text-emerald-300/70 mt-2">Global expansion begins</div>
@@ -251,7 +251,7 @@ export default function AboutPage() {
               {/* 2015 */}
               <div className="timeline-item timeline-item-left relative flex flex-col md:flex-row items-center" data-year="2015">
                 <div className="w-full md:flex-1 text-center md:text-right md:pr-8 mb-4 md:mb-0">
-                  <div className="bg-gradient-to-r from-purple-900/40 to-purple-800/40 p-4 md:p-6 rounded-xl border border-purple-500/30 backdrop-blur-sm hover:scale-105 hover:bg-purple-900/60 transition-all duration-500 hover:shadow-2xl hover:shadow-purple-500/20 conic-border">
+                  <div className="group floating-card conic-border bg-gradient-to-br from-purple-800 to-purple-900 p-4 md:p-6 rounded-xl border border-purple-500/30 hover:border-purple-400 transition-all duration-500 hover:shadow-2xl hover:shadow-purple-500/20">
                     <div className="relative z-10 text-2xl md:text-3xl lg:text-4xl font-bold text-purple-400 mb-2">2015</div>
                     <div className="relative z-10 text-base md:text-lg lg:text-xl text-gray-300">Opened our delivery center in Chennai, India</div>
                     <div className="relative z-10 hidden md:block text-sm text-purple-300/70 mt-2">Strengthening global presence</div>
@@ -266,7 +266,7 @@ export default function AboutPage() {
                 <div className="w-full md:flex-1 md:pr-8"></div>
                 <div className="absolute left-1/2 md:left-1/2 top-6 md:top-auto transform -translate-x-1/2 w-4 h-4 md:w-6 md:h-6 bg-amber-500 rounded-full timeline-dot-animated z-10 border-2 md:border-4 border-procyon-dark" style={{animationDelay: '1.5s'}}></div>
                 <div className="w-full md:flex-1 text-center md:text-left md:pl-8 mb-4 md:mb-0">
-                  <div className="bg-gradient-to-r from-amber-900/40 to-amber-800/40 p-4 md:p-6 rounded-xl border border-amber-500/30 backdrop-blur-sm hover:scale-105 hover:bg-amber-900/60 transition-all duration-500 hover:shadow-2xl hover:shadow-amber-500/20 conic-border">
+                  <div className="group floating-card conic-border bg-gradient-to-br from-amber-800 to-amber-900 p-4 md:p-6 rounded-xl border border-amber-500/30 hover:border-amber-400 transition-all duration-500 hover:shadow-2xl hover:shadow-amber-500/20">
                     <div className="relative z-10 text-2xl md:text-3xl lg:text-4xl font-bold text-amber-400 mb-2">2018</div>
                     <div className="relative z-10 text-base md:text-lg lg:text-xl text-gray-300">Hekma: AI drug development accelerator</div>
                     <div className="relative z-10 hidden md:block text-sm text-amber-300/70 mt-2">AI innovation breakthrough</div>
@@ -277,7 +277,7 @@ export default function AboutPage() {
               {/* 2020 */}
               <div className="timeline-item timeline-item-left relative flex flex-col md:flex-row items-center" data-year="2020">
                 <div className="w-full md:flex-1 text-center md:text-right md:pr-8 mb-4 md:mb-0">
-                  <div className="bg-gradient-to-r from-cyan-900/40 to-cyan-800/40 p-4 md:p-6 rounded-xl border border-cyan-500/30 backdrop-blur-sm hover:scale-105 hover:bg-cyan-900/60 transition-all duration-500 hover:shadow-2xl hover:shadow-cyan-500/20 conic-border">
+                  <div className="group floating-card conic-border bg-gradient-to-br from-cyan-800 to-cyan-900 p-4 md:p-6 rounded-xl border border-cyan-500/30 hover:border-cyan-400 transition-all duration-500 hover:shadow-2xl hover:shadow-cyan-500/20">
                     <div className="relative z-10 text-2xl md:text-3xl lg:text-4xl font-bold text-cyan-400 mb-2">2020</div>
                     <div className="relative z-10 text-base md:text-lg lg:text-xl text-gray-300">AI & Cloud practice launched</div>
                     <div className="relative z-10 hidden md:block text-sm text-cyan-300/70 mt-2">Next-gen solutions era</div>
@@ -292,7 +292,7 @@ export default function AboutPage() {
                 <div className="w-full md:flex-1 md:pr-8"></div>
                 <div className="absolute left-1/2 md:left-1/2 top-6 md:top-auto transform -translate-x-1/2 w-4 h-4 md:w-6 md:h-6 bg-rose-500 rounded-full timeline-dot-animated z-10 border-2 md:border-4 border-procyon-dark" style={{animationDelay: '2.5s'}}></div>
                 <div className="w-full md:flex-1 text-center md:text-left md:pl-8 mb-4 md:mb-0">
-                  <div className="bg-gradient-to-r from-rose-900/40 to-rose-800/40 p-4 md:p-6 rounded-xl border border-rose-500/30 backdrop-blur-sm hover:scale-105 hover:bg-rose-900/60 transition-all duration-500 hover:shadow-2xl hover:shadow-rose-500/20 conic-border">
+                  <div className="group floating-card conic-border bg-gradient-to-br from-rose-800 to-rose-900 p-4 md:p-6 rounded-xl border border-rose-500/30 hover:border-rose-400 transition-all duration-500 hover:shadow-2xl hover:shadow-rose-500/20">
                     <div className="relative z-10 text-2xl md:text-3xl lg:text-4xl font-bold text-rose-400 mb-2">2022</div>
                     <div className="relative z-10 text-base md:text-lg lg:text-xl text-gray-300">Akra: Digital Health SaaS (SiMD, SaMD)</div>
                     <div className="relative z-10 hidden md:block text-sm text-rose-300/70 mt-2">Healthcare transformation</div>
@@ -303,7 +303,7 @@ export default function AboutPage() {
               {/* 2023 */}
               <div className="timeline-item timeline-item-left relative flex flex-col md:flex-row items-center" data-year="2023">
                 <div className="w-full md:flex-1 text-center md:text-right md:pr-8 mb-4 md:mb-0">
-                  <div className="bg-gradient-to-r from-green-900/40 to-green-800/40 p-4 md:p-6 rounded-xl border border-green-500/30 backdrop-blur-sm hover:scale-105 hover:bg-green-900/60 transition-all duration-500 hover:shadow-2xl hover:shadow-green-500/20 conic-border">
+                  <div className="group floating-card conic-border bg-gradient-to-br from-green-800 to-green-900 p-4 md:p-6 rounded-xl border border-green-500/30 hover:border-green-400 transition-all duration-500 hover:shadow-2xl hover:shadow-green-500/20">
                     <div className="relative z-10 text-2xl md:text-3xl lg:text-4xl font-bold text-green-400 mb-2">2023</div>
                     <div className="relative z-10 text-base md:text-lg lg:text-xl text-gray-300">200+ projects delivered</div>
                     <div className="relative z-10 hidden md:block text-sm text-green-300/70 mt-2">Milestone achievement</div>
@@ -318,7 +318,7 @@ export default function AboutPage() {
                 <div className="w-full md:flex-1 md:pr-8"></div>
                 <div className="absolute left-1/2 md:left-1/2 top-6 md:top-auto transform -translate-x-1/2 w-4 h-4 md:w-6 md:h-6 bg-violet-500 rounded-full timeline-dot-animated z-10 border-2 md:border-4 border-procyon-dark" style={{animationDelay: '3.5s'}}></div>
                 <div className="w-full md:flex-1 text-center md:text-left md:pl-8 mb-4 md:mb-0">
-                  <div className="bg-gradient-to-r from-violet-900/40 to-violet-800/40 p-4 md:p-6 rounded-xl border border-violet-500/30 backdrop-blur-sm hover:scale-105 hover:bg-violet-900/60 transition-all duration-500 hover:shadow-2xl hover:shadow-violet-500/20 conic-border">
+                  <div className="group floating-card conic-border bg-gradient-to-br from-violet-800 to-violet-900 p-4 md:p-6 rounded-xl border border-violet-500/30 hover:border-violet-400 transition-all duration-500 hover:shadow-2xl hover:shadow-violet-500/20">
                     <div className="relative z-10 text-2xl md:text-3xl lg:text-4xl font-bold text-violet-400 mb-2">2025</div>
                     <div className="relative z-10 text-base md:text-lg lg:text-xl text-gray-300">Implemented AI Accelerators to enhance operations and speed delivery</div>
                     <div className="relative z-10 hidden md:block text-sm text-violet-300/70 mt-2">Future-ready operations</div>
