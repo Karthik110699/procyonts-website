@@ -50,10 +50,10 @@ export default function PrivacyPolicy() {
               Privacy <span className="gradient-text">Policy</span>
             </h1>
             <p className="text-xl text-gray-300 max-w-3xl mx-auto">
-              Your privacy is fundamental to us. This policy explains how Procyon Technostructure collects, uses, and protects your personal information.
+              At Procyon Technostructure, we are committed to protecting the privacy and security of our website visitors and users. This Privacy Policy outlines how we collect, use, disclose, and safeguard your personal information.
             </p>
             <p className="text-sm text-gray-400 mt-4">
-              Last updated: August 16, 2025
+              Last updated: February 13, 2025
             </p>
           </div>
         </div>
@@ -73,9 +73,8 @@ export default function PrivacyPolicy() {
                 <h2 className="text-3xl font-bold">Information We Collect</h2>
               </div>
               <div className="space-y-4 text-gray-300">
-                <p><strong>Personal Information:</strong> When you contact us or use our services, we may collect your name, email address, phone number, company name, and job title.</p>
-                <p><strong>Technical Information:</strong> We automatically collect IP addresses, browser types, device information, and website usage data to improve our services.</p>
-                <p><strong>Communications:</strong> We store correspondence when you contact us through forms, email, or phone calls.</p>
+                <p><strong>Personal Information:</strong> When you voluntarily provide it to us, such as when you fill out a contact form, register for a course, or subscribe to our newsletter, we may collect personal information such as your name, email address, phone number, and other relevant details.</p>
+                <p><strong>Website Usage Information:</strong> We may collect non-personal information about your visit to our website, including your IP address, browser type, operating system, referral source, pages viewed, and other usage data. This information helps us analyze and improve the performance and usability of our website.</p>
               </div>
             </div>
 
@@ -88,12 +87,13 @@ export default function PrivacyPolicy() {
                 <h2 className="text-3xl font-bold">How We Use Your Information</h2>
               </div>
               <div className="space-y-4 text-gray-300">
+                <p>We may use the information we collect for the following purposes:</p>
                 <ul className="space-y-2">
-                  <li>• Respond to your inquiries and provide customer support</li>
-                  <li>• Deliver our technology services and solutions</li>
-                  <li>• Send important updates about our services</li>
-                  <li>• Improve our website and service offerings</li>
-                  <li>• Comply with legal obligations and industry standards</li>
+                  <li>• To communicate with you and respond to your inquiries, requests, and feedback</li>
+                  <li>• To process your course registrations and provide you with access to our educational resources and services</li>
+                  <li>• To send you promotional materials, updates, and newsletters about our courses, events, and other relevant information</li>
+                  <li>• To analyze website usage trends, monitor the effectiveness of our marketing efforts, and improve the functionality and user experience of our website</li>
+                  <li>• To comply with legal obligations and enforce our website policies</li>
                 </ul>
               </div>
             </div>
@@ -107,14 +107,7 @@ export default function PrivacyPolicy() {
                 <h2 className="text-3xl font-bold">Data Protection & Security</h2>
               </div>
               <div className="space-y-4 text-gray-300">
-                <p>We implement industry-standard security measures to protect your personal information:</p>
-                <ul className="space-y-2">
-                  <li>• SSL encryption for all data transmission</li>
-                  <li>• Secure servers with regular security updates</li>
-                  <li>• Limited access to personal data on a need-to-know basis</li>
-                  <li>• Regular security audits and compliance monitoring</li>
-                  <li>• Data backup and disaster recovery procedures</li>
-                </ul>
+                <p>We implement a variety of security measures to safeguard your personal information and protect it from unauthorized access, disclosure, alteration, or destruction. However, please note that no method of transmission over the internet or electronic storage is completely secure, and we cannot guarantee the absolute security of your data.</p>
               </div>
             </div>
 
@@ -124,16 +117,10 @@ export default function PrivacyPolicy() {
                 <div className="w-12 h-12 bg-amber-500/20 rounded-lg flex items-center justify-center">
                   <Eye className="w-6 h-6 text-amber-400" />
                 </div>
-                <h2 className="text-3xl font-bold">Information Sharing</h2>
+                <h2 className="text-3xl font-bold">Third-Party Disclosure</h2>
               </div>
               <div className="space-y-4 text-gray-300">
-                <p>We do not sell, trade, or rent your personal information to third parties. We may share your information only in these circumstances:</p>
-                <ul className="space-y-2">
-                  <li>• With your explicit consent</li>
-                  <li>• To comply with legal requirements or court orders</li>
-                  <li>• With trusted service providers who assist in our operations (under strict confidentiality agreements)</li>
-                  <li>• To protect our rights, property, or safety, or that of our users</li>
-                </ul>
+                <p>We do not sell, trade, or otherwise transfer your personal information to third parties without your consent, except as necessary to provide you with the services you request or as required by law.</p>
               </div>
             </div>
 
@@ -143,52 +130,40 @@ export default function PrivacyPolicy() {
                 <div className="w-12 h-12 bg-emerald-500/20 rounded-lg flex items-center justify-center">
                   <FileText className="w-6 h-6 text-emerald-400" />
                 </div>
-                <h2 className="text-3xl font-bold">Your Privacy Rights</h2>
+                <h2 className="text-3xl font-bold">Your Rights and Choices</h2>
               </div>
               <div className="space-y-4 text-gray-300">
-                <p>You have the right to:</p>
-                <ul className="space-y-2">
-                  <li>• Access the personal information we hold about you</li>
-                  <li>• Request correction of inaccurate or incomplete data</li>
-                  <li>• Request deletion of your personal information</li>
-                  <li>• Opt-out of marketing communications</li>
-                  <li>• Request data portability in a machine-readable format</li>
-                </ul>
-                <p className="mt-4">To exercise these rights, please contact us at <a href="mailto:privacy@procyonts.com" className="text-blue-400 hover:text-blue-300">privacy@procyonts.com</a></p>
+                <p>You have the right to access, update, or delete your personal information, as well as to object to or restrict its processing. You may also choose to unsubscribe from our communications at any time by following the instructions provided in the emails we send you.</p>
               </div>
             </div>
 
-            {/* Cookies & Tracking */}
+            {/* Updates to Privacy Policy */}
             <div className="bg-gradient-to-br from-gray-800 to-gray-900 p-8 rounded-2xl border border-gray-700">
               <div className="flex items-center gap-4 mb-6">
                 <div className="w-12 h-12 bg-blue-500/20 rounded-lg flex items-center justify-center">
-                  <Database className="w-6 h-6 text-blue-400" />
+                  <FileText className="w-6 h-6 text-blue-400" />
                 </div>
-                <h2 className="text-3xl font-bold">Cookies & Tracking Technologies</h2>
+                <h2 className="text-3xl font-bold">Updates to this Privacy Policy</h2>
               </div>
               <div className="space-y-4 text-gray-300">
-                <p>Our website uses cookies and similar technologies to:</p>
-                <ul className="space-y-2">
-                  <li>• Remember your preferences and settings</li>
-                  <li>• Analyze website traffic and user behavior</li>
-                  <li>• Improve website functionality and user experience</li>
-                  <li>• Provide relevant content and advertisements</li>
-                </ul>
-                <p className="mt-4">You can control cookies through your browser settings. Note that disabling cookies may affect website functionality.</p>
+                <p>We reserve the right to update or revise this Privacy Policy at any time, and any changes will be effective immediately upon posting on this page. We encourage you to review this Privacy Policy periodically for updates.</p>
               </div>
             </div>
 
             {/* Contact Information */}
             <div className="bg-gradient-to-br from-blue-600 to-emerald-500 p-8 rounded-2xl text-center">
-              <h2 className="text-3xl font-bold mb-4">Questions About Our Privacy Policy?</h2>
+              <h2 className="text-3xl font-bold mb-4">Contact Us</h2>
               <p className="text-lg mb-6">
-                If you have any questions or concerns about our privacy practices, please don't hesitate to contact us.
+                If you have any questions, concerns, or requests regarding this Privacy Policy or the handling of your personal information, please contact us through our contact page.
               </p>
               <div className="flex justify-center">
                 <Link href="/contact" className="bg-white text-blue-600 px-8 py-3 rounded-lg font-semibold hover:bg-gray-100 transition-colors">
                   Contact Us
                 </Link>
               </div>
+              <p className="text-sm mt-4 opacity-90">
+                Thank you for trusting Procyon Technostructure with your personal information.
+              </p>
             </div>
 
           </div>
