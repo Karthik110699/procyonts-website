@@ -79,7 +79,7 @@ export default function SalesforcePage() {
                 <span className="text-blue-400">Across Every Cloud, Every Industry, Every Time</span>
               </h1>
               <p className="text-xl text-gray-300 max-w-4xl mx-auto mb-8 reveal-fade" >
-                We don't just implement Salesforce—we tailor it to amplify your results.
+                We don't just implement Salesforce, we tailor it to amplify your results.
               </p>
               <div className="mt-8 reveal-fade" >
                 <Link href="/contact" className="bg-gradient-to-r from-blue-600 to-emerald-600 px-8 py-4 rounded-lg font-semibold text-lg hover:scale-105 transition-transform inline-block">
