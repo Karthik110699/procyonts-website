@@ -1,8 +1,7 @@
 import { useState, useEffect } from "react";
 import { Link, useLocation } from "wouter";
 import { Menu, X } from "lucide-react";
-import logoUrl from "@assets/logo (1)_1756793090506.png";
-import logoWhiteUrl from "@assets/PTS_Logo-removebg-preview_1756791869200.png";
+import logoUrl from "@assets/logo (1)_1756843557178.png";
 
 export default function Navbar() {
   const [isScrolled, setIsScrolled] = useState(false);
@@ -19,18 +18,16 @@ export default function Navbar() {
   }, []);
 
   return (
-    <nav className={`fixed top-0 w-full z-40 transition-all duration-300 ${
-      isScrolled ? 'backdrop-blur-lg bg-procyon-dark/90' : ''
-    }`}>
+    <nav className="fixed top-0 w-full z-40 bg-gradient-to-r from-teal-600 to-cyan-500">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:pl-8 lg:pr-8" style={{ paddingLeft: 'calc(1rem - 5px)' }}>
         <div className="flex justify-between items-center h-16">
           {/* Logo */}
           <Link href="/" className="flex-shrink-0">
             <div className="flex items-center">
               <img 
-                src={logoWhiteUrl} 
+                src={logoUrl} 
                 alt="Procyon Technostructure" 
-                className="h-10 sm:h-12 lg:h-16 w-auto"
+                className="h-10 sm:h-12 lg:h-14 w-auto"
               />
             </div>
           </Link>
@@ -49,7 +46,7 @@ export default function Navbar() {
           
           {/* CTA Button */}
           <div className="hidden md:block">
-            <Link href="/contact" className="bg-gradient-to-r from-blue-600 to-emerald-500 hover:from-blue-700 hover:to-emerald-600 px-6 py-2 rounded-lg font-semibold transition-all duration-300 text-white" onClick={() => window.scrollTo(0, 0)}>
+            <Link href="/contact" className="bg-white text-teal-700 hover:bg-gray-100 px-6 py-2 rounded-lg font-semibold transition-all duration-300" onClick={() => window.scrollTo(0, 0)}>
               Get Started
             </Link>
           </div>

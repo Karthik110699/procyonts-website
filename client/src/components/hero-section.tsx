@@ -69,7 +69,7 @@ export default function HeroSection() {
         <div className="lg:hidden flex flex-col min-h-screen pt-20">
           {/* Mobile Content - Centered */}
           <div className="flex-1 flex flex-col justify-center items-center px-4 py-4">
-            <div className="text-center space-y-8">
+            <div className="text-center space-y-6">
               <h1 className="text-3xl sm:text-4xl md:text-5xl font-bold leading-tight text-white">
                 <span className="block animated-gradient-text mb-2">
                   {heroTexts[currentHeroTextIndex].line1}
@@ -80,7 +80,7 @@ export default function HeroSection() {
               </h1>
               
               {/* Mobile Motion Graphics */}
-              <div className="py-4">
+              <div className="py-2">
                 <Link href={procyonServices[currentServiceIndex].link} className="block">
                   <div className={`text-xl sm:text-2xl font-bold bg-gradient-to-r ${procyonServices[currentServiceIndex].color} bg-clip-text text-transparent opacity-40 mb-4 transition-all duration-500 cursor-pointer hover:opacity-60 hover:scale-105 transform relative z-30`}>
                     {procyonServices[currentServiceIndex].name}
