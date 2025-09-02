@@ -8,37 +8,37 @@ export default function SocialImpactSection() {
         <div className="grid lg:grid-cols-2 gap-12 items-center">
           <div className="space-y-8 reveal">
             <h2 className="text-4xl md:text-5xl font-bold">
-              <span className="gradient-text">Giving Back</span> to Society
+              <span className="gradient-text">Procyon Cares</span>
             </h2>
             <p className="text-xl text-gray-300">
-              When you build a better company, you can build a better world. Our commitment extends beyond technology to creating positive social impact in the communities we serve.
+              At Procyon, we believe that true growth is measured not only by business success but also by the positive impact we create in the communities around us. Through our CSR initiatives, we are committed to building a brighter, more compassionate, and sustainable future.
             </p>
             <div className="space-y-6">
               <div className="flex items-start space-x-4">
-                <div className="w-12 h-12 bg-emerald-500/20 rounded-lg flex items-center justify-center flex-shrink-0">
-                  <Heart className="w-6 h-6 text-emerald-400" />
-                </div>
-                <div>
-                  <h3 className="text-xl font-semibold mb-2">Community Outreach</h3>
-                  <p className="text-gray-300">Supporting local communities through technology education and digital literacy programs.</p>
-                </div>
-              </div>
-              <div className="flex items-start space-x-4">
                 <div className="w-12 h-12 bg-blue-500/20 rounded-lg flex items-center justify-center flex-shrink-0">
-                  <Leaf className="w-6 h-6 text-blue-400" />
+                  <GraduationCap className="w-6 h-6 text-blue-400" />
                 </div>
                 <div>
-                  <h3 className="text-xl font-semibold mb-2">Environmental Responsibility</h3>
-                  <p className="text-gray-300">Promoting sustainable practices and green technology solutions for a better planet.</p>
+                  <h3 className="text-xl font-semibold mb-2">Education for All</h3>
+                  <p className="text-gray-300">Supporting the education of students from underprivileged families, ensuring they have access to quality learning and opportunities.</p>
                 </div>
               </div>
               <div className="flex items-start space-x-4">
                 <div className="w-12 h-12 bg-purple-500/20 rounded-lg flex items-center justify-center flex-shrink-0">
-                  <GraduationCap className="w-6 h-6 text-purple-400" />
+                  <Heart className="w-6 h-6 text-purple-400" />
                 </div>
                 <div>
-                  <h3 className="text-xl font-semibold mb-2">Education Initiatives</h3>
-                  <p className="text-gray-300">Empowering the next generation through STEM education and scholarship programs.</p>
+                  <h3 className="text-xl font-semibold mb-2">Caring for the Elderly & Orphans</h3>
+                  <p className="text-gray-300">Extending support to old age homes and orphanages, providing care, companionship, and resources for those who need it most.</p>
+                </div>
+              </div>
+              <div className="flex items-start space-x-4">
+                <div className="w-12 h-12 bg-emerald-500/20 rounded-lg flex items-center justify-center flex-shrink-0">
+                  <Leaf className="w-6 h-6 text-emerald-400" />
+                </div>
+                <div>
+                  <h3 className="text-xl font-semibold mb-2">Environmental Responsibility</h3>
+                  <p className="text-gray-300">Actively working on cleaning up lakes, slum areas, and public spaces, driving sustainable initiatives for healthier communities.</p>
                 </div>
               </div>
             </div>
