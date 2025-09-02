@@ -563,13 +563,13 @@ export default function AboutPage() {
             </div>
             
             <div className="text-center">
-              <div className="text-5xl font-bold text-emerald-400 mb-2">200+</div>
-              <div className="text-gray-300">Successful Projects</div>
+              <div className="text-5xl font-bold text-purple-400 mb-2">75+</div>
+              <div className="text-gray-300">Global Customers</div>
             </div>
             
             <div className="text-center">
-              <div className="text-5xl font-bold text-purple-400 mb-2">75+</div>
-              <div className="text-gray-300">Global Customers</div>
+              <div className="text-5xl font-bold text-emerald-400 mb-2">200+</div>
+              <div className="text-gray-300">Successful Projects</div>
             </div>
             
             <div className="text-center">
