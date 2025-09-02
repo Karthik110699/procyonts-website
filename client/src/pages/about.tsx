@@ -233,6 +233,18 @@ export default function AboutPage() {
                 <div className="absolute left-1/2 transform -translate-x-1/2 w-6 h-6 bg-green-500 rounded-full shadow-lg shadow-green-500/50 z-10 border-4 border-procyon-dark"></div>
                 <div className="flex-1 pl-8"></div>
               </div>
+
+              {/* 2025 */}
+              <div className="relative flex items-center">
+                <div className="flex-1 pr-8"></div>
+                <div className="absolute left-1/2 transform -translate-x-1/2 w-6 h-6 bg-violet-500 rounded-full shadow-lg shadow-violet-500/50 z-10 border-4 border-procyon-dark"></div>
+                <div className="flex-1 text-left pl-8">
+                  <div className="bg-gradient-to-r from-violet-900/40 to-violet-800/40 p-6 rounded-xl border border-violet-500/30 backdrop-blur-sm">
+                    <div className="text-3xl font-bold text-violet-400 mb-2">2025</div>
+                    <div className="text-lg text-gray-300">Implemented AI Accelerators to enhance operations and speed delivery</div>
+                  </div>
+                </div>
+              </div>
               
             </div>
           </div>
