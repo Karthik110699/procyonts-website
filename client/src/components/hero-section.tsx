@@ -48,9 +48,6 @@ export default function HeroSection() {
 
   return (
     <section id="home" className="relative min-h-screen overflow-hidden">
-      {/* Gradient Overlay to merge with glass header */}
-      <div className="absolute top-0 left-0 w-full h-32 bg-gradient-to-b from-white/20 via-white/10 to-transparent backdrop-blur-sm z-30 pointer-events-none"></div>
-      
       {/* Animated Wave Background */}
       <div className="wave-container">
         <div className="glow-effect"></div>
@@ -170,20 +167,20 @@ export default function HeroSection() {
           {/* Right Side - Motion Graphics Space - Desktop Only */}
           <div className="w-1/2 relative flex items-center justify-center min-h-screen">
             {/* Floating Service Names */}
-            <div className="absolute inset-0 flex items-center justify-center z-40">
+            <div className="absolute inset-0 flex items-center justify-center z-20">
               <div className="text-center">
                 <Link href={procyonServices[currentServiceIndex].link} className="block">
-                  <div className={`text-7xl font-bold bg-gradient-to-r ${procyonServices[currentServiceIndex].color} bg-clip-text text-transparent opacity-40 mb-4 transition-all duration-500 cursor-pointer hover:opacity-60 hover:scale-105 transform relative z-50`}>
+                  <div className={`text-7xl font-bold bg-gradient-to-r ${procyonServices[currentServiceIndex].color} bg-clip-text text-transparent opacity-40 mb-4 transition-all duration-500 cursor-pointer hover:opacity-60 hover:scale-105 transform relative z-30`}>
                     {procyonServices[currentServiceIndex].name}
                   </div>
                 </Link>
                 
                 {/* Service Icons/Indicators */}
-                <div className="flex justify-center space-x-2 relative z-50">
+                <div className="flex justify-center space-x-2 relative z-30">
                   {procyonServices.map((service, index) => (
                     <Link key={index} href={service.link} className="block">
                       <div
-                        className={`w-2 h-2 rounded-full transition-all duration-300 cursor-pointer hover:scale-200 relative z-50 ${
+                        className={`w-2 h-2 rounded-full transition-all duration-300 cursor-pointer hover:scale-200 relative z-30 ${
                           index === currentServiceIndex 
                             ? `${service.dotColor} scale-150 ${service.shadowColor} shadow-lg` 
                             : 'bg-white/20 hover:bg-white/40'
@@ -196,14 +193,14 @@ export default function HeroSection() {
             </div>
           
           {/* Service-themed particles */}
-          <div className="absolute inset-0 z-40">
+          <div className="absolute inset-0 z-10">
             {procyonServices.map((service, index) => (
               <Link key={service.name} href={service.link} className="absolute" style={{
                 top: `${20 + (index * 10)}%`,
                 right: `${15 + (index * 8)}%`,
               }}>
                 <div
-                  className={`transition-all duration-1000 cursor-pointer hover:scale-110 relative z-50 ${
+                  className={`transition-all duration-1000 cursor-pointer hover:scale-110 relative z-10 ${
                     index === currentServiceIndex ? 'opacity-100 scale-100' : 'opacity-30 scale-75'
                   }`}
                   style={{
@@ -211,7 +208,7 @@ export default function HeroSection() {
                   }}
                 >
                   <div className={`w-4 h-4 bg-gradient-to-r ${service.color} rounded-full animate-particle-float ${service.shadowColor} shadow-lg hover:shadow-xl transition-shadow`}>
-                    <div className={`absolute -top-8 left-1/2 transform -translate-x-1/2 text-xs font-semibold bg-gradient-to-r ${service.color} bg-clip-text text-transparent opacity-90 whitespace-nowrap hover:opacity-100 transition-opacity relative z-50`}>
+                    <div className={`absolute -top-8 left-1/2 transform -translate-x-1/2 text-xs font-semibold bg-gradient-to-r ${service.color} bg-clip-text text-transparent opacity-90 whitespace-nowrap hover:opacity-100 transition-opacity`}>
                       {service.name}
                     </div>
                   </div>
