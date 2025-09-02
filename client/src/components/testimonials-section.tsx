@@ -4,8 +4,8 @@ export default function TestimonialsSection() {
   const testimonials = [
     {
       quote: "When we talk about Procyon, we do not mean a typical business partner, but rather a team that collaborates with us daily, always there for us when we encounter difficulties and celebrate achievements.",
-      author: "Mike David",
-      role: "Developer",
+      author: "Binit Ranjan",
+      role: "CTO",
       color: "blue"
     },
     {
