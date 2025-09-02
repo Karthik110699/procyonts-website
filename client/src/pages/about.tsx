@@ -28,6 +28,12 @@ export default function AboutPage() {
           
           // Animate the timeline item
           element.classList.add(isLeft ? 'animate-in-left' : 'animate-in-right');
+          
+          // Activate conic border effect
+          const conicBorderCard = element.querySelector('.conic-border');
+          if (conicBorderCard) {
+            conicBorderCard.classList.add('conic-active');
+          }
         }
       });
     }, observerOptions);

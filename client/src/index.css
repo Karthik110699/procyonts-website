@@ -466,7 +466,7 @@
     z-index: 2;
   }
 
-  .conic-border:hover::before {
+  .conic-border.conic-active::before {
     opacity: 1;
     animation-play-state: running;
   }
