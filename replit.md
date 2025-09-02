@@ -155,3 +155,16 @@ Comprehensive set of Shadcn/ui components including:
 - **Canonical URLs**: Preventing duplicate content issues with proper canonical implementation
 
 The application follows a modern full-stack architecture with clear separation of concerns, type safety throughout, comprehensive SEO optimization, and optimized build processes for both development and production environments.
+
+## Salesforce Content Versions
+
+### Content A (Current)
+New content focusing on Salesforce excellence with punch lines:
+- "We don't just implement Salesforce—we tailor it to amplify your results."
+- "From Sales to Health, CPQ to Analytics—Procyon brings Salesforce to life."
+- "Strategy, delivery, support—we're with you end-to-end."
+
+Comprehensive coverage of all Salesforce clouds and 3-step approach methodology.
+
+### Content B (Previous)
+Original implementation-focused content emphasizing CRM transformation, customization, and AI-powered solutions with detailed service descriptions for implementation, customization, integration, and AI-powered CRM solutions.

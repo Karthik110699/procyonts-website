@@ -11,13 +11,13 @@ export default function SalesforcePage() {
   const salesforceStructuredData = {
     "@context": "https://schema.org",
     "@type": "WebPage", 
-    "name": "Salesforce Solutions - CRM Implementation & Consulting | Procyon Technostructure",
-    "description": "Expert Salesforce consulting, implementation, customization, and AI-powered CRM solutions. Transform customer relationships and drive business growth with certified Salesforce experts.",
+    "name": "Salesforce Excellence Delivered - Expert Implementation & Consulting | Procyon Technostructure",
+    "description": "From Sales to Health, CPQ to Analytics—Procyon brings Salesforce to life. Expert consulting across every cloud, every industry, every time with our proven 3-step approach.",
     "url": "https://procyon-technostructure.com/enterprise/salesforce",
     "mainEntity": {
       "@type": "Service",
-      "name": "Salesforce Solutions",
-      "description": "Comprehensive Salesforce CRM implementation, customization, and consulting services",
+      "name": "Salesforce Excellence",
+      "description": "Comprehensive Salesforce consulting, implementation, and transformation services across all clouds and industries",
       "provider": {
         "@type": "Organization",
         "name": "Procyon Technostructure LLC"
@@ -28,12 +28,12 @@ export default function SalesforcePage() {
   return (
     <>
       <SEOHead
-        title="Salesforce Solutions - CRM Implementation & Consulting | Procyon Technostructure"
-        description="Expert Salesforce consulting, implementation, customization, and AI-powered CRM solutions. Transform customer relationships and drive business growth with certified Salesforce experts."
-        keywords="Salesforce implementation, Salesforce consulting, CRM solutions, Salesforce customization, Sales Cloud, Service Cloud, Marketing Cloud, Salesforce integration, AI-powered CRM"
+        title="Salesforce Excellence Delivered - Expert Implementation & Consulting | Procyon Technostructure"
+        description="From Sales to Health, CPQ to Analytics—Procyon brings Salesforce to life. Expert consulting across every cloud, every industry, every time with our proven 3-step approach."
+        keywords="Salesforce excellence, Salesforce consulting, Sales Cloud, Service Cloud, Marketing Cloud, Health Cloud, CPQ, Manufacturing Cloud, Financial Services Cloud, Salesforce implementation"
         canonicalUrl="https://procyon-technostructure.com/enterprise/salesforce"
-        ogTitle="Salesforce CRM Solutions - Expert Implementation & Consulting"
-        ogDescription="Supercharge your business with Salesforce. Expert consulting, implementation, and AI-powered CRM transformation for sustainable growth."
+        ogTitle="Salesforce Excellence, Delivered - Across Every Cloud, Every Industry"
+        ogDescription="We don't just implement Salesforce—we tailor it to amplify your results. Strategy, delivery, support—we're with you end-to-end."
         structuredData={salesforceStructuredData}
       />
       
@@ -74,46 +74,46 @@ export default function SalesforcePage() {
           <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 zoom-section">
             <div className="text-center">
               <h1 className="text-5xl md:text-6xl font-bold mb-6 reveal-scale">
-                <span className="gradient-text">Supercharge Your Business</span>
+                <span className="gradient-text">Salesforce Excellence, Delivered</span>
               </h1>
               <h2 className="text-3xl md:text-4xl font-bold mb-8 text-blue-400 reveal-fade" data-delay="200">
-                with Salesforce
+                Across Every Cloud, Every Industry, Every Time
               </h2>
               <p className="text-xl text-gray-300 max-w-4xl mx-auto mb-8 reveal-fade" data-delay="300">
-                Streamline Processes and Enhance Collaboration
+                We don't just implement Salesforce—we tailor it to amplify your results.
               </p>
               <div className="bg-gradient-to-r from-blue-500/20 to-emerald-500/20 p-6 rounded-xl mb-8 reveal-fade" data-delay="400">
                 <p className="text-lg text-gray-300">
-                  In today's customer-driven economy, cultivating meaningful, long-term relationships is more important than ever. As customer expectations rise and competition intensifies, businesses need powerful CRM tools that can adapt, scale, and deliver actionable insights.
+                  From Sales to Health, CPQ to Analytics—Procyon brings Salesforce to life. Strategy, delivery, support—we're with you end-to-end.
                 </p>
               </div>
               <div className="mt-8 reveal-fade" data-delay="500">
                 <Link href="/contact" className="bg-gradient-to-r from-blue-600 to-emerald-600 px-8 py-4 rounded-lg font-semibold text-lg hover:scale-105 transition-transform inline-block">
-                  Transform Your CRM Today
+                  Request a Demo
                 </Link>
               </div>
             </div>
           </div>
         </div>
 
-        {/* Expert Salesforce Services */}
+        {/* Why Procyon Stands Out */}
         <section className="py-20 zoom-container">
           <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 zoom-section">
             <div className="text-center mb-16 reveal-fade">
-              <h2 className="text-4xl font-bold mb-6">Expert Salesforce Consulting & Implementation</h2>
+              <h2 className="text-4xl font-bold mb-6">Why Procyon Stands Out</h2>
               <p className="text-xl text-gray-300 max-w-4xl mx-auto">
-                for Seamless CRM Transformation
+                We're known for helping businesses—from agile startups to global enterprises—leverage the full power of Salesforce to fuel growth, simplify processes, and scale with precision.
               </p>
             </div>
             
             <div className="grid md:grid-cols-2 gap-8 mb-16">
               <div className="floating-card conic-border bg-gradient-to-br from-gray-800 to-gray-900 p-8 rounded-2xl border border-gray-700 hover:border-blue-500 transition-all duration-300 reveal-fade relative z-10" data-delay="100">
                 <div className="w-16 h-16 bg-blue-500/20 rounded-xl flex items-center justify-center mb-6 relative z-10">
-                  <Building2 className="w-8 h-8 text-blue-400" />
+                  <Award className="w-8 h-8 text-blue-400" />
                 </div>
-                <h3 className="text-2xl font-bold mb-4 text-blue-400 relative z-10">Salesforce Implementation</h3>
+                <h3 className="text-2xl font-bold mb-4 text-blue-400 relative z-10">Depth of Expertise</h3>
                 <p className="text-gray-300 mb-6 relative z-10">
-                  Our Salesforce implementation services are comprehensive and strategic. We begin with a deep dive into your organization's goals, workflows, and customer journey. From platform setup and data migration to user onboarding and training, our process ensures a seamless transition and full user adoption. We focus on building robust, scalable systems that align with your business vision and evolve with you.
+                  Certified consultants, architects, and developers across Salesforce's entire ecosystem. Our team brings deep knowledge and hands-on experience to deliver solutions that work.
                 </p>
               </div>
 
@@ -121,161 +121,197 @@ export default function SalesforcePage() {
                 <div className="w-16 h-16 bg-emerald-500/20 rounded-xl flex items-center justify-center mb-6 relative z-10">
                   <Zap className="w-8 h-8 text-emerald-400" />
                 </div>
-                <h3 className="text-2xl font-bold mb-4 text-emerald-400 relative z-10">Salesforce Customization</h3>
+                <h3 className="text-2xl font-bold mb-4 text-emerald-400 relative z-10">Agile Delivery, Real Results</h3>
                 <p className="text-gray-300 mb-6 relative z-10">
-                  We believe your CRM should work the way your business does — not the other way around. Procyon offers extensive Salesforce customization to create tailored dashboards, workflows, modules, and automated processes that perfectly match your unique operational style. This leads to improved productivity, increased user satisfaction, and a better return on investment.
+                  Fast, transparent delivery—on time, on budget, exceeding expectations. Our agile methodology ensures you see progress every step of the way.
                 </p>
               </div>
 
               <div className="floating-card conic-border bg-gradient-to-br from-gray-800 to-gray-900 p-8 rounded-2xl border border-gray-700 hover:border-purple-500 transition-all duration-300 reveal-fade relative z-10" data-delay="300">
                 <div className="w-16 h-16 bg-purple-500/20 rounded-xl flex items-center justify-center mb-6 relative z-10">
-                  <Globe className="w-8 h-8 text-purple-400" />
+                  <Users className="w-8 h-8 text-purple-400" />
                 </div>
-                <h3 className="text-2xl font-bold mb-4 text-purple-400 relative z-10">Salesforce Integration</h3>
+                <h3 className="text-2xl font-bold mb-4 text-purple-400 relative z-10">Scalable Resources</h3>
                 <p className="text-gray-300 mb-6 relative z-10">
-                  Salesforce doesn't operate in isolation — and neither should your data. Our integration services allow Salesforce to communicate with your existing software stack — from ERPs and HRMS to marketing tools and communication platforms. With seamless data sharing and synchronization, your business achieves a unified view of operations and customers.
+                  Access immediate, on-demand Salesforce talent to cover every project need. Scale your team up or down based on your requirements.
                 </p>
               </div>
 
               <div className="floating-card conic-border bg-gradient-to-br from-gray-800 to-gray-900 p-8 rounded-2xl border border-gray-700 hover:border-amber-500 transition-all duration-300 reveal-fade relative z-10" data-delay="400">
                 <div className="w-16 h-16 bg-amber-500/20 rounded-xl flex items-center justify-center mb-6 relative z-10">
-                  <Brain className="w-8 h-8 text-amber-400" />
+                  <Target className="w-8 h-8 text-amber-400" />
                 </div>
-                <h3 className="text-2xl font-bold mb-4 text-amber-400 relative z-10">AI-Powered CRM Solutions</h3>
+                <h3 className="text-2xl font-bold mb-4 text-amber-400 relative z-10">Client-Centric Partnership</h3>
                 <p className="text-gray-300 mb-6 relative z-10">
-                  Procyon harnesses the power of AI to take your CRM beyond traditional capabilities. We deploy AI-powered tools that offer predictive insights, automate routine tasks, personalize customer interactions, and flag key trends. This allows your teams to focus on what matters — building relationships, closing deals, and improving customer lifetime value.
+                  We listen. We drive outcomes. Success for your business is our only KPI. Your goals become our mission.
                 </p>
               </div>
             </div>
 
             <div className="bg-gradient-to-r from-blue-500/20 to-emerald-500/20 p-8 rounded-xl reveal-fade" data-delay="500">
-              <p className="text-lg text-gray-300 text-center max-w-4xl mx-auto">
-                As a trusted Salesforce partner, we don't just implement a CRM system, we help you build a customer-first culture. Through tailored Salesforce solutions, we enable organizations to better understand customer needs, streamline internal operations, and make informed, data-backed decisions that drive growth and engagement.
+              <p className="text-lg text-gray-300 text-center max-w-4xl mx-auto italic">
+                "Their agile, transparent process eliminated surprises—our Salesforce roll-out was smoother than ever."
+                <br />
+                <span className="text-blue-400 font-semibold">— Sales VP, Retail Industry</span>
               </p>
             </div>
           </div>
         </section>
 
-        {/* Why Choose Procyon */}
+        {/* Our Salesforce Capabilities */}
         <section className="py-20 bg-gray-800/30 zoom-container">
           <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 zoom-section">
             <div className="text-center mb-16 reveal-fade">
-              <h2 className="text-4xl font-bold mb-6">Why Choose Procyon for Salesforce?</h2>
+              <h2 className="text-4xl font-bold mb-6">Our Salesforce Capabilities</h2>
               <p className="text-xl text-gray-300 max-w-4xl mx-auto">
-                Transform how you manage relationships, convert leads, and grow your business with Procyon's comprehensive Salesforce services.
+                Deep, integrated, industry-grade solutions across Salesforce's entire ecosystem
               </p>
             </div>
             
-            <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-8">
-              <div className="text-center reveal-fade" data-delay="100">
-                <div className="w-20 h-20 bg-blue-500/20 rounded-full flex items-center justify-center mx-auto mb-6">
-                  <Award className="w-10 h-10 text-blue-400" />
-                </div>
-                <h3 className="text-xl font-bold mb-4">Certified Salesforce Experts</h3>
-                <p className="text-gray-300">
-                  Skilled, certified professionals ensuring expert CRM delivery.
-                </p>
-              </div>
+            <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-6">
               
-              <div className="text-center reveal-fade" data-delay="200">
-                <div className="w-20 h-20 bg-emerald-500/20 rounded-full flex items-center justify-center mx-auto mb-6">
-                  <TrendingUp className="w-10 h-10 text-emerald-400" />
+              <div className="floating-card conic-border bg-gradient-to-br from-gray-800 to-gray-900 p-6 rounded-xl border border-gray-700 hover:border-blue-500 transition-all duration-300 reveal-fade relative z-10" data-delay="100">
+                <div className="w-12 h-12 bg-blue-500/20 rounded-lg flex items-center justify-center mb-4 relative z-10">
+                  <TrendingUp className="w-6 h-6 text-blue-400" />
                 </div>
-                <h3 className="text-xl font-bold mb-4">Customized, Scalable Solutions</h3>
-                <p className="text-gray-300">
-                  Tailored Salesforce setups that grow with your business.
-                </p>
-              </div>
-              
-              <div className="text-center reveal-fade" data-delay="300">
-                <div className="w-20 h-20 bg-purple-500/20 rounded-full flex items-center justify-center mx-auto mb-6">
-                  <Globe className="w-10 h-10 text-purple-400" />
-                </div>
-                <h3 className="text-xl font-bold mb-4">Seamless Ecosystem Integration</h3>
-                <p className="text-gray-300">
-                  Smooth integration with your existing tools and platforms.
-                </p>
+                <h3 className="text-lg font-bold mb-2 text-blue-400 relative z-10">Sales Cloud</h3>
+                <p className="text-gray-300 text-sm relative z-10">Streamline lead management, opportunity tracking, and revenue forecasting.</p>
               </div>
 
-              <div className="text-center reveal-fade" data-delay="400">
-                <div className="w-20 h-20 bg-amber-500/20 rounded-full flex items-center justify-center mx-auto mb-6">
-                  <CheckCircle className="w-10 h-10 text-amber-400" />
+              <div className="floating-card conic-border bg-gradient-to-br from-gray-800 to-gray-900 p-6 rounded-xl border border-gray-700 hover:border-emerald-500 transition-all duration-300 reveal-fade relative z-10" data-delay="200">
+                <div className="w-12 h-12 bg-emerald-500/20 rounded-lg flex items-center justify-center mb-4 relative z-10">
+                  <Users className="w-6 h-6 text-emerald-400" />
                 </div>
-                <h3 className="text-xl font-bold mb-4">Ongoing Support & Innovation</h3>
-                <p className="text-gray-300">
-                  Continuous updates, support, and smart enhancements.
-                </p>
+                <h3 className="text-lg font-bold mb-2 text-emerald-400 relative z-10">Service Cloud</h3>
+                <p className="text-gray-300 text-sm relative z-10">Deliver seamless, omnichannel customer experiences and smart support.</p>
               </div>
+
+              <div className="floating-card conic-border bg-gradient-to-br from-gray-800 to-gray-900 p-6 rounded-xl border border-gray-700 hover:border-purple-500 transition-all duration-300 reveal-fade relative z-10" data-delay="300">
+                <div className="w-12 h-12 bg-purple-500/20 rounded-lg flex items-center justify-center mb-4 relative z-10">
+                  <Target className="w-6 h-6 text-purple-400" />
+                </div>
+                <h3 className="text-lg font-bold mb-2 text-purple-400 relative z-10">Marketing Cloud & Pardot</h3>
+                <p className="text-gray-300 text-sm relative z-10">Drive data-driven engagement through email, web, and automation.</p>
+              </div>
+
+              <div className="floating-card conic-border bg-gradient-to-br from-gray-800 to-gray-900 p-6 rounded-xl border border-gray-700 hover:border-amber-500 transition-all duration-300 reveal-fade relative z-10" data-delay="400">
+                <div className="w-12 h-12 bg-amber-500/20 rounded-lg flex items-center justify-center mb-4 relative z-10">
+                  <Building2 className="w-6 h-6 text-amber-400" />
+                </div>
+                <h3 className="text-lg font-bold mb-2 text-amber-400 relative z-10">Commerce Cloud</h3>
+                <p className="text-gray-300 text-sm relative z-10">Personalized e-commerce at speed—built for conversion.</p>
+              </div>
+
+              <div className="floating-card conic-border bg-gradient-to-br from-gray-800 to-gray-900 p-6 rounded-xl border border-gray-700 hover:border-indigo-500 transition-all duration-300 reveal-fade relative z-10" data-delay="500">
+                <div className="w-12 h-12 bg-indigo-500/20 rounded-lg flex items-center justify-center mb-4 relative z-10">
+                  <Globe className="w-6 h-6 text-indigo-400" />
+                </div>
+                <h3 className="text-lg font-bold mb-2 text-indigo-400 relative z-10">Experience Cloud</h3>
+                <p className="text-gray-300 text-sm relative z-10">Create dynamic portals for customers, partners, or employees.</p>
+              </div>
+
+              <div className="floating-card conic-border bg-gradient-to-br from-gray-800 to-gray-900 p-6 rounded-xl border border-gray-700 hover:border-green-500 transition-all duration-300 reveal-fade relative z-10" data-delay="600">
+                <div className="w-12 h-12 bg-green-500/20 rounded-lg flex items-center justify-center mb-4 relative z-10">
+                  <BarChart className="w-6 h-6 text-green-400" />
+                </div>
+                <h3 className="text-lg font-bold mb-2 text-green-400 relative z-10">CPQ & Revenue Cloud</h3>
+                <p className="text-gray-300 text-sm relative z-10">Speed up deals with precise quoting, pricing, and approvals.</p>
+              </div>
+
+              <div className="floating-card conic-border bg-gradient-to-br from-gray-800 to-gray-900 p-6 rounded-xl border border-gray-700 hover:border-blue-500 transition-all duration-300 reveal-fade relative z-10" data-delay="700">
+                <div className="w-12 h-12 bg-blue-500/20 rounded-lg flex items-center justify-center mb-4 relative z-10">
+                  <Shield className="w-6 h-6 text-blue-400" />
+                </div>
+                <h3 className="text-lg font-bold mb-2 text-blue-400 relative z-10">Financial Services Cloud</h3>
+                <p className="text-gray-300 text-sm relative z-10">Tailored solutions for banking, insurance, and wealth management.</p>
+              </div>
+
+              <div className="floating-card conic-border bg-gradient-to-br from-gray-800 to-gray-900 p-6 rounded-xl border border-gray-700 hover:border-emerald-500 transition-all duration-300 reveal-fade relative z-10" data-delay="800">
+                <div className="w-12 h-12 bg-emerald-500/20 rounded-lg flex items-center justify-center mb-4 relative z-10">
+                  <CheckCircle className="w-6 h-6 text-emerald-400" />
+                </div>
+                <h3 className="text-lg font-bold mb-2 text-emerald-400 relative z-10">Health Cloud</h3>
+                <p className="text-gray-300 text-sm relative z-10">Modern patient engagement solutions built for care and collaboration.</p>
+              </div>
+
+              <div className="floating-card conic-border bg-gradient-to-br from-gray-800 to-gray-900 p-6 rounded-xl border border-gray-700 hover:border-purple-500 transition-all duration-300 reveal-fade relative z-10" data-delay="900">
+                <div className="w-12 h-12 bg-purple-500/20 rounded-lg flex items-center justify-center mb-4 relative z-10">
+                  <Building2 className="w-6 h-6 text-purple-400" />
+                </div>
+                <h3 className="text-lg font-bold mb-2 text-purple-400 relative z-10">Manufacturing Cloud</h3>
+                <p className="text-gray-300 text-sm relative z-10">Align manufacturing, sales, and forecasting with real-time visibility.</p>
+              </div>
+
+              <div className="floating-card conic-border bg-gradient-to-br from-gray-800 to-gray-900 p-6 rounded-xl border border-gray-700 hover:border-amber-500 transition-all duration-300 reveal-fade relative z-10" data-delay="1000">
+                <div className="w-12 h-12 bg-amber-500/20 rounded-lg flex items-center justify-center mb-4 relative z-10">
+                  <Award className="w-6 h-6 text-amber-400" />
+                </div>
+                <h3 className="text-lg font-bold mb-2 text-amber-400 relative z-10">Nonprofit Cloud</h3>
+                <p className="text-gray-300 text-sm relative z-10">Drive mission impact with tools for fundraising, outreach, and programs.</p>
+              </div>
+
+              <div className="floating-card conic-border bg-gradient-to-br from-gray-800 to-gray-900 p-6 rounded-xl border border-gray-700 hover:border-indigo-500 transition-all duration-300 reveal-fade relative z-10" data-delay="1100">
+                <div className="w-12 h-12 bg-indigo-500/20 rounded-lg flex items-center justify-center mb-4 relative z-10">
+                  <Brain className="w-6 h-6 text-indigo-400" />
+                </div>
+                <h3 className="text-lg font-bold mb-2 text-indigo-400 relative z-10">Analytics & Einstein AI</h3>
+                <p className="text-gray-300 text-sm relative z-10">Unlock meaningful insights, predictive alerts, and smart automation.</p>
+              </div>
+
+              <div className="floating-card conic-border bg-gradient-to-br from-gray-800 to-gray-900 p-6 rounded-xl border border-gray-700 hover:border-green-500 transition-all duration-300 reveal-fade relative z-10" data-delay="1200">
+                <div className="w-12 h-12 bg-green-500/20 rounded-lg flex items-center justify-center mb-4 relative z-10">
+                  <Globe className="w-6 h-6 text-green-400" />
+                </div>
+                <h3 className="text-lg font-bold mb-2 text-green-400 relative z-10">Integration Cloud</h3>
+                <p className="text-gray-300 text-sm relative z-10">Seamlessly connect Salesforce to ERPs, HR systems, and custom systems.</p>
+              </div>
+
             </div>
           </div>
         </section>
 
-        {/* Salesforce Cloud Expertise */}
+        {/* Our Proven 3-Step Approach */}
         <section className="py-20 zoom-container">
           <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 zoom-section">
             <div className="text-center mb-16 reveal-fade">
-              <h2 className="text-4xl font-bold mb-6">Salesforce Cloud Expertise</h2>
+              <h2 className="text-4xl font-bold mb-6">Our Proven 3-Step Approach</h2>
+              <p className="text-xl text-gray-300 max-w-4xl mx-auto">
+                A streamlined methodology that delivers results every time
+              </p>
             </div>
             
-            <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
+            <div className="grid md:grid-cols-3 gap-8">
               
               <div className="floating-card conic-border bg-gradient-to-br from-gray-800 to-gray-900 p-8 rounded-2xl border border-gray-700 hover:border-blue-500 transition-all duration-300 reveal-fade relative z-10" data-delay="100">
                 <div className="w-16 h-16 bg-blue-500/20 rounded-xl flex items-center justify-center mb-6 relative z-10">
-                  <TrendingUp className="w-8 h-8 text-blue-400" />
+                  <Target className="w-8 h-8 text-blue-400" />
                 </div>
-                <h3 className="text-2xl font-bold mb-4 text-blue-400 relative z-10">Sales Cloud</h3>
+                <div className="text-4xl font-bold text-blue-400 mb-4 relative z-10">1.</div>
+                <h3 className="text-2xl font-bold mb-4 text-blue-400 relative z-10">Discover & Define</h3>
                 <p className="text-gray-300 mb-6 relative z-10">
-                  Accelerate Revenue with Smart Selling
+                  We begin by understanding your business objectives—then design a Salesforce roadmap that delivers measurable impact.
                 </p>
               </div>
 
               <div className="floating-card conic-border bg-gradient-to-br from-gray-800 to-gray-900 p-8 rounded-2xl border border-gray-700 hover:border-emerald-500 transition-all duration-300 reveal-fade relative z-10" data-delay="200">
                 <div className="w-16 h-16 bg-emerald-500/20 rounded-xl flex items-center justify-center mb-6 relative z-10">
-                  <Users className="w-8 h-8 text-emerald-400" />
+                  <Zap className="w-8 h-8 text-emerald-400" />
                 </div>
-                <h3 className="text-2xl font-bold mb-4 text-emerald-400 relative z-10">Service Cloud</h3>
+                <div className="text-4xl font-bold text-emerald-400 mb-4 relative z-10">2.</div>
+                <h3 className="text-2xl font-bold mb-4 text-emerald-400 relative z-10">Implement & Integrate (Agile)</h3>
                 <p className="text-gray-300 mb-6 relative z-10">
-                  Deliver Exceptional Customer Support
+                  Fast, iterative delivery that keeps your operations running while we build, integrate, and optimize Salesforce.
                 </p>
               </div>
 
               <div className="floating-card conic-border bg-gradient-to-br from-gray-800 to-gray-900 p-8 rounded-2xl border border-gray-700 hover:border-purple-500 transition-all duration-300 reveal-fade relative z-10" data-delay="300">
                 <div className="w-16 h-16 bg-purple-500/20 rounded-xl flex items-center justify-center mb-6 relative z-10">
-                  <Target className="w-8 h-8 text-purple-400" />
+                  <CheckCircle className="w-8 h-8 text-purple-400" />
                 </div>
-                <h3 className="text-2xl font-bold mb-4 text-purple-400 relative z-10">Marketing Cloud</h3>
+                <div className="text-4xl font-bold text-purple-400 mb-4 relative z-10">3.</div>
+                <h3 className="text-2xl font-bold mb-4 text-purple-400 relative z-10">Enable & Sustain</h3>
                 <p className="text-gray-300 mb-6 relative z-10">
-                  Precision Engagement for Higher ROI
-                </p>
-              </div>
-
-              <div className="floating-card conic-border bg-gradient-to-br from-gray-800 to-gray-900 p-8 rounded-2xl border border-gray-700 hover:border-amber-500 transition-all duration-300 reveal-fade relative z-10" data-delay="400">
-                <div className="w-16 h-16 bg-amber-500/20 rounded-xl flex items-center justify-center mb-6 relative z-10">
-                  <Building2 className="w-8 h-8 text-amber-400" />
-                </div>
-                <h3 className="text-2xl font-bold mb-4 text-amber-400 relative z-10">Commerce Cloud</h3>
-                <p className="text-gray-300 mb-6 relative z-10">
-                  Intelligent Shopping Experiences
-                </p>
-              </div>
-
-              <div className="floating-card conic-border bg-gradient-to-br from-gray-800 to-gray-900 p-8 rounded-2xl border border-gray-700 hover:border-indigo-500 transition-all duration-300 reveal-fade relative z-10" data-delay="500">
-                <div className="w-16 h-16 bg-indigo-500/20 rounded-xl flex items-center justify-center mb-6 relative z-10">
-                  <Users className="w-8 h-8 text-indigo-400" />
-                </div>
-                <h3 className="text-2xl font-bold mb-4 text-indigo-400 relative z-10">Experience Cloud</h3>
-                <p className="text-gray-300 mb-6 relative z-10">
-                  Build Connected Communities
-                </p>
-              </div>
-
-              <div className="floating-card conic-border bg-gradient-to-br from-gray-800 to-gray-900 p-8 rounded-2xl border border-gray-700 hover:border-green-500 transition-all duration-300 reveal-fade relative z-10" data-delay="600">
-                <div className="w-16 h-16 bg-green-500/20 rounded-xl flex items-center justify-center mb-6 relative z-10">
-                  <BarChart className="w-8 h-8 text-green-400" />
-                </div>
-                <h3 className="text-2xl font-bold mb-4 text-green-400 relative z-10">Analytics Cloud</h3>
-                <p className="text-gray-300 mb-6 relative z-10">
-                  Turn Data into Actionable Insights
+                  Through training, support, and continuous evolution, we help your team adopt and grow long after go-live.
                 </p>
               </div>
 
@@ -286,13 +322,16 @@ export default function SalesforcePage() {
         {/* CTA */}
         <section className="py-20 bg-gradient-to-r from-blue-900/50 to-emerald-900/50 zoom-container">
           <div className="max-w-4xl mx-auto text-center px-4 sm:px-6 lg:px-8 zoom-section">
-            <h2 className="text-4xl font-bold mb-6 reveal-fade">Ready to Transform Your Customer Relationships?</h2>
+            <h2 className="text-4xl font-bold mb-6 reveal-fade">Ready to Transform with Salesforce?</h2>
             <p className="text-xl text-gray-300 mb-8 reveal-fade" data-delay="200">
-              Let's discuss how our Salesforce expertise can supercharge your business growth and enhance customer collaboration.
+              Procyon isn't just your implementer—we're your Salesforce transformation partner. Whether you're starting fresh, optimizing existing workflows, or scaling your team with elite Salesforce talent, let's make your vision a reality.
             </p>
-            <div className="reveal-fade" data-delay="400">
+            <div className="flex flex-col sm:flex-row gap-4 justify-center reveal-fade" data-delay="400">
               <Link href="/contact" className="inline-block bg-gradient-to-r from-blue-600 to-emerald-600 px-8 py-4 rounded-lg font-semibold text-lg hover:scale-105 transition-transform">
-                Start Your Salesforce Transformation
+                Contact Us
+              </Link>
+              <Link href="/contact" className="inline-block bg-transparent border-2 border-blue-500 px-8 py-4 rounded-lg font-semibold text-lg hover:bg-blue-500/20 transition-all">
+                Request a Demo
               </Link>
             </div>
           </div>
