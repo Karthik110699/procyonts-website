@@ -4,7 +4,7 @@ import aibrainImage from "@assets/Trial1_1753910986636.png";
 
 export default function AboutSection() {
   const { count: projectsCount, ref: projectsRef } = useCounterAnimation(1200, 2000);
-  const { count: expertsCount, ref: expertsRef } = useCounterAnimation(250, 2000);
+  const { count: expertsCount, ref: expertsRef } = useCounterAnimation(75, 2000);
 
   return (
     <section id="about" className="py-20 bg-gradient-to-b from-gray-900/40 via-gray-900/60 to-gray-900/80 zoom-container">
@@ -47,7 +47,7 @@ export default function AboutSection() {
               </div>
               <div className="text-center" ref={expertsRef}>
                 <div className="text-4xl font-bold gradient-text">{expertsCount}+</div>
-                <p className="text-gray-400 mt-2">Experts, Globally Connected</p>
+                <p className="text-gray-400 mt-2">Customers Globally</p>
               </div>
             </div>
             
