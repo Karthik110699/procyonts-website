@@ -73,12 +73,11 @@ export default function SalesforcePage() {
         <div className="pt-20 pb-16 zoom-container">
           <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 zoom-section">
             <div className="text-center">
-              <h1 className="text-5xl md:text-6xl font-bold mb-6 reveal-scale">
-                <span className="gradient-text">Salesforce Excellence, Delivered</span>
+              <h1 className="text-4xl md:text-5xl font-bold mb-8 reveal-scale">
+                <span className="gradient-text">Delivering Salesforce Excellence</span>
+                <br />
+                <span className="text-blue-400">Across Every Cloud, Every Industry, Every Time</span>
               </h1>
-              <h2 className="text-3xl md:text-4xl font-bold mb-8 text-blue-400 reveal-fade" >
-                Across Every Cloud, Every Industry, Every Time
-              </h2>
               <p className="text-xl text-gray-300 max-w-4xl mx-auto mb-8 reveal-fade" >
                 We don't just implement Salesforce—we tailor it to amplify your results.
               </p>
