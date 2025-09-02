@@ -454,7 +454,7 @@
     opacity: 0;
     transition: opacity 0.3s ease;
     pointer-events: none;
-    z-index: 1;
+    z-index: 0;
   }
 
   .conic-border::after {
