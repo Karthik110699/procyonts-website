@@ -174,76 +174,70 @@
     width: 4px;
     height: 260px;
     background: linear-gradient(to bottom, 
-      transparent 0%, 
-      #00ffff 20%, 
-      #ffffff 40%, 
-      #00ffff 60%, 
-      transparent 100%);
-    transform-origin: top center;
+      #00ffff 0%, 
+      #ffffff 50%, 
+      #00ffff 100%);
+    transform-origin: 0% 0%;
     opacity: 0;
     border-radius: 2px;
     box-shadow: 0 0 20px #00ffff, 0 0 40px #00ffff;
+    margin-left: -2px;
+    margin-top: 0px;
   }
 
   .lightning-1 {
-    transform: translate(-50%, -50%) rotate(0deg);
-    animation: lightning-flash 3s infinite, orbit-rotate-1 30s linear infinite;
+    animation: lightning-flash 3s infinite, lightning-rotate-1 30s linear infinite;
   }
 
   .lightning-2 {
-    transform: translate(-50%, -50%) rotate(60deg);
-    animation: lightning-flash 3s infinite 0.5s, orbit-rotate-2 30s linear infinite;
+    animation: lightning-flash 3s infinite 0.5s, lightning-rotate-2 30s linear infinite;
   }
 
   .lightning-3 {
-    transform: translate(-50%, -50%) rotate(120deg);
-    animation: lightning-flash 3s infinite 1s, orbit-rotate-3 30s linear infinite;
+    animation: lightning-flash 3s infinite 1s, lightning-rotate-3 30s linear infinite;
   }
 
   .lightning-4 {
-    transform: translate(-50%, -50%) rotate(180deg);
-    animation: lightning-flash 3s infinite 1.5s, orbit-rotate-4 30s linear infinite;
+    animation: lightning-flash 3s infinite 1.5s, lightning-rotate-4 30s linear infinite;
   }
 
   .lightning-5 {
-    transform: translate(-50%, -50%) rotate(240deg);
-    animation: lightning-flash 3s infinite 2s, orbit-rotate-5 30s linear infinite;
+    animation: lightning-flash 3s infinite 2s, lightning-rotate-5 30s linear infinite;
   }
 
   .lightning-6 {
-    transform: translate(-50%, -50%) rotate(300deg);
-    animation: lightning-flash 3s infinite 2.5s, orbit-rotate-6 30s linear infinite;
+    animation: lightning-flash 3s infinite 2.5s, lightning-rotate-6 30s linear infinite;
   }
 
   /* Lightning rotation to follow orbiting values */
-  @keyframes orbit-rotate-1 {
-    from { transform: translate(-50%, -50%) rotate(0deg); }
-    to { transform: translate(-50%, -50%) rotate(360deg); }
+  @keyframes lightning-rotate-1 {
+    from { transform: translate(-2px, 0px) rotate(0deg); }
+    to { transform: translate(-2px, 0px) rotate(360deg); }
   }
 
-  @keyframes orbit-rotate-2 {
-    from { transform: translate(-50%, -50%) rotate(60deg); }
-    to { transform: translate(-50%, -50%) rotate(420deg); }
+  @keyframes lightning-rotate-2 {
+    from { transform: translate(-2px, 0px) rotate(60deg); }
+    to { transform: translate(-2px, 0px) rotate(420deg); }
   }
 
-  @keyframes orbit-rotate-3 {
-    from { transform: translate(-50%, -50%) rotate(120deg); }
-    to { transform: translate(-50%, -50%) rotate(480deg); }
+  @keyframes lightning-rotate-3 {
+    from { transform: translate(-2px, 0px) rotate(120deg); }
+    to { transform: translate(-2px, 0px) rotate(480deg); }
   }
 
-  @keyframes orbit-rotate-4 {
-    from { transform: translate(-50%, -50%) rotate(180deg); }
-    to { transform: translate(-50%, -50%) rotate(540deg); }
+  @keyframes lightning-rotate-4 {
+    from { transform: translate(-2px, 0px) rotate(180deg); }
+    to { transform: translate(-2px, 0px) rotate(540deg); }
   }
 
-  @keyframes orbit-rotate-5 {
-    from { transform: translate(-50%, -50%) rotate(240deg); }
-    to { transform: translate(-50%, -50%) rotate(600deg); }
+  @keyframes lightning-rotate-5 {
+    from { transform: translate(-2px, 0px) rotate(240deg); }
+    to { transform: translate(-2px, 0px) rotate(600deg); }
   }
 
-  @keyframes orbit-rotate-6 {
-    from { transform: translate(-50%, -50%) rotate(300deg); }
-    to { transform: translate(-50%, -50%) rotate(660deg); }
+  @keyframes lightning-rotate-6 {
+    from { transform: translate(-2px, 0px) rotate(300deg); }
+    to { transform: translate(-2px, 0px) rotate(660deg); }
   }
 
   /* Magdemy.com Exact Scrollbar */
