@@ -1,4 +1,4 @@
-import { Cloud, Settings, Database } from "lucide-react";
+import { Users, Workflow, Building2 } from "lucide-react";
 import { Link } from "wouter";
 import Navbar from "@/components/navbar";
 import { useScrollReveal } from "@/hooks/use-scroll-reveal";
@@ -96,7 +96,7 @@ export default function EnterprisePage() {
             {/* Salesforce */}
             <div className="group floating-card conic-border bg-gradient-to-br from-gray-800 to-gray-900 p-8 rounded-2xl border border-gray-700 hover:border-blue-500 cursor-pointer transition-all duration-300 reveal-fade" data-delay="100" onClick={() => {window.scrollTo(0, 0); window.location.href = '/enterprise/salesforce';}}>
               <div className="w-20 h-20 bg-blue-500/20 rounded-xl flex items-center justify-center mb-8 relative z-10">
-                <Cloud className="w-10 h-10 text-blue-400" />
+                <Users className="w-10 h-10 text-blue-400" />
               </div>
               <h2 className="text-3xl font-bold mb-6 text-blue-400 relative z-10">Salesforce</h2>
               <p className="text-gray-300 mb-8 leading-relaxed relative z-10">
@@ -119,7 +119,7 @@ export default function EnterprisePage() {
             {/* ServiceNow */}
             <div className="group floating-card conic-border bg-gradient-to-br from-gray-800 to-gray-900 p-8 rounded-2xl border border-gray-700 hover:border-emerald-500 cursor-pointer transition-all duration-300 reveal-fade" data-delay="200" onClick={() => {window.scrollTo(0, 0); window.location.href = '/enterprise/servicenow';}}>
               <div className="w-20 h-20 bg-emerald-500/20 rounded-xl flex items-center justify-center mb-8 relative z-10">
-                <Settings className="w-10 h-10 text-emerald-400" />
+                <Workflow className="w-10 h-10 text-emerald-400" />
               </div>
               <h2 className="text-3xl font-bold mb-6 text-emerald-400 relative z-10">ServiceNow</h2>
               <p className="text-gray-300 mb-8 leading-relaxed relative z-10">
@@ -142,7 +142,7 @@ export default function EnterprisePage() {
             {/* SAP */}
             <div className="conic-border bg-gradient-to-br from-gray-800 to-gray-900 p-8 rounded-2xl border border-gray-700 hover:border-purple-500 cursor-pointer transition-all duration-300" onClick={() => {window.scrollTo(0, 0); window.location.href = '/enterprise/sap';}}>
               <div className="w-20 h-20 bg-purple-500/20 rounded-xl flex items-center justify-center mb-8 relative z-10">
-                <Database className="w-10 h-10 text-purple-400" />
+                <Building2 className="w-10 h-10 text-purple-400" />
               </div>
               <h2 className="text-3xl font-bold mb-6 text-purple-400 relative z-10">SAP</h2>
               <p className="text-gray-300 mb-8 leading-relaxed relative z-10">

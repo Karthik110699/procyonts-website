@@ -1,4 +1,4 @@
-import { Database, Settings, Building, Cloud, BarChart, Users, CheckCircle, TrendingUp, Zap, Shield } from "lucide-react";
+import { Building2, Settings, Building, Cloud, BarChart, Users, CheckCircle, TrendingUp, Zap, Shield } from "lucide-react";
 import { Link } from "wouter";
 import Navbar from "@/components/navbar";
 import { useScrollReveal } from "@/hooks/use-scroll-reveal";
@@ -88,7 +88,7 @@ export default function SAPPage() {
           <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 zoom-section">
             <div className="flex items-start gap-8 mb-12">
               <div className="w-20 h-20 bg-purple-500/20 rounded-xl flex items-center justify-center reveal-scale">
-                <Database className="w-10 h-10 text-purple-400" />
+                <Building2 className="w-10 h-10 text-purple-400" />
               </div>
               <div>
                 <h1 className="text-4xl md:text-5xl font-bold mb-6 reveal-scale">

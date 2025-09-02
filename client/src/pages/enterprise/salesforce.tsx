@@ -1,4 +1,4 @@
-import { Cloud, CheckCircle, Zap, Users, BarChart, Shield, Globe, Target, TrendingUp, Brain, Award, Building2 } from "lucide-react";
+import { Users, CheckCircle, Zap, BarChart, Shield, Globe, Target, TrendingUp, Brain, Award, Building2 } from "lucide-react";
 import { Link } from "wouter";
 import Navbar from "@/components/navbar";
 import { ContactSection } from "@/components/contact-section";
