@@ -68,9 +68,9 @@ export default function HeroSection() {
         {/* Mobile Layout */}
         <div className="lg:hidden flex flex-col min-h-screen pt-20">
           {/* Mobile Content - Centered */}
-          <div className="flex-1 flex flex-col justify-center items-center px-4 py-8">
+          <div className="flex-1 flex flex-col justify-center items-center px-4 py-4">
             <div className="text-center space-y-8">
-              <h1 className="text-lg sm:text-xl md:text-2xl font-bold leading-tight text-white">
+              <h1 className="text-2xl sm:text-3xl md:text-4xl font-bold leading-tight text-white">
                 <span className="block animated-gradient-text mb-2">
                   {heroTexts[currentHeroTextIndex].line1}
                 </span>
@@ -106,8 +106,8 @@ export default function HeroSection() {
           </div>
           
           {/* Mobile CTAs at Bottom */}
-          <div className="px-4 pb-8 pt-4">
-            <div className="flex flex-col space-y-3">
+          <div className="px-4 pb-6 pt-2">
+            <div className="flex flex-col space-y-2">
               <a 
                 href="#contact" 
                 className="group relative px-6 py-4 bg-gradient-to-r from-blue-600 to-emerald-600 rounded-lg font-semibold text-base text-white overflow-hidden transition-all duration-300 transform hover:scale-105 text-center"
