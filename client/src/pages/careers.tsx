@@ -186,7 +186,7 @@ export default function CareersPage() {
                     <span className="px-3 py-1 bg-amber-500/20 text-amber-400 rounded-full text-sm">AWS</span>
                   </div>
                 </div>
-                <Link href="/contact" className="border-2 border-white hover:bg-white hover:text-black text-white px-6 py-3 rounded-lg font-semibold transition-colors">
+                <Link href="https://in.linkedin.com/company/procyonts" className="border-2 border-white hover:bg-white hover:text-black text-white px-6 py-3 rounded-lg font-semibold transition-colors">
                   Apply Now
                 </Link>
               </div>
@@ -225,7 +225,7 @@ export default function CareersPage() {
                     <span className="px-3 py-1 bg-amber-500/20 text-amber-400 rounded-full text-sm">SQL</span>
                   </div>
                 </div>
-                <Link href="/contact" className="border-2 border-white hover:bg-white hover:text-black text-white px-6 py-3 rounded-lg font-semibold transition-colors">
+                <Link href="https://in.linkedin.com/company/procyonts" className="border-2 border-white hover:bg-white hover:text-black text-white px-6 py-3 rounded-lg font-semibold transition-colors">
                   Apply Now
                 </Link>
               </div>
@@ -264,7 +264,7 @@ export default function CareersPage() {
                     <span className="px-3 py-1 bg-amber-500/20 text-amber-400 rounded-full text-sm">AWS</span>
                   </div>
                 </div>
-                <Link href="/contact" className="border-2 border-white hover:bg-white hover:text-black text-white px-6 py-3 rounded-lg font-semibold transition-colors">
+                <Link href="https://in.linkedin.com/company/procyonts" className="border-2 border-white hover:bg-white hover:text-black text-white px-6 py-3 rounded-lg font-semibold transition-colors">
                   Apply Now
                 </Link>
               </div>
@@ -326,7 +326,7 @@ export default function CareersPage() {
           <p className="text-xl text-gray-300 mb-8">
             We're always looking for exceptional talent. Send us your resume and let's discuss opportunities.
           </p>
-          <Link href="/contact" className="inline-block bg-gradient-to-r from-blue-600 to-emerald-600 px-8 py-4 rounded-lg font-semibold text-lg hover:scale-105 transition-transform">
+          <Link href="https://in.linkedin.com/company/procyonts" className="inline-block bg-gradient-to-r from-blue-600 to-emerald-600 px-8 py-4 rounded-lg font-semibold text-lg hover:scale-105 transition-transform">
             Get in Touch
           </Link>
         </div>
