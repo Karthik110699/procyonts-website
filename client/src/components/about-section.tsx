@@ -41,13 +41,13 @@ export default function AboutSection() {
             </div>
             
             <div className="grid grid-cols-2 gap-8">
-              <div className="text-center" ref={projectsRef}>
-                <div className="text-4xl font-bold gradient-text">{projectsCount}+</div>
-                <p className="text-gray-400 mt-2">Successful Projects</p>
-              </div>
               <div className="text-center" ref={expertsRef}>
                 <div className="text-4xl font-bold gradient-text">{expertsCount}+</div>
                 <p className="text-gray-400 mt-2">Customers Globally</p>
+              </div>
+              <div className="text-center" ref={projectsRef}>
+                <div className="text-4xl font-bold gradient-text">{projectsCount}+</div>
+                <p className="text-gray-400 mt-2">Successful Projects</p>
               </div>
             </div>
             
