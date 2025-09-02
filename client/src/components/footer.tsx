@@ -58,7 +58,7 @@ export default function Footer() {
               <li><Link href="/about" className="hover:text-white transition-colors" onClick={() => window.scrollTo(0, 0)}>About Us</Link></li>
               <li><Link href="/careers" className="hover:text-white transition-colors" onClick={() => window.scrollTo(0, 0)}>Careers</Link></li>
               <li><Link href="/privacy-policy" className="hover:text-white transition-colors" onClick={() => window.scrollTo(0, 0)}>Privacy Policy</Link></li>
-              <li><Link href="/contact" className="hover:text-white transition-colors" onClick={() => window.scrollTo(0, 0)}>Contact</Link></li>
+              <li><Link href="/contact" className="hover:text-white transition-colors" onClick={() => window.scrollTo(0, 0)}>Contact Us</Link></li>
             </ul>
           </div>
         </div>
