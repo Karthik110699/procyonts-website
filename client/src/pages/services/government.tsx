@@ -1,4 +1,5 @@
-import { Shield, Cloud, Users, FileCheck, Building, Lock, Server, Laptop, Database, Settings, Award, Phone, Mail, MapPin } from "lucide-react";
+import { Shield, Cloud, Users, FileCheck, Building, Lock, Server, Laptop, Database, Settings, Award, Phone, Mail, MapPin, Plus, Minus } from "lucide-react";
+import { useState } from "react";
 import { Link } from "wouter";
 import Navbar from "@/components/navbar";
 import { ContactSection } from "@/components/contact-section";
@@ -7,6 +8,15 @@ import SEOHead from "@/components/seo-head";
 
 export default function GovernmentServicesPage() {
   useScrollReveal();
+  const [expandedServices, setExpandedServices] = useState<string[]>([]);
+
+  const toggleService = (serviceId: string) => {
+    setExpandedServices(prev => 
+      prev.includes(serviceId) 
+        ? prev.filter(id => id !== serviceId)
+        : [...prev, serviceId]
+    );
+  };
 
   const governmentStructuredData = {
     "@context": "https://schema.org",
@@ -215,8 +225,310 @@ export default function GovernmentServicesPage() {
           </div>
         </section>
 
-        {/* Detailed Service Offerings */}
+        {/* NAICS Service Categories */}
         <section className="py-20 bg-gray-800/30 zoom-container">
+          <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 zoom-section">
+            <div className="text-center mb-16 reveal-fade">
+              <h2 className="text-4xl font-bold mb-6">Government Service Categories</h2>
+              <p className="text-xl text-gray-300 max-w-4xl mx-auto">
+                Our comprehensive NAICS-classified service offerings for government agencies
+              </p>
+            </div>
+            
+            <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-6">
+              {/* 541511 - Custom Computer Programming Services */}
+              <div className="bg-gradient-to-br from-gray-800 to-gray-900 rounded-2xl border border-gray-700 overflow-hidden reveal-fade">
+                <div 
+                  className="p-6 cursor-pointer hover:bg-gray-700/50 transition-all duration-300 flex items-center justify-between"
+                  onClick={() => toggleService('541511')}
+                >
+                  <div>
+                    <h3 className="text-xl font-bold text-blue-400 mb-2">541511</h3>
+                    <p className="text-gray-300">Custom Computer Programming Services</p>
+                  </div>
+                  {expandedServices.includes('541511') ? 
+                    <Minus className="w-5 h-5 text-blue-400" /> : 
+                    <Plus className="w-5 h-5 text-blue-400" />
+                  }
+                </div>
+                {expandedServices.includes('541511') && (
+                  <div className="px-6 pb-6 border-t border-gray-700">
+                    <p className="text-gray-300 mt-4 leading-relaxed">
+                      Custom computer programming services, including writing, modifying, testing, and supporting software for a specific customer
+                    </p>
+                  </div>
+                )}
+              </div>
+
+              {/* 541512 - Computer Systems Design Services */}
+              <div className="bg-gradient-to-br from-gray-800 to-gray-900 rounded-2xl border border-gray-700 overflow-hidden reveal-fade">
+                <div 
+                  className="p-6 cursor-pointer hover:bg-gray-700/50 transition-all duration-300 flex items-center justify-between"
+                  onClick={() => toggleService('541512')}
+                >
+                  <div>
+                    <h3 className="text-xl font-bold text-emerald-400 mb-2">541512</h3>
+                    <p className="text-gray-300">Computer Systems Design Services</p>
+                  </div>
+                  {expandedServices.includes('541512') ? 
+                    <Minus className="w-5 h-5 text-emerald-400" /> : 
+                    <Plus className="w-5 h-5 text-emerald-400" />
+                  }
+                </div>
+                {expandedServices.includes('541512') && (
+                  <div className="px-6 pb-6 border-t border-gray-700">
+                    <p className="text-gray-300 mt-4 leading-relaxed">
+                      Computer systems design services, including planning and designing computer systems that integrate hardware, software, and communication technologies
+                    </p>
+                  </div>
+                )}
+              </div>
+
+              {/* 541513 - Computer Facilities Management Services */}
+              <div className="bg-gradient-to-br from-gray-800 to-gray-900 rounded-2xl border border-gray-700 overflow-hidden reveal-fade">
+                <div 
+                  className="p-6 cursor-pointer hover:bg-gray-700/50 transition-all duration-300 flex items-center justify-between"
+                  onClick={() => toggleService('541513')}
+                >
+                  <div>
+                    <h3 className="text-xl font-bold text-purple-400 mb-2">541513</h3>
+                    <p className="text-gray-300">Computer Facilities Management Services</p>
+                  </div>
+                  {expandedServices.includes('541513') ? 
+                    <Minus className="w-5 h-5 text-purple-400" /> : 
+                    <Plus className="w-5 h-5 text-purple-400" />
+                  }
+                </div>
+                {expandedServices.includes('541513') && (
+                  <div className="px-6 pb-6 border-t border-gray-700">
+                    <p className="text-gray-300 mt-4 leading-relaxed">
+                      Computer facilities management services
+                    </p>
+                  </div>
+                )}
+              </div>
+
+              {/* 541519 - Other Computer Related Services */}
+              <div className="bg-gradient-to-br from-gray-800 to-gray-900 rounded-2xl border border-gray-700 overflow-hidden reveal-fade">
+                <div 
+                  className="p-6 cursor-pointer hover:bg-gray-700/50 transition-all duration-300 flex items-center justify-between"
+                  onClick={() => toggleService('541519')}
+                >
+                  <div>
+                    <h3 className="text-xl font-bold text-amber-400 mb-2">541519</h3>
+                    <p className="text-gray-300">Other Computer Related Services</p>
+                  </div>
+                  {expandedServices.includes('541519') ? 
+                    <Minus className="w-5 h-5 text-amber-400" /> : 
+                    <Plus className="w-5 h-5 text-amber-400" />
+                  }
+                </div>
+                {expandedServices.includes('541519') && (
+                  <div className="px-6 pb-6 border-t border-gray-700">
+                    <p className="text-gray-300 mt-4 leading-relaxed">
+                      Other computer related services
+                    </p>
+                  </div>
+                )}
+              </div>
+
+              {/* 518210 - Data Processing, Hosting & Related Services */}
+              <div className="bg-gradient-to-br from-gray-800 to-gray-900 rounded-2xl border border-gray-700 overflow-hidden reveal-fade">
+                <div 
+                  className="p-6 cursor-pointer hover:bg-gray-700/50 transition-all duration-300 flex items-center justify-between"
+                  onClick={() => toggleService('518210')}
+                >
+                  <div>
+                    <h3 className="text-xl font-bold text-red-400 mb-2">518210</h3>
+                    <p className="text-gray-300">Data Processing, Hosting & Related Services</p>
+                  </div>
+                  {expandedServices.includes('518210') ? 
+                    <Minus className="w-5 h-5 text-red-400" /> : 
+                    <Plus className="w-5 h-5 text-red-400" />
+                  }
+                </div>
+                {expandedServices.includes('518210') && (
+                  <div className="px-6 pb-6 border-t border-gray-700">
+                    <p className="text-gray-300 mt-4 leading-relaxed">
+                      Data Processing, Hosting & Related Services
+                    </p>
+                  </div>
+                )}
+              </div>
+
+              {/* 541330 - Engineering Services */}
+              <div className="bg-gradient-to-br from-gray-800 to-gray-900 rounded-2xl border border-gray-700 overflow-hidden reveal-fade">
+                <div 
+                  className="p-6 cursor-pointer hover:bg-gray-700/50 transition-all duration-300 flex items-center justify-between"
+                  onClick={() => toggleService('541330')}
+                >
+                  <div>
+                    <h3 className="text-xl font-bold text-green-400 mb-2">541330</h3>
+                    <p className="text-gray-300">Engineering Services</p>
+                  </div>
+                  {expandedServices.includes('541330') ? 
+                    <Minus className="w-5 h-5 text-green-400" /> : 
+                    <Plus className="w-5 h-5 text-green-400" />
+                  }
+                </div>
+                {expandedServices.includes('541330') && (
+                  <div className="px-6 pb-6 border-t border-gray-700">
+                    <p className="text-gray-300 mt-4 leading-relaxed">
+                      Engineering Services
+                    </p>
+                  </div>
+                )}
+              </div>
+
+              {/* 561320 - Temporary Help Services */}
+              <div className="bg-gradient-to-br from-gray-800 to-gray-900 rounded-2xl border border-gray-700 overflow-hidden reveal-fade">
+                <div 
+                  className="p-6 cursor-pointer hover:bg-gray-700/50 transition-all duration-300 flex items-center justify-between"
+                  onClick={() => toggleService('561320')}
+                >
+                  <div>
+                    <h3 className="text-xl font-bold text-indigo-400 mb-2">561320</h3>
+                    <p className="text-gray-300">Temporary Help Services (Staff Augmentation)</p>
+                  </div>
+                  {expandedServices.includes('561320') ? 
+                    <Minus className="w-5 h-5 text-indigo-400" /> : 
+                    <Plus className="w-5 h-5 text-indigo-400" />
+                  }
+                </div>
+                {expandedServices.includes('561320') && (
+                  <div className="px-6 pb-6 border-t border-gray-700">
+                    <p className="text-gray-300 mt-4 leading-relaxed">
+                      Temporary Help Services (Staff Augmentation)
+                    </p>
+                  </div>
+                )}
+              </div>
+
+              {/* 423430 - Computer & Peripheral Equipment Wholesalers */}
+              <div className="bg-gradient-to-br from-gray-800 to-gray-900 rounded-2xl border border-gray-700 overflow-hidden reveal-fade">
+                <div 
+                  className="p-6 cursor-pointer hover:bg-gray-700/50 transition-all duration-300 flex items-center justify-between"
+                  onClick={() => toggleService('423430')}
+                >
+                  <div>
+                    <h3 className="text-xl font-bold text-pink-400 mb-2">423430</h3>
+                    <p className="text-gray-300">Computer & Peripheral Equipment Wholesalers</p>
+                  </div>
+                  {expandedServices.includes('423430') ? 
+                    <Minus className="w-5 h-5 text-pink-400" /> : 
+                    <Plus className="w-5 h-5 text-pink-400" />
+                  }
+                </div>
+                {expandedServices.includes('423430') && (
+                  <div className="px-6 pb-6 border-t border-gray-700">
+                    <p className="text-gray-300 mt-4 leading-relaxed">
+                      Computer and Computer Peripheral Equipment and Software Merchant Wholesalers
+                    </p>
+                  </div>
+                )}
+              </div>
+
+              {/* 511210 - Software Publishers */}
+              <div className="bg-gradient-to-br from-gray-800 to-gray-900 rounded-2xl border border-gray-700 overflow-hidden reveal-fade">
+                <div 
+                  className="p-6 cursor-pointer hover:bg-gray-700/50 transition-all duration-300 flex items-center justify-between"
+                  onClick={() => toggleService('511210')}
+                >
+                  <div>
+                    <h3 className="text-xl font-bold text-orange-400 mb-2">511210</h3>
+                    <p className="text-gray-300">Software Publishers</p>
+                  </div>
+                  {expandedServices.includes('511210') ? 
+                    <Minus className="w-5 h-5 text-orange-400" /> : 
+                    <Plus className="w-5 h-5 text-orange-400" />
+                  }
+                </div>
+                {expandedServices.includes('511210') && (
+                  <div className="px-6 pb-6 border-t border-gray-700">
+                    <p className="text-gray-300 mt-4 leading-relaxed">
+                      Software publishers, including applications development and publishing, computer software publishing and reproduction, and more
+                    </p>
+                  </div>
+                )}
+              </div>
+
+              {/* 517311 - Wired Telecommunications Carriers */}
+              <div className="bg-gradient-to-br from-gray-800 to-gray-900 rounded-2xl border border-gray-700 overflow-hidden reveal-fade">
+                <div 
+                  className="p-6 cursor-pointer hover:bg-gray-700/50 transition-all duration-300 flex items-center justify-between"
+                  onClick={() => toggleService('517311')}
+                >
+                  <div>
+                    <h3 className="text-xl font-bold text-cyan-400 mb-2">517311</h3>
+                    <p className="text-gray-300">Wired Telecommunications Carriers</p>
+                  </div>
+                  {expandedServices.includes('517311') ? 
+                    <Minus className="w-5 h-5 text-cyan-400" /> : 
+                    <Plus className="w-5 h-5 text-cyan-400" />
+                  }
+                </div>
+                {expandedServices.includes('517311') && (
+                  <div className="px-6 pb-6 border-t border-gray-700">
+                    <p className="text-gray-300 mt-4 leading-relaxed">
+                      Wired Telecommunications Carriers
+                    </p>
+                  </div>
+                )}
+              </div>
+
+              {/* 517410 - Satellite Telecommunications */}
+              <div className="bg-gradient-to-br from-gray-800 to-gray-900 rounded-2xl border border-gray-700 overflow-hidden reveal-fade">
+                <div 
+                  className="p-6 cursor-pointer hover:bg-gray-700/50 transition-all duration-300 flex items-center justify-between"
+                  onClick={() => toggleService('517410')}
+                >
+                  <div>
+                    <h3 className="text-xl font-bold text-teal-400 mb-2">517410</h3>
+                    <p className="text-gray-300">Satellite Telecommunications</p>
+                  </div>
+                  {expandedServices.includes('517410') ? 
+                    <Minus className="w-5 h-5 text-teal-400" /> : 
+                    <Plus className="w-5 h-5 text-teal-400" />
+                  }
+                </div>
+                {expandedServices.includes('517410') && (
+                  <div className="px-6 pb-6 border-t border-gray-700">
+                    <p className="text-gray-300 mt-4 leading-relaxed">
+                      Satellite Telecommunications
+                    </p>
+                  </div>
+                )}
+              </div>
+
+              {/* 519190 - All Other Information Services */}
+              <div className="bg-gradient-to-br from-gray-800 to-gray-900 rounded-2xl border border-gray-700 overflow-hidden reveal-fade">
+                <div 
+                  className="p-6 cursor-pointer hover:bg-gray-700/50 transition-all duration-300 flex items-center justify-between"
+                  onClick={() => toggleService('519190')}
+                >
+                  <div>
+                    <h3 className="text-xl font-bold text-yellow-400 mb-2">519190</h3>
+                    <p className="text-gray-300">All Other Information Services</p>
+                  </div>
+                  {expandedServices.includes('519190') ? 
+                    <Minus className="w-5 h-5 text-yellow-400" /> : 
+                    <Plus className="w-5 h-5 text-yellow-400" />
+                  }
+                </div>
+                {expandedServices.includes('519190') && (
+                  <div className="px-6 pb-6 border-t border-gray-700">
+                    <p className="text-gray-300 mt-4 leading-relaxed">
+                      All Other Information Services
+                    </p>
+                  </div>
+                )}
+              </div>
+            </div>
+          </div>
+        </section>
+
+        {/* Detailed Service Offerings */}
+        <section className="py-20 zoom-container">
           <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 zoom-section">
             <div className="text-center mb-16 reveal-fade">
               <h2 className="text-4xl font-bold mb-6">Comprehensive IT Offerings</h2>
