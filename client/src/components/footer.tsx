@@ -23,7 +23,7 @@ export default function Footer() {
               <a href="https://www.facebook.com/ProcyonTS" className="text-gray-400 hover:text-blue-400 transition-colors">
                 <Facebook className="w-5 h-5" />
               </a>
-              <a href="https://www.linkedin.com/company/procyonts/" className="text-gray-400 hover:text-blue-400 transition-colors">
+              <a href="https://in.linkedin.com/company/procyonts" className="text-gray-400 hover:text-blue-400 transition-colors">
                 <Linkedin className="w-5 h-5" />
               </a>
               <a href="https://x.com/Procyonts" className="text-gray-400 hover:text-blue-400 transition-colors">
