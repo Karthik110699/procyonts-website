@@ -7,12 +7,12 @@ export default function HeroSection() {
   
   const heroTexts = [
     {
-      line1: "Revolutionizing Enterprises with AI, Talent, and Technology,",
-      line2: "Procyon's Everywhere!"
+      line1: "Revolutionizing Enterprises with",
+      line2: "AI, Talent and Technology!"
     },
     {
       line1: "From enterprise solutions to staffing excellence and product innovation,",
-      line2: "Procyon empowers your business to lead the digital future!"
+      line2: "we empower your business to lead the digital future!"
     }
   ];
   
