@@ -63,7 +63,7 @@ export default function LoadingScreen() {
             <img 
               src={procyonLogo} 
               alt="Procyon Technostructure" 
-              className="h-16 mx-auto magdemy-logo-fade"
+              className="h-16 mx-auto magdemy-logo-fade logo-glow"
             />
           </div>
         </div>
