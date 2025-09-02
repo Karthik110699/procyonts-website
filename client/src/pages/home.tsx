@@ -64,11 +64,10 @@ export default function Home() {
                 Guiding organizations to thrive
               </div>
               <h2 className="text-4xl md:text-5xl font-bold leading-tight">
-                We are the brightest star that 
-                <span className="gradient-text block">guides you on the journey to change</span>
+                <span className="gradient-text">We are Procyon — the guiding star for digital transformation</span>
               </h2>
               <p className="text-xl text-gray-300">
-                Procyon empowers customers to re-imagine the way they do business to maximize ROI and drive growth through innovative technology solutions, ServiceNow expertise, and strategic partnerships.
+                For over 20 years, we've empowered businesses to re-imagine the way they work, innovate, and grow. With deep expertise in enterprise solutions, Salesforce consulting, AI innovation, and strategic partnerships, we deliver technology that maximizes ROI and fuels long-term growth.
               </p>
               <div className="grid grid-cols-2 gap-6 text-sm">
                 <div className="space-y-2">
@@ -80,15 +79,23 @@ export default function Home() {
                     <div className="w-2 h-2 bg-emerald-400 rounded-full"></div>
                     <span>Enterprise Architecture</span>
                   </div>
-                </div>
-                <div className="space-y-2">
                   <div className="flex items-center space-x-2">
                     <div className="w-2 h-2 bg-purple-400 rounded-full"></div>
                     <span>Digital Strategy</span>
                   </div>
+                </div>
+                <div className="space-y-2">
                   <div className="flex items-center space-x-2">
                     <div className="w-2 h-2 bg-amber-400 rounded-full"></div>
                     <span>IT Professional Staffing</span>
+                  </div>
+                  <div className="flex items-center space-x-2">
+                    <div className="w-2 h-2 bg-rose-400 rounded-full"></div>
+                    <span>AI Innovation</span>
+                  </div>
+                  <div className="flex items-center space-x-2">
+                    <div className="w-2 h-2 bg-cyan-400 rounded-full"></div>
+                    <span>Product Development</span>
                   </div>
                 </div>
               </div>
