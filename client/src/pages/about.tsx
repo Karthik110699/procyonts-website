@@ -473,7 +473,7 @@ export default function AboutPage() {
           <div className="grid md:grid-cols-4 gap-8">
             <div className="text-center">
               <div className="text-5xl font-bold text-blue-400 mb-2">20+</div>
-              <div className="text-gray-300">Year Experience</div>
+              <div className="text-gray-300">Successful Years</div>
             </div>
             
             <div className="text-center">
