@@ -1,11 +1,88 @@
 import { Users, Target, Award, Globe } from "lucide-react";
 import { Link } from "wouter";
+import { useEffect, useRef } from "react";
 import Navbar from "@/components/navbar";
 import { useScrollReveal } from "@/hooks/use-scroll-reveal";
 import SEOHead, { organizationSchema } from "@/components/seo-head";
 
 export default function AboutPage() {
   useScrollReveal();
+  const timelineRef = useRef<HTMLDivElement>(null);
+  const timelineLineRef = useRef<HTMLDivElement>(null);
+
+  useEffect(() => {
+    const timelineItems = document.querySelectorAll('.timeline-item');
+    const timelineLine = timelineLineRef.current;
+    const navDots = document.querySelectorAll('.timeline-nav-dot');
+
+    const observerOptions = {
+      root: null,
+      rootMargin: '-30% 0px -30% 0px',
+      threshold: 0.4
+    };
+
+    const observer = new IntersectionObserver((entries) => {
+      entries.forEach((entry) => {
+        if (entry.isIntersecting) {
+          const element = entry.target as HTMLElement;
+          const isLeft = element.classList.contains('timeline-item-left');
+          
+          // Animate the timeline item
+          element.classList.add(isLeft ? 'animate-in-left' : 'animate-in-right');
+          element.style.opacity = '1';
+          
+          // Update navigation indicator
+          const year = element.getAttribute('data-year');
+          const yearIndex = ['2004', '2008', '2015', '2018', '2020', '2022', '2023', '2025'].indexOf(year || '');
+          if (yearIndex !== -1 && navDots[yearIndex]) {
+            navDots[yearIndex].classList.remove('opacity-30', 'bg-gray-600');
+            navDots[yearIndex].classList.add('opacity-100', 'bg-blue-500', 'shadow-lg', 'shadow-blue-500/50', 'scale-125');
+          }
+        } else {
+          // Reset when out of view
+          const element = entry.target as HTMLElement;
+          const year = element.getAttribute('data-year');
+          const yearIndex = ['2004', '2008', '2015', '2018', '2020', '2022', '2023', '2025'].indexOf(year || '');
+          if (yearIndex !== -1 && navDots[yearIndex]) {
+            navDots[yearIndex].classList.add('opacity-30', 'bg-gray-600');
+            navDots[yearIndex].classList.remove('opacity-100', 'bg-blue-500', 'shadow-lg', 'shadow-blue-500/50', 'scale-125');
+          }
+        }
+      });
+    }, observerOptions);
+
+    timelineItems.forEach((item) => {
+      observer.observe(item);
+    });
+
+    // Progressive timeline line fill with smooth animation
+    const handleScroll = () => {
+      if (!timelineRef.current || !timelineLine) return;
+      
+      const timelineRect = timelineRef.current.getBoundingClientRect();
+      const viewportHeight = window.innerHeight;
+      const scrollProgress = Math.max(0, Math.min(1, 
+        (viewportHeight - timelineRect.top) / (timelineRect.height + viewportHeight * 0.5)
+      ));
+      
+      timelineLine.style.height = `${scrollProgress * 100}%`;
+      
+      // Add glowing effect when actively scrolling
+      if (scrollProgress > 0 && scrollProgress < 1) {
+        timelineLine.style.boxShadow = '0 0 20px rgba(59, 130, 246, 0.8), 0 0 40px rgba(16, 185, 129, 0.4)';
+      } else {
+        timelineLine.style.boxShadow = '0 0 8px rgba(59, 130, 246, 0.3)';
+      }
+    };
+
+    window.addEventListener('scroll', handleScroll, { passive: true });
+    handleScroll(); // Initial call
+
+    return () => {
+      timelineItems.forEach((item) => observer.unobserve(item));
+      window.removeEventListener('scroll', handleScroll);
+    };
+  }, []);
 
   const aboutStructuredData = {
     "@context": "https://schema.org",
@@ -143,7 +220,7 @@ export default function AboutPage() {
           </div>
 
           {/* Timeline */}
-          <div className="relative overflow-hidden">
+          <div ref={timelineRef} className="relative overflow-hidden">
             {/* Floating Timeline Particles */}
             <div className="absolute inset-0 pointer-events-none">
               <div className="absolute top-10 left-1/4 w-2 h-2 bg-blue-400/30 rounded-full floating-timeline-particle"></div>
@@ -152,15 +229,32 @@ export default function AboutPage() {
               <div className="absolute bottom-20 right-1/6 w-2 h-2 bg-amber-400/30 rounded-full floating-timeline-particle" style={{animationDelay: '1s'}}></div>
             </div>
             
-            {/* Central Animated Line */}
+            {/* Central Progress Line */}
             <div className="absolute left-1/2 transform -translate-x-1/2 w-1 bg-gray-800 rounded-full h-full"></div>
-            <div className="absolute left-1/2 transform -translate-x-1/2 w-1 bg-gradient-to-b from-blue-500 via-emerald-500 to-violet-500 rounded-full timeline-line-animated shadow-lg shadow-blue-500/30"></div>
+            <div 
+              ref={timelineLineRef}
+              className="absolute left-1/2 transform -translate-x-1/2 w-1 bg-gradient-to-b from-blue-500 via-emerald-500 to-violet-500 rounded-full shadow-lg shadow-blue-500/30 transition-all duration-300 ease-out"
+              style={{ height: '0%', transformOrigin: 'top' }}
+            ></div>
+            
+            {/* Timeline Navigation Progress */}
+            <div className="hidden lg:block fixed right-8 top-1/2 transform -translate-y-1/2 z-20">
+              <div className="flex flex-col space-y-4">
+                <div className="text-xs text-gray-400 font-medium mb-2">Our Journey</div>
+                {['2004', '2008', '2015', '2018', '2020', '2022', '2023', '2025'].map((year, index) => (
+                  <div key={year} className="flex items-center space-x-3">
+                    <div className="w-2 h-2 bg-gray-600 rounded-full timeline-nav-dot opacity-30 transition-all duration-300"></div>
+                    <span className="text-xs text-gray-500 font-medium">{year}</span>
+                  </div>
+                ))}
+              </div>
+            </div>
             
             {/* Timeline Items */}
-            <div className="space-y-12 md:space-y-16 lg:space-y-20">
+            <div className="space-y-12 md:space-y-16 lg:space-y-24">
               
               {/* 2004 */}
-              <div className="timeline-item animate-in-left relative flex flex-col md:flex-row items-center">
+              <div className="timeline-item timeline-item-left relative flex flex-col md:flex-row items-center" data-year="2004">
                 <div className="w-full md:flex-1 text-center md:text-right md:pr-8 mb-4 md:mb-0">
                   <div className="bg-gradient-to-r from-blue-900/40 to-blue-800/40 p-4 md:p-6 rounded-xl border border-blue-500/30 backdrop-blur-sm hover:scale-105 hover:bg-blue-900/60 transition-all duration-500 hover:shadow-2xl hover:shadow-blue-500/20 conic-border">
                     <div className="text-2xl md:text-3xl lg:text-4xl font-bold text-blue-400 mb-2">2004</div>
@@ -173,7 +267,7 @@ export default function AboutPage() {
               </div>
 
               {/* 2008 */}
-              <div className="timeline-item animate-in-right relative flex flex-col md:flex-row items-center">
+              <div className="timeline-item timeline-item-right relative flex flex-col md:flex-row items-center" data-year="2008">
                 <div className="w-full md:flex-1 md:pr-8"></div>
                 <div className="absolute left-1/2 md:left-1/2 top-6 md:top-auto transform -translate-x-1/2 w-4 h-4 md:w-6 md:h-6 bg-emerald-500 rounded-full timeline-dot-animated z-10 border-2 md:border-4 border-procyon-dark" style={{animationDelay: '0.5s'}}></div>
                 <div className="w-full md:flex-1 text-center md:text-left md:pl-8 mb-4 md:mb-0">
@@ -186,7 +280,7 @@ export default function AboutPage() {
               </div>
 
               {/* 2015 */}
-              <div className="timeline-item animate-in-left relative flex flex-col md:flex-row items-center">
+              <div className="timeline-item timeline-item-left relative flex flex-col md:flex-row items-center" data-year="2015">
                 <div className="w-full md:flex-1 text-center md:text-right md:pr-8 mb-4 md:mb-0">
                   <div className="bg-gradient-to-r from-purple-900/40 to-purple-800/40 p-4 md:p-6 rounded-xl border border-purple-500/30 backdrop-blur-sm hover:scale-105 hover:bg-purple-900/60 transition-all duration-500 hover:shadow-2xl hover:shadow-purple-500/20 conic-border">
                     <div className="text-2xl md:text-3xl lg:text-4xl font-bold text-purple-400 mb-2">2015</div>
@@ -199,7 +293,7 @@ export default function AboutPage() {
               </div>
 
               {/* 2018 */}
-              <div className="timeline-item animate-in-right relative flex flex-col md:flex-row items-center">
+              <div className="timeline-item timeline-item-right relative flex flex-col md:flex-row items-center" data-year="2018">
                 <div className="w-full md:flex-1 md:pr-8"></div>
                 <div className="absolute left-1/2 md:left-1/2 top-6 md:top-auto transform -translate-x-1/2 w-4 h-4 md:w-6 md:h-6 bg-amber-500 rounded-full timeline-dot-animated z-10 border-2 md:border-4 border-procyon-dark" style={{animationDelay: '1.5s'}}></div>
                 <div className="w-full md:flex-1 text-center md:text-left md:pl-8 mb-4 md:mb-0">
@@ -212,7 +306,7 @@ export default function AboutPage() {
               </div>
 
               {/* 2020 */}
-              <div className="timeline-item animate-in-left relative flex flex-col md:flex-row items-center">
+              <div className="timeline-item timeline-item-left relative flex flex-col md:flex-row items-center" data-year="2020">
                 <div className="w-full md:flex-1 text-center md:text-right md:pr-8 mb-4 md:mb-0">
                   <div className="bg-gradient-to-r from-cyan-900/40 to-cyan-800/40 p-4 md:p-6 rounded-xl border border-cyan-500/30 backdrop-blur-sm hover:scale-105 hover:bg-cyan-900/60 transition-all duration-500 hover:shadow-2xl hover:shadow-cyan-500/20 conic-border">
                     <div className="text-2xl md:text-3xl lg:text-4xl font-bold text-cyan-400 mb-2">2020</div>
@@ -225,7 +319,7 @@ export default function AboutPage() {
               </div>
 
               {/* 2022 */}
-              <div className="timeline-item animate-in-right relative flex flex-col md:flex-row items-center">
+              <div className="timeline-item timeline-item-right relative flex flex-col md:flex-row items-center" data-year="2022">
                 <div className="w-full md:flex-1 md:pr-8"></div>
                 <div className="absolute left-1/2 md:left-1/2 top-6 md:top-auto transform -translate-x-1/2 w-4 h-4 md:w-6 md:h-6 bg-rose-500 rounded-full timeline-dot-animated z-10 border-2 md:border-4 border-procyon-dark" style={{animationDelay: '2.5s'}}></div>
                 <div className="w-full md:flex-1 text-center md:text-left md:pl-8 mb-4 md:mb-0">
@@ -238,7 +332,7 @@ export default function AboutPage() {
               </div>
 
               {/* 2023 */}
-              <div className="timeline-item animate-in-left relative flex flex-col md:flex-row items-center">
+              <div className="timeline-item timeline-item-left relative flex flex-col md:flex-row items-center" data-year="2023">
                 <div className="w-full md:flex-1 text-center md:text-right md:pr-8 mb-4 md:mb-0">
                   <div className="bg-gradient-to-r from-green-900/40 to-green-800/40 p-4 md:p-6 rounded-xl border border-green-500/30 backdrop-blur-sm hover:scale-105 hover:bg-green-900/60 transition-all duration-500 hover:shadow-2xl hover:shadow-green-500/20 conic-border">
                     <div className="text-2xl md:text-3xl lg:text-4xl font-bold text-green-400 mb-2">2023</div>
@@ -251,7 +345,7 @@ export default function AboutPage() {
               </div>
 
               {/* 2025 */}
-              <div className="timeline-item animate-in-right relative flex flex-col md:flex-row items-center">
+              <div className="timeline-item timeline-item-right relative flex flex-col md:flex-row items-center" data-year="2025">
                 <div className="w-full md:flex-1 md:pr-8"></div>
                 <div className="absolute left-1/2 md:left-1/2 top-6 md:top-auto transform -translate-x-1/2 w-4 h-4 md:w-6 md:h-6 bg-violet-500 rounded-full timeline-dot-animated z-10 border-2 md:border-4 border-procyon-dark" style={{animationDelay: '3.5s'}}></div>
                 <div className="w-full md:flex-1 text-center md:text-left md:pl-8 mb-4 md:mb-0">
