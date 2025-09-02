@@ -143,105 +143,122 @@ export default function AboutPage() {
           </div>
 
           {/* Timeline */}
-          <div className="relative">
-            {/* Central Line */}
-            <div className="absolute left-1/2 transform -translate-x-1/2 w-1 h-full bg-gradient-to-b from-blue-500 via-emerald-500 to-yellow-500 rounded-full shadow-lg shadow-blue-500/30"></div>
+          <div className="relative overflow-hidden">
+            {/* Floating Timeline Particles */}
+            <div className="absolute inset-0 pointer-events-none">
+              <div className="absolute top-10 left-1/4 w-2 h-2 bg-blue-400/30 rounded-full floating-timeline-particle"></div>
+              <div className="absolute top-1/3 right-1/4 w-1 h-1 bg-emerald-400/40 rounded-full floating-timeline-particle" style={{animationDelay: '2s'}}></div>
+              <div className="absolute bottom-1/3 left-1/6 w-3 h-3 bg-purple-400/20 rounded-full floating-timeline-particle" style={{animationDelay: '4s'}}></div>
+              <div className="absolute bottom-20 right-1/6 w-2 h-2 bg-amber-400/30 rounded-full floating-timeline-particle" style={{animationDelay: '1s'}}></div>
+            </div>
+            
+            {/* Central Animated Line */}
+            <div className="absolute left-1/2 transform -translate-x-1/2 w-1 bg-gray-800 rounded-full h-full"></div>
+            <div className="absolute left-1/2 transform -translate-x-1/2 w-1 bg-gradient-to-b from-blue-500 via-emerald-500 to-violet-500 rounded-full timeline-line-animated shadow-lg shadow-blue-500/30"></div>
             
             {/* Timeline Items */}
-            <div className="space-y-16">
+            <div className="space-y-12 md:space-y-16 lg:space-y-20">
               
               {/* 2004 */}
-              <div className="relative flex items-center">
-                <div className="flex-1 text-right pr-8">
-                  <div className="bg-gradient-to-r from-blue-900/40 to-blue-800/40 p-6 rounded-xl border border-blue-500/30 backdrop-blur-sm">
-                    <div className="text-3xl font-bold text-blue-400 mb-2">2004</div>
-                    <div className="text-lg text-gray-300">Founded in San Rafael, CA</div>
+              <div className="timeline-item animate-in-left relative flex flex-col md:flex-row items-center">
+                <div className="w-full md:flex-1 text-center md:text-right md:pr-8 mb-4 md:mb-0">
+                  <div className="bg-gradient-to-r from-blue-900/40 to-blue-800/40 p-4 md:p-6 rounded-xl border border-blue-500/30 backdrop-blur-sm hover:scale-105 hover:bg-blue-900/60 transition-all duration-500 hover:shadow-2xl hover:shadow-blue-500/20 conic-border">
+                    <div className="text-2xl md:text-3xl lg:text-4xl font-bold text-blue-400 mb-2">2004</div>
+                    <div className="text-base md:text-lg lg:text-xl text-gray-300">Founded in San Rafael, CA</div>
+                    <div className="hidden md:block text-sm text-blue-300/70 mt-2">The beginning of innovation</div>
                   </div>
                 </div>
-                <div className="absolute left-1/2 transform -translate-x-1/2 w-6 h-6 bg-blue-500 rounded-full shadow-lg shadow-blue-500/50 z-10 border-4 border-procyon-dark"></div>
-                <div className="flex-1 pl-8"></div>
+                <div className="absolute left-1/2 md:left-1/2 top-6 md:top-auto transform -translate-x-1/2 w-4 h-4 md:w-6 md:h-6 bg-blue-500 rounded-full timeline-dot-animated z-10 border-2 md:border-4 border-procyon-dark"></div>
+                <div className="w-full md:flex-1 md:pl-8"></div>
               </div>
 
               {/* 2008 */}
-              <div className="relative flex items-center">
-                <div className="flex-1 pr-8"></div>
-                <div className="absolute left-1/2 transform -translate-x-1/2 w-6 h-6 bg-emerald-500 rounded-full shadow-lg shadow-emerald-500/50 z-10 border-4 border-procyon-dark"></div>
-                <div className="flex-1 text-left pl-8">
-                  <div className="bg-gradient-to-r from-emerald-900/40 to-emerald-800/40 p-6 rounded-xl border border-emerald-500/30 backdrop-blur-sm">
-                    <div className="text-3xl font-bold text-emerald-400 mb-2">2008</div>
-                    <div className="text-lg text-gray-300">Expanded operations to Toronto, Canada</div>
+              <div className="timeline-item animate-in-right relative flex flex-col md:flex-row items-center">
+                <div className="w-full md:flex-1 md:pr-8"></div>
+                <div className="absolute left-1/2 md:left-1/2 top-6 md:top-auto transform -translate-x-1/2 w-4 h-4 md:w-6 md:h-6 bg-emerald-500 rounded-full timeline-dot-animated z-10 border-2 md:border-4 border-procyon-dark" style={{animationDelay: '0.5s'}}></div>
+                <div className="w-full md:flex-1 text-center md:text-left md:pl-8 mb-4 md:mb-0">
+                  <div className="bg-gradient-to-r from-emerald-900/40 to-emerald-800/40 p-4 md:p-6 rounded-xl border border-emerald-500/30 backdrop-blur-sm hover:scale-105 hover:bg-emerald-900/60 transition-all duration-500 hover:shadow-2xl hover:shadow-emerald-500/20 conic-border">
+                    <div className="text-2xl md:text-3xl lg:text-4xl font-bold text-emerald-400 mb-2">2008</div>
+                    <div className="text-base md:text-lg lg:text-xl text-gray-300">Expanded operations to Toronto, Canada</div>
+                    <div className="hidden md:block text-sm text-emerald-300/70 mt-2">Global expansion begins</div>
                   </div>
                 </div>
               </div>
 
               {/* 2015 */}
-              <div className="relative flex items-center">
-                <div className="flex-1 text-right pr-8">
-                  <div className="bg-gradient-to-r from-purple-900/40 to-purple-800/40 p-6 rounded-xl border border-purple-500/30 backdrop-blur-sm">
-                    <div className="text-3xl font-bold text-purple-400 mb-2">2015</div>
-                    <div className="text-lg text-gray-300">Opened our delivery center in Chennai, India</div>
+              <div className="timeline-item animate-in-left relative flex flex-col md:flex-row items-center">
+                <div className="w-full md:flex-1 text-center md:text-right md:pr-8 mb-4 md:mb-0">
+                  <div className="bg-gradient-to-r from-purple-900/40 to-purple-800/40 p-4 md:p-6 rounded-xl border border-purple-500/30 backdrop-blur-sm hover:scale-105 hover:bg-purple-900/60 transition-all duration-500 hover:shadow-2xl hover:shadow-purple-500/20 conic-border">
+                    <div className="text-2xl md:text-3xl lg:text-4xl font-bold text-purple-400 mb-2">2015</div>
+                    <div className="text-base md:text-lg lg:text-xl text-gray-300">Opened our delivery center in Chennai, India</div>
+                    <div className="hidden md:block text-sm text-purple-300/70 mt-2">Strengthening global presence</div>
                   </div>
                 </div>
-                <div className="absolute left-1/2 transform -translate-x-1/2 w-6 h-6 bg-purple-500 rounded-full shadow-lg shadow-purple-500/50 z-10 border-4 border-procyon-dark"></div>
-                <div className="flex-1 pl-8"></div>
+                <div className="absolute left-1/2 md:left-1/2 top-6 md:top-auto transform -translate-x-1/2 w-4 h-4 md:w-6 md:h-6 bg-purple-500 rounded-full timeline-dot-animated z-10 border-2 md:border-4 border-procyon-dark" style={{animationDelay: '1s'}}></div>
+                <div className="w-full md:flex-1 md:pl-8"></div>
               </div>
 
               {/* 2018 */}
-              <div className="relative flex items-center">
-                <div className="flex-1 pr-8"></div>
-                <div className="absolute left-1/2 transform -translate-x-1/2 w-6 h-6 bg-amber-500 rounded-full shadow-lg shadow-amber-500/50 z-10 border-4 border-procyon-dark"></div>
-                <div className="flex-1 text-left pl-8">
-                  <div className="bg-gradient-to-r from-amber-900/40 to-amber-800/40 p-6 rounded-xl border border-amber-500/30 backdrop-blur-sm">
-                    <div className="text-3xl font-bold text-amber-400 mb-2">2018</div>
-                    <div className="text-lg text-gray-300">Hekma: AI drug development accelerator</div>
+              <div className="timeline-item animate-in-right relative flex flex-col md:flex-row items-center">
+                <div className="w-full md:flex-1 md:pr-8"></div>
+                <div className="absolute left-1/2 md:left-1/2 top-6 md:top-auto transform -translate-x-1/2 w-4 h-4 md:w-6 md:h-6 bg-amber-500 rounded-full timeline-dot-animated z-10 border-2 md:border-4 border-procyon-dark" style={{animationDelay: '1.5s'}}></div>
+                <div className="w-full md:flex-1 text-center md:text-left md:pl-8 mb-4 md:mb-0">
+                  <div className="bg-gradient-to-r from-amber-900/40 to-amber-800/40 p-4 md:p-6 rounded-xl border border-amber-500/30 backdrop-blur-sm hover:scale-105 hover:bg-amber-900/60 transition-all duration-500 hover:shadow-2xl hover:shadow-amber-500/20 conic-border">
+                    <div className="text-2xl md:text-3xl lg:text-4xl font-bold text-amber-400 mb-2">2018</div>
+                    <div className="text-base md:text-lg lg:text-xl text-gray-300">Hekma: AI drug development accelerator</div>
+                    <div className="hidden md:block text-sm text-amber-300/70 mt-2">AI innovation breakthrough</div>
                   </div>
                 </div>
               </div>
 
               {/* 2020 */}
-              <div className="relative flex items-center">
-                <div className="flex-1 text-right pr-8">
-                  <div className="bg-gradient-to-r from-cyan-900/40 to-cyan-800/40 p-6 rounded-xl border border-cyan-500/30 backdrop-blur-sm">
-                    <div className="text-3xl font-bold text-cyan-400 mb-2">2020</div>
-                    <div className="text-lg text-gray-300">AI & Cloud practice launched</div>
+              <div className="timeline-item animate-in-left relative flex flex-col md:flex-row items-center">
+                <div className="w-full md:flex-1 text-center md:text-right md:pr-8 mb-4 md:mb-0">
+                  <div className="bg-gradient-to-r from-cyan-900/40 to-cyan-800/40 p-4 md:p-6 rounded-xl border border-cyan-500/30 backdrop-blur-sm hover:scale-105 hover:bg-cyan-900/60 transition-all duration-500 hover:shadow-2xl hover:shadow-cyan-500/20 conic-border">
+                    <div className="text-2xl md:text-3xl lg:text-4xl font-bold text-cyan-400 mb-2">2020</div>
+                    <div className="text-base md:text-lg lg:text-xl text-gray-300">AI & Cloud practice launched</div>
+                    <div className="hidden md:block text-sm text-cyan-300/70 mt-2">Next-gen solutions era</div>
                   </div>
                 </div>
-                <div className="absolute left-1/2 transform -translate-x-1/2 w-6 h-6 bg-cyan-500 rounded-full shadow-lg shadow-cyan-500/50 z-10 border-4 border-procyon-dark"></div>
-                <div className="flex-1 pl-8"></div>
+                <div className="absolute left-1/2 md:left-1/2 top-6 md:top-auto transform -translate-x-1/2 w-4 h-4 md:w-6 md:h-6 bg-cyan-500 rounded-full timeline-dot-animated z-10 border-2 md:border-4 border-procyon-dark" style={{animationDelay: '2s'}}></div>
+                <div className="w-full md:flex-1 md:pl-8"></div>
               </div>
 
               {/* 2022 */}
-              <div className="relative flex items-center">
-                <div className="flex-1 pr-8"></div>
-                <div className="absolute left-1/2 transform -translate-x-1/2 w-6 h-6 bg-rose-500 rounded-full shadow-lg shadow-rose-500/50 z-10 border-4 border-procyon-dark"></div>
-                <div className="flex-1 text-left pl-8">
-                  <div className="bg-gradient-to-r from-rose-900/40 to-rose-800/40 p-6 rounded-xl border border-rose-500/30 backdrop-blur-sm">
-                    <div className="text-3xl font-bold text-rose-400 mb-2">2022</div>
-                    <div className="text-lg text-gray-300">Akra: Digital Health SaaS (SiMD, SaMD)</div>
+              <div className="timeline-item animate-in-right relative flex flex-col md:flex-row items-center">
+                <div className="w-full md:flex-1 md:pr-8"></div>
+                <div className="absolute left-1/2 md:left-1/2 top-6 md:top-auto transform -translate-x-1/2 w-4 h-4 md:w-6 md:h-6 bg-rose-500 rounded-full timeline-dot-animated z-10 border-2 md:border-4 border-procyon-dark" style={{animationDelay: '2.5s'}}></div>
+                <div className="w-full md:flex-1 text-center md:text-left md:pl-8 mb-4 md:mb-0">
+                  <div className="bg-gradient-to-r from-rose-900/40 to-rose-800/40 p-4 md:p-6 rounded-xl border border-rose-500/30 backdrop-blur-sm hover:scale-105 hover:bg-rose-900/60 transition-all duration-500 hover:shadow-2xl hover:shadow-rose-500/20 conic-border">
+                    <div className="text-2xl md:text-3xl lg:text-4xl font-bold text-rose-400 mb-2">2022</div>
+                    <div className="text-base md:text-lg lg:text-xl text-gray-300">Akra: Digital Health SaaS (SiMD, SaMD)</div>
+                    <div className="hidden md:block text-sm text-rose-300/70 mt-2">Healthcare transformation</div>
                   </div>
                 </div>
               </div>
 
               {/* 2023 */}
-              <div className="relative flex items-center">
-                <div className="flex-1 text-right pr-8">
-                  <div className="bg-gradient-to-r from-green-900/40 to-green-800/40 p-6 rounded-xl border border-green-500/30 backdrop-blur-sm">
-                    <div className="text-3xl font-bold text-green-400 mb-2">2023</div>
-                    <div className="text-lg text-gray-300">150+ projects delivered</div>
+              <div className="timeline-item animate-in-left relative flex flex-col md:flex-row items-center">
+                <div className="w-full md:flex-1 text-center md:text-right md:pr-8 mb-4 md:mb-0">
+                  <div className="bg-gradient-to-r from-green-900/40 to-green-800/40 p-4 md:p-6 rounded-xl border border-green-500/30 backdrop-blur-sm hover:scale-105 hover:bg-green-900/60 transition-all duration-500 hover:shadow-2xl hover:shadow-green-500/20 conic-border">
+                    <div className="text-2xl md:text-3xl lg:text-4xl font-bold text-green-400 mb-2">2023</div>
+                    <div className="text-base md:text-lg lg:text-xl text-gray-300">200+ projects delivered</div>
+                    <div className="hidden md:block text-sm text-green-300/70 mt-2">Milestone achievement</div>
                   </div>
                 </div>
-                <div className="absolute left-1/2 transform -translate-x-1/2 w-6 h-6 bg-green-500 rounded-full shadow-lg shadow-green-500/50 z-10 border-4 border-procyon-dark"></div>
-                <div className="flex-1 pl-8"></div>
+                <div className="absolute left-1/2 md:left-1/2 top-6 md:top-auto transform -translate-x-1/2 w-4 h-4 md:w-6 md:h-6 bg-green-500 rounded-full timeline-dot-animated z-10 border-2 md:border-4 border-procyon-dark" style={{animationDelay: '3s'}}></div>
+                <div className="w-full md:flex-1 md:pl-8"></div>
               </div>
 
               {/* 2025 */}
-              <div className="relative flex items-center">
-                <div className="flex-1 pr-8"></div>
-                <div className="absolute left-1/2 transform -translate-x-1/2 w-6 h-6 bg-violet-500 rounded-full shadow-lg shadow-violet-500/50 z-10 border-4 border-procyon-dark"></div>
-                <div className="flex-1 text-left pl-8">
-                  <div className="bg-gradient-to-r from-violet-900/40 to-violet-800/40 p-6 rounded-xl border border-violet-500/30 backdrop-blur-sm">
-                    <div className="text-3xl font-bold text-violet-400 mb-2">2025</div>
-                    <div className="text-lg text-gray-300">Implemented AI Accelerators to enhance operations and speed delivery</div>
+              <div className="timeline-item animate-in-right relative flex flex-col md:flex-row items-center">
+                <div className="w-full md:flex-1 md:pr-8"></div>
+                <div className="absolute left-1/2 md:left-1/2 top-6 md:top-auto transform -translate-x-1/2 w-4 h-4 md:w-6 md:h-6 bg-violet-500 rounded-full timeline-dot-animated z-10 border-2 md:border-4 border-procyon-dark" style={{animationDelay: '3.5s'}}></div>
+                <div className="w-full md:flex-1 text-center md:text-left md:pl-8 mb-4 md:mb-0">
+                  <div className="bg-gradient-to-r from-violet-900/40 to-violet-800/40 p-4 md:p-6 rounded-xl border border-violet-500/30 backdrop-blur-sm hover:scale-105 hover:bg-violet-900/60 transition-all duration-500 hover:shadow-2xl hover:shadow-violet-500/20 conic-border">
+                    <div className="text-2xl md:text-3xl lg:text-4xl font-bold text-violet-400 mb-2">2025</div>
+                    <div className="text-base md:text-lg lg:text-xl text-gray-300">Implemented AI Accelerators to enhance operations and speed delivery</div>
+                    <div className="hidden md:block text-sm text-violet-300/70 mt-2">Future-ready operations</div>
                   </div>
                 </div>
               </div>
