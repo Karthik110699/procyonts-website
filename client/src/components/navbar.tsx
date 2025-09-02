@@ -29,7 +29,7 @@ export default function Navbar() {
               <img 
                 src={logoUrl} 
                 alt="Procyon Technostructure" 
-                className="h-10 sm:h-12 lg:h-16 w-auto"
+                className="h-9 sm:h-11 lg:h-14 w-auto"
               />
             </div>
           </Link>
