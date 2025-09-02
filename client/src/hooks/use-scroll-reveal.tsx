@@ -12,13 +12,13 @@ export function useScrollReveal() {
     const isEnterpriseOrServicesPage = currentPath.startsWith('/enterprise') || currentPath.startsWith('/services');
     
     const observerOptions = {
-      threshold: isEnterpriseOrServicesPage ? 0.1 : 0.15,
-      rootMargin: isEnterpriseOrServicesPage ? '150px 0px 150px 0px' : '0px 0px -80px 0px'
+      threshold: isEnterpriseOrServicesPage ? 0.05 : 0.1,
+      rootMargin: isEnterpriseOrServicesPage ? '300px 0px 300px 0px' : '100px 0px -50px 0px'
     };
 
     const zoomObserverOptions = {
-      threshold: isEnterpriseOrServicesPage ? [0.1, 0.3, 0.6] : [0.15, 0.5, 0.8],
-      rootMargin: isEnterpriseOrServicesPage ? '200px 0px 200px 0px' : '0px 0px -50px 0px'
+      threshold: isEnterpriseOrServicesPage ? [0.01, 0.2] : [0.1, 0.4],
+      rootMargin: isEnterpriseOrServicesPage ? '400px 0px 400px 0px' : '200px 0px -30px 0px'
     };
 
     // Track scroll direction and velocity for smoother transitions
@@ -40,50 +40,39 @@ export function useScrollReveal() {
     const observer = new IntersectionObserver((entries) => {
       entries.forEach(entry => {
         if (entry.isIntersecting) {
-          // Add a small delay for natural feel
-          const delay = parseInt(entry.target.getAttribute('data-delay') || '0');
-          setTimeout(() => {
+          // Immediate activation for faster loading
+          const delay = isEnterpriseOrServicesPage ? 0 : parseInt(entry.target.getAttribute('data-delay') || '0') * 0.3;
+          if (delay > 0) {
+            setTimeout(() => {
+              entry.target.classList.add('active');
+              entry.target.classList.remove('reverse');
+            }, delay);
+          } else {
             entry.target.classList.add('active');
             entry.target.classList.remove('reverse');
-          }, delay);
+          }
         } else if (entry.target.classList.contains('active')) {
-          // Element is leaving viewport - add reverse animation
+          // Faster reverse animations
           entry.target.classList.add('reverse');
           entry.target.classList.remove('active');
         }
       });
     }, observerOptions);
 
-    // Enhanced zoom effect observer with smoother bidirectional support
+    // Simplified zoom observer for faster performance
     const zoomObserver = new IntersectionObserver((entries) => {
       entries.forEach(entry => {
         const ratio = entry.intersectionRatio;
         const element = entry.target as HTMLElement;
         
-        if (ratio > 0.25) {
-          // Element entering viewport - smooth activation with velocity consideration
-          requestAnimationFrame(() => {
-            element.classList.add('active');
-            element.classList.remove('zoom-out', 'reverse');
-            element.style.setProperty('--scroll-direction', scrollDirection);
-            element.style.setProperty('--scroll-velocity', `${Math.min(scrollVelocity / 10, 1)}`);
-          });
-        } else if (ratio < 0.15) {
-          // Element leaving viewport - smooth deactivation with momentum
-          const delay = Math.max(0, 100 - scrollVelocity);
-          setTimeout(() => {
-            requestAnimationFrame(() => {
-              if (scrollDirection === 'up' && element.classList.contains('active')) {
-                // Scrolling up - reverse the zoom effect
-                element.classList.add('reverse');
-                element.classList.remove('active', 'zoom-out');
-              } else if (scrollDirection === 'down' && element.classList.contains('active')) {
-                // Scrolling down - zoom out effect
-                element.classList.add('zoom-out');
-                element.classList.remove('active', 'reverse');
-              }
-            });
-          }, delay);
+        if (ratio > 0.01) {
+          // Immediate activation for faster loading
+          element.classList.add('active');
+          element.classList.remove('zoom-out', 'reverse');
+        } else if (ratio === 0 && element.classList.contains('active')) {
+          // Fast deactivation when completely out of view
+          element.classList.add('reverse');
+          element.classList.remove('active', 'zoom-out');
         }
       });
     }, zoomObserverOptions);

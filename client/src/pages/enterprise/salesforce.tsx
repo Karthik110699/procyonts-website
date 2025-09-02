@@ -76,18 +76,18 @@ export default function SalesforcePage() {
               <h1 className="text-5xl md:text-6xl font-bold mb-6 reveal-scale">
                 <span className="gradient-text">Salesforce Excellence, Delivered</span>
               </h1>
-              <h2 className="text-3xl md:text-4xl font-bold mb-8 text-blue-400 reveal-fade" data-delay="200">
+              <h2 className="text-3xl md:text-4xl font-bold mb-8 text-blue-400 reveal-fade" >
                 Across Every Cloud, Every Industry, Every Time
               </h2>
-              <p className="text-xl text-gray-300 max-w-4xl mx-auto mb-8 reveal-fade" data-delay="300">
+              <p className="text-xl text-gray-300 max-w-4xl mx-auto mb-8 reveal-fade" >
                 We don't just implement Salesforce—we tailor it to amplify your results.
               </p>
-              <div className="bg-gradient-to-r from-blue-500/20 to-emerald-500/20 p-6 rounded-xl mb-8 reveal-fade" data-delay="400">
+              <div className="bg-gradient-to-r from-blue-500/20 to-emerald-500/20 p-6 rounded-xl mb-8 reveal-fade" >
                 <p className="text-lg text-gray-300">
                   From Sales to Health, CPQ to Analytics—Procyon brings Salesforce to life. Strategy, delivery, support—we're with you end-to-end.
                 </p>
               </div>
-              <div className="mt-8 reveal-fade" data-delay="500">
+              <div className="mt-8 reveal-fade" >
                 <Link href="/contact" className="bg-gradient-to-r from-blue-600 to-emerald-600 px-8 py-4 rounded-lg font-semibold text-lg hover:scale-105 transition-transform inline-block">
                   Request a Demo
                 </Link>
@@ -107,7 +107,7 @@ export default function SalesforcePage() {
             </div>
             
             <div className="grid md:grid-cols-2 gap-8 mb-16">
-              <div className="floating-card conic-border bg-gradient-to-br from-gray-800 to-gray-900 p-8 rounded-2xl border border-gray-700 hover:border-blue-500 transition-all duration-300 reveal-fade relative z-10" data-delay="100">
+              <div className="floating-card conic-border bg-gradient-to-br from-gray-800 to-gray-900 p-8 rounded-2xl border border-gray-700 hover:border-blue-500 transition-all duration-300 reveal-fade relative z-10" >
                 <div className="w-16 h-16 bg-blue-500/20 rounded-xl flex items-center justify-center mb-6 relative z-10">
                   <Award className="w-8 h-8 text-blue-400" />
                 </div>
@@ -117,7 +117,7 @@ export default function SalesforcePage() {
                 </p>
               </div>
 
-              <div className="floating-card conic-border bg-gradient-to-br from-gray-800 to-gray-900 p-8 rounded-2xl border border-gray-700 hover:border-emerald-500 transition-all duration-300 reveal-fade relative z-10" data-delay="200">
+              <div className="floating-card conic-border bg-gradient-to-br from-gray-800 to-gray-900 p-8 rounded-2xl border border-gray-700 hover:border-emerald-500 transition-all duration-300 reveal-fade relative z-10" >
                 <div className="w-16 h-16 bg-emerald-500/20 rounded-xl flex items-center justify-center mb-6 relative z-10">
                   <Zap className="w-8 h-8 text-emerald-400" />
                 </div>
@@ -127,7 +127,7 @@ export default function SalesforcePage() {
                 </p>
               </div>
 
-              <div className="floating-card conic-border bg-gradient-to-br from-gray-800 to-gray-900 p-8 rounded-2xl border border-gray-700 hover:border-purple-500 transition-all duration-300 reveal-fade relative z-10" data-delay="300">
+              <div className="floating-card conic-border bg-gradient-to-br from-gray-800 to-gray-900 p-8 rounded-2xl border border-gray-700 hover:border-purple-500 transition-all duration-300 reveal-fade relative z-10" >
                 <div className="w-16 h-16 bg-purple-500/20 rounded-xl flex items-center justify-center mb-6 relative z-10">
                   <Users className="w-8 h-8 text-purple-400" />
                 </div>
@@ -137,7 +137,7 @@ export default function SalesforcePage() {
                 </p>
               </div>
 
-              <div className="floating-card conic-border bg-gradient-to-br from-gray-800 to-gray-900 p-8 rounded-2xl border border-gray-700 hover:border-amber-500 transition-all duration-300 reveal-fade relative z-10" data-delay="400">
+              <div className="floating-card conic-border bg-gradient-to-br from-gray-800 to-gray-900 p-8 rounded-2xl border border-gray-700 hover:border-amber-500 transition-all duration-300 reveal-fade relative z-10" >
                 <div className="w-16 h-16 bg-amber-500/20 rounded-xl flex items-center justify-center mb-6 relative z-10">
                   <Target className="w-8 h-8 text-amber-400" />
                 </div>
@@ -148,7 +148,7 @@ export default function SalesforcePage() {
               </div>
             </div>
 
-            <div className="bg-gradient-to-r from-blue-500/20 to-emerald-500/20 p-8 rounded-xl reveal-fade" data-delay="500">
+            <div className="bg-gradient-to-r from-blue-500/20 to-emerald-500/20 p-8 rounded-xl reveal-fade" >
               <p className="text-lg text-gray-300 text-center max-w-4xl mx-auto italic">
                 "Their agile, transparent process eliminated surprises—our Salesforce roll-out was smoother than ever."
                 <br />
@@ -170,7 +170,7 @@ export default function SalesforcePage() {
             
             <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-6">
               
-              <div className="floating-card conic-border bg-gradient-to-br from-gray-800 to-gray-900 p-6 rounded-xl border border-gray-700 hover:border-blue-500 transition-all duration-300 reveal-fade relative z-10" data-delay="100">
+              <div className="floating-card conic-border bg-gradient-to-br from-gray-800 to-gray-900 p-6 rounded-xl border border-gray-700 hover:border-blue-500 transition-all duration-300 reveal-fade relative z-10">
                 <div className="w-12 h-12 bg-blue-500/20 rounded-lg flex items-center justify-center mb-4 relative z-10">
                   <TrendingUp className="w-6 h-6 text-blue-400" />
                 </div>
@@ -178,7 +178,7 @@ export default function SalesforcePage() {
                 <p className="text-gray-300 text-sm relative z-10">Streamline lead management, opportunity tracking, and revenue forecasting.</p>
               </div>
 
-              <div className="floating-card conic-border bg-gradient-to-br from-gray-800 to-gray-900 p-6 rounded-xl border border-gray-700 hover:border-emerald-500 transition-all duration-300 reveal-fade relative z-10" data-delay="200">
+              <div className="floating-card conic-border bg-gradient-to-br from-gray-800 to-gray-900 p-6 rounded-xl border border-gray-700 hover:border-emerald-500 transition-all duration-300 reveal-fade relative z-10">
                 <div className="w-12 h-12 bg-emerald-500/20 rounded-lg flex items-center justify-center mb-4 relative z-10">
                   <Users className="w-6 h-6 text-emerald-400" />
                 </div>
@@ -186,7 +186,7 @@ export default function SalesforcePage() {
                 <p className="text-gray-300 text-sm relative z-10">Deliver seamless, omnichannel customer experiences and smart support.</p>
               </div>
 
-              <div className="floating-card conic-border bg-gradient-to-br from-gray-800 to-gray-900 p-6 rounded-xl border border-gray-700 hover:border-purple-500 transition-all duration-300 reveal-fade relative z-10" data-delay="300">
+              <div className="floating-card conic-border bg-gradient-to-br from-gray-800 to-gray-900 p-6 rounded-xl border border-gray-700 hover:border-purple-500 transition-all duration-300 reveal-fade relative z-10">
                 <div className="w-12 h-12 bg-purple-500/20 rounded-lg flex items-center justify-center mb-4 relative z-10">
                   <Target className="w-6 h-6 text-purple-400" />
                 </div>
@@ -194,7 +194,7 @@ export default function SalesforcePage() {
                 <p className="text-gray-300 text-sm relative z-10">Drive data-driven engagement through email, web, and automation.</p>
               </div>
 
-              <div className="floating-card conic-border bg-gradient-to-br from-gray-800 to-gray-900 p-6 rounded-xl border border-gray-700 hover:border-amber-500 transition-all duration-300 reveal-fade relative z-10" data-delay="400">
+              <div className="floating-card conic-border bg-gradient-to-br from-gray-800 to-gray-900 p-6 rounded-xl border border-gray-700 hover:border-amber-500 transition-all duration-300 reveal-fade relative z-10">
                 <div className="w-12 h-12 bg-amber-500/20 rounded-lg flex items-center justify-center mb-4 relative z-10">
                   <Building2 className="w-6 h-6 text-amber-400" />
                 </div>
@@ -202,7 +202,7 @@ export default function SalesforcePage() {
                 <p className="text-gray-300 text-sm relative z-10">Personalized e-commerce at speed—built for conversion.</p>
               </div>
 
-              <div className="floating-card conic-border bg-gradient-to-br from-gray-800 to-gray-900 p-6 rounded-xl border border-gray-700 hover:border-indigo-500 transition-all duration-300 reveal-fade relative z-10" data-delay="500">
+              <div className="floating-card conic-border bg-gradient-to-br from-gray-800 to-gray-900 p-6 rounded-xl border border-gray-700 hover:border-indigo-500 transition-all duration-300 reveal-fade relative z-10">
                 <div className="w-12 h-12 bg-indigo-500/20 rounded-lg flex items-center justify-center mb-4 relative z-10">
                   <Globe className="w-6 h-6 text-indigo-400" />
                 </div>
@@ -210,7 +210,7 @@ export default function SalesforcePage() {
                 <p className="text-gray-300 text-sm relative z-10">Create dynamic portals for customers, partners, or employees.</p>
               </div>
 
-              <div className="floating-card conic-border bg-gradient-to-br from-gray-800 to-gray-900 p-6 rounded-xl border border-gray-700 hover:border-green-500 transition-all duration-300 reveal-fade relative z-10" data-delay="600">
+              <div className="floating-card conic-border bg-gradient-to-br from-gray-800 to-gray-900 p-6 rounded-xl border border-gray-700 hover:border-green-500 transition-all duration-300 reveal-fade relative z-10">
                 <div className="w-12 h-12 bg-green-500/20 rounded-lg flex items-center justify-center mb-4 relative z-10">
                   <BarChart className="w-6 h-6 text-green-400" />
                 </div>
@@ -218,7 +218,7 @@ export default function SalesforcePage() {
                 <p className="text-gray-300 text-sm relative z-10">Speed up deals with precise quoting, pricing, and approvals.</p>
               </div>
 
-              <div className="floating-card conic-border bg-gradient-to-br from-gray-800 to-gray-900 p-6 rounded-xl border border-gray-700 hover:border-blue-500 transition-all duration-300 reveal-fade relative z-10" data-delay="700">
+              <div className="floating-card conic-border bg-gradient-to-br from-gray-800 to-gray-900 p-6 rounded-xl border border-gray-700 hover:border-blue-500 transition-all duration-300 reveal-fade relative z-10">
                 <div className="w-12 h-12 bg-blue-500/20 rounded-lg flex items-center justify-center mb-4 relative z-10">
                   <Shield className="w-6 h-6 text-blue-400" />
                 </div>
@@ -226,7 +226,7 @@ export default function SalesforcePage() {
                 <p className="text-gray-300 text-sm relative z-10">Tailored solutions for banking, insurance, and wealth management.</p>
               </div>
 
-              <div className="floating-card conic-border bg-gradient-to-br from-gray-800 to-gray-900 p-6 rounded-xl border border-gray-700 hover:border-emerald-500 transition-all duration-300 reveal-fade relative z-10" data-delay="800">
+              <div className="floating-card conic-border bg-gradient-to-br from-gray-800 to-gray-900 p-6 rounded-xl border border-gray-700 hover:border-emerald-500 transition-all duration-300 reveal-fade relative z-10">
                 <div className="w-12 h-12 bg-emerald-500/20 rounded-lg flex items-center justify-center mb-4 relative z-10">
                   <CheckCircle className="w-6 h-6 text-emerald-400" />
                 </div>
@@ -234,7 +234,7 @@ export default function SalesforcePage() {
                 <p className="text-gray-300 text-sm relative z-10">Modern patient engagement solutions built for care and collaboration.</p>
               </div>
 
-              <div className="floating-card conic-border bg-gradient-to-br from-gray-800 to-gray-900 p-6 rounded-xl border border-gray-700 hover:border-purple-500 transition-all duration-300 reveal-fade relative z-10" data-delay="900">
+              <div className="floating-card conic-border bg-gradient-to-br from-gray-800 to-gray-900 p-6 rounded-xl border border-gray-700 hover:border-purple-500 transition-all duration-300 reveal-fade relative z-10">
                 <div className="w-12 h-12 bg-purple-500/20 rounded-lg flex items-center justify-center mb-4 relative z-10">
                   <Building2 className="w-6 h-6 text-purple-400" />
                 </div>
@@ -242,7 +242,7 @@ export default function SalesforcePage() {
                 <p className="text-gray-300 text-sm relative z-10">Align manufacturing, sales, and forecasting with real-time visibility.</p>
               </div>
 
-              <div className="floating-card conic-border bg-gradient-to-br from-gray-800 to-gray-900 p-6 rounded-xl border border-gray-700 hover:border-amber-500 transition-all duration-300 reveal-fade relative z-10" data-delay="1000">
+              <div className="floating-card conic-border bg-gradient-to-br from-gray-800 to-gray-900 p-6 rounded-xl border border-gray-700 hover:border-amber-500 transition-all duration-300 reveal-fade relative z-10">
                 <div className="w-12 h-12 bg-amber-500/20 rounded-lg flex items-center justify-center mb-4 relative z-10">
                   <Award className="w-6 h-6 text-amber-400" />
                 </div>
@@ -250,7 +250,7 @@ export default function SalesforcePage() {
                 <p className="text-gray-300 text-sm relative z-10">Drive mission impact with tools for fundraising, outreach, and programs.</p>
               </div>
 
-              <div className="floating-card conic-border bg-gradient-to-br from-gray-800 to-gray-900 p-6 rounded-xl border border-gray-700 hover:border-indigo-500 transition-all duration-300 reveal-fade relative z-10" data-delay="1100">
+              <div className="floating-card conic-border bg-gradient-to-br from-gray-800 to-gray-900 p-6 rounded-xl border border-gray-700 hover:border-indigo-500 transition-all duration-300 reveal-fade relative z-10">
                 <div className="w-12 h-12 bg-indigo-500/20 rounded-lg flex items-center justify-center mb-4 relative z-10">
                   <Brain className="w-6 h-6 text-indigo-400" />
                 </div>
@@ -258,7 +258,7 @@ export default function SalesforcePage() {
                 <p className="text-gray-300 text-sm relative z-10">Unlock meaningful insights, predictive alerts, and smart automation.</p>
               </div>
 
-              <div className="floating-card conic-border bg-gradient-to-br from-gray-800 to-gray-900 p-6 rounded-xl border border-gray-700 hover:border-green-500 transition-all duration-300 reveal-fade relative z-10" data-delay="1200">
+              <div className="floating-card conic-border bg-gradient-to-br from-gray-800 to-gray-900 p-6 rounded-xl border border-gray-700 hover:border-green-500 transition-all duration-300 reveal-fade relative z-10">
                 <div className="w-12 h-12 bg-green-500/20 rounded-lg flex items-center justify-center mb-4 relative z-10">
                   <Globe className="w-6 h-6 text-green-400" />
                 </div>
@@ -282,7 +282,7 @@ export default function SalesforcePage() {
             
             <div className="grid md:grid-cols-3 gap-8">
               
-              <div className="floating-card conic-border bg-gradient-to-br from-gray-800 to-gray-900 p-8 rounded-2xl border border-gray-700 hover:border-blue-500 transition-all duration-300 reveal-fade relative z-10" data-delay="100">
+              <div className="floating-card conic-border bg-gradient-to-br from-gray-800 to-gray-900 p-8 rounded-2xl border border-gray-700 hover:border-blue-500 transition-all duration-300 reveal-fade relative z-10" >
                 <div className="w-16 h-16 bg-blue-500/20 rounded-xl flex items-center justify-center mb-6 relative z-10">
                   <Target className="w-8 h-8 text-blue-400" />
                 </div>
@@ -293,7 +293,7 @@ export default function SalesforcePage() {
                 </p>
               </div>
 
-              <div className="floating-card conic-border bg-gradient-to-br from-gray-800 to-gray-900 p-8 rounded-2xl border border-gray-700 hover:border-emerald-500 transition-all duration-300 reveal-fade relative z-10" data-delay="200">
+              <div className="floating-card conic-border bg-gradient-to-br from-gray-800 to-gray-900 p-8 rounded-2xl border border-gray-700 hover:border-emerald-500 transition-all duration-300 reveal-fade relative z-10" >
                 <div className="w-16 h-16 bg-emerald-500/20 rounded-xl flex items-center justify-center mb-6 relative z-10">
                   <Zap className="w-8 h-8 text-emerald-400" />
                 </div>
@@ -304,7 +304,7 @@ export default function SalesforcePage() {
                 </p>
               </div>
 
-              <div className="floating-card conic-border bg-gradient-to-br from-gray-800 to-gray-900 p-8 rounded-2xl border border-gray-700 hover:border-purple-500 transition-all duration-300 reveal-fade relative z-10" data-delay="300">
+              <div className="floating-card conic-border bg-gradient-to-br from-gray-800 to-gray-900 p-8 rounded-2xl border border-gray-700 hover:border-purple-500 transition-all duration-300 reveal-fade relative z-10" >
                 <div className="w-16 h-16 bg-purple-500/20 rounded-xl flex items-center justify-center mb-6 relative z-10">
                   <CheckCircle className="w-8 h-8 text-purple-400" />
                 </div>
@@ -323,10 +323,10 @@ export default function SalesforcePage() {
         <section className="py-20 bg-gradient-to-r from-blue-900/50 to-emerald-900/50 zoom-container">
           <div className="max-w-4xl mx-auto text-center px-4 sm:px-6 lg:px-8 zoom-section">
             <h2 className="text-4xl font-bold mb-6 reveal-fade">Ready to Transform with Salesforce?</h2>
-            <p className="text-xl text-gray-300 mb-8 reveal-fade" data-delay="200">
+            <p className="text-xl text-gray-300 mb-8 reveal-fade" >
               Procyon isn't just your implementer—we're your Salesforce transformation partner. Whether you're starting fresh, optimizing existing workflows, or scaling your team with elite Salesforce talent, let's make your vision a reality.
             </p>
-            <div className="flex flex-col sm:flex-row gap-4 justify-center reveal-fade" data-delay="400">
+            <div className="flex flex-col sm:flex-row gap-4 justify-center reveal-fade" >
               <Link href="/contact" className="inline-block bg-gradient-to-r from-blue-600 to-emerald-600 px-8 py-4 rounded-lg font-semibold text-lg hover:scale-105 transition-transform">
                 Contact Us
               </Link>
