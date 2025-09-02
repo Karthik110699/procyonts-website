@@ -439,7 +439,7 @@
   /* Conic gradient traveling bright spot */
   .conic-border {
     position: relative;
-    overflow: hidden;
+    padding: 2px;
   }
 
   .conic-border::before {
@@ -466,7 +466,7 @@
     z-index: 2;
   }
 
-  .conic-border:hover::before {
+  .conic-border.active::before {
     opacity: 1;
     animation-play-state: running;
   }
