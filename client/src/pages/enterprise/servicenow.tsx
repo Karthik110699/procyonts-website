@@ -1,4 +1,5 @@
-import { Workflow, Wrench, Zap, Shield, Users, CheckCircle, TrendingUp } from "lucide-react";
+import { Wrench, Zap, Shield, Users, CheckCircle, TrendingUp } from "lucide-react";
+import { SiServicenow } from "react-icons/si";
 import { Link } from "wouter";
 import Navbar from "@/components/navbar";
 import { useScrollReveal } from "@/hooks/use-scroll-reveal";
@@ -88,7 +89,7 @@ export default function ServiceNowPage() {
           <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 zoom-section">
             <div className="flex items-start gap-8 mb-12">
               <div className="w-20 h-20 bg-emerald-500/20 rounded-xl flex items-center justify-center reveal-scale">
-                <Workflow className="w-10 h-10 text-emerald-400" />
+                <SiServicenow className="w-10 h-10 text-emerald-400" />
               </div>
               <div>
                 <h1 className="text-4xl md:text-5xl font-bold mb-6 reveal-scale">
