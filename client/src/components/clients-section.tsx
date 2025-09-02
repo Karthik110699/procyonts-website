@@ -65,8 +65,10 @@ export default function ClientsSection() {
                       src={client.logo} 
                       alt={`${client.name} logo`}
                       className={`object-contain opacity-80 hover:opacity-100 transition-all duration-300 hover:scale-110 ${
-                        ['Arteria', 'Bounteous', 'BASF', 'Genesys', 'Randstad Digital', 'Talkdesk', 'Tech Mahindra'].includes(client.name) 
-                          ? 'max-h-16 max-w-full' 
+                        ['Bounteous', 'Capgemini'].includes(client.name) 
+                          ? 'max-h-20 max-w-full' 
+                          : ['Arteria', 'BASF', 'Genesys', 'Randstad Digital', 'Talkdesk', 'Tech Mahindra'].includes(client.name)
+                          ? 'max-h-16 max-w-full'
                           : 'max-h-12 max-w-full'
                       }`}
                     />
@@ -81,8 +83,10 @@ export default function ClientsSection() {
                       src={client.logo} 
                       alt={`${client.name} logo`}
                       className={`object-contain opacity-80 hover:opacity-100 transition-all duration-300 hover:scale-110 ${
-                        ['Arteria', 'Bounteous', 'BASF', 'Genesys', 'Randstad Digital', 'Talkdesk', 'Tech Mahindra'].includes(client.name) 
-                          ? 'max-h-16 max-w-full' 
+                        ['Bounteous', 'Capgemini'].includes(client.name) 
+                          ? 'max-h-20 max-w-full' 
+                          : ['Arteria', 'BASF', 'Genesys', 'Randstad Digital', 'Talkdesk', 'Tech Mahindra'].includes(client.name)
+                          ? 'max-h-16 max-w-full'
                           : 'max-h-12 max-w-full'
                       }`}
                     />
