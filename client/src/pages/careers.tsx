@@ -326,7 +326,7 @@ export default function CareersPage() {
           <p className="text-xl text-gray-300 mb-8">
             We're always looking for exceptional talent. Send us your resume and let's discuss opportunities.
           </p>
-          <Link href="https://in.linkedin.com/company/procyonts" className="inline-block bg-gradient-to-r from-blue-600 to-emerald-600 px-8 py-4 rounded-lg font-semibold text-lg hover:scale-105 transition-transform">
+          <Link href="/contact" className="inline-block bg-gradient-to-r from-blue-600 to-emerald-600 px-8 py-4 rounded-lg font-semibold text-lg hover:scale-105 transition-transform">
             Get in Touch
           </Link>
         </div>
