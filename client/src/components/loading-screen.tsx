@@ -1,5 +1,5 @@
 import { useEffect } from "react";
-import procyonLogo from "@assets/Procyon Technostructure -05_1756791057389.png";
+import procyonLogo from "@assets/image_1756791271181.png";
 
 export default function LoadingScreen() {
   useEffect(() => {

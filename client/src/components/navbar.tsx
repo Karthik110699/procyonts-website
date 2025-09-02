@@ -1,7 +1,7 @@
 import { useState, useEffect } from "react";
 import { Link, useLocation } from "wouter";
 import { Menu, X } from "lucide-react";
-import logoUrl from "@assets/Procyon Technostructure -05_1756791057389.png";
+import logoUrl from "@assets/image_1756791271181.png";
 
 export default function Navbar() {
   const [isScrolled, setIsScrolled] = useState(false);

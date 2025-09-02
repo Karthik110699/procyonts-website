@@ -1,6 +1,6 @@
 import { Facebook, Linkedin, Twitter } from "lucide-react";
 import { Link } from "wouter";
-import logoUrl from "@assets/Procyon Technostructure -05_1756791057389.png";
+import logoUrl from "@assets/image_1756791271181.png";
 
 export default function Footer() {
   return (
