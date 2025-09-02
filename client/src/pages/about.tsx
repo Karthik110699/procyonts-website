@@ -381,67 +381,63 @@ export default function AboutPage() {
               </div>
             </div>
 
-            {/* Value Headings in Circular Formation */}
+            {/* Value Headings Revolving Around CORE */}
             <div className="relative w-full h-[500px] xl:h-[600px]">
-              {/* Rotating Container */}
-              <div className="absolute inset-0 animate-spin-slow">
-              {/* Counter-rotating text containers */}
               
-              {/* 01 - Customer FIRST (Top) */}
-              <div className="absolute top-0 left-1/2 transform -translate-x-1/2 group cursor-pointer" style={{ top: '0px' }}>
-                <div className="w-48 xl:w-56 bg-gradient-to-br from-red-900/40 to-red-800/30 p-4 xl:p-5 rounded-2xl border border-red-500/30 backdrop-blur-sm hover:scale-105 transition-all duration-500 hover:shadow-2xl hover:shadow-red-500/20 animate-counter-spin-slow">
+              {/* 01 - Customer FIRST */}
+              <div className="absolute top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2 animate-orbit-1">
+                <div className="w-48 xl:w-56 bg-gradient-to-br from-red-900/40 to-red-800/30 p-4 xl:p-5 rounded-2xl border border-red-500/30 backdrop-blur-sm hover:scale-105 transition-all duration-500 hover:shadow-2xl hover:shadow-red-500/20">
                   <div className="flex items-center justify-center">
                     <h3 className="text-base xl:text-lg font-bold text-red-400">Customer FIRST</h3>
                   </div>
                 </div>
               </div>
 
-              {/* 02 - Every Customer is different (Top Right) */}
-              <div className="absolute group cursor-pointer" style={{ top: '80px', right: '-30px' }}>
-                <div className="w-48 xl:w-56 bg-gradient-to-br from-blue-900/40 to-blue-800/30 p-4 xl:p-5 rounded-2xl border border-blue-500/30 backdrop-blur-sm hover:scale-105 transition-all duration-500 hover:shadow-2xl hover:shadow-blue-500/20 animate-counter-spin-slow">
+              {/* 02 - Every Customer is different */}
+              <div className="absolute top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2 animate-orbit-2">
+                <div className="w-48 xl:w-56 bg-gradient-to-br from-blue-900/40 to-blue-800/30 p-4 xl:p-5 rounded-2xl border border-blue-500/30 backdrop-blur-sm hover:scale-105 transition-all duration-500 hover:shadow-2xl hover:shadow-blue-500/20">
                   <div className="flex items-center justify-center">
                     <h3 className="text-base xl:text-lg font-bold text-blue-400">Every Customer is Different</h3>
                   </div>
                 </div>
               </div>
 
-              {/* 03 - Transparency and Collaboration (Bottom Right) */}
-              <div className="absolute group cursor-pointer" style={{ bottom: '80px', right: '-30px' }}>
-                <div className="w-48 xl:w-56 bg-gradient-to-br from-emerald-900/40 to-emerald-800/30 p-4 xl:p-5 rounded-2xl border border-emerald-500/30 backdrop-blur-sm hover:scale-105 transition-all duration-500 hover:shadow-2xl hover:shadow-emerald-500/20 animate-counter-spin-slow">
+              {/* 03 - Transparency and Collaboration */}
+              <div className="absolute top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2 animate-orbit-3">
+                <div className="w-48 xl:w-56 bg-gradient-to-br from-emerald-900/40 to-emerald-800/30 p-4 xl:p-5 rounded-2xl border border-emerald-500/30 backdrop-blur-sm hover:scale-105 transition-all duration-500 hover:shadow-2xl hover:shadow-emerald-500/20">
                   <div className="flex items-center justify-center">
                     <h3 className="text-base xl:text-lg font-bold text-emerald-400">Transparency and Collaboration</h3>
                   </div>
                 </div>
               </div>
 
-              {/* 04 - Celebrate and value Diversity (Bottom) */}
-              <div className="absolute bottom-0 left-1/2 transform -translate-x-1/2 group cursor-pointer" style={{ bottom: '0px' }}>
-                <div className="w-48 xl:w-56 bg-gradient-to-br from-purple-900/40 to-purple-800/30 p-4 xl:p-5 rounded-2xl border border-purple-500/30 backdrop-blur-sm hover:scale-105 transition-all duration-500 hover:shadow-2xl hover:shadow-purple-500/20 animate-counter-spin-slow">
+              {/* 04 - Celebrate and value Diversity */}
+              <div className="absolute top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2 animate-orbit-4">
+                <div className="w-48 xl:w-56 bg-gradient-to-br from-purple-900/40 to-purple-800/30 p-4 xl:p-5 rounded-2xl border border-purple-500/30 backdrop-blur-sm hover:scale-105 transition-all duration-500 hover:shadow-2xl hover:shadow-purple-500/20">
                   <div className="flex items-center justify-center">
                     <h3 className="text-base xl:text-lg font-bold text-purple-400">Celebrate and Value Diversity</h3>
                   </div>
                 </div>
               </div>
 
-              {/* 05 - Continuous Learning & Retrospect (Bottom Left) */}
-              <div className="absolute group cursor-pointer" style={{ bottom: '80px', left: '-30px' }}>
-                <div className="w-48 xl:w-56 bg-gradient-to-br from-amber-900/40 to-amber-800/30 p-4 xl:p-5 rounded-2xl border border-amber-500/30 backdrop-blur-sm hover:scale-105 transition-all duration-500 hover:shadow-2xl hover:shadow-amber-500/20 animate-counter-spin-slow">
+              {/* 05 - Continuous Learning & Retrospect */}
+              <div className="absolute top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2 animate-orbit-5">
+                <div className="w-48 xl:w-56 bg-gradient-to-br from-amber-900/40 to-amber-800/30 p-4 xl:p-5 rounded-2xl border border-amber-500/30 backdrop-blur-sm hover:scale-105 transition-all duration-500 hover:shadow-2xl hover:shadow-amber-500/20">
                   <div className="flex items-center justify-center">
                     <h3 className="text-base xl:text-lg font-bold text-amber-400">Continuous Learning & Retrospect</h3>
                   </div>
                 </div>
               </div>
 
-              {/* 06 - Encourage Ideation & Creativity (Top Left) */}
-              <div className="absolute group cursor-pointer" style={{ top: '80px', left: '-30px' }}>
-                <div className="w-48 xl:w-56 bg-gradient-to-br from-cyan-900/40 to-cyan-800/30 p-4 xl:p-5 rounded-2xl border border-cyan-500/30 backdrop-blur-sm hover:scale-105 transition-all duration-500 hover:shadow-2xl hover:shadow-cyan-500/20 animate-counter-spin-slow">
+              {/* 06 - Encourage Ideation & Creativity */}
+              <div className="absolute top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2 animate-orbit-6">
+                <div className="w-48 xl:w-56 bg-gradient-to-br from-cyan-900/40 to-cyan-800/30 p-4 xl:p-5 rounded-2xl border border-cyan-500/30 backdrop-blur-sm hover:scale-105 transition-all duration-500 hover:shadow-2xl hover:shadow-cyan-500/20">
                   <div className="flex items-center justify-center">
                     <h3 className="text-base xl:text-lg font-bold text-cyan-400">Encourage Ideation & Creativity</h3>
                   </div>
                 </div>
               </div>
 
-              </div>
             </div>
           </div>
 

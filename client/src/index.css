@@ -68,22 +68,83 @@
     overflow: overlay;
   }
 
-  /* Custom Animations */
-  @keyframes spin-slow {
+  /* Custom Animations - Orbital Motion */
+  @keyframes orbit-1 {
     from {
-      transform: rotate(0deg);
+      transform: translate(-50%, -50%) rotate(0deg) translateX(200px) rotate(0deg);
     }
     to {
-      transform: rotate(360deg);
+      transform: translate(-50%, -50%) rotate(360deg) translateX(200px) rotate(-360deg);
     }
   }
 
-  .animate-spin-slow {
-    animation: spin-slow 60s linear infinite;
+  @keyframes orbit-2 {
+    from {
+      transform: translate(-50%, -50%) rotate(60deg) translateX(200px) rotate(-60deg);
+    }
+    to {
+      transform: translate(-50%, -50%) rotate(420deg) translateX(200px) rotate(-420deg);
+    }
   }
 
-  .animate-counter-spin-slow {
-    animation: spin-slow 60s linear infinite reverse;
+  @keyframes orbit-3 {
+    from {
+      transform: translate(-50%, -50%) rotate(120deg) translateX(200px) rotate(-120deg);
+    }
+    to {
+      transform: translate(-50%, -50%) rotate(480deg) translateX(200px) rotate(-480deg);
+    }
+  }
+
+  @keyframes orbit-4 {
+    from {
+      transform: translate(-50%, -50%) rotate(180deg) translateX(200px) rotate(-180deg);
+    }
+    to {
+      transform: translate(-50%, -50%) rotate(540deg) translateX(200px) rotate(-540deg);
+    }
+  }
+
+  @keyframes orbit-5 {
+    from {
+      transform: translate(-50%, -50%) rotate(240deg) translateX(200px) rotate(-240deg);
+    }
+    to {
+      transform: translate(-50%, -50%) rotate(600deg) translateX(200px) rotate(-600deg);
+    }
+  }
+
+  @keyframes orbit-6 {
+    from {
+      transform: translate(-50%, -50%) rotate(300deg) translateX(200px) rotate(-300deg);
+    }
+    to {
+      transform: translate(-50%, -50%) rotate(660deg) translateX(200px) rotate(-660deg);
+    }
+  }
+
+  .animate-orbit-1 {
+    animation: orbit-1 30s linear infinite;
+  }
+
+  .animate-orbit-2 {
+    animation: orbit-2 30s linear infinite;
+  }
+
+  .animate-orbit-3 {
+    animation: orbit-3 30s linear infinite;
+  }
+
+  .animate-orbit-4 {
+    animation: orbit-4 30s linear infinite;
+  }
+
+  .animate-orbit-5 {
+    animation: orbit-5 30s linear infinite;
+  }
+
+  .animate-orbit-6 {
+    animation: orbit-6 30s linear infinite;
   }
 
   /* Magdemy.com Exact Scrollbar */
