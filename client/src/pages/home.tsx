@@ -64,7 +64,7 @@ export default function Home() {
                 Guiding organizations to thrive
               </div>
               <h2 className="text-4xl md:text-5xl font-bold leading-tight">
-                <span className="gradient-text">We are Procyon — the guiding star for digital transformation</span>
+                <span className="gradient-text">We are Procyon, the guiding star for digital transformation</span>
               </h2>
               <p className="text-xl text-gray-300">
                 For over 20 years, we've empowered businesses to re-imagine the way they work, innovate, and grow. With deep expertise in enterprise solutions, Salesforce consulting, AI innovation, and strategic partnerships, we deliver technology that maximizes ROI and fuels long-term growth.
