@@ -369,8 +369,11 @@ export default function SAPPage() {
             
             <div className="text-center max-w-4xl mx-auto reveal-fade">
               <h3 className="text-3xl font-bold mb-6 text-purple-400">Transform Your SAP Environment with Procyon</h3>
-              <p className="text-xl text-gray-300 leading-relaxed">
+              <p className="text-xl text-gray-300 leading-relaxed mb-8">
                 Are you looking to migrate to SAP S/4HANA, optimise your existing systems, or build a robust cloud-first SAP environment? Procyon Technostructure is your trusted SAP partner. Let us help you drive efficiency, scalability, and growth with tailored SAP solutions.
+              </p>
+              <p className="text-lg text-gray-300">
+                Connect with us today to learn more about our SAP services.
               </p>
             </div>
           </div>
