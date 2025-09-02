@@ -13,7 +13,6 @@ export default function AboutPage() {
   useEffect(() => {
     const timelineItems = document.querySelectorAll('.timeline-item');
     const timelineLine = timelineLineRef.current;
-    const navDots = document.querySelectorAll('.timeline-nav-dot');
 
     const observerOptions = {
       root: null,
@@ -29,24 +28,6 @@ export default function AboutPage() {
           
           // Animate the timeline item
           element.classList.add(isLeft ? 'animate-in-left' : 'animate-in-right');
-          element.style.opacity = '1';
-          
-          // Update navigation indicator
-          const year = element.getAttribute('data-year');
-          const yearIndex = ['2004', '2008', '2015', '2018', '2020', '2022', '2023', '2025'].indexOf(year || '');
-          if (yearIndex !== -1 && navDots[yearIndex]) {
-            navDots[yearIndex].classList.remove('opacity-30', 'bg-gray-600');
-            navDots[yearIndex].classList.add('opacity-100', 'bg-blue-500', 'shadow-lg', 'shadow-blue-500/50', 'scale-125');
-          }
-        } else {
-          // Reset when out of view
-          const element = entry.target as HTMLElement;
-          const year = element.getAttribute('data-year');
-          const yearIndex = ['2004', '2008', '2015', '2018', '2020', '2022', '2023', '2025'].indexOf(year || '');
-          if (yearIndex !== -1 && navDots[yearIndex]) {
-            navDots[yearIndex].classList.add('opacity-30', 'bg-gray-600');
-            navDots[yearIndex].classList.remove('opacity-100', 'bg-blue-500', 'shadow-lg', 'shadow-blue-500/50', 'scale-125');
-          }
         }
       });
     }, observerOptions);
@@ -237,18 +218,6 @@ export default function AboutPage() {
               style={{ height: '0%', transformOrigin: 'top' }}
             ></div>
             
-            {/* Timeline Navigation Progress */}
-            <div className="hidden lg:block fixed right-8 top-1/2 transform -translate-y-1/2 z-20">
-              <div className="flex flex-col space-y-4">
-                <div className="text-xs text-gray-400 font-medium mb-2">Our Journey</div>
-                {['2004', '2008', '2015', '2018', '2020', '2022', '2023', '2025'].map((year, index) => (
-                  <div key={year} className="flex items-center space-x-3">
-                    <div className="w-2 h-2 bg-gray-600 rounded-full timeline-nav-dot opacity-30 transition-all duration-300"></div>
-                    <span className="text-xs text-gray-500 font-medium">{year}</span>
-                  </div>
-                ))}
-              </div>
-            </div>
             
             {/* Timeline Items */}
             <div className="space-y-12 md:space-y-16 lg:space-y-24">
