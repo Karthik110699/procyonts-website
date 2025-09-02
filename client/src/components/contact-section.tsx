@@ -118,7 +118,7 @@ export function ContactSection() {
                     </div>
                     <div>
                       <p className="font-medium text-blue-400">Canada:</p>
-                      <p className="text-gray-300">202-1825 MARKHAM ROAD<br />SCARBOROUGH ON M1B 4Z9<br />Canada</p>
+                      <p className="text-gray-300">202-1825 Markham Road<br />Scarborough ON M1B 4Z9<br />Canada</p>
                     </div>
                     <div>
                       <p className="font-medium text-emerald-400">India:</p>
