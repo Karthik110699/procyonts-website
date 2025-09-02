@@ -1,37 +1,47 @@
 import { Link } from "wouter";
+import arrisLogo from "@assets/Arris_1756825407787.png";
+import arteriaLogo from "@assets/arteria-logo_1756825407788.png";
+import attLogo from "@assets/AT&T_1756825407788.png";
+import basfLogo from "@assets/BASF-Logo_bw_1756825407789.png";
+import bounteousLogo from "@assets/bounteous_1756825407789.png";
+import capgeminiLogo from "@assets/Capgemini_1756825407789.png";
+import deltaDentalLogo from "@assets/delta dental_1756825407790.png";
+import fiskerLogo from "@assets/Fisker-Logo_1756825407790.png";
+import fordLogo from "@assets/Ford_1756825407790.png";
+import genentechLogo from "@assets/Genentech_1756825407791.png";
+import genesysLogo from "@assets/genesys_1756825407791.png";
+import glendaleLogo from "@assets/glendale_1756825407792.png";
+import ibmLogo from "@assets/IBM_1756825407792.png";
+import ooredooLogo from "@assets/Ooredoo_1756825407792.png";
+import randstadLogo from "@assets/Randstad_Digital_1756825407793.png";
+import talkdeskLogo from "@assets/TalkdeskLogo_1756825407793.png";
+import techMahindraLogo from "@assets/Tech_Mahindra_1756825407793.png";
+import toyotaLogo from "@assets/toyota_1756825407794.png";
+import upsLogo from "@assets/UPS_1756825407794.png";
+import volvoLogo from "@assets/Volvo_1756825407794.png";
 
 export default function ClientsSection() {
   const clients = [
-    { 
-      name: "Microsoft",
-      logo: "https://img.icons8.com/fluency/96/microsoft-logo.png",
-      link: "/services"
-    },
-    { 
-      name: "IBM",
-      logo: "https://img.icons8.com/color/96/ibm.png",
-      link: "/services"
-    },
-    { 
-      name: "Amazon",
-      logo: "https://img.icons8.com/color/96/amazon-web-services.png",
-      link: "/services"
-    },
-    { 
-      name: "Google",
-      logo: "https://img.icons8.com/color/96/google-cloud.png",
-      link: "/services"
-    },
-    { 
-      name: "Apple",
-      logo: "https://img.icons8.com/sf-ultralight-filled/96/ffffff/mac-os.png",
-      link: "/services"
-    },
-    { 
-      name: "Oracle",
-      logo: "https://img.icons8.com/color/96/oracle-logo.png",
-      link: "/enterprise"
-    }
+    { name: "Arris", logo: arrisLogo, link: "/services" },
+    { name: "Arteria", logo: arteriaLogo, link: "/services" },
+    { name: "AT&T", logo: attLogo, link: "/services" },
+    { name: "BASF", logo: basfLogo, link: "/services" },
+    { name: "Bounteous", logo: bounteousLogo, link: "/services" },
+    { name: "Capgemini", logo: capgeminiLogo, link: "/services" },
+    { name: "Delta Dental", logo: deltaDentalLogo, link: "/services" },
+    { name: "Fisker", logo: fiskerLogo, link: "/services" },
+    { name: "Ford", logo: fordLogo, link: "/services" },
+    { name: "Genentech", logo: genentechLogo, link: "/services" },
+    { name: "Genesys", logo: genesysLogo, link: "/services" },
+    { name: "City of Glendale", logo: glendaleLogo, link: "/services" },
+    { name: "IBM", logo: ibmLogo, link: "/services" },
+    { name: "Ooredoo", logo: ooredooLogo, link: "/services" },
+    { name: "Randstad Digital", logo: randstadLogo, link: "/services" },
+    { name: "Talkdesk", logo: talkdeskLogo, link: "/services" },
+    { name: "Tech Mahindra", logo: techMahindraLogo, link: "/services" },
+    { name: "Toyota", logo: toyotaLogo, link: "/services" },
+    { name: "UPS", logo: upsLogo, link: "/services" },
+    { name: "Volvo", logo: volvoLogo, link: "/services" }
   ];
 
   return (
@@ -45,18 +55,33 @@ export default function ClientsSection() {
         </div>
         
         <div className="py-12 reveal-scale" data-delay="200">
-          <div className="flex items-center justify-center flex-wrap gap-16">
-            {clients.map((client, index) => (
-              <Link key={index} href={client.link}>
-                <div className={`flex items-center justify-center h-20 w-32 p-4 reveal-fade stagger-delay-${index % 6 + 1} cursor-pointer`} data-delay={`${300 + (index * 100)}`}>
-                  <img 
-                    src={client.logo} 
-                    alt={`${client.name} logo`}
-                    className="max-h-12 max-w-full object-contain opacity-70 hover:opacity-100 transition-all duration-300 hover:scale-110"
-                  />
-                </div>
-              </Link>
-            ))}
+          <div className="overflow-hidden">
+            <div className="flex animate-scroll-left space-x-16">
+              {/* First set of logos */}
+              {clients.map((client, index) => (
+                <Link key={`first-${index}`} href={client.link}>
+                  <div className="flex items-center justify-center h-20 w-40 p-4 cursor-pointer flex-shrink-0">
+                    <img 
+                      src={client.logo} 
+                      alt={`${client.name} logo`}
+                      className="max-h-12 max-w-full object-contain opacity-70 hover:opacity-100 transition-all duration-300 hover:scale-110 filter brightness-90 hover:brightness-100"
+                    />
+                  </div>
+                </Link>
+              ))}
+              {/* Duplicate set for seamless loop */}
+              {clients.map((client, index) => (
+                <Link key={`second-${index}`} href={client.link}>
+                  <div className="flex items-center justify-center h-20 w-40 p-4 cursor-pointer flex-shrink-0">
+                    <img 
+                      src={client.logo} 
+                      alt={`${client.name} logo`}
+                      className="max-h-12 max-w-full object-contain opacity-70 hover:opacity-100 transition-all duration-300 hover:scale-110 filter brightness-90 hover:brightness-100"
+                    />
+                  </div>
+                </Link>
+              ))}
+            </div>
           </div>
         </div>
       </div>
