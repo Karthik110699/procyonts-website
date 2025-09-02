@@ -47,7 +47,7 @@ export default function DataAnalyticsPage() {
                 <span className="gradient-text">Data Strategy & Analytics</span>
               </h1>
               <p className="text-xl text-gray-300 max-w-3xl">
-                Turn your data into actionable insights with advanced analytics and strategic data management. Build a data-driven culture that accelerates decision-making and business growth.
+                Unlock the full value of your data with comprehensive strategy, engineering, and analytics solutions. We help businesses move from data collection to data intelligence, transforming information into strategic assets that drive competitive advantage.
               </p>
             </div>
           </div>
@@ -58,9 +58,9 @@ export default function DataAnalyticsPage() {
       <section className="py-20">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="text-center mb-16">
-            <h2 className="text-4xl font-bold mb-6">Comprehensive Data Solutions</h2>
+            <h2 className="text-4xl font-bold mb-6">Our Comprehensive Data Methodology</h2>
             <p className="text-xl text-gray-300">
-              From data strategy to advanced analytics - complete data transformation services
+              A proven four-phase approach that transforms how your organization thinks about and uses data
             </p>
           </div>
           
@@ -69,15 +69,15 @@ export default function DataAnalyticsPage() {
               <div className="w-16 h-16 bg-purple-500/20 rounded-xl flex items-center justify-center mb-6 relative z-10">
                 <Database className="w-8 h-8 text-purple-400" />
               </div>
-              <h3 className="text-2xl font-bold mb-4 text-purple-400 relative z-10">Data Architecture</h3>
+              <h3 className="text-2xl font-bold mb-4 text-purple-400 relative z-10">Data Strategy & Consulting</h3>
               <p className="text-gray-300 mb-4 relative z-10">
-                Design and implement scalable data architectures that support your business objectives.
+                Collaborate with your leadership team to create clear, actionable data roadmaps that transform how your organization captures, stores, and uses data.
               </p>
               <ul className="space-y-2 text-gray-400 text-sm relative z-10">
-                <li>• Data Warehouse Design</li>
-                <li>• Data Lake Implementation</li>
-                <li>• ETL/ELT Pipelines</li>
-                <li>• Real-time Data Streaming</li>
+                <li>• Data Maturity Assessments</li>
+                <li>• Governance Frameworks</li>
+                <li>• Scalable Data Strategies</li>
+                <li>• Business Context Analysis</li>
               </ul>
             </div>
 
@@ -85,15 +85,15 @@ export default function DataAnalyticsPage() {
               <div className="w-16 h-16 bg-blue-500/20 rounded-xl flex items-center justify-center mb-6 relative z-10">
                 <BarChart className="w-8 h-8 text-blue-400" />
               </div>
-              <h3 className="text-2xl font-bold mb-4 text-blue-400 relative z-10">Business Intelligence</h3>
+              <h3 className="text-2xl font-bold mb-4 text-blue-400 relative z-10">Data Engineering & Architecture</h3>
               <p className="text-gray-300 mb-4 relative z-10">
-                Transform raw data into meaningful insights with interactive dashboards and reports.
+                Design and implement modern, cloud-native data architectures with scalable, fault-tolerant pipelines that grow with your business.
               </p>
               <ul className="space-y-2 text-gray-400 text-sm relative z-10">
-                <li>• Interactive Dashboards</li>
-                <li>• KPI Monitoring</li>
-                <li>• Ad-hoc Reporting</li>
-                <li>• Self-Service Analytics</li>
+                <li>• Modern Data Warehouses</li>
+                <li>• Data Lakes & Lakehouses</li>
+                <li>• Real-time Streaming Platforms</li>
+                <li>• ETL/ELT Pipeline Development</li>
               </ul>
             </div>
 
@@ -101,15 +101,15 @@ export default function DataAnalyticsPage() {
               <div className="w-16 h-16 bg-emerald-500/20 rounded-xl flex items-center justify-center mb-6 relative z-10">
                 <TrendingUp className="w-8 h-8 text-emerald-400" />
               </div>
-              <h3 className="text-2xl font-bold mb-4 text-emerald-400 relative z-10">Advanced Analytics</h3>
+              <h3 className="text-2xl font-bold mb-4 text-emerald-400 relative z-10">Advanced Analytics & Business Intelligence</h3>
               <p className="text-gray-300 mb-4 relative z-10">
-                Leverage statistical analysis and machine learning for deeper business insights.
+                Powerful insights with dashboards, visualization tools, and machine learning-backed analytics that predict trends and identify opportunities.
               </p>
               <ul className="space-y-2 text-gray-400 text-sm relative z-10">
-                <li>• Statistical Analysis</li>
-                <li>• Predictive Modeling</li>
-                <li>• Cohort Analysis</li>
-                <li>• A/B Testing</li>
+                <li>• Descriptive & Predictive Analytics</li>
+                <li>• Prescriptive Analytics</li>
+                <li>• Real-time Analytics</li>
+                <li>• Interactive BI Dashboards</li>
               </ul>
             </div>
 
@@ -117,15 +117,15 @@ export default function DataAnalyticsPage() {
               <div className="w-16 h-16 bg-amber-500/20 rounded-xl flex items-center justify-center mb-6 relative z-10">
                 <Globe className="w-8 h-8 text-amber-400" />
               </div>
-              <h3 className="text-2xl font-bold mb-4 text-amber-400 relative z-10">Data Integration</h3>
+              <h3 className="text-2xl font-bold mb-4 text-amber-400 relative z-10">Data Governance, Quality & Compliance</h3>
               <p className="text-gray-300 mb-4 relative z-10">
-                Seamlessly connect and integrate data from multiple sources and systems.
+                Build frameworks that maintain high data quality, security, and compliance with industry regulations like GDPR, HIPAA, and ISO standards.
               </p>
               <ul className="space-y-2 text-gray-400 text-sm relative z-10">
-                <li>• API Integration</li>
-                <li>• Database Connectivity</li>
-                <li>• Cloud Data Sources</li>
-                <li>• Legacy System Integration</li>
+                <li>• GDPR & HIPAA Compliance</li>
+                <li>• SOX & ISO 27001 Frameworks</li>
+                <li>• Automated Data Quality Checks</li>
+                <li>• Data Stewardship & Ownership</li>
               </ul>
             </div>
 
@@ -133,15 +133,15 @@ export default function DataAnalyticsPage() {
               <div className="w-16 h-16 bg-indigo-500/20 rounded-xl flex items-center justify-center mb-6 relative z-10">
                 <Zap className="w-8 h-8 text-indigo-400" />
               </div>
-              <h3 className="text-2xl font-bold mb-4 text-indigo-400 relative z-10">Real-time Analytics</h3>
+              <h3 className="text-2xl font-bold mb-4 text-indigo-400 relative z-10">Key Technologies We Work With</h3>
               <p className="text-gray-300 mb-4 relative z-10">
-                Monitor and analyze data in real-time for immediate insights and rapid decision-making.
+                Modern data platforms and tools that enable enterprise-grade data processing and analytics capabilities.
               </p>
               <ul className="space-y-2 text-gray-400 text-sm relative z-10">
-                <li>• Stream Processing</li>
-                <li>• Live Dashboards</li>
-                <li>• Alert Systems</li>
-                <li>• Event-driven Analytics</li>
+                <li>• Snowflake, Amazon Redshift, BigQuery</li>
+                <li>• Delta Lake, Apache Iceberg</li>
+                <li>• Apache Airflow, Talend, Informatica</li>
+                <li>• Apache Kafka, Amazon Kinesis</li>
               </ul>
             </div>
 
@@ -149,15 +149,15 @@ export default function DataAnalyticsPage() {
               <div className="w-16 h-16 bg-rose-500/20 rounded-xl flex items-center justify-center mb-6 relative z-10">
                 <Shield className="w-8 h-8 text-rose-400" />
               </div>
-              <h3 className="text-2xl font-bold mb-4 text-rose-400 relative z-10">Data Governance</h3>
+              <h3 className="text-2xl font-bold mb-4 text-rose-400 relative z-10">Architecture Benefits</h3>
               <p className="text-gray-300 mb-4 relative z-10">
-                Establish data quality, security, and compliance frameworks for trusted analytics.
+                Systems designed for performance, reliability, and cost-efficiency that scale with your data volume and complexity.
               </p>
               <ul className="space-y-2 text-gray-400 text-sm relative z-10">
-                <li>• Data Quality Management</li>
-                <li>• Privacy & Compliance</li>
-                <li>• Access Controls</li>
-                <li>• Data Lineage Tracking</li>
+                <li>• 99.9% Uptime with Auto-recovery</li>
+                <li>• Fast Query Response Times</li>
+                <li>• 40% Operational Cost Reduction</li>
+                <li>• Unlimited Scalability</li>
               </ul>
             </div>
           </div>
@@ -168,43 +168,43 @@ export default function DataAnalyticsPage() {
       <section className="py-20 bg-gray-900/50">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="text-center mb-16">
-            <h2 className="text-4xl font-bold mb-6">Leading Analytics Platforms</h2>
+            <h2 className="text-4xl font-bold mb-6">Modern Data Technologies</h2>
             <p className="text-xl text-gray-300">
-              Expertise across industry-leading data and analytics tools
+              Enterprise-grade platforms for data warehousing, streaming, and analytics
             </p>
           </div>
           
           <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-8">
             <div className="text-center">
               <div className="w-16 h-16 bg-orange-500/20 rounded-xl flex items-center justify-center mx-auto mb-4">
-                <span className="text-sm font-bold text-orange-400">Tableau</span>
+                <span className="text-sm font-bold text-orange-400">Snowflake</span>
               </div>
-              <h3 className="text-lg font-bold mb-2">Tableau</h3>
-              <p className="text-gray-300 text-sm">Visual analytics and business intelligence platform</p>
+              <h3 className="text-lg font-bold mb-2">Snowflake</h3>
+              <p className="text-gray-300 text-sm">Cloud data warehouse for analytics workloads</p>
             </div>
             
             <div className="text-center">
               <div className="w-16 h-16 bg-blue-500/20 rounded-xl flex items-center justify-center mx-auto mb-4">
-                <span className="text-sm font-bold text-blue-400">Power BI</span>
+                <span className="text-sm font-bold text-blue-400">BigQuery</span>
               </div>
-              <h3 className="text-lg font-bold mb-2">Power BI</h3>
-              <p className="text-gray-300 text-sm">Microsoft's business analytics solution</p>
+              <h3 className="text-lg font-bold mb-2">Google BigQuery</h3>
+              <p className="text-gray-300 text-sm">Serverless data warehouse for analytics</p>
             </div>
             
             <div className="text-center">
               <div className="w-16 h-16 bg-emerald-500/20 rounded-xl flex items-center justify-center mx-auto mb-4">
-                <span className="text-sm font-bold text-emerald-400">Qlik</span>
+                <span className="text-sm font-bold text-emerald-400">Kafka</span>
               </div>
-              <h3 className="text-lg font-bold mb-2">QlikView/QlikSense</h3>
-              <p className="text-gray-300 text-sm">Associative analytics and data discovery</p>
+              <h3 className="text-lg font-bold mb-2">Apache Kafka</h3>
+              <p className="text-gray-300 text-sm">Real-time streaming platform</p>
             </div>
             
             <div className="text-center">
               <div className="w-16 h-16 bg-purple-500/20 rounded-xl flex items-center justify-center mx-auto mb-4">
-                <span className="text-sm font-bold text-purple-400">Looker</span>
+                <span className="text-sm font-bold text-purple-400">Airflow</span>
               </div>
-              <h3 className="text-lg font-bold mb-2">Looker</h3>
-              <p className="text-gray-300 text-sm">Modern BI and data platform</p>
+              <h3 className="text-lg font-bold mb-2">Apache Airflow</h3>
+              <p className="text-gray-300 text-sm">Workflow automation and orchestration</p>
             </div>
           </div>
         </div>
@@ -220,23 +220,23 @@ export default function DataAnalyticsPage() {
           
           <div className="grid md:grid-cols-4 gap-8">
             <div>
-              <div className="text-4xl font-bold text-purple-400 mb-2">70%</div>
-              <div className="text-gray-300">Faster Decision Making</div>
+              <div className="text-4xl font-bold text-purple-400 mb-2">25-40%</div>
+              <div className="text-gray-300">Decision-Making Speed Improvement</div>
             </div>
             
             <div>
-              <div className="text-4xl font-bold text-blue-400 mb-2">90%</div>
-              <div className="text-gray-300">Data Accuracy Improvement</div>
+              <div className="text-4xl font-bold text-blue-400 mb-2">15-30%</div>
+              <div className="text-gray-300">Operational Efficiency Increase</div>
             </div>
             
             <div>
-              <div className="text-4xl font-bold text-emerald-400 mb-2">45%</div>
-              <div className="text-gray-300">Operational Efficiency Gain</div>
+              <div className="text-4xl font-bold text-emerald-400 mb-2">99.9%</div>
+              <div className="text-gray-300">System Uptime Achievement</div>
             </div>
             
             <div>
-              <div className="text-4xl font-bold text-amber-400 mb-2">220%</div>
-              <div className="text-gray-300">ROI Within 15 Months</div>
+              <div className="text-4xl font-bold text-amber-400 mb-2">40%</div>
+              <div className="text-gray-300">Cost Reduction Typical</div>
             </div>
           </div>
         </div>

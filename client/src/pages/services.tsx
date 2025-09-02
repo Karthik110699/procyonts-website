@@ -93,76 +93,76 @@ export default function ServicesPage() {
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 zoom-section">
           <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
             
-            {/* Cloud Transformation */}
-            <div className="group floating-card conic-border bg-gradient-to-br from-gray-800 to-gray-900 p-8 rounded-2xl border border-gray-700 hover:border-blue-500 cursor-pointer transition-all duration-300 reveal-fade" data-delay="100" onClick={() => {window.scrollTo(0, 0); window.location.href = '/services/cloud';}}>
-              <div className="w-16 h-16 bg-blue-500/20 rounded-xl flex items-center justify-center mb-6 relative z-10">
-                <Server className="w-8 h-8 text-blue-400" />
+            {/* Data Strategy & Analytics */}
+            <div className="group floating-card conic-border bg-gradient-to-br from-gray-800 to-gray-900 p-8 rounded-2xl border border-gray-700 hover:border-purple-500 cursor-pointer transition-all duration-300 reveal-fade" data-delay="100" onClick={() => {window.scrollTo(0, 0); window.location.href = '/services/data-analytics';}}>
+              <div className="w-16 h-16 bg-purple-500/20 rounded-xl flex items-center justify-center mb-6 relative z-10">
+                <BarChart className="w-8 h-8 text-purple-400" />
               </div>
-              <h3 className="text-2xl font-bold mb-4 text-blue-400 relative z-10">Cloud Transformation</h3>
+              <h3 className="text-2xl font-bold mb-4 text-purple-400 relative z-10">Data Strategy & Analytics</h3>
               <p className="text-gray-300 mb-6 relative z-10">
-                Migrate to the cloud with confidence and unlock scalability, flexibility, and cost optimization.
+                Unlock the full value of your data with comprehensive strategy, engineering, and analytics solutions that transform information into competitive advantage.
               </p>
               <ul className="space-y-2 text-gray-400 text-sm relative z-10">
-                <li>• AWS, Azure, GCP Migration</li>
-                <li>• Cloud-Native Architecture</li>
-                <li>• DevOps & CI/CD</li>
-                <li>• Security & Compliance</li>
+                <li>• Data Strategy & Consulting</li>
+                <li>• Data Engineering & Architecture</li>
+                <li>• Advanced Analytics & BI</li>
+                <li>• Data Governance & Compliance</li>
               </ul>
             </div>
 
-            {/* AI & ML */}
+            {/* Artificial Intelligence & Machine Learning */}
             <div className="group floating-card conic-border bg-gradient-to-br from-gray-800 to-gray-900 p-8 rounded-2xl border border-gray-700 hover:border-emerald-500 cursor-pointer transition-all duration-300 reveal-fade" data-delay="200" onClick={() => {window.scrollTo(0, 0); window.location.href = '/services/ai-ml';}}>
               <div className="w-16 h-16 bg-emerald-500/20 rounded-xl flex items-center justify-center mb-6 relative z-10">
                 <Brain className="w-8 h-8 text-emerald-400" />
               </div>
-              <h3 className="text-2xl font-bold mb-4 text-emerald-400 relative z-10">AI & Machine Learning</h3>
+              <h3 className="text-2xl font-bold mb-4 text-emerald-400 relative z-10">Artificial Intelligence & Machine Learning</h3>
               <p className="text-gray-300 mb-6 relative z-10">
-                Harness the power of artificial intelligence to automate processes and gain valuable insights.
+                Make AI work for real business outcomes with practical solutions that enhance productivity, improve decision-making, and future-proof operations.
               </p>
               <ul className="space-y-2 text-gray-400 text-sm relative z-10">
-                <li>• Custom AI Solutions</li>
-                <li>• Predictive Analytics</li>
-                <li>• Natural Language Processing</li>
-                <li>• Computer Vision</li>
+                <li>• AI Strategy & Use Case Development</li>
+                <li>• Machine Learning Model Development</li>
+                <li>• Natural Language Processing (NLP)</li>
+                <li>• AI-Powered Automation</li>
               </ul>
             </div>
 
-            {/* Data Analytics */}
-            <div className="group floating-card conic-border bg-gradient-to-br from-gray-800 to-gray-900 p-8 rounded-2xl border border-gray-700 hover:border-amber-500 cursor-pointer transition-all duration-300 reveal-fade" data-delay="300" onClick={() => {window.scrollTo(0, 0); window.location.href = '/services/data-analytics';}}>
+            {/* Cloud Transformation & Optimization */}
+            <div className="group floating-card conic-border bg-gradient-to-br from-gray-800 to-gray-900 p-8 rounded-2xl border border-gray-700 hover:border-blue-500 cursor-pointer transition-all duration-300 reveal-fade" data-delay="300" onClick={() => {window.scrollTo(0, 0); window.location.href = '/services/cloud';}}>
+              <div className="w-16 h-16 bg-blue-500/20 rounded-xl flex items-center justify-center mb-6 relative z-10">
+                <Server className="w-8 h-8 text-blue-400" />
+              </div>
+              <h3 className="text-2xl font-bold mb-4 text-blue-400 relative z-10">Cloud Transformation & Optimization</h3>
+              <p className="text-gray-300 mb-6 relative z-10">
+                Build the foundation for agility, security, and growth with comprehensive cloud transformation that drives measurable results.
+              </p>
+              <ul className="space-y-2 text-gray-400 text-sm relative z-10">
+                <li>• Cloud Strategy & Migration</li>
+                <li>• Multi-Cloud Architecture</li>
+                <li>• Cost Optimization & FinOps</li>
+                <li>• Security & Compliance</li>
+              </ul>
+            </div>
+
+            {/* Staff Augmentation & Workforce Solutions */}
+            <div className="group floating-card conic-border bg-gradient-to-br from-gray-800 to-gray-900 p-8 rounded-2xl border border-gray-700 hover:border-amber-500 cursor-pointer transition-all duration-300 reveal-fade" data-delay="350" onClick={() => {window.scrollTo(0, 0); window.location.href = '/services/staff-augmentation';}}>
               <div className="w-16 h-16 bg-amber-500/20 rounded-xl flex items-center justify-center mb-6 relative z-10">
-                <BarChart className="w-8 h-8 text-amber-400" />
+                <Users className="w-8 h-8 text-amber-400" />
               </div>
-              <h3 className="text-2xl font-bold mb-4 text-amber-400 relative z-10">Data Analytics</h3>
+              <h3 className="text-2xl font-bold mb-4 text-amber-400 relative z-10">Staff Augmentation & Workforce Solutions</h3>
               <p className="text-gray-300 mb-6 relative z-10">
-                Transform raw data into actionable insights with advanced analytics and visualization solutions.
+                Access skilled IT professionals who bring the knowledge, agility, and experience needed to keep your projects moving forward.
               </p>
               <ul className="space-y-2 text-gray-400 text-sm relative z-10">
-                <li>• Business Intelligence</li>
-                <li>• Data Warehousing</li>
-                <li>• Real-time Analytics</li>
-                <li>• Data Visualization</li>
-              </ul>
-            </div>
-
-            {/* Staff Augmentation */}
-            <div id="staff-augmentation" className="group floating-card conic-border bg-gradient-to-br from-gray-800 to-gray-900 p-8 rounded-2xl border border-gray-700 hover:border-pink-500 cursor-pointer transition-all duration-300 reveal-fade" data-delay="400" onClick={() => {window.scrollTo(0, 0); window.location.href = '/services/staff-augmentation';}}>
-              <div className="w-16 h-16 bg-pink-500/20 rounded-xl flex items-center justify-center mb-6 relative z-10">
-                <Users className="w-8 h-8 text-pink-400" />
-              </div>
-              <h3 className="text-2xl font-bold mb-4 text-pink-400 relative z-10">Staff Augmentation</h3>
-              <p className="text-gray-300 mb-6 relative z-10">
-                Scale your team with skilled professionals who integrate seamlessly with your existing workforce.
-              </p>
-              <ul className="space-y-2 text-gray-400 text-sm relative z-10">
-                <li>• Software Engineers</li>
-                <li>• Data Scientists</li>
-                <li>• DevOps Engineers</li>
-                <li>• Project Managers</li>
+                <li>• Talent Acquisition & Screening</li>
+                <li>• Technical Skills Assessment</li>
+                <li>• Project-Based Staffing</li>
+                <li>• Dedicated Development Teams</li>
               </ul>
             </div>
 
             {/* Government Solutions */}
-            <div id="government-solutions" className="group floating-card conic-border bg-gradient-to-br from-gray-800 to-gray-900 p-8 rounded-2xl border border-gray-700 hover:border-red-500 cursor-pointer transition-all duration-300 reveal-fade" data-delay="500" onClick={() => {window.scrollTo(0, 0); window.location.href = '/services/government';}}>
+            <div id="government-solutions" className="group floating-card conic-border bg-gradient-to-br from-gray-800 to-gray-900 p-8 rounded-2xl border border-gray-700 hover:border-red-500 cursor-pointer transition-all duration-300 reveal-fade" data-delay="450" onClick={() => {window.scrollTo(0, 0); window.location.href = '/services/government';}}>
               <div className="w-16 h-16 bg-red-500/20 rounded-xl flex items-center justify-center mb-6 relative z-10">
                 <Building className="w-8 h-8 text-red-400" />
               </div>
@@ -175,23 +175,6 @@ export default function ServicesPage() {
                 <li>• Secure Cloud Solutions</li>
                 <li>• Digital Transformation</li>
                 <li>• Citizen Services</li>
-              </ul>
-            </div>
-
-            {/* Digital Engineering */}
-            <div className="group floating-card conic-border bg-gradient-to-br from-gray-800 to-gray-900 p-8 rounded-2xl border border-gray-700 hover:border-indigo-500 cursor-pointer transition-all duration-300 reveal-fade" data-delay="600" onClick={() => {window.scrollTo(0, 0); window.location.href = '/services/digital-engineering';}}>
-              <div className="w-16 h-16 bg-indigo-500/20 rounded-xl flex items-center justify-center mb-6 relative z-10">
-                <Cog className="w-8 h-8 text-indigo-400" />
-              </div>
-              <h3 className="text-2xl font-bold mb-4 text-indigo-400 relative z-10">Digital Engineering</h3>
-              <p className="text-gray-300 mb-6 relative z-10">
-                End-to-end product development from concept to deployment with modern engineering practices.
-              </p>
-              <ul className="space-y-2 text-gray-400 text-sm relative z-10">
-                <li>• Full-Stack Development</li>
-                <li>• Mobile Applications</li>
-                <li>• API Development</li>
-                <li>• Quality Assurance</li>
               </ul>
             </div>
           </div>

@@ -54,40 +54,40 @@ export default function ServicesSection() {
         <div>
           <h3 className="text-3xl font-bold text-center mb-12 text-emerald-400 reveal-scale" data-delay="500">Core Services</h3>
           <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
-          {/* Cloud Transformation */}
-          <div className="group floating-card conic-border bg-gradient-to-br from-gray-800 to-gray-900 p-8 rounded-2xl border border-gray-700 hover:border-blue-500 reveal cursor-pointer transition-all duration-300" style={{ animationDelay: '0.4s' }} onClick={() => {window.scrollTo(0, 0); window.location.href = '/services/cloud';}}>
-            <div className="w-16 h-16 bg-blue-500/20 rounded-xl flex items-center justify-center mb-6 group-hover:bg-blue-500/30 transition-colors relative z-10">
-              <Server className="w-8 h-8 text-blue-400" />
-            </div>
-            <h4 className="text-xl font-bold mb-4 relative z-10">Cloud Transformation</h4>
-            <p className="text-gray-300 mb-4 relative z-10">Migrate to the cloud with confidence and unlock scalability, flexibility, and cost optimization.</p>
-          </div>
-
-          {/* AI & ML */}
-          <div className="group floating-card conic-border bg-gradient-to-br from-gray-800 to-gray-900 p-8 rounded-2xl border border-gray-700 hover:border-emerald-500 reveal cursor-pointer transition-all duration-300" style={{ animationDelay: '0.5s' }} onClick={() => {window.scrollTo(0, 0); window.location.href = '/services/ai-ml';}}>
-            <div className="w-16 h-16 bg-emerald-500/20 rounded-xl flex items-center justify-center mb-6 group-hover:bg-emerald-500/30 transition-colors relative z-10">
-              <Brain className="w-8 h-8 text-emerald-400" />
-            </div>
-            <h4 className="text-xl font-bold mb-4 relative z-10">AI & Machine Learning</h4>
-            <p className="text-gray-300 mb-4 relative z-10">Harness the power of artificial intelligence to automate processes and gain valuable insights.</p>
-          </div>
-
-          {/* Data Strategy */}
-          <div className="group floating-card conic-border bg-gradient-to-br from-gray-800 to-gray-900 p-8 rounded-2xl border border-gray-700 hover:border-purple-500 reveal cursor-pointer transition-all duration-300" style={{ animationDelay: '0.6s' }} onClick={() => {window.scrollTo(0, 0); window.location.href = '/services/data-analytics';}}>
+          {/* Data Strategy & Analytics */}
+          <div className="group floating-card conic-border bg-gradient-to-br from-gray-800 to-gray-900 p-8 rounded-2xl border border-gray-700 hover:border-purple-500 reveal cursor-pointer transition-all duration-300" style={{ animationDelay: '0.4s' }} onClick={() => {window.scrollTo(0, 0); window.location.href = '/services/data-analytics';}}>
             <div className="w-16 h-16 bg-purple-500/20 rounded-xl flex items-center justify-center mb-6 group-hover:bg-purple-500/30 transition-colors relative z-10">
               <BarChart className="w-8 h-8 text-purple-400" />
             </div>
             <h4 className="text-xl font-bold mb-4 relative z-10">Data Strategy & Analytics</h4>
-            <p className="text-gray-300 mb-4 relative z-10">Turn your data into actionable insights with advanced analytics and strategic data management.</p>
+            <p className="text-gray-300 mb-4 relative z-10">Unlock the full value of your data with comprehensive strategy, engineering, and analytics solutions that transform information into competitive advantage.</p>
           </div>
 
-          {/* Staff Augmentation */}
+          {/* AI & Machine Learning */}
+          <div className="group floating-card conic-border bg-gradient-to-br from-gray-800 to-gray-900 p-8 rounded-2xl border border-gray-700 hover:border-emerald-500 reveal cursor-pointer transition-all duration-300" style={{ animationDelay: '0.5s' }} onClick={() => {window.scrollTo(0, 0); window.location.href = '/services/ai-ml';}}>
+            <div className="w-16 h-16 bg-emerald-500/20 rounded-xl flex items-center justify-center mb-6 group-hover:bg-emerald-500/30 transition-colors relative z-10">
+              <Brain className="w-8 h-8 text-emerald-400" />
+            </div>
+            <h4 className="text-xl font-bold mb-4 relative z-10">Artificial Intelligence & Machine Learning</h4>
+            <p className="text-gray-300 mb-4 relative z-10">Make AI work for real business outcomes with practical solutions that enhance productivity, improve decision-making, and future-proof operations.</p>
+          </div>
+
+          {/* Cloud Transformation & Optimization */}
+          <div className="group floating-card conic-border bg-gradient-to-br from-gray-800 to-gray-900 p-8 rounded-2xl border border-gray-700 hover:border-blue-500 reveal cursor-pointer transition-all duration-300" style={{ animationDelay: '0.6s' }} onClick={() => {window.scrollTo(0, 0); window.location.href = '/services/cloud';}}>
+            <div className="w-16 h-16 bg-blue-500/20 rounded-xl flex items-center justify-center mb-6 group-hover:bg-blue-500/30 transition-colors relative z-10">
+              <Server className="w-8 h-8 text-blue-400" />
+            </div>
+            <h4 className="text-xl font-bold mb-4 relative z-10">Cloud Transformation & Optimization</h4>
+            <p className="text-gray-300 mb-4 relative z-10">Build the foundation for agility, security, and growth with comprehensive cloud transformation that drives measurable results.</p>
+          </div>
+
+          {/* Staff Augmentation & Workforce Solutions */}
           <div className="group floating-card conic-border bg-gradient-to-br from-gray-800 to-gray-900 p-8 rounded-2xl border border-gray-700 hover:border-amber-500 reveal cursor-pointer transition-all duration-300" style={{ animationDelay: '0.7s' }} onClick={() => {window.scrollTo(0, 0); window.location.href = '/services/staff-augmentation';}}>
             <div className="w-16 h-16 bg-amber-500/20 rounded-xl flex items-center justify-center mb-6 group-hover:bg-amber-500/30 transition-colors relative z-10">
               <Users className="w-8 h-8 text-amber-400" />
             </div>
-            <h4 className="text-xl font-bold mb-4 relative z-10">Staff Augmentation</h4>
-            <p className="text-gray-300 mb-4 relative z-10">Scale your team with top-tier talent and specialized expertise to accelerate project delivery.</p>
+            <h4 className="text-xl font-bold mb-4 relative z-10">Staff Augmentation & Workforce Solutions</h4>
+            <p className="text-gray-300 mb-4 relative z-10">Access skilled IT professionals who bring the knowledge, agility, and experience needed to keep your projects moving forward.</p>
           </div>
 
           {/* Government Solutions */}

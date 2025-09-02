@@ -77,7 +77,7 @@ export default function StaffAugmentationPage() {
                 <span className="gradient-text">Staff Augmentation</span>
               </h1>
               <p className="text-xl text-gray-300 max-w-4xl mx-auto reveal-fade" data-delay="200">
-                Scale your team with skilled professionals who integrate seamlessly with your existing workforce and deliver immediate impact.
+                The pace of digital change demands expertise, fast. Access skilled IT professionals who bring the knowledge, agility, and experience needed to keep your projects moving forward.
               </p>
               <div className="mt-8 reveal-fade" data-delay="400">
                 <Link href="/contact" className="bg-gradient-to-r from-blue-600 to-emerald-600 px-8 py-4 rounded-lg font-semibold text-lg hover:scale-105 transition-transform inline-block">
@@ -88,66 +88,120 @@ export default function StaffAugmentationPage() {
           </div>
         </div>
 
+        {/* Methodology */}
+        <section className="py-20 bg-gray-900/50">
+          <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div className="text-center mb-16">
+              <h2 className="text-4xl font-bold mb-6">Our Talent Acquisition Methodology</h2>
+              <p className="text-xl text-gray-300">
+                A proven approach that ensures you get skilled professionals who can contribute immediately
+              </p>
+            </div>
+            
+            <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-8">
+              <div className="text-center">
+                <div className="w-16 h-16 bg-blue-500/20 rounded-full flex items-center justify-center mx-auto mb-6">
+                  <span className="text-2xl font-bold text-blue-400">1</span>
+                </div>
+                <h3 className="text-xl font-bold mb-4">Requirements Analysis</h3>
+                <p className="text-gray-300">
+                  Work closely with your team to understand specific skills, experience, and cultural fit requirements.
+                </p>
+              </div>
+              
+              <div className="text-center">
+                <div className="w-16 h-16 bg-emerald-500/20 rounded-full flex items-center justify-center mx-auto mb-6">
+                  <span className="text-2xl font-bold text-emerald-400">2</span>
+                </div>
+                <h3 className="text-xl font-bold mb-4">Talent Sourcing & Screening</h3>
+                <p className="text-gray-300">
+                  Tap into our extensive network of pre-vetted professionals with rigorous technical and cultural assessments.
+                </p>
+              </div>
+              
+              <div className="text-center">
+                <div className="w-16 h-16 bg-purple-500/20 rounded-full flex items-center justify-center mx-auto mb-6">
+                  <span className="text-2xl font-bold text-purple-400">3</span>
+                </div>
+                <h3 className="text-xl font-bold mb-4">Matching & Integration</h3>
+                <p className="text-gray-300">
+                  Carefully match candidates to your requirements and provide comprehensive onboarding support.
+                </p>
+              </div>
+              
+              <div className="text-center">
+                <div className="w-16 h-16 bg-amber-500/20 rounded-full flex items-center justify-center mx-auto mb-6">
+                  <span className="text-2xl font-bold text-amber-400">4</span>
+                </div>
+                <h3 className="text-xl font-bold mb-4">Ongoing Support & Management</h3>
+                <p className="text-gray-300">
+                  Continuous support, performance monitoring, and feedback collection to ensure project success.
+                </p>
+              </div>
+            </div>
+          </div>
+        </section>
+
         {/* Professional Roles */}
         <section className="py-20 zoom-container">
           <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 zoom-section">
             <div className="text-center mb-16 reveal-fade">
-              <h2 className="text-4xl font-bold mb-6">Expert Professionals Available</h2>
+              <h2 className="text-4xl font-bold mb-6">Expert Talent Categories</h2>
               <p className="text-xl text-gray-300 max-w-3xl mx-auto">
-                Access top-tier talent across all technology disciplines with professionals ready to contribute from day one.
+                Skilled professionals across all technology disciplines, carefully selected for technical skills and team collaboration ability.
               </p>
             </div>
 
             <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
               
-              {/* Software Engineers */}
+              {/* Software Development */}
               <div className="floating-card conic-border bg-gradient-to-br from-gray-800 to-gray-900 p-8 rounded-2xl border border-gray-700 hover:border-blue-500 transition-all duration-300 reveal-fade relative z-10" data-delay="100">
                 <div className="w-16 h-16 bg-blue-500/20 rounded-xl flex items-center justify-center mb-6 relative z-10">
                   <Code className="w-8 h-8 text-blue-400" />
                 </div>
-                <h3 className="text-2xl font-bold mb-4 text-blue-400 relative z-10">Software Engineers</h3>
+                <h3 className="text-2xl font-bold mb-4 text-blue-400 relative z-10">Software Development</h3>
                 <p className="text-gray-300 mb-6 relative z-10">
-                  Full-stack developers, frontend specialists, and backend engineers with expertise in modern technologies.
+                  Full-stack developers, mobile app developers, and DevOps engineers with expertise in modern technologies.
                 </p>
                 <ul className="space-y-2 text-gray-400 text-sm relative z-10">
-                  <li>• React, Angular, Vue.js</li>
-                  <li>• Node.js, Python, Java</li>
-                  <li>• Mobile Development (React Native, Flutter)</li>
-                  <li>• API Design & Development</li>
+                  <li>• Full-Stack & Mobile Developers</li>
+                  <li>• Frontend & Backend Specialists</li>
+                  <li>• DevOps Engineers</li>
+                  <li>• API & Microservices Development</li>
                 </ul>
               </div>
 
-              {/* Data Scientists */}
+              {/* Data & Analytics */}
               <div className="floating-card conic-border bg-gradient-to-br from-gray-800 to-gray-900 p-8 rounded-2xl border border-gray-700 hover:border-green-500 transition-all duration-300 reveal-fade relative z-10" data-delay="200">
                 <div className="w-16 h-16 bg-green-500/20 rounded-xl flex items-center justify-center mb-6 relative z-10">
                   <Database className="w-8 h-8 text-green-400" />
                 </div>
-                <h3 className="text-2xl font-bold mb-4 text-green-400 relative z-10">Data Scientists</h3>
+                <h3 className="text-2xl font-bold mb-4 text-green-400 relative z-10">Data & Analytics</h3>
                 <p className="text-gray-300 mb-6 relative z-10">
-                  Machine learning experts, data analysts, and AI specialists to unlock insights from your data.
+                  Data engineers, data scientists, and business intelligence analysts to unlock insights from your data.
                 </p>
                 <ul className="space-y-2 text-gray-400 text-sm relative z-10">
-                  <li>• Machine Learning & AI</li>
-                  <li>• Statistical Analysis</li>
-                  <li>• Data Visualization</li>
-                  <li>• Predictive Modeling</li>
+                  <li>• Data Engineers & Scientists</li>
+                  <li>• Business Intelligence Analysts</li>
+                  <li>• Data Visualization Specialists</li>
+                  <li>• Analytics Platform Experts</li>
                 </ul>
               </div>
 
-              {/* DevOps Engineers */}
+              {/* Cloud & Infrastructure */}
               <div className="floating-card conic-border bg-gradient-to-br from-gray-800 to-gray-900 p-8 rounded-2xl border border-gray-700 hover:border-orange-500 transition-all duration-300 reveal-fade relative z-10" data-delay="300">
                 <div className="w-16 h-16 bg-orange-500/20 rounded-xl flex items-center justify-center mb-6 relative z-10">
                   <Settings className="w-8 h-8 text-orange-400" />
                 </div>
-                <h3 className="text-2xl font-bold mb-4 text-orange-400 relative z-10">DevOps Engineers</h3>
+                <h3 className="text-2xl font-bold mb-4 text-orange-400 relative z-10">Cloud & Infrastructure</h3>
                 <p className="text-gray-300 mb-6 relative z-10">
-                  Infrastructure automation experts who streamline deployment and optimize system performance.
+                  Cloud architects, system administrators, and network engineers who design and manage modern infrastructure.
                 </p>
                 <ul className="space-y-2 text-gray-400 text-sm relative z-10">
-                  <li>• CI/CD Pipeline Setup</li>
-                  <li>• Cloud Infrastructure (AWS, Azure, GCP)</li>
-                  <li>• Kubernetes & Docker</li>
-                  <li>• Monitoring & Security</li>
+                  <li>• Cloud Architects & Engineers</li>
+                  <li>• System Administrators</li>
+                  <li>• Network Engineers</li>
+                  <li>• DevOps & Automation Specialists</li>
                 </ul>
               </div>
 
@@ -168,37 +222,54 @@ export default function StaffAugmentationPage() {
                 </ul>
               </div>
 
-              {/* QA Engineers */}
+              {/* Cybersecurity */}
               <div className="floating-card conic-border bg-gradient-to-br from-gray-800 to-gray-900 p-8 rounded-2xl border border-gray-700 hover:border-yellow-500 transition-all duration-300 reveal-fade relative z-10" data-delay="500">
                 <div className="w-16 h-16 bg-yellow-500/20 rounded-xl flex items-center justify-center mb-6 relative z-10">
                   <CheckCircle className="w-8 h-8 text-yellow-400" />
                 </div>
-                <h3 className="text-2xl font-bold mb-4 text-yellow-400 relative z-10">QA Engineers</h3>
+                <h3 className="text-2xl font-bold mb-4 text-yellow-400 relative z-10">Cybersecurity</h3>
                 <p className="text-gray-300 mb-6 relative z-10">
-                  Quality assurance specialists ensuring your products meet the highest standards.
+                  Security analysts, penetration testers, and compliance specialists ensuring your systems are protected.
                 </p>
                 <ul className="space-y-2 text-gray-400 text-sm relative z-10">
-                  <li>• Automated Testing</li>
-                  <li>• Manual Testing</li>
-                  <li>• Performance Testing</li>
-                  <li>• Test Strategy & Planning</li>
+                  <li>• Security Analysts</li>
+                  <li>• Penetration Testers</li>
+                  <li>• Compliance Specialists</li>
+                  <li>• Incident Response Experts</li>
                 </ul>
               </div>
 
-              {/* Technical Architects */}
+              {/* AI & Machine Learning */}
+              <div className="floating-card conic-border bg-gradient-to-br from-gray-800 to-gray-900 p-8 rounded-2xl border border-gray-700 hover:border-purple-500 transition-all duration-300 reveal-fade relative z-10" data-delay="500">
+                <div className="w-16 h-16 bg-purple-500/20 rounded-xl flex items-center justify-center mb-6 relative z-10">
+                  <Briefcase className="w-8 h-8 text-purple-400" />
+                </div>
+                <h3 className="text-2xl font-bold mb-4 text-purple-400 relative z-10">AI & Machine Learning</h3>
+                <p className="text-gray-300 mb-6 relative z-10">
+                  ML engineers, AI researchers, and NLP specialists who build intelligent systems and automation.
+                </p>
+                <ul className="space-y-2 text-gray-400 text-sm relative z-10">
+                  <li>• Machine Learning Engineers</li>
+                  <li>• AI Researchers</li>
+                  <li>• NLP Specialists</li>
+                  <li>• Computer Vision Experts</li>
+                </ul>
+              </div>
+
+              {/* Enterprise Systems */}
               <div className="floating-card conic-border bg-gradient-to-br from-gray-800 to-gray-900 p-8 rounded-2xl border border-gray-700 hover:border-red-500 transition-all duration-300 reveal-fade relative z-10" data-delay="600">
                 <div className="w-16 h-16 bg-red-500/20 rounded-xl flex items-center justify-center mb-6 relative z-10">
                   <Users className="w-8 h-8 text-red-400" />
                 </div>
-                <h3 className="text-2xl font-bold mb-4 text-red-400 relative z-10">Technical Architects</h3>
+                <h3 className="text-2xl font-bold mb-4 text-red-400 relative z-10">Enterprise Systems</h3>
                 <p className="text-gray-300 mb-6 relative z-10">
-                  Senior architects who design scalable solutions and guide technical decision-making.
+                  Salesforce, SAP, ServiceNow, and other enterprise platform specialists with deep domain expertise.
                 </p>
                 <ul className="space-y-2 text-gray-400 text-sm relative z-10">
-                  <li>• System Architecture Design</li>
-                  <li>• Technology Stack Selection</li>
-                  <li>• Performance Optimization</li>
-                  <li>• Technical Leadership</li>
+                  <li>• Salesforce Specialists</li>
+                  <li>• SAP Consultants</li>
+                  <li>• ServiceNow Developers</li>
+                  <li>• ERP & CRM Platform Experts</li>
                 </ul>
               </div>
 
@@ -212,7 +283,7 @@ export default function StaffAugmentationPage() {
             <div className="text-center mb-16 reveal-fade">
               <h2 className="text-4xl font-bold mb-6">Flexible Engagement Models</h2>
               <p className="text-xl text-gray-300 max-w-3xl mx-auto">
-                Choose the engagement model that best fits your project needs and timeline requirements.
+                We support your project cycles by scaling your workforce up or down as needed, with full transparency and speed.
               </p>
             </div>
             
@@ -221,9 +292,9 @@ export default function StaffAugmentationPage() {
                 <div className="w-20 h-20 bg-blue-500/20 rounded-full flex items-center justify-center mx-auto mb-6">
                   <Users className="w-10 h-10 text-blue-400" />
                 </div>
-                <h3 className="text-2xl font-bold mb-4">Dedicated Teams</h3>
+                <h3 className="text-2xl font-bold mb-4">Short-term Projects</h3>
                 <p className="text-gray-300">
-                  Full dedicated teams that work exclusively on your projects with complete focus and commitment.
+                  1-6 month engagements for specific initiatives with defined timelines and deliverables.
                 </p>
               </div>
               
@@ -231,9 +302,9 @@ export default function StaffAugmentationPage() {
                 <div className="w-20 h-20 bg-green-500/20 rounded-full flex items-center justify-center mx-auto mb-6">
                   <Briefcase className="w-10 h-10 text-green-400" />
                 </div>
-                <h3 className="text-2xl font-bold mb-4">Project-Based</h3>
+                <h3 className="text-2xl font-bold mb-4">Long-term Assignments</h3>
                 <p className="text-gray-300">
-                  Skilled professionals for specific projects with defined timelines and deliverables.
+                  6+ month engagements for ongoing support with ability to adjust team size based on project needs.
                 </p>
               </div>
               
@@ -241,9 +312,9 @@ export default function StaffAugmentationPage() {
                 <div className="w-20 h-20 bg-purple-500/20 rounded-full flex items-center justify-center mx-auto mb-6">
                   <Settings className="w-10 h-10 text-purple-400" />
                 </div>
-                <h3 className="text-2xl font-bold mb-4">On-Demand</h3>
+                <h3 className="text-2xl font-bold mb-4">Hybrid Teams</h3>
                 <p className="text-gray-300">
-                  Flexible staffing for peak periods, specialized tasks, or temporary skill gaps.
+                  Combination of our resources and your internal team with remote & on-site options based on your preferences.
                 </p>
               </div>
             </div>
@@ -262,23 +333,23 @@ export default function StaffAugmentationPage() {
             
             <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-6">
               <div className="text-center reveal-fade" data-delay="100">
-                <div className="text-3xl font-bold text-blue-400 mb-2">48hrs</div>
-                <p className="text-gray-300">Average time to start</p>
+                <div className="text-3xl font-bold text-blue-400 mb-2">1-2 weeks</div>
+                <p className="text-gray-300">Rapid Deployment</p>
               </div>
               
               <div className="text-center reveal-fade" data-delay="200">
-                <div className="text-3xl font-bold text-green-400 mb-2">5+ years</div>
-                <p className="text-gray-300">Average experience</p>
+                <div className="text-3xl font-bold text-green-400 mb-2">30-50%</div>
+                <p className="text-gray-300">Cost Efficiency Savings</p>
               </div>
               
               <div className="text-center reveal-fade" data-delay="300">
-                <div className="text-3xl font-bold text-purple-400 mb-2">98%</div>
-                <p className="text-gray-300">Client satisfaction</p>
+                <div className="text-3xl font-bold text-purple-400 mb-2">Zero</div>
+                <p className="text-gray-300">Long-term Commitments</p>
               </div>
               
               <div className="text-center reveal-fade" data-delay="400">
-                <div className="text-3xl font-bold text-orange-400 mb-2">24/7</div>
-                <p className="text-gray-300">Support available</p>
+                <div className="text-3xl font-bold text-orange-400 mb-2">Immediate</div>
+                <p className="text-gray-300">Access to Expertise</p>
               </div>
             </div>
           </div>
