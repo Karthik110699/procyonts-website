@@ -7,10 +7,6 @@ export default function HeroSection() {
   
   const heroTexts = [
     {
-      line1: "AI-Powered Solutions?",
-      line2: "Procyon's Your Partner!"
-    },
-    {
       line1: "Revolutionizing Enterprises with AI, Talent, and Technology,",
       line2: "Procyon's Everywhere!"
     },
@@ -42,7 +38,7 @@ export default function HeroSection() {
     // Rotate through hero texts
     const heroTextInterval = setInterval(() => {
       setCurrentHeroTextIndex((prev) => (prev + 1) % heroTexts.length);
-    }, 4000);
+    }, 6000);
 
     return () => {
       clearInterval(serviceInterval);
@@ -74,11 +70,7 @@ export default function HeroSection() {
           {/* Mobile Content - Centered */}
           <div className="flex-1 flex flex-col justify-center items-center px-4 py-8">
             <div className="text-center space-y-8">
-              <h1 className={`font-bold leading-tight text-white ${
-                currentHeroTextIndex === 0 
-                  ? 'text-2xl sm:text-3xl md:text-4xl' 
-                  : 'text-lg sm:text-xl md:text-2xl'
-              }`}>
+              <h1 className="text-lg sm:text-xl md:text-2xl font-bold leading-tight text-white">
                 <span className="block animated-gradient-text mb-2">
                   {heroTexts[currentHeroTextIndex].line1}
                 </span>
@@ -142,11 +134,7 @@ export default function HeroSection() {
               
               {/* Fixed Innovative Text */}
               <div className="mb-8">
-                <h1 className={`font-bold leading-tight text-white mb-6 ${
-                  currentHeroTextIndex === 0 
-                    ? 'text-6xl xl:text-7xl' 
-                    : 'text-4xl xl:text-5xl'
-                }`}>
+                <h1 className="text-4xl xl:text-5xl font-bold leading-tight text-white mb-6">
                   <span className="block animated-gradient-text mb-2">
                     {heroTexts[currentHeroTextIndex].line1}
                   </span>
