@@ -1,6 +1,6 @@
 import { Facebook, Linkedin, Twitter } from "lucide-react";
 import { Link } from "wouter";
-import logoUrl from "@assets/image_1756791271181.png";
+import logoUrl from "@assets/PTS_Logo-removebg-preview_1756791869200.png";
 
 export default function Footer() {
   return (

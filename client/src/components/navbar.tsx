@@ -1,7 +1,7 @@
 import { useState, useEffect } from "react";
 import { Link, useLocation } from "wouter";
 import { Menu, X } from "lucide-react";
-import logoUrl from "@assets/image_1756791271181.png";
+import logoUrl from "@assets/PTS_Logo-removebg-preview_1756791869200.png";
 
 export default function Navbar() {
   const [isScrolled, setIsScrolled] = useState(false);
