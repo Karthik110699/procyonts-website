@@ -10,24 +10,11 @@ export default function Footer() {
         <div className="grid md:grid-cols-4 gap-8">
           <div className="space-y-4">
             <div className="flex items-center">
-              <div className="logo-flip-container h-10 sm:h-12 lg:h-16">
-                <div className="logo-flip-inner h-full">
-                  <div className="logo-flip-front">
-                    <img 
-                      src={logoUrl} 
-                      alt="Procyon Technostructure" 
-                      className="h-10 sm:h-12 lg:h-16 w-auto"
-                    />
-                  </div>
-                  <div className="logo-flip-back">
-                    <img 
-                      src={logoWhiteUrl} 
-                      alt="Procyon Technostructure" 
-                      className="h-10 sm:h-12 lg:h-16 w-auto"
-                    />
-                  </div>
-                </div>
-              </div>
+              <img 
+                src={logoWhiteUrl} 
+                alt="Procyon Technostructure" 
+                className="h-10 sm:h-12 lg:h-16 w-auto"
+              />
             </div>
             <p className="text-gray-400">
               Transforming businesses through innovative technology solutions since 2004.
