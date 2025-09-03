@@ -607,7 +607,9 @@ export default function GovernmentServicesPage() {
                 'Nikon', 'Olympus', 'Oki', 'Panasonic', 'Philips', 'Palm',
                 'Procom', 'Polaroid', 'Proxima', 'Raritan', 'Sonicwall', 'Sony',
                 'Samsung', 'Symantec', 'Toshiba', 'Tripp-lite', 'TDK', 'Targus',
-                'U.S.Robotics', 'Visioneer', 'Viewsonic', 'Veritas', 'Western Digital', '3Com'
+                'U.S.Robotics', 'Visioneer', 'Viewsonic', 'Veritas', 'Western Digital', '3Com',
+                'VEEAM', 'SUPER LOGICS', 'GETAC', 'QUANTUM', 'EMC2', 'WEBSENSE',
+                'XEROX', 'CHECKPOINT'
               ].map((partner, index) => (
                 <div 
                   key={index}
