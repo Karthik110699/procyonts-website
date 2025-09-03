@@ -585,6 +585,45 @@ export default function GovernmentServicesPage() {
           </div>
         </section>
 
+        {/* Our Partners Section */}
+        <section className="py-20 bg-gray-900/50">
+          <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div className="text-center mb-16">
+              <h2 className="text-4xl font-bold text-white mb-4">Our Partners</h2>
+              <p className="text-xl text-gray-300 max-w-4xl mx-auto">
+                Trusted technology partnerships enabling comprehensive government solutions
+              </p>
+            </div>
+            
+            <div className="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-4 lg:grid-cols-6 gap-6">
+              {[
+                'Adobe', 'Autodesk', 'Adaptec', 'AMD', 'APC', 'Belkin',
+                'Brother', 'Canon', 'CA', 'Cisco', 'Citrix', 'D-link',
+                'Dell', 'Exabyte', 'Epson', 'Fellows', 'Fluke Networks', 'Fujitsu',
+                'File Maker', 'Gateway', 'Hitachi', 'HP', 'Imation', 'IBM',
+                'Infocus', 'Juniper', 'JVC', 'Kensington', 'Kingston', 'Lacie',
+                'Logitech', 'divnksys', 'Lenovo', 'Lexmark', 'Microtek', 'Maxtor',
+                'Maxell', 'Minolta', 'Macromedia', 'McAfee', 'Microsoft', 'NEC',
+                'Nikon', 'Olympus', 'Oki', 'Panasonic', 'Philips', 'Palm',
+                'Procom', 'Polaroid', 'Proxima', 'Raritan', 'Sonicwall', 'Sony',
+                'Samsung', 'Symantec', 'Toshiba', 'Tripp-lite', 'TDK', 'Targus',
+                'U.S.Robotics', 'Visioneer', 'Viewsonic', 'Veritas', 'Western Digital', '3Com'
+              ].map((partner, index) => (
+                <div 
+                  key={index}
+                  className="bg-gray-800/50 backdrop-blur-sm rounded-lg p-4 border border-gray-700/50 hover:border-blue-500/50 transition-all duration-300 group hover:bg-gray-700/30"
+                >
+                  <div className="text-center">
+                    <span className="text-gray-300 font-medium group-hover:text-blue-400 transition-colors duration-300">
+                      {partner}
+                    </span>
+                  </div>
+                </div>
+              ))}
+            </div>
+          </div>
+        </section>
+
         <ContactSection />
       </div>
     </>
