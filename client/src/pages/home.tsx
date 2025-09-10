@@ -77,7 +77,7 @@ export default function Home() {
                   </div>
                   <div className="flex items-center space-x-2">
                     <div className="w-2 h-2 bg-emerald-400 rounded-full"></div>
-                    <span>Enterprise Architecture</span>
+                    <span>Quality Staffing Services</span>
                   </div>
                   <div className="flex items-center space-x-2">
                     <div className="w-2 h-2 bg-purple-400 rounded-full"></div>
@@ -87,11 +87,11 @@ export default function Home() {
                 <div className="space-y-2">
                   <div className="flex items-center space-x-2">
                     <div className="w-2 h-2 bg-amber-400 rounded-full"></div>
-                    <span>IT Professional Staffing</span>
+                    <span>Salesforce Consulting</span>
                   </div>
                   <div className="flex items-center space-x-2">
                     <div className="w-2 h-2 bg-rose-400 rounded-full"></div>
-                    <span>AI Innovation</span>
+                    <span>AI & Next-Gen Technologies</span>
                   </div>
                   <div className="flex items-center space-x-2">
                     <div className="w-2 h-2 bg-cyan-400 rounded-full"></div>
