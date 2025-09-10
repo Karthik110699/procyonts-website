@@ -149,18 +149,7 @@ export default function AboutPage() {
             At Procyon, we don't just adapt to the digital era, we help businesses lead it with confidence and vision.
             <br /><br />
             With 20 years of proven expertise, we have grown into a trusted global enterprise solutions provider, headquartered in Novato, CA, with a strong presence in Toronto and Chennai. Over the years, we've delivered over 200 successful engagements, partnering with startups, scale-ups, and Fortune 500 enterprises alike.
-            <br /><br />
-            Our strength lies in delivering end-to-end technology solutions that balance innovation with practicality:
           </p>
-          <div className="max-w-6xl mt-4 reveal-fade" data-delay="300">
-            <ul className="text-lg text-gray-300 space-y-1 leading-normal">
-              <li>• <span className="text-blue-400 font-semibold">Enterprise Solutions</span> that align with business goals and scale with growth.</li>
-              <li>• <span className="text-emerald-400 font-semibold">Quality Staffing Services</span> that ensure the right talent drives every transformation.</li>
-              <li>• <span className="text-purple-400 font-semibold">Product Development</span> that turns ideas into market-ready innovations.</li>
-              <li>• <span className="text-amber-400 font-semibold">Salesforce Consulting</span> where we are recognized as pioneers, helping clients maximize the platform's full potential.</li>
-              <li>• <span className="text-cyan-400 font-semibold">AI & Next-Gen Technologies</span> where we are leading the way in redefining how businesses work smarter and faster.</li>
-            </ul>
-          </div>
           <p className="text-xl text-gray-300 max-w-6xl mt-8 reveal-fade" data-delay="400">
             At Procyon, every solution is built to be scalable, sustainable, and future-ready. Because we believe technology should not only solve today's challenges but also create tomorrow's opportunities.
           </p>
