@@ -81,7 +81,7 @@ export default function Home() {
                   </div>
                   <div className="flex items-center space-x-2">
                     <div className="w-2 h-2 bg-purple-400 rounded-full"></div>
-                    <span>Digital Strategy</span>
+                    <span>Product Development</span>
                   </div>
                 </div>
                 <div className="space-y-2">
@@ -91,11 +91,11 @@ export default function Home() {
                   </div>
                   <div className="flex items-center space-x-2">
                     <div className="w-2 h-2 bg-rose-400 rounded-full"></div>
-                    <span>AI & Next-Gen Technologies</span>
+                    <span>Digital Strategy</span>
                   </div>
                   <div className="flex items-center space-x-2">
                     <div className="w-2 h-2 bg-cyan-400 rounded-full"></div>
-                    <span>Product Development</span>
+                    <span>AI & Next-Gen Technologies</span>
                   </div>
                 </div>
               </div>
