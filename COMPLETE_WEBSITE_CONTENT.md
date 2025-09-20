@@ -470,10 +470,67 @@ Our SAP-certified experts help transform your organisation into an agile, data-d
 "Successful SAP adoption goes beyond technology. We provide change management services to ensure that your team is ready to embrace new systems and processes. With training and support programs, we ensure a smooth transition that minimises disruption to your business."
 
 ### Our SAP Services
-**Description:** "We offer comprehensive SAP services, ensuring you maximise the ROI of your SAP investments"
+**Main Heading:** "Our SAP Services"
+**Subtitle:** "We offer comprehensive SAP services, ensuring you maximise the ROI of your SAP investments"
 
 **SAP S/4HANA Transformation:**
 "Propel your business forward by migrating to SAP S/4HANA, the next-generation ERP system designed to simplify processes, enhance agility, and accelerate innovation."
+
+**SAP Implementation & Optimization:**
+"From planning and system design to execution and optimisation, we provide full-service SAP implementations focused on system efficiency and end-user adoption."
+
+**SAP Cloud Solutions:**
+"SAP Cloud offers unmatched flexibility, scalability, and innovation. We help businesses leverage SAP SuccessFactors, SAP Ariba, and SAP Analytics Cloud."
+
+**SAP Industry-Specific Solutions:**
+"With deep expertise across various sectors, we provide industry-specific SAP solutions that address unique challenges in financial services, manufacturing, and healthcare."
+
+**SAP System Integration:**
+"Our integration expertise enables you to connect SAP with third-party systems, applications, and data sources, creating a cohesive ecosystem that drives business value."
+
+**SAP Managed Services & Support:**
+"Post-implementation, Procyon provides comprehensive SAP support services to ensure your SAP systems continue to operate at peak performance."
+
+### Key SAP Modules We Deliver Expertise In
+**Main Heading:** "Key SAP Modules We Deliver Expertise In"
+**Subtitle:** "Procyon's team is proficient in implementing and managing SAP modules across various business functions"
+
+**SAP Modules:**
+- SAP S/4HANA Finance: Leverage real-time financial management capabilities with streamlined financial accounting, analysis, and reporting
+- SAP HCM (Human Capital Management): Maximise employee potential with SAP SuccessFactors for talent management and workforce optimisation
+- SAP Supply Chain Management (SCM): Enhance efficiency across your supply chain with optimal inventory management and production planning
+- SAP Ariba: Transform your procurement operations, improving supplier collaboration and optimising spend management
+- SAP Business Warehouse (BW/4HANA): Unlock powerful analytics and real-time insights with business intelligence tools that scale with your business
+- SAP Customer Experience (CX): Deliver superior customer service with SAP C/4HANA, encompassing sales, marketing, and customer service
+- SAP Analytics Cloud (SAC): Leverage advanced analytics to visualise and analyse your business data in real-time for better decision-making
+- SAP CPQ (Configure, Price, Quote): Simplify and accelerate your sales processes with accurate configuration, pricing, and quoting
+- SAP Integrated Business Planning (IBP): Optimise your sales and operations planning, ensuring alignment between demand planning and financial performance
+- SAP Transportation Management (TM): Streamline your transportation operations, ensuring efficient logistics and reducing costs across your supply chain
+
+### Our SAP Expertise Across Industries
+**Main Heading:** "Our SAP Expertise Across Industries"
+**Subtitle:** "Procyon specialises in delivering industry-specific SAP solutions that provide unique insights and drive growth"
+
+**Industry Expertise:**
+- Manufacturing: Streamline your operations and achieve greater visibility with SAP's solutions for production, logistics, and supply chain management
+- Healthcare & Life Sciences: Improve patient care and operational efficiency with SAP's healthcare-specific tools for managing clinical and operational data
+- Financial Services: Leverage SAP's robust financial management solutions to stay compliant and improve financial reporting
+- Retail & Consumer Goods: Enhance customer experiences and streamline sales operations with SAP's commerce and customer experience solutions
+- Public Sector: Drive digital transformation in government organizations through SAP's public sector-specific tools for managing resources and services
+
+### Why Procyon for SAP
+**Main Heading:** "Why Procyon?"
+
+**Key Benefits:**
+- SAP Expertise Across the Globe: Recognised as a leading SAP consulting firm with deep expertise in delivering results worldwide
+- Certified SAP Professionals: Our team comprises SAP-certified experts with extensive industry knowledge and technical proficiency
+- Rapid Resource Deployment: We maintain a bench of qualified SAP consultants, ensuring fast resource mobilisation
+- Proven Success: Strong track record of successful SAP implementations with best practices and proven methodologies
+
+### Transform Your SAP Environment
+**Main Heading:** "Transform Your SAP Environment with Procyon"
+**Description:** "Are you looking to migrate to SAP S/4HANA, optimise your existing systems, or build a robust cloud-first SAP environment? Procyon Technostructure is your trusted SAP partner. Let us help you drive efficiency, scalability, and growth with tailored SAP solutions."
+**Closing:** "Connect with us today to learn more about our SAP services."
 
 ---
 
