@@ -221,11 +221,35 @@ Our strength lies in delivering end-to-end technology solutions that balance inn
 ### Our Journey Timeline
 **Main Heading:** "Our Journey"
 **Subtitle:** "Growing with Vision, Innovating with Purpose"
+**Description:** "From a boutique consultancy to a global transformation partner"
+
+**Journey Overview:**
+"Since 2004, Procyon has grown from a boutique IT consultancy in California to a global transformation partner with a presence in Toronto and Chennai. Each milestone from launching AI-driven platforms like Hekma and Akra to building a strong AI and Cloud practice reflects our commitment to innovation and impact. With 200+ projects delivered, we continue to help businesses stay agile, future-ready, and competitive in the digital era."
 
 **Timeline Milestones:**
 
+**2004:**
+"Founded in San Rafael, CA"
+- The beginning of innovation
+
+**2008:**
+"Expanded operations to Toronto, Canada"
+- Global expansion begins
+
+**2015:**
+"Opened our delivery center in Chennai, India"
+- Strengthening global presence
+
+**2018:**
+"Hekma: AI drug development accelerator"
+- AI innovation breakthrough
+
+**2020:**
+"AI & Cloud practice launched"
+- Next-gen solutions era
+
 **2022:**
-"Akra: Digital Health SaaS (SIMD, SaMD)"
+"Akra: Digital Health SaaS (SiMD, SaMD)"
 - Healthcare transformation
 
 **2023:**
@@ -263,14 +287,18 @@ Our strength lies in delivering end-to-end technology solutions that balance inn
 
 ### Statistics Section
 **Heading:** "By the Numbers"
+**Subtitle:** "Our track record of success"
 
 **Key Statistics:**
-- 20+ Years of Excellence
-- 250+ Expert Consultants
-- 1200+ Successful Projects
-- 3 Global Offices
-- 75+ Enterprise Clients
-- 15+ Technology Partnerships
+- 20+ Years of Trusted Service
+- 75+ Global Customers
+- 200+ Successful Projects
+- 3 Worldwide Branches
+
+### Call-to-Action Section
+**Heading:** "Ready to Transform Your Business?"
+**Description:** "Let's work together to unlock your organization's full potential with innovative technology solutions."
+**Final CTA:** "Start Your Journey"
 
 ---
 
