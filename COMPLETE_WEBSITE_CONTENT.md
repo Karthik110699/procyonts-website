@@ -406,6 +406,9 @@ We help organizations transform IT service management (ITSM) by unlocking the fu
 • User-Centric Experience Design
 • Future-Ready Automation
 
+### Closing Statement
+"With Procyon, ServiceNow becomes more than a workflow tool, it becomes the backbone of your digital operations."
+
 ---
 
 ## SAP SOLUTIONS PAGE CONTENT
@@ -489,13 +492,78 @@ Our SAP-certified experts help transform your organisation into an agile, data-d
 • Hardware Procurement
 • Digital Transformation
 
-**Digital Engineering:**
-**Description:** "End-to-end digital engineering services that transform ideas into scalable, market-ready solutions."
-**Services:**
-• Custom Software Development
-• Mobile App Development
-• API Development & Integration
-• DevOps & Automation
+
+---
+
+## DATA ANALYTICS SERVICE PAGE CONTENT
+
+### Main Header
+**Page Title:** "Data Strategy & Analytics"
+**Description:** "Unlock the full value of your data with comprehensive strategy, engineering, and analytics solutions that transform information into competitive advantage."
+
+### Service Details
+**Data Strategy & Consulting:**
+"Develop comprehensive data strategies aligned with business objectives"
+
+**Data Engineering & Architecture:**
+"Build robust data pipelines and scalable architectures"
+
+**Advanced Analytics & BI:**
+"Transform raw data into actionable business insights"
+
+**Data Governance & Compliance:**
+"Ensure data quality, security, and regulatory compliance"
+
+### Call-to-Action Section
+**Final CTA:** "Start Your Data Journey"
+
+---
+
+## AI/ML SERVICE PAGE CONTENT
+
+### Main Header
+**Page Title:** "Artificial Intelligence & Machine Learning"
+**Description:** "Make AI work for real business outcomes with practical solutions that enhance productivity, improve decision-making, and future-proof operations."
+
+### Service Details
+**AI Strategy & Use Case Development:**
+"Identify and develop practical AI applications for your business"
+
+**Machine Learning Model Development:**
+"Build and deploy custom ML models for specific business needs"
+
+**Natural Language Processing (NLP):**
+"Extract insights from text and enable conversational AI capabilities"
+
+**AI-Powered Automation:**
+"Automate complex processes using intelligent automation solutions"
+
+### Call-to-Action Section
+**Final CTA:** "Start Your AI Journey"
+
+---
+
+## STAFF AUGMENTATION SERVICE PAGE CONTENT
+
+### Main Header
+**Page Title:** "Staff Augmentation & Workforce Solutions"
+**Description:** "Access skilled IT professionals who bring the knowledge, agility, and experience needed to keep your projects moving forward."
+
+### Service Details
+**Talent Acquisition & Screening:**
+"Find and vet top IT talent for your specific requirements"
+
+**Technical Skills Assessment:**
+"Comprehensive evaluation of candidates' technical capabilities"
+
+**Project-Based Staffing:**
+"Flexible staffing solutions for specific project needs"
+
+**Dedicated Development Teams:**
+"Build dedicated teams that integrate seamlessly with your organization"
+
+### Call-to-Action Section
+**Final CTA:** "Immediate Access to Expertise"
 
 ---
 
@@ -535,6 +603,9 @@ Our SAP-certified experts help transform your organisation into an agile, data-d
 
 **Cloud Security:**
 "Comprehensive security solutions to protect your cloud infrastructure and data."
+
+### Call-to-Action Section
+**Final CTA:** "Start Your Cloud Migration"
 
 ---
 
@@ -803,6 +874,9 @@ Because true growth is measured not just by business success, but by the positiv
 **Technology Partners (74 companies):**
 3M, Adobe, Amazon Web Services, AMD, Apple, AT&T, Atlassian, Autodesk, Black Box, Brother, Canon, Cisco, Citrix, Dell, DocuSign, Dropbox, Epson, Google, HP, IBM, Intel, Lenovo, Microsoft, NetApp, NVIDIA, Oracle, Salesforce, ServiceNow, VMware, Zoom, and 44 others.
 
+### Page Ending
+**Final Statement:** "Xerox Checkpoint"
+
 ---
 
 ## PRIVACY POLICY PAGE CONTENT
@@ -830,6 +904,9 @@ Because true growth is measured not just by business success, but by the positiv
 
 ### Third-Party Disclosure
 "We do not sell, trade, or otherwise transfer your personal information to third parties without your consent, except as necessary to provide you with the services you request or as required by law."
+
+### Closing Statement
+"Thank you for trusting Procyon Technostructure with your personal information."
 
 ---
 
