@@ -264,23 +264,13 @@ Our strength lies in delivering end-to-end technology solutions that balance inn
 **Main Heading:** "Our Core Values"
 **Subtitle:** "The fundamental principles that drive our innovation and guide every decision we make"
 
-**01. Customer FIRST:**
-"Our customers are at the heart of everything we do. Their success is our success, and we prioritize their needs above all else."
-
-**02. Every Customer is Different:**
-"No ONE size fits all. We understand that each client has unique challenges and we tailor our solutions accordingly."
-
-**03. Transparency and Collaboration:**
-"Open communication and genuine partnership form the foundation of our client relationships and internal teamwork."
-
-**04. Celebrate and Value Diversity:**
-"We embrace different perspectives, backgrounds, and ideas as they fuel innovation and drive exceptional outcomes."
-
-**05. Continuous Learning & Retrospect:**
-"We constantly evolve through learning, reflection, and adaptation to stay ahead in the ever-changing technology landscape."
-
-**06. Encourage Ideation & Creativity:**
-"We foster an environment where innovative thinking thrives and creative solutions emerge to solve complex challenges."
+**Core Values (Circular Display):**
+- Customer FIRST
+- Every Customer is Different
+- Transparency and Collaboration
+- Celebrate and Value Diversity
+- Continuous Learning & Retrospect
+- Encourage Ideation & Creativity
 
 **Values Statement:**
 "These values are not just words on a page—they are the driving force behind every solution we create, every relationship we build, and every innovation we pursue in our mission to transform businesses."
@@ -377,6 +367,43 @@ Our strength lies in delivering end-to-end technology solutions that balance inn
 
 ### Punch Line Bridge
 **Main Message:** "From Sales to Health, CPQ to Analytics, Procyon brings Salesforce to life."
+
+### Our Salesforce Capabilities
+**Main Heading:** "Our Salesforce Capabilities"
+**Subtitle:** "Deep, integrated, industry-grade solutions across Salesforce's entire ecosystem"
+
+**Salesforce Clouds:**
+- Sales Cloud: Streamline lead management, opportunity tracking, and revenue forecasting
+- Service Cloud: Deliver seamless, omnichannel customer experiences and smart support
+- Marketing Cloud & Pardot: Drive data-driven engagement through email, web, and automation
+- Commerce Cloud: Personalized e-commerce at speed, built for conversion
+- Experience Cloud: Create dynamic portals for customers, partners, or employees
+- CPQ & Revenue Cloud: Speed up deals with precise quoting, pricing, and approvals
+- Financial Services Cloud: Tailored solutions for banking, insurance, and wealth management
+- Health Cloud: Modern patient engagement solutions built for care and collaboration
+- Manufacturing Cloud: Align manufacturing, sales, and forecasting with real-time visibility
+- Nonprofit Cloud: Drive mission impact with tools for fundraising, outreach, and programs
+- Analytics & Einstein AI: Unlock meaningful insights, predictive alerts, and smart automation
+- Integration Cloud: Seamlessly connect Salesforce to ERPs, HR systems, and custom systems
+
+### Our Proven 3-Step Approach
+**Main Heading:** "Our Proven 3-Step Approach"
+**Subtitle:** "A streamlined methodology that delivers results every time"
+**Tagline:** "Strategy, delivery, support, we're with you end-to-end."
+
+**Step 1: Discover & Define**
+"We begin by understanding your business objectives, then design a Salesforce roadmap that delivers measurable impact."
+
+**Step 2: Implement & Integrate (Agile)**
+"Fast, iterative delivery that keeps your operations running while we build, integrate, and optimize Salesforce."
+
+**Step 3: Enable & Sustain**
+"Through training, support, and continuous evolution, we help your team adopt and grow long after go-live."
+
+### Final CTA Section
+**Heading:** "Ready to Transform with Salesforce?"
+**Description:** "Procyon isn't just your implementer, we're your Salesforce transformation partner. Whether you're starting fresh, optimizing existing workflows, or scaling your team with elite Salesforce talent, let's make your vision a reality."
+**CTA Buttons:** "Contact Us" and "Request a Demo"
 
 ---
 
