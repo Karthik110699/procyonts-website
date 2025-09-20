@@ -221,42 +221,20 @@ Our strength lies in delivering end-to-end technology solutions that balance inn
 ### Our Journey Timeline
 **Main Heading:** "Our Journey"
 **Subtitle:** "Growing with Vision, Innovating with Purpose"
-**Description:** "From a boutique consultancy to a global transformation partner"
-
-**Journey Overview:**
-"Since 2004, Procyon has grown from a boutique IT consultancy in California to a global transformation partner with a presence in Toronto and Chennai. Each milestone from launching AI-driven platforms like Hekma and Akra to building a strong AI and Cloud practice reflects our commitment to innovation and impact. With 200+ projects delivered, we continue to help businesses stay agile, future-ready, and competitive in the digital era."
 
 **Timeline Milestones:**
 
-**2004 - The Beginning:**
-"Procyon Technostructure was founded with a bold vision: to democratize technology and make advanced solutions accessible to businesses of all sizes. Starting as a boutique IT consultancy in California, we began with a small team of passionate engineers committed to innovation and excellence."
+**2022:**
+"Akra: Digital Health SaaS (SIMD, SaMD)"
+- Healthcare transformation
 
-**2006 - First Major Partnership:**
-"Established our first major partnership with ServiceNow, becoming one of the early implementation partners. This partnership laid the foundation for our expertise in IT service management and workflow automation."
+**2023:**
+"200+ projects delivered"
+- Milestone achievement
 
-**2008 - International Expansion:**
-"Opened our first international office in Toronto, Canada, marking the beginning of our global journey. This expansion allowed us to serve North American markets more effectively and build deeper relationships with enterprise clients."
-
-**2012 - Salesforce Excellence:**
-"Achieved Salesforce Partner status and completed over 50 successful Salesforce implementations. Our expertise in CRM transformation and customer experience optimization became a cornerstone of our service offerings."
-
-**2015 - AI Innovation Lab:**
-"Launched our AI Innovation Lab, focusing on machine learning, natural language processing, and intelligent automation. This initiative positioned us at the forefront of the AI revolution in enterprise technology."
-
-**2018 - Chennai Operations:**
-"Established our development center in Chennai, India, expanding our global footprint and technical capabilities. This strategic location became our hub for software development, data analytics, and AI research."
-
-**2020 - Cloud-First Strategy:**
-"Pivoted to a cloud-first strategy, helping hundreds of businesses transition to remote work and digital-first operations. Our cloud transformation expertise became crucial during the global digital acceleration."
-
-**2022 - Product Innovation:**
-"Launched Hekma and Akra, our proprietary AI-driven platforms for healthcare and enterprise automation. These products showcased our evolution from a services company to a product-led innovation partner."
-
-**2024 - AI & Data Excellence:**
-"Achieved recognition as a leading AI and data analytics partner, with over 200 successful projects delivered. Our focus on practical AI applications and measurable business outcomes set new industry standards."
-
-**Today - Future-Ready Partner:**
-"With 250+ team members across three continents, we continue to push the boundaries of what's possible in enterprise technology. Our commitment to innovation, sustainability, and positive social impact drives everything we do."
+**2025:**
+"Implemented AI Accelerators to enhance operations and speed delivery"
+- Future-ready operations
 
 ### Core Values Section
 **Main Heading:** "Our Core Values"
