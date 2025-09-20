@@ -582,6 +582,11 @@ Our SAP-certified experts help transform your organisation into an agile, data-d
 • Hardware Procurement
 • Digital Transformation
 
+### Custom Solutions Section
+**Heading:** "Need a Custom Solution?"
+**Description:** "We tailor our services to meet your unique business requirements and objectives."
+**CTA Button:** "Discuss Your Project"
+
 
 ---
 
