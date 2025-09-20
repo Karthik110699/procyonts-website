@@ -260,21 +260,28 @@ Our strength lies in delivering end-to-end technology solutions that balance inn
 
 ### Core Values Section
 **Main Heading:** "Our Core Values"
+**Subtitle:** "The fundamental principles that drive our innovation and guide every decision we make"
 
-**Customer FIRST:**
-- **Innovation with Purpose:** "Every solution is designed with the customer's long-term success in mind."
-- **Agility in Delivery:** "We adapt quickly to changing requirements and market conditions."
-- **Excellence as Standard:** "We never compromise on quality and always strive for excellence."
+**01. Customer FIRST:**
+"Our customers are at the heart of everything we do. Their success is our success, and we prioritize their needs above all else."
 
-**Transparency and Collaboration:**
-- **Open Communication:** "We believe in honest, clear communication at every level."
-- **Collaborative Partnership:** "We work alongside our clients, not just for them."
-- **Continuous Improvement:** "We constantly evolve our processes and skills."
+**02. Every Customer is Different:**
+"No ONE size fits all. We understand that each client has unique challenges and we tailor our solutions accordingly."
 
-**Innovation and Growth:**
-- **Cutting-Edge Solutions:** "We stay ahead of technological trends and innovations."
-- **Sustainable Practices:** "We build solutions that are environmentally and economically sustainable."
-- **Social Responsibility:** "We contribute positively to the communities we serve."
+**03. Transparency and Collaboration:**
+"Open communication and genuine partnership form the foundation of our client relationships and internal teamwork."
+
+**04. Celebrate and Value Diversity:**
+"We embrace different perspectives, backgrounds, and ideas as they fuel innovation and drive exceptional outcomes."
+
+**05. Continuous Learning & Retrospect:**
+"We constantly evolve through learning, reflection, and adaptation to stay ahead in the ever-changing technology landscape."
+
+**06. Encourage Ideation & Creativity:**
+"We foster an environment where innovative thinking thrives and creative solutions emerge to solve complex challenges."
+
+**Values Statement:**
+"These values are not just words on a page—they are the driving force behind every solution we create, every relationship we build, and every innovation we pursue in our mission to transform businesses."
 
 ### Statistics Section
 **Heading:** "By the Numbers"
