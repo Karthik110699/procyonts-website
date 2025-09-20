@@ -305,6 +305,7 @@ Our strength lies in delivering end-to-end technology solutions that balance inn
 ### Solutions Overview
 
 **Salesforce:**
+**Description:** "AI-driven Salesforce solutions for tomorrow's enterprises. Transform customer relationships with intelligent automation, advanced analytics, and seamless integration capabilities."
 **Key Features:**
 • Custom Salesforce Implementation
 • AI-Powered Customer Insights
@@ -314,6 +315,7 @@ Our strength lies in delivering end-to-end technology solutions that balance inn
 • Third-Party System Integration
 
 **ServiceNow:**
+**Description:** "Transform your workflows with ServiceNow's cloud-based platform that streamlines operations, automates tasks, and boosts productivity across your entire organization."
 **Key Features:**
 • IT Service Management (ITSM)
 • IT Operations Management (ITOM)
@@ -323,6 +325,7 @@ Our strength lies in delivering end-to-end technology solutions that balance inn
 • Business Process Automation
 
 **SAP:**
+**Description:** "Enterprise resource planning solutions that integrate business processes and drive operational excellence with real-time insights and intelligent automation."
 **Key Features:**
 • SAP S/4HANA Implementation
 • Business Process Integration
@@ -335,6 +338,106 @@ Our strength lies in delivering end-to-end technology solutions that balance inn
 **Heading:** "Ready to Transform Your Enterprise?"
 **Description:** "Let's discuss how our enterprise solutions can drive your business forward."
 **Button:** "Get Started Today"
+
+---
+
+## SALESFORCE SOLUTIONS PAGE CONTENT
+
+### Main Header
+**Page Title:** "Delivering Salesforce Excellence"
+**Subtitle:** "Across Every Cloud, Every Industry, Every Time"
+**Description:** "We don't just implement Salesforce, we tailor it to amplify your results."
+
+### Why Procyon Stands Out
+**Heading:** "Why Procyon Stands Out"
+**Description:** "We're known for helping businesses, from agile startups to global enterprises, leverage the full power of Salesforce to fuel growth, simplify processes, and scale with precision."
+
+**Key Strengths:**
+
+**Depth of Expertise:**
+"Certified consultants, architects, and developers across Salesforce's entire ecosystem. Our team brings deep knowledge and hands-on experience to deliver solutions that work."
+
+**Agile Delivery, Real Results:**
+"Fast, transparent delivery, on time, on budget, exceeding expectations. Our agile methodology ensures you see progress every step of the way."
+
+**Scalable Resources:**
+"Access immediate, on-demand Salesforce talent to cover every project need. Scale your team up or down based on your requirements."
+
+**Client-Centric Partnership:**
+"We listen. We drive outcomes. Success for your business is our only KPI. Your goals become our mission."
+
+**Client Testimonial:**
+"Their agile, transparent process eliminated surprises, our Salesforce roll-out was smoother than ever." — Sales VP, Retail Industry
+
+### Punch Line Bridge
+**Main Message:** "From Sales to Health, CPQ to Analytics, Procyon brings Salesforce to life."
+
+---
+
+## SERVICENOW SOLUTIONS PAGE CONTENT
+
+### Main Header
+**Page Title:** "ServiceNow Solutions"
+**Subtitle:** "Expert ServiceNow Consulting & Implementation for Streamlined IT Operations"
+
+**Introduction:**
+"In an era where digital agility defines competitive advantage, businesses must evolve their IT service infrastructure to be proactive, responsive, and intelligent. Procyon offers end-to-end ServiceNow consulting and ServiceNow implementation services that modernize IT operations, reduce inefficiencies, and enable a truly connected enterprise.
+
+We help organizations transform IT service management (ITSM) by unlocking the full capabilities of the ServiceNow platform, from workflow automation to integrated IT operations management (ITOM). Our customized solutions ensure faster incident resolution, improved visibility, and greater alignment between IT and business functions."
+
+### Our ServiceNow Services
+
+**ServiceNow Implementation:**
+"We begin by evaluating your current IT processes and identifying bottlenecks. Then, we have built a tailored ServiceNow environment, designed to automate repetitive tasks, align with SLAs, and improve user satisfaction. Whether you're adopting ServiceNow for the first time or expanding its scope, we ensure seamless deployment with minimal disruption."
+
+**ServiceNow Customization:**
+"No two businesses operate the same way. We deliver strategic customization, from dashboards and workflows to UI/UX enhancements, built for efficiency, usability, and long-term impact."
+
+**ServiceNow Integration:**
+"We integrate ServiceNow with legacy systems, cloud platforms, HR tools, and third-party APIs, creating unified environments for better reporting, smoother collaboration, and faster responses."
+
+**AI-Powered IT Solutions:**
+"Through machine learning and predictive analytics, we automate incident management, enhance forecasting, and increase the agility of your IT operations."
+
+### Why Choose Procyon for ServiceNow?
+**Key Benefits:**
+• Enterprise-Grade Security & Compliance
+• Collaborative & Transparent Approach
+• User-Centric Experience Design
+• Future-Ready Automation
+
+---
+
+## SAP SOLUTIONS PAGE CONTENT
+
+### Main Header
+**Page Title:** "SAP Solutions at Procyon"
+**Subtitle:** "Leading SAP Consulting & Implementation Services"
+
+**Introduction:**
+"At Procyon Technostructure, we lead the way in SAP consulting and implementation services, empowering businesses to streamline operations, enhance decision-making, and unlock the full potential of their enterprise resources. Whether you want to implement, upgrade, or optimise your SAP system, we deliver customised solutions tailored to your unique business needs.
+
+Our SAP-certified experts help transform your organisation into an agile, data-driven business that can respond quickly to market changes and drive sustainable growth."
+
+### Why Choose Procyon for Your SAP Journey?
+
+**Tailored SAP Strategies for Your Business:**
+"We don't take a one-size-fits-all approach. At Procyon, our SAP experts work closely with you to develop a tailored strategy that aligns with your business objectives. We ensure your SAP systems are optimised for performance and future-proofed to grow with your business."
+
+**Future-Proof Your SAP Landscape:**
+"The future of enterprise software is agile and data-driven. We help businesses migrate to SAP S/4HANA and adopt cloud-first strategies, positioning them for success in a rapidly changing technological landscape."
+
+**Seamless Integration with Existing Systems:**
+"Whether integrating with other SAP modules or third-party applications, we ensure a seamless flow of data and processes across your organisation. Our integration solutions bridge gaps and reduce operational silos, enabling better decision-making and efficiency."
+
+**SAP Change Management:**
+"Successful SAP adoption goes beyond technology. We provide change management services to ensure that your team is ready to embrace new systems and processes. With training and support programs, we ensure a smooth transition that minimises disruption to your business."
+
+### Our SAP Services
+**Description:** "We offer comprehensive SAP services, ensuring you maximise the ROI of your SAP investments"
+
+**SAP S/4HANA Transformation:**
+"Propel your business forward by migrating to SAP S/4HANA, the next-generation ERP system designed to simplify processes, enhance agility, and accelerate innovation."
 
 ---
 
@@ -396,6 +499,45 @@ Our strength lies in delivering end-to-end technology solutions that balance inn
 
 ---
 
+## CLOUD TRANSFORMATION PAGE CONTENT
+
+### Main Header
+**Page Title:** "Cloud Transformation"
+**Description:** "Migrate to the cloud with confidence and unlock scalability, flexibility, and cost optimization. Our comprehensive cloud services accelerate your digital transformation journey."
+
+### Complete Cloud Solutions
+**Heading:** "Complete Cloud Solutions"
+**Subtitle:** "From strategy to implementation - comprehensive cloud transformation services"
+
+**Cloud Migration:**
+"Seamless migration of applications and data to AWS, Azure, or Google Cloud platforms."
+**Services:**
+• Application Assessment
+• Migration Planning
+• Data Transfer
+• Performance Optimization
+
+**Cloud-Native Development:**
+"Build scalable, resilient applications designed specifically for cloud environments."
+**Services:**
+• Microservices Architecture
+• Containerization
+• Serverless Computing
+• API-First Design
+
+**DevOps & CI/CD:**
+"Automated deployment pipelines for faster, more reliable software delivery."
+**Services:**
+• Infrastructure as Code
+• Automated Testing
+• Continuous Integration
+• Monitoring & Alerting
+
+**Cloud Security:**
+"Comprehensive security solutions to protect your cloud infrastructure and data."
+
+---
+
 ## CAREERS PAGE CONTENT
 
 ### Main Header
@@ -415,7 +557,7 @@ Our strength lies in delivering end-to-end technology solutions that balance inn
 "Join a diverse team of experts who value collaboration, learning, and mutual success."
 
 **Competitive Benefits:**
-"Comprehensive benefits package including health insurance, retirement plans, and professional development opportunities."
+"Competitive salary, comprehensive benefits, and opportunities for professional growth and development."
 
 **Global Impact:**
 "Work on projects that make a difference for leading organizations worldwide."
@@ -425,23 +567,42 @@ Our strength lies in delivering end-to-end technology solutions that balance inn
 **Subtitle:** "Find your next opportunity"
 
 **Available Positions:**
-- ServiceNow Developer
-- Salesforce Architect
-- Cloud Solutions Engineer
-- AI/ML Engineer
-- Data Scientist
-- Full Stack Developer
-- DevOps Engineer
-- Project Manager
+
+**Senior Full-Stack Developer:**
+- Location: Remote / On-site
+- Type: Full-time
+- Description: "Join our engineering team to build scalable, AI-powered solutions. Work with React, Node.js, Python, and cloud technologies."
+- Technologies: React, Node.js, Python, AWS
+- Apply: LinkedIn company page
+
+**Senior Data Scientist:**
+- Location: Remote / On-site
+- Type: Full-time
+- Description: "Lead AI/ML initiatives and develop intelligent solutions. Work with Python, TensorFlow, and big data technologies."
+- Technologies: Python, TensorFlow, PyTorch, SQL
+- Apply: LinkedIn company page
+
+**DevOps Engineer:**
+- Location: Remote
+- Type: Full-time
+- Description: "Build and maintain cloud infrastructure, CI/CD pipelines, and ensure system reliability and security."
+- Technologies: Kubernetes, Docker, Terraform, AWS
+- Apply: LinkedIn company page
 
 ### Application Process
 **Heading:** "Application Process"
+**Subtitle:** "Simple, transparent, and focused on finding the right fit"
 
 **Steps:**
-1. **Apply:** Submit your resume and cover letter
-2. **Screen:** Initial phone/video screening
-3. **Interview:** Technical and cultural fit interviews
-4. **Offer:** Receive and negotiate your offer
+1. **Apply:** "Submit your application and tell us about yourself"
+2. **Screen:** "Initial conversation to learn more about your background"
+3. **Interview:** "Technical and cultural fit interviews with team members"
+4. **Offer:** "Welcome to the team! Let's build the future together"
+
+### CTA Section
+**Heading:** "Don't See the Right Role?"
+**Description:** "We're always looking for exceptional talent. Send us your resume and let's discuss opportunities."
+**Button:** "Get in Touch"
 
 ---
 
