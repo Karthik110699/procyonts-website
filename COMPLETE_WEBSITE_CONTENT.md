@@ -594,22 +594,70 @@ Our SAP-certified experts help transform your organisation into an agile, data-d
 
 ### Main Header
 **Page Title:** "Data Strategy & Analytics"
-**Description:** "Unlock the full value of your data with comprehensive strategy, engineering, and analytics solutions that transform information into competitive advantage."
+**Description:** "Unlock the full value of your data with comprehensive strategy, engineering, and analytics solutions. We help businesses move from data collection to data intelligence, transforming information into strategic assets that drive competitive advantage."
 
-### Service Details
-**Data Strategy & Consulting:**
-"Develop comprehensive data strategies aligned with business objectives"
+### Main Services Section
+**Heading:** "Our Comprehensive Data Methodology"
+**Subtitle:** "A proven four-phase approach that transforms how your organization thinks about and uses data"
 
-**Data Engineering & Architecture:**
-"Build robust data pipelines and scalable architectures"
+**Services:**
+• **Data Strategy & Consulting** - Collaborate with your leadership team to create clear, actionable data roadmaps that transform how your organization captures, stores, and uses data.
+  - Data Maturity Assessments
+  - Governance Frameworks
+  - Scalable Data Strategies
+  - Business Context Analysis
 
-**Advanced Analytics & BI:**
-"Transform raw data into actionable business insights"
+• **Data Engineering & Architecture** - Design and implement modern, cloud-native data architectures with scalable, fault-tolerant pipelines that grow with your business.
+  - Modern Data Warehouses
+  - Data Lakes & Lakehouses
+  - Real-time Streaming Platforms
+  - ETL/ELT Pipeline Development
 
-**Data Governance & Compliance:**
-"Ensure data quality, security, and regulatory compliance"
+• **Advanced Analytics & Business Intelligence** - Powerful insights with dashboards, visualization tools, and machine learning-backed analytics that predict trends and identify opportunities.
+  - Descriptive & Predictive Analytics
+  - Prescriptive Analytics
+  - Real-time Analytics
+  - Interactive BI Dashboards
+
+• **Data Governance, Quality & Compliance** - Build frameworks that maintain high data quality, security, and compliance with industry regulations like GDPR, HIPAA, and ISO standards.
+  - GDPR & HIPAA Compliance
+  - SOX & ISO 27001 Frameworks
+  - Automated Data Quality Checks
+  - Data Stewardship & Ownership
+
+• **Key Technologies We Work With** - Modern data platforms and tools that enable enterprise-grade data processing and analytics capabilities.
+  - Snowflake, Amazon Redshift, BigQuery
+  - Delta Lake, Apache Iceberg
+  - Apache Airflow, Talend, Informatica
+  - Apache Kafka, Amazon Kinesis
+
+• **Architecture Benefits** - Systems designed for performance, reliability, and cost-efficiency that scale with your data volume and complexity.
+  - 99.9% Uptime with Auto-recovery
+  - Fast Query Response Times
+  - 40% Operational Cost Reduction
+  - Unlimited Scalability
+
+### Modern Data Technologies Section
+**Heading:** "Modern Data Technologies"
+**Subtitle:** "Enterprise-grade platforms for data warehousing, streaming, and analytics"
+**Technologies:**
+• Snowflake - Cloud data warehouse for analytics workloads
+• Google BigQuery - Serverless data warehouse for analytics
+• Apache Kafka - Real-time streaming platform
+• Apache Airflow - Workflow automation and orchestration
+
+### Success Metrics Section
+**Heading:** "Data Analytics Impact"
+**Subtitle:** "Measurable business outcomes through data-driven decision making"
+**Metrics:**
+• 25-40% Decision-Making Speed Improvement
+• 15-30% Operational Efficiency Increase
+• 99.9% System Uptime Achievement
+• 40% Cost Reduction Typical
 
 ### Call-to-Action Section
+**Heading:** "Ready to Unlock Your Data's Value?"
+**Description:** "Let's discuss how data analytics can transform your business intelligence and drive growth."
 **Final CTA:** "Start Your Data Journey"
 
 ---
@@ -617,23 +665,71 @@ Our SAP-certified experts help transform your organisation into an agile, data-d
 ## AI/ML SERVICE PAGE CONTENT
 
 ### Main Header
-**Page Title:** "Artificial Intelligence & Machine Learning"
-**Description:** "Make AI work for real business outcomes with practical solutions that enhance productivity, improve decision-making, and future-proof operations."
+**Page Title:** "AI & Machine Learning"
+**Description:** "Harness the power of artificial intelligence to automate processes, gain valuable insights, and drive innovation across your organization with cutting-edge ML solutions."
 
-### Service Details
-**AI Strategy & Use Case Development:**
-"Identify and develop practical AI applications for your business"
+### Main Services Section
+**Heading:** "Comprehensive AI Solutions"
+**Subtitle:** "From strategy to deployment - complete artificial intelligence transformation services"
 
-**Machine Learning Model Development:**
-"Build and deploy custom ML models for specific business needs"
+**Services:**
+• **Machine Learning Models** - Custom ML models tailored to your business needs with advanced algorithms and predictive capabilities.
+  - Supervised Learning
+  - Unsupervised Learning
+  - Deep Learning
+  - Reinforcement Learning
 
-**Natural Language Processing (NLP):**
-"Extract insights from text and enable conversational AI capabilities"
+• **Natural Language Processing** - Advanced NLP solutions for text analysis, chatbots, and language understanding applications.
+  - Sentiment Analysis
+  - Text Classification
+  - Language Translation
+  - Chatbot Development
 
-**AI-Powered Automation:**
-"Automate complex processes using intelligent automation solutions"
+• **Computer Vision** - Intelligent image and video analysis for object detection, recognition, and automation.
+  - Object Detection
+  - Image Classification
+  - Facial Recognition
+  - OCR & Document Processing
+
+• **Predictive Analytics** - Forecast trends, behaviors, and outcomes with sophisticated predictive modeling techniques.
+  - Demand Forecasting
+  - Risk Assessment
+  - Customer Behavior Prediction
+  - Anomaly Detection
+
+• **AI Automation** - Intelligent process automation that learns and adapts to optimize business workflows.
+  - Robotic Process Automation
+  - Intelligent Document Processing
+  - Workflow Optimization
+  - Decision Automation
+
+• **AI Ethics & Governance** - Responsible AI implementation with ethical guidelines, bias detection, and compliance frameworks.
+  - Bias Detection & Mitigation
+  - Explainable AI
+  - Data Privacy Compliance
+  - AI Governance Frameworks
+
+### Implementation Process Section
+**Heading:** "Our AI Development Process"
+**Subtitle:** "Structured approach to AI implementation and deployment"
+**Process:**
+1. **Data Strategy** - Assess data quality, identify sources, and establish data governance frameworks.
+2. **Model Development** - Design, train, and validate AI models using best practices and cutting-edge techniques.
+3. **Integration & Testing** - Integrate AI solutions with existing systems and conduct comprehensive testing.
+4. **Deployment & Monitoring** - Deploy to production with continuous monitoring and model performance optimization.
+
+### Success Metrics Section
+**Heading:** "AI Implementation Results"
+**Subtitle:** "Delivering transformational outcomes through intelligent automation"
+**Metrics:**
+• 80% Process Automation
+• 95% Prediction Accuracy
+• 50% Cost Reduction
+• 300% ROI Within 18 Months
 
 ### Call-to-Action Section
+**Heading:** "Ready to Unlock AI's Potential?"
+**Description:** "Let's discuss how artificial intelligence can transform your business processes and drive innovation."
 **Final CTA:** "Start Your AI Journey"
 
 ---
@@ -641,24 +737,85 @@ Our SAP-certified experts help transform your organisation into an agile, data-d
 ## STAFF AUGMENTATION SERVICE PAGE CONTENT
 
 ### Main Header
-**Page Title:** "Staff Augmentation & Workforce Solutions"
-**Description:** "Access skilled IT professionals who bring the knowledge, agility, and experience needed to keep your projects moving forward."
+**Page Title:** "Staff Augmentation"
+**Description:** "The pace of digital change demands expertise, fast. Access skilled IT professionals who bring the knowledge, agility, and experience needed to keep your projects moving forward."
+**CTA Button:** "Find Your Perfect Team Member"
 
-### Service Details
-**Talent Acquisition & Screening:**
-"Find and vet top IT talent for your specific requirements"
+### Methodology Section
+**Heading:** "Our Talent Acquisition Methodology"
+**Subtitle:** "A proven approach that ensures you get skilled professionals who can contribute immediately"
+**Process:**
+1. **Requirements Analysis** - Work closely with your team to understand specific skills, experience, and cultural fit requirements.
+2. **Talent Sourcing & Screening** - Tap into our extensive network of pre-vetted professionals with rigorous technical and cultural assessments.
+3. **Matching & Integration** - Carefully match candidates to your requirements and provide comprehensive onboarding support.
+4. **Ongoing Support & Management** - Continuous support, performance monitoring, and feedback collection to ensure project success.
 
-**Technical Skills Assessment:**
-"Comprehensive evaluation of candidates' technical capabilities"
+### Talent Categories Section
+**Heading:** "Expert Talent Categories"
+**Subtitle:** "Skilled professionals across all technology disciplines, carefully selected for technical skills and team collaboration ability."
 
-**Project-Based Staffing:**
-"Flexible staffing solutions for specific project needs"
+**Categories:**
+• **Software Development** - Full-stack developers, mobile app developers, and DevOps engineers with expertise in modern technologies.
+  - Full-Stack & Mobile Developers
+  - Frontend & Backend Specialists
+  - DevOps Engineers
+  - API & Microservices Development
 
-**Dedicated Development Teams:**
-"Build dedicated teams that integrate seamlessly with your organization"
+• **Data & Analytics** - Data engineers, data scientists, and business intelligence analysts to unlock insights from your data.
+  - Data Engineers & Scientists
+  - Business Intelligence Analysts
+  - Data Visualization Specialists
+  - Analytics Platform Experts
+
+• **Cloud & Infrastructure** - Cloud architects, system administrators, and network engineers who design and manage modern infrastructure.
+  - Cloud Architects & Engineers
+  - System Administrators
+  - Network Engineers
+  - DevOps & Automation Specialists
+
+• **Project Managers** - Certified project managers who ensure delivery excellence and team coordination.
+  - Agile & Scrum Methodologies
+  - PMP & CSM Certified
+  - Risk Management
+  - Stakeholder Communication
+
+• **Cybersecurity** - Security analysts, penetration testers, and compliance specialists ensuring your systems are protected.
+  - Security Analysts
+  - Penetration Testers
+  - Compliance Specialists
+  - Incident Response Experts
+
+• **AI & Machine Learning** - ML engineers, AI researchers, and NLP specialists who build intelligent systems and automation.
+  - Machine Learning Engineers
+  - AI Researchers
+  - NLP Specialists
+  - Computer Vision Experts
+
+• **Enterprise Systems** - Salesforce, SAP, ServiceNow, and other enterprise platform specialists with deep domain expertise.
+  - Salesforce Specialists
+  - SAP Consultants
+  - ServiceNow Developers
+  - ERP & CRM Platform Experts
+
+### Engagement Models Section
+**Heading:** "Flexible Engagement Models"
+**Subtitle:** "We support your project cycles by scaling your workforce up or down as needed, with full transparency and speed."
+**Models:**
+• **Short-term Projects** - 1-6 month engagements for specific initiatives with defined timelines and deliverables.
+• **Long-term Assignments** - 6+ month engagements for ongoing support with ability to adjust team size based on project needs.
+• **Hybrid Teams** - Combination of our resources and your internal team with remote & on-site options based on your preferences.
+
+### Why Choose Procyon Staff Section
+**Heading:** "Why Choose Procyon Staff"
+**Subtitle:** "Our professionals are pre-vetted, experienced, and ready to make an immediate impact on your projects."
+**Benefits:**
+• 1-2 weeks Rapid Deployment
+• 30-50% Cost Efficiency Savings
+• Zero Long-term Commitments
+• Immediate Access to Expertise
 
 ### Call-to-Action Section
-**Final CTA:** "Immediate Access to Expertise"
+**Final CTA:** "Find Your Perfect Team Member"
 
 ---
 
@@ -668,38 +825,67 @@ Our SAP-certified experts help transform your organisation into an agile, data-d
 **Page Title:** "Cloud Transformation"
 **Description:** "Migrate to the cloud with confidence and unlock scalability, flexibility, and cost optimization. Our comprehensive cloud services accelerate your digital transformation journey."
 
-### Complete Cloud Solutions
+### Main Services Section
 **Heading:** "Complete Cloud Solutions"
 **Subtitle:** "From strategy to implementation - comprehensive cloud transformation services"
 
-**Cloud Migration:**
-"Seamless migration of applications and data to AWS, Azure, or Google Cloud platforms."
 **Services:**
-• Application Assessment
-• Migration Planning
-• Data Transfer
-• Performance Optimization
+• **Cloud Migration** - Seamless migration of applications and data to AWS, Azure, or Google Cloud platforms.
+  - Application Assessment
+  - Migration Planning
+  - Data Transfer
+  - Performance Optimization
 
-**Cloud-Native Development:**
-"Build scalable, resilient applications designed specifically for cloud environments."
-**Services:**
-• Microservices Architecture
-• Containerization
-• Serverless Computing
-• API-First Design
+• **Cloud-Native Development** - Build scalable, resilient applications designed specifically for cloud environments.
+  - Microservices Architecture
+  - Containerization
+  - Serverless Computing
+  - API-First Design
 
-**DevOps & CI/CD:**
-"Automated deployment pipelines for faster, more reliable software delivery."
-**Services:**
-• Infrastructure as Code
-• Automated Testing
-• Continuous Integration
-• Monitoring & Alerting
+• **DevOps & CI/CD** - Automated deployment pipelines for faster, more reliable software delivery.
+  - Infrastructure as Code
+  - Automated Testing
+  - Continuous Integration
+  - Monitoring & Alerting
 
-**Cloud Security:**
-"Comprehensive security solutions to protect your cloud infrastructure and data."
+• **Cloud Security** - Comprehensive security solutions to protect your cloud infrastructure and data.
+  - Identity & Access Management
+  - Data Encryption
+  - Network Security
+  - Compliance Management
+
+• **Data Management** - Modern data platforms for analytics, machine learning, and business intelligence.
+  - Data Lakes & Warehouses
+  - Real-time Analytics
+  - Data Pipeline Automation
+  - ML/AI Integration
+
+• **Performance Optimization** - Optimize cloud infrastructure for maximum performance and cost efficiency.
+  - Cost Optimization
+  - Auto-scaling
+  - Load Balancing
+  - Performance Monitoring
+
+### Multi-Cloud Expertise Section
+**Heading:** "Multi-Cloud Expertise"
+**Subtitle:** "Certified experts across all major cloud platforms"
+**Platforms:**
+• **Amazon Web Services** - Complete AWS ecosystem including EC2, S3, Lambda, RDS, and advanced services like SageMaker and Bedrock. (Advanced Consulting Partner)
+• **Microsoft Azure** - Full Azure stack including Virtual Machines, App Services, Azure AI, and enterprise integration with Microsoft 365. (Gold Partner)
+• **Google Cloud Platform** - Google Cloud services including Compute Engine, BigQuery, Vertex AI, and Kubernetes Engine for modern applications. (Premier Partner)
+
+### Success Metrics Section
+**Heading:** "Cloud Transformation Impact"
+**Subtitle:** "Delivering measurable results across all cloud initiatives"
+**Metrics:**
+• 60% Cost Reduction
+• 99.9% Uptime Achievement
+• 10x Faster Deployment
+• 180% ROI Within 12 Months
 
 ### Call-to-Action Section
+**Heading:** "Ready to Accelerate Your Cloud Journey?"
+**Description:** "Let's discuss how cloud transformation can unlock new possibilities for your business."
 **Final CTA:** "Start Your Cloud Migration"
 
 ---
