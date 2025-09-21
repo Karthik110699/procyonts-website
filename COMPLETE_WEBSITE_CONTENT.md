@@ -890,6 +890,120 @@ Our SAP-certified experts help transform your organisation into an agile, data-d
 
 ---
 
+## GOVERNMENT SOLUTIONS PAGE CONTENT
+
+### Main Header
+**Page Title:** "Innovative IT Solutions for Modern Government Operations"
+
+**Description:**
+"Procyon Technostructure LLC is a premier technology solutions provider, delivering state-of-the-art IT services, strategic staffing solutions, and top-tier hardware procurement for government agencies. As a certified WRMSDC, WBENC, SBE, and MBE business in the State of California, we are committed to excellence, diversity, and customer-centric solutions that drive efficiency and innovation."
+
+### Comprehensive IT Solutions & Services
+**Heading:** "Comprehensive IT Solutions & Services"
+**Description:** "We provide tailored technology solutions to meet the evolving demands of government agencies, ensuring seamless integration and operational efficiency."
+
+**Solutions:**
+
+**Salesforce Solutions:**
+• End-to-End CRM Implementation & Customization
+• Data Migration & Seamless Integration
+• Automated Workflow & Business Process Optimization
+• Custom App Development & Enhancement
+• Expert Consulting & Ongoing Support
+
+**ServiceNow:**
+• IT Service Management (ITSM) for Streamlined Operations
+• IT Operations Management (ITOM) for Infrastructure Efficiency
+• Customer Service Management (CSM) for Enhanced User Experience
+• Security Operations (SecOps) for Risk Mitigation
+• Custom Platform Administration & Optimization
+
+**Azure - AWS:**
+• Enterprise Cloud Migration & Modernization
+• Infrastructure as a Service (IaaS) for Scalable IT
+• Platform as a Service (PaaS) for Development Acceleration
+• Software as a Service (SaaS) for Business Productivity
+• Advanced Cloud Security & Compliance Solutions
+• Cost Optimization Strategies for Maximum ROI
+
+**Robotic Process Automation (RPA):**
+• Intelligent Process Discovery & Analysis
+• AI-Driven Bot Development & Deployment
+• Full-Scale RPA Implementation & Management
+• Automated Repetitive Task Optimization
+• Efficiency Enhancement & Cost Reduction
+
+### Government Staffing Solutions
+**Heading:** "Government Staffing Solutions"
+**Subheading:** "IT Staffing Services"
+
+**Description:**
+"We provides comprehensive IT staffing solutions to meet your organization's specific needs. Our team of experienced recruiters specializes in sourcing top-tier IT talent across a wide range of technical domains."
+
+**Staffing Types:**
+
+**Contract Staffing:**
+"Flexible staffing solutions for short-term projects or to fill temporary vacancies."
+
+**Direct Hire:**
+"Permanent placement of skilled IT professionals to meet your long-term staffing needs."
+
+**Staff Augmentation:**
+"Augmenting your existing IT team with specialized resources to handle specific projects or peak workloads."
+
+**Quality Assurance:**
+"Our rigorous screening process ensures that we deliver highly qualified IT professionals who can seamlessly integrate into your team and contribute to your organization's success."
+
+### IT Hardware Products
+**Heading:** "IT Hardware Products"
+**Description:** "We are your trusted partner for all your hardware needs. We offer a comprehensive range of cutting-edge computer equipment from leading manufacturers."
+
+**Hardware Categories:**
+
+**Servers:**
+• **Rack Servers** - Powerful, scalable servers designed for high-performance computing and data storage.
+• **Tower Servers** - Compact, versatile servers ideal for small and medium-sized businesses.
+• **Blade Servers** - Energy-efficient servers that maximize space utilization in data centers.
+
+**Storage Solutions:**
+• **NAS (Network Attached Storage)** - Centralized storage solutions for sharing files and data across networks.
+• **SAN (Storage Area Network)** - High-performance storage solutions for demanding applications.
+• **HDDs (Hard Disk Drives)** - Reliable and affordable storage solutions for general-purpose use.
+• **SSDs (Solid State Drives)** - High-speed storage solutions for faster boot times and application performance.
+
+**Networking Equipment:**
+• **Routers** - Manage network traffic and route data packets efficiently.
+• **Switches** - Connect devices within a network, enabling communication between them.
+• **Firewalls** - Protect your network from unauthorized access and cyber threats.
+• **Wireless Access Points** - Provide wireless connectivity for devices within a network.
+
+**Computer Peripherals:**
+• **Monitors** - High-quality displays for optimal viewing experience.
+• **Keyboards and Mice** - Essential input devices for computer operation.
+• **Printers and Scanners** - Versatile devices for document printing and scanning.
+• **Headsets and Webcams** - Essential tools for remote communication and collaboration.
+
+### NAICS Codes Section
+**Heading:** "NAICS Codes for Government Compliance"
+**Description:** "We adhere to key North American Industry Classification System (NAICS) codes, ensuring regulatory compliance for government procurement"
+
+**NAICS Codes:**
+- **541511** - Custom Computer Programming Services
+- **541512** - Computer Systems Design Services  
+- **541513** - Computer Facilities Management Services
+- **541519** - Other Computer Related Services
+- **511210** - Software Publishers
+- **423410** - Photographic Equipment and Supplies Merchant Wholesalers
+
+### Our Partners Section
+**Heading:** "Our Partners"
+**Description:** "We work with leading technology companies to deliver comprehensive solutions"
+
+**Technology Partners (74 companies):**
+3M, Adobe, Amazon Web Services, AMD, Apple, AT&T, Atlassian, Autodesk, Black Box, Brother, Canon, Cisco, Citrix, Dell, DocuSign, Dropbox, Epson, Google, HP, IBM, Intel, Lenovo, Microsoft, NetApp, NVIDIA, Oracle, Salesforce, ServiceNow, VMware, Zoom, and 44 others including Xerox and Checkpoint.
+
+---
+
 ## CAREERS PAGE CONTENT
 
 ### Main Header
@@ -1041,119 +1155,6 @@ India
 
 Because true growth is measured not just by business success, but by the positive impact we create in the world around us."
 
----
-
-## GOVERNMENT SOLUTIONS PAGE CONTENT
-
-### Main Header
-**Page Title:** "Innovative IT Solutions for Modern Government Operations"
-
-**Description:**
-"Procyon Technostructure LLC is a premier technology solutions provider, delivering state-of-the-art IT services, strategic staffing solutions, and top-tier hardware procurement for government agencies. As a certified WRMSDC, WBENC, SBE, and MBE business in the State of California, we are committed to excellence, diversity, and customer-centric solutions that drive efficiency and innovation."
-
-### Comprehensive IT Solutions & Services
-**Heading:** "Comprehensive IT Solutions & Services"
-**Description:** "We provide tailored technology solutions to meet the evolving demands of government agencies, ensuring seamless integration and operational efficiency."
-
-**Solutions:**
-
-**Salesforce Solutions:**
-• End-to-End CRM Implementation & Customization
-• Data Migration & Seamless Integration
-• Automated Workflow & Business Process Optimization
-• Custom App Development & Enhancement
-• Expert Consulting & Ongoing Support
-
-**ServiceNow:**
-• IT Service Management (ITSM) for Streamlined Operations
-• IT Operations Management (ITOM) for Infrastructure Efficiency
-• Customer Service Management (CSM) for Enhanced User Experience
-• Security Operations (SecOps) for Risk Mitigation
-• Custom Platform Administration & Optimization
-
-**Azure - AWS:**
-• Enterprise Cloud Migration & Modernization
-• Infrastructure as a Service (IaaS) for Scalable IT
-• Platform as a Service (PaaS) for Development Acceleration
-• Software as a Service (SaaS) for Business Productivity
-• Advanced Cloud Security & Compliance Solutions
-• Cost Optimization Strategies for Maximum ROI
-
-**Robotic Process Automation (RPA):**
-• Intelligent Process Discovery & Analysis
-• AI-Driven Bot Development & Deployment
-• Full-Scale RPA Implementation & Management
-• Automated Repetitive Task Optimization
-• Efficiency Enhancement & Cost Reduction
-
-### Government Staffing Solutions
-**Heading:** "Government Staffing Solutions"
-**Subheading:** "IT Staffing Services"
-
-**Description:**
-"We provides comprehensive IT staffing solutions to meet your organization's specific needs. Our team of experienced recruiters specializes in sourcing top-tier IT talent across a wide range of technical domains."
-
-**Staffing Types:**
-
-**Contract Staffing:**
-"Flexible staffing solutions for short-term projects or to fill temporary vacancies."
-
-**Direct Hire:**
-"Permanent placement of skilled IT professionals to meet your long-term staffing needs."
-
-**Staff Augmentation:**
-"Augmenting your existing IT team with specialized resources to handle specific projects or peak workloads."
-
-**Quality Assurance:**
-"Our rigorous screening process ensures that we deliver highly qualified IT professionals who can seamlessly integrate into your team and contribute to your organization's success."
-
-### IT Hardware Products
-**Heading:** "IT Hardware Products"
-**Description:** "We are your trusted partner for all your hardware needs. We offer a comprehensive range of cutting-edge computer equipment from leading manufacturers."
-
-**Hardware Categories:**
-
-**Servers:**
-• **Rack Servers** - Powerful, scalable servers designed for high-performance computing and data storage.
-• **Tower Servers** - Compact, versatile servers ideal for small and medium-sized businesses.
-• **Blade Servers** - Energy-efficient servers that maximize space utilization in data centers.
-
-**Storage Solutions:**
-• **NAS (Network Attached Storage)** - Centralized storage solutions for sharing files and data across networks.
-• **SAN (Storage Area Network)** - High-performance storage solutions for demanding applications.
-• **HDDs (Hard Disk Drives)** - Reliable and affordable storage solutions for general-purpose use.
-• **SSDs (Solid State Drives)** - High-speed storage solutions for faster boot times and application performance.
-
-**Networking Equipment:**
-• **Routers** - Manage network traffic and route data packets efficiently.
-• **Switches** - Connect devices within a network, enabling communication between them.
-• **Firewalls** - Protect your network from unauthorized access and cyber threats.
-• **Wireless Access Points** - Provide wireless connectivity for devices within a network.
-
-**Computer Peripherals:**
-• **Monitors** - High-quality displays for optimal viewing experience.
-• **Keyboards and Mice** - Essential input devices for computer operation.
-• **Printers and Scanners** - Versatile devices for document printing and scanning.
-• **Headsets and Webcams** - Essential tools for remote communication and collaboration.
-
-### NAICS Codes Section
-**Heading:** "NAICS Codes for Government Compliance"
-**Description:** "We adhere to key North American Industry Classification System (NAICS) codes, ensuring regulatory compliance for government procurement"
-
-**NAICS Codes:**
-- **541511** - Custom Computer Programming Services
-- **541512** - Computer Systems Design Services  
-- **541513** - Computer Facilities Management Services
-- **541519** - Other Computer Related Services
-- **511210** - Software Publishers
-- **423410** - Photographic Equipment and Supplies Merchant Wholesalers
-
-### Our Partners Section
-**Heading:** "Our Partners"
-**Description:** "We work with leading technology companies to deliver comprehensive solutions"
-
-**Technology Partners (74 companies):**
-3M, Adobe, Amazon Web Services, AMD, Apple, AT&T, Atlassian, Autodesk, Black Box, Brother, Canon, Cisco, Citrix, Dell, DocuSign, Dropbox, Epson, Google, HP, IBM, Intel, Lenovo, Microsoft, NetApp, NVIDIA, Oracle, Salesforce, ServiceNow, VMware, Zoom, and 44 others including Xerox and Checkpoint.
 
 ---
 
