@@ -1153,10 +1153,7 @@ Because true growth is measured not just by business success, but by the positiv
 **Description:** "We work with leading technology companies to deliver comprehensive solutions"
 
 **Technology Partners (74 companies):**
-3M, Adobe, Amazon Web Services, AMD, Apple, AT&T, Atlassian, Autodesk, Black Box, Brother, Canon, Cisco, Citrix, Dell, DocuSign, Dropbox, Epson, Google, HP, IBM, Intel, Lenovo, Microsoft, NetApp, NVIDIA, Oracle, Salesforce, ServiceNow, VMware, Zoom, and 44 others.
-
-### Page Ending
-**Final Statement:** "Xerox Checkpoint"
+3M, Adobe, Amazon Web Services, AMD, Apple, AT&T, Atlassian, Autodesk, Black Box, Brother, Canon, Cisco, Citrix, Dell, DocuSign, Dropbox, Epson, Google, HP, IBM, Intel, Lenovo, Microsoft, NetApp, NVIDIA, Oracle, Salesforce, ServiceNow, VMware, Zoom, and 44 others including Xerox and Checkpoint.
 
 ---
 
