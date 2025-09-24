@@ -185,45 +185,44 @@ export default function AboutPage() {
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 zoom-section">
           <div className="text-center mb-16 reveal-fade" data-delay="100">
             <h2 className="text-4xl font-bold mb-8 text-emerald-400">Our Story</h2>
+            <p className="text-xl text-gray-300 mb-12 leading-relaxed max-w-4xl mx-auto">
+              Founded in California with offices in Toronto and Chennai, Procyon combines global delivery with a customer-first mindset.
+            </p>
             
-            {/* Glassy container */}
-            <div className="max-w-5xl mx-auto bg-gradient-to-br from-gray-800/40 to-gray-900/60 backdrop-blur-xl border border-gray-700/50 rounded-3xl p-8 md:p-12 shadow-2xl">
-              <p className="text-xl text-gray-300 mb-12 leading-relaxed">
-                Founded in California with offices in Toronto and Chennai, Procyon combines global delivery with a customer-first mindset.
-              </p>
-              
-              <div className="grid md:grid-cols-2 gap-8 mb-12">
-                <div className="space-y-6">
-                  <div className="flex items-start text-lg text-gray-300">
-                    <div className="w-3 h-3 bg-emerald-400 rounded-full mr-4 mt-1 shadow-lg shadow-emerald-400/50 flex-shrink-0"></div>
-                    <span>200+ projects delivered across industries</span>
-                  </div>
-                  <div className="flex items-start text-lg text-gray-300">
-                    <div className="w-3 h-3 bg-blue-400 rounded-full mr-4 mt-1 shadow-lg shadow-blue-400/50 flex-shrink-0"></div>
-                    <span>75+ customers from startups to Fortune 500s</span>
-                  </div>
-                </div>
-                <div className="space-y-6">
-                  <div className="flex items-start text-lg text-gray-300">
-                    <div className="w-3 h-3 bg-purple-400 rounded-full mr-4 mt-1 shadow-lg shadow-purple-400/50 flex-shrink-0"></div>
-                    <span>200+ certified experts across Salesforce, ServiceNow, SAP, and AI</span>
-                  </div>
-                  <div className="flex items-start text-lg text-gray-300">
-                    <div className="w-3 h-3 bg-amber-400 rounded-full mr-4 mt-1 shadow-lg shadow-amber-400/50 flex-shrink-0"></div>
-                    <span>20 years of transformation experience</span>
-                  </div>
+            {/* Individual glass cards for each stat */}
+            <div className="grid md:grid-cols-2 gap-6 max-w-5xl mx-auto mb-12">
+              <div className="bg-gradient-to-br from-emerald-800/20 to-emerald-900/40 backdrop-blur-lg border border-emerald-500/30 rounded-2xl p-6 shadow-xl hover:shadow-emerald-500/20 transition-all duration-300">
+                <div className="flex items-center justify-center text-lg text-gray-300">
+                  <div className="w-4 h-4 bg-emerald-400 rounded-full mr-4 shadow-lg shadow-emerald-400/50 flex-shrink-0"></div>
+                  <span className="text-center">200+ projects delivered across industries</span>
                 </div>
               </div>
               
-              <div className="space-y-6 text-center">
-                <p className="text-lg text-gray-300 leading-relaxed">
-                  We are proud to be a <span className="text-emerald-400 font-semibold">WBE/MBE& CMAS certified partner</span>, helping organizations meet supplier diversity goals while delivering enterprise-grade impact.
-                </p>
-                <p className="text-lg text-gray-300 leading-relaxed">
-                  Our strength lies in delivering end-to-end technology solutions that balance innovation with practicality.
-                </p>
+              <div className="bg-gradient-to-br from-blue-800/20 to-blue-900/40 backdrop-blur-lg border border-blue-500/30 rounded-2xl p-6 shadow-xl hover:shadow-blue-500/20 transition-all duration-300">
+                <div className="flex items-center justify-center text-lg text-gray-300">
+                  <div className="w-4 h-4 bg-blue-400 rounded-full mr-4 shadow-lg shadow-blue-400/50 flex-shrink-0"></div>
+                  <span className="text-center">75+ customers from startups to Fortune 500s</span>
+                </div>
+              </div>
+              
+              <div className="bg-gradient-to-br from-purple-800/20 to-purple-900/40 backdrop-blur-lg border border-purple-500/30 rounded-2xl p-6 shadow-xl hover:shadow-purple-500/20 transition-all duration-300">
+                <div className="flex items-center justify-center text-lg text-gray-300">
+                  <div className="w-4 h-4 bg-purple-400 rounded-full mr-4 shadow-lg shadow-purple-400/50 flex-shrink-0"></div>
+                  <span className="text-center">200+ certified experts across Salesforce, ServiceNow, SAP, and AI</span>
+                </div>
+              </div>
+              
+              <div className="bg-gradient-to-br from-amber-800/20 to-amber-900/40 backdrop-blur-lg border border-amber-500/30 rounded-2xl p-6 shadow-xl hover:shadow-amber-500/20 transition-all duration-300">
+                <div className="flex items-center justify-center text-lg text-gray-300">
+                  <div className="w-4 h-4 bg-amber-400 rounded-full mr-4 shadow-lg shadow-amber-400/50 flex-shrink-0"></div>
+                  <span className="text-center">20 years of transformation experience</span>
+                </div>
               </div>
             </div>
+            
+            <p className="text-lg text-gray-300 leading-relaxed max-w-4xl mx-auto">
+              We are proud to be a <span className="text-emerald-400 font-semibold">WBE/MBE& CMAS certified partner</span>, helping organizations meet supplier diversity goals while delivering enterprise-grade impact.
+            </p>
           </div>
         </div>
       </section>
