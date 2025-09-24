@@ -274,37 +274,41 @@ export default function AboutPage() {
             </div>
             
             {/* Global Reach */}
-            <div className="space-y-8">
-              <div>
-                <h2 className="text-4xl md:text-5xl font-bold mb-6">
-                  <span className="bg-gradient-to-r from-blue-400 via-purple-400 to-amber-400 bg-clip-text text-transparent">
-                    Global Reach
-                  </span>
-                </h2>
-              </div>
-              
-              <div className="space-y-6">
-                <div className="flex items-start space-x-4">
-                  <div className="w-3 h-3 bg-blue-400 rounded-full mt-2 flex-shrink-0 shadow-lg shadow-blue-400/50"></div>
+            <div className="flex justify-center">
+              <div className="bg-gradient-to-br from-gray-800/20 to-gray-900/40 backdrop-blur-lg border border-gray-500/30 rounded-2xl p-8 shadow-xl hover:shadow-gray-500/20 transition-all duration-300 max-w-2xl w-full">
+                <div className="text-center space-y-8">
                   <div>
-                    <span className="text-blue-400 font-semibold">Headquarters:</span>
-                    <span className="text-gray-300"> Novato, California</span>
+                    <h2 className="text-4xl md:text-5xl font-bold mb-6">
+                      <span className="bg-gradient-to-r from-blue-400 via-purple-400 to-amber-400 bg-clip-text text-transparent">
+                        Global Reach
+                      </span>
+                    </h2>
                   </div>
-                </div>
-                
-                <div className="flex items-start space-x-4">
-                  <div className="w-3 h-3 bg-purple-400 rounded-full mt-2 flex-shrink-0 shadow-lg shadow-purple-400/50"></div>
-                  <div>
-                    <span className="text-purple-400 font-semibold">Offices:</span>
-                    <span className="text-gray-300"> Toronto, Canada | Chennai, India</span>
-                  </div>
-                </div>
-                
-                <div className="flex items-start space-x-4">
-                  <div className="w-3 h-3 bg-amber-400 rounded-full mt-2 flex-shrink-0 shadow-lg shadow-amber-400/50"></div>
-                  <div>
-                    <span className="text-amber-400 font-semibold">Delivery Models:</span>
-                    <span className="text-gray-300"> Onsite | Offsite | Offshore | Hybrid</span>
+                  
+                  <div className="space-y-6 text-left">
+                    <div className="flex items-start space-x-4">
+                      <div className="w-3 h-3 bg-blue-400 rounded-full mt-2 flex-shrink-0 shadow-lg shadow-blue-400/50"></div>
+                      <div>
+                        <span className="text-blue-400 font-semibold">Headquarters:</span>
+                        <span className="text-gray-300"> Novato, California</span>
+                      </div>
+                    </div>
+                    
+                    <div className="flex items-start space-x-4">
+                      <div className="w-3 h-3 bg-purple-400 rounded-full mt-2 flex-shrink-0 shadow-lg shadow-purple-400/50"></div>
+                      <div>
+                        <span className="text-purple-400 font-semibold">Offices:</span>
+                        <span className="text-gray-300"> Toronto, Canada | Chennai, India</span>
+                      </div>
+                    </div>
+                    
+                    <div className="flex items-start space-x-4">
+                      <div className="w-3 h-3 bg-amber-400 rounded-full mt-2 flex-shrink-0 shadow-lg shadow-amber-400/50"></div>
+                      <div>
+                        <span className="text-amber-400 font-semibold">Delivery Models:</span>
+                        <span className="text-gray-300"> Onsite | Offsite | Offshore | Hybrid</span>
+                      </div>
+                    </div>
                   </div>
                 </div>
               </div>
