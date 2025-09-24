@@ -312,6 +312,95 @@ export default function AboutPage() {
             
           </div>
           
+          {/* World Map Visualization */}
+          <div className="mt-20">
+            <div className="relative bg-gradient-to-br from-gray-900/60 to-gray-800/40 rounded-3xl p-8 backdrop-blur-sm border border-gray-700/30">
+              <svg viewBox="0 0 800 400" className="w-full h-auto max-h-96">
+                {/* World Map Simplified Paths */}
+                <g fill="#374151" stroke="#6B7280" strokeWidth="0.5">
+                  {/* North America */}
+                  <path d="M150 80 C120 85, 110 120, 140 150 L180 140 C200 120, 190 90, 180 80 Z" />
+                  <path d="M120 150 C140 170, 160 180, 200 170 L220 180 C240 200, 220 220, 200 210 L160 220 C120 210, 100 180, 120 150 Z" />
+                  
+                  {/* South America */}
+                  <path d="M180 220 C200 240, 210 280, 200 320 L180 340 C160 320, 150 280, 160 240 Z" />
+                  
+                  {/* Europe */}
+                  <path d="M320 60 C340 70, 360 80, 380 75 L390 90 C380 100, 350 110, 320 100 L310 80 Z" />
+                  
+                  {/* Africa */}
+                  <path d="M300 120 C320 140, 340 180, 350 220 L340 280 C320 300, 300 280, 290 250 L280 200 C285 160, 295 140, 300 120 Z" />
+                  
+                  {/* Asia */}
+                  <path d="M400 80 C450 90, 500 100, 550 95 L580 110 C600 130, 620 150, 640 140 L660 160 C650 180, 620 190, 580 185 L520 180 C470 170, 430 150, 400 120 Z" />
+                  
+                  {/* India */}
+                  <path d="M520 180 C540 200, 550 220, 545 240 L535 250 C520 240, 515 220, 520 200 Z" />
+                  
+                  {/* Australia */}
+                  <path d="M580 280 C620 290, 640 300, 630 320 L600 315 C580 305, 575 295, 580 280 Z" />
+                </g>
+                
+                {/* Office Location Markers */}
+                {/* California HQ */}
+                <g>
+                  <circle cx="140" cy="140" r="8" fill="#3B82F6" className="animate-pulse" />
+                  <circle cx="140" cy="140" r="15" fill="none" stroke="#3B82F6" strokeWidth="2" opacity="0.6" className="animate-ping" />
+                  <text x="140" y="125" textAnchor="middle" fill="#3B82F6" fontSize="12" fontWeight="bold">HQ</text>
+                  <text x="140" y="165" textAnchor="middle" fill="#E5E7EB" fontSize="10">California</text>
+                </g>
+                
+                {/* Toronto Office */}
+                <g>
+                  <circle cx="180" cy="120" r="6" fill="#A855F7" className="animate-pulse" />
+                  <circle cx="180" cy="120" r="12" fill="none" stroke="#A855F7" strokeWidth="2" opacity="0.6" className="animate-ping" />
+                  <text x="180" y="110" textAnchor="middle" fill="#A855F7" fontSize="10">Toronto</text>
+                </g>
+                
+                {/* Chennai Office */}
+                <g>
+                  <circle cx="530" cy="220" r="6" fill="#F59E0B" className="animate-pulse" />
+                  <circle cx="530" cy="220" r="12" fill="none" stroke="#F59E0B" strokeWidth="2" opacity="0.6" className="animate-ping" />
+                  <text x="530" y="210" textAnchor="middle" fill="#F59E0B" fontSize="10">Chennai</text>
+                </g>
+                
+                {/* Connection Lines */}
+                <g stroke="#6B7280" strokeWidth="1" strokeDasharray="5,5" opacity="0.4">
+                  <line x1="140" y1="140" x2="180" y2="120" className="animate-pulse" />
+                  <line x1="140" y1="140" x2="530" y2="220" className="animate-pulse" />
+                  <line x1="180" y1="120" x2="530" y2="220" className="animate-pulse" />
+                </g>
+                
+                {/* Gradient Overlay for Visual Appeal */}
+                <defs>
+                  <radialGradient id="mapGlow" cx="50%" cy="50%" r="50%">
+                    <stop offset="0%" stopColor="#3B82F6" stopOpacity="0.1" />
+                    <stop offset="100%" stopColor="#1F2937" stopOpacity="0" />
+                  </radialGradient>
+                </defs>
+                <rect width="800" height="400" fill="url(#mapGlow)" />
+              </svg>
+              
+              {/* Map Legend */}
+              <div className="absolute bottom-4 right-4 bg-gray-900/80 backdrop-blur-sm rounded-lg p-4 border border-gray-600/30">
+                <div className="text-sm text-gray-300 space-y-2">
+                  <div className="flex items-center space-x-2">
+                    <div className="w-3 h-3 bg-blue-400 rounded-full"></div>
+                    <span>Headquarters</span>
+                  </div>
+                  <div className="flex items-center space-x-2">
+                    <div className="w-3 h-3 bg-purple-400 rounded-full"></div>
+                    <span>Global Offices</span>
+                  </div>
+                  <div className="flex items-center space-x-2">
+                    <div className="w-3 h-3 bg-amber-400 rounded-full"></div>
+                    <span>Delivery Centers</span>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+
           {/* Closing Statement */}
           <div className="text-center mt-16 max-w-4xl mx-auto">
             <p className="text-xl text-gray-300 leading-relaxed">
