@@ -118,14 +118,14 @@ export default function HeroSection() {
             <div className="flex flex-col space-y-2">
               <a 
                 href="#contact" 
-                className="group relative px-6 py-4 bg-gradient-to-r from-blue-600 to-emerald-600 rounded-lg font-semibold text-base text-white overflow-hidden transition-all duration-300 transform hover:scale-105 text-center whitespace-nowrap"
+                className="group relative px-4 py-3 bg-gradient-to-r from-blue-600 to-emerald-600 rounded-lg font-semibold text-sm text-white overflow-hidden transition-all duration-300 transform hover:scale-105 text-center"
               >
-                <span className="relative z-10">Start My 90-Day Plan →</span>
+                <span className="relative z-10 block">Start My 90-Day Plan →</span>
                 <div className="absolute inset-0 bg-gradient-to-r from-emerald-600 to-blue-600 opacity-0 group-hover:opacity-100 transition-opacity duration-300"></div>
               </a>
               <a 
                 href="#services" 
-                className="px-6 py-4 border-2 border-white text-white rounded-lg font-semibold text-base transition-all duration-300 transform hover:scale-105 hover:bg-white/10 text-center whitespace-nowrap"
+                className="px-4 py-3 border-2 border-white text-white rounded-lg font-semibold text-sm transition-all duration-300 transform hover:scale-105 hover:bg-white/10 text-center"
               >
                 Explore Our Solutions →
               </a>
@@ -153,19 +153,25 @@ export default function HeroSection() {
               </div>
 
               {/* CTA Buttons */}
-              <div className="flex flex-col xl:flex-row xl:space-x-4 space-y-3 xl:space-y-0 mt-8">
+              <div className="flex flex-col lg:flex-row lg:space-x-3 xl:space-x-4 space-y-3 lg:space-y-0 mt-8">
                 <a 
                   href="#contact" 
-                  className="group relative px-6 xl:px-8 py-4 bg-gradient-to-r from-blue-600 to-emerald-600 rounded-lg font-semibold text-base xl:text-lg text-white overflow-hidden transition-all duration-300 transform hover:scale-105 text-center whitespace-nowrap"
+                  className="group relative px-3 sm:px-4 md:px-6 xl:px-8 py-3 sm:py-4 bg-gradient-to-r from-blue-600 to-emerald-600 rounded-lg font-semibold text-sm sm:text-base xl:text-lg text-white overflow-hidden transition-all duration-300 transform hover:scale-105 text-center"
                 >
-                  <span className="relative z-10">Start My 90-Day Plan →</span>
+                  <span className="relative z-10 block">
+                    <span className="hidden sm:inline">Start My 90-Day Plan →</span>
+                    <span className="sm:hidden">Start Plan →</span>
+                  </span>
                   <div className="absolute inset-0 bg-gradient-to-r from-emerald-600 to-blue-600 opacity-0 group-hover:opacity-100 transition-opacity duration-300"></div>
                 </a>
                 <Link 
                   href="/services" 
-                  className="px-6 xl:px-8 py-4 border-2 border-white text-white rounded-lg font-semibold text-base xl:text-lg transition-all duration-300 transform hover:scale-105 hover:bg-white/10 text-center whitespace-nowrap"
+                  className="px-3 sm:px-4 md:px-6 xl:px-8 py-3 sm:py-4 border-2 border-white text-white rounded-lg font-semibold text-sm sm:text-base xl:text-lg transition-all duration-300 transform hover:scale-105 hover:bg-white/10 text-center"
                 >
-                  Explore Our Solutions →
+                  <span className="block">
+                    <span className="hidden sm:inline">Explore Our Solutions →</span>
+                    <span className="sm:hidden">Explore →</span>
+                  </span>
                 </Link>
               </div>
               </div>
