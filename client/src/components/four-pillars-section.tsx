@@ -11,7 +11,7 @@ export default function FourPillarsSection() {
         <div className="text-center mb-16 reveal">
           <h2 className="text-4xl md:text-5xl font-bold mb-6">Concept to Completion</h2>
           <p className="text-xl text-gray-300 max-w-3xl mx-auto">
-            From visionary concepts to flawless execution, we deliver transformative solutions with precision and excellence.
+            From visionary concepts to flawless execution.
           </p>
         </div>
 
@@ -43,7 +43,7 @@ export default function FourPillarsSection() {
                 <Code className="w-10 h-10 text-white" />
               </div>
               <h3 className="text-2xl font-bold">Engineering</h3>
-              <p className="text-gray-300">Once the vision is clear, we bring it to life through solid engineering. Our team builds enterprise-grade solutions that are scalable and secure.</p>
+              <p className="text-gray-300">Once the vision is clear, we bring it to life through agile engineering principles. Our team builds enterprise-grade solutions that are scalable and secure.</p>
             </div>
           </Link>
 

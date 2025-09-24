@@ -64,10 +64,10 @@ export default function Home() {
                 Building Smarter Businesses, Together
               </div>
               <h2 className="text-4xl md:text-5xl font-bold leading-tight">
-                <span className="gradient-text">We are Procyon, the guiding star for digital transformation</span>
+                <span className="gradient-text">We are Procyon, your trusted partner for digital transformation</span>
               </h2>
               <p className="text-xl text-gray-300">
-                For over 20 years, we've empowered businesses to re-imagine the way they work, innovate, and grow. With deep expertise in enterprise solutions, Salesforce consulting, AI innovation, and strategic partnerships, we deliver technology that maximizes ROI and fuels long-term growth.
+                For over 20 years, we've partnered with 75+ customers worldwide, delivering 200+ successful projects across industries. From Salesforce and ServiceNow consulting to AI innovation, SAP solutions, and healthcare platforms, our mission is simple: deliver measurable outcomes that scale with your business.
               </p>
               <div className="grid grid-cols-2 gap-6 text-sm">
                 <div className="space-y-2">
