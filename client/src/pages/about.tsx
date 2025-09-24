@@ -194,22 +194,22 @@ export default function AboutPage() {
               
               <div className="grid md:grid-cols-2 gap-8 mb-12">
                 <div className="space-y-6">
-                  <div className="flex items-center text-lg text-gray-300 justify-center md:justify-start">
-                    <div className="w-3 h-3 bg-emerald-400 rounded-full mr-4 shadow-lg shadow-emerald-400/50"></div>
+                  <div className="flex items-start text-lg text-gray-300">
+                    <div className="w-3 h-3 bg-emerald-400 rounded-full mr-4 mt-1 shadow-lg shadow-emerald-400/50 flex-shrink-0"></div>
                     <span>200+ projects delivered across industries</span>
                   </div>
-                  <div className="flex items-center text-lg text-gray-300 justify-center md:justify-start">
-                    <div className="w-3 h-3 bg-blue-400 rounded-full mr-4 shadow-lg shadow-blue-400/50"></div>
+                  <div className="flex items-start text-lg text-gray-300">
+                    <div className="w-3 h-3 bg-blue-400 rounded-full mr-4 mt-1 shadow-lg shadow-blue-400/50 flex-shrink-0"></div>
                     <span>75+ customers from startups to Fortune 500s</span>
                   </div>
                 </div>
                 <div className="space-y-6">
-                  <div className="flex items-center text-lg text-gray-300 justify-center md:justify-start">
-                    <div className="w-3 h-3 bg-purple-400 rounded-full mr-4 shadow-lg shadow-purple-400/50"></div>
+                  <div className="flex items-start text-lg text-gray-300">
+                    <div className="w-3 h-3 bg-purple-400 rounded-full mr-4 mt-1 shadow-lg shadow-purple-400/50 flex-shrink-0"></div>
                     <span>200+ certified experts across Salesforce, ServiceNow, SAP, and AI</span>
                   </div>
-                  <div className="flex items-center text-lg text-gray-300 justify-center md:justify-start">
-                    <div className="w-3 h-3 bg-amber-400 rounded-full mr-4 shadow-lg shadow-amber-400/50"></div>
+                  <div className="flex items-start text-lg text-gray-300">
+                    <div className="w-3 h-3 bg-amber-400 rounded-full mr-4 mt-1 shadow-lg shadow-amber-400/50 flex-shrink-0"></div>
                     <span>20 years of transformation experience</span>
                   </div>
                 </div>
@@ -220,7 +220,7 @@ export default function AboutPage() {
                   We are proud to be a <span className="text-emerald-400 font-semibold">WBE/MBE& CMAS certified partner</span>, helping organizations meet supplier diversity goals while delivering enterprise-grade impact.
                 </p>
                 <p className="text-lg text-gray-300 leading-relaxed">
-                  Our strength lies in delivering end-to-end technology solutions that balance innovation with practicality:
+                  Our strength lies in delivering end-to-end technology solutions that balance innovation with practicality.
                 </p>
               </div>
             </div>
