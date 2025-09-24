@@ -93,8 +93,25 @@ export default function ServicesPage() {
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 zoom-section">
           <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
             
+            {/* Government Solutions */}
+            <div id="government-solutions" className="group floating-card conic-border bg-gradient-to-br from-gray-800 to-gray-900 p-8 rounded-2xl border border-gray-700 hover:border-red-500 cursor-pointer transition-all duration-300 reveal-fade" data-delay="100" onClick={() => {window.scrollTo(0, 0); window.location.href = '/services/government';}}>
+              <div className="w-16 h-16 bg-red-500/20 rounded-xl flex items-center justify-center mb-6 relative z-10">
+                <Building className="w-8 h-8 text-red-400" />
+              </div>
+              <h3 className="text-2xl font-bold mb-4 text-red-400 relative z-10">Government Solutions</h3>
+              <p className="text-gray-300 mb-6 relative z-10">
+                Specialized solutions for government organizations with compliance, security, and efficiency in mind.
+              </p>
+              <ul className="space-y-2 text-gray-400 text-sm relative z-10">
+                <li>• FedRAMP Compliance</li>
+                <li>• Secure Cloud Solutions</li>
+                <li>• Digital Transformation</li>
+                <li>• Citizen Services</li>
+              </ul>
+            </div>
+
             {/* Data Strategy & Analytics */}
-            <div className="group floating-card conic-border bg-gradient-to-br from-gray-800 to-gray-900 p-8 rounded-2xl border border-gray-700 hover:border-purple-500 cursor-pointer transition-all duration-300 reveal-fade" data-delay="100" onClick={() => {window.scrollTo(0, 0); window.location.href = '/services/data-analytics';}}>
+            <div className="group floating-card conic-border bg-gradient-to-br from-gray-800 to-gray-900 p-8 rounded-2xl border border-gray-700 hover:border-purple-500 cursor-pointer transition-all duration-300 reveal-fade" data-delay="200" onClick={() => {window.scrollTo(0, 0); window.location.href = '/services/data-analytics';}}>
               <div className="w-16 h-16 bg-purple-500/20 rounded-xl flex items-center justify-center mb-6 relative z-10">
                 <BarChart className="w-8 h-8 text-purple-400" />
               </div>
@@ -111,7 +128,7 @@ export default function ServicesPage() {
             </div>
 
             {/* Artificial Intelligence & Machine Learning */}
-            <div className="group floating-card conic-border bg-gradient-to-br from-gray-800 to-gray-900 p-8 rounded-2xl border border-gray-700 hover:border-emerald-500 cursor-pointer transition-all duration-300 reveal-fade" data-delay="200" onClick={() => {window.scrollTo(0, 0); window.location.href = '/services/ai-ml';}}>
+            <div className="group floating-card conic-border bg-gradient-to-br from-gray-800 to-gray-900 p-8 rounded-2xl border border-gray-700 hover:border-emerald-500 cursor-pointer transition-all duration-300 reveal-fade" data-delay="300" onClick={() => {window.scrollTo(0, 0); window.location.href = '/services/ai-ml';}}>
               <div className="w-16 h-16 bg-emerald-500/20 rounded-xl flex items-center justify-center mb-6 relative z-10">
                 <Brain className="w-8 h-8 text-emerald-400" />
               </div>
@@ -128,7 +145,7 @@ export default function ServicesPage() {
             </div>
 
             {/* Cloud Transformation & Optimization */}
-            <div className="group floating-card conic-border bg-gradient-to-br from-gray-800 to-gray-900 p-8 rounded-2xl border border-gray-700 hover:border-blue-500 cursor-pointer transition-all duration-300 reveal-fade" data-delay="300" onClick={() => {window.scrollTo(0, 0); window.location.href = '/services/cloud';}}>
+            <div className="group floating-card conic-border bg-gradient-to-br from-gray-800 to-gray-900 p-8 rounded-2xl border border-gray-700 hover:border-blue-500 cursor-pointer transition-all duration-300 reveal-fade" data-delay="400" onClick={() => {window.scrollTo(0, 0); window.location.href = '/services/cloud';}}>
               <div className="w-16 h-16 bg-blue-500/20 rounded-xl flex items-center justify-center mb-6 relative z-10">
                 <Server className="w-8 h-8 text-blue-400" />
               </div>
@@ -145,7 +162,7 @@ export default function ServicesPage() {
             </div>
 
             {/* Staff Augmentation & Workforce Solutions */}
-            <div className="group floating-card conic-border bg-gradient-to-br from-gray-800 to-gray-900 p-8 rounded-2xl border border-gray-700 hover:border-amber-500 cursor-pointer transition-all duration-300 reveal-fade" data-delay="350" onClick={() => {window.scrollTo(0, 0); window.location.href = '/services/staff-augmentation';}}>
+            <div className="group floating-card conic-border bg-gradient-to-br from-gray-800 to-gray-900 p-8 rounded-2xl border border-gray-700 hover:border-amber-500 cursor-pointer transition-all duration-300 reveal-fade" data-delay="450" onClick={() => {window.scrollTo(0, 0); window.location.href = '/services/staff-augmentation';}}>
               <div className="w-16 h-16 bg-amber-500/20 rounded-xl flex items-center justify-center mb-6 relative z-10">
                 <Users className="w-8 h-8 text-amber-400" />
               </div>
@@ -158,23 +175,6 @@ export default function ServicesPage() {
                 <li>• Technical Skills Assessment</li>
                 <li>• Project-Based Staffing</li>
                 <li>• Dedicated Development Teams</li>
-              </ul>
-            </div>
-
-            {/* Government Solutions */}
-            <div id="government-solutions" className="group floating-card conic-border bg-gradient-to-br from-gray-800 to-gray-900 p-8 rounded-2xl border border-gray-700 hover:border-red-500 cursor-pointer transition-all duration-300 reveal-fade" data-delay="450" onClick={() => {window.scrollTo(0, 0); window.location.href = '/services/government';}}>
-              <div className="w-16 h-16 bg-red-500/20 rounded-xl flex items-center justify-center mb-6 relative z-10">
-                <Building className="w-8 h-8 text-red-400" />
-              </div>
-              <h3 className="text-2xl font-bold mb-4 text-red-400 relative z-10">Government Solutions</h3>
-              <p className="text-gray-300 mb-6 relative z-10">
-                Specialized solutions for government organizations with compliance, security, and efficiency in mind.
-              </p>
-              <ul className="space-y-2 text-gray-400 text-sm relative z-10">
-                <li>• FedRAMP Compliance</li>
-                <li>• Secure Cloud Solutions</li>
-                <li>• Digital Transformation</li>
-                <li>• Citizen Services</li>
               </ul>
             </div>
           </div>
