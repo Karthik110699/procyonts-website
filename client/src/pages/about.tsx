@@ -148,7 +148,7 @@ export default function AboutPage() {
           <p className="text-xl text-gray-300 max-w-6xl reveal-fade" data-delay="200">
             At Procyon, we don't just adapt to the digital era, we help businesses lead it with confidence and vision.
             <br /><br />
-            Since 2004, Procyon Technostructure has been delivering secure, scalable enterprise solutions across Salesforce, ServiceNow, SAP, Cloud, AI, and Data. What sets us apart is our commitment to healthcare innovation — proven by our platform Hekma.ai (patient equity) and Akra.ai (SaMD/SiMD validation).
+            Since 2004, Procyon Technostructure has been delivering secure, scalable enterprise solutions across Salesforce, ServiceNow, SAP, Cloud, AI, and Data. What sets us apart is our commitment to healthcare innovation, proven by our platform Hekma.ai (patient equity) and Akra.ai (SaMD/SiMD validation).
           </p>
         </div>
       </div>
@@ -258,7 +258,7 @@ export default function AboutPage() {
                           </span>
                         </h2>
                         <p className="text-xl text-gray-300 mb-8 leading-relaxed max-w-3xl mx-auto">
-                          We don't just consult in healthcare — we <span className="text-emerald-400 font-semibold">build healthcare platforms</span>.
+                          We don't just consult in healthcare, we <span className="text-emerald-400 font-semibold">build healthcare platforms</span>.
                         </p>
                       </div>
                       
@@ -372,7 +372,7 @@ export default function AboutPage() {
                   "At Procyon, every solution is built to be scalable, sustainable, and future-ready. Because we believe technology should not only solve today's challenges but also create tomorrow's opportunities."
                 </p>
                 <p className="text-emerald-400 font-medium">
-                  — Syed Ahmed, Co-founder Procyon Technostructure
+                  , Syed Ahmed, Co-founder Procyon Technostructure
                 </p>
               </div>
             </div>
@@ -739,7 +739,7 @@ export default function AboutPage() {
           {/* Bottom Statement */}
           <div className="text-center mt-20">
             <p className="text-xl text-gray-400 max-w-4xl mx-auto leading-relaxed">
-              These values are not just words on a page—they are the driving force behind every solution we create, 
+              These values are not just words on a page, they are the driving force behind every solution we create, 
               every relationship we build, and every innovation we pursue in our mission to transform businesses.
             </p>
           </div>
