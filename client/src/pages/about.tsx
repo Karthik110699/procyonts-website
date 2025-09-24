@@ -236,41 +236,70 @@ export default function AboutPage() {
           <div className="space-y-20">
             
             {/* Our Healthcare Commitment */}
-            <div className="space-y-8">
-              <div>
-                <h2 className="text-4xl md:text-5xl font-bold mb-6">
-                  <span className="bg-gradient-to-r from-emerald-400 via-blue-400 to-purple-400 bg-clip-text text-transparent">
-                    Our Healthcare Commitment
-                  </span>
-                </h2>
-                <p className="text-xl text-gray-300 mb-8 leading-relaxed">
-                  We don't just consult in healthcare — we <span className="text-emerald-400 font-semibold">build healthcare platforms</span>.
-                </p>
-              </div>
-              
-              <div className="space-y-6">
-                <div className="flex items-start space-x-4">
-                  <div className="w-3 h-3 bg-emerald-400 rounded-full mt-2 flex-shrink-0 shadow-lg shadow-emerald-400/50"></div>
-                  <div>
-                    <span className="text-emerald-400 font-semibold">Hekma.ai</span>
-                    <span className="text-gray-300"> → Expanding trial diversity, reducing patient drop-offs.</span>
+            <div className="flex justify-center">
+              <div className="relative max-w-4xl w-full">
+                {/* Animated gradient border container */}
+                <div className="relative bg-gradient-to-r from-emerald-500 via-blue-500 via-purple-500 to-emerald-500 p-[2px] rounded-3xl animate-gradient-x">
+                  <div className="bg-gray-900 rounded-3xl p-12 relative overflow-hidden">
+                    
+                    {/* Floating particles for healthcare theme */}
+                    <div className="absolute inset-0 overflow-hidden pointer-events-none">
+                      <div className="absolute top-4 left-8 w-2 h-2 bg-emerald-400/40 rounded-full animate-pulse"></div>
+                      <div className="absolute top-12 right-12 w-1 h-1 bg-blue-400/60 rounded-full animate-pulse" style={{animationDelay: '1s'}}></div>
+                      <div className="absolute bottom-8 left-16 w-3 h-3 bg-purple-400/30 rounded-full animate-pulse" style={{animationDelay: '2s'}}></div>
+                      <div className="absolute bottom-16 right-8 w-2 h-2 bg-emerald-400/50 rounded-full animate-pulse" style={{animationDelay: '0.5s'}}></div>
+                    </div>
+                    
+                    <div className="text-center space-y-8 relative z-10">
+                      <div>
+                        <h2 className="text-4xl md:text-6xl font-bold mb-6">
+                          <span className="bg-gradient-to-r from-emerald-400 via-blue-400 to-purple-400 bg-clip-text text-transparent">
+                            Our Healthcare Commitment
+                          </span>
+                        </h2>
+                        <p className="text-xl text-gray-300 mb-8 leading-relaxed max-w-3xl mx-auto">
+                          We don't just consult in healthcare — we <span className="text-emerald-400 font-semibold">build healthcare platforms</span>.
+                        </p>
+                      </div>
+                      
+                      {/* AI Platforms showcase */}
+                      <div className="grid md:grid-cols-2 gap-8 max-w-3xl mx-auto">
+                        {/* Hekma.ai Card */}
+                        <div className="relative group">
+                          <div className="absolute inset-0 bg-gradient-to-r from-emerald-600 to-emerald-400 rounded-2xl opacity-20 group-hover:opacity-30 transition-opacity duration-300 blur-sm"></div>
+                          <div className="relative bg-gray-800/50 border border-emerald-500/30 rounded-2xl p-6 hover:border-emerald-400/50 transition-all duration-300">
+                            <div className="flex items-center space-x-3 mb-4">
+                              <div className="w-3 h-3 bg-emerald-400 rounded-full shadow-lg shadow-emerald-400/50 animate-pulse"></div>
+                              <span className="text-emerald-400 font-bold text-lg">Hekma.ai</span>
+                            </div>
+                            <p className="text-gray-300 text-left">Expanding trial diversity, reducing patient drop-offs.</p>
+                          </div>
+                        </div>
+                        
+                        {/* Akra.ai Card */}
+                        <div className="relative group">
+                          <div className="absolute inset-0 bg-gradient-to-r from-blue-600 to-blue-400 rounded-2xl opacity-20 group-hover:opacity-30 transition-opacity duration-300 blur-sm"></div>
+                          <div className="relative bg-gray-800/50 border border-blue-500/30 rounded-2xl p-6 hover:border-blue-400/50 transition-all duration-300">
+                            <div className="flex items-center space-x-3 mb-4">
+                              <div className="w-3 h-3 bg-blue-400 rounded-full shadow-lg shadow-blue-400/50 animate-pulse"></div>
+                              <span className="text-blue-400 font-bold text-lg">Akra.ai</span>
+                            </div>
+                            <p className="text-gray-300 text-left">Cutting SaMD/SiMD validation cycles & accelerating FDA approval.</p>
+                          </div>
+                        </div>
+                      </div>
+                      
+                      <div className="max-w-3xl mx-auto">
+                        <p className="text-lg text-gray-300 leading-relaxed">
+                          This dual focus makes Procyon one of the few enterprise providers that can deliver both 
+                          <span className="text-purple-400 font-semibold"> IT modernization</span> and 
+                          <span className="text-emerald-400 font-semibold"> digital health innovation</span>.
+                        </p>
+                      </div>
+                    </div>
                   </div>
                 </div>
-                
-                <div className="flex items-start space-x-4">
-                  <div className="w-3 h-3 bg-blue-400 rounded-full mt-2 flex-shrink-0 shadow-lg shadow-blue-400/50"></div>
-                  <div>
-                    <span className="text-blue-400 font-semibold">Akra.ai</span>
-                    <span className="text-gray-300"> → Cutting SaMD/SiMD validation cycles & accelerating FDA approval.</span>
-                  </div>
-                </div>
               </div>
-              
-              <p className="text-lg text-gray-300 leading-relaxed">
-                This dual focus makes Procyon one of the few enterprise providers that can deliver both 
-                <span className="text-purple-400 font-semibold"> IT modernization</span> and 
-                <span className="text-emerald-400 font-semibold"> digital health innovation</span>.
-              </p>
             </div>
             
             {/* Global Reach */}
