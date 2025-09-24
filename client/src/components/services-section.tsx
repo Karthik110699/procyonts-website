@@ -57,8 +57,18 @@ export default function ServicesSection() {
         <div>
           <h3 className="text-3xl font-bold text-center mb-12 text-emerald-400 reveal-scale" data-delay="500">Core Services</h3>
           <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
+          {/* Government Solutions */}
+          <div className="group floating-card conic-border bg-gradient-to-br from-gray-800 to-gray-900 p-8 rounded-2xl border border-gray-700 hover:border-red-500 reveal cursor-pointer transition-all duration-300" style={{ animationDelay: '0.4s' }} onClick={() => {window.scrollTo(0, 0); window.location.href = '/services/government';}}>
+            <div className="w-16 h-16 bg-red-500/20 rounded-xl flex items-center justify-center mb-6 group-hover:bg-red-500/30 transition-colors relative z-10">
+              <Building className="w-8 h-8 text-red-400" />
+            </div>
+            <h4 className="text-xl font-bold mb-4 relative z-10">Government Solutions</h4>
+            <div className="text-red-300 text-sm font-semibold mb-2 relative z-10">Secure, compliant IT solutions for federal/state agencies.</div>
+            <p className="text-gray-300 mb-4 relative z-10">Specialized solutions for government organizations with compliance, security, and efficiency in mind.</p>
+          </div>
+
           {/* Data Strategy & Analytics */}
-          <div className="group floating-card conic-border bg-gradient-to-br from-gray-800 to-gray-900 p-8 rounded-2xl border border-gray-700 hover:border-purple-500 reveal cursor-pointer transition-all duration-300" style={{ animationDelay: '0.4s' }} onClick={() => {window.scrollTo(0, 0); window.location.href = '/services/data-analytics';}}>
+          <div className="group floating-card conic-border bg-gradient-to-br from-gray-800 to-gray-900 p-8 rounded-2xl border border-gray-700 hover:border-purple-500 reveal cursor-pointer transition-all duration-300" style={{ animationDelay: '0.5s' }} onClick={() => {window.scrollTo(0, 0); window.location.href = '/services/data-analytics';}}>
             <div className="w-16 h-16 bg-purple-500/20 rounded-xl flex items-center justify-center mb-6 group-hover:bg-purple-500/30 transition-colors relative z-10">
               <BarChart className="w-8 h-8 text-purple-400" />
             </div>
@@ -68,7 +78,7 @@ export default function ServicesSection() {
           </div>
 
           {/* AI & Machine Learning */}
-          <div className="group floating-card conic-border bg-gradient-to-br from-gray-800 to-gray-900 p-8 rounded-2xl border border-gray-700 hover:border-emerald-500 reveal cursor-pointer transition-all duration-300" style={{ animationDelay: '0.5s' }} onClick={() => {window.scrollTo(0, 0); window.location.href = '/services/ai-ml';}}>
+          <div className="group floating-card conic-border bg-gradient-to-br from-gray-800 to-gray-900 p-8 rounded-2xl border border-gray-700 hover:border-emerald-500 reveal cursor-pointer transition-all duration-300" style={{ animationDelay: '0.6s' }} onClick={() => {window.scrollTo(0, 0); window.location.href = '/services/ai-ml';}}>
             <div className="w-16 h-16 bg-emerald-500/20 rounded-xl flex items-center justify-center mb-6 group-hover:bg-emerald-500/30 transition-colors relative z-10">
               <Brain className="w-8 h-8 text-emerald-400" />
             </div>
@@ -78,7 +88,7 @@ export default function ServicesSection() {
           </div>
 
           {/* Cloud Transformation & Optimization */}
-          <div className="group floating-card conic-border bg-gradient-to-br from-gray-800 to-gray-900 p-8 rounded-2xl border border-gray-700 hover:border-blue-500 reveal cursor-pointer transition-all duration-300" style={{ animationDelay: '0.6s' }} onClick={() => {window.scrollTo(0, 0); window.location.href = '/services/cloud';}}>
+          <div className="group floating-card conic-border bg-gradient-to-br from-gray-800 to-gray-900 p-8 rounded-2xl border border-gray-700 hover:border-blue-500 reveal cursor-pointer transition-all duration-300" style={{ animationDelay: '0.7s' }} onClick={() => {window.scrollTo(0, 0); window.location.href = '/services/cloud';}}>
             <div className="w-16 h-16 bg-blue-500/20 rounded-xl flex items-center justify-center mb-6 group-hover:bg-blue-500/30 transition-colors relative z-10">
               <Server className="w-8 h-8 text-blue-400" />
             </div>
@@ -88,23 +98,13 @@ export default function ServicesSection() {
           </div>
 
           {/* Staff Augmentation & Workforce Solutions */}
-          <div className="group floating-card conic-border bg-gradient-to-br from-gray-800 to-gray-900 p-8 rounded-2xl border border-gray-700 hover:border-amber-500 reveal cursor-pointer transition-all duration-300" style={{ animationDelay: '0.7s' }} onClick={() => {window.scrollTo(0, 0); window.location.href = '/services/staff-augmentation';}}>
+          <div className="group floating-card conic-border bg-gradient-to-br from-gray-800 to-gray-900 p-8 rounded-2xl border border-gray-700 hover:border-amber-500 reveal cursor-pointer transition-all duration-300" style={{ animationDelay: '0.8s' }} onClick={() => {window.scrollTo(0, 0); window.location.href = '/services/staff-augmentation';}}>
             <div className="w-16 h-16 bg-amber-500/20 rounded-xl flex items-center justify-center mb-6 group-hover:bg-amber-500/30 transition-colors relative z-10">
               <Users className="w-8 h-8 text-amber-400" />
             </div>
             <h4 className="text-xl font-bold mb-4 relative z-10">Staff Augmentation & Workforce Solutions</h4>
             <div className="text-amber-300 text-sm font-semibold mb-2 relative z-10">1–2 week rapid deployment, 30–50% cost savings with just in-time offerings</div>
             <p className="text-gray-300 mb-4 relative z-10">Access skilled IT professionals who bring the knowledge, agility, and experience needed to keep your projects moving forward.</p>
-          </div>
-
-          {/* Government Solutions */}
-          <div className="group floating-card conic-border bg-gradient-to-br from-gray-800 to-gray-900 p-8 rounded-2xl border border-gray-700 hover:border-red-500 reveal cursor-pointer transition-all duration-300" style={{ animationDelay: '0.8s' }} onClick={() => {window.scrollTo(0, 0); window.location.href = '/services/government';}}>
-            <div className="w-16 h-16 bg-red-500/20 rounded-xl flex items-center justify-center mb-6 group-hover:bg-red-500/30 transition-colors relative z-10">
-              <Building className="w-8 h-8 text-red-400" />
-            </div>
-            <h4 className="text-xl font-bold mb-4 relative z-10">Government Solutions</h4>
-            <div className="text-red-300 text-sm font-semibold mb-2 relative z-10">Secure, compliant IT solutions for federal/state agencies.</div>
-            <p className="text-gray-300 mb-4 relative z-10">Specialized solutions for government organizations with compliance, security, and efficiency in mind.</p>
           </div>
         </div>
         </div>
