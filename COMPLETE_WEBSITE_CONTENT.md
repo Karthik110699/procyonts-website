@@ -4,8 +4,13 @@
 
 ### Hero Section
 **Main Headlines (Rotating):**
-- "Revolutionizing Enterprises with AI, Talent and Technology!"
-- "Empowering Your Business to Lead the Digital Future!"
+- "Where Healthcare Equity Meets Enterprise AI"
+- "20 Years. 200+ Projects. Real Results."
+- "From Salesforce to SaMD — We Deliver Outcomes"
+
+**CTAs:**
+- Primary: "Start My 90-Day Plan →"
+- Secondary: "Explore Our Solutions →"
 
 **Call-to-Action Buttons:**
 - "Take the leap today"
@@ -19,15 +24,15 @@
 - Cloud Transformation
 - AI & Machine Learning
 - Data Analytics
-- Staff Augmentation
+- Talent Acquisition
 
 ### Company Introduction Section
 **Tagline:** "Building Smarter Businesses, Together"
 
-**Main Headline:** "We are Procyon, the guiding star for digital transformation"
+**Main Headline:** "We are Procyon, your trusted partner for digital transformation"
 
 **Company Description:**
-"For over 20 years, we've empowered businesses to re-imagine the way they work, innovate, and grow. With deep expertise in enterprise solutions, Salesforce consulting, AI innovation, and strategic partnerships, we deliver technology that maximizes ROI and fuels long-term growth."
+"For over 20 years, we've partnered with 75+ customers worldwide, delivering 200+ successful projects across industries. From Salesforce and ServiceNow consulting to AI innovation, SAP solutions, and healthcare platforms, our mission is simple: deliver measurable outcomes that scale with your business."
 
 **Service Categories (Left-to-Right Order):**
 • Enterprise Solutions
@@ -44,13 +49,13 @@
 **Main Heading:** "What we do"
 
 **Description:**
-"At Procyon, we turn ideas into market-ready solutions, deliver enterprise technology that scales, and provide the right talent to drive digital growth."
+"At Procyon, ideas become market-ready solutions. We build enterprise platforms that scale, modernize legacy systems, and provide the right talent to drive digital growth."
 
 **Company Statistics:**
 - 20+ Years of Trusted Service
 - 75+ Global Customers
 - 200+ Successful Projects
-- 3 Worldwide Branches
+- 3 Global Branches (USA, Canada, India)
 
 **Call-to-Action:** "Know more"
 
@@ -63,14 +68,17 @@
 
 **Salesforce:**
 - Heading: "Salesforce"
+- Outcomes: "40% faster case resolution, 25% faster quote cycles, HIPAA-ready Health Cloud."
 - Description: "AI-driven Salesforce solutions for tomorrow's enterprises. Transform customer relationships with intelligent automation, advanced analytics, and seamless integration capabilities."
 
 **ServiceNow:**
-- Heading: "ServiceNow" 
+- Heading: "ServiceNow"
+- Outcomes: "30% faster ticket resolution, 20% fewer SLA breaches, unified compliance."
 - Description: "Transform your workflows with ServiceNow's cloud-based platform that streamlines operations, automates tasks, and boosts productivity across your entire organization."
 
 **SAP:**
 - Heading: "SAP"
+- Outcomes: "20% faster financial close cycles, 15% supply chain cost savings."
 - Description: "Enterprise resource planning solutions that integrate business processes and drive operational excellence with real-time insights and intelligent automation."
 
 #### Core Services
@@ -78,27 +86,32 @@
 
 **Data Strategy & Analytics:**
 - Heading: "Data Strategy & Analytics"
+- Outcomes: "25–40% faster decision-making, 15–30% efficiency gains."
 - Description: "Unlock the full value of your data with comprehensive strategy, engineering, and analytics solutions that transform information into competitive advantage."
 
-**Artificial Intelligence & Machine Learning:**
-- Heading: "Artificial Intelligence & Machine Learning"
+**Artificial Intelligence:**
+- Heading: "Artificial Intelligence"
+- Outcomes: "Outcome-focused models with 95% prediction accuracy"
 - Description: "Make AI work for real business outcomes with practical solutions that enhance productivity, improve decision-making, and future-proof operations."
 
 **Cloud Transformation & Optimization:**
 - Heading: "Cloud Transformation & Optimization"
+- Outcomes: "60% cost reduction, 99.9% uptime, 10x faster deployment."
 - Description: "Build the foundation for agility, security, and growth with comprehensive cloud transformation that drives measurable results."
 
 **Staff Augmentation & Workforce Solutions:**
 - Heading: "Staff Augmentation & Workforce Solutions"
+- Outcomes: "1–2 week rapid deployment, 30–50% cost savings with just in-time offerings"
 - Description: "Access skilled IT professionals who bring the knowledge, agility, and experience needed to keep your projects moving forward."
 
 **Government Solutions:**
 - Heading: "Government Solutions"
+- Outcomes: "Secure, compliant IT solutions for federal/state agencies."
 - Description: "Specialized solutions for government organizations with compliance, security, and efficiency in mind."
 
 ### Four Pillars Section
 **Main Heading:** "Concept to Completion"
-**Subtitle:** "From visionary concepts to flawless execution, we deliver transformative solutions with precision and excellence."
+**Subtitle:** "From visionary concepts to flawless execution."
 
 **The Four Pillars:**
 
@@ -106,10 +119,10 @@
 "Every great solution begins with a bold vision. We collaborate closely with our clients to understand their unique challenges and goals."
 
 **2. Engineering:**
-"Once the vision is clear, we bring it to life through solid engineering. Our team builds enterprise-grade solutions that are scalable and secure."
+"Once the vision is clear, we bring it to life through agile engineering principles. Our team builds enterprise-grade solutions that are scalable and secure."
 
 **3. Modernizing:**
-"As businesses grow, so must their technology. We breathe new life into legacy systems, modernizing applications and infrastructure."
+"As businesses grow, so must the technology. We breathe new life into legacy systems, modernizing applications and infrastructure."
 
 **4. Managing:**
 "Transformation doesn't end at deployment. We ensure ongoing performance, resilience, and innovation through proactive management."
@@ -125,11 +138,11 @@
 
 **Testimonial 2:**
 "Procyon's AI-driven solutions have transformed our business operations. The level of innovation and technical expertise they bring is unmatched."
-- Mubarak Muthalif, CEO
+– CEO, Healthcare Startup
 
 **Testimonial 3:**
 "The staffing support from Procyon was outstanding. They quickly understood our requirements and provided skilled professionals who seamlessly integrated with our team and delivered beyond expectations."
-- Ashik Saleem, Director of Technology
+- VP & Global Head, Tech Mahindra
 
 ### Clients Section
 **Main Heading:** "Trusted by Industry Leaders"
@@ -147,7 +160,7 @@ Arris, Arteria, AT&T, BASF, Bounteous, Capgemini, Delta Dental, Fisker, Ford, Ge
 **CSR Initiatives:**
 
 **Education for All:**
-"Supporting the education of students from underprivileged families, ensuring they have access to quality learning and opportunities."
+"Supporting the education of students from underprivileged families in India & Africa, ensuring they have access to quality learning and opportunities."
 
 **Caring for the Elderly & Orphans:**
 "Extending support to old age homes and orphanages, providing care, companionship, and resources for those who need it most."

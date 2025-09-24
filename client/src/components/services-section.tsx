@@ -27,6 +27,7 @@ export default function ServicesSection() {
                 <SiSalesforce className="w-8 h-8 text-blue-400" />
               </div>
               <h4 className="text-2xl font-bold mb-4 relative z-10">Salesforce</h4>
+              <div className="text-blue-300 text-sm font-semibold mb-2 relative z-10">40% faster case resolution, 25% faster quote cycles, HIPAA-ready Health Cloud.</div>
               <p className="text-gray-300 mb-6 relative z-10">AI-driven Salesforce solutions for tomorrow's enterprises. Transform customer relationships with intelligent automation, advanced analytics, and seamless integration capabilities.</p>
             </div>
 
@@ -36,6 +37,7 @@ export default function ServicesSection() {
                 <ServiceNowLogo className="w-8 h-8 text-emerald-400" />
               </div>
               <h4 className="text-2xl font-bold mb-4 relative z-10">ServiceNow</h4>
+              <div className="text-emerald-300 text-sm font-semibold mb-2 relative z-10">30% faster ticket resolution, 20% fewer SLA breaches, unified compliance.</div>
               <p className="text-gray-300 mb-6 relative z-10">Transform your workflows with ServiceNow's cloud-based platform that streamlines operations, automates tasks, and boosts productivity across your entire organization.</p>
             </div>
 
@@ -45,6 +47,7 @@ export default function ServicesSection() {
                 <SiSap className="w-8 h-8 text-purple-400" />
               </div>
               <h4 className="text-2xl font-bold mb-4 relative z-10">SAP</h4>
+              <div className="text-purple-300 text-sm font-semibold mb-2 relative z-10">20% faster financial close cycles, 15% supply chain cost savings.</div>
               <p className="text-gray-300 mb-6 relative z-10">Enterprise resource planning solutions that integrate business processes and drive operational excellence with real-time insights and intelligent automation.</p>
             </div>
           </div>
@@ -60,6 +63,7 @@ export default function ServicesSection() {
               <BarChart className="w-8 h-8 text-purple-400" />
             </div>
             <h4 className="text-xl font-bold mb-4 relative z-10">Data Strategy & Analytics</h4>
+            <div className="text-purple-300 text-sm font-semibold mb-2 relative z-10">25–40% faster decision-making, 15–30% efficiency gains.</div>
             <p className="text-gray-300 mb-4 relative z-10">Unlock the full value of your data with comprehensive strategy, engineering, and analytics solutions that transform information into competitive advantage.</p>
           </div>
 
@@ -68,7 +72,8 @@ export default function ServicesSection() {
             <div className="w-16 h-16 bg-emerald-500/20 rounded-xl flex items-center justify-center mb-6 group-hover:bg-emerald-500/30 transition-colors relative z-10">
               <Brain className="w-8 h-8 text-emerald-400" />
             </div>
-            <h4 className="text-xl font-bold mb-4 relative z-10">Artificial Intelligence & Machine Learning</h4>
+            <h4 className="text-xl font-bold mb-4 relative z-10">Artificial Intelligence</h4>
+            <div className="text-emerald-300 text-sm font-semibold mb-2 relative z-10">Outcome-focused models with 95% prediction accuracy</div>
             <p className="text-gray-300 mb-4 relative z-10">Make AI work for real business outcomes with practical solutions that enhance productivity, improve decision-making, and future-proof operations.</p>
           </div>
 
@@ -78,6 +83,7 @@ export default function ServicesSection() {
               <Server className="w-8 h-8 text-blue-400" />
             </div>
             <h4 className="text-xl font-bold mb-4 relative z-10">Cloud Transformation & Optimization</h4>
+            <div className="text-blue-300 text-sm font-semibold mb-2 relative z-10">60% cost reduction, 99.9% uptime, 10x faster deployment.</div>
             <p className="text-gray-300 mb-4 relative z-10">Build the foundation for agility, security, and growth with comprehensive cloud transformation that drives measurable results.</p>
           </div>
 
@@ -87,6 +93,7 @@ export default function ServicesSection() {
               <Users className="w-8 h-8 text-amber-400" />
             </div>
             <h4 className="text-xl font-bold mb-4 relative z-10">Staff Augmentation & Workforce Solutions</h4>
+            <div className="text-amber-300 text-sm font-semibold mb-2 relative z-10">1–2 week rapid deployment, 30–50% cost savings with just in-time offerings</div>
             <p className="text-gray-300 mb-4 relative z-10">Access skilled IT professionals who bring the knowledge, agility, and experience needed to keep your projects moving forward.</p>
           </div>
 
@@ -96,6 +103,7 @@ export default function ServicesSection() {
               <Building className="w-8 h-8 text-red-400" />
             </div>
             <h4 className="text-xl font-bold mb-4 relative z-10">Government Solutions</h4>
+            <div className="text-red-300 text-sm font-semibold mb-2 relative z-10">Secure, compliant IT solutions for federal/state agencies.</div>
             <p className="text-gray-300 mb-4 relative z-10">Specialized solutions for government organizations with compliance, security, and efficiency in mind.</p>
           </div>
         </div>

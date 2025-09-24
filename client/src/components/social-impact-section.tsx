@@ -20,7 +20,7 @@ export default function SocialImpactSection() {
                 </div>
                 <div>
                   <h3 className="text-xl font-semibold mb-2">Education for All</h3>
-                  <p className="text-gray-300">Supporting the education of students from underprivileged families, ensuring they have access to quality learning and opportunities.</p>
+                  <p className="text-gray-300">Supporting the education of students from underprivileged families in India & Africa, ensuring they have access to quality learning and opportunities.</p>
                 </div>
               </div>
               <div className="flex items-start space-x-4">

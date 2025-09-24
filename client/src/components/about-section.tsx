@@ -26,7 +26,7 @@ export default function AboutSection() {
               <h3 className="text-blue-400 font-semibold text-lg">Value-driven approach</h3>
               <h2 className="text-4xl md:text-5xl font-bold">What we do</h2>
               <p className="text-xl text-gray-300">
-                At Procyon, we turn ideas into market-ready solutions, deliver enterprise technology that scales, and provide the right talent to drive digital growth.
+                At Procyon, ideas become market-ready solutions. We build enterprise platforms that scale, modernize legacy systems, and provide the right talent to drive digital growth.
               </p>
               <div className="grid grid-cols-2 gap-6 mt-6">
                 <div className="text-center" ref={yearsRef}>
@@ -47,7 +47,7 @@ export default function AboutSection() {
               </div>
               <div className="text-center" ref={branchesRef}>
                 <div className="text-4xl font-bold text-amber-400">{branchesCount}</div>
-                <p className="text-gray-400 mt-2">Worldwide Branches</p>
+                <p className="text-gray-400 mt-2">Global Branches (USA, Canada, India)</p>
               </div>
             </div>
             

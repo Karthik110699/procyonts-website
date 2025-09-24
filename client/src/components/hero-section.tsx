@@ -7,12 +7,16 @@ export default function HeroSection() {
   
   const heroTexts = [
     {
-      line1: "Revolutionizing Enterprises with",
-      line2: "AI, Talent and Technology!"
+      line1: "Where Healthcare Equity Meets",
+      line2: "Enterprise AI"
     },
     {
-      line1: "Empowering Your Business to",
-      line2: "Lead the Digital Future!"
+      line1: "20 Years. 200+ Projects.",
+      line2: "Real Results."
+    },
+    {
+      line1: "From Salesforce to SaMD,",
+      line2: "We Deliver Outcomes"
     }
   ];
   
@@ -24,7 +28,7 @@ export default function HeroSection() {
     { name: "Cloud Transformation", color: "from-white to-yellow-400", dotColor: "bg-white", shadowColor: "shadow-white/50", link: "/services/cloud" },
     { name: "AI & Machine Learning", color: "from-green-400 to-green-500", dotColor: "bg-green-400", shadowColor: "shadow-green-400/50", link: "/services/ai-ml" },
     { name: "Data Analytics", color: "from-yellow-400 to-yellow-500", dotColor: "bg-yellow-400", shadowColor: "shadow-yellow-400/50", link: "/services/data-analytics" },
-    { name: "Staff Augmentation", color: "from-yellow-400 to-white", dotColor: "bg-yellow-400", shadowColor: "shadow-yellow-400/50", link: "/services/staff-augmentation" }
+    { name: "Talent Acquisition", color: "from-yellow-400 to-white", dotColor: "bg-yellow-400", shadowColor: "shadow-yellow-400/50", link: "/services/staff-augmentation" }
   ];
 
 

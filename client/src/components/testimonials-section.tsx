@@ -10,14 +10,14 @@ export default function TestimonialsSection() {
     },
     {
       quote: "Procyon's AI-driven solutions have transformed our business operations. The level of innovation and technical expertise they bring is unmatched.",
-      author: "Mubarak Muthalif",
-      role: "CEO",
+      author: "CEO",
+      role: "Healthcare Startup",
       color: "emerald"
     },
     {
       quote: "The staffing support from Procyon was outstanding. They quickly understood our requirements and provided skilled professionals who seamlessly integrated with our team and delivered beyond expectations.",
-      author: "Ashik Saleem",
-      role: "Director of Technology",
+      author: "VP & Global Head",
+      role: "Tech Mahindra",
       color: "purple"
     }
   ];
