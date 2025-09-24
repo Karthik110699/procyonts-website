@@ -312,7 +312,7 @@ export default function AboutPage() {
               {/* World Map Image */}
               <div className="mt-8">
                 <img 
-                  src="/attached_assets/image_1758754554118.png" 
+                  src="/attached_assets/image_1758754701814.png" 
                   alt="Procyon Global Offices World Map" 
                   className="w-full max-w-lg rounded-2xl shadow-2xl border border-gray-600/30"
                 />
