@@ -4,7 +4,6 @@ import { useEffect, useRef } from "react";
 import Navbar from "@/components/navbar";
 import { useScrollReveal } from "@/hooks/use-scroll-reveal";
 import SEOHead, { organizationSchema } from "@/components/seo-head";
-import worldMapImage from "@assets/image_1758754701814.png";
 
 export default function AboutPage() {
   useScrollReveal();
@@ -234,7 +233,7 @@ export default function AboutPage() {
         <div className="morphing-bg opacity-30"></div>
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
           
-          <div className="grid lg:grid-cols-2 gap-16 items-start">
+          <div className="space-y-20">
             
             {/* Our Healthcare Commitment */}
             <div className="space-y-8">
@@ -308,15 +307,6 @@ export default function AboutPage() {
                     <span className="text-gray-300"> Onsite | Offsite | Offshore | Hybrid</span>
                   </div>
                 </div>
-              </div>
-              
-              {/* World Map Image */}
-              <div className="mt-8">
-                <img 
-                  src={worldMapImage} 
-                  alt="Procyon Global Offices World Map" 
-                  className="w-full max-w-lg rounded-2xl shadow-2xl border border-gray-600/30"
-                />
               </div>
             </div>
             
