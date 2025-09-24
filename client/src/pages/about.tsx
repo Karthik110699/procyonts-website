@@ -4,6 +4,7 @@ import { useEffect, useRef } from "react";
 import Navbar from "@/components/navbar";
 import { useScrollReveal } from "@/hooks/use-scroll-reveal";
 import SEOHead, { organizationSchema } from "@/components/seo-head";
+import worldMapImage from "@assets/image_1758754701814.png";
 
 export default function AboutPage() {
   useScrollReveal();
@@ -312,7 +313,7 @@ export default function AboutPage() {
               {/* World Map Image */}
               <div className="mt-8">
                 <img 
-                  src="/attached_assets/image_1758754701814.png" 
+                  src={worldMapImage} 
                   alt="Procyon Global Offices World Map" 
                   className="w-full max-w-lg rounded-2xl shadow-2xl border border-gray-600/30"
                 />
