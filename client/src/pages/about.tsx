@@ -364,12 +364,37 @@ export default function AboutPage() {
           </div>
           
 
-          {/* Closing Statement */}
-          <div className="text-center mt-16 max-w-4xl mx-auto">
-            <p className="text-xl text-gray-300 leading-relaxed">
-              <span className="text-emerald-400 font-semibold">"At Procyon, every solution is built to be scalable, sustainable, and future-ready.</span> 
-              <span className="text-gray-300"> Because we believe technology should not only solve today's challenges but also create tomorrow's opportunities."</span>
-            </p>
+          {/* Executive Quote */}
+          <div className="flex justify-center mt-16">
+            <div className="relative max-w-4xl w-full">
+              <div className="bg-gradient-to-br from-gray-800/40 to-gray-900/60 backdrop-blur-sm border border-gray-600/30 rounded-3xl p-12 relative overflow-hidden">
+                
+                {/* Quote Icon */}
+                <div className="absolute top-6 left-8 text-6xl text-emerald-400/20 font-serif">"</div>
+                
+                <div className="relative z-10 text-center space-y-8">
+                  {/* Quote Text */}
+                  <blockquote className="text-2xl md:text-3xl text-gray-200 leading-relaxed font-light italic">
+                    At Procyon, every solution is built to be scalable, sustainable, and future-ready. Because we believe technology should not only solve today's challenges but also create tomorrow's opportunities.
+                  </blockquote>
+                  
+                  {/* Attribution */}
+                  <div className="flex items-center justify-center space-x-4 pt-6 border-t border-gray-600/30">
+                    <div className="text-center">
+                      <div className="text-xl font-semibold text-emerald-400 mb-1">
+                        Syed Ahmed
+                      </div>
+                      <div className="text-gray-400 text-sm tracking-wide uppercase">
+                        Co-founder, Procyon Technostructure
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                
+                {/* Decorative Elements */}
+                <div className="absolute bottom-6 right-8 text-6xl text-emerald-400/20 font-serif rotate-180">"</div>
+              </div>
+            </div>
           </div>
           
         </div>
