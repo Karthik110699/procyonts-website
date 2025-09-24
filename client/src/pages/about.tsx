@@ -304,7 +304,7 @@ export default function AboutPage() {
             
             {/* Global Reach */}
             <div className="flex justify-center">
-              <div className="bg-gradient-to-br from-gray-800/20 to-gray-900/40 backdrop-blur-lg border border-gray-500/30 rounded-2xl p-8 shadow-xl hover:shadow-gray-500/20 transition-all duration-300 max-w-5xl w-full">
+              <div className="bg-gradient-to-br from-gray-800/20 to-gray-900/40 backdrop-blur-lg border border-gray-500/30 rounded-2xl p-8 shadow-xl hover:shadow-gray-500/20 transition-all duration-300 max-w-4xl w-full">
                 <div className="text-center space-y-8">
                   <div>
                     <h2 className="text-4xl md:text-5xl font-bold mb-6">
