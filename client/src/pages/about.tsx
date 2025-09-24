@@ -150,36 +150,6 @@ export default function AboutPage() {
             <br /><br />
             Since 2004, Procyon Technostructure has been delivering secure, scalable enterprise solutions across Salesforce, ServiceNow, SAP, Cloud, AI, and Data. What sets us apart is our commitment to healthcare innovation — proven by our platform Hekma.ai (patient equity) and Akra.ai (SaMD/SiMD validation).
           </p>
-          
-          <div className="mt-16 reveal-fade" data-delay="300">
-            <h2 className="text-3xl font-bold mb-6 text-emerald-400">Our Story</h2>
-            <p className="text-xl text-gray-300 mb-8">
-              Founded in California with offices in Toronto and Chennai, Procyon combines global delivery with a customer-first mindset.
-            </p>
-            
-            <div className="grid md:grid-cols-2 gap-6 max-w-4xl">
-              <div className="space-y-4">
-                <div className="flex items-center text-lg text-gray-300">
-                  <div className="w-2 h-2 bg-emerald-400 rounded-full mr-4"></div>
-                  <span>200+ projects delivered across industries</span>
-                </div>
-                <div className="flex items-center text-lg text-gray-300">
-                  <div className="w-2 h-2 bg-blue-400 rounded-full mr-4"></div>
-                  <span>75+ customers from startups to Fortune 500s</span>
-                </div>
-              </div>
-              <div className="space-y-4">
-                <div className="flex items-center text-lg text-gray-300">
-                  <div className="w-2 h-2 bg-purple-400 rounded-full mr-4"></div>
-                  <span>200+ certified experts across Salesforce, ServiceNow, SAP, and AI</span>
-                </div>
-                <div className="flex items-center text-lg text-gray-300">
-                  <div className="w-2 h-2 bg-amber-400 rounded-full mr-4"></div>
-                  <span>20 years of transformation experience</span>
-                </div>
-              </div>
-            </div>
-          </div>
         </div>
       </div>
 
@@ -205,6 +175,41 @@ export default function AboutPage() {
               <p className="text-gray-300 text-lg leading-relaxed">
                 Delivering value through People, Process, Technology, and next-generation AI solutions
               </p>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      {/* Our Story */}
+      <section className="py-20 zoom-container">
+        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 zoom-section">
+          <div className="text-center mb-16 reveal-fade" data-delay="100">
+            <h2 className="text-4xl font-bold mb-6 text-emerald-400">Our Story</h2>
+            <p className="text-xl text-gray-300 mb-12">
+              Founded in California with offices in Toronto and Chennai, Procyon combines global delivery with a customer-first mindset.
+            </p>
+            
+            <div className="grid md:grid-cols-2 gap-8 max-w-4xl mx-auto">
+              <div className="space-y-6">
+                <div className="flex items-center text-lg text-gray-300 justify-center md:justify-start">
+                  <div className="w-2 h-2 bg-emerald-400 rounded-full mr-4"></div>
+                  <span>200+ projects delivered across industries</span>
+                </div>
+                <div className="flex items-center text-lg text-gray-300 justify-center md:justify-start">
+                  <div className="w-2 h-2 bg-blue-400 rounded-full mr-4"></div>
+                  <span>75+ customers from startups to Fortune 500s</span>
+                </div>
+              </div>
+              <div className="space-y-6">
+                <div className="flex items-center text-lg text-gray-300 justify-center md:justify-start">
+                  <div className="w-2 h-2 bg-purple-400 rounded-full mr-4"></div>
+                  <span>200+ certified experts across Salesforce, ServiceNow, SAP, and AI</span>
+                </div>
+                <div className="flex items-center text-lg text-gray-300 justify-center md:justify-start">
+                  <div className="w-2 h-2 bg-amber-400 rounded-full mr-4"></div>
+                  <span>20 years of transformation experience</span>
+                </div>
+              </div>
             </div>
           </div>
         </div>
