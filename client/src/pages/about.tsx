@@ -184,31 +184,44 @@ export default function AboutPage() {
       <section className="py-20 zoom-container">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 zoom-section">
           <div className="text-center mb-16 reveal-fade" data-delay="100">
-            <h2 className="text-4xl font-bold mb-6 text-emerald-400">Our Story</h2>
-            <p className="text-xl text-gray-300 mb-12">
-              Founded in California with offices in Toronto and Chennai, Procyon combines global delivery with a customer-first mindset.
-            </p>
+            <h2 className="text-4xl font-bold mb-8 text-emerald-400">Our Story</h2>
             
-            <div className="grid md:grid-cols-2 gap-8 max-w-4xl mx-auto">
-              <div className="space-y-6">
-                <div className="flex items-center text-lg text-gray-300 justify-center md:justify-start">
-                  <div className="w-2 h-2 bg-emerald-400 rounded-full mr-4"></div>
-                  <span>200+ projects delivered across industries</span>
+            {/* Glassy container */}
+            <div className="max-w-5xl mx-auto bg-gradient-to-br from-gray-800/40 to-gray-900/60 backdrop-blur-xl border border-gray-700/50 rounded-3xl p-8 md:p-12 shadow-2xl">
+              <p className="text-xl text-gray-300 mb-12 leading-relaxed">
+                Founded in California with offices in Toronto and Chennai, Procyon combines global delivery with a customer-first mindset.
+              </p>
+              
+              <div className="grid md:grid-cols-2 gap-8 mb-12">
+                <div className="space-y-6">
+                  <div className="flex items-center text-lg text-gray-300 justify-center md:justify-start">
+                    <div className="w-3 h-3 bg-emerald-400 rounded-full mr-4 shadow-lg shadow-emerald-400/50"></div>
+                    <span>200+ projects delivered across industries</span>
+                  </div>
+                  <div className="flex items-center text-lg text-gray-300 justify-center md:justify-start">
+                    <div className="w-3 h-3 bg-blue-400 rounded-full mr-4 shadow-lg shadow-blue-400/50"></div>
+                    <span>75+ customers from startups to Fortune 500s</span>
+                  </div>
                 </div>
-                <div className="flex items-center text-lg text-gray-300 justify-center md:justify-start">
-                  <div className="w-2 h-2 bg-blue-400 rounded-full mr-4"></div>
-                  <span>75+ customers from startups to Fortune 500s</span>
+                <div className="space-y-6">
+                  <div className="flex items-center text-lg text-gray-300 justify-center md:justify-start">
+                    <div className="w-3 h-3 bg-purple-400 rounded-full mr-4 shadow-lg shadow-purple-400/50"></div>
+                    <span>200+ certified experts across Salesforce, ServiceNow, SAP, and AI</span>
+                  </div>
+                  <div className="flex items-center text-lg text-gray-300 justify-center md:justify-start">
+                    <div className="w-3 h-3 bg-amber-400 rounded-full mr-4 shadow-lg shadow-amber-400/50"></div>
+                    <span>20 years of transformation experience</span>
+                  </div>
                 </div>
               </div>
-              <div className="space-y-6">
-                <div className="flex items-center text-lg text-gray-300 justify-center md:justify-start">
-                  <div className="w-2 h-2 bg-purple-400 rounded-full mr-4"></div>
-                  <span>200+ certified experts across Salesforce, ServiceNow, SAP, and AI</span>
-                </div>
-                <div className="flex items-center text-lg text-gray-300 justify-center md:justify-start">
-                  <div className="w-2 h-2 bg-amber-400 rounded-full mr-4"></div>
-                  <span>20 years of transformation experience</span>
-                </div>
+              
+              <div className="space-y-6 text-center">
+                <p className="text-lg text-gray-300 leading-relaxed">
+                  We are proud to be a <span className="text-emerald-400 font-semibold">WBE/MBE& CMAS certified partner</span>, helping organizations meet supplier diversity goals while delivering enterprise-grade impact.
+                </p>
+                <p className="text-lg text-gray-300 leading-relaxed">
+                  Our strength lies in delivering end-to-end technology solutions that balance innovation with practicality:
+                </p>
               </div>
             </div>
           </div>
