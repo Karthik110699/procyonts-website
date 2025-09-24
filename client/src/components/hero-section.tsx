@@ -1,5 +1,6 @@
 import { useState, useEffect } from "react";
 import { Link } from "wouter";
+import { ArrowRight } from "lucide-react";
 
 export default function HeroSection() {
   const [currentServiceIndex, setCurrentServiceIndex] = useState(0);
@@ -117,14 +118,14 @@ export default function HeroSection() {
             <div className="flex flex-col space-y-2">
               <a 
                 href="#contact" 
-                className="group relative px-6 py-4 bg-gradient-to-r from-blue-600 to-emerald-600 rounded-lg font-semibold text-base text-white overflow-hidden transition-all duration-300 transform hover:scale-105 text-center"
+                className="group relative px-6 py-4 bg-gradient-to-r from-blue-600 to-emerald-600 rounded-lg font-semibold text-base text-white overflow-hidden transition-all duration-300 transform hover:scale-105 text-center whitespace-nowrap"
               >
                 <span className="relative z-10">Start My 90-Day Plan →</span>
                 <div className="absolute inset-0 bg-gradient-to-r from-emerald-600 to-blue-600 opacity-0 group-hover:opacity-100 transition-opacity duration-300"></div>
               </a>
               <a 
                 href="#services" 
-                className="px-6 py-4 border-2 border-white text-white rounded-lg font-semibold text-base transition-all duration-300 transform hover:scale-105 hover:bg-white/10 text-center"
+                className="px-6 py-4 border-2 border-white text-white rounded-lg font-semibold text-base transition-all duration-300 transform hover:scale-105 hover:bg-white/10 text-center whitespace-nowrap"
               >
                 Explore Our Solutions →
               </a>
@@ -155,14 +156,14 @@ export default function HeroSection() {
               <div className="flex flex-row space-x-4 mt-8">
                 <a 
                   href="#contact" 
-                  className="group relative px-8 py-4 bg-gradient-to-r from-blue-600 to-emerald-600 rounded-lg font-semibold text-lg text-white overflow-hidden transition-all duration-300 transform hover:scale-105 text-center"
+                  className="group relative px-8 py-4 bg-gradient-to-r from-blue-600 to-emerald-600 rounded-lg font-semibold text-lg text-white overflow-hidden transition-all duration-300 transform hover:scale-105 text-center whitespace-nowrap"
                 >
                   <span className="relative z-10">Start My 90-Day Plan →</span>
                   <div className="absolute inset-0 bg-gradient-to-r from-emerald-600 to-blue-600 opacity-0 group-hover:opacity-100 transition-opacity duration-300"></div>
                 </a>
                 <Link 
                   href="/services" 
-                  className="px-8 py-4 border-2 border-white text-white rounded-lg font-semibold text-lg transition-all duration-300 transform hover:scale-105 hover:bg-white/10 text-center"
+                  className="px-8 py-4 border-2 border-white text-white rounded-lg font-semibold text-lg transition-all duration-300 transform hover:scale-105 hover:bg-white/10 text-center whitespace-nowrap"
                 >
                   Explore Our Solutions →
                 </Link>
