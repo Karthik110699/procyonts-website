@@ -227,6 +227,102 @@ export default function AboutPage() {
         </div>
       </section>
 
+      {/* Our Healthcare Commitment & Global Reach */}
+      <section className="py-20 bg-gradient-to-b from-procyon-dark via-gray-900/80 to-procyon-dark relative overflow-hidden">
+        <div className="wireframe-overlay opacity-20"></div>
+        <div className="morphing-bg opacity-30"></div>
+        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
+          
+          <div className="grid lg:grid-cols-2 gap-16 items-start">
+            
+            {/* Our Healthcare Commitment */}
+            <div className="space-y-8">
+              <div>
+                <h2 className="text-4xl md:text-5xl font-bold mb-6">
+                  <span className="bg-gradient-to-r from-emerald-400 via-blue-400 to-purple-400 bg-clip-text text-transparent">
+                    Our Healthcare Commitment
+                  </span>
+                </h2>
+                <p className="text-xl text-gray-300 mb-8 leading-relaxed">
+                  We don't just consult in healthcare — we <span className="text-emerald-400 font-semibold">build healthcare platforms</span>.
+                </p>
+              </div>
+              
+              <div className="space-y-6">
+                <div className="flex items-start space-x-4">
+                  <div className="w-3 h-3 bg-emerald-400 rounded-full mt-2 flex-shrink-0 shadow-lg shadow-emerald-400/50"></div>
+                  <div>
+                    <span className="text-emerald-400 font-semibold">Hekma.ai</span>
+                    <span className="text-gray-300"> → Expanding trial diversity, reducing patient drop-offs.</span>
+                  </div>
+                </div>
+                
+                <div className="flex items-start space-x-4">
+                  <div className="w-3 h-3 bg-blue-400 rounded-full mt-2 flex-shrink-0 shadow-lg shadow-blue-400/50"></div>
+                  <div>
+                    <span className="text-blue-400 font-semibold">Akra.ai</span>
+                    <span className="text-gray-300"> → Cutting SaMD/SiMD validation cycles & accelerating FDA approval.</span>
+                  </div>
+                </div>
+              </div>
+              
+              <p className="text-lg text-gray-300 leading-relaxed">
+                This dual focus makes Procyon one of the few enterprise providers that can deliver both 
+                <span className="text-purple-400 font-semibold"> IT modernization</span> and 
+                <span className="text-emerald-400 font-semibold"> digital health innovation</span>.
+              </p>
+            </div>
+            
+            {/* Global Reach */}
+            <div className="space-y-8">
+              <div>
+                <h2 className="text-4xl md:text-5xl font-bold mb-6">
+                  <span className="bg-gradient-to-r from-blue-400 via-purple-400 to-amber-400 bg-clip-text text-transparent">
+                    Global Reach
+                  </span>
+                </h2>
+              </div>
+              
+              <div className="space-y-6">
+                <div className="flex items-start space-x-4">
+                  <div className="w-3 h-3 bg-blue-400 rounded-full mt-2 flex-shrink-0 shadow-lg shadow-blue-400/50"></div>
+                  <div>
+                    <span className="text-blue-400 font-semibold">Headquarters:</span>
+                    <span className="text-gray-300"> Novato, California</span>
+                  </div>
+                </div>
+                
+                <div className="flex items-start space-x-4">
+                  <div className="w-3 h-3 bg-purple-400 rounded-full mt-2 flex-shrink-0 shadow-lg shadow-purple-400/50"></div>
+                  <div>
+                    <span className="text-purple-400 font-semibold">Offices:</span>
+                    <span className="text-gray-300"> Toronto, Canada | Chennai, India</span>
+                  </div>
+                </div>
+                
+                <div className="flex items-start space-x-4">
+                  <div className="w-3 h-3 bg-amber-400 rounded-full mt-2 flex-shrink-0 shadow-lg shadow-amber-400/50"></div>
+                  <div>
+                    <span className="text-amber-400 font-semibold">Delivery Models:</span>
+                    <span className="text-gray-300"> Onsite | Offsite | Offshore | Hybrid</span>
+                  </div>
+                </div>
+              </div>
+            </div>
+            
+          </div>
+          
+          {/* Closing Statement */}
+          <div className="text-center mt-16 max-w-4xl mx-auto">
+            <p className="text-xl text-gray-300 leading-relaxed">
+              <span className="text-emerald-400 font-semibold">"At Procyon, every solution is built to be scalable, sustainable, and future-ready.</span> 
+              <span className="text-gray-300"> Because we believe technology should not only solve today's challenges but also create tomorrow's opportunities."</span>
+            </p>
+          </div>
+          
+        </div>
+      </section>
+
       {/* Our Journey Timeline */}
       <section className="py-20 bg-gradient-to-b from-gray-900/80 via-procyon-dark to-gray-900/80 relative overflow-hidden">
         <div className="wireframe-overlay"></div>
