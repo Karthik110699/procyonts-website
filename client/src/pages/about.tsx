@@ -304,7 +304,7 @@ export default function AboutPage() {
             
             {/* Global Reach */}
             <div className="flex justify-center">
-              <div className="bg-gradient-to-br from-gray-800/20 to-gray-900/40 backdrop-blur-lg border border-gray-500/30 rounded-2xl p-8 shadow-xl hover:shadow-gray-500/20 transition-all duration-300 max-w-2xl w-full">
+              <div className="bg-gradient-to-br from-gray-800/20 to-gray-900/40 backdrop-blur-lg border border-gray-500/30 rounded-2xl p-8 shadow-xl hover:shadow-gray-500/20 transition-all duration-300 max-w-5xl w-full">
                 <div className="text-center space-y-8">
                   <div>
                     <h2 className="text-4xl md:text-5xl font-bold mb-6">
@@ -314,30 +314,48 @@ export default function AboutPage() {
                     </h2>
                   </div>
                   
-                  <div className="space-y-6 text-left">
-                    <div className="flex items-start space-x-4">
-                      <div className="w-3 h-3 bg-blue-400 rounded-full mt-2 flex-shrink-0 shadow-lg shadow-blue-400/50"></div>
-                      <div>
-                        <span className="text-blue-400 font-semibold">Headquarters:</span>
-                        <span className="text-gray-300"> Novato, California</span>
+                  {/* Horizontal Metrics */}
+                  <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
+                    
+                    {/* Headquarters Metric */}
+                    <div className="text-center space-y-3">
+                      <div className="text-blue-400 font-bold text-lg tracking-wide uppercase">
+                        Headquarters
+                      </div>
+                      <div className="text-2xl md:text-3xl font-bold text-white">
+                        Novato
+                      </div>
+                      <div className="text-gray-400 text-sm">
+                        California
                       </div>
                     </div>
                     
-                    <div className="flex items-start space-x-4">
-                      <div className="w-3 h-3 bg-purple-400 rounded-full mt-2 flex-shrink-0 shadow-lg shadow-purple-400/50"></div>
-                      <div>
-                        <span className="text-purple-400 font-semibold">Offices:</span>
-                        <span className="text-gray-300"> Toronto, Canada | Chennai, India</span>
+                    {/* Offices Metric */}
+                    <div className="text-center space-y-3">
+                      <div className="text-purple-400 font-bold text-lg tracking-wide uppercase">
+                        Global Offices
+                      </div>
+                      <div className="text-2xl md:text-3xl font-bold text-white">
+                        2
+                      </div>
+                      <div className="text-gray-400 text-sm">
+                        Toronto, Canada<br />Chennai, India
                       </div>
                     </div>
                     
-                    <div className="flex items-start space-x-4">
-                      <div className="w-3 h-3 bg-amber-400 rounded-full mt-2 flex-shrink-0 shadow-lg shadow-amber-400/50"></div>
-                      <div>
-                        <span className="text-amber-400 font-semibold">Delivery Models:</span>
-                        <span className="text-gray-300"> Onsite | Offsite | Offshore | Hybrid</span>
+                    {/* Delivery Models Metric */}
+                    <div className="text-center space-y-3">
+                      <div className="text-amber-400 font-bold text-lg tracking-wide uppercase">
+                        Delivery Models
+                      </div>
+                      <div className="text-2xl md:text-3xl font-bold text-white">
+                        4
+                      </div>
+                      <div className="text-gray-400 text-sm">
+                        Onsite | Offsite<br />Offshore | Hybrid
                       </div>
                     </div>
+                    
                   </div>
                 </div>
               </div>
