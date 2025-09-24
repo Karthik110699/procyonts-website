@@ -148,7 +148,7 @@ export default function AboutPage() {
           <p className="text-xl text-gray-300 max-w-6xl reveal-fade" data-delay="200">
             At Procyon, we don't just adapt to the digital era, we help businesses lead it with confidence and vision.
             <br /><br />
-            With <span className="font-semibold text-white">20 years of proven expertise</span>, we have grown into a trusted global enterprise solutions provider, headquartered in Novato, CA, with a strong presence in Toronto and Chennai. Over the years, we've delivered over <span className="font-semibold text-white">200 successful engagements</span>, partnering with startups, scale-ups, and Fortune 500 enterprises alike.
+            Since 2004, Procyon Technostructure has been delivering secure, scalable enterprise solutions across Salesforce, ServiceNow, SAP, Cloud, AI, and Data. What sets us apart is our commitment to healthcare innovation — proven by our platform Hekma.ai (patient equity) and Akra.ai (SaMD/SiMD validation).
             <br /><br />
             Our strength lies in delivering end-to-end technology solutions that balance innovation with practicality:
           </p>
@@ -162,7 +162,13 @@ export default function AboutPage() {
             </ul>
           </div>
           <p className="text-xl text-gray-300 max-w-6xl mt-8 reveal-fade" data-delay="400">
-            At Procyon, every solution is built to be scalable, sustainable, and future-ready. Because we believe technology should not only solve today's challenges but also create tomorrow's opportunities.
+            Founded in California with offices in Toronto and Chennai, Procyon combines global delivery with a customer-first mindset.
+            <br /><br />
+            200+ projects delivered across industries<br />
+            75+ customers from startups to Fortune 500s<br />
+            200+ certified experts across Salesforce, ServiceNow, SAP, and AI<br />
+            20 years of transformation experience<br /><br />
+            We are proud to be a WBE/MBE& CMAS certified partner, helping organizations meet supplier diversity goals while delivering enterprise-grade impact.
           </p>
         </div>
       </div>
