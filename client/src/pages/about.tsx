@@ -430,7 +430,7 @@ export default function AboutPage() {
             <div className="space-y-12 md:space-y-16 lg:space-y-24">
               
               {/* 2004 */}
-              <div className="timeline-item timeline-item-left relative flex flex-col md:flex-row items-center" data-year="2004">
+              <div className="timeline-item timeline-item-left relative flex flex-col md:flex-row items-center pt-8 md:pt-0" data-year="2004">
                 <div className="w-full md:flex-1 text-center md:text-right md:pr-8 mb-4 md:mb-0">
                   <div className="group conic-border bg-gradient-to-br from-blue-800 to-blue-900 p-4 md:p-6 rounded-xl border border-blue-500/30 hover:border-blue-400 transition-all duration-500 hover:shadow-2xl hover:shadow-blue-500/20">
                     <div className="relative z-10 text-2xl md:text-3xl lg:text-4xl font-bold text-blue-400 mb-2">2004</div>
@@ -438,14 +438,14 @@ export default function AboutPage() {
                     <div className="relative z-10 hidden md:block text-sm text-blue-300/70 mt-2">The beginning of innovation</div>
                   </div>
                 </div>
-                <div className="absolute left-1/2 md:left-1/2 top-6 md:top-auto transform -translate-x-1/2 w-4 h-4 md:w-6 md:h-6 bg-blue-500 rounded-full timeline-dot-animated z-10 border-2 md:border-4 border-procyon-dark"></div>
+                <div className="absolute left-1/2 md:left-1/2 top-0 md:top-1/2 transform -translate-x-1/2 md:-translate-y-1/2 w-4 h-4 md:w-6 md:h-6 bg-blue-500 rounded-full timeline-dot-animated z-10 border-2 md:border-4 border-procyon-dark"></div>
                 <div className="w-full md:flex-1 md:pl-8"></div>
               </div>
 
               {/* 2008 */}
-              <div className="timeline-item timeline-item-right relative flex flex-col md:flex-row items-center" data-year="2008">
+              <div className="timeline-item timeline-item-right relative flex flex-col md:flex-row items-center pt-8 md:pt-0" data-year="2008">
                 <div className="w-full md:flex-1 md:pr-8"></div>
-                <div className="absolute left-1/2 md:left-1/2 top-6 md:top-auto transform -translate-x-1/2 w-4 h-4 md:w-6 md:h-6 bg-emerald-500 rounded-full timeline-dot-animated z-10 border-2 md:border-4 border-procyon-dark" style={{animationDelay: '0.5s'}}></div>
+                <div className="absolute left-1/2 md:left-1/2 top-0 md:top-1/2 transform -translate-x-1/2 md:-translate-y-1/2 w-4 h-4 md:w-6 md:h-6 bg-emerald-500 rounded-full timeline-dot-animated z-10 border-2 md:border-4 border-procyon-dark" style={{animationDelay: '0.5s'}}></div>
                 <div className="w-full md:flex-1 text-center md:text-left md:pl-8 mb-4 md:mb-0">
                   <div className="group conic-border bg-gradient-to-br from-emerald-800 to-emerald-900 p-4 md:p-6 rounded-xl border border-emerald-500/30 hover:border-emerald-400 transition-all duration-500 hover:shadow-2xl hover:shadow-emerald-500/20">
                     <div className="relative z-10 text-2xl md:text-3xl lg:text-4xl font-bold text-emerald-400 mb-2">2008</div>
@@ -456,7 +456,7 @@ export default function AboutPage() {
               </div>
 
               {/* 2015 */}
-              <div className="timeline-item timeline-item-left relative flex flex-col md:flex-row items-center" data-year="2015">
+              <div className="timeline-item timeline-item-left relative flex flex-col md:flex-row items-center pt-8 md:pt-0" data-year="2015">
                 <div className="w-full md:flex-1 text-center md:text-right md:pr-8 mb-4 md:mb-0">
                   <div className="group conic-border bg-gradient-to-br from-purple-800 to-purple-900 p-4 md:p-6 rounded-xl border border-purple-500/30 hover:border-purple-400 transition-all duration-500 hover:shadow-2xl hover:shadow-purple-500/20">
                     <div className="relative z-10 text-2xl md:text-3xl lg:text-4xl font-bold text-purple-400 mb-2">2015</div>
@@ -464,7 +464,7 @@ export default function AboutPage() {
                     <div className="relative z-10 hidden md:block text-sm text-purple-300/70 mt-2">Strengthening global presence</div>
                   </div>
                 </div>
-                <div className="absolute left-1/2 md:left-1/2 top-6 md:top-auto transform -translate-x-1/2 w-4 h-4 md:w-6 md:h-6 bg-purple-500 rounded-full timeline-dot-animated z-10 border-2 md:border-4 border-procyon-dark" style={{animationDelay: '1s'}}></div>
+                <div className="absolute left-1/2 md:left-1/2 top-0 md:top-1/2 transform -translate-x-1/2 md:-translate-y-1/2 w-4 h-4 md:w-6 md:h-6 bg-purple-500 rounded-full timeline-dot-animated z-10 border-2 md:border-4 border-procyon-dark" style={{animationDelay: '1s'}}></div>
                 <div className="w-full md:flex-1 md:pl-8"></div>
               </div>
 
