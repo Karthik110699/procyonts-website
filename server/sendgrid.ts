@@ -36,7 +36,7 @@ Submitted at: ${new Date().toLocaleString()}
     `.trim();
 
     await mailService.send({
-      to: 'hello@procyonts.com',
+      to: 'krishkrizz@gmail.com',
       from: 'krishkrizz@gmail.com', // Your verified sender email
       subject: `Contact Form: ${formData.subject || `Message from ${formData.firstName} ${formData.lastName}`}`,
       text: emailContent,
