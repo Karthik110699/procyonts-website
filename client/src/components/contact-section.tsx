@@ -121,7 +121,7 @@ export function ContactSection() {
             <div className="bg-gradient-to-br from-gray-800 to-gray-900 p-8 rounded-2xl border border-gray-700">
               <h3 className="text-2xl font-bold mb-6">Send us a Message</h3>
               
-              <form ref={formRef} action="https://abiramidesign.com/assets/Php/contact.php" method="post" role="form" className="php-email-form space-y-6">
+              <form ref={formRef} action="https://procyonts.com/php/contact.php" method="post" role="form" className="php-email-form space-y-6">
                 <div className="grid md:grid-cols-2 gap-6">
                   <div>
                     <label htmlFor="firstName" className="block text-sm font-medium mb-2">

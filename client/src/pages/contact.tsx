@@ -228,7 +228,7 @@ export default function ContactPage() {
               <div className="bg-gradient-to-br from-gray-800 to-gray-900 p-8 rounded-2xl border border-gray-700">
                 <h2 className="text-3xl font-bold mb-8">Send us a Message</h2>
                 
-                <form ref={formRef} action="https://abiramidesign.com/assets/Php/contact.php" method="post" role="form" className="php-email-form space-y-6">
+                <form ref={formRef} action="https://procyonts.com/php/contact.php" method="post" role="form" className="php-email-form space-y-6">
                   <div className="grid md:grid-cols-2 gap-6">
                     <div>
                       <label htmlFor="firstName" className="block text-sm font-medium mb-2">
