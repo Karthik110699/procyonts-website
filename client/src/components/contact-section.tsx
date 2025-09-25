@@ -20,12 +20,19 @@ export function ContactSection() {
       try {
         const formData = new FormData(form);
         
+        // Debug: Log form data
+        console.log('Form data being sent:');
+        formData.forEach((value, key) => {
+          console.log(key, value);
+        });
+        
         const response = await fetch(form.action, {
           method: 'POST',
           headers: {
-            'X-Requested-With': 'XMLHttpRequest'
+            'X-Requested-With': 'XMLHttpRequest',
+            'Content-Type': 'application/x-www-form-urlencoded'
           },
-          body: formData
+          body: new URLSearchParams(formData as any)
         });
 
         if (response.ok) {
