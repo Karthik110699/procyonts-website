@@ -51,15 +51,26 @@ export default function ContactPage() {
     setIsSubmitting(true);
 
     try {
-      const response = await fetch('/api/contact', {
+      const formBody = new URLSearchParams();
+      formBody.append('firstName', formData.firstName);
+      formBody.append('lastName', formData.lastName);
+      formBody.append('email', formData.email);
+      formBody.append('company', formData.company);
+      formBody.append('phone', formData.phone);
+      formBody.append('subject', formData.subject);
+      formBody.append('message', formData.message);
+
+      const response = await fetch('/src/assets/PHP/contact.php', {
         method: 'POST',
         headers: {
-          'Content-Type': 'application/json',
+          'Content-Type': 'application/x-www-form-urlencoded',
         },
-        body: JSON.stringify(formData),
+        body: formBody.toString(),
       });
 
-      if (response.ok) {
+      const responseText = await response.text();
+
+      if (response.ok && responseText.trim() === 'OK') {
         toast({
           title: "Message Sent!",
           description: "We'll get back to you within 24 hours.",
@@ -74,9 +85,14 @@ export default function ContactPage() {
           message: ''
         });
       } else {
-        throw new Error('Failed to send message');
+        toast({
+          title: "Error",
+          description: responseText || "Failed to send message. Please try again.",
+          variant: "destructive",
+        });
       }
     } catch (error) {
+      console.error('Error submitting form:', error);
       toast({
         title: "Error",
         description: "Failed to send message. Please try again.",

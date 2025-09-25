@@ -28,15 +28,26 @@ export function ContactSection() {
     setIsSubmitting(true);
     
     try {
-      const response = await fetch('/api/contact', {
+      const formBody = new URLSearchParams();
+      formBody.append('firstName', formData.firstName);
+      formBody.append('lastName', formData.lastName);
+      formBody.append('email', formData.email);
+      formBody.append('company', formData.company);
+      formBody.append('phone', formData.phone);
+      formBody.append('subject', formData.subject);
+      formBody.append('message', formData.message);
+
+      const response = await fetch('/src/assets/PHP/contact.php', {
         method: 'POST',
         headers: {
-          'Content-Type': 'application/json',
+          'Content-Type': 'application/x-www-form-urlencoded',
         },
-        body: JSON.stringify(formData),
+        body: formBody.toString(),
       });
 
-      if (response.ok) {
+      const responseText = await response.text();
+
+      if (response.ok && responseText.trim() === 'OK') {
         toast({
           title: "Message sent successfully!",
           description: "Thank you for reaching out. We'll get back to you within 24 hours.",
@@ -52,10 +63,9 @@ export function ContactSection() {
           message: ''
         });
       } else {
-        const errorData = await response.json();
         toast({
           title: "Message failed to send",
-          description: errorData.message || "Please try again or contact us directly.",
+          description: responseText || "Please try again or contact us directly.",
           variant: "destructive",
         });
       }

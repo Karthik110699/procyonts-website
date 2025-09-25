@@ -4,7 +4,7 @@
   header("Access-Control-Allow-Methods: POST, DELETE, OPTIONS");
   header("Access-Control-Allow-Headers: Content-Type, Access-Control-Allow-Headers, Authorization, X-Requested-With");
   // Replace contact@example.com with your real receiving email address
-  $receiving_email_address = 'krishkrizz@gmail.com';
+  $receiving_email_address = 'hello@procyonts.com';
 
   if( file_exists($php_email_form = './php-email-form.php' )) {
     include( $php_email_form );
@@ -16,9 +16,9 @@
   $contact->ajax = true;
   
   $contact->to = $receiving_email_address;
-  $contact->from_name = $_POST['name'];
+  $contact->from_name = $_POST['firstName'] . ' ' . $_POST['lastName'];
   $contact->from_email = $_POST['email'];
-  $contact->subject = "Subject";
+  $contact->subject = $_POST['subject'] ? $_POST['subject'] : 'Contact Form Message';
 
   // Uncomment below code if you want to use SMTP to send emails. You need to enter your correct SMTP credentials
   /*
@@ -30,8 +30,17 @@
   );
   */
 
-  $contact->add_message( $_POST['name'], 'From');
+  $contact->add_message( $_POST['firstName'] . ' ' . $_POST['lastName'], 'Name');
   $contact->add_message( $_POST['email'], 'Email');
+  if( $_POST['company'] ) {
+    $contact->add_message( $_POST['company'], 'Company');
+  }
+  if( $_POST['phone'] ) {
+    $contact->add_message( $_POST['phone'], 'Phone');
+  }
+  if( $_POST['subject'] ) {
+    $contact->add_message( $_POST['subject'], 'Subject');
+  }
   $contact->add_message( $_POST['message'], 'Message', 10);
 
 
