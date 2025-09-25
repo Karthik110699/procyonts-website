@@ -469,9 +469,9 @@ export default function AboutPage() {
               </div>
 
               {/* 2018 */}
-              <div className="timeline-item timeline-item-right relative flex flex-col md:flex-row items-center" data-year="2018">
+              <div className="timeline-item timeline-item-right relative flex flex-col md:flex-row items-center pt-8 md:pt-0" data-year="2018">
                 <div className="w-full md:flex-1 md:pr-8"></div>
-                <div className="absolute left-1/2 md:left-1/2 top-6 md:top-auto transform -translate-x-1/2 w-4 h-4 md:w-6 md:h-6 bg-amber-500 rounded-full timeline-dot-animated z-10 border-2 md:border-4 border-procyon-dark" style={{animationDelay: '1.5s'}}></div>
+                <div className="absolute left-1/2 md:left-1/2 top-0 md:top-1/2 transform -translate-x-1/2 md:-translate-y-1/2 w-4 h-4 md:w-6 md:h-6 bg-amber-500 rounded-full timeline-dot-animated z-10 border-2 md:border-4 border-procyon-dark" style={{animationDelay: '1.5s'}}></div>
                 <div className="w-full md:flex-1 text-center md:text-left md:pl-8 mb-4 md:mb-0">
                   <div className="group conic-border bg-gradient-to-br from-amber-800 to-amber-900 p-4 md:p-6 rounded-xl border border-amber-500/30 hover:border-amber-400 transition-all duration-500 hover:shadow-2xl hover:shadow-amber-500/20">
                     <div className="relative z-10 text-2xl md:text-3xl lg:text-4xl font-bold text-amber-400 mb-2">2018</div>
@@ -482,7 +482,7 @@ export default function AboutPage() {
               </div>
 
               {/* 2020 */}
-              <div className="timeline-item timeline-item-left relative flex flex-col md:flex-row items-center" data-year="2020">
+              <div className="timeline-item timeline-item-left relative flex flex-col md:flex-row items-center pt-8 md:pt-0" data-year="2020">
                 <div className="w-full md:flex-1 text-center md:text-right md:pr-8 mb-4 md:mb-0">
                   <div className="group conic-border bg-gradient-to-br from-cyan-800 to-cyan-900 p-4 md:p-6 rounded-xl border border-cyan-500/30 hover:border-cyan-400 transition-all duration-500 hover:shadow-2xl hover:shadow-cyan-500/20">
                     <div className="relative z-10 text-2xl md:text-3xl lg:text-4xl font-bold text-cyan-400 mb-2">2020</div>
@@ -490,7 +490,7 @@ export default function AboutPage() {
                     <div className="relative z-10 hidden md:block text-sm text-cyan-300/70 mt-2">Next-gen solutions era</div>
                   </div>
                 </div>
-                <div className="absolute left-1/2 md:left-1/2 top-6 md:top-auto transform -translate-x-1/2 w-4 h-4 md:w-6 md:h-6 bg-cyan-500 rounded-full timeline-dot-animated z-10 border-2 md:border-4 border-procyon-dark" style={{animationDelay: '2s'}}></div>
+                <div className="absolute left-1/2 md:left-1/2 top-0 md:top-1/2 transform -translate-x-1/2 md:-translate-y-1/2 w-4 h-4 md:w-6 md:h-6 bg-cyan-500 rounded-full timeline-dot-animated z-10 border-2 md:border-4 border-procyon-dark" style={{animationDelay: '2s'}}></div>
                 <div className="w-full md:flex-1 md:pl-8"></div>
               </div>
 
