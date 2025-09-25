@@ -33,26 +33,26 @@ export default function Navbar() {
           </Link>
           
           {/* Desktop Menu */}
-          <div className="hidden xl:block">
-            <div className="flex items-baseline space-x-6 2xl:space-x-8">
-              <Link href="/" className={`transition-colors font-medium ${location === '/' ? 'bg-gradient-to-r from-blue-600 to-emerald-600 bg-clip-text text-transparent font-bold' : 'text-black hover:text-teal-600'}`} onClick={() => window.scrollTo(0, 0)}>Home</Link>
-              <Link href="/enterprise" className={`transition-colors font-medium ${location.startsWith('/enterprise') ? 'bg-gradient-to-r from-blue-600 to-emerald-600 bg-clip-text text-transparent font-bold' : 'text-black hover:text-teal-600'}`} onClick={() => window.scrollTo(0, 0)}>Enterprise</Link>
-              <Link href="/services" className={`transition-colors font-medium ${location.startsWith('/services') ? 'bg-gradient-to-r from-blue-600 to-emerald-600 bg-clip-text text-transparent font-bold' : 'text-black hover:text-teal-600'}`} onClick={() => window.scrollTo(0, 0)}>Services</Link>
-              <Link href="/about" className={`transition-colors font-medium ${location === '/about' ? 'bg-gradient-to-r from-blue-600 to-emerald-600 bg-clip-text text-transparent font-bold' : 'text-black hover:text-teal-600'}`} onClick={() => window.scrollTo(0, 0)}>About</Link>
-              <Link href="/careers" className={`transition-colors font-medium ${location === '/careers' ? 'bg-gradient-to-r from-blue-600 to-emerald-600 bg-clip-text text-transparent font-bold' : 'text-black hover:text-teal-600'}`} onClick={() => window.scrollTo(0, 0)}>Careers</Link>
-              <Link href="/social-impact" className={`transition-colors font-medium ${location === '/social-impact' ? 'bg-gradient-to-r from-blue-600 to-emerald-600 bg-clip-text text-transparent font-bold' : 'text-black hover:text-teal-600'}`} onClick={() => window.scrollTo(0, 0)}>CSR</Link>
+          <div className="hidden lg:block">
+            <div className="flex items-baseline space-x-4 xl:space-x-6 2xl:space-x-8">
+              <Link href="/" className={`transition-colors font-medium text-sm xl:text-base ${location === '/' ? 'bg-gradient-to-r from-blue-600 to-emerald-600 bg-clip-text text-transparent font-bold' : 'text-black hover:text-teal-600'}`} onClick={() => window.scrollTo(0, 0)}>Home</Link>
+              <Link href="/enterprise" className={`transition-colors font-medium text-sm xl:text-base ${location.startsWith('/enterprise') ? 'bg-gradient-to-r from-blue-600 to-emerald-600 bg-clip-text text-transparent font-bold' : 'text-black hover:text-teal-600'}`} onClick={() => window.scrollTo(0, 0)}>Enterprise</Link>
+              <Link href="/services" className={`transition-colors font-medium text-sm xl:text-base ${location.startsWith('/services') ? 'bg-gradient-to-r from-blue-600 to-emerald-600 bg-clip-text text-transparent font-bold' : 'text-black hover:text-teal-600'}`} onClick={() => window.scrollTo(0, 0)}>Services</Link>
+              <Link href="/about" className={`transition-colors font-medium text-sm xl:text-base ${location === '/about' ? 'bg-gradient-to-r from-blue-600 to-emerald-600 bg-clip-text text-transparent font-bold' : 'text-black hover:text-teal-600'}`} onClick={() => window.scrollTo(0, 0)}>About</Link>
+              <Link href="/careers" className={`transition-colors font-medium text-sm xl:text-base ${location === '/careers' ? 'bg-gradient-to-r from-blue-600 to-emerald-600 bg-clip-text text-transparent font-bold' : 'text-black hover:text-teal-600'}`} onClick={() => window.scrollTo(0, 0)}>Careers</Link>
+              <Link href="/social-impact" className={`transition-colors font-medium text-sm xl:text-base ${location === '/social-impact' ? 'bg-gradient-to-r from-blue-600 to-emerald-600 bg-clip-text text-transparent font-bold' : 'text-black hover:text-teal-600'}`} onClick={() => window.scrollTo(0, 0)}>CSR</Link>
             </div>
           </div>
           
           {/* CTA Button */}
-          <div className="hidden xl:block">
-            <Link href="/contact" className="bg-gradient-to-r from-blue-600 to-emerald-600 hover:from-blue-700 hover:to-emerald-700 px-6 py-2 rounded-lg font-semibold transition-all duration-300 text-white" onClick={() => window.scrollTo(0, 0)}>
+          <div className="hidden lg:block">
+            <Link href="/contact" className="bg-gradient-to-r from-blue-600 to-emerald-600 hover:from-blue-700 hover:to-emerald-700 px-4 xl:px-6 py-2 rounded-lg font-semibold transition-all duration-300 text-white text-sm xl:text-base whitespace-nowrap" onClick={() => window.scrollTo(0, 0)}>
               Get Started
             </Link>
           </div>
 
           {/* Mobile menu button */}
-          <div className="xl:hidden">
+          <div className="lg:hidden">
             <button 
               onClick={() => setIsMobileMenuOpen(!isMobileMenuOpen)}
               className="text-black hover:text-gray-700 transition-colors duration-300 p-1"
@@ -65,7 +65,7 @@ export default function Navbar() {
 
       {/* Mobile Menu */}
       {isMobileMenuOpen && (
-        <div className="xl:hidden bg-gray-800 border-t border-gray-700">
+        <div className="lg:hidden bg-gray-800 border-t border-gray-700">
           <div className="px-2 pt-2 pb-3 space-y-1 sm:px-3">
             <Link href="/" className={`block px-3 py-2 rounded-md transition-colors ${location === '/' ? 'text-emerald-400 bg-gray-700' : 'text-white hover:bg-gray-700 hover:text-gray-300'}`} onClick={() => window.scrollTo(0, 0)}>Home</Link>
             <Link href="/enterprise" className={`block px-3 py-2 rounded-md transition-colors ${location.startsWith('/enterprise') ? 'text-emerald-400 bg-gray-700' : 'text-white hover:bg-gray-700 hover:text-gray-300'}`} onClick={() => window.scrollTo(0, 0)}>Enterprise</Link>
