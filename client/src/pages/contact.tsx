@@ -1,7 +1,5 @@
 import { Mail, Phone, MapPin, Send } from "lucide-react";
 import Navbar from "@/components/navbar";
-import { useState } from "react";
-import { useToast } from "@/hooks/use-toast";
 import { useScrollReveal } from "@/hooks/use-scroll-reveal";
 import SEOHead, { organizationSchema } from "@/components/seo-head";
 
@@ -34,78 +32,6 @@ export default function ContactPage() {
     }
   };
 
-  const [formData, setFormData] = useState({
-    firstName: '',
-    lastName: '',
-    email: '',
-    company: '',
-    phone: '',
-    subject: '',
-    message: ''
-  });
-  const [isSubmitting, setIsSubmitting] = useState(false);
-  const { toast } = useToast();
-
-  const handleSubmit = async (e: React.FormEvent) => {
-    e.preventDefault();
-    setIsSubmitting(true);
-
-    try {
-      const formBody = new FormData();
-      formBody.append('firstName', formData.firstName);
-      formBody.append('lastName', formData.lastName);
-      formBody.append('email', formData.email);
-      formBody.append('company', formData.company);
-      formBody.append('phone', formData.phone);
-      formBody.append('subject', formData.subject);
-      formBody.append('message', formData.message);
-
-      const response = await fetch('/src/assets/PHP/contact.php', {
-        method: 'POST',
-        body: formBody,
-      });
-
-      const responseText = await response.text();
-
-      if (response.ok && responseText.trim() === 'OK') {
-        toast({
-          title: "Message Sent!",
-          description: "We'll get back to you within 24 hours.",
-        });
-        setFormData({
-          firstName: '',
-          lastName: '',
-          email: '',
-          company: '',
-          phone: '',
-          subject: '',
-          message: ''
-        });
-      } else {
-        toast({
-          title: "Error",
-          description: responseText || "Failed to send message. Please try again.",
-          variant: "destructive",
-        });
-      }
-    } catch (error) {
-      console.error('Error submitting form:', error);
-      toast({
-        title: "Error",
-        description: "Failed to send message. Please try again.",
-        variant: "destructive",
-      });
-    } finally {
-      setIsSubmitting(false);
-    }
-  };
-
-  const handleChange = (e: React.ChangeEvent<HTMLInputElement | HTMLTextAreaElement | HTMLSelectElement>) => {
-    setFormData({
-      ...formData,
-      [e.target.name]: e.target.value
-    });
-  };
 
   return (
     <>
@@ -246,7 +172,7 @@ export default function ContactPage() {
               <div className="bg-gradient-to-br from-gray-800 to-gray-900 p-8 rounded-2xl border border-gray-700">
                 <h2 className="text-3xl font-bold mb-8">Send us a Message</h2>
                 
-                <form onSubmit={handleSubmit} className="space-y-6">
+                <form action="/src/assets/PHP/contact.php" method="post" role="form" className="php-email-form space-y-6">
                   <div className="grid md:grid-cols-2 gap-6">
                     <div>
                       <label htmlFor="firstName" className="block text-sm font-medium mb-2">
@@ -256,8 +182,6 @@ export default function ContactPage() {
                         type="text"
                         id="firstName"
                         name="firstName"
-                        value={formData.firstName}
-                        onChange={handleChange}
                         required
                         className="w-full px-4 py-3 bg-gray-900 border border-gray-600 rounded-lg focus:ring-2 focus:ring-blue-500 focus:border-transparent outline-none"
                         placeholder="John"
@@ -272,8 +196,6 @@ export default function ContactPage() {
                         type="text"
                         id="lastName"
                         name="lastName"
-                        value={formData.lastName}
-                        onChange={handleChange}
                         required
                         className="w-full px-4 py-3 bg-gray-900 border border-gray-600 rounded-lg focus:ring-2 focus:ring-blue-500 focus:border-transparent outline-none"
                         placeholder="Doe"
@@ -289,8 +211,6 @@ export default function ContactPage() {
                       type="email"
                       id="email"
                       name="email"
-                      value={formData.email}
-                      onChange={handleChange}
                       required
                       className="w-full px-4 py-3 bg-gray-900 border border-gray-600 rounded-lg focus:ring-2 focus:ring-blue-500 focus:border-transparent outline-none"
                       placeholder="john.doe@company.com"
@@ -306,8 +226,6 @@ export default function ContactPage() {
                         type="text"
                         id="company"
                         name="company"
-                        value={formData.company}
-                        onChange={handleChange}
                         className="w-full px-4 py-3 bg-gray-900 border border-gray-600 rounded-lg focus:ring-2 focus:ring-blue-500 focus:border-transparent outline-none"
                         placeholder="Your Company"
                       />
@@ -321,8 +239,6 @@ export default function ContactPage() {
                         type="tel"
                         id="phone"
                         name="phone"
-                        value={formData.phone}
-                        onChange={handleChange}
                         className="w-full px-4 py-3 bg-gray-900 border border-gray-600 rounded-lg focus:ring-2 focus:ring-blue-500 focus:border-transparent outline-none"
                         placeholder="+1 (555) 123-4567"
                       />
@@ -336,8 +252,6 @@ export default function ContactPage() {
                     <select
                       id="subject"
                       name="subject"
-                      value={formData.subject}
-                      onChange={handleChange}
                       required
                       className="w-full px-4 py-3 bg-gray-900 border border-gray-600 rounded-lg focus:ring-2 focus:ring-blue-500 focus:border-transparent outline-none"
                     >
@@ -358,8 +272,6 @@ export default function ContactPage() {
                     <textarea
                       id="message"
                       name="message"
-                      value={formData.message}
-                      onChange={handleChange}
                       required
                       rows={6}
                       className="w-full px-4 py-3 bg-gray-900 border border-gray-600 rounded-lg focus:ring-2 focus:ring-blue-500 focus:border-transparent outline-none resize-none"
@@ -367,23 +279,20 @@ export default function ContactPage() {
                     />
                   </div>
                   
-                  <button
-                    type="submit"
-                    disabled={isSubmitting}
-                    className="w-full bg-gradient-to-r from-blue-600 to-emerald-600 hover:from-blue-700 hover:to-emerald-700 disabled:opacity-50 disabled:cursor-not-allowed px-8 py-4 rounded-lg font-semibold text-lg transition-all duration-300 flex items-center justify-center gap-2"
-                  >
-                    {isSubmitting ? (
-                      <>
-                        <div className="w-5 h-5 border-2 border-white/20 border-t-white rounded-full animate-spin" />
-                        Sending...
-                      </>
-                    ) : (
-                      <>
-                        <Send className="w-5 h-5" />
-                        Send Message
-                      </>
-                    )}
-                  </button>
+                  <div className="my-3">
+                    <div className="loading hidden">Loading</div>
+                    <div className="error-message hidden"></div>
+                    <div className="sent-message hidden">Your message has been sent. Thank you!</div>
+                  </div>
+                  <div className="text-center">
+                    <button
+                      type="submit"
+                      className="w-full bg-gradient-to-r from-blue-600 to-emerald-600 hover:from-blue-700 hover:to-emerald-700 px-8 py-4 rounded-lg font-semibold text-lg transition-all duration-300 flex items-center justify-center gap-2"
+                    >
+                      <Send className="w-5 h-5" />
+                      Send Message
+                    </button>
+                  </div>
                   
                   <p className="text-sm text-gray-400 text-center">
                     By submitting this form, you agree to our privacy policy and terms of service.
