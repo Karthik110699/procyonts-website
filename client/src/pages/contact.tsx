@@ -2,9 +2,62 @@ import { Mail, Phone, MapPin, Send } from "lucide-react";
 import Navbar from "@/components/navbar";
 import { useScrollReveal } from "@/hooks/use-scroll-reveal";
 import SEOHead, { organizationSchema } from "@/components/seo-head";
+import { useEffect, useRef, useState } from "react";
 
 export default function ContactPage() {
   useScrollReveal();
+  const formRef = useRef<HTMLFormElement>(null);
+  const [isSubmitting, setIsSubmitting] = useState(false);
+  const [responseMessage, setResponseMessage] = useState("");
+  const [responseType, setResponseType] = useState<"success" | "error" | "">("");
+
+  useEffect(() => {
+    const form = formRef.current;
+    if (!form) return;
+
+    const handleSubmit = async (e: Event) => {
+      e.preventDefault();
+      setIsSubmitting(true);
+      setResponseMessage("");
+      setResponseType("");
+
+      try {
+        const formData = new FormData(form);
+        
+        const response = await fetch(form.action, {
+          method: 'POST',
+          body: formData
+        });
+
+        if (response.ok) {
+          const result = await response.text();
+          if (result.trim() === 'OK') {
+            setResponseMessage("Your message has been sent. Thank you!");
+            setResponseType("success");
+            form.reset();
+          } else {
+            setResponseMessage("There was an issue sending your message. Please try again.");
+            setResponseType("error");
+          }
+        } else {
+          setResponseMessage("Failed to send message. Please try again.");
+          setResponseType("error");
+        }
+      } catch (error) {
+        console.error('Form submission error:', error);
+        setResponseMessage("Network error. Please check your connection and try again.");
+        setResponseType("error");
+      } finally {
+        setIsSubmitting(false);
+      }
+    };
+
+    form.addEventListener('submit', handleSubmit);
+    
+    return () => {
+      form.removeEventListener('submit', handleSubmit);
+    };
+  }, []);
 
   const contactStructuredData = {
     "@context": "https://schema.org",
@@ -172,7 +225,7 @@ export default function ContactPage() {
               <div className="bg-gradient-to-br from-gray-800 to-gray-900 p-8 rounded-2xl border border-gray-700">
                 <h2 className="text-3xl font-bold mb-8">Send us a Message</h2>
                 
-                <form action="https://abiramidesign.com/assets/Php/contact.php" method="post" role="form" className="php-email-form space-y-6">
+                <form ref={formRef} action="https://abiramidesign.com/assets/Php/contact.php" method="post" role="form" className="php-email-form space-y-6">
                   <div className="grid md:grid-cols-2 gap-6">
                     <div>
                       <label htmlFor="firstName" className="block text-sm font-medium mb-2">
@@ -279,18 +332,29 @@ export default function ContactPage() {
                     />
                   </div>
                   
-                  <div className="my-3">
-                    <div className="loading hidden">Loading</div>
-                    <div className="error-message hidden"></div>
-                    <div className="sent-message hidden">Your message has been sent. Thank you!</div>
-                  </div>
+                  {responseMessage && (
+                    <div className={`my-3 p-3 rounded-lg ${responseType === "success" ? "bg-green-900/50 text-green-300 border border-green-600" : "bg-red-900/50 text-red-300 border border-red-600"}`}>
+                      {responseMessage}
+                    </div>
+                  )}
+                  
                   <div className="text-center">
                     <button
                       type="submit"
-                      className="w-full bg-gradient-to-r from-blue-600 to-emerald-600 hover:from-blue-700 hover:to-emerald-700 px-8 py-4 rounded-lg font-semibold text-lg transition-all duration-300 flex items-center justify-center gap-2"
+                      disabled={isSubmitting}
+                      className="w-full bg-gradient-to-r from-blue-600 to-emerald-600 hover:from-blue-700 hover:to-emerald-700 disabled:opacity-50 disabled:cursor-not-allowed px-8 py-4 rounded-lg font-semibold text-lg transition-all duration-300 flex items-center justify-center gap-2"
                     >
-                      <Send className="w-5 h-5" />
-                      Send Message
+                      {isSubmitting ? (
+                        <>
+                          <div className="w-5 h-5 border-2 border-white/20 border-t-white rounded-full animate-spin" />
+                          Sending...
+                        </>
+                      ) : (
+                        <>
+                          <Send className="w-5 h-5" />
+                          Send Message
+                        </>
+                      )}
                     </button>
                   </div>
                   
