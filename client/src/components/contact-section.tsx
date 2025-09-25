@@ -22,6 +22,9 @@ export function ContactSection() {
         
         const response = await fetch(form.action, {
           method: 'POST',
+          headers: {
+            'X-Requested-With': 'XMLHttpRequest'
+          },
           body: formData
         });
 
