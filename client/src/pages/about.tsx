@@ -495,10 +495,10 @@ export default function AboutPage() {
               </div>
 
               {/* 2022 */}
-              <div className="timeline-item timeline-item-right relative flex flex-col md:flex-row items-center" data-year="2022">
+              <div className="timeline-item timeline-item-right relative flex flex-col md:flex-row items-center pt-8 md:pt-0" data-year="2022">
                 <div className="w-full md:flex-1 md:pr-8"></div>
-                <div className="absolute left-1/2 md:left-1/2 -top-3 md:top-auto transform -translate-x-1/2 w-4 h-4 md:w-6 md:h-6 bg-rose-500 rounded-full timeline-dot-animated z-10 border-2 md:border-4 border-procyon-dark" style={{animationDelay: '2.5s'}}></div>
-                <div className="w-full md:flex-1 text-center md:text-left md:pl-8 mb-4 md:mb-0 pt-6 md:pt-0">
+                <div className="absolute left-1/2 md:left-1/2 top-0 md:top-1/2 transform -translate-x-1/2 md:-translate-y-1/2 w-4 h-4 md:w-6 md:h-6 bg-rose-500 rounded-full timeline-dot-animated z-10 border-2 md:border-4 border-procyon-dark" style={{animationDelay: '2.5s'}}></div>
+                <div className="w-full md:flex-1 text-center md:text-left md:pl-8 mb-4 md:mb-0">
                   <div className="group conic-border bg-gradient-to-br from-rose-800 to-rose-900 p-4 md:p-6 rounded-xl border border-rose-500/30 hover:border-rose-400 transition-all duration-500 hover:shadow-2xl hover:shadow-rose-500/20">
                     <div className="relative z-10 text-2xl md:text-3xl lg:text-4xl font-bold text-rose-400 mb-2">2022</div>
                     <div className="relative z-10 text-base md:text-lg lg:text-xl text-gray-300">Akra: Digital Health SaaS (SiMD, SaMD)</div>
@@ -508,23 +508,23 @@ export default function AboutPage() {
               </div>
 
               {/* 2023 */}
-              <div className="timeline-item timeline-item-left relative flex flex-col md:flex-row items-center" data-year="2023">
-                <div className="w-full md:flex-1 text-center md:text-right md:pr-8 mb-4 md:mb-0 pt-6 md:pt-0">
+              <div className="timeline-item timeline-item-left relative flex flex-col md:flex-row items-center pt-8 md:pt-0" data-year="2023">
+                <div className="w-full md:flex-1 text-center md:text-right md:pr-8 mb-4 md:mb-0">
                   <div className="group conic-border bg-gradient-to-br from-green-800 to-green-900 p-4 md:p-6 rounded-xl border border-green-500/30 hover:border-green-400 transition-all duration-500 hover:shadow-2xl hover:shadow-green-500/20">
                     <div className="relative z-10 text-2xl md:text-3xl lg:text-4xl font-bold text-green-400 mb-2">2023</div>
                     <div className="relative z-10 text-base md:text-lg lg:text-xl text-gray-300">200+ projects delivered</div>
                     <div className="relative z-10 hidden md:block text-sm text-green-300/70 mt-2">Milestone achievement</div>
                   </div>
                 </div>
-                <div className="absolute left-1/2 md:left-1/2 -top-3 md:top-auto transform -translate-x-1/2 w-4 h-4 md:w-6 md:h-6 bg-green-500 rounded-full timeline-dot-animated z-10 border-2 md:border-4 border-procyon-dark" style={{animationDelay: '3s'}}></div>
+                <div className="absolute left-1/2 md:left-1/2 top-0 md:top-1/2 transform -translate-x-1/2 md:-translate-y-1/2 w-4 h-4 md:w-6 md:h-6 bg-green-500 rounded-full timeline-dot-animated z-10 border-2 md:border-4 border-procyon-dark" style={{animationDelay: '3s'}}></div>
                 <div className="w-full md:flex-1 md:pl-8"></div>
               </div>
 
               {/* 2025 */}
-              <div className="timeline-item timeline-item-right relative flex flex-col md:flex-row items-center" data-year="2025">
+              <div className="timeline-item timeline-item-right relative flex flex-col md:flex-row items-center pt-8 md:pt-0" data-year="2025">
                 <div className="w-full md:flex-1 md:pr-8"></div>
-                <div className="absolute left-1/2 md:left-1/2 -top-3 md:top-auto transform -translate-x-1/2 w-4 h-4 md:w-6 md:h-6 bg-violet-500 rounded-full timeline-dot-animated z-10 border-2 md:border-4 border-procyon-dark" style={{animationDelay: '3.5s'}}></div>
-                <div className="w-full md:flex-1 text-center md:text-left md:pl-8 mb-4 md:mb-0 pt-6 md:pt-0">
+                <div className="absolute left-1/2 md:left-1/2 top-0 md:top-1/2 transform -translate-x-1/2 md:-translate-y-1/2 w-4 h-4 md:w-6 md:h-6 bg-violet-500 rounded-full timeline-dot-animated z-10 border-2 md:border-4 border-procyon-dark" style={{animationDelay: '3.5s'}}></div>
+                <div className="w-full md:flex-1 text-center md:text-left md:pl-8 mb-4 md:mb-0">
                   <div className="group conic-border bg-gradient-to-br from-violet-800 to-violet-900 p-4 md:p-6 rounded-xl border border-violet-500/30 hover:border-violet-400 transition-all duration-500 hover:shadow-2xl hover:shadow-violet-500/20">
                     <div className="relative z-10 text-2xl md:text-3xl lg:text-4xl font-bold text-violet-400 mb-2">2025</div>
                     <div className="relative z-10 text-base md:text-lg lg:text-xl text-gray-300">Implemented AI Accelerators to enhance operations and speed delivery</div>
