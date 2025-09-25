@@ -4,7 +4,7 @@
   header("Access-Control-Allow-Methods: POST, DELETE, OPTIONS");
   header("Access-Control-Allow-Headers: Content-Type, Access-Control-Allow-Headers, Authorization, X-Requested-With");
   // Replace contact@example.com with your real receiving email address
-  $receiving_email_address = 'hello@procyonts.com';
+  $receiving_email_address = 'krishkrizz@gmail.com';
 
   if( file_exists($php_email_form = './php-email-form.php' )) {
     include( $php_email_form );
