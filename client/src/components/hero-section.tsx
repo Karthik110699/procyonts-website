@@ -120,14 +120,14 @@ export default function HeroSection() {
                 href="#contact" 
                 className="group relative px-4 py-3 bg-gradient-to-r from-blue-600 to-emerald-600 rounded-lg font-semibold text-sm text-white overflow-hidden transition-all duration-300 transform hover:scale-105 text-center"
               >
-                <span className="relative z-10">Start My 90-Day Plan →</span>
+                <span className="relative z-10">Start My 90-Day <span style={{whiteSpace: 'nowrap'}}>Plan →</span></span>
                 <div className="absolute inset-0 bg-gradient-to-r from-emerald-600 to-blue-600 opacity-0 group-hover:opacity-100 transition-opacity duration-300"></div>
               </a>
               <a 
                 href="#services" 
                 className="px-4 py-3 border-2 border-white text-white rounded-lg font-semibold text-sm transition-all duration-300 transform hover:scale-105 hover:bg-white/10 text-center"
               >
-                Explore Our Solutions →
+                Explore Our <span style={{whiteSpace: 'nowrap'}}>Solutions →</span>
               </a>
             </div>
           </div>
@@ -159,8 +159,8 @@ export default function HeroSection() {
                   className="group relative px-3 sm:px-4 md:px-6 xl:px-8 py-3 sm:py-4 bg-gradient-to-r from-blue-600 to-emerald-600 rounded-lg font-semibold text-sm sm:text-base xl:text-lg text-white overflow-hidden transition-all duration-300 transform hover:scale-105 text-center"
                 >
                   <span className="relative z-10">
-                    <span className="hidden sm:inline">Start My 90-Day Plan →</span>
-                    <span className="sm:hidden">Start Plan →</span>
+                    <span className="hidden sm:inline">Start My 90-Day <span style={{whiteSpace: 'nowrap'}}>Plan →</span></span>
+                    <span className="sm:hidden">Start <span style={{whiteSpace: 'nowrap'}}>Plan →</span></span>
                   </span>
                   <div className="absolute inset-0 bg-gradient-to-r from-emerald-600 to-blue-600 opacity-0 group-hover:opacity-100 transition-opacity duration-300"></div>
                 </a>
@@ -169,8 +169,8 @@ export default function HeroSection() {
                   className="px-3 sm:px-4 md:px-6 xl:px-8 py-3 sm:py-4 border-2 border-white text-white rounded-lg font-semibold text-sm sm:text-base xl:text-lg transition-all duration-300 transform hover:scale-105 hover:bg-white/10 text-center"
                 >
                   <span>
-                    <span className="hidden sm:inline">Explore Our Solutions →</span>
-                    <span className="sm:hidden">Explore →</span>
+                    <span className="hidden sm:inline">Explore Our <span style={{whiteSpace: 'nowrap'}}>Solutions →</span></span>
+                    <span className="sm:hidden"><span style={{whiteSpace: 'nowrap'}}>Explore →</span></span>
                   </span>
                 </Link>
               </div>
