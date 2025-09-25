@@ -46,9 +46,8 @@ export default function Navbar() {
           
           {/* CTA Button */}
           <div className="hidden lg:block">
-            <Link href="/contact" className="bg-gradient-to-r from-blue-600 to-emerald-600 hover:from-blue-700 hover:to-emerald-700 px-3 lg:px-4 xl:px-6 py-2 rounded-lg font-semibold transition-all duration-300 text-white text-sm lg:text-base whitespace-nowrap" onClick={() => window.scrollTo(0, 0)}>
-              <span className="hidden xl:inline">Get Started</span>
-              <span className="xl:hidden">Start</span>
+            <Link href="/contact" className="bg-gradient-to-r from-blue-600 to-emerald-600 hover:from-blue-700 hover:to-emerald-700 px-4 xl:px-6 py-2 rounded-lg font-semibold transition-all duration-300 text-white text-sm xl:text-base whitespace-nowrap" onClick={() => window.scrollTo(0, 0)}>
+              Get Started
             </Link>
           </div>
 
