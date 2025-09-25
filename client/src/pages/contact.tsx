@@ -51,7 +51,7 @@ export default function ContactPage() {
     setIsSubmitting(true);
 
     try {
-      const formBody = new URLSearchParams();
+      const formBody = new FormData();
       formBody.append('firstName', formData.firstName);
       formBody.append('lastName', formData.lastName);
       formBody.append('email', formData.email);
@@ -62,10 +62,7 @@ export default function ContactPage() {
 
       const response = await fetch('/src/assets/PHP/contact.php', {
         method: 'POST',
-        headers: {
-          'Content-Type': 'application/x-www-form-urlencoded',
-        },
-        body: formBody.toString(),
+        body: formBody,
       });
 
       const responseText = await response.text();
