@@ -23,34 +23,24 @@ export default function ContactPage() {
 
       try {
         const formData = new FormData(form);
+        const data = Object.fromEntries(formData.entries());
         
-        // Debug: Log form data
-        console.log('Form data being sent:');
-        formData.forEach((value, key) => {
-          console.log(key, value);
-        });
-        
-        const response = await fetch(form.action, {
+        const response = await fetch("/api/contact", {
           method: 'POST',
           headers: {
-            'X-Requested-With': 'XMLHttpRequest',
-            'Content-Type': 'application/x-www-form-urlencoded'
+            'Content-Type': 'application/json',
           },
-          body: new URLSearchParams(formData as any)
+          body: JSON.stringify(data)
         });
 
-        if (response.ok) {
-          const result = await response.text();
-          if (result.trim() === 'OK') {
-            setResponseMessage("Your message has been sent. Thank you!");
-            setResponseType("success");
-            form.reset();
-          } else {
-            setResponseMessage("There was an issue sending your message. Please try again.");
-            setResponseType("error");
-          }
+        const result = await response.json();
+
+        if (response.ok && result.success) {
+          setResponseMessage(result.message || "Your message has been sent. Thank you!");
+          setResponseType("success");
+          form.reset();
         } else {
-          setResponseMessage("Failed to send message. Please try again.");
+          setResponseMessage(result.message || "There was an issue sending your message. Please try again.");
           setResponseType("error");
         }
       } catch (error) {
@@ -235,7 +225,7 @@ export default function ContactPage() {
               <div className="bg-gradient-to-br from-gray-800 to-gray-900 p-8 rounded-2xl border border-gray-700">
                 <h2 className="text-3xl font-bold mb-8">Send us a Message</h2>
                 
-                <form ref={formRef} action="https://magnifuratech.com/assets/procyonts/contact.php" method="post" role="form" className="php-email-form space-y-6">
+                <form ref={formRef} action="/api/contact" method="post" role="form" className="php-email-form space-y-6">
                   <div className="grid md:grid-cols-2 gap-6">
                     <div>
                       <label htmlFor="firstName" className="block text-sm font-medium mb-2">
@@ -319,11 +309,11 @@ export default function ContactPage() {
                       className="w-full px-4 py-3 bg-gray-900 border border-gray-600 rounded-lg focus:ring-2 focus:ring-blue-500 focus:border-transparent outline-none"
                     >
                       <option value="">Select a subject</option>
-                      <option value="enterprise">Enterprise Solutions</option>
-                      <option value="services">General Services</option>
-                      <option value="partnership">Partnership Inquiry</option>
-                      <option value="support">Technical Support</option>
-                      <option value="careers">Career Opportunities</option>
+                      <option value="enterprise solutions">Enterprise Solutions</option>
+                      <option value="general services">General Services</option>
+                      <option value="partnership enquiry">Partnership Enquiry</option>
+                      <option value="technical support">Technical Support</option>
+                      <option value="career opportunities">Career Opportunities</option>
                       <option value="other">Other</option>
                     </select>
                   </div>
